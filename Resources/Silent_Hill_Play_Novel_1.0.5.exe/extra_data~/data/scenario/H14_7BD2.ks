@@ -1,0 +1,111 @@
+[_tb_system_call storage=system/_H14_7BD2.ks]
+
+*H14_7BD2
+
+[tb_hide_message_window  ]
+[bg  time="0"  method="crossfade"  storage="harry_15-18.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+I reluctantly turn and run to the phone.[p]
+At this hour, the only person I could imagine calling would be someone from the publishing company.[p]
+
+
+[tb_hide_message_window  ]
+[playse  storage="PHONE_HANGUP.ogg"  clear="true"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+"Hello..."[p]
+...........................[p]
+The telephone is silent...[p]
+Perhaps it's a prank call?[p]
+"Hello?[p]
+If you have nothing to say then I am going to hang up.[p]
+I have no interest in dealing with a prank call."[p]
+At the moment I was about to hang up the receiver, the unseen caller finally spoke.[p]
+
+
+[playbgm  loop="true"  storage="06_-_Entering_To_Other_World.ogg"  ]
+(......Hello......)[p]
+My hand holding the receiver trembles.[p]
+That voice is...![p]
+
+
+[tb_hide_message_window  ]
+[playse  storage="PHONE_HANGUP.ogg"  clear="true"  ]
+[wait  time="500"  ]
+[playse  storage="PHONE_BUSY_SIGNAL.ogg"  loop="true"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+That voice is......[p]
+There is no doubt.[p]
+The receiver fell to the floor, but I did not notice.[p]
+
+
+[tb_hide_message_window  ]
+[bg  time="500"  method="crossfade"  storage="BLACK.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+Seven years ago...[p]
+The town clouded with fog...[p]
+The school stained with the smell of mildew...[p]
+The empty teacher's room...[p]
+On the table...[p]
+The fragments of my memory come together in my head like a jigsaw puzzle.[p]
+There is no doubt, that...[p]
+
+
+[tb_hide_message_window  ]
+[playse  storage="PHONE_HANGUP.ogg"  clear="true"  ]
+[stopbgm  ]
+[wait  time="500"  ]
+[playse  storage="DOOR_OPEN.ogg"  ]
+[bg  time="500"  method="crossfade"  storage="harry_15-19.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+I rush up the stairs.[p]
+"Cheryl...!"[p]
+Cheryl had completed getting ready, and was sitting quietly on a three-legged wooden chair.[p]
+"What's wrong? Daddy?"[p]
+"I'm sorry...but something urgent has come up.[p]
+It doesn't look like we will be able to go to the amusement park.[p]
+I will have to leave you here alone, but...will you be ok?"[p]
+The expression that I expected appeared on Cheryl's face.[p]
+"Hey, you promised!"[p]
+"I'm sorry...[p]
+I have to go right away..."[p]
+Suddenly, a different memory rose up in my mind.[p]
+
+
+[tb_hide_message_window  ]
+[bg  time="3000"  method="crossfade"  storage="BLACK.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+The town with a lake...[p]
+The pier in the darkness...[p]
+The lighthouse at its end...[p]
+The man who saved me...[p]
+And then...[p]
+Definitely next to...[p]
+
+
+[tb_hide_message_window  ]
+[bg  time="3000"  method="crossfade"  storage="harry_15-19.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+"Cheryl, I've changed my mind, why don't you come with me?"[p]
+"Where to?"[p]
+This time I spoke with confidence.[p]
+"Silent Hill...[p]
+Yes, the lighthouse in Silent Hill.[p]
+We're going to help someone that is in trouble there."[p]
+
+
+[tb_hide_message_window  ]
+[bg  time="3000"  method="crossfade"  storage="BLACK.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+I took my amazed daughter's hand in mine, and we bolted out of the house.[p]
+
+
+[tb_hide_message_window  ]
+[jump  storage="H19_END.ks"  target="*H19_END"  ]

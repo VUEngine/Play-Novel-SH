@@ -1,0 +1,64 @@
+1 	INCUBUS
+	Clear A Boy's Story (Winter).
+2 	CYBIL
+	Clear Cybil's Story with the C-2 ending.
+3 	CHERYL
+	Clear Cybil's Story with the C-1 ending.
+4 	ALESSA
+	Clear Harry's Story with the B ending.
+5 	DAHLIA
+	Clear Cybil's Story with the B-2 ending.
+6 	KAUFMANN
+	Clear Harry's Story with the E-1 ending.
+7 	LISA
+	Clear Harry's Story with the C-1 ending.
+8 	MUMBLER
+	Clear Harry's Story with the C-1 ending.
+9 	AIR SCREAMER
+	Clear Harry's Story with the A ending.
+10 	SPLIT HEAD
+	Clear Harry's Story with the A ending.
+11 	PUPPET NURSE
+	Clear Harry's Story with the B ending.
+12 	TWINFEELER
+	Clear Harry's Story with the D-2 ending.
+13 	FLOATSTINGER
+	Clear Harry's Story with the B ending.
+14 	GROANER
+	Clear Cybil's Story with the B-2 ending.
+15 	HARRY
+	Clear Cybil's Story with the B-3 ending.
+16 	SWITCHBOARD
+	Clear Harry's Story with the A ending.
+17 	CHEMICALS
+	Clear Harry's Story with the C-2 ending.
+18 	SPECIMENS
+	Clear Harry's Story with the A ending.
+19 	TELEPHONE
+	Clear Cybil's Story with the B-1 ending.
+20 	KEY
+	Clear Cybil's Story with the A ending.
+21 	CAFÉ
+	Clear Harry's Story with the C-2 ending.
+22 	MUSIC ROOM
+	Clear Cybil's Story with the A ending.
+23 	HOSPITAL
+	Clear Harry's Story with the E-2 ending.
+24 	STUDY
+	Clear Harry's Story with the D-1 ending.
+25 	AQUEDUCT
+	Clear Cybil's Story with the A ending.
+26 	ELEVATOR
+	Clear Cybil's Story with the A ending.
+27 	CEMETERY
+	Clear Cybil's Story with the B-3 ending.
+28 	HIS FATE
+	Clear Harry's Story with the E-2 ending.
+29 	HER FATE
+	Clear Cybil's Story with the C-1 ending.
+30 	FIRST SIGHT
+	Clear A Boy's Story (Spring) with the A-1 or A-2 ending.
+31 	ESCAPE
+	Clear A Boy's Story (Summer).
+32 	LOVE
+	Clear A Boy's Story (Autumn).

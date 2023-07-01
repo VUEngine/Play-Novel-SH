@@ -1,0 +1,41 @@
+[_tb_system_call storage=system/_H9_4.ks]
+
+*H9_4
+
+[tb_hide_message_window  ]
+[bg  time="3000"  method="crossfade"  storage="harry_09-3.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+I cannot beat her bravery.[p]
+"Even though I look like this, I am a police officer.[p]
+Please trust me."[p]
+"I will stay here.[p]
+If anything looks wrong, then yell back to me."[p]
+Cybil brightly smiled and then disappeared into the darkness.[p]
+
+
+[tb_hide_message_window  ]
+[playse  storage="CHERYL_FOOTSTEPS.ogg"  ]
+[bg  time="1000"  method="crossfade"  storage="BLACK.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+After a bit, I was no longer able to hear the echoes of her footsteps from the passage. [p]
+It looks like the passage is longer than I thought.[p]
+I took another look around the disorganized antique shop.[p]
+The shop in itself is just beyond the bottom of the stairs leading down from the entrance.[p]
+Inside, it looks like what I would expect an antique shop to look like, as it is all cozy and such.[p]
+So things like that passage leading deeper in, are unimaginable.[p]
+.........[p]
+Drowsiness is threatening my consciousness.[p]
+It is not unreasonable.[p]
+We left past midnight, and without sleeping a wink, I have been walking all over town while searching for Cheryl.[p]
+I am on the verge of falling asleep[p]
+............[p]
+A scream from what I think was Cybil brought me round.[p]
+I know I heard it. [p]
+I energetically stand up and rush into the passage.[p]
+There is something at the end of the passage.[p]
+Something dangerous is...[p]
+
+
+[jump  storage="H9_5.ks"  target="*H9_5"  ]

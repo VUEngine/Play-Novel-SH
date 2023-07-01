@@ -1,0 +1,6 @@
+[preload  storage="./data/bgimage/harry_08-1.gif"  ]
+[preload  storage="./data/bgimage/harry_08-2.gif"  ]
+[preload  storage="./data/bgimage/NURSE.gif"  ]
+[preload  storage="./data/fgimage/default/BLOOD.gif"  ]
+[preload  storage="./data/bgimage/BLACK.gif"  ]
+[return]

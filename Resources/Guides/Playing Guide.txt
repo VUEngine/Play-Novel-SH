@@ -1,0 +1,621 @@
+
+
+Play Novel Silent Hill
+Playing Guide
+Version 1.15 - Last Updated 11/03/16
+Written by and Copyright 2002-2016 Toby Normoyle (loc182)
+
+
+This is a playing guide for the Game Boy Advance game, Play Novel Silent 
+Hill, which was made by Konami and released only in Japan during the spring of
+2001. This guide was originally written as a part of the translation, but it 
+became so long that I decided to make it a separate file. This guide should
+answer any questions you might have about playing the game; however, it
+contains no translation of the story. If that is what you are looking for,
+then please take a look at the translation guides for Harry, Cybil, and
+The Boy that I have also added to GameFAQs.
+
+Japanese text support is necessary to properly display this guide. If the 
+following line is displayed correctly then you have the proper support:
+プレイノベル　サイレントヒル　ＰＬＡＹ　ＮＯＶＥＬ　ＳＩＬＥＮＴ　ＨＩＬＬ
+(Note: You will probably need to change the encoding on your browser to
+Japanese manually to view this page. I also recommend setting the font to 
+FixedSys as that is what was used to write this guide.)
+
+
+
+Table of Contents
+
+ 1. What is this Game?
+ 2. Credits
+ 3. Story
+ 4. How to Begin and Load Games
+ 5. Flow of the Game
+ 6. Controls
+ 7. Automatic Save Feature
+ 8. The Official Numbering System
+ 9. Digital Trading Cards
+10. One-point Advice
+11. Contact Information and Update History
+12. Copyright Information
+
+ 
+
+1. What is this Game?
+
+Basically, Play Novel Silent Hill is like a Choose Your Own Adventure book.
+If you are unfamiliar with these books, they are books in which you are often
+presented with a choice, and the story unfolds based on the choices you make.
+Play Novel Silent Hill is no different, as you make choices and the story
+progresses. However, since this is a video game, video images of the area
+you are in and characters that are present often accompany the text. A few
+movies from the PlayStation version of Silent Hill even pop up from time
+to time to move the story along.
+
+I do feel that it is important to note that this game is a Japanese text 
+adventure, and nothing more. Much like July for the Dreamcast, it was never 
+meant for English speaking audiences in its current form. So please do not 
+judge this game as many judged July. Both games are story-driven, and 
+while neither is graphically intensive, both titles deliver exactly what they 
+promise.
+
+
+
+2. Credits
+
+This guide would not have detailed information on the digital trading cards 
+from The Boy scenarios without the help of the official Konami guide for Play 
+Novel Silent Hill. This guide was written by Yusuke Yokoi, published by 
+Konami, and released by 双葉社 (Futabasya) as part of the Konami Kanpeki 
+Kouryaku Series. The ISBN number is 4-575-16265-5 and I highly recommend 
+purchasing it if you have the opportunity. It is completely written in 
+Japanese, but the flowcharts and pictures make it a worthwhile purchase even 
+if you cannot read Japanese. Plus this book is the only way I know of to see 
+scenes and text from The Boy's Spring scenario.
+
+The instruction manual for this game is occasionally referenced; however, I do 
+this mainly to point out interesting facts and errors.
+
+
+
+3. Story
+
+As a text adventure, Play Novel Silent Hill's strength is its story. While any 
+fan of the PlayStation version knows the basic plot elements, this title 
+expands on these elements as well as adding many new ones. A major part of 
+this game is the ability to play as Cybil Bennett. This allows you to see what 
+she was doing while Harry was asking everyone, "Have you seen a little girl 
+around here?" Additionally, for those in Japan with Internet capable cellular 
+phones and the Game Boy Color Mobile Adaptor, four other scenarios were 
+available for download. The main character of each is "The Boy," a boy by the 
+name of Andy. Each scenario is named after a season, thus there are spring, 
+summer, fall, and winter scenarios for "The Boy." Unfortunately it has been 
+confirmed that Konami has discontinued this service, so we may never be able 
+to see these scenarios.
+
+(For some reason, some have referred to "The Boy" scenarios as "Survivor" 
+scenarios. I am not sure how this came about, but from my understanding of 
+Andy and the Spring scenario, this is a bad way to describe him and his 
+scenarios.)
+
+
+
+4. How to Begin and Load Games
+
+First of all, highlight "START" on the title screen and then press either the 
+Start or A button. This will take you to the save slots screen, which shows 
+you the state of the game's three save slots.
+
+If you have not started a new game yet, then just choose any of the three 
+empty slots and press the A button. The "His Fate" card will appear on the 
+screen. This is the character select screen. Since you can only choose Harry 
+right now, press A again to start the introduction. Once you select Harry the 
+game will save to that slot and there is no conventional way to erase save 
+data. (You can reset data as often as you like; however, once used a save slot 
+cannot be cleared. I have posted a save on GameFAQs that will clear all the
+save data on your cartridge, so you can download that save if you really want
+a fresh cart.)
+
+If you are loading a game, then you will see three pieces of information in 
+each slot with save data. First is the name of the character you are using. 
+Luckily this is always in English. So you will see either HARRY or CYBIL, 
+depending upon who you were playing with last. Directly below that is the 
+chapter that the game was last saved in. This is in Japanese and will be two 
+to four characters long. The introduction is the only chapter with two 
+characters. For all the other chapters, the middle, or middle two characters 
+represent the number of the chapter. So by learning the simple numbers 1-18
+in Japanese, you can quickly see what chapter you are in. Here are the
+numbers 1-18 in Japanese for your reference:
+
+  一 二 三 四 五 六 七 八 九 十 十一 十二 十三 十四 十五 十六 十七 十八
+   1  2  3  4  5  6  7  8  9 10  11   12   13   14   15   16   17   18
+
+To the right of the chapter you will see the description of the block the game 
+was last saved in. This is called the "Block Name" in the instruction manual. 
+This usually gives a very general description of either the location or theme 
+of the block you are currently in. When a game is loaded, you will always 
+start at the beginning of the block. Please keep in mind that several blocks 
+have the same "Block Name." If you are starting from Harry's introduction, the 
+save slot will look like this:
+
+ HARRY
+ 序章　　「悪夢の始まり」<-- Block Name
+
+If you select this slot with the A button, the following will be displayed:
+
+ HARRY
+ 序章　　「悪夢の始まり」<-- Block Name
+「久しぶりの休暇」<-- Event Description
+ このシナリオが選択されました　　　　This scenario has been selected
+　　　　　続きから　　　　　　　　　　　　   　Continue
+　　　　　初めから　　　　　　　　　　　　   　From the Beginning
+
+The Japanese that appears directly below the chapter number and block name 
+usually gives a description of an event that takes place in the block, 
+so I call it the "Event Description." The event description is not limited to 
+events; however, and sometimes it can be a person, a place, or a thing. With
+a few exceptions almost every block has a different event description, so
+this is a good tool to use to figure out where you are in the game.
+
+Below the event description is a choice between continuing and starting 
+over. "Continue" is highlighted by default, so another press of the A button 
+takes you to the character select screen. If the save is with Harry, the 
+"His Fate" card appears and the "Her Fate" card appears for Cybil. If there is 
+flashing arrow on this screen, it means you can select the other character. 
+One save slot holds complete saves for each character, so you can choose 
+either one without fear of losing anything. When you choose the "other" 
+character, you simply start from the block that the game was last saved in
+with them. Once you decide which character to play with, press A again to 
+start.
+
+I recommend that you NEVER choose "From the Beginning" as this erases 
+everything for that save file. It will not affect other save files or the 
+digital trading cards, but you lose everything else and return to the 
+introduction, which you can do without losing any progress by viewing the
+ending credits.
+ 
+If you really wish to start over, clear out your flowchart, and give up the 
+use of Cybil (if her scenario is available) on the selected save slot, select 
+初めから, and then select はい to confirm. Pressing the B button or selecting 
+いいえ will cancel the erase operation and return you to the save slots 
+screen. After you confirm the erase operation, you will see the "His Fate" 
+card as you can only select Harry now. At this point nothing has been erased. 
+You can still press B to cancel the operation and keep your data. Pressing A 
+again serves as the final confirmation, and takes you straight to the 
+introduction.
+
+
+
+5. Flow of the Game
+
+The actual game has three main parts: the normal areas, the question areas, 
+and the flowchart. Then there are the blocks, which are what make up the 
+normal and question areas, but not technically a "visible" part of the game.
+
+To begin, the blocks are basically only a part of the game for saving and 
+loading purposes. Each block has its own block name and event description, but 
+you will not notice this unless you turn the GBA off and load often. The 
+normal areas can be made up of any number of blocks, but the question areas 
+always contain just one block.
+
+The normal areas contain most of the text in the game. You probably won't 
+always notice the normal areas change as they are often quite seamlessly 
+strung together. Normal areas can have any number of blocks, pictures, and 
+pages of text. When you reach the end of the text in a normal area, you will 
+automatically move to the next area. Sometimes this move is fairly 
+straightforward and sometimes it is based on a choice you have made earlier 
+in the game. These areas are represented by white squares on the flowchart.
+(Please note that these areas will appear somewhat gray rather than white on
+the flowchart when not selected or a part of your current path through the
+game.)
+
+Unlike the normal areas, question areas only contain one block, one page of 
+text, and one picture. In a question area you must choose one of two or more 
+choices in order to move the story along. As with all other selections in this 
+game, the currently highlighted choice will be in red, and I suspect this may 
+be why Konami chose to have these areas appear as red squares on the 
+flowchart. (These areas will appear in a slightly darker red color when on the
+flowchart when not selected or a part of your current path through the
+game.)
+
+The flowchart is quite a useful tool as it allows you to see and visit any of
+the areas that you have ever been to while playing. As mentioned above, 
+normal areas appear as white or gray squares and question areas appear as red
+or dark red squares on the flowchart. When you open the flowchart, the square
+representing the area you are currently in will have a pulsating orange box
+around it. This box is the cursor, which you can move about with the d-pad.
+You can only move the cursor as far right as there are squares. When you
+highlight a square on the flowchart, some Japanese will be displayed at the
+bottom of the screen. The top line is the chapter number and the block name
+of the first block (or only block) in the area you have highlighted, and the
+bottom line is the event description for the same block. Since areas are the
+only thing that appear on the flowchart, you cannot highlight individual
+blocks. You should also notice that orange lines will appear when you
+highlight a square. These lines connect the squares in order to show the most
+recent path you have taken to reach the highlighted square. Finally, you will
+see vertical blue lines at various intervals across the flowchart. These
+lines show where chapters begin and end. The orange path lines will cross the
+blue chapter lines, but there will never be a square on a chapter line.
+
+There is one other interesting thing to note about areas and the flowchart:
+Each area has a picture associated with it on the flowchart. And more often
+than not this picture will not appear in any of the block(s) that make up the
+area.
+
+Now that you know about the parts of the game, here are some examples of how 
+everything fits together: (In the examples, the [] represent the area, and 
+the () represent the block(s) within the area. The first line is the block 
+name, the second is the event description, and the third shows the number of
+the pages of text that are in each block.)
+
+Example 1
+In areas with only one block, the block name and event description will be 
+what you always see on the flowchart and the save slot.
+
+[ (The Atmosphere of Alessa) ]
+[   (The unfinished diary)   ]
+[         Pages 1-29         ]
+
+In this case, if you turn the game off while viewing any of the 29 pages that
+are in this block you will see the above text in Japanese on the save slot 
+when you load the game next, and you will always start on page 1 after 
+loading.
+
+Example 2
+When there are multiple blocks the block name and event description for the 
+first block in the area will always be displayed on the flowchart; however, 
+if you turn the GBA off you will see the block name and event description 
+for the block you were last "in" on the load screen. 
+
+[ (         Arrival          )  (     Arrival      )  ( Arrival  ) ]
+[ (Harry wakes up in his jeep)  (Out of season snow)  (Ghost Town) ]
+[         Pages 1-3                  Pages 4-6         Pages 7-10  ]
+
+The above example is the first area in chapter 1 of Harry's scenario. 
+You will always see "Arrival" and "Harry wakes up in his jeep" in 
+Japanese if you highlight this area on the flowchart, but if you turn off 
+the GBA while page 8 is on the screen then "Arrival" and "Ghost Town" will 
+be displayed in Japanese on the load screen and you will start on page 7 of
+the area after you load the game. (In this area the block name is the same
+for all three blocks, but this is not always the case.)
+
+
+
+6. Controls
+
+The controls are very simple, as you spend most of the time reading text and 
+selecting choices. When the small spinning Flauros is on screen, pressing
+A or R will cause the next bit of text to appear. If you are making a choice,
+press up or down to highlight the choice you want in red, and then confirm it
+with the A button. You can also tap the A or R buttons to make the text
+appear faster, but be careful not to push the A button too rapidly or you
+may skip through an area or select a choice that you do not want. The R
+button will not confirm choices, so it is a safer way to quickly skip
+through text. If you would like to see the picture behind the text, simply
+hold the B button when the spinning Flauros is on the screen to make all
+the all the text disappear. Releasing the B button will then cause the text
+to reappear.
+
+As long as you have seen at least two pages of text in an area, pushing the L 
+button when the Flauros is on screen will allow you to review only the text 
+you have seen in the current chapter since you: entered the chapter, last 
+loaded the game, or last selected an area from the flowchart. When you do 
+this, the text will turn light blue, the current background picture will be 
+darkened, and the following will be displayed at the bottom of the screen:
+
+L<Back   B Cancel   Next>R    (The < and > represent triangles.)
+
+"B Cancel" will always be written in white text, but "L<Back" and "R>Next" are 
+both written in black and will be highlighted in either dark blue or orange.
+The dark blue means that you cannot use that button right now, and the orange
+means that you can. So if "L<Back" is highlighted in dark blue, that means
+that you are on the first page of text that you can currently review. While
+reviewing text you cannot see the most current page of text, but you can
+press A or B at any time to exit this mode and return to the most current
+page of text.
+
+With the exception of the introduction, pressing the Select button when the 
+spinning Flauros is on the screen opens the flowchart. You can move the cursor 
+to any area you have visited in the current or previous games. However, be 
+aware that choosing an area you have not visited in the current game may alter 
+other choices you have just made. Use the A button to select any area, or the 
+B button to close the flowchart and return to the current area. If you would
+like to return to the beginning of the area you are currently in, just press
+A immediately after opening the flowchart.
+
+(The Japanese instruction manual notes that you cannot use the flowchart while 
+in chapter 1, but this is incorrect. It is the introduction in which you 
+cannot access the flowchart, and thus the introduction does not appear 
+anywhere on the flowchart.)
+
+
+
+7. Automatic Save Feature
+
+All saving is automatic, so you never need to worry about remembering to save 
+your game. The game will always save to the current block as soon as you enter 
+it. Here is a list of times when this happens and the game saves:
+
+1. When you select Harry (the His Fate card) after starting a new game from 
+   an unused save slot.
+2. If you last played with Harry, the game will save when you select Cybil and 
+   vice-versa.
+3. Any time you move into a different block by reading text or making a choice.
+4. Any time you press A while an area is highlighted on the flowchart.
+
+Finally, the game will also save if you watch the credits all the way 
+to the end. In this case the game is saved to the introduction. 
+
+
+
+8. The Official Numbering System
+Each area is numbered in the official guide for Play Novel Silent Hill. Here
+is how they generated the numbers for each area:
+
+ - Each number begins with the chapter number. So all the areas in chapter 10
+   will begin with the number 10 followed by a dash. For example, 10-1 would
+   be the number assigned to the first area in chapter 10.
+
+ - Areas are numbered beginning with the lowest, left-most area in the
+   chapter. The numbering is then done bottom to top, left to right within
+   the branch.
+
+ - Normal areas that are connected to question areas will always be numbered
+   sequentially regardless of their position on the flowchart. This can cause
+   certain areas that are further right to get lower numbers. After this
+   happens the numbering will begin again from the lowest left-most area in
+   the branch that has not yet been numbered.
+
+ - In chapters that have multiple branches the entire "lower" branch will be
+   numbered first, and then the "upper" branch will be numbered.
+   (Lower and upper branches exist in chapters 9, 10, 11, 12, 13, 15, and 16
+   in Harry's scenario, and in chapters 3 to 8 in Cybil's.)
+
+The numbering system sadly seems a little complicated on paper, but when
+viewed in picture form it makes a lot more sense. I will try to put
+together a nice image of the flowchart for each scenarios to go along with the
+translation.
+
+Also, for owners of the guide book, please note that there are two errors on
+the pictures of the flowchart for Harry's scenario that appear on pages 16-19.
+The first is with chapter 7. They did not start the area numbers over after
+chapter 6 here, so chapter 7 is numbered 6 to 22 instead of 1 to 17. In
+chapter 13 they just added one number to the upper branch. So the areas are
+numbered 5, 6, 8, and 9 instead of 5, 6, 7, and 8. In both cases, the correct
+numbers are used if you follow the detailed flowchart analysis in the
+guide book.
+
+In Cybil's case a few errors are also present in the guide book, but these
+errors involve the lines that connect areas and not the numbers. In Chapter 7
+area 21 is connected to area 23, which is then connected to area 22. This is
+not correct. Area 21 should be connected to both areas 22 and 23, and those
+two areas should not be connected to each other. A similar mistake is also
+present in Chapter 8. Area 13 is connected to area 14, which is then connected
+to area 15. But Area 13 should be connected to both areas 14 and 15, and
+areas 14 and 15 should not be connected.
+
+
+
+9. Digital Trading Cards
+
+As a reward for reaching the end of the game, you will receive various digital 
+trading cards. There are 32 cards total, and only 28 can be found in the 
+regular game. The only way to get the other four cards is by playing the four 
+downloadable scenarios of "The Boy." The list below shows which endings 
+yield each of the cards. You can view your card collection by highlighting
+Digital Trading Card on the title screen and pressing either the Start or A
+button. Use the L and R buttons to move between the pages and A to view a 
+slightly larger image of any card that you have. Also, should you wish to 
+erase your cards then press Select while viewing your collection. You will
+then be asked in Japanese if you want to erase all the cards. Select はい for
+yes and いいえ for no. You can also just press B to return to your card
+collection without erasing anything. After selecting yes once, the game will
+ask you if it is really all right to erase the cards. Select はい for yes and
+the cards will be erased. Selecting いいえ or pressing the B button will
+return you to your card collection without erasing anything.
+
+The numbers used with each card represent the final area you must reach to get 
+that card. The first number is for the chapter and the second is for the area. 
+All of these areas are ending areas and this numbering scheme is the same as 
+the one used in the flowcharts found in the Konami Official Guide Book. The 
+translation guide will also stay true to this scheme.
+
+First Page:
+1. Incubus - The Boy/Winter Scenario
+2. Cybil - Cybil Ending 8-11
+3. Cheryl - Cybil Ending 8-9
+4. Alessa - Harry Ending 18-2
+5. Dahlia - Cybil Ending 8-15
+6. Kaufmann - Harry Ending 13-7 (Misprinted in guide book as 13-8)
+7. Lisa - Harry Ending 16-24
+8. Mumbler - Harry Ending 16-24
+
+Second Page:
+9. Air Screamer - Harry Ending 18-1
+10. Split Head - Harry Ending 18-1
+11. Puppet Nurse - Harry Ending 18-2
+12. Twin Feeler - Harry Ending 15-9
+13. Float Stinger - Harry Ending 18-2
+14. Groaner - Cybil Ending 8-15
+15. Harry - Cybil Ending 7-23
+16. Switchboard - Harry Ending 18-1
+
+Third Page:
+17. Chemicals - Harry Ending 16-25
+18. Specimens - Harry Ending 18-1
+19. Telephone - Cybil Ending 9-2
+20. Key - Cybil Ending 8-5
+21. Cafe - Harry Ending 16-25
+22. Music Room - Cybil Ending 8-5
+23. Hospital - Harry Ending 13-8 (Misprinted in guide book as 13-9)
+24. Study - Harry Ending 15-8
+
+Fourth Page:
+25. Aqueduct - Cybil Ending 8-5
+26. Elevator - Cybil Ending 8-5
+27. Cemetery - Cybil Ending 7-23
+28. His Fate - Harry Ending 13-8 (Misprinted in guide book as 13-9)
+29. Her Fate - Cybil Ending 8-9
+30. First Sight - The Boy/Spring Scenario
+31. Escape - The Boy/Summer Scenario
+32. Love - The Boy/Fall Scenario
+
+
+Happily a save is now available on GameFAQs that will allow you access to 
+all 32 digital trading cards! You will lose all your game information if 
+download this save, but you will have a complete card collection!
+
+
+
+10. One-point Advice
+
+Unlike in the original PlayStation version of Silent Hill, you cannot be
+"killed" in Play Novel Silent Hill. Certain choices might lead you to an
+ending in which something unfortunate happens to Harry or Cybil, but you will
+never see a conventional "Game Over" screen.
+
+Although I believe everyone knows this already, I will mention it just in
+case: In order to play as Cybil you must first reach any one of Harry's 
+endings.
+
+If you wish to skip any movie, including the opening one, you can do so only
+by pressing START. Happily you can also skip the rather dull credits
+sequence by pressing START as well.
+
+Basically, you will just be pressing the A button a lot in order to scroll 
+through the text that appears in each "area" of the game. Sometimes you will 
+automatically move to a new area by doing this, and sometimes you will have to 
+make a choice to move on. In many cases you will not realize that you have 
+moved to a new area just by playing, so check the flowchart often. Also, if 
+you continue after completing the game, play for a bit, and then decide to
+move forward using the flowchart, don't forget that the area you select will
+have the choices made to reach it last associated with it, and not the
+choices you have just made in your current game. Sometimes these choices
+will be the same, sometimes they will not.
+
+Some of the choices you make will not have an immediate effect. Instead they 
+will cause you to move somewhere automatically at a later point. Figuring out 
+which choices cause this "automatic branching" is the key to seeing all the 
+endings in Harry's scenario. (Only seven choices are related to or will
+cause automatic branching, one of which does not actually affect the outcome
+of the game.)
+
+In Cybil's scenario there is no automatic branching. The important choices
+in her scenario will immediately place you on one (or on the way to one) of
+three main paths. The first of these important choices is the final choice in
+Chapter 2. This is quite different from Harry's scenario, in which the
+first important choice does not occur until Chapter 7.
+
+If you wish to easily reach ending A in Harry's scenario, which is like the
+GOOD+ ending in the original Silent Hill, then always make choice A when you
+come to a question area. The same is true for Cybil's scenario as well,
+although her ending A is not the same as the GOOD+ ending.
+
+One thing to keep in mind is that each area always has the same text no matter 
+how you reach it. This is a very good thing because if it were not true then 
+writing a translation would be very difficult!
+
+Many of the choices will have no effect on the outcome of the game. They are 
+just there to let you see different pieces of text.
+
+In Harry's scenario you make choices as if you were him; however, in Cybil's 
+scenario you often make choices about what is happening to her. So while you 
+get to make Harry fight back or run away when he is attacked, you actually 
+get to choose whether a monster will attack Cybil or not.
+
+Occasionally you will be confronted with a puzzle. If you find that you are 
+having a hard time with any of the puzzles, please check the puzzle guide 
+already on GameFAQs. Since it already has all the information you will 
+need, I have not included puzzle solutions in this guide or the translation 
+guides.
+
+Since the spinning Flauros will not appear on screen during any of the 
+puzzles you will not be able to access the flowchart if you are in the middle
+of a puzzle.
+
+If you wish to return to the introduction, simply watch the credits after 
+reaching an ending. But if you want to view an ending without being forced to 
+play through the introduction again just turn off the GBA before the credits 
+end. (Please keep in mind that you must let the credits end if you wish to
+receive the digital trading cards associated with an ending.)
+
+Some of the best advice the guide book gives is "to think of Cybil's scenario 
+as a completely different story." I totally agree with this. Personally I see
+her scenario as an interesting way to explore what could have happened while
+letting you in on some information that pertains to Silent Hill. The "what if"
+quality of her scenario also allows for some nice character development that
+would normally be impossible.
+
+Harry's scenario also feels like a different story in many ways as well.
+Some of it is exactly like what happened in the PlayStation version of
+Silent Hill, while other parts have been changed in "interesting" ways. So as
+you play Harry's scenario do not expect everything to be just like it was in
+the original game.
+
+The color of the border around each of the digital trading cards that you
+have received is dependant upon whose scenario you completed at the time that
+you received the card. (Each card can only be obtained by reaching a specific
+ending, so the color of the border around each card will be fixed and will 
+never change.) So the cards with a dark red border are from Harry's, the
+ones with a dirty green border are from Cybil's, and the ones with a dark
+yellow border are from The Boy's scenario. As the border colors for the cards
+match the colors of the "His Fate" and "Her Fate" images that appear when you
+begin or load a game this leads me to believe that the image that would appear
+when selecting one of The Boy scenarios would be dark yellow. Sadly though,
+this is just conjecture.
+
+
+
+11. Contact Information and Update History
+
+If you need to contact me about something in this guide I can be contacted at: 
+toby at atomicillumination.com
+Naturally the word "at" represents the @ symbol. This is done to help avoid 
+spam.
+
+You can also send me a message via GameFAQs.
+
+I try to always respond, but unfortunately I don't check either of these
+addresses more than once a month. So please be patient after sending
+me a message.
+
+Also, apologies to anyone who sent a message to the old Excite email I
+used to list here. That service cancels the mailbox after 90 days of
+disuse, which resulted in the loss of many messages.
+
+Update History:
+
+07/27/2007 - First submission to GameFAQs.
+08/13/2007 - Added a few notes on Cybil's scenario.
+11/03/2016 - Updated the contact info and fixed a few typos.
+
+
+
+12. Copyright Information
+
+Play Novel Silent Hill
+Playing Guide
+Version 1.15 - Last Updated 11/03/16
+Written by and Copyright 2002-2016 Toby Normoyle (loc182)
+
+This work may be not be reproduced under any circumstances except for 
+free distribution per the conditions noted below. Otherwise, it may not be
+placed on any web site or otherwise distributed publicly for profit. Use
+of this guide in such a manner is strictly prohibited, and a violation of
+copyright.
+
+Posting Information:
+
+  - You can post this guide on your site as long as it is free for anyone
+    to look at, you do not modify it, and your site generally concerns
+    Silent Hill. (I would prefer not to see this appear on general cheat code
+    sites, it really just belongs on Silent Hill related ones.)
+
+  - If your site charges an access fee or requires users to signup in order
+    to view this guide then you may not post it.
+
+  - Updates will only be posted at GameFAQs.
+
+All trademarks and copyrights contained in this document are owned by 
+their respective trademark and copyright holders.
+

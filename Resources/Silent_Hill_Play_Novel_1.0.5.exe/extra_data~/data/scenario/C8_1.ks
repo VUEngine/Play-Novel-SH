@@ -1,0 +1,71 @@
+[_tb_system_call storage=system/_C8_1.ks]
+
+*C8_1
+
+[stopse  ]
+[tb_hide_message_window  ]
+[playse  loop="true"  storage="04_-_Fog_Noiz.ogg"  ]
+[bg  time="3000"  method="crossfade"  storage="BLACK.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+Eventually the elevator begins to gradually slow its descent, and at the same time that it comes to a complete stop, the B1 lamp lights up.[p]
+And then its doors open...[p]
+Cybil dully felt this series of movements.[p]
+
+
+[tb_hide_message_window  ]
+[bg  time="3000"  method="crossfade"  storage="cybil_08-1.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+With the doors open, the light that illuminates the passage that extends in front of her, pours into the elevator.[p]
+As Cybil begins to walk forward, it almost looks like that light is supporting her from behind.[p]
+It is cold.[p]
+Although she is just walking down a corridor that is like one in a jail, Cybil's heart beats irregularly.[p]
+
+
+[tb_hide_message_window  ]
+[bg  time="3000"  method="crossfade"  storage="harry_17-10.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+Eventually a single door appears.[p]
+The passage ends with this door.[p]
+Perhaps all the mysteries of B1 will lie in this room?[p]
+(I didn't want to get you wrapped up in this.)[p]
+The voice of the girl flitted about in the back of Cybil's mind.[p]
+"What was the girl's goal?[p]
+And where is Harry?[p]
+Perhaps Harry has come here in the same manner as well?[p]
+Or?"[p]
+She had a feeling that by opening this door, the many questions whirling about in her head would all be put to rest.[p]
+Cybil summoned forth her courage and placed her hand on the door.[p]
+"Ah...!"[p]
+It is hot, and Cybil immediately takes her hand off the knob.[p]
+Something is burning beyond this door.[p]
+It is impossible to open this door by hand.[p]
+Just from touching the door, the palm of Cybil's hand stingingly hurts.[p]
+
+
+[tb_hide_message_window  ]
+[playse  clear="true"  storage="KNOCK_KNOCK.ogg"  ]
+[wait  time="1000"  ]
+[tb_show_message_window  ]
+She kicks the door with all her might.[p]
+With a hopeful feeling, she continues to kick the door over and over with the thick sole of her boot.[p]
+Finally the knob breaks, and the door forcefully opens inward. [p]
+At the same time, hot wind singes Cybil's hair.[p]
+
+
+[tb_hide_message_window  ]
+[playse  loop="true"  storage="FIRE_SPLITHEAD_ARENA.ogg"  ]
+[bg  time="3000"  method="crossfade"  storage="cybil_08-3.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+And then Cybil saw it.[p]
+The room is about as large as a movie theater. [p]
+Fire has spread all throughout, and it has began to collapse.[p]
+Beyond the debris and flames, a man is holding something to his chest and heading toward another exit in order to get out.[p]
+And just as he reached the exit, the vigorously burning flames lit the side of his face.[p]
+
+
+[tb_hide_message_window  ]
+[jump  storage="C8_2.ks"  target="*C8_2"  ]

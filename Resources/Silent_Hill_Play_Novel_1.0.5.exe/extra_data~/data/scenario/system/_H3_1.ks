@@ -1,0 +1,7 @@
+[preload  storage="./data/bgimage/harry_02-12.gif"  ]
+[preload  storage="./data/bgimage/harry_03-1.gif"  ]
+[preload  storage="./data/bgimage/harry_03-2.gif"  ]
+[preload  storage="./data/bgimage/harry_03-3.gif"  ]
+[preload  storage="./data/bgimage/harry_03-4.gif"  ]
+[preload  storage="./data/bgimage/BLACK.gif"  ]
+[return]

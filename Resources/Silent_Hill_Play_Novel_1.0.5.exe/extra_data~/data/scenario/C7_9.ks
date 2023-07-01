@@ -1,0 +1,32 @@
+[_tb_system_call storage=system/_C7_9.ks]
+
+*C7_9
+
+[tb_hide_message_window  ]
+[bg  time="3000"  method="crossfade"  storage="cybil_07-12.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+It was a slightly dirty, but familiar doll.[p]
+Countless blue fireworks went off in front of Cybil's eyes.[p]
+Memories of the past...[p]
+Unforgettable memories...[p]
+Memories that should have been tightly sealed away within her...[p]
+She was holding the doll tightly...[p]
+Cybil had hidden in the closet...[p]
+Through the crack, a familiar scene...[p]
+Her parents, shot in the head and...[p]
+The blood soaked carpet...[p]
+The low laugh of a man...[p]
+She held the doll over her mouth, to suppress the urges to scream that assaulted her from time to time.[p]
+And so, she had somehow survived.[p]
+...she had survived.[p]
+"Why is the doll from that time here?[p]
+Why?[p]
+Why is it here?"[p]
+It was the reason she became a policewoman, that incident.[p]
+That incident had largely impacted her future.[p]
+Cheryl was gone, and all that was left, was the unpleasant feeling of memories she thought that she had forgotten.[p]
+
+
+[tb_hide_message_window  ]
+[jump  storage="C7_10.ks"  target="*C7_10"  ]

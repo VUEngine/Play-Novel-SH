@@ -1,0 +1,30 @@
+[_tb_system_call storage=system/_C4_10.ks]
+
+*C4_10
+
+[tb_hide_message_window  ]
+[bg  time="0"  method="crossfade"  storage="cybil_04-5.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+"Yeah.[p]
+You mean the one that looks like a dog?[p]
+I have seen it.[p]
+But he was not ferocious.[p]
+He won't attack anyone or anything like that."[p]
+Cybil spoke with surprise.[p]
+"It attacked me.[p]
+And I had given my handgun to your Daddy...[p]
+I thought I was going to die."[p]
+"But he was nice to me.[p]
+And he listens to what I say."[p]
+Cybil was half shocked, and sighed.[p]
+"Well, okay.[p]
+It would be terrible if you got hurt.[p]
+I will protect you.[p]
+Let's go to your Daddy.[p]
+It is my duty to take you to him."[p]
+Saying this, Cybil takes Cheryl's hand in hers, and they leave the music room.[p]
+
+
+[tb_hide_message_window  ]
+[jump  storage="C4_11.ks"  target="*C4_11"  ]

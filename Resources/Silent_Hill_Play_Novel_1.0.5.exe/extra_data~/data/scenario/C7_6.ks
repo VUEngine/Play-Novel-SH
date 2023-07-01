@@ -1,0 +1,83 @@
+[_tb_system_call storage=system/_C7_6.ks]
+
+*C7_6
+
+[tb_hide_message_window  ]
+[bg  time="3000"  method="crossfade"  storage="BLACK.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+.........[p]
+Everything is dark.[p]
+There is not even a single sound.[p]
+Cybil cannot tell whether her eyes are open or closed.[p]
+The hand gripping Cybil's hand suddenly moved.[p]
+
+
+[playbgm  loop="true"  storage="03_-_Air_In_The_Mind.ogg"  ]
+(I, I may have used you Miss...)[p]
+Cybil made a face like "Wha?" and immediately asked:[p]
+(What are you saying?)[p]
+(That's why I was against it.[p]
+You are a good person, so I didn't want to get you wrapped up in this.[p]
+But in the end, I have made you suffer.[p]
+I guess that is the same thing as getting you involved?)[p]
+Cybil smiles.[p]
+(I have said it many times, but it is my job to get you back into your father's custody.[p]
+Getting me involved, or whatnot, it is not a problem.)[p]
+(...you're wrong...Miss)[p]
+Silence flows between the two of them.[p]
+(As for what Daddy will do and so on, those are issues that do not even compare to what I am dealing with.[p]
+My own personal issue...[p]
+It's something that I should never ever tell anyone, something very important.[p]
+I have thought about it for so long.[p]
+I have been confused by it for so long.[p]
+However, maybe I can tell you about it Miss.[p]
+The reason why there is no one in town.[p]
+The reason why I don't want to see my Daddy.[p]
+And also, my true...)[p]
+
+
+[stopbgm  ]
+[wait  time="500"  ]
+Once again, there is silence.[p]
+#Cybil
+(Your true? [p]
+Your true what?)[p]
+(Do you know something?)[p]
+#
+However, that question is not answered.[p]
+
+
+[tb_hide_message_window  ]
+[playse  loop="true"  storage="CLOCK.ogg"  ]
+[bg  time="3000"  method="crossfade"  storage="cybil_07-9.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+And then, the low sound of a motor runs through the floor and causes a slight quiver in Cybil's stomach.[p]
+To her front, she has only a glimpse of a single shaft of light.[p]
+The light thinly extends up and down, and eventually expands to the left and right, revealing a small room.[p]
+It is an elevator.[p]
+
+
+[tb_hide_message_window  ]
+[bg  time="3000"  method="crossfade"  storage="cybil_07-10.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+The elevator doors have opened wide, and it sits ready, almost as if it has come for Cybil.[p]
+Cybil and the girl are lit by its light...[p]
+And then...[p]
+Cybil felt the grip of the girl that she was holding on to become weak.[p]
+"No weight. An illusion?[p]
+No, the two of us are definitely holding hands."[p]
+Cybil looked toward the girl.[p]
+Her entire body was paralyzed with a chill.[p]
+Powerlessly, Cybil sank down in that very spot.[p]
+Her vision is hazy.[p]
+The color drains from her entire body.[p]
+The girl is not there in the light.[p]
+The thing that Cybil is holding on to...[p]
+It is...[p]
+
+
+[tb_hide_message_window  ]
+[jump  storage="C7_7.ks"  target="*C7_7"  ]

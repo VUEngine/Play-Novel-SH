@@ -1,0 +1,31 @@
+[_tb_system_call storage=system/_H16_25.ks]
+
+*H16_25
+
+[tb_hide_message_window  ]
+[bg  time="0"  method="crossfade"  storage="BLACK.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+I gave up my resistance and closed my eyes.[p]
+As I felt that all my actions up this point had been controlled by someone else, [p]
+I just waited for that someone to tell me what would be next.[p]
+My five senses are sharp...[p]
+A noise that I had not heard until now...[p]
+Light I had not sensed until now...[p]
+Something is all around me, and seems to be filling me with its incredible power.[p]
+The now red light passes through my eyelids, no it should be called a powerful, strong wave of red. [p]
+It envelops me.[p]
+My body temperature rises.[p]
+It has come...[p]
+I must recognize the existence of that great power.[p]
+However, it doesn't mean that I have forgotten Cheryl.[p]
+It doesn't mean that I have forgotten.[p]
+I feared that somewhere in my heart.[p]
+With my eyes still closed, I tightly embraced the source of that faint light.[p]
+While tightly holding on, my body was wrapped in flames.[p]
+As the sacred flames burned my body, and reached all the way to my brain, I never let go of that existence.[p]
+
+
+[tb_hide_message_window  ]
+[stopbgm  ]
+[jump  storage="H19_END.ks"  target="*H19_END"  ]

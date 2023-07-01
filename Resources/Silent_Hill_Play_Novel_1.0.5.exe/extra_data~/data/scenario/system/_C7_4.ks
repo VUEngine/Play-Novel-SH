@@ -1,0 +1,6 @@
+[preload  storage="./data/bgimage/cybil_07-2.gif"  ]
+[preload  storage="./data/bgimage/cybil_07-3.gif"  ]
+[preload  storage="./data/bgimage/cybil_07-4.gif"  ]
+[preload  storage="./data/bgimage/cybil_07-5.gif"  ]
+[preload  storage="./data/bgimage/cybil_07-6.gif"  ]
+[return]

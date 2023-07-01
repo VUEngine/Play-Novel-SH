@@ -1,0 +1,161 @@
+[_tb_system_call storage=system/_H13_8.ks]
+
+*H13_8
+
+[tb_hide_message_window  ]
+[bg  time="0"  method="crossfade"  storage="harry_13-8.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+"Cheryl...![p]
+Give me that handgun!" [p]
+I try to take the handgun away from Cheryl.[p]
+It can't be...[p]
+It can't be, this handgun is...[p]
+Cheryl grinned, and then placed the barrel of the gun against my forehead.[p]
+"Goodbye"[p]
+The voice of the girl rocks my eardrums.[p]
+
+
+[tb_hide_message_window  ]
+[playse  storage="GUNSHOT.ogg"  ]
+[stopbgm  ]
+[bg  time="500"  method="crossfade"  storage="BLACK.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+The sound of gunfire.[p]
+With my eyes closed, I waited for my consciousness to fade away.[p]
+However...something is not right.[p]
+I gingerly opened my eyes and saw Cheryl lying in front of me. [p]
+Cybil was standing behind her, with the gun in her hand pointed at Cheryl.[p]
+
+
+[tb_hide_message_window  ]
+[bg  time="3000"  method="crossfade"  storage="harry_13-16.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+Smoke was rising from the barrel of her handgun.[p]
+Cybil glanced at me and then let out a long breath.[p]
+"Cybil..."[p]
+"Harry...[p]
+I am glad I made it on time.[p]
+Are you hurt?"[p]
+I forcefully stood and wrapped my hands around Cybil's neck.[p]
+"What have you done![p]
+Have you lost your mind!!"[p]
+Cybil is not surprised.[p]
+With effort, she remained calm, and pointed at Cheryl's body with her chin.[p]
+"Take another look, take a good look.[p]
+That is not Cheryl..."[p]
+I rolled over the face-down body, and looked at its face.[p]
+"Dahlia..."[p]
+I look up at Cybil.[p]
+"You mistook her for Cheryl?[p]
+...You must have been hallucinating.[p]
+But that's all right, I am just really glad I made it in time."[p]
+"What is this all about..?"[p]
+"Dahlia and Kaufmann...and also Lisa.[p]
+By chance I heard the three of them talking, so I listened in..."[p]
+
+
+[tb_hide_message_window  ]
+[playbgm  loop="true"  storage="03_-_Air_In_The_Mind.ogg"  ]
+[bg  time="3000"  method="crossfade"  storage="BLACK.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+#Dahlia
+(That wasn't what we discussed...)[p]
+#
+#Kaufmann
+(Heh...[p]
+It's not like we ever had a deal in the first place.[p]
+I will take the white claudia.[p]
+Because I don't care for trusting you with it.)[p]
+#
+#Dahlia
+(Kaufmann...[p]
+With this, you are going to become very rich...[p]
+I have a good route for distribution...)[p]
+#
+#Kaufmann
+(You people...[p]
+you're in cahoots with each other!)[p]
+#
+#Lisa
+(No one is conspiring against you.[p]
+Since the beginning, everything has going according to plan.[p]
+You've taken care of distribution, right?)[p]
+#
+#Dahlia
+(There is a record in which my share is clearly recorded...)[p]
+#
+#Lisa
+(Ha Ha Ha![p]
+That piece of paper is now ash.[p]
+Just like your daughter.)[p]
+#
+
+
+[playse  storage="GUNSHOT.ogg"  ]
+[wait  time="750"  ]
+.....................[p]
+
+
+[tb_hide_message_window  ]
+[stopbgm  ]
+[bg  time="3000"  method="crossfade"  storage="harry_13-16.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+"Then a gun shot rang out...[p]
+and a woman's scream reverberated.[p]
+Then, for a bit, there was a struggle, but in the end, the man's voice ceased as well.[p]
+I was hiding behind a pillar.[p]
+Dahlia came out of the room alone.[p]
+She didn't notice me.[p]
+She was holding a handgun, and her clothes were soaked in blood.[p]
+I tailed her without her noticing me to this hospital. [p]
+Once she found you, she pulled out her gun once more and pointed it at you.[p]
+To protect you, I pulled the trigger on the gun I was carrying..."[p]
+In the dark hospital only Cybil's voice echoed on and on.[p]
+All the people in this world had become corpses, and only outsiders remained.[p]
+No...wait.[p]
+One person still remains.[p]
+Just one...[p]
+"I have Cheryl somewhere safe.[p]
+Well then, let's go to her.[p]
+She can hardly wait to see her father."[p]
+Cheryl...[p]
+No, not her.[p]
+There is still one other person in this world.[p]
+"Uh...yeah, let's go."[p]
+"You are about to be reunited with your precious daughter, for whom you have been searching?[p]
+How about looking a little more excited?"[p]
+Something is...[p]
+Something is incomplete...[p]
+
+
+[tb_hide_message_window  ]
+[playbgm  loop="false"  storage="07_-_Dark_Corridors.ogg"  ]
+[bg  time="3000"  method="crossfade"  storage="BLACK.gif"  ]
+[wait  time="500"  ]
+[tb_show_message_window  ]
+I began to walk behind Cybil.[p]
+A reunion with Cheryl.[p]
+I risked my life, and wished for this, but in spite of that, my heart is filled with emptiness.[p]
+Cybil's figure sways up and down as I follow her, and my entire body trembles with extreme exhaustion.[p]
+Just where does Cybil have my daughter?[p]
+I think that maybe we are walking without no destination.[p]
+At that moment, I was then...unable to see what Cybil was really up to...[p]
+
+
+[tb_hide_message_window  ]
+[wait  time="1500"  ]
+[tb_hide_message_window  ]
+[stopse  ]
+[bg  time="500"  method="crossfade"  storage="Silent-Hill-Play-Novel.gif"  ]
+[wait  time="4000"  ]
+[bg  time="500"  method="crossfade"  storage="BLACK.gif"  ]
+[movie  storage="CREDITS.mp4.mp4"  ]
+[wait  time="500"  ]
+[stopbgm  ]
+[wait  time="500"  ]
+[jump  storage="title_screen.ks"  target="*title"  ]

@@ -1,0 +1,5677 @@
+
+
+Play Novel Silent Hill
+Translation of Cybil's Scenario 
+Version 1.05 - Last updated 11/03/2016
+Written by and Copyright 2008-2016 Toby Normoyle (loc182)
+
+
+This is a translation of Cybil's scenario for the Game Boy Advance game, Play 
+Novel Silent Hill. This game was made by Konami and released only in Japan 
+during the spring of 2001. Unfortunately, there appear to be no plans for an 
+English release, so this translation became necessary.
+
+WARNING: This translation assumes knowledge of ALL things Silent Hill.
+Although Cybil's scenario does not have very much in common with the
+original game several plot elements are referenced. So if you have not yet
+played the original Silent Hill on PlayStation then be warned that some of
+the story will be given away. Plot points from other Silent Hill games
+are also referenced in section four of this document as relevant.
+
+Japanese text support is necessary to properly display this document. If the 
+following line is displayed properly then you have the proper language support:
+プレイノベル　サイレントヒル　ＰＬＡＹ　ＮＯＶＥＬ　ＳＩＬＥＮＴ　ＨＩＬＬ
+(Note: You will probably need to change the encoding on your browser to
+Japanese manually to view this page. I also recommend setting the font to 
+FixedSys as that is what was used to write this translation.)
+
+
+
+Table of Contents
+
+1. How to Use this Translation
+2. Translation of Cybil's Scenario
+3. Credits
+4. Translation Notes
+5. Contact Information and Update History
+6. Copyright Information
+
+
+
+1. How to Use this Translation
+
+Welcome to the translation of Cybil's scenario!
+
+This translation is designed not only to bring you an English version of the 
+game, but also to guide you through the game to each of Cybil's six endings.
+
+Before you attempt to use this translation I highly recommend that you first
+take a look at the Playing Guide for Play Novel Silent Hill, which is also
+available on GameFAQs. It explains exactly how the game works, and will help
+you to better understand the format and some of the terms used in this
+translation.
+
+Important note for Cybil only: As Harry's scenario was generally written from
+his perspective it was easy to write everything in plain text. Conversely,
+Cybil's scenario contains both narration and Cybil's thoughts. I would have
+loved to use italics for everything that is one of Cybil's thoughts, but alas,
+this was not possible in a plain text environment. So anything that represents
+one of Cybil's thoughts will be indented in this translation.
+
+Once you are ready to jump into the translation, you just need to read along
+as you play the game on your Game Boy Advance. In order to make it as easy
+as possible to follow along the following features have been integrated into
+this translation:
+
+-Chapter and Area subdivisions-
+  The actual game is divided into chapters and areas, so the translation has
+  been divided in the same way. All 10 chapters from Cybil's scenario are
+  present, in order from the Introduction to Chapter 9. Within each chapter
+  the areas are then divided from one another. Each area is numbered using the
+  numbering system from the official Konami guide book. This numbering system
+  works well, and by remaining consistent owners of that book will not be
+  confused. These numbers can be found at the beginning of each area on the
+  far right of the screen, and will appear in this format: "Chapter #-Area #".
+  Directly below these numbers a description of the background picture
+  associated with the area on the flowchart will also appear. Although many
+  areas have the same background picture on the flowchart, this can still help
+  you to figure out where you are in the game to a degree.
+
+-Block Names and Event Descriptions-
+  At the beginning of every block, the block name and event description will
+  appear along with the Chapter number in both Japanese and English. By
+  using these pieces of information you can always figure out exactly where
+  you are in the game. All you need to do is compare the Japanese in the
+  translation with what you see on the loading screen or the flowchart in the
+  game. By doing so you will be able to figure out exactly where you are, even
+  if you do not understand Japanese.
+  (Note: The event description for a block will always be enclosed in Japanese
+  quotation marks when a game is loaded, but not when viewed on the flowchart.
+  For this reason I have not placed Japanese quotation marks around any
+  event descriptions for the first (or only) block in any area that can be
+  accessed with the flowchart.)
+
+-Page breaks and pictures-
+  Within each block of each area all page breaks have been faithfully
+  reproduced. So if there are 13 pages of text in a certain block in the game
+  then you will find 13 pages here in the translation. A description of the
+  current background picture will appear in parenthesis with the first page of
+  each block, and all picture changes will be noted with the page that the
+  change occurs on. Additionally, movies and important events will be noted in
+  a similar fashion to help make it easier to keep your position in the
+  game and in the translation in sync. (Please note that sometimes the
+  format of the text on a specific page will vary between the original
+  Japanese in the game and the translation. This is particularly true with
+  any text that represents Cybil's thoughts, as this text will always be
+  indented in the translation.)
+
+-Area transitions-
+  When you reach the end of an area or make a choice you will be told exactly
+  which area you should move to next. This will be done using the same
+  numbering system that appears at the beginning of each area. So if you are
+  told to "Go to 1-1" at the end of an area, then that means you just need to
+  go to Chapter 1, Area 1. All the areas are in order, so you can either
+  scroll to the correct area, or use the find function to get there.
+  (Unfortunately the find function will not always work so well, as several of
+  the numbers are similar. For example, a search for 3-5 might also take you
+  to any areas that direct you to go to 3-5 before it will actually take you
+  to Area 3-5.) 
+
+-Digital Trading Cards-
+  Once you reach an ending, the translation will tell you exactly which
+  digital trading cards you should receive.
+
+So now you should be all set to jump into the translation and use it to enjoy
+Play Novel Silent Hill on your Game Boy Advance. Please remember to check out
+the Playing Guide if you need any help with the technical aspects of the game.
+
+Finally, if there is a piece of this translation that you strongly disagree 
+with then please see Section 4, Translation Notes, before writing as the
+issue may have already been addressed.
+
+
+
+2. Translation of Cybil's Scenario
+
+_______________________________________________________________________________
+序章　　「出動」                                                   Introduction
+繋がらぬ電話                                                 (Not on flowchart)
+Introduction   "Dispatch"
+The phone call that won't go through
+
+Page 1 (Black)
+"Hello...hello!?"
+The phone had suddenly gone dead.
+She tried to call back right away; however, the call would not go through.
+
+Page 2
+"Perfect...I wonder what is going on."
+
+Her co-worker Sally saw Cybil's flushed face, and could not 
+help making a joke.
+"It's because you are so hostile.
+I bet they just don't want to talk to you anymore."
+
+Page 3
+"Hostile?
+Perhaps, after all I do always say what's on my mind."
+Saying this, Cybil smiled.
+
+Page 4
+The peaceful town of Brahms.
+The population is small, and perhaps for this reason there has not been an
+incident worth calling an incident for several years.
+As for the officers on the night shift, they generally pass the time
+by staring at newspaper clippings or chatting with colleagues at
+other departments.
+
+Page 5
+Even now, with nothing notable appearing in the local news,
+Cybil was just having a meaningless conversation about this and that
+with a friend in the Silent Hill police department.
+
+But then suddenly, the line had gone dead.
+
+Page 6
+And they had not called back.
+
+Page 7
+"...The call won't go through."
+
+"Maybe this is happening because someone is trying to tell you not to waste
+all your time chatting? How about settling down and taking your feet off
+the desk?"
+
+Cybil does not care for Sally's big sister-like attitude.
+
+Page 8 (Cybil seated in police station)
+Cybil calls the Silent Hill police station one more time.
+  "Odd," Cybil thought.
+It seems as if this might be the result of the telephone lines
+having been severed or something.
+
+Page 9 (Cybil walking out of police station)
+Cybil leaps from her chair, causing it to spin, reaches for the helmet
+on top of a locker, and with it in hand prepares to leave the room.
+
+Page 10
+"Wait! Just where do you think you are going at this hour?"
+
+Sally has a look of "you have got to be kidding" on her face, and then
+she absentmindedly allows the coffee cup she was holding in her right hand
+to fall to the floor.
+
+Page 11
+"Ahhhh! Hot!"
+
+  "You can take care of that yourself."
+Cybil mumbles this in her head, and in the next moment ran out of the room.
+
+Page 12 (Black)
+Cybil straddles the motorcycle in the garage, inserts the key, and revs the
+engine.
+The sound of the exhaust resonates in the small space.
+She pulls out onto the road, and increases her speed as she is bathed
+from head to toe in the uncomfortably warm wind.
+
+Page 13 (Cybil on motorcycle)
+Starlight falls upon her from the clear starlit sky.
+It doesn't look like the weather could have caused the problem with the
+phone lines.
+
+Page 14
+Cybil tightly holds onto the handlebars and continues to increase her speed.
+At this hour there should not be any other cars heading to Silent Hill.
+The road has been lit in front and behind only by streetlamps since she
+reached this mountain road, and there is no sign of anyone in the area.
+
+Page 15 (Cybil behind Harry's jeep)
+However, after a while she was able to see the tail lights of a vehicle
+swaying far off in the darkness in front of her.
+There is a cliff on one side of the road.
+Whether they realize that or not, the vehicle is heading toward the same
+destination as Cybil at high speed.
+
+Page 16
+"Normally I would pull this guy over."
+
+Cybil mutters this, increases her speed, and catches up with the four-wheel
+drive jeep in no time.
+
+Page 17
+As she passes it, Cybil glances inside the jeep for a moment, quickly smiles,
+and then blasts in front of it.
+The jeep quickly becomes smaller and smaller in the side mirrors of her
+motorcycle.
+
+Page 18 (Road, flickering)
+..................
+
+Page 19
+And then...
+She started to notice that she could not keep her eyes focused.
+  "Sleepiness?
+  No, I have been on the night shift for a while, and should have gotten
+  plenty of sleep this afternoon."
+
+Page 20
+Her body becomes one with the motorcycle, and it slices through the
+darkness.
+  "Maybe it was foolish to wear short sleeves..."
+Although it was rather warm when Cybil left the station, now
+her skin feels so cold that it is like the cold is cutting into her.
+
+Page 21
+Her eyelids are heavy. Her mouth has become dry.
+  "What's wrong with me," she lightly shakes her head left and right.
+Against her will, her right hand turns the grip that will cause her to
+accelerate. The needle is buried, and madly shakes back and forth.
+Cybil then stared straight forward.
+
+Page 22 (Alessa in road, arms crossed)
+But it was already too late.
+In the middle of the road a girl stood, with her arms raised to
+shield her from the light.
+
+(View moves side to side)
+
+Page 23 (Black)
+Cybil slammed on the brakes.
+The last thing she saw was the rapidly approaching rock wall on the side of
+the road...
+
+
+Go to 1-1
+
+
+_______________________________________________________________________________
+第一章　　「到着」                                                          1-1
+雪の降る街                                            (Cybil walking in street)
+Chapter 1   "Arrival"
+The snowy town
+
+Page 1 (Black)
+Hita... 
+
+Hita... (Onomatopoeia for the feeling of cold)
+
+Page 2
+Something cold is touching Cybil's cheek.
+Cybil slowly opened her eyes.
+
+Page 3
+  "Where am I..."
+She is not yet able to stand up.
+She does not seem to be hurt; however, her body will not do as she commands.
+Nevertheless, she is fully conscious.
+
+Page 4
+Large snowflakes are falling all over her body.
+She is lying face down in the middle of a wide street.
+  "I wonder just how long I have been here like this?"
+
+Page 5
+After waiting for the nerves throughout her body to return to normal Cybil
+lumbered to her feet.
+Her body was sluggish, like when she wakes up, and she was unable to think
+straight.
+
+Page 6 (Cybil walking in street)
+"Silent Hill"
+That is what is written on the sign on the sidewalk.
+In addition to the out of season snow the area is enveloped in thick fog,
+which generally makes her destination look differently than it normally would.
+The motorcycle that she came here on was also nowhere to be found.
+
+Page 7
+With nothing else to do, she decided to rest in the cafe facing the street.
+
+第一章　　「カフェ」
+「無人の店」
+Chapter 1   "Cafe"
+The empty cafe
+
+Page 8 (Cafe)
+The inside of the cafe is dead silent.
+She does not see any customers or employees.    
+This destroys her hopes of getting something warm to drink, so she lets out a
+sigh.
+
+Page 9
+  "First I must get in contact with the other officers back in Brahms."
+Cybil picks up the receiver from the phone on the corner of the counter, but
+not a single sound can be heard from the speaker.
+
+Page 10
+It seems like somehow the heavy snowfall, which could be called abnormal
+weather, has damaged the communication systems.
+
+There is no doubt that this is the reason why the call got cut off at the
+(Brahms) station.
+
+Page 11
+Cybil looks around the inside of the cafe.
+
+"Ah..."
+
+She gasps without thinking about it.
+
+Page 12 (Cafe alternate angle with Harry on bench)
+She can see a man lying down on one of the long bench seats lined up along
+the windows.
+  "A customer? No, this place isn't open."
+She moves near him and looks down at his sleeping face.
+His face is twisting in agony, as if he is having a frightening dream.
+
+
+Go to 1-2
+
+
+_______________________________________________________________________________
+第一章　　「カフェ」                                                        1-2
+眠っている男                         (Cafe alternate angle with Harry on bench)
+Chapter 1   "Cafe"
+The sleeping man
+
+Page 1 (Cafe alternate angle with Harry on bench)
+Cybil hesitates.
+
+A ) She waits for the man to wake up.
+     Go to 1-3
+
+B ) She wakes the man up.
+     Go to 1-4
+
+
+_______________________________________________________________________________
+第一章　　「カフェ」                                                        1-3
+男が起きるまで待つ                   (Cafe alternate angle with Harry on bench)
+Chapter 1   "Cafe"
+Cybil waits for the man to wake up
+
+Page 1 (Cafe alternate angle with Harry on bench)
+Cybil was relieved to know that she was not the only person in the town.
+She sat down at the counter and waited for the man to awaken.
+
+Page 2
+After a bit Cybil thought that the man's breathing had become troubled. As she
+thought this he forcefully sat up.
+
+Movie: Harry wakes up in Cafe 5 to 2
+
+Page 3 (Cybil standing in the center of the cafe)
+Cybil moved over to the man until she was able to look down at him and 
+then folded her arms.
+
+She was relieved.
+That was how she honestly felt.
+
+Page 4
+"It looks like you have come around."
+
+"Who are you?"
+
+The man asked this while heavily shaking his head.
+
+Page 5
+"I'm Cybil.
+Cybil Bennet.
+All communication with this town suddenly went dead. This worried me, so
+I came here to investigate."
+
+Page 6
+"I'm...Harry Mason. I brought my daughter to this town for some sightseeing, 
+but on the way there was an accident and I lost consciousness...
+
+Oh, yeah, Cybil...You haven't seen a little girl in this town have you?"
+
+第一章　　「カフェ」
+「小さな女の子？」
+Chapter 1   "Cafe"
+A little girl?
+
+Page 7 (Cybil changes)
+For a moment Cybil could not hide her astonishment, but then because of her
+profession she quickly feigned a more resolute attitude.
+
+Page 8
+"A little girl...
+No, I haven't seen her..."
+
+"When I came to after the accident my daughter was nowhere to be seen.
+The passenger door was open and she was gone.
+
+Page 9
+Cheryl...uh, sorry, my daughter's name is Cheryl...
+She is a timid child, so it is hard to imagine that she headed out into this 
+weird town alone.
+Plus I was there in the driver's seat...
+And since she gave me no warning it just doesn't make sense.
+
+Page 10
+Are you familiar with this area?
+There is no sign of anyone, and what is going on with the snow at this time 
+of year...
+Just what in the world has happened in this town?"
+
+Harry spoke while sighing.
+
+Page 11
+"I'm afraid I don't know either.
+I still haven't seen anyone other than you.
+It's like the town is as silent as a graveyard, left without even the means 
+to contact any neighboring towns."
+
+"I see."
+
+Page 12 (Cybil Changes)
+"So you also had an accident?
+I thought it was a good idea to head to the police station in this town alone 
+on my motorcycle, but...
+I guess I was going a little too fast.
+
+Page 13
+A girl suddenly jumped out into the road...I am pretty sure it was a girl...I 
+almost hit her.
+I cut the handlebars hard in order to avoid her...
+After that I can barely remember anything......
+
+Page 14 
+When I came to I was lying in the street in front of this cafe.
+So naturally I came in here to get out of the snow.
+And then I found you sleeping there..."
+
+Page 15 
+"I...was having some kind of a terrible dream.
+As for if I made it here on my own I don't remember at all...
+Just what in the world has happened in this town...
+What is going on with everything?"
+
+Page 16
+"Well, the situation is definitely strange.
+I will head back to Brahms for reinforcements, and then return here.
+How about you?"
+
+Cybil stood and fixed her collar with resolute fortitude.
+
+
+Go to 1-5
+
+
+_______________________________________________________________________________
+第一章　　「カフェ」                                                        1-4
+男を起こす                           (Cafe alternate angle with Harry on bench)
+Chapter 1   "Cafe"
+Cybil wakes the man up
+
+Page 1 (Cafe alternate angle with Harry on bench)
+Cybil approaches the man and holds her arms out in a way that suggests that
+she is going to shake his shoulders.
+
+Movie: Harry wakes up in Cafe 5 to 2
+
+Page 2 (Black)
+At that moment the man woke up with a look of surprise on his face.
+He shook his body in a way to brush Cybil's hands away, and then stared at her.
+
+Page 3 (Cafe) (Cybil appears)
+"Human? Are you human?"
+
+Cybil makes an effort to compose herself and then sits down on a nearby chair. 
+
+"Of course I am. Were you having a bad dream or something?"
+
+Page 4
+The man finally regains his composure as well, and then he adjusts his
+position on the bench seat.
+
+"...Sorry.
+I was attacked by mysterious monsters before I came here."
+
+"Mysterious...monsters?"
+
+Page 5
+"Ah, yeah...
+It may have been just a dream...
+I think that it was real.
+It was all vague and unclear...
+Who are you?"
+
+Page 6
+"I'm Cybil.
+Cybil Bennet.
+I am a police officer in the neighboring town of Brahms.
+All communication with this town suddenly went dead, so I came here to
+investigate."
+
+Harry's expression changed slightly to one of relief.
+
+Page 7
+"I should have said so sooner but, I'm Harry Mason.
+I am a writer.
+I had decided to come here for my first vacation in a while."
+
+Harry shrugged his shoulders and looked at Cybil with a serious look
+on his face.
+
+Page 8
+"But when I arrived here I got separated from my daughter.
+She is a little girl, seven years old with black hair.
+Her name is Cheryl...
+You haven't seen her have you?"
+
+Page 9
+"Sorry, but I haven't..."
+
+"...I see.
+Just where did she go?
+She is not the type to just act on her own..."
+
+Page 10
+"When I came to I was lying in the street in front of this cafe.
+As for how I got here, I don't remember at all."
+
+"That sounds a lot like what happened to me...
+Well, anyway..."
+
+Page 11
+Harry stands up and glances at the out of season snow that continues to fall.
+
+
+Go to 1-5
+
+
+_______________________________________________________________________________
+第一章　　「カフェ」                                                        1-5
+拳銃を男に渡す                                            (Gun in Cybil's hand)
+Chapter 1   "Cafe"
+Cybil gives the man a handgun
+
+Page 1 (Cybil standing in the center of the cafe)
+"I've got to look for Cheryl...
+There is no way I can just leave her here alone."
+
+Page 2 (Gun in Cybil's hand)
+"I see. Well, I'll give you this then.
+You never know what might happen under these circumstances.
+If you feel threatened then pull the trigger without hesitating."
+
+Page 3
+She gives Harry a handgun loaded with live ammunition.
+
+Page 4
+"But you...will you be alright?"
+Harry asks worriedly.
+
+"I'm not like the average girls around here.
+I have undergone the proper training."
+
+Page 5
+Cybil placed her hand on the exit door, but then she turned and faced Harry
+again.
+
+Page 6
+"Harry. Don't go shooting me by mistake or anything.
+I haven't had any training on how to stop bullets."
+
+Page 7
+She smiled after saying this, opened the door of the cafe, and then headed 
+out into the thick fog.
+
+
+Go to 2-1
+
+
+_______________________________________________________________________________
+第二章　　「脱出への道」                                                    2-1
+八方塞がり                                                  (Street, heavy fog)
+Chapter 2   "The Path to Escape"
+No way out
+
+Page 1 (Street, heavy fog)
+Cybil looks back and sees that the cafe has disappeared into the fog.
+Having lost her motorcycle, Cybil can only wander about on foot and alone
+in the eerie town.
+
+Page 2 
+  "It's too quiet.
+  There is no sense of anyone at all.
+  I would like to hail a taxi or something, but there is not a single car
+  running."
+
+Page 3
+At some point Cybil had began to run.
+Above all she must get out of Silent Hill.
+However, after running for a bit Cybil's hopes were crushed.
+
+Page 4 (Destroyed street)
+All the roads leading out of town were cut off, and it was as if the
+entire town was floating in the air. There was no way for anyone to enter the
+town.
+
+Page 5
+"Haaaah..."
+Cybil sighs deeply.
+She then decides to try going back the way she came.
+After running for a bit she comes to another steep valley like before.
+It is wide and impedes her passage.
+
+Page 6
+And then she became sure that it was not possible to escape from this place.
+
+Page 7
+Cybil felt like a bird in a cage as she walked apathetically and aimlessly
+through the falling snow.
+
+Page 8
+It was not long before a black, wriggling object appeared in her
+field of vision.
+
+第二章　　「脱出への道」
+「霧の向こうの小さな影」
+Chapter 2   "The Path to Escape"
+The small shadow off in the fog
+
+Page 9 (Alternate street) (Groaner appears)
+"What...is that?"
+
+From off in the fog, the four-legged thing moved at a slow pace as it
+gradually closed the distance between it and her.
+
+Page 10
+And then as soon as it detected Cybil it began to ferociously run toward her,
+scattering the fog as it moved.
+
+
+Go to 2-2
+
+
+_______________________________________________________________________________
+第二章　　「脱出への道」                                                    2-2
+獰猛な化け物に襲われて                                       (Alternate street)
+Chapter 2   "The Path to Escape"
+Attacked by the ferocious monster
+
+Page 1 (Alternate street) (Groaner appears)
+The monster...
+
+A ) attacked Cybil.
+     Go to 2-3
+
+B ) just ran away.
+     Go to 2-4
+
+
+_______________________________________________________________________________
+第二章　　「脱出への道」                                                    2-3
+シビルに襲い掛かる化け物            (Alternate street with close up of Groaner)
+Chapter 2   "The Path to Escape"
+The monster attacks Cybil
+
+Page 1 (Alternate street with close up of Groaner)
+"KYA!"
+Cybil just manages to duck in time and the fierce monster passes over her
+head. It continues forward just a little bit, and then turns around.
+It is clear that it is coming after Cybil.
+
+Page 2
+Cybil places her hand on her belt to draw her handgun.
+She utters, "Oh!"
+
+She had just given her handgun to Harry not long ago.
+She went pale.
+
+Page 3
+Cybil forcefully stands up and begins to run with all her strength.
+The sound of the monster's footsteps and its panting close in on her
+as it persistently chases her from behind.
+
+Page 4 (Street, heavy fog)
+She stomps on the pavement as she moves forward. In the corner of her eye
+Cybil sees buildings appear out of and disappear into the fog, and at some
+point she ends up losing her bearings and becomes unsure of her location.
+She then notices that she no longer senses the presence of the monster.
+
+
+Go to 2-5
+
+
+_______________________________________________________________________________
+第二章　　「脱出への道」                                                    2-4
+そのまま走り去る化け物                                       (Alternate street)
+Chapter 2   "The Path to Escape"
+The monster just runs away
+
+Page 1 (Alternate street)
+The monster just moves right past Cybil, and then continues away from her.
+  "Clearly...
+  Clearly it is headed somewhere with some purpose."
+
+Page 2
+Various concerns run through the back of Cybil's mind.
+Instinctively, she begins to chase after the monster.
+
+Page 3
+However, its speed is fast and it does not appear possible for Cybil to
+be able to catch up to it.
+Additionally, the thick curtain of fog is also making her pursuit difficult...
+
+Page 4
+Cybil continues to run for a while, but ends up completely losing sight of
+her target.
+
+
+Go to 2-5
+
+
+_______________________________________________________________________________
+第二章　　「脱出への道」                                                    2-5
+落ち着きを取り戻す                                           (Alternate street)
+Chapter 2   "The Path to Escape"
+Calming down
+
+Page 1 (City street, heavy fog)
+She stops and leans against an antique lamppost and presses on her chest.
+She waits as the time between her continuous white breaths
+gradually increases, and then begins walking again.
+
+
+Go to 2-6
+
+
+_______________________________________________________________________________
+第二章　　「カフェを後に」                                                  2-6
+込み上げる不安                                               (Alternate street)
+Chapter 2   "After Leaving the Cafe"
+Rising uneasiness
+
+Page 1 (City street, heavy fog)
+Cybil...
+
+A ) calms herself down.
+     Go to 3-1
+
+B ) is overcome with hopelessness.
+     Go to 3-6
+
+
+_______________________________________________________________________________
+第三章　　「警察署」                                                        3-1
+警察署を探して                                        (Front of Police Station)
+Chapter 3   "The Police Station"
+Searching for the Police Station
+
+Page 1 (City street, heavy fog)
+Being unable to escape from Silent Hill, Cybil then worried about what she
+should do next.
+Since all the people have vanished she cannot even talk to anyone about what
+is happening here.
+
+Page 2
+  "I should look for the police station.
+  Even if the person I was talking on the phone with earlier isn't there,
+  I might be able to get some other information there."
+She has visited this town many times.
+Following the thread of her memory, she begins walking along the
+complicated intersecting streets.
+
+第三章　　「警察署」
+「ＰＯＬＩＣＥの文字」
+Chapter 3   "The Police Station"
+The word "POLICE"
+
+Page 3 (Front of Police Station)
+  "Just how long have I been walking?"
+As she saw the word "POLICE" appear from out of the fog her entire body was
+completely exhausted.
+
+Page 4 (Inside of Police Station)
+She opens the glass door at the entrance and heads inside. As she does this
+she sees that no one is here, which is just as she had expected.
+The lack of any sound is painful to her ears.
+
+Page 5
+After she walked around the reception area for a bit she moved toward
+a room that the door had been left open for.
+The plate beside the door says "Meeting Room".
+
+Page 6
+Compared to the same room at the Brahms station, this one is quite small.
+She looked around the room.
+
+
+Go to 3-2
+
+
+_______________________________________________________________________________
+第三章　　「警察署」                                                        3-2
+会議室の中で                                         (Inside of Police Station)
+Chapter 3   "The Police Station"
+Inside the meeting room
+
+Page 1 (Inside of Police Station)
+"Ah......"
+
+A ) The phone is off the hook...
+     Go to 3-3
+
+B ) Someone is here...
+     Go to 3-4
+
+
+_______________________________________________________________________________
+第三章　　「警察署」                                                        3-3
+外された受話器                                       (Inside of Police Station)
+Chapter 3   "The Police Station"
+The dangling telephone receiver
+
+Page 1 (Inside of Police Station)
+Two long simple folding tables are lined up next to each other in this
+room, which is about 140 square feet in size.
+
+Page 2
+Folding chairs surround the tables. The disorderly state of the chairs makes
+the empty station seem unnatural.
+
+Page 3
+A telephone is on top of the small wooden desk that has been placed in the
+corner of the room.
+The telephone receiver is dangling in the air just above the floor, as if
+it had fallen off. It is bouncing up and down.
+
+Page 4
+"I wonder if this the phone that I was connected to?"
+
+Cybil hangs the receiver up, but then picks it back up again and places it
+against her ear.
+  "Of course it is not working."
+
+Page 5
+The problem is that the police station is completely empty.
+Even Cybil, who had been skeptical about the condition of the town up to this
+point, now had to accept things as they were.
+  She thought, "Something terrible has happened here."
+
+Page 6
+There is a phone.
+A scribbled memo has been placed next to it.
+
+(Telephone mini-game) (38*2647*)
+
+Page 7 (Black)
+"...Da......"
+
+Page 8
+Cybil hastily repositioned the telephone receiver.
+
+Page 9
+"...Da...ddy..."
+
+Page 10
+"Cheryl!
+This is Cheryl, right?
+I am looking for you.
+Can you hear me?"
+
+Page 11
+"...Da......help me..."
+
+The telephone is muddled, so Cybil cannot hear it very clearly.
+
+"Cheryl!
+I am coming to help you now!
+Tell me where you are!"
+
+Page 12
+"...the...in the......elementary school......"
+
+Page 13
+The phone went dead.
+
+
+Go to 3-5
+
+
+_______________________________________________________________________________
+第三章　　「警察署」                                                        3-4
+人の気配？                                           (Inside of Police Station)
+Chapter 3   "The Police Station"
+The presence of a person?
+
+Page 1 (Inside of Police Station)
+Cybil senses someone...
+Somewhere in this small room...
+
+Page 2
+Underneath the lined up tables...
+Behind the folding chairs...
+Cybil cautiously checked all the places that someone could hide in, but...
+It does not appear that anyone is here.
+
+Page 3
+The faded ceiling fan is blowing air down towards Cybil.
+That might have been what made her so sure someone was here, or perhaps
+it was just her imagination.
+
+Page 4
+She is uneasy.
+She wants to talk to someone, to anyone.
+These feelings might be what made Cybil think that someone was here.
+
+
+Go to 3-5
+
+
+_______________________________________________________________________________
+第三章　　「警察署」                                                        3-5
+警察署を後に                                         (Inside of Police Station)
+Chapter 3   "The Police Station"
+Leaving the Police Station
+
+Page 1 (Black)
+  "What was that all about?"
+Cybil left the police station.
+Cybil is once again in the city streets where the snow is falling.
+  "That's right..."
+Cybil recalled her conversation with Harry.
+
+Page 2 (Close up of Harry in cafe)
+  (Oh, yeah, Cybil...You haven't seen a little girl in this town have you?)
+
+Page 3
+  "A little girl...
+  Yes...Cheryl.
+
+  I wonder if I will be able to rescue her unharmed in this town which has
+  become a nest of monsters..."
+
+Page 4
+But Cybil is a police officer.
+To find and protect Cheryl is her responsibility and her mission.
+
+Page 5
+Realizing this Cybil could not sit still, and in the next moment she was gone.
+
+
+Go to 4-1
+
+
+_______________________________________________________________________________
+第三章　　「警察署での再会」                                                3-6
+警察署を捜し求めて                                   (Inside of Police Station)
+Chapter 3   "Reunion at the Police Station"
+Seeking out the Police Station
+
+Page 1 (City street, heavy fog)
+Being unable to escape from Silent Hill, Cybil then worried about what she
+should do next.
+Since all the people have vanished she cannot even talk to anyone about what
+is happening here.
+
+Page 2
+  "I should look for the police station.
+  Even if the person I was talking on the phone with earlier isn't there,
+  I might be able to get some other information there."
+She has visited this town many times.
+Following her the thread of her memory, she begins walking along the
+complicated intersecting streets.
+
+第三章　　「警察署」
+「どれくらい歩いたのか」
+Chapter 3   "Police Station"
+Just how long have I been walking?
+
+Page 3 (Front of Police Station)
+  "Just how long have I been walking?"
+As she saw the word "POLICE" appear from out of the fog her entire body was
+completely exhausted.
+
+Page 4 (Inside of Police Station)
+She opens the glass door at the entrance and heads inside. As she does this
+she sees that no one is here, which is just as she had expected.
+The lack of any sound is painful to her ears.
+
+Page 5
+After she walked around the reception area for a bit she moved toward
+a room that door had been left open for.
+The plate beside the door says "Meeting Room".
+Compared to the same room at the Brahms station, this one is quite small.
+She looked around the room.
+
+Page 6
+Clunk.
+At the same time Cybil entered the room one of the disorderly arranged
+folding chairs moved quite a bit.
+
+She readied herself.
+
+"Who's there?"
+
+Page 7 (Harry appears)
+A man jumped up right away and pointed a black handgun at Cybil.
+
+
+Go to 3-7
+
+
+_______________________________________________________________________________
+第三章　　「警察署での再会」                                                3-7
+拳銃を向けた男                                       (Inside of Police Station)
+Chapter 3   "Reunion at the Police Station"
+The man pointing the handgun at Cybil
+
+Page 1 (Inside of Police Station) (Harry appears with gun)
+The man...
+
+A ) lowers the gun.
+     Go to 3-8
+
+B ) fires at Cybil.
+     Go to 3-9
+
+
+_______________________________________________________________________________
+第三章　　「警察署での再会」                                                3-8
+銃を下ろす男                                         (Inside of Police Station)
+Chapter 3   "Reunion at the Police Station"
+The man lowers the gun
+
+Page 1 (Inside of Police Station) (Harry appears with gun)
+The man slowly returns the weapon to his side.
+
+"Cybil..."
+
+"Harry!"
+
+Page 2
+"Sorry. I thought that another monster had appeared.
+So I instantly hid behind a chair."
+
+"Me too...
+All this is not good for my heart, you know."
+
+Page 3 (Harry appears with pipe)
+"Before I came here I found a steel pipe.
+I will give the handgun back to you.
+Like you said, I might end up shooting a human by mistake."
+
+Page 4
+Saying that Harry plops the handgun into Cybil's hand.
+Cybil nods slightly.
+
+"Have you found your daughter?"
+
+Page 5
+"No..."
+Harry shakes his head back and forth.
+
+"I thought she might be in custody at the police station, so I came here..."
+Harry looks around the room and then speaks.
+"But just like this, there is not a single man, woman, or child here."
+
+Page 6
+"Let's look somewhere else.
+There should be a church just over the river.
+Maybe she is in custody there?"
+
+Page 7
+"OK." (Harry)
+They ran out of the police station with Harry in the lead.
+
+
+Go to 3-10
+
+
+_______________________________________________________________________________
+第三章　　「警察署での再会」                                                3-9
+発砲する男                                           (Inside of Police Station)
+Chapter 3   "Reunion at the Police Station"
+The man fires
+
+Page 1 (Inside of Police Station) (Harry appears with gun)
+(Bang!)
+
+The bullet grazes Cybil's temple and impacts on the wall of the meeting room.
+Shocked, Cybil sank to the floor.
+
+Page 2
+"Cybil!"
+
+All the color has drained out of the face of the man that is standing in front
+of the still unable to speak Cybil.
+It was unmistakable...it was Harry.
+
+Page 3
+"Sorry...! Are you alright?"
+
+".........I was shocked...
+If you had been just a little more over then you would have hit me!"
+
+Harry sighs deeply.
+
+Page 4
+"I have done an unforgivable thing.
+I have encountered monsters up till now.
+I ran in here to get away...
+I was sure that the monsters had come in..."
+
+  Cybil thought, "Please don't mistake me for a monster."
+
+Page 5
+"At any rate, I wondered if maybe someone might be here, so I came in to
+check it out..."
+
+"As you can see, things are like this."
+
+Page 6
+The inside of the station was ominously silent.
+Even if the other officers were here, since there are monsters running loose
+outside there is no reason for the two of them to just relax and warm up in
+the station.
+
+Page 7
+"Let's look somewhere else.
+There should be a church just over the river.
+Maybe she is in custody there?"
+
+"OK." After muttering this Harry holds the gun out to Cybil as if he has
+realized something.
+
+Page 8 (Harry appears with pipe)
+"I will give this back to you.
+I have had a few opportunities to use it, but this seems more suited to me."
+
+Harry says this and readies a long steel pipe that he picked up somewhere.
+
+Page 9
+"I see.
+But you would be better off just getting used to using it."
+
+Harry has a sorrowful look on his face. Cybil gives him a contemptuous glance
+and then a smile appears on her face. Then she runs out of the station.
+
+
+Go to 3-10
+
+
+_______________________________________________________________________________
+第三章　　「教会へ」                                                       3-10
+ハリーと教会へ                                         (City street, heavy fog)
+Chapter 3   "To the Church"
+Heading to the church with Harry
+
+Page 1 (City street, heavy fog)
+On the way to the church Harry tells Cybil about the events that occurred in
+the cafe while running out of breath.
+
+Page 2
+"Indeed...something is wrong here." (Cybil)
+
+"I was glad to have received the handgun from you..."
+Cheryl doesn't have any weapons.
+And she is just a little girl..."
+
+Page 3
+Hoping that Cheryl would be at the church Cybil carefully ran over the
+slippery asphalt.
+
+
+Go to 4-12
+
+
+_______________________________________________________________________________
+第四章　　「小学校」                                                        4-1
+無人の校舎                                                    (School entrance)
+Chapter 4   "Elementary School"
+The deserted school
+
+Page 1 (Black)
+  "There should be an elementary school on the edge of town."
+Cybil followed her intuition and decided that Cheryl probably headed for the
+school after wandering around town.
+
+Page 2
+Per her training in child psychology, she has learned that if a child
+loses their parents or guardian then the chance is high that they will
+be drawn to places that they are most used to going, places where there are
+a lot of people.
+
+Page 3
+However, ahead of her all knowledge, either a bit instinctively, or due to a
+sense similar that to that of a memory coming back, she believed somewhere
+within her heart that Cheryl was probably at the elementary school.
+
+Page 4 (School entrance)
+Cybil may have been drawn here by someone.
+As she nears the elementary school part of her shirt becomes soaked
+with clammy sweat.
+
+Page 5
+  "Is it really ok to go inside?"
+She asks herself this many times.
+
+第四章　　「小学校」
+「後には引けない」
+Chapter 4   "Elementary School"
+No turning back
+
+Page 6
+As she reached the edge of the school grounds her conscientious sense of duty
+as a police officer rose up within her along with her sense of reason, and
+she began to walk naturally towards the school.
+
+Page 7
+It is now too late for her to turn back.
+She readies herself, and then using both hands she pushes the door in front
+of her open with all her strength.
+
+Page 8 (Black)
+The aged building reeked of a peculiar mildew.
+However, its insides were much cleaner than she had expected, and
+Cybil found this a bit surprising.
+
+Page 9
+Perhaps it was just the result of her enduring the cold wind for so long, but
+she had a terrible headache.
+Cybil pressed her fingers to her temples, and eventually began to walk
+aimlessly again.
+
+Page 10 (School hall, dark)
+Cybil opened a door leading to a long hallway. She looked through the
+glass windows placed in the doors of the classrooms while slowly walking.
+There was no sign of Cheryl.
+
+Page 11
+The courtyard is to her right.
+The landscaping is very nice, and has been well cared for.
+The snow has become sleet.
+It does not look like it will accumulate.
+In the back of the courtyard there is an old-feeling clock tower; however,
+Cybil is not particularly interested in it.
+
+Page 12
+  "Hmm, I wonder how Harry is doing...
+  I wonder if the gun I gave him has come in handy...
+  If I cannot meet with Harry after I find Cheryl then it will be
+  meaningless...
+
+Page 13
+  We should have made plans to rendezvous somewhere..."
+
+Cybil thought this, but at this point nothing could be done.
+
+Page 14 (Black)
+At any rate, there was her horrible headache.
+It is gradually getting worse, dulling her sense of time and space.
+A sluggishness similar to sleepiness grasps her entire body.
+
+第四章　　「小学校」
+「ひどい頭痛」
+Chapter 4   "Elementary School"
+A terrible headache
+
+Page 15 (Stairs, animated)
+  "Perhaps I am just dreaming all of this?", Cybil thought.
+It is difficult for a person to tell whether they are dreaming or not while
+in a dream, but for her to accept these conditions is just as difficult.
+
+Page 16
+She has no memory of how she got to this town, so it seemed natural
+for her to think that she has been in a deep sleep since the moment of the
+motorcycle accident until now.
+
+Page 17
+  "Or possibly from even before then...
+  From the time of the phone call with the Silent Hill (police) station?
+
+  Or maybe..."
+
+Page 18
+While contemplating the many possibilities, Cybil climbed the stairs to the
+second floor of the school.
+
+
+Go to 4-2
+
+
+_______________________________________________________________________________
+第四章　　「小学校」                                                        4-2
+物音                                                        (School hall, dark)
+Chapter 4   "Elementary School"
+A noise
+
+Page 1 (Black)
+And then...
+
+A ) She heard a melody being played on a piano.
+     Go to 4-3
+
+B ) She heard the scream of a little girl.
+     Go to 4-4
+
+
+_______________________________________________________________________________
+第四章　　「小学校」                                                        4-3
+ピアノの旋律                                                (School hall, dark)
+Chapter 4   "Elementary School"
+A melody on a piano
+
+Page 1 (Black)
+And then she heard a melody being played on a piano from one of the classrooms.
+
+Page 2
+A nervous look ran across Cybil's face.
+And at the same time she felt relief.
+As if being drawn by the sound of the piano Cybil cautiously moves toward
+the room that the is music coming from while feeling along the wall with
+her hand.
+
+第四章　　「小学校」
+「音楽室」
+Chapter 4   "Elementary School"
+Music Room
+
+Page 3
+"Music Room"
+That is what is written on the door.
+The beautiful melody is definitely being played by someone in this room.
+Cybil places her hand on the door.
+
+Page 4
+And at that moment...
+The music suddenly stopped and the area was enveloped in silence.
+
+Page 5 (Music room)
+"Who's there?"
+She says this and then opens the door.
+Inside the center of the room a grand piano has been placed. The piano appears
+cramped within the cozy room.
+
+Page 6
+No one is sitting in front of the piano.
+
+Page 7
+Cybil approaches the piano.
+Its cover is open and the blacks and whites on the keyboard stand out.
+Almost like smoke, the player of the piano appears to have vanished into
+thin air.
+
+Page 8
+"Strange..."
+Cybil mutters.
+Behind the curtains... Under the piano...
+Cybil looked in all the places in the room that a person could hide.
+
+Page 9
+There is only one entrance to this room.
+There is no other way to enter this room other than by using the door that
+Cybil just came through.
+  "Did they jump out of the window?
+  No, this is the second floor.
+  Falling from here would result in more than just an injury."
+
+Page 10
+Having become a little spooked, she turned to leave the room.
+In the next instant Cybil's heart nearly stopped.
+
+Page 11 (Cheryl in music room)
+At the entrance to the music room a white faced girl was sitting still, and 
+just looking at Cybil.
+She appeared to be afraid of something, and her wide eyes were filled with
+tears that looked like jewels.
+
+Page 12
+"Cheryl...?
+Are you Cheryl...?"
+Cybil regained her composure and approached the little girl.
+She kneeled and softly placed her hands on the girl's shoulders, and the
+girl nodded.
+
+Page 13
+"My name is Cybil.
+Your daddy is looking for you.
+If we don't hurry back to him...
+Your daddy is braving danger running around this town.
+Have you seen that ferocious-looking monster?"
+
+Page 14
+Cybil thought of the monster that she had seen in town as she spoke.
+
+
+Go to 4-8
+
+
+_______________________________________________________________________________
+第四章　　「小学校」                                                        4-4
+少女の叫び声                                                (School hall, dark)
+Chapter 4   "Elementary School"
+A little girl's scream
+
+Page 1 (School hall, dark)
+Suddenly Cybil heard the scream of a little girl from in front of her.
+"What ...?"
+A nervous look ran across Cybil's face.
+  "Cheryl? A scream...?
+  ...that could mean..."
+
+Page 2
+However, there was also a feeling of relief deep inside Cybil's heart.
+The presence of another human...
+Someone else who could sympathize with her about this isolated world...
+
+Page 3
+Cybil begins to run.
+It doesn't matter to her who's voice that was, and she runs down the long
+hallway praying that they are okay.
+
+Page 4
+And as she approached a certain room...
+
+
+Go to 4-5
+
+
+_______________________________________________________________________________
+第四章　　「小学校」                                                        4-5
+何かが…                                                    (School hall, dark)
+Chapter 4   "Elementary School"
+Something is...
+
+Page 1 (School hall, dark)
+Cybil noticed something.
+
+A ) The figure of a person.
+     Go to 4-6
+
+B ) Something at her feet...
+     Go to 4-7
+
+
+_______________________________________________________________________________
+第四章　　「小学校」                                                        4-6
+揺れる小さな影                                              (School hall, dark)
+Chapter 4   "Elementary School"
+The small swaying figure
+
+Page 1 (School hall, dark)
+Through the small window in the door Cybil thought that she saw a small
+figure swaying back and forth.
+She stops moving.
+
+Page 2
+"This is..."
+
+"Music Room"
+That is what is written on the door.
+She opens the door without hesitation and rushes into the room.
+
+Page 3 (Black)
+"You..."
+
+Page 4 (Cheryl in music room)
+In the corner of the room a white faced girl was sitting still, and 
+just looking at Cybil.
+She appeared to be afraid of something, and her wide eyes were filled with
+tears that looked like jewels.
+
+Page 5
+"Were you the one that screamed?"
+
+The little girl does not answer.
+Cybil swallows and looks at the little girl again.
+
+Page 6
+"Cheryl...?
+
+Are you Cheryl...?"
+Cybil regained her composure and approached the little girl.
+She kneeled and softly placed her hands on the girl's shoulders, and the
+girl nodded.
+
+Page 7
+"My name is Cybil.
+Your daddy is looking for you.
+If we don't hurry back to him...
+Your daddy is braving danger running around this town.
+Have you seen that ferocious-looking monster?"
+
+
+Go to 4-8
+
+
+_______________________________________________________________________________
+第四章　　「小学校」                                                        4-7
+足に絡まる異物                                              (School hall, dark)
+Chapter 4   "Elementary School"
+The thing tangled around Cybil's feet
+
+Page 1 (School hall, dark)
+Something is tangling and twisting around Cybil's feet.
+
+Page 2
+It feels slippery, and has bound Cybil's feet like a long piece of tape.
+She falls down and lands hard on her butt.
+
+Page 3
+"What...is this...!"
+
+Page 4
+Through her boots she can feel the jelly-like substance moving up her body.
+It is accompanied by a horrible smell that makes her want to vomit.
+"KYAA!"
+
+Page 5
+She tried as hard as she as she could to free herself, but the more she
+struggled, the more it spread, and in no time it had moved to her upper body.
+
+Page 6
+Once it gets in her mouth it will be all over.
+
+Page 7
+"Please stop."
+
+The voice is a little girl's.
+Obeying the voice the jelly stops its movement, and appears to sink into
+Cybil's clothing as it dissipates.
+
+Page 8 (Close up of Cheryl in school)
+Cybil raises her head.
+"Music Room" is written on the door.
+The door is halfway open, and a little girl appears from inside.
+Her soft black hair stands out against her fair complexion.
+
+Page 9
+"Cheryl...?
+Are you Cheryl...?"
+Cybil regained her composure and approached the little girl.
+She kneeled and softly placed her hands on the girl's shoulders, and the
+girl nodded.
+
+Page 10
+"My name is Cybil.
+Your daddy is looking for you.
+If we don't hurry back to him...
+Your daddy is braving danger running around this town.
+
+Page 11
+You also saw that monster just now, didn't you?
+If we don't get out of here soon then we will also be in danger."
+
+Page 12
+Cheryl shakes her head back and forth to say "no".
+Cybil does not understand what Cheryl means, but continues anyway.
+
+Page 13
+"I will protect you.
+Let's go to your Daddy.
+It is my duty to take you to him."
+
+Page 14
+Cybil says this, takes Cheryl's hand in hers and they begin to run down the
+hallway.
+
+
+Go to 4-11
+
+
+_______________________________________________________________________________
+第四章　　「小学校」                                                        4-8
+シェリルへの質問                                         (Cheryl in music room)
+Chapter 4   "Elementary School"
+Questioning Cheryl
+
+Page 1 (Cheryl in music room)
+Cheryl...
+
+A ) shakes her head "no".
+     Go to 4-9
+
+B ) shakes her head "yes".
+     Go to 4-10
+
+
+_______________________________________________________________________________
+第四章　　「小学校」                                                        4-9
+首を横に振るシェリル                                     (Cheryl in music room)
+Chapter 4   "Elementary School"
+Cheryl shakes her head back and forth
+
+Page 1 (Cheryl in music room)
+Cheryl shakes her head no.
+
+Page 2
+"I see. Well, at any rate something strange is happening in this town. All
+the people have completely vanished. If we don't get out of here soon then
+we might disappear as well."
+
+Page 3
+Once again Cheryl shakes her head no.
+Cybil does not understand what Cheryl means, but continues anyway.
+
+Page 4
+"I will protect you.
+Let's go to your Daddy.
+It is my duty to take you to him."
+
+Page 5
+Saying this, Cybil takes Cheryl's hand in hers, and they leave the music room.
+
+Go to 4-11
+
+
+_______________________________________________________________________________
+第四章　　「小学校」                                                       4-10
+首を縦に振るシェリル                                     (Cheryl in music room)
+Chapter 4   "Elementary School"
+Cheryl shakes her head up and down
+
+Page 1 (Cheryl in music room)
+"Yeah.
+You mean the one that looks like a dog?
+I have seen it.
+But he was not ferocious.
+He won't attack anyone or anything like that."
+
+Page 2
+Cybil spoke with surprise.
+"It attacked me.
+And I had given my handgun to your Daddy...
+I thought I was going to die."
+
+Page 3
+"But he was nice to me.
+And he listens to what I say."
+
+Cybil was half shocked, and sighed.
+
+Page 4
+"Well, okay.
+It would be terrible if you got hurt.
+I will protect you.
+Let's go to your Daddy.
+It is my duty to take you to him."
+
+Page 5
+Saying this, Cybil takes Cheryl's hand in hers, and they leave the music room.
+
+
+Go to 4-11
+
+
+_______________________________________________________________________________
+第四章　　「小学校」                                                       4-11
+闇に包まれ行く校舎                                          (School hall, dark)
+Chapter 4   "Elementary School"
+The school becomes enveloped in darkness
+
+Page 1 (Black)
+By chance...
+The two of them happen to look out a window.
+"That's..."
+
+Page 2
+From where they are the visible courtyard has become completely enveloped
+in darkness.
+For it to become night so soon...
+
+Page 3
+For a moment Cybil cannot believe her eyes, but then
+she was only able to worry about whether she would be able to meet Harry.
+
+第四章　　「小学校」
+「真っ暗な廊下を」
+Chapter 4   "Elementary School"
+Down the pitch black hallway
+
+Page 4
+The two of them walk down the pitch black hallway.
+Because of the difference in their strides their footsteps overlap as they
+echo.
+
+Page 5
+At the moment they approached the entrance to the school grounds Cheryl
+spoke directly for the first time.
+
+Page 6
+"I...
+I don't want to leave here.
+I don't want to see my Daddy.
+If we meet there will be sadness.
+You should go back Ma'am."
+
+Page 7
+Cybil stopped walking, and spoke while just staring at Cheryl.
+
+Page 8
+"It's your Daddy.
+There's no reason that it would be sad for you to see him.
+If you stay here then you might get hurt or worse.
+Things would then be truly sad."
+
+Page 9
+Saying that Cybil begins walking again.
+After a bit she stops and adds, "It's Miss, not Ma'am" and then
+the two of them left the school.
+
+
+Go to 5-1
+
+
+_______________________________________________________________________________
+第四章　　「教会」                                                         4-12
+ダリア・ギレスピー                                                     (Church)
+Chapter 4   "Church"
+Dahlia Gillespie
+
+Page 1 (Black)
+They open the heavy door of the church.
+The space inside is wrapped in warm calmness.
+It projects a very solemn feeling.
+
+Page 2
+No churchgoers are present on any of the long benches which have been arranged
+facing the cross in front.
+Perhaps no one is here, thinking this the two of them move further in.
+Eventually they noticed a woman planted on a simple chair above the altar.
+
+第四章　　「教会」
+「一足遅かったわね」
+Chapter 4   "Church"
+You are too late
+
+Movie: Dahlia turns around in the church
+
+Page 3 (Church) (Dahlia appears)
+"You are too late."
+The woman mutters this and stands.
+
+"You are too late.
+The girl that you are looking for just left here."
+
+Page 4
+The color of Harry's face changes.
+
+"Cheryl...?
+Was it Cheryl?
+She is a 7 year old girl with black hair..."
+
+The woman at the altar puts one hand up to silence Harry.
+
+Page 5
+"Even without saying this you would understand. But I will tell you this much.
+
+The two of you will never see that girl again.
+
+Page 6
+My predictions are often correct...
+That girl knows what you are planning, yes.
+She will head towards her goal without being found by you..."
+
+Page 7
+"She is just a young girl!
+She came to this town and then went missing...
+If she did come here then why did you let her go alone?"
+
+Cybil screamed at the woman.
+
+Page 8
+"Oh dear, such words.
+I have no obligation or reason to protect that child.
+And also..."
+
+She stops speaking, and then comes down from the altar.
+
+Page 9
+"She was not alone.
+My daughter is with her."
+
+Cybil frowned.
+
+"Your daughter?"
+
+Page 10
+"If those girls happened to be separated then it would certainly be a pity.
+What is more, my daughter would most surely not remain silent."
+
+第四章　　「教会」
+「ハリーの激情」
+Chapter 4   "Church"
+Harry's fit of passion
+
+Page 11
+Harry began to speak as if the floodgates had just been opened.
+
+Page 12
+"What are you getting at!
+I am Cheryl's guardian.
+I have a responsibility to protect her.
+Tell me where she is going!"
+
+Page 13
+"The hospital. But it is useless to follow after them.
+If you do not want to die then you must leave this place.
+I am Dahlia Gillespie.
+If you do not wish to increase the number of corpses then do not
+disturb those girls...yes?"
+
+Page 14
+Before Dahlia finished speaking Harry ran out of the church.
+
+"Harry! Wait!"
+Cybil prepares to chase after him and looks back at Dahlia.
+Dahlia was there trying to suppress a laugh. All Cybil saw was Dahlia's
+unsightly back side.
+
+第四章　　「黒」
+「黒」
+Chapter 4   "Black"
+Black
+
+Page 15 (Black)
+In order to resurrect myself I will need your body. Please understand this...
+(Alessa)
+
+Page 16
+I understand.
+That is why I came here, and came to see you. (Cheryl)
+
+Page 17
+To think of these seven years...
+I never once was able to get out of bed and couldn't even move... (Alessa)
+
+Page 18
+However, everything is going according to plan and I was able to be
+reunited with you. (Alessa)
+
+Page 19
+But they will come after us.
+What should we do... (Cheryl)
+
+Page 20
+Let me...
+Let me take care of everything... (Alessa)
+
+Page 21
+...........................
+
+Go to 5-5
+
+
+_______________________________________________________________________________
+第五章　　「再びカフェ」                                                    5-1
+カフェに向かい歩き出す                                           (Street, dark)
+Chapter 5   "Cafe, again"
+Walking toward the cafe
+
+Page 1 (Street, dark)
+  "Just what time is it now?"
+Cybil curses the fact that she forgot her watch at the Brahms station.
+  "It is probably late at night."
+She no longer feels the headache or sleepiness from just before.
+
+Page 2
+Holding Cheryl's cold hand Cybil focuses her mind on locating Harry.
+
+Page 3
+She figured that Harry was no longer in the cafe, but wonders if maybe he
+left a memo or something there for her.
+
+Page 4
+Compared to Harry, Cybil should know the geography of Silent Hill better
+because of her profession.
+However, because of the darkness and thick fog that limit her field of vision
+she is in a situation in which it is difficult to know even her current
+position.
+
+Page 5
+She had encountered a strange monster on her way to the school, so
+now she did not have much confidence in being able to find her way back to
+the cafe.
+
+第五章　　「再びカフェ」
+「白みを取り戻した空」
+Chapter 5   "Cafe, again"
+The sky became light again
+
+Page 6
+The sky began to get light while Cybil walked and contemplated the route to
+the cafe.
+This made her think that perhaps time is rapidly passing in this town alone.
+Although the fog was present as ever to decrease visibility, she could see
+a lot better now.
+
+Page 7 (Cafe exterior)
+And then, before she knew it the cafe was right in front of her.
+
+Page 8
+  "...Something isn't right."
+Cybil feels a sense of discord within her.
+
+However, her feet continued on, as if guided by strong power, to the inside of
+the cafe.
+
+第五章　　「再びカフェ」
+「ひどい有様の店内」
+Chapter 5   "Cafe, again"
+The horrible sight inside the cafe
+
+Page 9 (Dead Air Screamer on Cafe floor)
+Cybil led Cheryl through the entrance of the cafe.
+The inside of the cafe had been ravaged.
+The glass windows facing the street were broken and several tables were
+knocked on their sides, so Cybil could not move any further in.
+
+Page 10
+"...oh my god."
+
+  "I wonder if Harry is alright?"
+A red pool of liquid reflects vividly in Cybil's eyes.
+She prayed that it was not Harry's blood.
+
+Page 11
+"Harry! It's me.
+It's Cybil.
+I found Cheryl.
+If you are here then please come out."
+
+There is no answer.
+Cybil had began to step forward, but then gasped with an "Uh".
+
+Page 12
+"Just what...is this..."
+
+The corpse of a brown colored monster that Cybil has never seen before lies
+in the center of the pool of red liquid.
+
+Page 13
+Several shells were scattered about, which meant that Harry probably had
+a battle here.
+
+Page 14
+Since Harry was no longer here she guessed that he defeated this monster
+and then left to search for Cheryl.
+  "Is he hurt?"
+
+
+Go to 5-2
+
+
+_______________________________________________________________________________
+第五章　　「再びカフェ」                                                    5-2
+荒らされた店内                                (Dead Air Screamer on Cafe floor)
+Chapter 5   "Cafe, again"
+The ransacked cafe
+
+Page 1 (Dead Air Screamer on Cafe floor)
+Cybil...
+
+A ) began to search the area.
+     Go to 5-3
+
+B ) cautiously moved towards the monster.
+     Go to 5-4
+
+
+_______________________________________________________________________________
+第五章　　「再びカフェ」                                                    5-3
+何か手がかりは…                              (Dead Air Screamer on Cafe floor)
+Chapter 5   "Cafe, again"
+Some kind of clue...
+
+Page 1 (Dead Air Screamer on Cafe floor)
+Thinking that perhaps there was a memo, Cybil began her search with the
+counter; however, there did not appear to be anything there.
+  "Maybe Harry left here in a hurry after being attacked by the monster."
+
+Page 2
+Cybil looked at Cheryl.
+With the bloody scene in front of her Cheryl was surprisingly calm.
+From time to time she looked out the window as if she were concerned about
+something.
+
+Page 3
+"Well, your Daddy is not here.
+Let's look somewhere else."
+
+Cybil took Cheryl's hand, and without a word they rushed out into the
+snowy street once again.
+
+
+Go to 6-1
+
+
+_______________________________________________________________________________
+第五章　　「再びカフェ」                                                    5-4
+化け物の死骸の辺りを                          (Dead Air Screamer on Cafe floor)
+Chapter 5   "Cafe, again"
+The area around the monster's corpse
+
+Page 1 (Dead Air Screamer on Cafe floor)
+Cybil cautiously searches the monster.
+There is no doubt about it, the bullets lodged inside the monster's body
+were the ones loaded into the handgun that she had given Harry.
+
+Page 2
+"Normally these should have gone all the way through..."
+
+The bullets told a tale about the endurance and hardness of the monster.
+
+Page 3
+The bullets scattered about on the floor supported this, as they gave Cybil
+the feeling that they had just hit the hard skin of the monster and then
+bounced off.
+
+Page 4
+Other than this there did not appear to be anything else out of the ordinary.
+
+Page 5
+"Well, your Daddy is not here.
+Let's look some place else."
+
+Cybil took Cheryl's hand, and without a word they rushed out into the
+snowy street once again.
+
+
+Go to 6-1
+
+
+_______________________________________________________________________________
+第五章　　「病院への道」                                                    5-5
+ハリーの背中を追って                                   (Harry leaning on a car)
+Chapter 5   "The Path to the Hospital"
+Chasing after Harry
+
+Page 1 (Harry leaning on a car)
+Once Cybil caught up to Harry he was having a difficult time breathing.
+
+Page 2
+"...ah...haa...you alright...?"
+
+"That woman...
+Dahlia or something..."
+
+Harry placed one hand on his chest, stopped in the street, and placed his
+other hand on a car.
+
+Page 3
+"I...don't know for sure, but...
+I have a feeling that that wasn't the first time that I met that woman...
+Long ago...I think I met her somewhere..."
+
+Harry says this and begins coughing.
+
+Page 4
+"Harry, you don't look so good."
+
+"Cybil...
+The air seems to have gotten thin here or something...
+I just have to deal with it..."
+
+"Harry..."
+
+
+Go to 5-6
+
+
+_______________________________________________________________________________
+第五章　　「病院への道」                                                    5-6
+ハリーの様子                                           (Harry leaning on a car)
+Chapter 5   "The Path to the Hospital"
+Harry's condition
+
+Page 1 (Harry leaning on a car)
+Harry...
+
+A ) begins to talk again.
+     Go to 5-7
+
+B ) begins coughing violently.
+     Go to 5-8
+
+
+_______________________________________________________________________________
+第五章　　「病院への道」                                                    5-7
+再び話し出すハリー                                    (Cybil walking in street)
+Chapter 5   "The Path to the Hospital"
+Harry begins to speak again
+
+Page 1 (Cybil walking in street) (Harry appears)
+"Well, it's alright...
+A town in which snow is falling...
+The name Dahlia...
+And her daughter is with my daughter...
+The fact that they are together..."
+
+He lifts his head, and looks at Cybil.
+
+Page 2
+"Something...
+There is something that I think I know, but...
+it's on the tip of my tongue but I cannot remember it..."
+
+Cybil softly places her hand on Harry's shoulder.
+"You're tired Harry.
+Let's rest for a bit..."
+
+Page 3
+Harry brushes Cybil's hand away, and then begins walking while pressing one
+hand to his chest.
+
+"Harry..."
+
+Page 4
+Cybil once again follows behind Harry's frozen back.
+
+第五章　　「病院への道」
+「古びた看板」
+Chapter 5   "The Path to the Hospital"
+The old signboard
+
+Page 5 (Hospital gate)
+Unable to make out the letters on an old signboard Cybil tries squinting.
+
+"Alchemilla Hospital" is written in faded paint.
+
+Page 6
+"In this building...Cheryl and Dahlia's daughter are in here...?" (Cybil)
+
+The hospital looks like ruins, and an eeriness is present that makes one 
+hesitant to even step inside.
+
+Page 7
+Cybil just happens to notice an object that looks like a pedestal next to the
+door. On top of it plates of four different colors have been placed.
+
+Cybil reads the message inscribed on the pedestal aloud.
+
+Page 8
+
+                   "The chosen ones
+                    must be moved to
+                   the chosen places
+                Once the task is complete,
+              the guidepost leading to chaos
+                      shall appear"
+
+Page 9
+Use the L and R buttons to select a plate.
+
+Use the d-pad to move the selected plate.
+
+(Plate game)
+
+Page 10 (Black)
+Harry opened the door.
+
+第五章　　「病院」
+「言われるままに来たが…」
+Chapter 5   "Hospital"
+Although they came as told...
+
+Page 11 (Hospital reception)
+Inside the hospital it is dark, and it seems that if one does not walk
+carefully then they would stumble.
+
+Page 12
+Pictures hanging on the walls, withered plants on the receptionist's
+desk, and other furnishings can be faintly seen.
+
+Page 13
+"Is your...
+Is your daughter really in this place?"
+
+"...I don't know, but...
+all we can do is trust that woman from before...
+We don't have any other clues."
+Harry spoke not expecting a reply.
+
+Page 14
+He slowly turned the knob of a nearby door.
+It appears to be locked.
+He lets out a long sigh.
+
+Page 15
+"Wait Harry.
+Let's split up and search.
+I will start from the top floor and search heading down.
+You start from the bottom.
+Then we will meet up in the middle.
+That way we won't lose each other."
+
+Page 16
+Harry looked woeful.
+
+"Sorry...I wish there was something I could do to thank you..."
+
+"Once we find your daughter then you can take me out to dinner or something."
+Cybil smiled brightly.
+
+Page 17
+Cybil immediately began to run toward the wall at the end of the corridor.
+Once she arrived on the third floor, which should be the top floor of the
+building, she caught her breath and then began to search for the girl.
+
+
+Go to 6-6
+
+
+_______________________________________________________________________________
+第五章　　「病院への道」                                                    5-8
+激しく咳き込むハリー                                   (Harry leaning on a car)
+Chapter 5   "The Path to the Hospital"
+Harry coughs violently
+
+Page 1 (Harry leaning on a car)
+"Cough! Cough...!"
+
+Harry began to cough violently again.
+
+"Are you alright? You look like you are in pain..."
+
+Page 2
+Blood flows out from the spaces between the fingers of the hand that Harry
+placed over his mouth.
+
+"Harry...!"
+
+Page 3
+Harry wiped his hand on his pants without surprise.
+
+"It's nothing to worry about.
+Please don't look at me like that."
+
+Page 4
+"But...your pants are stained black with blood!"
+
+Cybil stared at Harry's face.
+He looks lonely, and even more worn down than when they first met at the cafe.
+
+Page 5
+"Since coming here my physical condition has been deteriorating.
+Once I realized this I even found scratches all over my body.
+
+Page 6
+It's because all I am thinking of is Cheryl.
+That is why I am not feeling the pain."
+
+Page 7
+Saying that Harry pulled up one of his pant legs.
+Around his calf there was a long dark red scar.
+
+It was a painful looking wound, one that would be impossible to ignore.
+
+Page 8
+"Harry..."
+
+
+Go to 5-7
+
+
+_______________________________________________________________________________
+第六章　　「教会」                                                          6-1
+鳴り続ける鐘                                                           (Church)
+Chapter 6   "Church"
+The continuously ringing bell
+
+Page 1 (City street, heavy fog)
+Ding...Dong...
+
+A church bell is ringing.
+The bell rings forcefully, almost as if it had been waiting for them to leave
+the cafe.
+
+Page 2
+"There are still...other people here."
+
+Cybil's eyes glittered.
+  "This might be Harry's way of telling me where he is."
+
+Page 3
+And even if it is not Harry, if there is someone still here in town then she
+would like to meet them.
+
+And hear what they have to say.
+
+Page 4
+Cybil's feet naturally pointed toward the church.
+Expecting to find a clue to escaping and reuniting with Harry, she tightly
+gripped Cheryl's hand and began to run.
+
+第六章　　「教会」
+「ダリア・ギレスピー」
+Chapter 6   "Church"
+Dahlia Gillespie
+
+Page 5
+Once they arrived at the church the ringing stopped, and the large door at the
+entrance began to open from the inside.
+
+Page 6
+Cybil then thought that perhaps someone had been watching her movements
+all this time. She looked up at the top of the church and then began to
+look around nervously until a voice saying "This way" brought her back to her
+senses.
+
+Movie: Dahlia turns around in the church
+
+Page 7 (Church) (Dahlia appears)
+Cybil faced the eerie woman from a distance.
+The woman once more called out to Cybil: "This way"
+Cybil mysteriously moved towards the woman.
+
+Page 8
+"Were you the one ringing that bell?"
+
+"Ku ku ku..." (Onomatopoeia for a chuckle)
+The woman's face suddenly twisted and she began laughing loudly.
+She saw Cybil's perplexed expression, but thought nothing of it and
+just waved her hand left and right in front of Cybil's face.
+
+Page 9
+"I have been waiting for you.
+You have come just as I expected."
+
+Cybil cocked her head to the side.
+"Do you live here?"
+
+The woman nodded and then looked at Cheryl.
+
+Page 10
+"You have done well to come here.
+You know, don't you?
+That it was my doing that caused...
+And you were hesitant to come alone, weren't you?
+But in the end I was able to meet you.
+It is all thanks to that woman."
+
+Page 11
+"I don't understand what you are talking about."
+Cybil's words may or may not have reached her, but that woman began
+to laugh loudly again.
+"Hey, tell me.
+Why are there no people here?
+Why are all the exits from town blocked?"
+
+Page 12
+"I do not know either.
+But shouldn't you be asking that girl instead?"
+
+Cybil had a look of "What?" on her face. She looked at Cheryl.
+Cheryl face was tearful, and she shook her head back and forth.
+
+Page 13
+Cybil looked back at that woman and shouted at her.
+"Stop all this nonsense!
+We have been pursued by monsters and nearly killed.
+If I was not protecting this child then who knows what would have happened to
+her by now."
+
+Page 14
+"The path of the Wiseman...the fool guided to this land through astrology.
+Everything has been preordained.
+There is nothing that I can do.
+You are not holding that child's hand.
+That child is holding yours."
+
+Page 15
+Her anger showing, Cybil went to open her mouth. But at that moment the
+woman blocked her.
+
+Page 16
+"I am Dahlia Gillespie.
+With that in hand I wonder where you will end up going.
+I have nothing for you, and nothing to tell you.
+
+Page 17
+You must escape from the demon's grasp as soon as possible.
+You must find the means to do so for your own sake.
+There is nothing I can do now.
+I will pray for your safety.
+...Cybil Bennet."
+
+Page 18
+Cybil was shocked to be called by name. As she watched Dahlia quickly depart
+she was unable to speak.
+
+Page 19 (Black)
+After Dahlia disappeared behind a door Cybil regained herself. She tightly
+held Cheryl's hand and they left the church.
+
+第六章　　「教会を出て」
+「話し出すシェリル」
+Chapter 6   "Leaving the Church"
+Cheryl begins to speak
+
+Page 20 (City street, heavy fog)
+Right after they left the church Cheryl began to speak.
+
+Page 21
+"Hey...Miss?
+I am fine by myself now.
+This is not my first time coming here, and I have met that lady we just saw
+before."
+
+Cybil stops in surprise.
+
+Page 22
+"What do you mean?"
+
+"I, I have a place that I want to go.
+But I can only go alone.
+If you are with me, I won't be able to go, and then something terrible
+is sure to happen."
+
+Page 23
+"Something terrible? Why?
+Your Daddy is looking for you.
+Until I get you back to your Daddy I cannot leave your side."
+
+Page 24
+"You're wrong.
+My Daddy must not find me.
+Someone is waiting for me.
+In order to meet that person I..."
+
+
+Go to 6-2
+
+
+_______________________________________________________________________________
+第六章　　「教会を出て」                                                    6-2
+分からず屋のシェリル                                   (City street, heavy fog)
+Chapter 6   "Leaving the Church"
+Obstinate Cheryl
+
+Page 1 (City street, heavy fog)
+Cybil let out a short sigh.
+
+A ) She snaps at and scolds Cheryl.
+     Go to 6-3
+
+B ) She kindly admonishes Cheryl.
+     Go to 6-4
+
+
+_______________________________________________________________________________
+第六章　　「教会を出て」                                                    6-3
+思わず声を荒げるシビル                                 (City street, heavy fog)
+Chapter 6   "Leaving the Church"
+Cybil raises her voice without realizing it
+
+Page 1 (City street, heavy fog)
+"Just stop it and be quiet!"
+
+Cybil snapped at Cheryl.
+
+Page 2
+"A child like you should not be left alone in a dangerous town like this.
+Please do not be so difficult.
+I am a police officer.
+It is my job to return you to your Daddy.
+Please understand."
+
+
+Go to 6-5
+
+
+_______________________________________________________________________________
+第六章　　「教会を出て」                                                    6-4
+優しく語り掛けるシビル                                 (City street, heavy fog)
+Chapter 6   "Leaving the Church"
+Cybil kindly speaks to Cheryl
+
+Page 1 (City street, heavy fog)
+"Hey wait...
+Come on Cheryl."
+
+Cybil made an effort to calmly end Cheryl's speaking.
+
+Page 2
+"You must have just had a bad dream or something.
+But something more frightening is actually occurring in this town.
+Come on, please take my hand."
+
+Page 3
+Cheryl placed her small hand into Cybil's palm.
+
+"I will protect you no matter what.
+So you are safe, okay?"
+
+
+Go to 6-5
+
+
+_______________________________________________________________________________
+第六章　　「教会を出て」                                                    6-5
+シェリルの決意                                         (City street, heavy fog)
+Chapter 6   "Leaving the Church"
+Cheryl's resolution
+
+Page 1 (City street, heavy fog)
+Once more, Cybil began to walk down the foggy street with Cheryl in tow.
+At first Cheryl resisted holding Cybil's hand as hard as she could, but
+once she realized this was futile she reluctantly followed along behind
+Cybil, while wiping away her tears.
+
+Page 2
+Cheryl muttered something so that it could not be heard.
+
+
+Go to 7-1
+
+
+_______________________________________________________________________________
+第六章　　「探索」                                                          6-6
+病院の中は                                            (Hospital corridor, dark)
+Chapter 6   "Searching"
+The inside of the hospital is...
+
+Page 1 (Hospital corridor, dark)
+Cybil begins to walk along the concrete wall that is dimly lit by the outside
+light.
+Several doors are on the left and right of the passage.
+
+Page 2
+Each door has a 3 digit number plate on it, and without even looking inside
+she can tell that they are hospital rooms.
+
+Page 3
+"Cheryl!
+If you are there come out...
+Your Daddy is looking for you!"
+
+Cybil's voice just reverberates and then fades into the air.
+
+Page 4
+She places her hand on the knob of one of the doors and turns it.
+It appears to be locked.
+
+Page 5
+Maybe Cheryl is in one of the rooms and locked it from the inside. But
+if Cybil's voice cannot reach her...
+  "Just how should I search for Cheryl?"
+
+Page 6
+  "...That's it......"
+
+
+Go to 6-7
+
+
+_______________________________________________________________________________
+第六章　　「探索」                                                          6-7
+シェリルの探索                                        (Hospital corridor, dark)
+Chapter 6   "Searching"
+Searching for Cheryl
+
+Page 1 (Hospital corridor, dark)
+Cybil thinks of something.
+
+A ) If I use the key...
+     Go to 6-8
+
+B ) If I use the hospital intercom...
+     Go to 6-9
+
+
+_______________________________________________________________________________
+第六章　　「探索」                                                          6-8
+扉の鍵を順に…                                        (Hospital corridor, dark)
+Chapter 6   "Searching"
+First to find the key...
+
+Page 1 (Hospital corridor, dark)
+  "The key...
+  The key to the hospital rooms should be at the reception area.
+  Then I can open the doors and search each room for her."
+
+
+Go to 6-10
+
+
+_______________________________________________________________________________
+第六章　　「探索」                                                          6-9
+院内放送を使えば…                                    (Hospital corridor, dark)
+Chapter 6   "Searching"
+If I use the hospital intercom...
+
+Page 1 (Hospital corridor, dark)
+  "The hospital intercom...
+  Most hospitals have a speaker installed in each room.
+  A hospital of this size should definitely have such a thing installed.
+
+Page 2
+  I'll head back to the reception area on the first floor and then look for
+  the room with the intercom equipment.
+  If something happens down there then I can get help from Harry."
+
+
+Go to 6-10
+
+
+_______________________________________________________________________________
+第六章　　「探索」                                                         6-10
+病院１階へ引き返す                                    (Hospital corridor, dark)
+Chapter 6   "Searching"
+Cybil heads back to the first floor of the hospital
+
+Page 1 (Hospital corridor, dark)
+  "To realize this after coming up to the third floor...
+  ............"
+Cybil races back down the stairs that she just ran up in order to
+return to the first floor.
+
+
+Go to 7-16
+
+
+_______________________________________________________________________________
+第七章　　「シェリルと二人」                                                7-1
+シェリルの呟き                                         (City street, heavy fog)
+Chapter 7   "Together with Cheryl"
+Cheryl's muttering
+
+Page 1 (Black)
+.........
+
+A ) Let's go...
+     Go to 7-2
+
+B ) Goodbye...
+     Go to 7-11
+
+
+_______________________________________________________________________________
+第七章　　「用水路」                                                        7-2
+水のせせらぎ                                     (Cheryl leaning over the edge)
+Chapter 7   "Aqueduct"
+The murmuring of water
+
+Page 1 (Black)
+After walking for a bit the two of them started to notice that the murmuring
+of water had began to interfere with their conversation.
+
+"Ah"
+Cheryl stopped walking.
+
+Page 2 (Aqueduct)
+Water was splashing up from the strong current in the old aqueduct
+through the white fog.
+Due to the bad weather, the water level had risen up to the fortified
+concrete embankment. So rather than an aqueduct, it was more like
+an overflowing river that was in a dangerous state.
+
+
+Go to 7-3
+
+
+_______________________________________________________________________________
+第七章　　「用水路」                                                        7-3
+水流の中で揺れる人影                                                 (Aqueduct)
+Chapter 7   "Aqueduct"
+The figure bobbing in the current
+
+Page 1 (Aqueduct)
+"What's that..."
+
+A ) A girl is drowning.
+     Go to 7-4
+
+B ) A boy is drowning.
+     Go to 7-5
+
+
+_______________________________________________________________________________
+第七章　　「用水路」                                                        7-4
+溺れた少女                                       (Cheryl leaning over the edge)
+Chapter 7   "Aqueduct"
+The drowning girl
+
+Page 1 (Alessa in aqueduct, animated)
+A girl stood alone in the current.
+She was fighting the strong current, and appeared to be holding on to a
+fragile protrusion with all her might.
+
+Page 2 (Cheryl leaning over the edge)
+"Miss! Look!"
+
+Cheryl screamed, broke away from Cybil's hand, and then began to run toward
+the girl.
+
+Page 3 (Cheryl standing on the edge)
+"Cheryl! That's dangerous!"
+
+Cybil instantly chased after her.
+A stone barrier runs parallel to the aqueduct. It is about shoulder-width and
+about the height of a child.
+
+Page 4
+Falling to the right from this barrier could result in injury, and falling to
+the left would probably result in being swallowed up by the current.
+
+Page 5
+Cheryl nimbly ran along the top of the narrow barrier.
+
+"Wait! That is dangerous!"
+Her words were ineffective.
+Using her innate physical prowess, Cybil got on top of the barrier; however,
+she could not run along it as nimbly as Cheryl.
+
+第七章　　「用水路」
+「必死のシェリル」
+Chapter 7   "Aqueduct"
+Desperate Cheryl
+
+Page 6 (Cheryl leaning over the edge)
+By the time Cybil caught up to Cheryl she was lying prone on top of the
+barrier and reaching out towards the embankment trying to grasp the girl's
+hair.
+
+Page 7
+"That's dangerous! You will fall in!
+It's too much for you."
+
+"We will save this girl.
+Help me Miss!
+Please!"
+
+Page 8
+Cybil lightly jumps down onto the embankment side and is again surprised by
+the strength of the current.
+Cheryl is leaning out halfway and looks as if she could fall at any moment
+and be swallowed by the dark waters.
+
+Page 9
+"Cheryl, you stay right there and don't move.
+I will be sure to save her."
+
+Cheryl says nothing and just stares as Cybil.
+
+Page 10
+Cybil's footing is quickly being eaten away by the strong current.
+As long as snow continues to pour into the entire town the aqueduct will
+certainly continue to overflow.
+
+Page 11
+The water is up to Cybil's knees. As the water pulls at her legs Cybil reaches
+her hand out toward the girl.
+The girl's face is covered in the white splashes, so Cybil cannot see it very
+well.
+
+Page 12 (Close up of Cybil grasping a hand)
+"Everything's all right, don't worry."
+Cybil shouts out to give the girl hope.
+But the girl just appears to be caught on the protrusion like a rag, and
+perhaps that is the best way to describe her.
+
+Page 13
+Cybil eventually grasps the girl's left arm and is relieved a little.
+
+"Everything is fine.
+Trust me."
+Cybil says kindly.
+
+Page 14
+However, the current of the water is faster than she had imagined.
+Pulling the girl against the current will not be easy.
+
+There is nowhere to grab on, so she cannot put any strength into it.
+The freezing cold is robbing her body of its warmth and her fingertips
+are going numb.
+
+Page 15
+"Miss! It is impossible!
+You too will be swept away by the current!"
+
+Page 16
+Cheryl calls out to Cybil from behind. Cybil has a maternal feeling that
+she must save this girl, even if it means she will end up getting swept away.
+
+第七章　　「用水路」
+「滑り落ちたシビル」
+Chapter 7   "Aqueduct"
+Cybil slips
+
+Page 17
+"It will be ok...just a little more..."
+
+At that moment...
+Cybil unfortunately loses her footing and falls into the current.
+
+Page 18
+And at the same time she sees the face of the drowning girl for the first time.
+
+Page 19
+".........Eh..."
+
+Page 20 (Alessa standing on the edge)
+As Cybil is swallowed by the merciless current, she looks up and sees another
+girl on the barrier.
+There the unfamiliar girl looks down at Cybil with no expression on her face.
+
+Page 21
+She didn't understand it.
+She couldn't believe anything.
+Still holding the arm of the girl she is swallowed in the dark waters
+and then loses consciousness.
+
+
+Go to 7-6
+
+
+_______________________________________________________________________________
+第七章　　「用水路」                                                        7-5
+溺れた少年                                       (Cheryl leaning over the edge)
+Chapter 7   "Aqueduct"
+The drowning boy
+
+Page 1 (Andy in aqueduct, animated)
+A boy stood alone in the current.
+He was fighting the current, and appeared to be holding on to a
+fragile protrusion with all his might.
+
+Page 2 (Cheryl leaning over the edge)
+"Miss! Look!"
+
+Cheryl screamed, broke away from Cybil's hand, and then began to run toward
+the boy.
+
+Page 3 (Cheryl standing on the edge)
+"Cheryl! That's dangerous!"
+
+Cybil instantly chased after her.
+A stone barrier runs parallel to the aqueduct. It is about shoulder-width and
+about the height of a child.
+
+Page 4
+Falling to the right from this barrier could result in injury, and falling to
+the left would probably result in being swallowed up by the current.
+
+Page 5
+Cheryl nimbly ran along the top of the narrow barrier.
+
+"Wait! That is dangerous!"
+Her words were ineffective.
+Using her innate physical prowess, Cybil got on top of the barrier; however,
+she could not run along it as nimbly as Cheryl.
+
+Page 6 (Cheryl leaning over the edge)
+By the time Cybil caught up to Cheryl she was lying prone on top of the barrier
+and reaching out towards the embankment trying to grasp the boy's hair.
+
+Page 7
+"That's dangerous! You will fall in!
+It's too much for you!"
+
+"We will save this boy.
+Help me Miss!
+Please!"
+
+Page 8
+Cybil lightly jumps down onto the embankment side and is again surprised by
+the strength of the current.
+Cheryl is leaning out halfway and looks as if she could fall at any moment
+and be swallowed by the dark waters.
+
+Page 9
+"Cheryl, you stay right there and don't move.
+I will be sure to save him."
+
+Cheryl says nothing and just stares as Cybil.
+
+Page 10
+Cybil's footing is quickly being eaten away by the strong current.
+As long as snow continues to pour into the entire town the aqueduct will
+certainly continue to overflow.
+
+Page 11 (Black)
+The water is up to Cybil's knees. As the water pulls at her legs Cybil reaches
+her hand out toward the boy.
+The boy's face is covered in the white splashes, so Cybil cannot see it very
+well.
+
+Page 12
+"Everything's all right, don't worry."
+Cybil shouts out to give the boy hope.
+But the boy just appears to be caught on the protrusion like a rag, and
+perhaps that is the best way to describe him.
+
+Page 13
+Cybil eventually grasps the boy's left arm and is relieved a little.
+
+"Everything is fine.
+Trust me."
+Cybil says kindly.
+
+Page 14
+However, the current of the water is faster than she had imagined.
+Pulling the boy against the current will not be easy.
+There is nowhere to grab on, so she cannot put any strength into it.
+The freezing cold is robbing her body of its warmth and her fingertips
+are going numb.
+
+Page 15 (Cheryl leaning over the edge)
+"Miss! It is impossible!
+You too will be swept away by the current!"
+Cheryl calls out to Cybil from behind.
+Cybil has a maternal feeling that
+she must save this boy, even if it means she will end up getting swept away.
+
+Page 16
+"It will be ok...just a little more..."
+
+Got it. Cybil gets a firm grasp on the boy's arm, and then successfully
+pulls his small body up.
+
+Page 17 (Black)
+"Haa...Great... Are you ok?"
+
+The boy does not answer right away, and just takes troubled breaths over and
+over.
+It is not surprising because he just nearly drown.
+
+Page 18
+The boy remained crouched for a bit, but then finally began to speak.
+
+"You...you were the one that pushed me in..."
+
+From seeing the look of surprise on Cybil's face the boy changed his words.
+
+Page 19
+"Not you. Her! It was that child!"
+
+The boy rushes at Cheryl.
+Before Cybil could even think to stop him the boy grabbed Cheryl's arm and
+pulled her towards the current.
+
+Page 20 (Cheryl and Andy on the edge)
+"What are you doing! Stop it now!" (Cybil)
+
+"What do you know!
+Why don't you tell her to stop!" (Andy)
+
+Cheryl falls into the water and begins to be swept away by the strong current.
+
+Page 21
+She would have to question the boy later.
+Cybil stomps as she runs along the concrete to keep up with Cheryl.
+
+"Cheryl!"
+
+Page 22
+Ah...
+
+Cybil's weak shouts were replaced by the sound of the water splashing.
+She slips and ends up in the whirlpool of the strong current, and is
+swallowed in the dark waters along with Cheryl.
+
+
+Go to 7-6
+
+
+_______________________________________________________________________________
+第七章　　「暗黒」                                                          7-6
+黒の世界                             (Light coming from between elevator doors)
+Chapter 7   "Darkness"
+World of black
+
+Page 1 (Black)
+.........
+
+Page 2
+Everything is dark.
+There is not even a single sound.
+Cybil cannot tell whether her eyes are open or closed.
+The hand gripping Cybil's hand suddenly moved.
+
+Page 3
+(I, I may have used you Miss...)
+
+Page 4
+Cybil made a face like "Wha?" and immediately asked:
+
+(What are you saying?)
+
+Page 5
+(That's why I was against it.
+You are a good person, so I didn't want to get you wrapped up in this.
+But in the end I have made you suffer.
+I guess that is the same thing as getting you involved?)
+
+Page 6
+Cybil smiles.
+
+(I have said it many times, but it is my job to get you back into your
+father's custody.
+Getting me involved, or whatnot, it is not a problem.)
+
+Page 7
+(...you're wrong...Miss)
+
+Silence flows between the two of them.
+
+(As for what Daddy will do and so on, those are issues that do not even
+compare to what I am dealing with.
+My own personal issue...
+It's something that I should never ever tell anyone, something very important.
+
+Page 8
+I have thought about it for so long.
+I have been confused by it for so long.
+However, maybe I can tell you about it Miss.
+The reason why there is no one in town.
+The reason why I don't want to see my Daddy.
+And also, my true...)
+
+Page 9
+Once again, there is silence.
+
+(Your true? Your true what?)
+
+(Do you know something?) (Cybil)
+However, that question is not answered.
+
+第七章　　「暗黒」
+「エレベーター」
+Chapter 7   "Darkness"
+Elevator
+
+Page 10 (Light coming from between elevator doors)
+And then, the low sound of a motor runs through the floor and causes
+a slight quiver in Cybil's stomach.
+To her front she has only a glimpse of a single shaft of light.
+The light thinly extends up and down, and eventually expands to the left and
+right, revealing a small room.
+It is an elevator.
+
+Page 11 (Elevator, flickering)
+The elevator doors have opened wide, and it sits ready, almost as if it has
+come for Cybil.
+Cybil and the girl are lit by its light...
+
+Page 12
+And then...
+Cybil felt the grip of the girl that she was holding on to become weak.
+
+Page 13
+  "No weight. An illusion?
+  No, the two of us are definitely holding hands."
+Cybil looked toward the girl.
+
+Page 14
+Her entire body was paralyzed with a chill.
+Powerlessly, Cybil sank down in that very spot.
+Her vision is hazy.
+The color drains from her entire body.
+
+Page 15
+The girl is not there in the light.
+The thing that Cybil is holding on to...
+It is...
+
+
+Go to 7-7
+
+
+_______________________________________________________________________________
+第七章　　「暗黒」                                                          7-7
+握り締めていたものは                                                 (Elevator)
+Chapter 7   "Darkness"
+The thing that Cybil was holding on to was...
+
+Page 1 (Elevator, flickering)
+Cybil suppressed a shriek.
+"This..."
+
+A ) It was a green jelly-like object.
+     Go to 7-8
+
+B ) It was a slightly dirty, but familiar doll.
+     Go to 7-9
+
+
+_______________________________________________________________________________
+第七章　　「暗黒」                                                          7-8
+緑色のゼリー物質                                        (Jelly in Cybil's hand)
+Chapter 7   "Darkness"
+A green jelly-like substance
+
+Page 1 (Jelly in Cybil's hand, flickering)
+It was an unknown green jelly-like object.
+
+Page 2
+Cybil instantly stands up.
+It drips down in strands through the spaces between Cybil's fingers,
+connecting her hand with the tiles of the floor.
+
+Page 3
+She was unable to do anything but watch, and when the final drop hit the
+floor Cybil then powerlessly kneeled down.
+
+Page 4
+  "What was that girl's name?"
+It was a name she had said many times, but for some reason Cybil could not
+remember it.
+Cybil closed her eyes and remained there, frozen.
+
+Page 5
+.........
+
+
+Go to 7-10
+
+
+_______________________________________________________________________________
+第七章　　「暗黒」                                                          7-9
+あの日の人形                                             (Doll in Cybil's hand)
+Chapter 7   "Darkness"
+The doll from that day
+
+Page 1 (Doll in Cybil's hand, flickering)
+It was a slightly dirty, but familiar doll.
+
+Page 2
+Countless blue fireworks went off in front of Cybil's eyes.
+
+Memories of the past...
+
+Unforgettable memories...
+
+Memories that should have been tightly sealed away within her...
+
+Page 3
+She was holding the doll tightly...
+Cybil had hidden in the closet...
+Through the crack, a familiar scene...
+
+Page 4
+Her parents, shot in the head and...
+
+The blood soaked carpet...
+
+The low laugh of a man...
+
+Page 5
+She held the doll over her mouth, to suppress the urges to scream that
+assaulted her from time to time.
+And so, she had somehow survived.
+
+Page 6
+...she had survived.
+
+Page 7
+  "Why is the doll from that time here?
+
+  Why?
+
+  Why is it here?"
+
+Page 8
+It was the reason she became a policewoman, that incident.
+
+That incident had largely impacted her future.
+
+Page 9
+Cheryl was gone, and all that was left was the unpleasant feeling of
+memories she thought that she had forgotten.
+
+
+Go to 7-10
+
+
+_______________________________________________________________________________
+第七章　　「エレベーター」                                                 7-10
+下り続ける箱                                                (Cybil in elevator)
+Chapter 7   "Elevator"
+The ever descending box
+
+Page 1 (Cybil in elevator, flickering)
+  "I'm losing my mind..."
+She sobbed alone inside the elevator.
+The town, along with the lives of several people, had been swallowed up
+within the devil's dark garb.
+
+Page 2
+Inside the small box she calmed her breathing while shaking her shoulders hard.
+  "First of all I should look for Harry.
+  And then work with him to escape from this wretched world."
+
+Page 3
+Quite a bit of time passed since the "1" lamp had gone out on the floor
+display.
+From the vibrations she could tell that she was descending, but even still,
+this had gone on for too long.
+
+Page 4
+Staring at the display of "B1", she had pushed her back against the wall and
+slumped.
+Is there something in the basement of this building, deep in the ground?
+And if Cybil was brought here, then what was the reason?
+
+
+Go to 8-1
+
+_______________________________________________________________________________
+第七章　　「襲撃」                                                         7-11
+途方に暮れた二人                                       (City street, heavy fog)
+Chapter 7   "Assault"
+The two of them, at their wit's end
+
+Page 1 (City street, heavy fog)
+Cybil and Cheryl wandered the town, literally with no destination.
+Their cheeks were numb, so they no longer even felt the cold pelting of the
+snow.
+
+Page 2
+From time to time Cybil would look back to check on Cheryl.
+The girl just followed Cybil with her head down.
+
+Page 3
+"Are you hungry?"
+
+She asked this because she thought Cheryl might be sulking, but
+Cheryl just muttered "I'm fine".
+
+第七章　　「襲撃」
+「シェリルの疲労」
+Chapter 7   "Assault"
+Cheryl's fatigue
+
+Page 4 
+After walking for a bit the girl suddenly stopped.
+
+"I'm tired" (Cheryl)
+
+Cybil's strength had began to fade, so she thought that this could be the
+case with Cheryl as well.
+
+Page 5
+  "I must not compare my body with Cheryl's small one."
+The two of them sat down on a bench on the sidewalk.
+
+Page 6 (Cybil and Cheryl sitting on a bench)
+Thanks to the nearby tree towering above the bench the snow could no longer
+fall directly on them.
+
+Page 7
+As soon as Cheryl sat down on the bench she fell asleep.
+She is probably very tired from all the uncertainty and stress.
+
+
+Go to 7-12
+
+
+_______________________________________________________________________________
+第七章　　「襲撃」                                                         7-12
+冷え切ったシェリルの体                    (Cybil and Cheryl sitting on a bench)
+Chapter 7   "Assault"
+Cheryl's cold body
+
+Page 1 (Cybil and Cheryl sitting on a bench)
+Cybil...
+
+A ) held the girl's body close so that she would not freeze.
+     Go to 7-13
+
+B ) began to look for a safe building to rest in.
+     Go to 7-14
+
+
+_______________________________________________________________________________
+第七章　　「襲撃」                                                         7-13
+シェリルを抱き寄せて                      (Cybil and Cheryl sitting on a bench)
+Chapter 7   "Assault"
+Cybil holds Cheryl close
+
+Page 1 (Cybil and Cheryl sitting on a bench)
+She holds the girl's shoulders close, and while stroking her head Cybil
+is struck with the feeling that the warmth is being absorbed out of her.
+
+Page 2
+  "Sudden sleepiness...
+  Even though we are out of the snow at this rate we will freeze to death.
+  If a human's body temperature drops below 98.6 then they will fall into a
+  dangerous state.
+
+Page 3
+  Even if the ambient temperature does not drop below freezing a human can
+  still freeze to death."
+
+Cybil recalled a lecture that she had attended long ago.
+
+Page 4
+However, even though she knew this Cybil's body was gradually refusing her
+will, becoming one with the hard wood of the bench, and getting heavier.
+
+Page 5
+  "Cheryl is...
+  Cheryl is awake.
+  Even though her eyes are closed, from the expression on her face it looks
+  like she is staring at me."
+
+Page 6
+Like sinking to the bottom of the ocean...
+Cybil's consciousness grows distant...
+
+
+Go to 7-15
+
+
+_______________________________________________________________________________
+第七章　　「襲撃」                                                         7-14
+安全な建物がどこかに                      (Cybil and Cheryl sitting on a bench)
+Chapter 7   "Assault"
+Is there a safe building somewhere?
+
+Page 1 (Cybil and Cheryl sitting on a bench)
+Cybil stared at Cheryl's small body for a bit.
+
+Page 2
+Even though they were out of the snow Cheryl's clothes were not warm enough
+for the mid-winter temperatures.
+If unlucky, then she might be deprived of even her life.
+
+Page 3 (Street, heavy fog)
+  "Perhaps there is someplace warm somewhere?"
+
+Cybil leaves Cheryl sleeping on the bench and walks around to the nearby
+houses trying the doors.
+
+Page 4
+  "No good, the door is locked.
+
+  And this one too.
+
+  And this one as well...they're all locked."
+
+Page 5
+The doors are sealed on all the houses lining the area.
+There might be someone inside, but there is no way to check.
+
+Page 6 (Entrance to antique shop)
+After walking for a while Cybil discovers a garage door that is partially
+open.
+
+Page 7
+The inside cannot be said to be warm, but it is probably better than that
+bench.
+Cybil quickly returns to Cheryl.
+
+Page 8 (Cheryl sleeping on bench)
+Cheryl is sleeping on the bench just as she was before.
+
+"Cheryl, please get up.
+You'll catch cold out here.
+I found a good place.
+Let's go there."
+
+Page 9
+She lightly tries shaking Cheryl's body.
+There is no reaction.
+
+"Cheryl...?"
+
+Page 10
+  "Impossible."
+Cybil places her right hand on Cheryl's chest.
+
+"Impossible...this cannot be..."
+
+Page 11
+Cheryl's heart is not beating.
+
+Page 12
+And also, her small body has no warmth at all.
+
+"This cannot be...
+In such a short time...
+Why..."
+
+Page 13 (Black)
+Cybil carries Cheryl's body, and looks around to see if there is a hospital
+nearby.
+  "Wait.
+  Calm down.
+
+Page 14
+  On the edge of town, there should be a large hospital.
+  I've got to hurry.
+  There may not be any doctors there, but there may still be some medicine.
+
+Page 15
+  Within the scope of my knowledge perhaps I can do something."
+Cybil thought this.
+And then began to run.
+
+Page 16
+However...
+As soon as she began to run Cybil felt something wrong with her own body.
+It was very sudden, and she felt pain that she could not understand.
+
+Page 17
+Like morning sickness...
+She is filled with a desire to vomit.
+
+It is as if some living thing that is not her is living inside her...
+
+
+Go to 7-15
+
+
+_______________________________________________________________________________
+第七章　　「襲撃」                                                         7-15
+………………………。                      (Cybil and Cheryl sitting on a bench)
+Chapter 7   "Assault"
+...........................
+
+Page 1 (Black)
+  "My body feels weird...
+
+Page 2
+  My body feels weird...
+
+Page 3
+  My body feels weird...
+
+Page 4
+  My body feels weird...
+
+  Something...I don't know what, but...
+  Something evil is here.
+  Somewhere inside me...
+
+Page 5
+  Beginning to make a nest.
+  One cell at a time...
+  Beginning to consume me...
+  And yet it doesn't hurt...
+
+Page 6
+  My body is on fire.
+  My body is on fire.
+  My eyes feel like they are going to melt...
+  My eyes hurt.
+  My eyes are on fire.
+
+第七章　　「襲撃」
+「暗沌」
+Chapter 7   "Assault"
+Chaos
+
+Page 7
+  Laughing.
+  Coming from my stomach.
+  A slightly dirty doll.
+  Where are my parents?
+  Have they already escaped?
+
+Page 8
+  Since when...?
+  Why here?
+  A wheelchair...
+  Something...I don't know what, but...
+  Something evil is here.
+  Somewhere inside me...
+
+Page 9
+  Beginning to make a nest.
+  One cell at a time...
+  Beginning to consume me... 
+  And yet it doesn't hurt...
+
+Page 10
+  My body is on fire.
+  My body is on fire.
+  It feels like fire is going to shoot from my eyes...
+  My eyes hurt.
+  My eyes are on fire.
+
+Page 11 (Close up of doll)
+  Laughing.
+  Ha ha.
+  Coming from my stomach.
+  A slightly dirty doll.
+  Where are my parents?
+  Have they already escaped?
+
+Page 12
+  Since when...?
+  Why here?
+  I am sitting in a wheelchair.
+  A roar...
+  The dark sky...
+  Something is spinning.
+
+Page 13 (Harry on black background)
+  He has come...to me.
+  That man's name is...
+  He said it was Harry.
+  Definitely, Harry is what...
+  He said it was...
+
+Page 14
+  My hand is on my hip.
+  Hard... Cold...
+  Aah...
+  I try taking it out.
+  Is this how I hold it?
+  Shoot.
+  Please shoot.
+  The man in front of you.
+  If I destroy him?
+
+Page 15
+  It was a merry-go-round.
+  If I thought that many eyes were watching.
+  Ha ha.
+  If I pull the trigger.
+  Something seems to have torn the man's flesh.
+
+Page 16
+  Wait...please wait.
+  I must not shoot that man.
+  In this world he is my only...
+  friend...
+
+Page 17
+  Kill me.
+  I can no longer control myself.
+  My body is acting on its own.
+  Kill him.
+  Kill.
+  You must kill him.
+
+Page 18 (Black)
+  Something small has passed through me.
+  It doesn't hurt.
+  It hurts.
+  My clothes are soaked.
+  I will die.
+  Protect the girl.
+
+Page 19
+  I fall to the ground.
+  I bounce once and cannot move.
+  Is this my body?
+  Why?
+  I cannot control it.
+
+Page 20
+  Some small creature...
+  It got inside me at some time?
+  It bites through my belly.
+  And leaves me."
+
+Page 21
+...........................
+
+第七章　　「襲撃」
+「シビルを揺らす手」
+Chapter 7   "Assault"
+The hand that shakes Cybil
+
+Page 22 (Cybil on the ground)
+  "In my fading consciousness, I can see Harry shaking me.
+
+Page 23
+  Harry has stopped moving. He looks at me and weeps. Then he begins to move
+  toward something off in the distance that looks like a dimly shining girl.
+
+Page 24
+  I am ok...
+  I can still move.
+  The thing that came out of me is heading for its next target.
+
+Page 25
+  And I know who that will be.
+
+Page 26 (Harry walking away, flickering)
+  If I cannot let Harry know this then something horrible will happen.
+  But I cannot speak.
+  It is because a bullet went through the side of my lung...
+  So I cannot put any power into my voice.
+
+Page 27
+  Harry has began to run.
+  I am not yet dead.
+  But he thinks that I am.
+
+Page 28
+  Even if I must crawl, I must move on.
+  Cheryl is in danger.
+  I must get there first...
+  Harry will get there soon enough.
+  But I must get there before then, and I must stop him."
+
+
+Go to 8-6
+
+
+_______________________________________________________________________________
+第七章　　「少女の影」                                                     7-16
+足音                                                  (Hospital corridor, dark)
+Chapter 7   "A figure of a girl"
+Footsteps
+
+Page 1 (Stairs, animated)
+On her way down the stairs Cybil heard footsteps as she was passing the
+second floor.
+
+(Harry...?)
+
+Page 2
+The second floor is the same as the third, there is a central corridor with
+doors lined up on both walls.
+
+"Harry? Is that you Harry?"
+
+Page 3 (Hospital corridor, light)
+There is a large window at the end of the hall.
+White light from the foggy outside is reflecting off the floor.
+Without realizing it Cybil squinted.
+
+Page 4
+But...
+Someone is standing in front of the window.
+
+Page 5 (Alessa's silhouette appears)
+From the shape of the outline of the human visible in the darkness
+Cybil can tell that it is not Harry...
+It looks like a girl.
+
+第七章　　「少女の影」
+「動けぬシビル」
+Chapter 7   "The Figure of a Girl"
+Cybil cannot move
+
+Page 6
+Cybil just stared at the figure, and was unable to move for a bit.
+Just like a frog being stared down by a snake, all her movements were sealed.
+
+Page 7
+"Cheryl...?"
+
+Who knows how long it was before she said that.
+The girl did not answer, and began moving toward Cybil, as if she was
+gliding...
+
+Page 8
+Slowly, she continued moving toward Cybil...
+
+Page 9
+Eventually the girl twisted her body and jerked her right hand.
+She made her hand into a fist, created a large bullet of light, and then
+looked at Cybil.
+
+Page 10 (Ball of light flashes on Alessa's silhouette)
+"Wha...?"
+
+"Watch out! Cybil!
+Get down!!"
+
+It is Harry's voice.
+At the moment Cybil drops down the bullet of light slices through the air,
+and impacts into something behind her.
+
+Page 11 (Alessa's silhouette disappears)
+(Well, that takes care of...one of them...)
+
+第七章　　「少女の影」
+「消えた少女」
+Chapter 7   "The figure of a girl"
+The girl vanishes
+
+Page 12 (Harry on floor)
+The girl vanishes.
+Cybil turns and sees Harry laying face down, holding his hand to his chest.
+
+Page 13
+"Harry!"
+
+He is struggling as hard as he can to reach his hand out to Cybil.
+Cybil rushes over to him, and sits him up.
+
+Page 14
+"Harry..."
+
+"......I thought that something...
+was wrong...
+...by the time I realized...
+too...late..."
+
+"Harry! Don't talk!"
+
+Harry's body becomes heavy.
+
+Page 15
+"Cybil...I'm...
+done for...
+Please...won't you...
+help...
+Cheryl..."
+
+"That girl from before. That wasn't Cheryl, was it?"
+
+Page 16
+"...that...was......"
+
+
+Go to 7-17
+
+
+_______________________________________________________________________________
+第七章　　「少女の影」                                                     7-17
+怪我を負ったハリー                                             (Harry on floor)
+Chapter 7   "The Figure of a Girl"
+Harry has suffered an injury
+
+Page 1 (Harry on floor)
+"Harry! Hold on!"
+Harry...
+
+A ) stops moving.
+     Go to 7-18
+
+B ) talks about the girl...
+     Go to 7-19
+
+C ) opens his eyes wide.
+     Go to 7-20
+
+
+_______________________________________________________________________________
+第七章　　「少女の影」                                                     7-18
+絶命するハリー                                                 (Harry on floor)
+Chapter 7   "The figure of a girl"
+Harry dies
+
+Page 1 (Harry on floor)
+"...Harry...? Harry!"
+
+Harry did not speak or respond again.
+
+Page 2
+Cybil, who had been unable to accept the incomprehensible events that had
+occurred around her up to this point, was unable to believe that the man
+in front of her was dead.
+
+Page 3
+The wind seems to be blowing outside.
+
+Page 4
+Cybil stared at her hands, which had become covered with blood.
+Instead of trying to wipe them off, she firmly grasped her handgun.
+
+Page 5
+Something like a kind of resolution arose in Cybil's stern look.
+  "Cheryl.
+  I must find her, and then take her home."
+
+
+Go to 8-12
+
+
+_______________________________________________________________________________
+第七章　　「少女の影」                                                     7-19
+少女について語るハリー                                         (Harry on floor)
+Chapter 7   "The Figure of a Girl"
+Harry talks about the girl
+
+Page 1 (Harry on floor)
+"That girl was...
+not...Cheryl..."
+
+Harry then begins coughing, and at the same time vermilion liquid spatters
+about.
+
+"Harry!
+Don't talk anymore!"
+
+Page 2
+Harry is crying.
+
+"...zha...t...that was.........
+not Cheryl at...all"
+
+His words seemed to have something like a desire imbedded somewhere within
+them.
+
+
+Go to 7-18
+
+
+_______________________________________________________________________________
+第七章　　「少女の影」                                                     7-20
+大きく目を見開くハリー                            (Alessa in hospital corridor)
+Chapter 7   "The figure of a girl"
+Harry opens his eyes wide
+
+Page 1 (Harry on floor)
+Harry calls forth the last of his strength and opens his eyes wide.
+
+"...Cybil...look out...!"
+
+The dim corridor is lit with blindingly bright light, and Cybil's shadow
+extends forward.
+
+Page 2 (Alessa in hospital corridor) (Ball of light is flashing)
+Cybil turns...
+and notices the girl has another bullet of light in her hand.
+
+"Stop it...
+Cheryl......
+no more..."
+
+Page 3
+Summoning the last of his strength Harry crawls towards the girl.
+And when he sees her face in the light, a mysterious look appears on his
+face, as if he has remembered something and realized something.
+
+Page 4
+"...why...are you..."
+
+The girl swings her arm down and at the same time Harry's scream echoes.
+
+Page 5 (Flashing stops)
+The area flashes with light.
+Harry is gone, and the floor tile where he was has been burned black.
+
+Page 6 (Flashing begins again)
+Now only Cybil and the girl are in the corridor.
+
+
+Go to 7-21
+
+
+_______________________________________________________________________________
+第七章　　「少女の影」                                                     7-21
+少女と対峙するシビル                                           (Harry on floor)
+Chapter 7   "The Figure of a Girl"
+Cybil faces the girl
+
+Page 1 (Alessa in hospital corridor) (Ball of light is flashing)
+Cybil gasps.
+
+A ) She flees with all her might.
+     Go to 7-22
+
+B ) She must fight.
+     Go to 7-23 (Ending B-3)
+
+
+_______________________________________________________________________________
+第七章　　「少女の影」                                                     7-22
+気力を振り絞り逃げる　                            (Alessa in hospital corridor)
+Chapter 7   "The Figure of a girl"
+Cybil flees with all her might
+
+Page 1 (Alessa in hospital corridor) (Ball of light is flashing)
+  "I have to run.
+  That is not a human.
+  It is not something that I stand a chance against."
+
+Page 2 (Black)
+Cybil summons all the strength she can muster and begins to run down the hall.
+  "The stairs...
+  Were the stairs really this far away?"
+
+Page 3
+No matter how much she runs she gets the feeling that she is not moving
+forward.
+  "Is the floor moving?
+  And is this because of that girl's power?"
+
+Page 4
+Light flashes from behind Cybil.
+It hits the wall and cracks it.
+The tiles have come off.
+A scene that she has not seen before approaches right in front of her eyes.
+
+Page 5
+From black to white...
+However, it is not a sacred flame, but the fires that light Hell.
+Her clothes, hair, and skin are enveloped in a great light.
+
+Page 6
+She cannot look back.
+If she looks back she will die.
+However...
+
+Page 7
+She is at her limit.
+  "Sorry Harry.
+  Sorry..."
+
+
+Go to 9-2 (Ending B-1)
+
+
+_______________________________________________________________________________
+第七章　　「少女の影」                                                     7-23
+勇気を出して戦う　                                (Alessa in hospital corridor)
+Chapter 7   "The figure of a girl"
+Cybil summons her courage and fights
+
+Page 1 (Alessa in hospital corridor) (Ball of light is flashing)
+  "I have to fight.
+  I cannot run from this."
+Cybil felt this instinctively.
+
+Page 2
+She suddenly charged at the girl.
+
+Once again a ball of light began to grow large in the girl's hand.
+
+Page 3
+At the moment that the girl raised her hand high, Cybil knocked her to the
+ground before she could fire.
+
+Page 4 (Cybil choking Alessa on the floor)
+Cybil then forcefully straddled the girl, placed both hands firmly around her
+neck and continued to choke her.
+
+Page 5
+Her pupils were paralyzed by the bright light, but now as darkness quickly
+filled the area she would only have to wait for her vision to return.
+
+Page 6
+But there is no time.
+The girl is putting up serious resistance.
+However, the girl's arms are gradually losing their strength as they push
+around Cybil's shoulders.
+
+Page 7
+Finally Cybil's eyes become adjusted to the light.
+She can faintly see the outline of the girl's bare face.
+
+Page 8
+And then, the girl speaks in a faint voice.
+
+Page 9
+"...but I only wanted to save you..."
+
+Page 10
+  "Wha?"
+Cybil heard the girl correctly.
+  "Wanted to save?
+  Save me?
+
+Page 11
+  Who are you?
+  Impossible...?
+  Impossible...you are...?"
+
+Page 12
+She can see the girl's face.
+As the image of the girl fills Cybil's eyes her consciousness gradually
+grows distant.
+
+Page 13
+Her body becomes heavy...
+She has the desire to tell someone about who the girl is, but cannot...
+
+Page 14 (Black)
+Cybil's consciousness grows distant...
+
+
+The End B-3
+
+You will now receive the following Digital Trading Cards:
+   15. Harry
+   27. Cemetery
+
+
+_______________________________________________________________________________
+第八章　　「闇に映える業火」                                                8-1
+Ｂ１のランプ　                                                (Otherworld hall)
+Chapter 8   "The hellfires shimmering in the darkness"
+The B1 lamp
+
+Page 1 (Black)
+Eventually the elevator begins to gradually slow its descent, and at the same
+time that it comes to a complete stop the B1 lamp lights up.
+And then its doors open...
+Cybil dully felt this series of movements.
+
+Page 2 (Otherworld hall)
+With the doors open, the light that illuminates the passage that extends
+in front of her pours into the elevator.
+
+Page 3
+As Cybil begins to walk forward it almost looks like that light is supporting
+her from behind.
+It is cold.
+Although she is just walking down a corridor that is like one in a jail,
+Cybil's heart beats irregularly.
+
+第八章　　「闇に映える業火」
+「一つのドア」
+Chapter 8   "The hellfires shimmering in the darkness"
+A single door
+
+Page 4 (Final door)
+Eventually a single door appears.
+The passage ends with this door.
+Perhaps all the mysteries of B1 will lie in this room?
+
+Page 5
+  (I didn't want to get you wrapped up in this.)
+The voice of the girl flitted about in the back of Cybil's mind.
+  "What was the girl's goal?
+  And where is Harry?
+  Perhaps Harry has come here in the same manner as well?
+  Or?"
+
+Page 6
+She had a feeling that by opening this door the many questions whirling about
+in her head would all be put to rest.
+Cybil summoned forth her courage and placed her hand on the door.
+
+"Ah...!"
+
+Page 7
+It is hot, and Cybil immediately takes her hand off the knob.
+Something is burning beyond this door.
+It is impossible to open this door by hand.
+Just from touching the door the palm of Cybil's hand stingingly hurts.
+
+第八章　　「闇に映える業火」
+「ドアを蹴り続けて」
+Chapter 8   "The hellfires shimmering in the darkness"
+Cybil kicks the door over and over
+
+Page 8
+She kicks the door with all her might.
+With a hopeful feeling, she continues to kick the door over and over with the
+thick sole of her boot.
+Finally the knob breaks, and the door forcefully opens inward. At the same
+time hot wind singes Cybil's hair.
+
+Page 9 (Final area, burning)
+And then Cybil saw it.
+The room is about as large as a movie theater. Fire has spread all throughout,
+and it has began to collapse.
+
+Page 10
+Beyond the debris and flames a man is holding something to his chest and
+heading toward another exit in order to get out.
+And just as he reached the exit the vigorously burning flames lit the side of
+his face.
+
+
+Go to 8-2
+
+
+_______________________________________________________________________________
+第八章　　「闇に映える業火」                                                8-2
+炎に浮かぶ男の横顔　                                     (Staircase to freedom)
+Chapter 8   "The hellfires shimmering in the darkness"
+The profile of the man visible in the flames
+
+Page 1 (Final area, burning)
+It was...
+
+A ) unmistakably Harry.
+     Go to 8-3
+
+B ) an unfamiliar man.
+     Go to 8-4
+
+
+_______________________________________________________________________________
+第八章　　「闇に映える業火」                                                8-3
+間違いない…ハリーだ        　                                     (Final area)
+Chapter 8   "The hellfires shimmering in the darkness"
+There is no mistake...it is Harry.
+
+Page 1 (Final area, burning)
+And it was unmistakably Harry.
+
+Page 2
+"Harry!"
+Cybil's voice was a scream.
+Without backing away, she ran into the room, which had become hell-like.
+A piece of rubble enveloped in flames fell right in front of her.
+"KYA!"
+
+Page 3
+Cybil had fallen back on her behind, but instantly stood up, moved around the
+obstacle and proceeded further into the room.
+However, she had lost Harry.
+
+"Harry!"
+She once again yelled out his name.
+
+
+Go to 8-5 (Ending A)
+
+
+_______________________________________________________________________________
+第八章　　「闇に映える業火」                                                8-4
+ハリーではない…            　                                     (Final area)
+Chapter 8   "The hellfires shimmering in the darkness"
+It is not Harry...
+
+Page 1 (Final area, burning)
+It is not Harry.
+It is a slightly plump middle aged man.
+
+Page 2
+That man is holding what looks like a white paper bag to his chest and is
+running out of the room.
+
+Page 3
+"Wait!"
+
+Cybil screams.
+The man glances toward her, but continues rushing out.
+
+Page 4
+Cybil begins to run in order to chase him, but almost stumbles over something
+and then stops in her tracks.
+
+
+Go to 8-5 (Ending A)
+
+
+_______________________________________________________________________________
+第八章　　「闇に映える業火」                                                8-5
+少女を抱きかかえて       　                       (Alessa laying in final area)
+Chapter 8   "The hellfires shimmering in the darkness"
+Cybil carries the girl
+
+Page 1 (Final area, burning)
+Someone is collapsed at her feet.
+
+Page 2 (Alessa laying in final area, burning)
+A girl dressed in white clothing is lying face down, and her back moves
+up and down along with her breathing.
+Cybil stops, kneels down, and places her hand on the girl's shoulder.
+
+Page 3
+"Are you ok?
+If you stay here you will be burned to death.
+Hurry and get up!"
+
+The girl just remains face down and does not even try to look up.
+
+Page 4
+Cybil forcefully lifts the girl's shoulders up, and then her face freezes.
+The girl is the one that she was just traveling with...
+
+Page 5
+The girl's name suddenly rises up within her memory.
+
+  "Cheryl."
+
+Page 6
+"Cheryl...why are you here...!"
+
+Cybil carries Cheryl's small body and heads for the exit.
+
+第八章　　「闇に映える業火」
+「早く脱出しなければ」
+Chapter 8   "The hellfires shimmering in the darkness"
+They must escape quickly
+
+Page 7
+Cheryl has suffered serious burns on her entire body.
+If they don't get out quickly then not only Cheryl, but Cybil as well will be
+burned to ash.
+
+Page 8
+Black smoke rises from Cheryl's white clothing.
+The girl is just barely conscious, and her face is pale.
+Part of her hair is burned, and her right cheek is red and swollen.
+Cybil sheds tears.
+
+Page 9
+The sounds of explosions resound from all directions, and the floor shakes
+and rumbles.
+Cybil holds the burned girl close to protect her and runs.
+
+Page 10
+In order to save the faint life in front of her Cybil risks her own life.
+Cybil devotes herself completely to her current goal.
+And she considers this to be her duty.
+
+第八章　　「闇に映える業火」
+「湧き上がる謎」
+Chapter 8   "The hellfires shimmering in the darkness"
+The question that grows within Cybil's heart
+
+Page 11
+Cybil avoids debris as she heads towards the exit. At the same time she thinks.
+
+Page 12
+The man she just saw...
+He seems to have just abandoned this girl.
+And if that is the case...
+
+第八章　　「闇に映える業火」
+「白い階段」
+Chapter 8   "The hellfires shimmering in the darkness"
+The white staircase
+
+Page 13 (Staircase to freedom)
+Cybil finally arrives at the exit, and places her foot on the white staircase
+that extends in front of her.
+And then she races up it.
+
+Page 14
+From behind the loudest explosion yet occurs.
+A sea of fire is just behind Cybil, and is closing in on her.
+
+Page 15
+As she climbs the long staircase Cybil has the goal of reaching the light
+coming from above the ground. Or perhaps she just senses that it is her
+last hope, so she runs stronger and faster up the stairs.
+
+Cybil glances down at Cheryl's face.
+
+
+The End A
+
+You will now receive the following Digital Trading Cards:
+   20. Key
+   22. Music Room
+   25. Aqueduct
+   26. Elevator
+
+
+_______________________________________________________________________________
+第八章　　「伝達」                                                          8-6
+最後の力                 　                     (Cybil walking, half bent over)
+Chapter 8   "Convey"
+The last of her strength
+
+Page 1 (Black)
+Cybil somehow manages to stand up, but staggers and falls back down onto the
+floor.
+
+Page 2
+However, she decides to summon the last of her strength in order to save the
+girl that she was moving with for a bit, Cheryl.
+
+Page 3
+She stands up again.
+And her entire body is beset with severe pain.
+
+But Cybil does not fall down.
+She presses her left hand to her chest and begins to walk with great effort.
+
+Page 4
+She follows the trail of the evil creature that came out of her, and escapes
+from the amusement park through the open door of a garage dump.
+
+Page 5 (Cybil walking, half bent over)
+  "A long staircase to the basement...
+  Just where does it lead to?"
+She rests her hand on the wall, and from time to time squats down where she
+is standing, as she continues forward via her strong will.
+
+第八章　　「伝達」
+「私を導く存在」
+Chapter 8   "Convey"
+The presence that guides me
+
+Page 6 (Underground corridor)
+Eventually a long corridor appears in front of her.
+The passage spreads out like a blood vessel of the town's underground.
+  "Who could have made this?
+  Am I being led somewhere?
+
+Page 7
+  It's too late...
+  My legs are unsteady and color is disappearing from my view.
+  A monochrome underground passage...
+  And from time to time a storm of mixed noise..."
+
+Page 8 (Background begins flashing red)
+A warm breeze ruffles Cybil's blond hair.
+Somewhere far off, at the end of this passage, something is burning.
+
+Page 9
+It's dangerous. However, it's because it is dangerous that Cybil must all
+the more face it.
+
+The girl is being held prisoner.
+
+Page 10
+Up to this point Cybil did not notice a single signal from the girl that she
+was with, and for this reason she is angry with herself.
+
+Page 11
+  "When did I run into that small monster?
+  At the school? The cafe?
+  Or the bench?
+
+Page 12
+  I tried to kill Harry.
+  What of the unseen force that tried to make me stop him?"
+
+第八章　　「伝達」
+「爆発」
+Chapter 8   "Convey"
+Explosion
+
+Page 13
+It's hot.
+The basement is shaking.
+Is it an earthquake, or is Cybil hallucinating?
+
+Page 14
+An explosion.
+Light flashes from the front.
+And at the same time her cheeks become covered in heat.
+  "It is close. Not far now.
+  Something is happening.
+
+Page 15
+  The door at the end of the passage is slightly open.
+  If I can get in there..."
+
+
+Go to 8-7
+
+
+_______________________________________________________________________________
+第八章　　「伝達」                                                          8-7
+炎上する扉                         　                          (Dark staircase)
+Chapter 8   "Convey"
+The door in flames
+
+Page 1 (Black)
+Cybil thinks.
+
+A ) I can still make it in time...I've got to hurry.
+     Go to 8-8
+
+B ) Wait, should I go in there...
+     Go to 8-9 (Ending C-2)
+
+C ) Things will happen as they will...
+     Go to 8-10
+
+
+_______________________________________________________________________________
+第八章　　「伝達」                                                          8-8
+誰かがいる…                       　                          (Dark staircase)
+Chapter 8   "Convey"
+Someone is here...
+
+Page 1 (Black)
+  "I can still make it in time.
+  Someone is here.
+  I sense them.
+  I have made it here.
+  I can still make it in time."
+
+Page 2
+Cybil collapses.
+With just only a bit further to go Cybil realizes that she is not breathing.
+
+Page 3
+  "The oxygen is..."
+Instead, her skin is burned to ash by the flames.
+
+Page 4
+Cybil crawls, she continues to crawl and when she finally reaches a door...
+A man is in the center of the room...
+An unfamiliar girl is passing something to Harry...
+The scene fills Cybil's eyes.
+
+Page 5 (Final area, burning)
+Harry holds something dearly, at his chest...
+It is a baby.
+Harry holds it as if it is his own...
+Or maybe he is thinking of it as Cheryl...
+He smiles a bit.
+
+第八章　　「伝達」
+「永遠に続く…」
+Chapter 8   "Convey"
+It will go on forever...
+
+Page 6
+  "It's a mistake..."
+Perhaps Cybil was the only one to realize this?
+  "He must not accept that baby...
+  It will go on forever...
+  With the spinning of the world and time...
+
+Page 7
+  The baby represents the beginning.
+  It is a devil.
+  Look into its eyes and you can tell.
+
+Page 8
+  Look closely into its eyes.
+  Harry.
+  The baby's eyes are..."
+
+Page 9
+Cybil was unable to convey this to him.
+She could not even move, much less speak.
+
+Page 10
+The nightmare will begin again.
+A nightmare that cannot be stopped, even when it is known to be a nightmare.
+Cybil is headed to her death...
+Her vitality is rapidly fading.
+
+
+Go to 8-11 (Ending C-1)
+
+
+_______________________________________________________________________________
+第八章　　「伝達」                                                          8-9
+よく考えて…                       　                          (Dark staircase)
+Chapter 8   "Convey"
+If I think it over...
+
+Page 1 (Black)
+  "Should I go...?
+  Someone is trying to kill me...
+
+Page 2
+  I must not go.
+  I must not obey.
+  I will stop.
+  I have now realized... 
+  That this is madness."
+
+Page 3
+Cybil crumbles in the spot where she was standing.
+Flames burn through her clothes.
+And then they jump to Cybil's body.
+
+Page 4
+It's hot.
+But she can no longer move.
+The entire passage that Cybil is in is enveloped in flames.
+She does not even know any way to get out.
+There is not even a place for her consciousness...
+
+Page 5
+...........................
+
+Page 6
+The next day, in an article from a Brahms region paper:
+
+Page 7
+"Early this morning a burned corpse that is thought to be a woman's was
+discovered on a path in the north Brahms forest.
+
+Page 8
+The body has severe external injuries,
+and parts of it were reduced completely to ash.
+It appears that identification of the body will take quite some time.
+
+Page 9
+Additionally, in the area around the body there was no sign of fire, and no
+trace of gasoline, kerosene, or other oil based substances. For this reason
+the Brahms Police Department is hurrying to identify the body, and has
+launched a full scale investigation into the cause of death..."
+
+
+The End C-2
+
+You will now receive the following Digital Trading Card:
+    2. Cybil
+
+
+_______________________________________________________________________________
+第八章　　「伝達」                                                         8-10
+とにかく進みましょう…                      　                     (Final area)
+Chapter 8   "Convey"
+At any rate I should continue on...
+
+Page 1 (Black)
+  "At any rate I should go.
+  If I stay here I will be burned to death."
+Cybil continues forward while breathing feebly.
+
+Page 2 (Final area, burning)
+When Cybil finally reaches a door...
+A man is in the center of the room...
+An unfamiliar girl is passing something to Harry...
+The scene fills Cybil's eyes.
+
+Page 3
+Harry holds something dearly, at his chest...
+It is a baby.
+Harry holds it as if it is his own...
+Or maybe he is thinking of it as Cheryl...
+He smiles a bit.
+
+Page 4
+  "It's a mistake..."
+Perhaps Cybil was the only one to realize this?
+  "He must not accept that baby...
+  It will go on forever...
+  With the spinning of the world and time...
+
+Page 5
+  The baby represents the beginning.
+  It is a devil.
+  Look into its eyes and you can tell."
+
+Page 6
+Summoning the last of her strength Cybil stands.
+She must tell him.
+She must tell Harry of his mistake.
+
+Page 7
+One of Cybil's arms has already caught fire, and indigo smoke is rising from
+it.
+
+"Harry..."
+
+Page 8
+Cybil staggers towards Harry.
+Harry is just beyond her extended left arm.
+
+Page 9
+"Look closely at its eyes...
+Harry...
+At the baby's eyes..."
+
+Is what she had planned to say, but all that came from her mouth were
+unintelligible shrieks.
+
+Page 10
+Once Harry takes notice of Cybil he is surprised, places the baby at his feet,
+and walks over to Cybil.
+
+(Harry...listen...
+that baby is...)
+
+Page 11
+Harry takes the hand gun from his hip.
+
+"I thought I killed you...
+But yet you are still alive!"
+
+  "No.
+  I am Cybil.
+  A real person.
+
+Page 12
+  Even though I cannot speak,
+
+  even though I have been shot in the chest,
+
+  even though one of my arms is burning...
+  I am still alive."
+
+Page 13
+Bang...
+
+Cybil hears the familiar sound of gunfire.
+
+At the same time she felt a severe impact on her forehead.
+
+Page 14 (Harry standing over Cybil with the gun)
+Only vivid red suddenly returned to what had been a monochrome world.
+
+There is no strength in her body.
+Her body falls like a doll's, and her broken face forcefully hits the
+ground with a smash.
+
+Page 15
+  "I can see Harry.
+  He is walking this way.
+
+  Behind him...
+  Behind him I see a baby.
+  It is looking at me..."
+
+Page 16 (Black)
+Harry gently closes Cybil's eyes with the palm of his hand.
+That was his final consideration for her...
+
+
+Go to 8-11 (Ending C-1)
+
+
+_______________________________________________________________________________
+第八章　　「伝達」                                                         8-11
+終わりから始まりへ                 　                          (Dark staircase)
+Chapter 8   "Convey"
+From the ending to the beginning
+
+Page 1 (Black)
+The world is ending.
+Looking at it subjectively, the act of one's body dying is the same as the
+world dying.
+
+Page 2
+When their five senses no longer provide information, humans know the
+end of the world.
+
+Page 3
+The world is within the self, and also a part of the self.
+
+Page 4
+However, when Cybil lost consciousness for the last time...
+
+She knew a completely different truth than what she was expecting.
+
+
+The End C-1
+
+You will now receive the following Digital Trading Cards:
+    3. Cheryl
+   29. Her Fate
+
+
+_______________________________________________________________________________
+第八章　　「決意」                                                         8-12
+開かなかったはずの扉                    　                     (Harry on floor)
+Chapter 8   "Resolution"
+The door that should not have been opened
+
+Page 1 (Black)
+  "Just who was the girl...?
+  Cheryl? Or...
+  Was it that woman's daughter...?
+
+Page 2
+  Concerning the incidents that have occurred in this town...
+  No, they cannot be called incidents, but instead 
+  concerning this enigmatic situation, I have not found one piece of
+  conclusive evidence and that irritates me.
+
+Page 3
+  And there is uneasiness about the loss of my only partner.
+
+  She must be frightened somewhere, Cheryl.
+
+  That eerie figure of the girl..."
+
+Page 4
+Several feelings of discontent run throughout Cybil's mind.
+
+Page 5
+  "That Dahlia might know something.
+  However...the destination that she indicated is this place.
+  Rather than returning to the church it would be best to search here."
+
+第八章　　「決意」
+「鍵を取りに」
+Chapter 8   "Resolution"
+Going to get the key
+
+Page 6 (Door in hospital)
+Cybil had returned to the first floor to get the key to the hospital rooms,
+but then she noticed a door that had been left open.
+
+Page 7
+Creeeeek...creeeeek...
+The door sways on its hinges as the result of wind blowing from somewhere.
+
+Page 8
+This draws Cybil's attention, and she moves toward the door.
+
+"This is..."
+
+Page 9
+This door was unmistakably locked and not open just before.
+
+Cybil looks in the doorway...and at the same time gasps.
+
+
+Go to 8-13
+
+
+_______________________________________________________________________________
+第八章　　「決意」                                                         8-13
+扉の中は…                                      　           (Door in hospital)
+Chapter 8   "Resolution"
+Inside the door there is...
+
+Page 1 (Door in hospital)
+"Ah..."
+
+A ) There is a staircase leading to the basement.
+     Go to 8-14
+
+B ) There is a blinding light. Cybil covers her eyes in reaction to it.
+     Go to 8-15 (Ending B-2)
+
+
+_______________________________________________________________________________
+第八章　　「決意」                                                         8-14
+地下へ伸びる階段                                           　  (Dark staircase)
+Chapter 8   "Resolution"
+The staircase leading to the basement
+
+Page 1 (Dark staircase)
+There was not a room there.
+Just inside the doorway there was a staircase leading to the basement.
+It is not lit, so from her position Cybil cannot judge how far down it goes.
+
+Page 2
+Upon first glance, Cybil senses that this door was not opened by Harry.
+  "From the inside...
+  Someone...came up the stairs..."
+
+Page 3
+And then she became sure of this.
+
+Page 4
+There was a large bloodstain on the knob on the inside of the door...
+
+Go to 9-1
+
+
+_______________________________________________________________________________
+第八章　　「墓地」                                                         8-15
+懐かしい匂い                                                (Cybil in cemetery)
+Chapter 8 "Cemetery"
+A nostalgic scent
+
+Page 1 (Cybil in cemetery)
+The blinding light falls all over Cybil's body.
+Cybil lost her ability to see instantly, and had no idea whether her eyes
+were opened or closed.
+
+Page 2
+As Cybil's sight finally began to return to her, she felt the wind on her
+skin. From these two senses she could tell that she was now outside.
+
+Page 3
+She doesn't sense any people...
+
+The chirping of birds...
+
+A nostalgic scent...
+
+In front of her an area of flowerbeds spreads out.
+It is a scene that she has seen somewhere before.
+
+Page 4
+Cybil begins to walk.
+And then, at some point she began to run.
+She passes through the trees, and once she climbed a small hill her
+field of vision once again expanded.
+
+Page 5
+There is a cemetery.
+
+Cybil finally remembers.
+This is the place where her grandparents are resting.
+When she was young, her parents often brought her here.
+
+Page 6 (Mother Alessa with mourners)
+Next to her grandparents graves...
+Many people in black have gathered.
+The sobbing of the people dressed in mourning clothes can be heard.
+
+Page 7
+Everyone is familiar.
+
+Page 8
+Her mother and father...
+Her three year younger sister...
+
+"What's wrong?
+Did something happen?"
+
+None of them answer.
+
+Page 9
+The police chief of Brahms...
+Fellow officers...
+And Sally...
+
+"Hey, Sally?
+Who passed away?"
+
+None of them answer.
+
+Page 10 (Close up of gravestone)
+The sacred ceremony is proceeding without delay.
+
+A magnificent casket is brought out by several men, and then it is gently
+lowered into a hole that was prepared in advance.
+
+Page 11
+Sally is whispering to Cybil's mother in a low voice.
+
+"I told her just think about what might happen...
+I recommended that she use a car for transportation.
+
+Page 12
+When pulling over violators many accidents have happened...
+I just cannot believe that this could have happened to her..."
+
+Sally says this and then falls silent.
+
+Page 13
+  "What?
+  What are you saying?
+  I am right here.
+  Notice me..."
+
+Page 14
+Cybil tries as hard as she can to try and make someone notice her but
+no matter what she does no one does.
+
+Page 15
+Her name has been engraved on the tombstone.
+
+  "Am I dead?
+  Am I dead?
+
+  Someone tell me..."
+
+Page 16 (Mother Alessa with mourners)
+Between the people dressed in black...
+There is a girl wearing a white one piece dress standing on the dark green
+grass, only half visible.
+
+Page 17
+She is just a figure, and only half of her face can be seen, but
+it is a familiar one.
+
+Page 18
+Everything becomes bathed in white.
+The girl's face sways as if it were floating in the air.
+
+And then the girl softly calls Cybil's name.
+
+Page 19
+Before long, nothing else appeared in Cybil's eyes.
+
+
+The End B-2
+
+You will now receive the following Digital Trading Cards:
+    5. Dahlia
+   14. Groaner
+
+
+_______________________________________________________________________________
+第九章　　「決闘」                                                          9-1
+階段を下り続けて                                                        (Black)
+Chapter 9   "Resolution"
+Continuing down the staircase
+
+Page 1 (Dark staircase)
+Cybil descends the long staircase while keeping one hand on the wall.
+
+Page 2
+  "For what reason did someone make this?
+  This staircase leading to the bowels of the earth, extending down from the
+  first floor of what seemed like a normal hospital."
+She is paying very close attention to make sure not to lose her step.
+
+Page 3
+She gets the feeling that she has been descending for quite a long time.
+Suddenly, the staircase ends and flat ground is then under her feet.
+Cybil almost tripped without realizing it.
+
+第九章　　「決闘」
+「何かが燃えている」
+Chapter 9   "Resolution"
+Something is burning
+
+Page 4 (Underground corridor, flashing red)
+It is hot.
+Somewhere something is burning.
+To her front...
+
+Page 5
+Far off in front of her a small red light can be seen.
+The red light is swaying...
+It wriggles like a hand waving someone to come forth.
+
+Page 6
+After the chilly lobby the heat is unimaginable...
+The extraordinary heat feels almost as if magma from within the earth has
+arisen, and because of it Cybil has to bend down as she walks from
+time to time.
+
+Page 7
+That room is not far now...
+Cybil's sleeves have caught fire.
+The fire is gradually spreading around her footing, and Cybil's entire body
+is engulfed in flames.
+
+Page 8
+She may or may not have realized this...
+Cybil continues forward.
+
+第九章　　「決闘」
+「ダリアとアレッサ」
+Chapter 9   "Resolution"
+Dahlia and Alessa
+
+Page 9 (Dahlia and Alessa in final area, burning)
+As she entered the room she noticed two people, Dahlia and a girl
+dressed in blue.
+The two of them are facing each other amongst the blazing flames, staring at
+each other's expressions.
+
+Page 10
+When the two of them notice Cybil's presence they turn to face her.
+Dahlia looks surprised and the girl looks calm.
+Their expressions are in great contrast to each other.
+
+Page 11
+Not a single word was spoken.
+
+Page 12
+Cybil approaches the two, reads something in the eyes of the girl, pulls
+her gun from a pocket, and then places the muzzle against Dahlia's forehead.
+
+Page 13
+...........................
+
+
+Go to 9-2 (Ending B-1)
+
+
+_______________________________________________________________________________
+第九章　　「カフェ」                                                        9-2
+降りしきる雪                                          (Cybil walking in street)
+Chapter 9   "Cafe"
+Steadily falling snow
+
+Page 1 (Cafe) (Cheryl appears)
+When she came to Cybil was sleeping on a small bench in the cafe.
+
+Cheryl is standing next to her, gazing out the window at the steadily falling
+snow.
+
+Page 2
+A bike is waiting outside of the cafe for Cybil. Its engine is running.
+
+Page 3  (Cybil walking in street)
+Cheryl...smiles brightly at Cybil, opens the door of the cafe, and disappears
+into the fog.
+
+Cybil runs out after her.
+
+
+The End B-1
+
+You will now receive the following Digital Trading Card:
+   19. Telephone
+
+
+
+3. Credits
+
+This translation would not have been possible without the following:
+
+The official Konami guide for Play Novel Silent Hill:
+This book was written by Yusuke Yokoi and published by Konami. The ISBN number
+is 4-575-16265-5 and I highly recommend purchasing it if you have the chance.
+It is completely written in Japanese, but the flowcharts and pictures make it
+a worthwhile purchase even if you do not read Japanese. Plus this book is the
+only way I know of to see scenes and text from The Boy's Spring scenario.
+
+The makers of this game. All I have done is change the appearance of what they 
+wrote. What you will read is still their words, just written with my pen.
+
+My dear friend Ikuko Tanimura, who kindly answered all my questions regarding
+Japanese that I was not 100% sure on. Her efforts truly helped to make this
+translation much more robust. 育子が最高だぜ！
+
+Amy Balot, for keeping interest in Play Novel Silent Hill alive for so long
+and working hard to help fans all over the world to play it.
+
+Finally, I would like to give special thanks to the following people from the
+Play Novel Silent Hill board for keeping the conversation interesting in the
+distant, distant past:
+
+Silent Hill Junkie
+Silenthiller
+Laguu11
+code24
+Blue Phoenix
+
+Hopefully you will all come back now that we have something to discuss again!
+
+
+
+4. Translation Notes
+This section contains notes on the translation. It is divided into four
+sections: General, Specific, Progress, and Final Thoughts.
+
+The "General Notes" section contains notes that apply to the entire
+translation. In contrast, the "Specific Notes" section is filled with
+specific notes on individual items in the translation. As I made notes while
+I worked on the translation, this section is probably a lot longer than it
+should be.
+
+The section on the progress of the translation is an explanation as
+to why this translation took so long to complete.
+
+The "Final Thoughts" section just contains a few of my...final thoughts!
+
+
+General Notes:
+As I write the English translation of this I have found myself altering the 
+tense a verbs from time to time for stylistic reasons. I don't feel that this 
+hurts the work in any way, after all, attempting to literally translate is not
+a good idea! So if you see something in the translation that says "a picture 
+falls" and you know that the Japanese is literally "a picture fell" please 
+don't contact me about it. Both descriptions of the picture have the same 
+meaning in context.
+
+While I am confident much of this translation, I would be lying if I said
+
+that there were not a few things that I was little concerned about.
+I am in the process of working with friends in order to clear up any
+potentially questionable translations, so I am hoping that within a short
+time my mind will be at ease and I can be happy with 100% of this translation.
+Right now I am confident that none of the potentially questionable
+translations have an overly negative effect on the work, as anything important
+was already taken care of before the initial release. So if you do see
+something that you do not agree with please check them notes and then contact
+me if you still think that something is wrong.
+
+I occasionally will truncate a sentence if the meaning of the part I cut 
+out is inferred and including it in English makes the sentence flow poorly.
+
+In Japanese men and women speak slightly differently. This makes it a little
+easier to determine just who is talking in some of the conversations in
+Play Novel Silent Hill. Since this is lost in translation, literally, I have
+included the names of the speakers in parenthesis after their lines when I
+feel that it might be difficult to determine who is speaking.
+
+In the question areas the Japanese text often contains no final
+punctuation unless there are two sentences for one of the choices. In these
+cases only the first sentence will have a period, and the second will not.
+In the translation I have added periods as I feel that they are appropriate.
+
+In Play Novel Silent Hill quotation marks are often used they would be
+in English, and parenthesis are used to denote whispers. I have used the
+same system in the translation. But please keep the following in mind:
+ - Single lines from a character can often cross multiple pages. So there
+   will only be one set of quotation marks or parenthesis surrounding the
+   entire block of text.
+ - If there is a noticeable pause in a character's lines then I will
+   go ahead and use full sets of quotes or parenthesis around the lines that
+   come before and after the pause. (This generally only affects lines that
+   are Cybil's thoughts.)
+ - Cybil's thoughts will appear with quotation marks around unless she is
+   recalling something that another character with the game has said. In this
+   case parenthesis will be used instead.
+ - In addition to quotes or parenthesis, all of Cybil's thoughts will be
+   indented two spaces. I would have preferred to just type her thoughts in
+   italics, but alas, such an option is not present when working with plain
+   text.
+
+One of the biggest challenges with the translation of Cybil's Scenario was
+determining which lines represent Cybil's thoughts and which ones were
+narration. Odds are there are cases in which I may have made narration into
+one of Cybil's thoughts and vice-versa. (In fact, I can certify that I have
+changed narration to Cybil's Thoughts in some places because it just sounded
+better that way.) I do not believe that any of these potential "errors" hurt
+the work, but if you notice a case of this that you feel is a problem then
+feel free to let me know.
+
+Many times the lines of different characters appeared with no spaces in
+between of them in the Japanese in Play Novel Silent Hill. To avoid confusion
+I have added line breaks between the lines of different characters.
+
+I have added Cybil to several of the Event Descriptions to make the English
+flow better. (Some of the Event Descriptions have Cybil in them in the
+original Japanese as well.)
+
+I changed the tense of many of the verbs in the Event Descriptions to the
+gerund (-ing) form if I felt that this made the English sound better. 
+
+
+Specific Notes:
+Introduction, Block Name
+The Block Name of the introduction is a single Japanese word, which can be
+translated as "Going into action" or "Dispatch". I originally chose "Going
+into action", but then Blue Phoenix corrected a silly mistake of mine
+regarding the Japanese and suggested "Dispatch". I initially rejected this
+suggestion, as I never really thought of Cybil being "dispatched" to Silent
+Hill. However, the more I thought about it the more I began to wonder if
+perhaps Dahlia (or Alessa) had possibly summoned Cybil to Silent Hill. Some of
+Dahlia's dialog in Cybil's scenario provides some support to this theory, so
+in an homage to Blue Phoenix I changed this Block Name to "Dispatch". 
+
+Introduction, page 11
+Sally yells "hot", which means she must have gotten some of the coffee on her.
+I was just going to use the "Ahhh!", but then I thought back to the last time
+that I ate pizza just a little too soon and realized that sometimes English
+speakers yell "Hot!" as well : )
+
+Introduction, page 15
+The "Whether they realize that or not" in the final sentence on page 15
+refers to whether or not the driver of the jeep realizes that there is a cliff
+on one side. At the moment I cannot think of a more clear way to write this
+sentence, so I have left it as is. 
+
+Chapter 1
+A fair amount of the text in this chapter is identical to the text in
+Chapter 2 of Harry's scenario. For the most part any changes are minor, with
+the exception of Area 1-4, which contains a fair amount of differences.
+
+Area 1-1, page 1
+The words are the first page are Japanese onomatopoeia for the feeling of
+cold. As there was no real translation that I could find, I just left them as
+is and made a note.
+
+Area 1-4, page 4
+The Japanese says that the man (Harry) adjusts his position on the sofa.
+Naturally, I have changed "sofa" to "bench seat", as that is what Harry is
+sitting on in the game.
+
+Area 1-5, page 6
+Oddly enough "bullets" became "live ammunition" in the Japanese here. (When
+compared with the same line in Harry's scenario.) I chose not to include this
+change, as just "bullets" sounds best to me.
+
+Area 2-1, page 3
+The Japanese is more like "Cybil's goal was cut-off", but I just did not like
+how that sounded in English so I changed it to "Cybil's hopes were crushed".
+
+Area 2-3, page 1, Area 4-7, page 4, and Area 8-3, page 2
+KYA and KYAA are both Japanese onomatopoeia for screams. While there are
+translations available, I did not use them as I feel that they look a little
+too much like confirmations when written.
+
+Area 2-3, page 4
+I added the "She then notices that" to the final sentence on this page to
+make it connect better with the sentence before it.
+
+Area 2-4, page 1
+The final sentence here is very interesting as it suggests that Alessa/Cheryl
+is concerned only with using the monsters against Harry, and not Cybil.
+
+Area 3-3, Event Description
+The Event Description for this area is literally "The phone receiver that is
+off the hook". The Japanese is elegant and succinct, the English is sadly not.
+So I changed "off the hook" to "dangling", as this accurately describes the
+the state of the receiver without sounding so clunky.
+
+Area 3-3, page 1
+In Japan, room sizes are often measured based on the number of tatami mats
+that would fit in them. Tatami mats are the straw mats placed on the floor
+in more traditional style rooms in Japan, and are generally about 3 x 6 feet
+in size. The Japanese on this page originally said that this was a room about
+the size of 8 tatami mats. I converted this to square feet, as that is the
+common method used for measuring rooms in American English.
+
+Area 3-3, page 2 and Area 3-6, page 6
+The Japanese is literally "pipe chairs" here. "Pipe" of course refers to the
+construction of the chairs. I chose to use "folding chairs" as the chairs in
+the associated picture are clearly that type of chair, and are often
+constructed using "pipes".
+
+Area 3-3, page 2
+In the final sentence on this page the Japanese is more along the lines of
+"feel the unnaturalness of the empty station". I felt that "unnaturalness"
+was just a clunky word, so I modified the sentence to use "unnatural".
+
+Area 3-3, page 4
+The Japanese here is more along the lines of "I wonder if they were talking
+on this phone?" I did not feel this English conveyed what Cybil was really
+thinking, so I changed the sentence accordingly.
+
+Area 3-3, page 12
+The sentence fragment present in the original Japanese makes it impossible to
+accurately interpret what Cheryl is saying. She could be saying "the first
+(something) in the elementary school" or "the (adjective + est) in the
+elementary school". Sadly not enough words are present to be sure, but I would
+go with the latter if I had to make a choice. I have to wonder just what she
+was trying to say though... One thing is certain, she is definitely not talking
+about what floor she is on. If that were the case then a different Japanese
+word would have been used.
+
+Area 3-9, page 2
+The "still" in the second sentence was added to make it flow better.
+
+Area 4-1, Event Description
+The Japanese here is literally "school building". However, in English I
+believe that school is enough, as building is implied in this reference.
+
+Area 4-1, pages 1 and 3
+If the player came through Area 3-3 on their path to this area then text on
+pages 1 and 3 does not make a lot of sense as Cybil already knows that Cheryl
+is in the elementary school. 
+
+Area 4-1, page 6 and Area 4-11, page 5
+Much like in Harry's scenario, the Japanese here refers to the school gate.
+In Japan schools and their grounds are generally surrounded by fences, and
+there is always at least one gate that allows access to the school grounds.
+That gate is what the Japanese here refers to. However, since Midwich
+Elementary has no fence around it, as is the style with many American schools,
+I chose to translate "school gate" as "entrance to the school grounds".
+
+Area 4-1, pages 12-13
+I changed the parenthesis around Cybil's thoughts here to quotation marks
+because the Japanese clearly states that she is thinking these lines.
+
+Area 4-3, pages 13-14 and Area 4-6, page 7
+I would have really preferred to use the plural "monsters" here, but it is
+fairly clear that Cybil is thinking about the lone Groaner that she
+encountered in Chapter 2. Cheryl's response in Area 4-10 also supports this.
+
+Area 4-11, pages 6 and 9
+In Japanese, the words for (older) brother (お兄さん - Oniisan),
+(older) sister (お姉さん - Oneesan), aunt (おばさん - Obasan),
+uncle (おじさん - Ojisan), grandmother (おばあさん - Obaasan), and
+grandfather (おじいさん - Ojiisan) are often used to refer to people of
+specific ages. (The -san suffix can be replaced with -chan for each of these
+words as well. Generally the -chan is used by more familiar people or children,
+and often has a more playful feel to it.) These references usually replace the
+words "you" or "I", but can also be used in a similar fashion to English
+pronouns.
+
+Generally speaking, (older) brother and (older) sister are for men and
+women that appear to be in their late teens or 20's, aunt and uncle are for
+people that look like they are older than 30 but not elderly, and grandmother
+and grandfather are for those who outwardly appear to be old.
+
+Such usage of these terms is not completely alien in English. The use of the
+word "brother" by the character Desmond on the show "Lost" is fairly similar,
+although he uses this term to address all males regardless of age.
+
+Throughout her scenario Cybil refers to herself as "older sister" when
+speaking with Cheryl. This tells us that Cybil still considers herself to be
+young, which is completely reasonable as she is only 28 and does look and act
+young and vibrant. Most of the time I just translate these references as "I",
+as there is really no better English equivalent. (Some might argue that
+"Your big sister..." would work, but I do not feel that this is an appropriate
+or accurate interpretation of お姉さん or お姉ちゃん in these cases.)
+
+That said, there are a few places in which these references are important as
+they contribute to Cybil's character development. One of the best examples of
+this is on page 6 of Area 4-11. Here Cheryl calls Cybil "aunt" (Obachan) and
+then on page 9 Cybil corrects Cheryl saying: "I'm an "Oneesan", not an
+"Obachan". I suspect that Cheryl chose "aunt" because she sees Cybil as a
+mature, adult authority figure rather than as a young woman. I also do not
+believe that Cheryl did this to hurt Cybil in any way.
+
+This particular reference is also very interesting because it tells us one
+more thing about Cybil: she is at least somewhat self-conscious of her age.
+I personally think that this goes a long way to humanize her character.
+
+For this reason, I felt that it was crucial to find a good way to interpret
+the "Oneesan" and "Obachan" used in this exchange, as well as the later uses
+of "Oneesan" or "Oneechan" by Cheryl. I quickly came up with "Miss" for
+"Oneesan" and "Oneechan", but I was at a loss as to what to use for "Obachan".
+However, as luck would have it, not long after I reached this dilemma I
+happened to catch the episode of Will & Grace in which Grace got upset because
+a clerk at a store called her "Ma'am". It was the perfect substitute for
+"Obachan", and throughout the translation I use "Miss" for "Oneesan" or
+"Oneechan" and "Ma'am" for "Obachan" when I feel that those words should be
+translated.
+
+Area 4-12, page 6
+The "knows what you are planning." in the second line is inferred from the
+Japanese. As for the final "yes", it represents the final ね in the Japanese,
+and I chose it also to make the sentence sound more like something that
+Dahlia would say.
+
+Area 4-12, page 20
+I find this request for permission/offer to stop Harry and Cybil by Alessa
+to be quite delightfully creepy. I believe Alessa does this because she knows
+that Cheryl knows love, and thus most likely does not have it in her to do
+what is necessary to stop Harry and Cybil. (We see Cheryl's compassion in the
+lower branch of Chapter 4 when Cheryl saves Cybil from the jelly monster.)
+
+Area 5-1, page 1
+The sentences about it being late at night and Cybil no longer feeling sleepy
+seem to contradict each other; however, since Cybil works the night shift
+these sentences actually make perfect sense.
+
+Area 5-1, page 6
+I changed the pronoun used in the Japanese here to "route to the cafe" as I
+felt that it made the sentence flow better.
+
+Area 5-1, page 13
+I changed "bullets" to "shells" because people rarely see bullets in a place
+where someone has recently fired a gun. Although the reason that actual
+bullets are present on the ground is explained in Area 5-4, I just cannot
+conceive Cybil seeing the bullets on the ground before the spent shell
+casings.
+
+Area 5-3, page 3 and Area 5-4, page 5
+The use of "somewhere" and "some place" on these pages is accurate to the
+Japanese. I think it is kind of neat that they made an effort here to
+"spice up" the similar sentences.
+The Japanese in the final sentences on these pages refers to Cheryl as being
+"silent". This is another case in which Japanese grammar makes for clunky
+English, so I went with "without a word".
+
+Area 5-4, page 2
+I found Cybil's comment here very interesting, as I have friends in law
+enforcement, and the bullets that they use in their handguns are not designed
+to go through things. They are instead designed to get inside things and then
+do a lot of damage. However, I read somewhere that the original Silent Hill
+was set sometime in the late 70's to early 80's, so it is possible that
+bullet technology was not what it is today.
+
+Area 5-8, page 2
+I added "fingers" here to make this sentence more clear.
+
+Area 5-8, page 7
+I changed "notice" to "ignore" here as I thought it was a better word choice.
+
+Area 7-4 and Area 7-5
+In both these areas the Japanese word for "fence" is used to describe the
+stone barrier that Cheryl and then Cybil run along. I chose "barrier" over
+"fence" as it just seemed much more appropriate.
+
+Area 7-4, page 5 and Area 7-5, page 5
+The Japanese here refers to the top of the barrier as a narrow "passage". 
+Once again, I did not feel that this was an appropriate word to use, so I
+used "top of the barrier" instead.
+
+Area 7-6, pages 3-9
+This whole section is quite a tease, as for a moment the game taunts the
+player with real answers regarding a few of the bigger mysteries of Silent
+Hill.
+
+Area 7-6, page 9
+Here the whispered conversation between Cybil and Cheryl ends. What is really
+strange here is that after Cybil whispers "Your true? You true what?" her next
+question is not enclosed in parenthesis in the Japanese. Based on the way it
+is written, it seems like they mean that this question, "Do you know
+something?", is one of Cybil's thoughts and not spoken or whispered. However,
+the final line on this page makes it seem like Cybil actually whispered or
+spoke her final question. So I went ahead and added parenthesis to this
+question, as it would make sense to me for Cybil to ask the first question
+as a reaction to Cheryl's bewildering speech, process the information she has
+received to some degree, and then ask the second question.
+
+Area 7-6, page 10
+I replaced the word "abdomen" with "stomach" as "abdomen" is rarely used in
+American English outside of the medical or scientific communities.
+
+Area 7-14, page 11
+The Japanese says that Cheryl's heart has stopped, but I went with "is not
+beating" for stylistic reasons. I also wished to avoid any confusion with the
+English exaggeration.
+
+Area 7-14, page 17
+The use of the word "morning sickness" to describe how Cybil feels here most
+likely has no implied meaning at all... However, its use still makes me wonder
+if she may have been pregnant at one time in her life, but then lost the baby.
+While it is possible that Sally or her younger sister may have just described
+morning sickness to her, this is really something that only someone who has
+experienced it would use to reference a similar feeling.
+(I doubt that Cybil actually has any children, as she never mentions
+anything about having children of her own, and none are present at her funeral
+in Area 8-15.)
+
+Area 7-15, pages 7 and 11
+I find the mention of the doll and Cybil's parents rather odd here, as the
+player would not have encountered the explanation for either of them on
+their way to this area. I suppose maybe this is just done to reward players
+for taking different paths through the scenario, or possibly, it is done to
+passively reinforce the idea that all of this is a nightmare that repeats
+over and over?
+
+Area 7-15, page 16
+The final line from this area has been removed after discussing it with my
+Japanese friend as we could not come up with an absolute translation for it.
+It is "それを。", and could unfortunately have many meanings. 
+
+Area 7-15, page 25
+Cybil claims to know who the parasite will target next. I am not certain who
+she thinks it will be, but I suspect it is either Harry or Cheryl. I think it
+may be Harry because the parasite obviously wants to kill Harry. But since I
+do not believe that Cybil understands Cheryl's true nature at this point, I
+wonder if she suspects that the parasite will target her in order to make
+Cheryl kill Harry.
+
+Area 7-16, page 12
+The Japanese (and my English) and the picture contradict each other here.
+
+Area 7-23, page 11
+At this point Cybil is most likely seeing that the girl she is choking is
+Cheryl.
+
+Area 7-23, page 12
+In the Japanese the sight of the girl filling Cybil's eyes and her
+consciousness are said to be inversely proportionate to each other. While I
+would have loved to work "inversely proportionate" into the English, it never
+sounded right.
+
+Area 8-1, page 6
+I changed "guesses" to "questions" as guesses just didn't feel right.
+
+Area 8-4
+The plump man mentioned in this area is most likely Dr. Michael Kaufmann.
+
+Area 8-5, page 11 (Event Description)
+The Event Description here is literally "Mystery that springs forth". I did
+not like this English so much, so I talked to Ikuko about the true meaning of
+this phrase. After some discussion we decided that "The question that grows
+within Cybil's heart" was the best English we could use.
+
+Area 8-6, page 4
+I just combined the two sentences on this page into one to make it flow better.
+
+Area 8-15, page 9
+Here the Japanese words used to describe one's seniority within an
+organization are used. As these terms are generally not used in American
+culture I left them out. Thus "Seniors" and "Juniors" became "Fellow officers"
+and the comment about Sally having started at the police department at about
+the same time as Cybil was omitted.
+
+Area 8-15, page 10
+The men carrying the casket her are described as "頑張そう". I chose to
+leave this out as all the interpretations I could come up with hurt the
+sentence overall. (The general meaning here is that the men looked to be
+exerting some strength to carry the casket.)
+
+Area 9-1, page 5
+Odds are the Japanese version of the "come here" hand signal is being
+referenced here. Both the Japanese and American versions of this signal use
+similar motions, the only difference is that your hand and fingers are
+pointing up in the American one and down for the Japanese one.
+
+Area 9-2, page 1
+The Japanese says "sofa", but I still say "bench"! Besides, we all know that
+there are no sofas in Cafe 5 to 2!
+
+
+A few notes on the progress of the translation:
+
+The translation of Harry's Scenario began in 2002, but I did not seriously
+look at any of Cybil until late 2007. Once again I took far more time to 
+complete the translation than I should have, but since this one only took a
+few months I do not feel so bad : )
+
+July, 2007 - Completed the translation of Harry's Scenario. Doing so
+  took most of my free time in the month of July, so I decided that Cybil
+  could wait.
+August, 2007 - After a few minor updates to the guide on Harry I and a week
+  or so of having fun again I chose to go to work on Cybil. Spent the weekend
+  of the 11th and 12th transcribing the Japanese text from the game. Phase 1
+  complete! Then I began working on the first pass of the translation, but
+  progress was slow as I had a lot going on.
+September, 2007 - Thanks to a move not much time was spent on the translation,
+  but as I settled in to my new place I got back to the first pass and
+  completed it on the 11th. Phase 2 complete! Unfortunately this was the last
+  time I looked at the translation in September, as I needed to upgrade and
+  overhaul another guide that I wrote.
+October, 2007 - Finally got back into the translation and sent a list of
+  questions/confirmations to Ikuko. Then I finally began writing the final
+  version of the translation. Sadly I only spent one day doing this...
+November - December, 2007 - Spent only a couple random days writing the final
+  version. Sadly I just could not stay interested, so just the first two 
+  chapters were completed.
+December 26-29, 2007 - Once again went back to work, and managed to maintain
+  focus and interest. Completed the first draft of the final version on the
+  28th, but then decided to send a new list of confirmations off the following
+  day.
+December 30-31, 2007 - Began the revisions by rewriting several translations
+  that just didn't feel right as well as the notes. With the exception of the
+  few items on the final confirmation list the translation was completed at
+  this time.
+January 11, 2008 - Got the first list of confirmations back. Happily all was
+  well and no changes needed to be made : )
+January 28, 2008 - Got the rest of the confirmations back. Integrated them,
+  and gave everything one last read through before submitting!
+
+
+Final Thoughts:
+  Well, here we are at around 3 PM on the last day of 2007. Or for those in
+  Japan it is already 8 AM on the first. I am quite happy to have finally
+  completed this translation, despite the efforts of all the Grand Theft Auto
+  III's, Panzer Dragoon RPG's, Ridge Racer's, Blue Dragon's, and Resistance:
+  Fall of Man's to distract me. (To be honest, had there been no Grand Theft
+  Auto III on the PlayStation 2 then I might have finished this translation
+  back in 2002!) Sadly, I am not as pleased as I was when I completed the
+  translation of Harry's scenario though. It is not that I think this
+  translation is bad or anything, I just do not know if I understood it as
+  well as I should have when I worked on it. To quote Lisa Simpson, in some
+  ways I felt almost like I was undergoing a "dumbening" as I translated
+  Cybil's scenario. Perhaps my only purpose in knowing Japanese was to
+  translate this game, so as I made progress on the translation the ability
+  began to leave me? (Well, I hope that is not the case, or I am going to have
+  a hard time playing Gran Turismo 5 Prologue again!) And who knows, maybe
+  this translation is just fine and I am being too hard on myself as usual? In
+  either case, time will tell.
+
+  So I hope that all the readers of the translations of Harry and Cybil's
+  scenarios enjoy them, and I am sorry that I cannot attempt to localize them
+  into any more languages. (Outside of English and Japanese I only know a
+  small amount of French, not nearly enough to even have a conversation!)
+  Happily I can report that a few people are working on localizations in
+  other languages, so just be patient a little longer!
+
+  Now I will leave you with a few answers regarding these translations that
+  have been posed to me over the years:
+
+  - You said back in 2003 that you were planning to release the translation in
+    individual chapters. Why was this not done?
+
+      Two reasons. First, I was afraid that I might not be able to keep up
+      with the time schedule when I got to some of the longer chapters.
+      Second, I was worried that the Konamunists might hit me with a cease and
+      desist order midway through the project. The thought of getting started
+      on the project only to be told that I could not finish it was just too
+      much for me.
+      (Konamunists = A term of endearment I created to refer to Konami when
+      they do something that upsets me...like when they dropped their awesome
+      logo back in late 2003 for the boring one that they still use today.)
+      (Please note that I have nothing against Konami or communism!)
+
+  - Why did it really take so long to finish the translations?
+
+      In the case of Harry, I was just easily distracted by other games and
+      television. As for Cybil, I think that the depressing nature of her
+      scenario pushed me away. I really had to be in the right mood to even
+      look at her scenario once I understood it.
+
+  - How did learn about and find all the blocks within each area?
+
+      I was really just lucky when I learned the existence of multiple blocks
+      within an area, as I stumbled on this by happening to turn the GBA off
+      at the right time. Or more correctly, I was unlucky, as then the
+      arduous task of turning the GBA on and off after reading each page
+      followed said discovery. Happily, long before I either went mad or
+      wore out the power switch on my GBA SP I was able to access the game
+      the game in a way that did not support saving. I used this method to
+      the game until it displayed "Save Error". Then I would go back to the
+      GBA SP, play to the same point, cycle the power once, and record the
+      newfound Block Name and Event Description.
+
+  - How did you create the save with all the Digital Trading Cards?
+
+      After NurseryCryme.com confirmed that all the cards were a part of the
+      game program and not data downloaded from Konami's servers when playing
+      one of The Boy scenarios I used a Game Shark to copy several saves with
+      various cards unlocked. Then I compared the saves with a hex editor to
+      until I figured out which values needed to be changed to have all the
+      cards unlocked. After years of using other people's Game Shark codes it
+      was nice to sort of be able to give something back!
+
+  - How did you get this game?
+
+      Oddly enough, my copy of Play Novel Silent Hill was imported to the
+      US while I was still living in Japan. An American friend owed me money
+      and asked if I would accept a used, but complete copy of Play Novel
+      Silent Hill to settle the debt. So in an odd twist of fate the game
+      returned to Japan to reach me. And of course, it is still in my
+      possession today. (Just removed it from the GBA SP, hopefully for the
+      last time!)
+
+
+
+5. Contact Information
+
+If you need to contact me about something in this guide I can be contacted at: 
+toby at atomicillumination.com
+Naturally the word "at" represents the @ symbol. This is done to help avoid 
+spam.
+
+You can also send me a message via GameFAQs.
+
+I try to always respond, but unfortunately I don't check either of these
+addresses more than once a month. So please be patient after sending
+me a message.
+
+Also, apologies to anyone who sent a message to the old Excite email I
+used to list here. That service cancels the mailbox after 90 days of
+disuse, which resulted in the loss of many messages.
+
+Please feel free to contact me if you feel strongly that there is an error or
+bad translation in this file. I am confident that everything is accurate,
+but nobody's perfect and I have been away from Japan for far too long.
+
+Also do not hesitate to let me know if there is an error regarding a picture
+or a page number, or anything like that. I have gone through this guide
+several times and I believe that I have caught everything, but again,
+nobody's perfect.
+
+I don't mind questions or concerns about the translation and its contents,
+but please no hate mail of any sort. It is just not worth anyone's time...
+
+Update History:
+
+01/28/2008 - First submission to GameFAQs.
+11/03/2016 - Updated the contact info.
+
+
+
+6. Copyright Information
+
+Play Novel Silent Hill
+Translation of Cybil's Scenario
+Version 1.05 - Last Updated 11/03/2016
+Written by and copyright 2008-2016 Toby Normoyle. (loc182)
+
+This work may be not be reproduced under any circumstances except for 
+free distribution per the conditions noted below. Otherwise, it may not be
+placed on any web site or otherwise distributed publicly for profit. Use
+of this guide in such a manner is strictly prohibited, and a violation of
+copyright.
+
+Posting Information:
+
+  - You can post this guide on your site as long as it is free for anyone
+    to look at, you do not modify it, and your site generally concerns
+    Silent Hill. (I would prefer not to see this appear on general cheat code
+    sites, it really just belongs on Silent Hill related ones.)
+
+  - If your site charges an access fee or requires users to signup in order
+    to view this guide then you may not post it.
+
+  - Updates will only be posted at GameFAQs.
+
+  - Konami may use this guide for profit, but if done so I would really
+    appreciate being given credit. Also, I would prefer to see the guide
+    used in a way so that PSP owners get it as a free download, or as a part
+    of Silent Hill Origins. (I guess it would be the PS2 version of that
+    game now.)
+
+All trademarks and copyrights contained in this document are owned by 
+their respective trademark and copyright holders.
+

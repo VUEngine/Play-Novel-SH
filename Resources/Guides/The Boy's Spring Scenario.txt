@@ -1,0 +1,351 @@
+
+
+Play Novel Silent Hill
+The Boy's Spring Scenario
+Version 1.25 - Last Updated 11/03/2016
+Written by and copyright 2003-2016 Toby Normoyle. (loc182)
+
+
+This is a translation of the flowchart analysis of the Boy's Spring scenario 
+from the Japanese Official Konami guide book. Since this analysis is from a 
+guide, many of the important details were left out, but it is the best 
+information I have been able to find on the Boy and the Spring scenario so 
+far.
+
+
+Table of Contents
+
+ 1. The Boy?
+ 2. Credits
+ 3. The Spring Scenario
+ 4. Additional Pages Found in the Guide
+ 5. Conclusions and Hypotheses
+ 6. Translation Notes
+ 7. Contact Information and Update History
+ 8. Copyright Information
+
+
+
+1. The Boy?
+
+The Boy is a seven year old boy named Andy who lives in the house next to 
+Harry and Cheryl Mason. He is also the main character of four scenarios that 
+could be downloaded into the Play Novel Silent Hill cartridge via cellular 
+phone. The four scenarios were named for each of the seasons, and thus there 
+were spring, summer, fall, and winter scenarios.
+
+Unfortunately it is true that the download service has ended, so it may be 
+impossible to ever really play these scenarios; however, a few "lost memories" 
+do remain. You can see a picture of Andy on the back of the box of this game. 
+It is the one in the lower right corner. You can also see Andy in Cybil's
+scenario. Just choose A as the last choice you make in chapter 2. This sends
+you to the "lower" branch on the flowchart. Then once you reach chapter 7
+choose A for the first choice you make. Then read text until you reach the
+next choice. This time choose B and you will get to see Andy.
+
+
+
+2. Credits
+
+This document contains a partial translation/interpretation of pages 7, 60,
+and 61 of the official Play Novel Silent Hill guide. This book was written by
+Yusuke Yokoi, edited by the Konami CP Division, published by Konami, and
+released by Futabasya as part of the Konami Kanpeki Kouryaku Series.
+The ISBN number is 4-575-16265-5.
+
+I would also like give special thanks to the people at the Konami CP Division 
+for writing the best guides I have ever seen. They always go beyond just 
+covering the game and include things such as interviews and developer Q&A. 
+Considering the simplicity of the Spring scenario, I am extremely pleased that 
+they chose to include it in their Play Novel Silent Hill guide.
+
+
+
+3. The Spring Scenario
+
+Compared to Harry's and Cybil's scenarios, the Spring scenario is very simple. 
+There are only eight areas, two choices to make, two endings, and one digital 
+trading card in this scenario. There may or may not be an introduction or an 
+actual flowchart as the guide doesn't say anything either way. The guide also 
+doesn't make any mention of how many pages of text are in each area. However, 
+the guide does give a short description of the areas and shows how they are 
+connected. That is what you will find the translation of here.
+
+Since this scenario is so simple I have only listed directions when they are 
+necessary. Just read each area and move on to the next unless directed 
+otherwise.
+
+
+Spring-1 Home
+
+Andy goes through his usual morning routine of looking (out his bedroom 
+window) for the girl who lives next door. He has become unsatisfied with 
+just looking at her and wants to become friends.
+
+
+Spring-2 Backyard (Background Picture: Black)
+
+Andy sees Cheryl in the backyard and decides that it is finally time to talk 
+to her. 
+
+He...
+
+A ) moves toward Cheryl and calls out to her.
+     Go to Spring-3
+
+B ) takes a deep breath to calm himself down.
+     Go to Spring-4
+
+
+Spring-3 Backyard
+
+At the moment he tries to call out to her, the front door of her house opens 
+and her father appears. Cheryl begins talking with her father.
+Go to Spring-5
+
+
+Spring-4 Backyard
+
+In order to calm down, Andy closes his eyes and takes a deep breath. When he 
+opens his eyes again Cheryl has disappeared.
+Go to Spring-5
+
+
+Spring-5 Inside the vehicle
+
+After secretly sneaking into the vehicle Andy holds his breath so that he will 
+not be discovered. Then the entire vehicle jerks hard......
+
+
+Spring-6 Silent Hill (Background Picture: Andy standing on the edge where a  
+road has collapsed)
+
+Quickly realizing that Cheryl has gone missing, Andy walks around the town in 
+order to look for her. 
+
+Then...
+
+A ) he hears someone's footsteps behind him.
+     Go to Spring-7
+ 
+B ) the precipice he is standing on crumbles.
+     Go to Spring-8
+
+
+Spring-7 Silent Hill
+
+It is the sound of loafers clicking on the concrete. Perhaps it's Cheryl? Andy 
+tries to turn around, but his body won't move.
+
+The End 1-You now receive the First Sight card.
+
+
+Spring-8 Silent Hill
+
+The spot where Andy is standing suddenly crumbles away. His body is bumped as 
+he rolls to the bottom of the incline. He is then unable to move for a 
+while.
+
+The End 2-You now receive the First Sight card.
+
+
+(You get the First Sight card regardless of the ending you reach.)
+
+
+
+4. Additional Pages Found in the Guide
+
+The guide book shows a total of six actual screens from the Spring scenario.
+Two of them are of the areas in which you make a choice, Spring-2 and Spring-6.
+These two screen shots also give away a slight "error" in the layout of the
+guide's flowchart and this translation of it. This is because any time you 
+make a choice in this game the area is only one page of text, which contains 
+the question and the choices. Thus the areas Spring-2 and Spring-6 are 
+actually only the word or sentence with three periods (...) after it (the 
+question) and the choices. The other sentences in each area are actually part 
+of the preceding area (Spring-1 and Spring-5). The guide book always 
+describes areas in which you make a choice this way to make it easier to 
+understand the circumstances of the question.
+
+
+One of the remaining four screen shots is fairly easy to place in the game. 
+The background picture is of Andy looking through his window and it is 
+almost certainly the first page of text from area Spring-1:
+
+Every morning at 8 o'clock Andy gets out of bed and gazes out of the large 
+window in his room. It appears to be pretty cold this morning. He wipes the 
+foggy glass with the sleeve of his pajamas and the familiar yard of 
+the house next door becomes visible.
+
+
+As for one of the other three, I believe that it may also be a page of text 
+from Spring-1 because it is a picture of Alessa in what doesn't appear to be 
+Silent Hill. She is standing on a concrete walkway surrounded by grass and 
+there are shadows of trees. The picture seems too bright to be in Silent Hill 
+and is most likely Harry and Andy's neighborhood. In the picture, Alessa 
+appears to be looking up at Andy. Although there is no direct evidence, I 
+believe that Andy's room is on the second floor of his house, and he is 
+looking down at her from his window. The concrete walkway that Alessa is 
+standing on does look a lot like what is in front of Midwich Elementary 
+school; however, the text here makes me think that this is probably somewhere 
+before Spring-5 if it is not in Spring-1:
+
+"Ah..."
+Andy was unable to close his opened mouth for a short time.
+The girl looks at Andy and brightly smiles. Then she opens the gate in a way 
+that makes it appear heavy and disappears from Andy's view.
+
+
+One of the other two shows Cheryl standing in front of a house. From the 
+picture it is hard to say whether it is the front or back of the house. It 
+appears to be dark in this picture, as there is a light on in the house. She 
+is talking to Andy in the text, so I think this page is most likely part of 
+both Spring-3 and Spring-4 or Spring-5:
+
+"You're Andy, right? From next door..."
+Andy nods. He is nervous and can't get any words out.
+
+"Our school...is the same isn't it. I've known that for a while. My name is 
+Cheryl. Nice to meet you."
+
+
+The final screen shot is one that I originally missed because it was at the
+beginning of the guide book, and not at the end with the others. I am quite
+embarrassed to have missed this picture, but quite happy because I believe I
+can place it in the scenario! The picture shows Andy standing on the edge of
+a collapsed road, and is exactly the same as the picture in Spring-6. Based
+on the text in this picture and the text in Spring-6, I am fairly confident
+that this picture shows one of pages of text at the end of Spring-5. Based
+on Andy's reaction at the end of this page, I have to wonder if he is just
+upset because of the situation that he is now in, or if something important
+happened in the previous pages:
+
+The edge of the town appears to have fallen away like a sharp cliff. While
+Andy looked down over the side he thought, "If Cheryl fell down here then I
+would probably no longer be able to help her."
+
+A few tears welled up in Andy's eyes.
+
+
+
+5. Conclusions and Hypotheses
+
+Sadly what the guide tells us about the Spring scenario only leaves more 
+questions. While there is little or no actual proof either way, here are some 
+theories I have on the missing pieces of this scenario.
+
+While looking out the window for Cheryl, Andy sees Alessa walking up to the 
+house in Spring-1.
+
+In Harry's and Cybil's scenario, different choices often lead to the same 
+outcome. I believe that Andy meets Cheryl at the end of both areas Spring-3 
+and Spring-4. It is also possible that this happens in Spring-5 because the 
+guide states that this scenario begins just before Harry and Cheryl leave for 
+Silent Hill.
+
+Andy is probably hiding in Harry's jeep in Spring-5. The limited description 
+we have supports this.
+
+It is possible that the ending for Spring-7 could lead to the event in Cybil's 
+scenario with Andy, but this is just speculation.
+
+
+
+6. Translation Notes
+
+Although I am confident in my work, there may be minor context errors in what 
+I have translated here since I do not have access to all the text. There is 
+also a chance that typos may have made it into the guide book.
+
+Because of the limited summaries written for each area, the questions in both 
+of the areas with choices, Spring-2 and Spring-6, are not quite perfectly
+translated. This is because I don't have access to the text that leads to the 
+questions, only the summaries in the guide book. For example, in Spring-5 
+(Please keep in mind that the first sentence of Spring-6 in the above 
+translation is actually part of Spring-5 as mentioned before.) the only 
+information I have is that Andy looks around town for Cheryl. The actual 
+question in Spring-6 is possible to translate as "Then" as I did, but the true 
+meaning is somewhat compromised. "At that moment" or "After he does XX" might 
+be more appropriate, but we don't know what his final action was in Spring-5 
+so I used "Then..." as it connects better with the translation of the summary.
+
+The book describes the "First Sight" digital trading card as "Andy through the 
+glass." This means that this card is either the entire or a part of the 
+picture of Andy found on the back of the box. You can now see this card by 
+downloading the save data I posted on GameFAQs that gives you all 32 cards!
+
+
+
+7. Contact Information and Update History
+
+If you need to contact me about something in this guide I can be contacted at: 
+toby at atomicillumination.com
+Naturally the word "at" represents the @ symbol. This is done to help avoid 
+spam.
+
+You can also send me a message via GameFAQs.
+
+I try to always respond, but unfortunately I don't check either of these
+addresses more than once a month. So please be patient after sending
+me a message.
+
+Also, apologies to anyone who sent a message to the old Excite email I
+used to list here. That service cancels the mailbox after 90 days of
+disuse, which resulted in the loss of many messages.
+
+Unfortunately I have no other information on any of the Boy scenarios, so 
+please do not ask me if I do. I wish I did, but I really don't.
+
+As of 07/27/2007 I have searched the following sources for information on the 
+Boy scenarios. If you have any information, or know of a source that may
+contain information that is not listed here then please contact me or post a 
+message on the GameFAQs Play Novel Silent Hill board. Thank you!
+
+Art of Silent Hill DVD
+Lost Memories - The Art & Music of Silent Hill DVD
+Silent Hill 3 Program ("Sketchbook" included with SH3 Special Edition)
+Lost Memories - Silent Hill Chronicle ISBN 4-7571-8145-0
+Silent Hill 2 Official Guide Complete ISBN 4-575-16291-4
+Silent Hill 2 Official Guide ISBN 4-575-16286-8
+Silent Hill 2 SAIGO NO UTA Official Guide ISBN 4-7571-8119-1
+
+Sadly none of the above sources contained any new information on the Boy.
+
+Update history:
+
+12/??/2003 - First submission to GameFAQs.
+12/26/2004 - Version 1.1 - Just fixed some grammar and typos.
+07/27/2007 - Version 1.2 - Added a new page found in the guide book. Fixed
+             more typos and grammar issues than I would like to admit : )
+11/03/2016 - Updated the contact info.
+
+
+
+8. Copyright Information and Update History
+
+Play Novel Silent Hill
+The Boy's Spring Scenario
+Version 1.25 - Last Updated 11/03/2016
+Written by and copyright 2003-2016 Toby Normoyle. (loc182)
+
+This work may be not be reproduced under any circumstances except for 
+free distribution per the conditions noted below. Otherwise, it may not be
+placed on any web site or otherwise distributed publicly for profit. Use
+of this guide in such a manner is strictly prohibited, and a violation of
+copyright.
+
+Posting Information:
+
+  - You can post this guide on your site as long as it is free for anyone
+    to look at, you do not modify it, and your site generally concerns
+    Silent Hill. (I would prefer not to see this appear on general cheat code
+    sites, it really just belongs on Silent Hill related ones.)
+
+  - If your site charges an access fee or requires users to signup in order
+    to view this guide then you may not post it.
+
+  - Updates will only be posted at GameFAQs.
+
+All trademarks and copyrights contained in this document are owned by 
+their respective trademark and copyright holders.
+

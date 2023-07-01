@@ -1,0 +1,152 @@
+PLAY NOVEL : SILENT HILL PUZZLE GUIDE
+Author: David Blake
+E-mail Contact: db.gamefaqs@gmail.com
+Revision: 1.0.1 (4-03-2001)
+
+_______________________________________________________________________________
+LEGAL
+
+This work is copyright © 2001, David Blake. It may not be modified from its
+original format or posted to any web site or used in any publication, free or
+otherwise, without my express permission. To obtain permission, please write
+to: db.gamefaqs@gmail.com.
+
+_______________________________________________________________________________
+ACCESSING ALL OF THE PUZZLES
+
+Once you complete the game once with Harry Mason, you will be able to play as
+Cybil Bennet and discover more of the wierdness that is Silent Hill. On the
+character select screen (right after you select the file you want to use), press
+right or left on the D-Pad to select which character you want to use.
+
+_______________________________________________________________________________
+PUZZLE GUIDE
+
+This puzzle guide is simply here to provide the solutions to the few puzzles
+contained in Play Novel : Silent Hill for the Gameboy Advance. I am currently
+working on a Card Guide and (much slower) on a full translation guide. This
+guide is split between Harry and Cybil's puzzles. It is possible to bypass some
+of these puzzles. I believe I got all of them since I have the plot line mapped
+out, but anything's possible. I just hope the plot line doesn't change
+depending on what endings you already have. That's mess up my plot tree for
+translation.
+
+==============================[ HARRY'S SCENARIO ]============================
+
+--- SWITCHBOARD PUZZLE -------------------------------- SWITCHBOARD PUZZLE ---
+This is a simple "complete the circuit" type puzzle. All you need to do is
+click the XXX'd squares with your pointer arrow to complete the switchboard
+circuit and move forward in the game.
+
+  +---+     +---+     +---+     +---+     +---+     +---+
+  |   |<<<<<|XXX|<<<  |   |-----|   |-----|   |     |   |
+  |   |     +---+  ^  +---+     +---+     +---+     |   |
+  |   |            ^    |         |         |       |   |
+  |   |            ^    |         |         |       |   |
+  |   |     +---+  ^  +---+     +---+     +---+     |   |
+  |   |     |   |--^<<|XXX|  v<<|XXX|<<<  |   |-----|   |
+  |   |     +---+     +---+  v  +---+  ^  +---+     |   |
+  |   |       |         ^    v         ^            |   |
+  |   |       |         ^    v         ^            |   |
+  |   |     +---+     +---+  v  +---+  ^  +---+     |   |
+  |   |-----|   |     |XXX|<<<--|   |  ^<<|XXX|<<<<<|   |
+  |   |     +---+     +---+     +---+     +---+     |   |
+  |   |       |         |         |         |       |   |
+  |   |       |         |         |         |       |   |
+  +---+     +---+     +---+     +---+     +---+     +---+
+  | < |     |   |-----|   |-----|   |-----|   |     | < |
+  +---+     +---+     +---+     +---+     +---+     +---+
+
+--- LIQUID JARS PUZZLE -------------------------------- LIQUID JARS PUZZLE ---
+This puzzle is another simple puzzle. You have three jars with variant amounts
+of liquid that you need to match with the beaker on the right of the screen.
+
+Solution:
+  A. +--+
+     |  |
+     |  |  B. +-+
+     |  |     | |  C. +-+
+     |  |     | |     | |
+     |  |     | |     | |
+     +--+     +-+     +-+
+      10       7       5
+
+You need to end up with the liquids in a 1/10, 7/7, and 2/5 sequences. Here's
+how to do it:
+
+  1. Move liquid from A to C. (5,0,5)
+  2. Move liquid from C to B. (5,5,0)
+  3. Move liquid from A to B. (3,7,0)
+  4. Move liquid from B to C. (3,2,5)
+  5. Move liquid from C to A. (8,2,0)
+  6. Move liquid from B to C. (8,0,2)
+  7. Move liquid from A to B. (1,7,2) *** COMPLETE!!! ***
+
+--- SPECIMEN COLLECTION ------------------------------ SPECIMEN COLLECTION ---
+All you have to do is move the magnifying glass over the specimens and press A
+to finish the puzzle. It's under the bottom, middle butterfly.
+
+
+==============================[ CYBIL'S SCENARIO ]============================
+
+--- PHONE NUMBER -------------------------------------------- PHONE NUMBER ---
+All you have to do is push the D-Pad to the right when you're at the telephone
+screen.
+
+  Phone Number : 38*2647*
+
+--- BLOCK PUZZLE -------------------------------------------- BLOCK PUZZLE ---
+
+Directions:
+  Use the D-pad to move the pieces and the R-Trigger to select the pieces to
+  move. You want the correct pieces over their corresponding indentions.
+
+Starting position:
+  +---+---+---+---+---+---+
+  |   |AAA|   |   |   |   |
+  +---+---+---+---+---+---+
+  |   |   |BBB|bbb|   |   |
+  +---+---+---+---+---+---+
+  |   |   |ddd|ccc|DDD|   |
+  +---+---+---+---+---+---+
+  |   |   |CCC|   |   |   |
+  +---+---+---+---+---+---+
+
+You need to match up the AAA, BBB, CCC, and DDD boxes on the aaa, bbb, ccc, and
+ddd squares. Once AAA and BBB are in place, placing the CCC and DDD pieces will
+move AAA and BBB. All you have to do is use the right trigger to re-select them
+and move them.
+
+  +---+---+---+---+---+---+
+  |   |   |   |   |   |   |
+  +---+---+---+---+---+---+
+  |   |   |AAA|BBB|   |   |
+  +---+---+---+---+---+---+
+  |   |   |DDD|CCC|   |   |
+  +---+---+---+---+---+---+
+  |   |   |   |   |   |   |
+  +---+---+---+---+---+---+
+
+Full solution:
+  - Move BBB right.
+  - Move AAA right.
+  - Move AAA down.
+  - Move CCC up.
+  - Move BBB left.
+  - Move DDD down.
+  - Move DDD left (x2)
+  - Move AAA up.
+  - Move CCC right.
+  - Move DDD up.
+
+_______________________________________________________________________________
+CREDITS
+
+I'd like to thank CJayC and Shadotak for putting up with my crap for so long,
+and for having the best damn gaming site on the net.
+
+I'd also like to thank my ferrets Tuffy and Kiki who like to "help" me play my
+GBA.
+
+Me for not screwing up my spacing on the second submission.
+
