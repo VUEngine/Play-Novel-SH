@@ -26,6 +26,7 @@
 #include <AutomaticPauseManager.h>
 #include <GameEvents.h>
 #include <ScenarioSelectScreenState.h>
+#include <VisualNovelState.h>
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -63,6 +64,10 @@ void LoadGameScreenState::enter(void* owner)
 	// start clocks to start animations
 	GameState::startClocks(GameState::safeCast(this));
 
+	Printing::setWorldCoordinates(Printing::getInstance(), 0, 2, -4, 0);
+
+	GameState::hideEntityWithName(GameState::safeCast(this), "SUBCHPTR");
+
 	this->entityCursor = Entity::safeCast(Container::getChildByName(Container::safeCast(VUEngine::getStage(VUEngine::getInstance())), "CURSOR", true));
 	this->option = 0;
 	LoadGameScreenState::positionCursor(this);
@@ -86,6 +91,7 @@ void LoadGameScreenState::processUserInput(UserInput userInput)
 	}
 	else if((K_A | K_STA) & userInput.pressedKey)
 	{
+		VisualNovelState::setSaveSlot(VisualNovelState::getInstance(), this->option);
 		TitleScreenState::loadNextState(this);
 	}
 }

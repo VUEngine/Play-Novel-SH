@@ -112,7 +112,8 @@ singleton class VisualNovelState : GameState
 	uint8 language;
 
 	static VisualNovelState getInstance();
-
+	
+	void setSaveSlot(uint8 saveSlot);
 	override void enter(void* owner);
 	override void processUserInput(UserInput userInput);
 	override bool handleMessage(Telegram telegram);

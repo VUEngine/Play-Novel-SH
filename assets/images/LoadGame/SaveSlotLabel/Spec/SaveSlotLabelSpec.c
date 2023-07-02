@@ -117,7 +117,7 @@ AnimationFunctionROMSpec SaveSlotLabelHarryAnimation =
 	NULL,
 
 	// function's name
-	"Harry",
+	"0",
 };
 
 AnimationFunctionROMSpec SaveSlotLabelCybilAnimation =
@@ -140,7 +140,7 @@ AnimationFunctionROMSpec SaveSlotLabelCybilAnimation =
 	NULL,
 
 	// function's name
-	"Cybil",
+	"1",
 };
 
 AnimationFunctionROMSpec* const SaveSlotLabelAnimation[] =

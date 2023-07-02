@@ -45,6 +45,8 @@ extern EntitySpec DummyContainerEntity;
 void VisualNovelState::constructor()
 {
 	Base::constructor();
+
+	this->saveSlot = 0;
 }
 
 void VisualNovelState::destructor()
@@ -76,11 +78,11 @@ void VisualNovelState::enter(void* owner)
 	this->textLength = 0;
 	this->pageFinished = false;
 	this->language = I18n::getActiveLanguage(I18n::getInstance());
-	this->saveSlot = 0;
 
 	// load progress, always start at page 0
 	VisualNovelState::loadProgress(this);
 	this->progress.page = 0;
+	this->progress.started = true;
 
 	// enable user input
 	VUEngine::enableKeypad(VUEngine::getInstance());
@@ -366,14 +368,12 @@ void VisualNovelState::loadProgress()
 
 void VisualNovelState::saveProgress()
 {
-	/*
 	GameSaveDataManager::setValue(
 		GameSaveDataManager::getInstance(), 
 		(BYTE*)&this->progress, 
 		offsetof(struct GameSaveData, gameProgress) + (this->saveSlot * sizeof(this->progress)), 
 		sizeof(this->progress)
 	);
-	*/
 }
 
 void VisualNovelState::printCharacter()
@@ -459,4 +459,9 @@ void VisualNovelState::processUserInput(UserInput userInput)
 			VisualNovelState::finishPage(this);
 		}
 	}
+}
+
+void VisualNovelState::setSaveSlot(uint8 saveSlot)
+{
+	this->saveSlot = saveSlot;
 }

@@ -20,6 +20,7 @@
 
 extern EntitySpec LowPowerIndicatorEntity;
 extern EntitySpec SaveSlotWideBackgroundEntity;
+extern EntitySpec SaveSlotWideBackgroundExtraEntity;
 extern EntitySpec SaveSlotLabelEntity;
 extern EntitySpec SaveSlotBorderEntity;
 extern Sound EnterLoadGameScreenSound;
@@ -31,15 +32,16 @@ extern Sound EnterLoadGameScreenSound;
 
 PositionedEntityROMSpec LoadGameScreenStageSpecEntities[] =
 {
-	{&SaveSlotBorderEntity,				{192,  64,  -1,  0},   	0, "CURSOR", NULL, NULL, false},
+	{&SaveSlotBorderEntity,					{192,  64,  -1,  0},   	0, "CURSOR", NULL, NULL, false},
 
-	{&SaveSlotWideBackgroundEntity,		{192,  64,  0,  0},   	0, NULL, NULL, NULL, false},
-	{&SaveSlotWideBackgroundEntity,		{192, 112,  0,  0},   	0, NULL, NULL, NULL, false},
-	{&SaveSlotWideBackgroundEntity,		{192, 160,  0,  0},   	0, NULL, NULL, NULL, false},
+	{&SaveSlotWideBackgroundEntity,			{192,  64,   0,  0},   	0, NULL, NULL, NULL, false},
+	{&SaveSlotWideBackgroundExtraEntity,	{192, 104,   0,  0},   	0, "SUBCHPTR", NULL, NULL, false},
+	{&SaveSlotWideBackgroundEntity,			{192, 112,   0,  0},   	0, NULL, NULL, NULL, false},
+	{&SaveSlotWideBackgroundEntity,			{192, 160,   0,  0},   	0, NULL, NULL, NULL, false},
 
-	{&SaveSlotLabelEntity,				{84,  56,  -1,  0},   	0, "0", NULL, NULL, false},
-	{&SaveSlotLabelEntity,				{84, 104,  -1,  0},   	0, "1", NULL, NULL, false},
-	{&SaveSlotLabelEntity,				{84, 152,  -1,  0},   	0, "2", NULL, NULL, false},
+	{&SaveSlotLabelEntity,					{ 84,  56,  -1,  0},   	0, "0", NULL, NULL, false},
+	{&SaveSlotLabelEntity,					{ 84, 104,  -1,  0},   	0, "1", NULL, NULL, false},
+	{&SaveSlotLabelEntity,					{ 84, 152,  -1,  0},   	0, "2", NULL, NULL, false},
 
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
 };

@@ -23,6 +23,7 @@
 
 class SaveSlotLabel : AnimatedEntity
 {
+	GameProgress progress;
 	uint8 index;
 
 	void constructor(AnimatedEntitySpec* animatedEntitySpec, int16 internalId, const char* const name);
