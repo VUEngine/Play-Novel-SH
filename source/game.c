@@ -50,7 +50,7 @@ int32 game(void)
 	);
 
 	// start the game
-	//VUEngine::start(VUEngine::getInstance(), GameState::safeCast(VisualNovelState::getInstance()));
+	VUEngine::start(VUEngine::getInstance(), GameState::safeCast(VisualNovelState::getInstance()));
 	//VUEngine::start(VUEngine::getInstance(), GameState::safeCast(ScenarioSelectScreenState::getInstance()));
 	//VUEngine::start(VUEngine::getInstance(), GameState::safeCast(LoadGameScreenState::getInstance()));
 	//VUEngine::start(VUEngine::getInstance(), GameState::safeCast(MobileScreenState::getInstance()));

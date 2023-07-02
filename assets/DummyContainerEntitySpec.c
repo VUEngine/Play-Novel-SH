@@ -10,29 +10,46 @@
 //												INCLUDES
 //---------------------------------------------------------------------------------------------------------
 
-#include <VisualNovelState.h>
-#include <Languages.h>
+#include <Entity.h>
 
 
 //---------------------------------------------------------------------------------------------------------
-// 												DEFINITIONS
+//											DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
-/*
-const struct VisualNovelScript PlayNovelScript = {
-	"Play Novel: Silent Hill",
-	{
-		{
-			0,
-			kStringIntroductionScreen01,
-			kStringIntroductionScreen01,
-			{
-				{0},
+EntityROMSpec DummyContainerEntity =
+{
+	// class allocator
+	__TYPE(Entity),
 
-				{0},
-			},
-		},
+	// children
+	NULL,
 
-		{ 0, 0, 0, {{0}} }
-	},
-};*/
+	// behaviors
+	NULL,
+
+	// extra
+	NULL,
+
+	// sprites
+	NULL,
+
+	// use z displacement in projection
+	false,
+			
+	// wireframes
+	(WireframeSpec**)NULL,
+
+	// collision shapes
+	NULL,
+
+	// size
+	// if 0, width and height will be inferred from the first sprite's texture's size
+	{0, 0, 0},
+
+	// gameworld's character's type
+	kTypeNone,
+
+	// physical specification
+	NULL,
+};

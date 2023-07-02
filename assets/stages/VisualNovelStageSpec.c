@@ -18,8 +18,8 @@
 //											DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
-extern EntitySpec LowPowerIndicatorEntity;
 extern EntitySpec FlaurosEntity;
+extern EntitySpec LowPowerIndicatorEntity;
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -28,8 +28,8 @@ extern EntitySpec FlaurosEntity;
 
 PositionedEntityROMSpec VisualNovelStageSpecEntities[] =
 {
-	{&FlaurosEntity,					{ 336, 208,  0,  0},   	0, "FLAUROS", NULL, NULL, false},
-
+	{&FlaurosEntity,					{ 336, 208,  0,  0},   	0, "FLAUROS", NULL, NULL, true},
+	
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
 };
 

@@ -30,6 +30,7 @@
 enum VisualNovelMessages
 {
 	kVisualNovelMessagePrintChar,
+	kVisualNovelMessageStartPage,
 };
 
 enum PlayNovelScenario
@@ -39,39 +40,53 @@ enum PlayNovelScenario
 	kScenarioBoy,
 };
 
-enum PlayNoveFadeTypes
+enum PlayNovelFadeTypes
 {
 	kFadeTypeNoFade,
-	kFadeTypeToBlack,
-	kFadeTypeToBlackSlow,
+	kFadeTypeNormal,
+	kFadeTypeSlow,
 };
 
 
 //---------------------------------------------------------------------------------------------------------
 // 											TYPE DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
-/*
-typedef struct VisualNovelEvent
-{
-	// scene,
-	uint16 text;
-	// sound,
-} VisualNovelEvent;
 
-typedef struct VisualNovelSubChapters
+typedef struct Scene
+{
+	uint8 fadeInType;
+	uint8 fadeOutType;
+	uint8 soundPlaybackType;
+	const Sound *sound;
+	uint16 text[MAX_TEXT_PER_SCENE];
+	const PositionedEntity* positionedEntities;
+} Scene;
+
+typedef struct SubChapter
+{
+	uint16 title;
+	const Scene *scenes[];
+} SubChapter;
+
+typedef struct Chapter
 {
 	uint16 chapter;
 	uint16 title;
-	uint16 description;
-	VisualNovelEvent events[];
-} VisualNovelSubChapters;
+	const SubChapter *subChapters[];
+} Chapter;
 
-typedef struct VisualNovelScript
+typedef struct Scenario
 {
 	char* name;
-	VisualNovelSubChapters chapters[];
-} VisualNovelScript;
-*/
+	const Chapter *chapters[];
+} Scenario;
+
+typedef struct Script
+{
+	char* name;
+	const Scenario *scenarios[];
+} Script;
+
 
 //---------------------------------------------------------------------------------------------------------
 //											CLASS'S DECLARATION
@@ -80,9 +95,13 @@ typedef struct VisualNovelScript
 singleton class VisualNovelState : GameState
 {
 	Entity entityFlauros;
+	uint16 chapter;
+	uint16 subChapter;
+	uint16 scene;
 	uint16 page;
 	uint16 textLength;
 	uint16 charNumber;
+	bool pageFinished;	
 	const char* text;
 	uint8 charX;
 	uint8 charY;

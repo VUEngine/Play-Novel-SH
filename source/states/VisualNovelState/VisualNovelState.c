@@ -34,21 +34,8 @@
 //---------------------------------------------------------------------------------------------------------
 
 extern StageROMSpec VisualNovelStageSpec;
-
-extern Sound CarBrakingSound;
-extern Sound CarEngineSound;
-extern Sound EnteringOtherWorldSound;
-extern Sound SomethingStrangeSound;
-
-extern EntitySpec Scene001Entity;
-extern EntitySpec Scene002Entity;
-extern EntitySpec Scene002HighlightEntity;
-extern EntitySpec Scene003Entity;
-extern EntitySpec Scene004Entity;
-extern EntitySpec Scene005Entity;
-extern EntitySpec Scene006Entity;
-extern EntitySpec Scene007Entity;
-extern EntitySpec Scene008Entity;
+extern Script PlayNovelScenarios;
+extern EntitySpec DummyContainerEntity;
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -82,7 +69,16 @@ void VisualNovelState::enter(void* owner)
 
 	// initialize variables
 	this->entityFlauros = Entity::safeCast(Container::getChildByName(Container::safeCast(VUEngine::getStage(VUEngine::getInstance())), "FLAUROS", true));
-	this->page = 1;
+	this->charNumber = 0;
+	this->charX = 0;
+	this->charY = 0;
+	this->text = "";
+	this->textLength = 0;
+	this->chapter = 0;
+	this->subChapter = 0;
+	this->scene = 0;
+	this->page = 0;
+	this->pageFinished = false;
 	this->saveSlot = 0;
 	this->scenario = kScenarioHarry;
 
@@ -100,7 +96,11 @@ void VisualNovelState::enter(void* owner)
 		NULL // callback scope
 	);
 
-	VisualNovelState::setScene(this);
+	// start scene
+	VisualNovelState::saveProgress(this);
+	VisualNovelState::setUpScene(this);
+	VisualNovelState::setUpPage(this);
+	VisualNovelState::showPage(this);
 }
 
 bool VisualNovelState::handleMessage(Telegram telegram)
@@ -108,212 +108,130 @@ bool VisualNovelState::handleMessage(Telegram telegram)
 	switch(Telegram::getMessage(telegram))
 	{
 		case kVisualNovelMessagePrintChar:
+		{
+			if(this->charNumber < this->textLength)
 			{
-				if(this->charNumber < this->textLength)
-				{
-					VisualNovelState::printCharacter(this);
-				}
-				else
-				{
-					VisualNovelState::finishPage(this);
-				}
+				VisualNovelState::printCharacter(this);
+			}
+			else
+			{
+				VisualNovelState::finishPage(this);
 			}
 			break;
+		}
+		case kVisualNovelMessageStartPage:
+		{
+			VisualNovelState::startPage(this);
+			break;
+		}
 	}
 
 	return true;
 }
 
-void VisualNovelState::setScene()
+void VisualNovelState::nextPage()
 {
-	uint8 fade = kFadeTypeToBlack;
-
-	switch(this->page)
+	this->page++;
+	if(PlayNovelScenarios.scenarios[this->scenario]->chapters[this->chapter]->subChapters[this->subChapter]->scenes[this->scene]->text[this->page] == 0)
 	{
-		case 1:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen01a);
-			VisualNovelState::saveProgress(this);
-			break;
-
-		case 2:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen01b);
-			fade = kFadeTypeNoFade;
-			break;
-
-		case 3:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen02);
-			break;
-
-		case 4:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen03a);
-			break;
-
-		case 5:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen03b);
-			fade = kFadeTypeNoFade;
-			break;
-
-		case 6:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen03c);
-			fade = kFadeTypeNoFade;
-			break;
-
-		case 7:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen03d);
-			fade = kFadeTypeNoFade;
-			break;
-
-		case 8:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen04a);
-			break;
-
-		case 9:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen04b);
-			fade = kFadeTypeNoFade;
-			break;
-
-		case 10:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen05a);
-			break;
-
-		case 11:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen05b);
-			fade = kFadeTypeNoFade;
-			break;
-
-		case 12:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen05c);
-			fade = kFadeTypeNoFade;
-			break;
-
-		case 13:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen05d);
-			fade = kFadeTypeNoFade;
-			break;
-
-		case 14:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen06a);
-			break;
-
-		case 15:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen06b);
-			fade = kFadeTypeNoFade;
-			break;
-
-		case 16:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen07a);
-			break;
-
-		case 17:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen07b);
-			fade = kFadeTypeNoFade;
-			break;
-
-		case 18:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen07c);
-			fade = kFadeTypeNoFade;
-			break;
-
-		case 19:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen08a);
-			SoundManager::stopAllSounds(SoundManager::getInstance(), true, NULL);
-			SoundManager::playSound(SoundManager::getInstance(), &SomethingStrangeSound, kPlayAll, NULL, kSoundWrapperPlaybackNormal, NULL, NULL);
-			break;
-
-		case 20:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen08b);
-			fade = kFadeTypeNoFade;
-			break;
-		case 21:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen08c);
-			fade = kFadeTypeNoFade;
-			break;
-		case 22:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen08d);
-			fade = kFadeTypeNoFade;
-			break;
-
-		case 23:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen09a);
-			break;
-		case 24:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen09b);
-			fade = kFadeTypeNoFade;
-			break;
-		case 25:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen09c);
-			fade = kFadeTypeNoFade;
-			break;
-
-		case 26:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen10a);
-			SoundManager::stopAllSounds(SoundManager::getInstance(), true, NULL);
-			SoundManager::playSound(SoundManager::getInstance(), &EnteringOtherWorldSound, kPlayAll, NULL, kSoundWrapperPlaybackNormal, NULL, NULL);
-			break;
-		case 27:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen10b);
-			fade = kFadeTypeNoFade;
-			break;
-		case 28:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen10c);
-			fade = kFadeTypeNoFade;
-			break;
-
-		case 29:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen11a);
-			break;
-		case 30:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen11b);
-			fade = kFadeTypeNoFade;
-			break;
-		case 31:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen11c);
-			fade = kFadeTypeNoFade;
-			break;
-		case 32:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen11d);
-			fade = kFadeTypeNoFade;
-			break;
-		case 33:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen11e);
-			fade = kFadeTypeNoFade;
-			break;
-		case 34:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen11f);
-			fade = kFadeTypeNoFade;
-			break;
-
-		case 35:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen12);
-			break;
-
-		case 36:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen13a);
-			break;
-
-		case 37:
-			this->text = I18n::getText(I18n::getInstance(), kStringIntroductionScreen13b);
-			fade = kFadeTypeNoFade;
-			break;
-
-		case 38:
-			this->text = "This is the end of this demo.";
-			fade = kFadeTypeToBlackSlow;
-			break;
-
-		default:
-			return;
+		this->page = 0;
+		VisualNovelState::nextScene(this);
 	}
+
+	VisualNovelState::setUpPage(this);
+	VisualNovelState::showPage(this);
+}
+
+void VisualNovelState::nextScene()
+{
+	this->scene++;
+	if(PlayNovelScenarios.scenarios[this->scenario]->chapters[this->chapter]->subChapters[this->subChapter]->scenes[this->scene] == NULL)
+	{
+		this->scene = 0;
+		VisualNovelState::nextSubChapter(this);
+	}
+
+	VisualNovelState::setUpScene(this);
+}
+
+void VisualNovelState::nextSubChapter()
+{
+	this->subChapter++;
+	if(PlayNovelScenarios.scenarios[this->scenario]->chapters[this->chapter]->subChapters[this->subChapter] == NULL)
+	{
+		this->subChapter = 0;
+		VisualNovelState::nextChapter(this);
+	}
+
+	VisualNovelState::saveProgress(this);
+}
+
+void VisualNovelState::nextChapter()
+{
+	this->chapter++;
+	if(PlayNovelScenarios.scenarios[this->scenario]->chapters[this->chapter] == NULL)
+	{
+		this->chapter = 0;
+		// TODO: Go to credits
+	}
+}
+
+void VisualNovelState::showPage()
+{
+	uint8 fade = this->page == 0
+		? PlayNovelScenarios.scenarios[this->scenario]->chapters[this->chapter]->subChapters[this->subChapter]->scenes[this->scene]->fadeInType
+		: kFadeTypeNoFade;
 
 	switch(fade)
 	{
 		case kFadeTypeNoFade:
 		{
-			VisualNovelState::clearText(this);
-			VisualNovelState::startPrinting(this);
+			ListenerObject::sendMessageToSelf(ListenerObject::safeCast(this), kVisualNovelMessageStartPage, 100, 0);
 			break;
 		}
-		case kFadeTypeToBlack:
+		case kFadeTypeNormal:
+		{
+			Camera::startEffect(Camera::getInstance(),
+				kFadeTo, // effect type
+				200, // initial delay (in ms)
+				NULL, // target brightness
+				__FADE_DELAY, // delay between fading steps (in ms)
+				(void (*)(ListenerObject, ListenerObject))VisualNovelState::onSceneFadeInComplete, // callback function
+				ListenerObject::safeCast(this) // callback scope
+			);
+			break;
+		}
+		case kFadeTypeSlow:
+		{
+			Camera::startEffect(Camera::getInstance(),
+				kFadeTo, // effect type
+				200, // initial delay (in ms)
+				NULL, // target brightness
+				50, // delay between fading steps (in ms)
+				(void (*)(ListenerObject, ListenerObject))VisualNovelState::onSceneFadeInComplete, // callback function
+				ListenerObject::safeCast(this) // callback scope
+			);
+			break;
+		}
+	}
+}
+
+void VisualNovelState::hidePage()
+{
+	uint8 fade = PlayNovelScenarios.scenarios[this->scenario]->chapters[this->chapter]->subChapters[this->subChapter]->scenes[this->scene]->text[this->page + 1] == 0
+		? PlayNovelScenarios.scenarios[this->scenario]->chapters[this->chapter]->subChapters[this->subChapter]->scenes[this->scene]->fadeOutType
+		: kFadeTypeNoFade;
+
+	VUEngine::disableKeypad(VUEngine::getInstance());
+
+	switch(fade)
+	{
+		case kFadeTypeNoFade:
+		{
+			VisualNovelState::nextPage(this);
+			break;
+		}
+		case kFadeTypeNormal:
 		{
 			VUEngine::disableKeypad(VUEngine::getInstance());
 			Brightness brightness = (Brightness){0, 0, 0};
@@ -327,7 +245,7 @@ void VisualNovelState::setScene()
 			);
 			break;
 		}
-		case kFadeTypeToBlackSlow:
+		case kFadeTypeSlow:
 		{
 			VUEngine::disableKeypad(VUEngine::getInstance());
 			Brightness brightness = (Brightness){0, 0, 0};
@@ -344,187 +262,61 @@ void VisualNovelState::setScene()
 	}
 }
 
-void VisualNovelState::clearText()
+void VisualNovelState::setUpPage()
 {
-	this->textLength = strlen(this->text);
 	this->charNumber = 0;
 	this->charX = 0;
 	this->charY = 0;
 	Printing::clear(Printing::getInstance());
 	Entity::hide(this->entityFlauros);
+	this->text = I18n::getText(
+		I18n::getInstance(), 
+		PlayNovelScenarios.scenarios[this->scenario]
+			->chapters[this->chapter]
+			->subChapters[this->subChapter]
+			->scenes[this->scene]
+			->text[this->page]
+	);
+	this->textLength = strlen(this->text);
+	this->pageFinished = false;
 }
 
-void VisualNovelState::loadBackground()
+void VisualNovelState::setUpScene()
 {
+	const struct Scene *scene = PlayNovelScenarios.scenarios[this->scenario]
+			->chapters[this->chapter]
+			->subChapters[this->subChapter]
+			->scenes[this->scene];
+
 	Stage stage = VUEngine::getStage(VUEngine::getInstance());
 	Container sceneEntity = Container::getChildByName(Container::safeCast(stage), "SCENE", true);
-	Container sceneHighlightEntity = Container::getChildByName(Container::safeCast(stage), "HIGHLGHT", true);
+	if(!isDeleted(sceneEntity)) {
+		Stage::removeChild(stage, sceneEntity, true);
+	}
+	PositionedEntity scenePositionedEntity = {&DummyContainerEntity, {192, 80, 0, 0}, 0, "SCENE", (struct PositionedEntity*)scene->positionedEntities, NULL, false};
+	Stage::addChildEntity(stage, &scenePositionedEntity, true);
 
-	switch(this->page)
+	if(scene->sound)
 	{
-		case 1:
-		{
-			if(!isDeleted(sceneEntity)) {
-				Stage::removeChild(stage, sceneEntity, true);
-			}
-			PositionedEntity scene001PositionedEntity = {&Scene001Entity, {192, 84, 0, 0}, 0, "SCENE", NULL, NULL, false};
-			Stage::addChildEntity(stage, &scene001PositionedEntity, true);
-			break;
-		}
-		case 3:
-		{
-			if(!isDeleted(sceneEntity)) {
-				Stage::removeChild(stage, sceneEntity, true);
-			}
-			PositionedEntity scene002PositionedEntity = {&Scene002Entity, {192, 84, 0, 0}, 0, "SCENE", NULL, NULL, false};
-			//PositionedEntity scene002HighlightPositionedEntity = {&Scene002HighlightEntity, {192, 84, 0, 0}, 0, "HIGHLGHT", NULL, NULL, false};
-			Stage::addChildEntity(stage, &scene002PositionedEntity, true);
-			//Stage::addChildEntity(stage, &scene002HighlightPositionedEntity, true);
-			SoundWrapper::setVolumeReduction(SoundManager::getInstance(), 1);
-			SoundManager::playSound(SoundManager::getInstance(), &CarEngineSound, kPlayAll, NULL, kSoundWrapperPlaybackFadeIn, NULL, NULL);
-			break;
-		}
-		case 4:
-		{
-			if(!isDeleted(sceneEntity)) {
-				Stage::removeChild(stage, sceneEntity, true);
-			}
-			if(!isDeleted(sceneHighlightEntity)) {
-				Stage::removeChild(stage, sceneHighlightEntity, true);
-			}
-			PositionedEntity scene003PositionedEntity = {&Scene003Entity, {192, 84, 0, 0}, 0, "SCENE", NULL, NULL, false};
-			Stage::addChildEntity(stage, &scene003PositionedEntity, true);
-			break;
-		}
-		case 8:
-		{
-			if(!isDeleted(sceneEntity)) {
-				Stage::removeChild(stage, sceneEntity, true);
-			}
-			PositionedEntity scene002PositionedEntity = {&Scene002Entity, {192, 84, 0, 0}, 0, "SCENE", NULL, NULL, false};
-			Stage::addChildEntity(stage, &scene002PositionedEntity, true);
-			break;
-		}
-		case 10:
-		{
-			if(!isDeleted(sceneEntity)) {
-				Stage::removeChild(stage, sceneEntity, true);
-			}
-			PositionedEntity scene004PositionedEntity = {&Scene004Entity, {192, 84, 0, 0}, 0, "SCENE", NULL, NULL, false};
-			Stage::addChildEntity(stage, &scene004PositionedEntity, true);
-			break;
-		}
-		case 14:
-		{
-			if(!isDeleted(sceneEntity)) {
-				Stage::removeChild(stage, sceneEntity, true);
-			}
-			PositionedEntity scene003PositionedEntity = {&Scene003Entity, {192, 84, 0, 0}, 0, "SCENE", NULL, NULL, false};
-			Stage::addChildEntity(stage, &scene003PositionedEntity, true);
-			break;
-		}
-		case 16:
-		{
-			if(!isDeleted(sceneEntity)) {
-				Stage::removeChild(stage, sceneEntity, true);
-			}
-			PositionedEntity scene002PositionedEntity = {&Scene002Entity, {192, 84, 0, 0}, 0, "SCENE", NULL, NULL, false};
-			Stage::addChildEntity(stage, &scene002PositionedEntity, true);
-			break;
-		}
-		case 19:
-		{
-			if(!isDeleted(sceneEntity)) {
-				Stage::removeChild(stage, sceneEntity, true);
-			}	
-			PositionedEntity scene005PositionedEntity = {&Scene005Entity, {192, 84, 0, 0}, 0, "SCENE", NULL, NULL, false};
-			Stage::addChildEntity(stage, &scene005PositionedEntity, true);
-			
-			break;
-		}
-		case 23:
-		{
-			if(!isDeleted(sceneEntity)) {
-				Stage::removeChild(stage, sceneEntity, true);
-			}
-			PositionedEntity scene006PositionedEntity = {&Scene006Entity, {192, 84, 0, 0}, 0, "SCENE", NULL, NULL, false};
-			Stage::addChildEntity(stage, &scene006PositionedEntity, true);
-
-			break;
-		}
-		case 26:
-		{
-			if(!isDeleted(sceneEntity)) {
-				Stage::removeChild(stage, sceneEntity, true);
-			}
-			PositionedEntity scene002PositionedEntity = {&Scene002Entity, {192, 84, 0, 0}, 0, "SCENE", NULL, NULL, false};
-			Stage::addChildEntity(stage, &scene002PositionedEntity, true);
-			break;
-		}
-		case 29:
-		{
-			if(!isDeleted(sceneEntity)) {
-				Stage::removeChild(stage, sceneEntity, true);
-			}
-			PositionedEntity scene003PositionedEntity = {&Scene003Entity, {192, 84, 0, 0}, 0, "SCENE", NULL, NULL, false};
-			Stage::addChildEntity(stage, &scene003PositionedEntity, true);
-			break;
-		}
-		case 35:
-		{
-			if(!isDeleted(sceneEntity)) {
-				Stage::removeChild(stage, sceneEntity, true);
-			}
-			PositionedEntity scene007PositionedEntity = {&Scene007Entity, {192, 84, 0, 0}, 0, "SCENE", NULL, NULL, false};
-			Stage::addChildEntity(stage, &scene007PositionedEntity, true);
-			break;
-		}
-		case 36:
-		{
-			if(!isDeleted(sceneEntity)) {
-				Stage::removeChild(stage, sceneEntity, true);
-			}
-			PositionedEntity scene008PositionedEntity = {&Scene008Entity, {192, 84, 0, 0}, 0, "SCENE", NULL, NULL, false};
-			Stage::addChildEntity(stage, &scene008PositionedEntity, true);
-			break;
-		}
-		case 38:
-		{
-			if(!isDeleted(sceneEntity)) {
-				Stage::removeChild(stage, sceneEntity, true);
-			}
-
-			SoundManager::stopAllSounds(SoundManager::getInstance(), true, NULL);
-			SoundManager::playSound(SoundManager::getInstance(), &CarBrakingSound, kPlayAll, NULL, kSoundWrapperPlaybackNormal, NULL, NULL);
-			break;
-		}
+		SoundManager::stopAllSounds(SoundManager::getInstance(), true, NULL);
+		SoundManager::playSound(SoundManager::getInstance(), scene->sound, kPlayAll, NULL, scene->soundPlaybackType, NULL, NULL);
 	}
 }
 
-void VisualNovelState::startPrinting()
+void VisualNovelState::startPage()
 {
+	VUEngine::enableKeypad(VUEngine::getInstance());
 	ListenerObject::sendMessageToSelf(ListenerObject::safeCast(this), kVisualNovelMessagePrintChar, CHARACTER_DELAY, 0);
 }
 
 void VisualNovelState::onSceneFadeOutComplete(ListenerObject eventFirer __attribute__ ((unused)))
 {
-	VisualNovelState::clearText(this);
-	VisualNovelState::loadBackground(this);
-
-	Camera::startEffect(Camera::getInstance(),
-		kFadeTo, // effect type
-		0, // initial delay (in ms)
-		NULL, // target brightness
-		__FADE_DELAY, // delay between fading steps (in ms)
-		(void (*)(ListenerObject, ListenerObject))VisualNovelState::onSceneFadeInComplete, // callback function
-		ListenerObject::safeCast(this) // callback scope
-	);
+	VisualNovelState::nextPage(this);
 }
 
 void VisualNovelState::onSceneFadeInComplete(ListenerObject eventFirer __attribute__ ((unused)))
 {
-	VUEngine::enableKeypad(VUEngine::getInstance());
-	VisualNovelState::startPrinting(this);
+	VisualNovelState::startPage(this);
 }
 
 void VisualNovelState::saveProgress()
@@ -573,12 +365,12 @@ void VisualNovelState::printCharacter()
 
 void VisualNovelState::finishPage()
 {
-	this->textLength = 0;
+	this->pageFinished = true;
 	Printing::text(Printing::getInstance(), this->text, 0, 0, "Silent");
-	if (this->page < 38) {
+	if(this->textLength > 0)
+	{
 		Entity::show(this->entityFlauros);
 	}
-
 	Vector3D position = VisualNovelState::findFlaurosPosition(this);
 	Entity::setLocalPosition(this->entityFlauros, &position);
 }
@@ -617,30 +409,15 @@ Vector3D VisualNovelState::findFlaurosPosition()
 
 void VisualNovelState::processUserInput(UserInput userInput)
 {
-	/*if(K_SEL & userInput.releasedKey)
-	{
-		Printing::show(Printing::getInstance());
-		Entity::show(this->entityFlauros);
-	}*/
-
 	if((K_A | K_STA) & userInput.pressedKey)
 	{
-		if(this->textLength == 0)
+		if(this->pageFinished)
 		{
-			this->page++;
-			VisualNovelState::setScene(this);
+			VisualNovelState::hidePage(this);
 		}
 		else
 		{
 			VisualNovelState::finishPage(this);
 		}
 	}
-	/*else if(K_SEL & userInput.pressedKey)
-	{
-		if(this->textLength == 0)
-		{
-			Printing::hide(Printing::getInstance());
-			Entity::hide(this->entityFlauros);
-		}
-	}*/
 }

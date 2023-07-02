@@ -59,6 +59,8 @@ enum LanguageStrings
     kStringIntroductionScreen12,
     kStringIntroductionScreen13a,
     kStringIntroductionScreen13b,
+    kStringIntroductionSubChapter1Title,
+    kStringIntroductionTitle,
     kStringMobileError,
     kStringMobilePrepareCommunication,
     kStringPrecautionScreenBody,

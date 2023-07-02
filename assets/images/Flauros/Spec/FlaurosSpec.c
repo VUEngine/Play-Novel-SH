@@ -209,7 +209,7 @@ BgmapSpriteROMSpec FlaurosBaseSprite =
 		__TRANSPARENCY_NONE,
 
 		// displacement
-		{0, 0, -5, -1},
+		{0, 0, -5, 0},
 	},
 
 	// bgmap mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
@@ -289,7 +289,7 @@ BgmapSpriteROMSpec FlaurosOverlaySprite =
 		__TRANSPARENCY_EVEN,
 
 		// displacement
-		{0, 0, -5, -1},
+		{0, 0, -5, 0},
 	},
 
 	// bgmap mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
@@ -305,7 +305,7 @@ BgmapSpriteROMSpec FlaurosOverlaySprite =
 
 BgmapSpriteROMSpec* const FlaurosSprites[] =
 {
-	&FlaurosBlackSprite,
+	//&FlaurosBlackSprite,
 	&FlaurosBaseSprite,
 	&FlaurosOverlaySprite,
 	NULL

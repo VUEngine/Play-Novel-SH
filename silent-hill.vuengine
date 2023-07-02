@@ -100,7 +100,13 @@
                     "runDelayedMessagesAtHalfFrameRate": false,
                     "timerResolution": 10
                 },
-                "game": [],
+                "game": [
+                    {
+                        "key": "Max Text Per Scene",
+                        "type": "int",
+                        "value": "8"
+                    }
+                ],
                 "math": {
                     "fixedPointPrecision": 6
                 },
@@ -374,6 +380,14 @@
                     },
                     "IntroductionScreen13b": {
                         "en": "but down into the darkness below the cliff."
+                    },
+                    "IntroductionSubChapter1Title": {
+                        "de": "Der erste Urlaub seit langem",
+                        "en": "A first vacation in a while"
+                    },
+                    "IntroductionTitle": {
+                        "de": "Der Beginn des Alptraums",
+                        "en": "The Beginning of the Nightmare"
                     },
                     "MobileError": {
                         "de": "10-000\nMobil-Adapter ist nicht richtig eingesteckt.\nBitte lesen Sie die Anleitung und stecken \ndiesen sicher ein.",

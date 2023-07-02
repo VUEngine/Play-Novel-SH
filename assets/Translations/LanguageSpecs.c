@@ -103,6 +103,10 @@ const char* const EnglishLanguageStrings[] =
     "When I saw the human figure on the road \nI cut the wheel hard, and then there was \nnowhere else for my jeep and I to go ",
     /* kStringIntroductionScreen13b: */
     "but down into the darkness below the cliff.",
+    /* kStringIntroductionSubChapter1Title: */
+    "A first vacation in a while",
+    /* kStringIntroductionTitle: */
+    "The Beginning of the Nightmare",
     /* kStringMobileError: */
     "10-000\nMobile adapter is not plugged in properly.\nPlease refer to the instruction manual and\nplug it in securely.",
     /* kStringMobilePrepareCommunication: */
@@ -271,6 +275,10 @@ const char* const GermanLanguageStrings[] =
     "",
     /* kStringIntroductionScreen13b: */
     "",
+    /* kStringIntroductionSubChapter1Title: */
+    "Der erste Ausflug seit Langem",
+    /* kStringIntroductionTitle: */
+    "Der Beginn des Alptraums",
     /* kStringMobileError: */
     "10-000\nMobil-Adapter ist nicht richtig eingesteckt.\nBitte lesen Sie die Anleitung und stecken \ndiesen sicher ein.",
     /* kStringMobilePrepareCommunication: */
