@@ -17,13 +17,24 @@
 
 
 //---------------------------------------------------------------------------------------------------------
+//											CLASS'S MACROS
+//---------------------------------------------------------------------------------------------------------
+
+#define NUMBER_OF_SAVE_SLOTS		3
+
+
+//---------------------------------------------------------------------------------------------------------
 // 											TYPE DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
 typedef struct GameProgress
 {
-	uint8 scenario;
-	uint8 page;
+	uint16 scenario;
+	uint16 act;
+	uint16 chapter;
+	uint16 subChapter;
+	uint16 scene;
+	uint16 page;
 	bool started;
 } GameProgress;
 
@@ -31,7 +42,7 @@ typedef struct GameSaveData
 {
 	SaveData baseSaveData;
 	uint32 unlockedCards;
-	GameProgress gameProgress[3];
+	GameProgress gameProgress[NUMBER_OF_SAVE_SLOTS];
 } GameSaveData;
 
 

@@ -74,13 +74,13 @@ void VisualNovelState::enter(void* owner)
 	this->charY = 0;
 	this->text = "";
 	this->textLength = 0;
-	this->chapter = 0;
-	this->subChapter = 0;
-	this->scene = 0;
-	this->page = 0;
 	this->pageFinished = false;
+	this->language = I18n::getActiveLanguage(I18n::getInstance());
 	this->saveSlot = 0;
-	this->scenario = kScenarioHarry;
+
+	// load progress, always start at page 0
+	VisualNovelState::loadProgress(this);
+	this->progress.page = 0;
 
 	// enable user input
 	VUEngine::enableKeypad(VUEngine::getInstance());
@@ -97,7 +97,6 @@ void VisualNovelState::enter(void* owner)
 	);
 
 	// start scene
-	VisualNovelState::saveProgress(this);
 	VisualNovelState::setUpScene(this);
 	VisualNovelState::setUpPage(this);
 	VisualNovelState::showPage(this);
@@ -131,10 +130,15 @@ bool VisualNovelState::handleMessage(Telegram telegram)
 
 void VisualNovelState::nextPage()
 {
-	this->page++;
-	if(PlayNovelScenarios.scenarios[this->scenario]->chapters[this->chapter]->subChapters[this->subChapter]->scenes[this->scene]->text[this->page] == 0)
+	this->progress.page++;
+	if(PlayNovelScenarios.scenarios[this->progress.scenario]
+		->acts[this->progress.act]
+		->chapters[this->progress.chapter]
+		->subChapters[this->progress.subChapter]
+		->scenes[this->progress.scene]
+		->text[this->language][this->progress.page] == NULL)
 	{
-		this->page = 0;
+		this->progress.page = 0;
 		VisualNovelState::nextScene(this);
 	}
 
@@ -144,42 +148,66 @@ void VisualNovelState::nextPage()
 
 void VisualNovelState::nextScene()
 {
-	this->scene++;
-	if(PlayNovelScenarios.scenarios[this->scenario]->chapters[this->chapter]->subChapters[this->subChapter]->scenes[this->scene] == NULL)
+	this->progress.scene++;
+	if(PlayNovelScenarios.scenarios[this->progress.scenario]
+		->acts[this->progress.act]
+		->chapters[this->progress.chapter]
+		->subChapters[this->progress.subChapter]
+		->scenes[this->progress.scene] == NULL)
 	{
-		this->scene = 0;
+		this->progress.scene = 0;
 		VisualNovelState::nextSubChapter(this);
 	}
 
 	VisualNovelState::setUpScene(this);
+	VisualNovelState::saveProgress(this);
 }
 
 void VisualNovelState::nextSubChapter()
 {
-	this->subChapter++;
-	if(PlayNovelScenarios.scenarios[this->scenario]->chapters[this->chapter]->subChapters[this->subChapter] == NULL)
+	this->progress.subChapter++;
+	if(PlayNovelScenarios.scenarios[this->progress.scenario]
+		->acts[this->progress.act]
+		->chapters[this->progress.chapter]
+		->subChapters[this->progress.subChapter] == NULL)
 	{
-		this->subChapter = 0;
+		this->progress.subChapter = 0;
 		VisualNovelState::nextChapter(this);
 	}
-
-	VisualNovelState::saveProgress(this);
 }
 
 void VisualNovelState::nextChapter()
 {
-	this->chapter++;
-	if(PlayNovelScenarios.scenarios[this->scenario]->chapters[this->chapter] == NULL)
+	this->progress.chapter++;
+	if(PlayNovelScenarios.scenarios[this->progress.scenario]
+		->acts[this->progress.act]
+		->chapters[this->progress.chapter] == NULL)
 	{
-		this->chapter = 0;
+		this->progress.chapter = 0;
+		VisualNovelState::nextAct(this);
+	}
+}
+
+void VisualNovelState::nextAct()
+{
+	this->progress.chapter++;
+	if(PlayNovelScenarios.scenarios[this->progress.scenario]
+		->acts[this->progress.act] == NULL)
+	{
+		this->progress.act = 0;
 		// TODO: Go to credits
 	}
 }
 
 void VisualNovelState::showPage()
 {
-	uint8 fade = this->page == 0
-		? PlayNovelScenarios.scenarios[this->scenario]->chapters[this->chapter]->subChapters[this->subChapter]->scenes[this->scene]->fadeInType
+	uint8 fade = this->progress.page == 0
+		? PlayNovelScenarios.scenarios[this->progress.scenario]
+			->acts[this->progress.act]
+			->chapters[this->progress.chapter]
+			->subChapters[this->progress.subChapter]
+			->scenes[this->progress.scene]
+			->fadeInType
 		: kFadeTypeNoFade;
 
 	switch(fade)
@@ -218,8 +246,18 @@ void VisualNovelState::showPage()
 
 void VisualNovelState::hidePage()
 {
-	uint8 fade = PlayNovelScenarios.scenarios[this->scenario]->chapters[this->chapter]->subChapters[this->subChapter]->scenes[this->scene]->text[this->page + 1] == 0
-		? PlayNovelScenarios.scenarios[this->scenario]->chapters[this->chapter]->subChapters[this->subChapter]->scenes[this->scene]->fadeOutType
+	uint8 fade = PlayNovelScenarios.scenarios[this->progress.scenario]
+		->acts[this->progress.act]
+		->chapters[this->progress.chapter]
+		->subChapters[this->progress.subChapter]
+		->scenes[this->progress.scene]
+		->text[this->language][this->progress.page + 1] == 0
+		? PlayNovelScenarios.scenarios[this->progress.scenario]
+			->acts[this->progress.act]
+			->chapters[this->progress.chapter]
+			->subChapters[this->progress.subChapter]
+			->scenes[this->progress.scene]
+			->fadeOutType
 		: kFadeTypeNoFade;
 
 	VUEngine::disableKeypad(VUEngine::getInstance());
@@ -269,24 +307,21 @@ void VisualNovelState::setUpPage()
 	this->charY = 0;
 	Printing::clear(Printing::getInstance());
 	Entity::hide(this->entityFlauros);
-	this->text = I18n::getText(
-		I18n::getInstance(), 
-		PlayNovelScenarios.scenarios[this->scenario]
-			->chapters[this->chapter]
-			->subChapters[this->subChapter]
-			->scenes[this->scene]
-			->text[this->page]
-	);
+	this->text = PlayNovelScenarios.scenarios[this->progress.scenario]
+		->acts[this->progress.act]->chapters[this->progress.chapter]
+		->subChapters[this->progress.subChapter]
+		->scenes[this->progress.scene]
+		->text[this->language][this->progress.page];
 	this->textLength = strlen(this->text);
 	this->pageFinished = false;
 }
 
 void VisualNovelState::setUpScene()
 {
-	const struct Scene *scene = PlayNovelScenarios.scenarios[this->scenario]
-			->chapters[this->chapter]
-			->subChapters[this->subChapter]
-			->scenes[this->scene];
+	const struct Scene *scene = PlayNovelScenarios.scenarios[this->progress.scenario]
+			->acts[this->progress.act]->chapters[this->progress.chapter]
+			->subChapters[this->progress.subChapter]
+			->scenes[this->progress.scene];
 
 	Stage stage = VUEngine::getStage(VUEngine::getInstance());
 	Container sceneEntity = Container::getChildByName(Container::safeCast(stage), "SCENE", true);
@@ -319,20 +354,24 @@ void VisualNovelState::onSceneFadeInComplete(ListenerObject eventFirer __attribu
 	VisualNovelState::startPage(this);
 }
 
+void VisualNovelState::loadProgress()
+{
+	GameSaveDataManager::getValue(
+		GameSaveDataManager::getInstance(), 
+		(BYTE*)&this->progress,
+		offsetof(struct GameSaveData, gameProgress) + (this->saveSlot * sizeof(this->progress)), 
+		sizeof(this->progress)
+	);
+}
+
 void VisualNovelState::saveProgress()
 {
-	/* 
-	const struct GameProgress *progress = {
-		this->scenario,
-		this->page,
-		true
-	};
-
+	/*
 	GameSaveDataManager::setValue(
 		GameSaveDataManager::getInstance(), 
-		(BYTE*)&progress, 
-		offsetof(struct GameSaveData, gameProgress) + (this->saveSlot * sizeof(&progress)), 
-		sizeof(&progress)
+		(BYTE*)&this->progress, 
+		offsetof(struct GameSaveData, gameProgress) + (this->saveSlot * sizeof(this->progress)), 
+		sizeof(this->progress)
 	);
 	*/
 }
@@ -409,7 +448,7 @@ Vector3D VisualNovelState::findFlaurosPosition()
 
 void VisualNovelState::processUserInput(UserInput userInput)
 {
-	if((K_A | K_STA) & userInput.pressedKey)
+	if(userInput.pressedKey & (K_A | K_STA))
 	{
 		if(this->pageFinished)
 		{

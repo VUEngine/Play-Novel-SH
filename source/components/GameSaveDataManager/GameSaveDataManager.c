@@ -36,36 +36,41 @@ const GameSaveData GameSaveDataDefaults =
 	},
 
 	// unlocked cards
-	4294967295,
+	//33322222222221111111111000000000
+	//21098765432109876543210987654321
+	0b11111111111111111111111111111111,
 
 	// game progress
 	{
 		// 1
 		{
-			// scenario
-			0,
-			// page
-			0,
-			// started
-			true,
+			0, // scenario
+			0, // act
+			0, // chapter
+			0, // subChapter
+			0, // scene
+			0, // page
+			false, // started
 		},
 		// 2
 		{
-			// scenario
-			1,
-			// page
-			12,
-			// started
-			true,
+			0, // scenario
+			0, // act
+			0, // chapter
+			0, // subChapter
+			0, // scene
+			0, // page
+			false, // started
 		},
 		// 3
 		{
-			// scenario
-			0,
-			// page
-			0,
-			// started
-			false,
+			0, // scenario
+			0, // act
+			0, // chapter
+			0, // subChapter
+			0, // scene
+			0, // page
+			false, // started
 		},
 	},
 };

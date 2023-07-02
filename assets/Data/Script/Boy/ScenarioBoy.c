@@ -19,6 +19,9 @@
 //---------------------------------------------------------------------------------------------------------
 
 const struct Scenario PlayNovelScenarioAndy = {
-	"Andy's Scenario",
+	{
+		"Andy's Scenario",
+		"Andys Szenario"
+	},
 	{},
 };

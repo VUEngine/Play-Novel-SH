@@ -15,13 +15,24 @@
 
 
 //---------------------------------------------------------------------------------------------------------
+//												DECLARATIONS
+//---------------------------------------------------------------------------------------------------------
+
+extern Chapter PlayNovelScenarioHarryAct1Chapter1;
+extern Chapter PlayNovelScenarioHarryAct1Chapter2;
+
+
+//---------------------------------------------------------------------------------------------------------
 // 												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-const struct Scenario PlayNovelScenarioCybil = {
+const struct Act PlayNovelScenarioHarryAct1 = {
 	{
-		"Cybil's Scenario",
-		"Cybils Szenario"
+		"Chapter 1",
+		""
 	},
-	{},
+	{
+		&PlayNovelScenarioHarryAct1Chapter1,
+		&PlayNovelScenarioHarryAct1Chapter2,
+	},
 };

@@ -20,7 +20,8 @@
 //											CLASS'S MACROS
 //---------------------------------------------------------------------------------------------------------
 
-#define CHARACTER_DELAY		1
+#define CHARACTER_DELAY			1
+#define NUMBER_OF_LANGUAGES		2
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -58,32 +59,37 @@ typedef struct Scene
 	uint8 fadeOutType;
 	uint8 soundPlaybackType;
 	const Sound *sound;
-	uint16 text[MAX_TEXT_PER_SCENE];
 	const PositionedEntity* positionedEntities;
+	char* text[NUMBER_OF_LANGUAGES][MAX_TEXT_PER_SCENE];
 } Scene;
 
 typedef struct SubChapter
 {
-	uint16 title;
+	char* title[NUMBER_OF_LANGUAGES];
 	const Scene *scenes[];
 } SubChapter;
 
 typedef struct Chapter
 {
-	uint16 chapter;
-	uint16 title;
+	char* title[NUMBER_OF_LANGUAGES];
 	const SubChapter *subChapters[];
 } Chapter;
 
+typedef struct Act
+{
+	char* title[NUMBER_OF_LANGUAGES];
+	const Chapter *chapters[];
+} Act;
+
 typedef struct Scenario
 {
-	char* name;
-	const Chapter *chapters[];
+	char* title[NUMBER_OF_LANGUAGES];
+	const Act *acts[];
 } Scenario;
 
 typedef struct Script
 {
-	char* name;
+	char* title[NUMBER_OF_LANGUAGES];
 	const Scenario *scenarios[];
 } Script;
 
@@ -95,10 +101,7 @@ typedef struct Script
 singleton class VisualNovelState : GameState
 {
 	Entity entityFlauros;
-	uint16 chapter;
-	uint16 subChapter;
-	uint16 scene;
-	uint16 page;
+	GameProgress progress;
 	uint16 textLength;
 	uint16 charNumber;
 	bool pageFinished;	
@@ -106,7 +109,7 @@ singleton class VisualNovelState : GameState
 	uint8 charX;
 	uint8 charY;
 	uint8 saveSlot;
-	uint8 scenario;
+	uint8 language;
 
 	static VisualNovelState getInstance();
 

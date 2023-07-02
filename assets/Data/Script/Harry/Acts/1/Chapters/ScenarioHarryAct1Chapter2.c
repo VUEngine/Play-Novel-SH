@@ -18,23 +18,53 @@
 //												DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
-extern Scenario PlayNovelScenarioHarry;
-extern Scenario PlayNovelScenarioCybil;
-extern Scenario PlayNovelScenarioAndy;
-
 
 //---------------------------------------------------------------------------------------------------------
 // 												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-const struct Script PlayNovelScenarios = {
+// SUB CHAPTER 1
+
+PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter2Sub1Scene1Entities[] =
+{
+	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+};
+
+const struct Scene PlayNovelScenarioHarryAct1Chapter2Sub1Scene1 = {
+	kFadeTypeNormal,
+	kFadeTypeNormal,
+	kSoundWrapperPlaybackNormal,
+	NULL,
+	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter2Sub1Scene1Entities,
 	{
-		"Play Novel: Silent Hill",
-		"Play Novel: Silent Hill"
+		{
+			"What is going on...",
+			"Cheryl's destination is...",
+			"Is there no one in the town...",
+		},
+		{
+		}
+	},
+};
+
+const struct SubChapter PlayNovelScenarioHarryAct1Chapter2Sub1 = {
+	{
+		"In search of anyone",
+		""
 	},
 	{
-		&PlayNovelScenarioHarry,
-		&PlayNovelScenarioCybil,
-		&PlayNovelScenarioAndy,
+		&PlayNovelScenarioHarryAct1Chapter2Sub1Scene1,
+	},
+};
+
+// CHAPTER 2
+
+const struct Chapter PlayNovelScenarioHarryAct1Chapter2 = {
+	{
+		"The Deserted Town",
+		""
+	},
+	{
+		&PlayNovelScenarioHarryAct1Chapter2Sub1,
 	},
 };
