@@ -253,6 +253,14 @@
                     }
                 ],
                 "translations": {
+                    "Continue": {
+                        "de": "Fortsetzen",
+                        "en": "Continue"
+                    },
+                    "DeleteData": {
+                        "de": "Daten Löschen",
+                        "en": "Delete Data"
+                    },
                     "MobileError": {
                         "de": "10-000\nMobil-Adapter ist nicht richtig eingesteckt.\nBitte lesen Sie die Anleitung und stecken \ndiesen sicher ein.",
                         "en": "10-000\nMobile adapter is not plugged in properly.\nPlease refer to the instruction manual and\nplug it in securely."
@@ -260,6 +268,10 @@
                     "MobilePrepareCommunication": {
                         "de": "Bereite Kommunikation vor.",
                         "en": "Preparing for communication."
+                    },
+                    "NewGame": {
+                        "de": "Neues Spiel",
+                        "en": "New Game"
                     },
                     "TradingCard01Title": {
                         "de": "Inkubus",
@@ -388,6 +400,14 @@
                     "TradingCard32Title": {
                         "de": "Liebe",
                         "en": "Love"
+                    },
+                    "Yes": {
+                        "en": "Yes",
+                        "de": "Ja"
+                    },
+                    "No": {
+                        "en": "No",
+                        "de": "Nein"
                     }
                 }
             }
@@ -964,7 +984,60 @@
                             1
                         ]
                     ],
-                    null,
+                    [
+                        null,
+                        null,
+                        null,
+                        null,
+                        [
+                            null,
+                            3,
+                            3,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            null,
+                            3,
+                            3,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            null,
+                            3,
+                            3,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            null,
+                            3,
+                            3,
+                            3,
+                            3,
+                            0
+                        ],
+                        [
+                            null,
+                            1,
+                            1,
+                            1,
+                            1,
+                            0
+                        ],
+                        [
+                            null,
+                            0,
+                            0,
+                            0,
+                            0,
+                            0
+                        ]
+                    ],
                     [
                         null,
                         null,

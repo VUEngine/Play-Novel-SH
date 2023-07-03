@@ -14,6 +14,8 @@
 //---------------------------------------------------------------------------------------------------------
 
 #include <SplashScreenState.h>
+#include <GameSaveDataManager.h>
+#include <OptionsSelector.h>
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -22,7 +24,29 @@
 
 enum LoadGameScreenMessages
 {
-	kLoadGameScreenMessageShow,
+	kLoadGameScreenMessageShowScreen,
+	kLoadGameScreenMessageShowSlot,
+	kLoadGameScreenMessageMoveSelectedSlot,
+};
+
+enum LoadGameScreenModes
+{
+	kLoadGameScreenModeSelectSlot,
+	kLoadGameScreenModeMoveSelectedSlot,
+	kLoadGameScreenModeShowSlot,
+	kLoadGameScreenModeConfirmSlot,
+};
+
+enum LoadGameScreenSlotOptions
+{
+	kLoadGameScreenSlotOptionContinue,
+	kLoadGameScreenSlotOptionNewGame,
+};
+
+enum LoadGameScreenDeleteSlotOptions
+{
+	kLoadGameScreenSlotOptionYes,
+	kLoadGameScreenSlotOptionNo,
 };
 
 
@@ -32,12 +56,20 @@ enum LoadGameScreenMessages
 
 singleton class LoadGameScreenState : SplashScreenState
 {
-	Entity entityCursor;
-	uint8 option;
+	OptionsSelector slotMenu;
+	AnimatedEntity entityCursor;
+	Entity entitySubChapterBackground;
+	Entity entitySlot[NUMBER_OF_SAVE_SLOTS];
+	AnimatedEntity entitySlotLabel[NUMBER_OF_SAVE_SLOTS];
+	GameProgress progress[3];
+	uint8 slot;
+	uint8 slotMenuOption;
+	uint8 mode;
 
 	static LoadGameScreenState getInstance();
 
 	override void enter(void* owner);
+	override void execute(void* owner);
 	override bool handleMessage(Telegram telegram);
 	override void processUserInput(UserInput userInput);
 }

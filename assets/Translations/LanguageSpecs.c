@@ -25,10 +25,18 @@ const char* const EnglishLanguageStrings[] =
     "Please take a rest!",
     /* kStringAutomaticPauseTitle: */
     "AUTOMATIC PAUSE",
+    /* kStringContinue: */
+    "Continue",
+    /* kStringDeleteData: */
+    "Delete Data",
     /* kStringMobileError: */
     "10-000\nMobile adapter is not plugged in properly.\nPlease refer to the instruction manual and\nplug it in securely.",
     /* kStringMobilePrepareCommunication: */
     "Preparing for communication.",
+    /* kStringNewGame: */
+    "New",
+    /* kStringNo: */
+    "No",
     /* kStringPrecautionScreenBody: */
     "     IMPORTANT\nREAD INSTRUCTION AND\nPRECAUTION BOOKLETS\n  BEFORE OPERATING",
     /* kStringTradingCard01Title: */
@@ -95,6 +103,8 @@ const char* const EnglishLanguageStrings[] =
     "Escape",
     /* kStringTradingCard32Title: */
     "Love",
+    /* kStringYes: */
+    "Yes",
 };
 
 const LangROMSpec EnglishLanguage =
@@ -115,10 +125,18 @@ const char* const GermanLanguageStrings[] =
     "Bitte mache eine Pause!",
     /* kStringAutomaticPauseTitle: */
     "AUTOMATISCHE PAUSE",
+    /* kStringContinue: */
+    "Fortsetzen",
+    /* kStringDeleteData: */
+    "Daten Lï¿½schen",
     /* kStringMobileError: */
     "10-000\nMobil-Adapter ist nicht richtig eingesteckt.\nBitte lesen Sie die Anleitung und stecken \ndiesen sicher ein.",
     /* kStringMobilePrepareCommunication: */
     "Bereite Kommunikation vor.",
+    /* kStringNewGame: */
+    "Neues Spiel",
+    /* kStringNo: */
+    "Nein",
     /* kStringPrecautionScreenBody: */
     "        WICHTIG\nBITTE LESEN SIE VOR DEM\n SPIELEN DIE ANLEITUNG\nUND SICHERHEITSHINWEISE",
     /* kStringTradingCard01Title: */
@@ -156,13 +174,13 @@ const char* const GermanLanguageStrings[] =
     /* kStringTradingCard17Title: */
     "Chemikalien",
     /* kStringTradingCard18Title: */
-    "Präparate",
+    "Prï¿½parate",
     /* kStringTradingCard19Title: */
     "Telefon",
     /* kStringTradingCard20Title: */
-    "Schlüssel",
+    "Schlï¿½ssel",
     /* kStringTradingCard21Title: */
-    "Café",
+    "Cafï¿½",
     /* kStringTradingCard22Title: */
     "Musikraum",
     /* kStringTradingCard23Title: */
@@ -170,7 +188,7 @@ const char* const GermanLanguageStrings[] =
     /* kStringTradingCard24Title: */
     "Untersuchung",
     /* kStringTradingCard25Title: */
-    "Aquädukt",
+    "Aquï¿½dukt",
     /* kStringTradingCard26Title: */
     "Aufzug",
     /* kStringTradingCard27Title: */
@@ -185,6 +203,8 @@ const char* const GermanLanguageStrings[] =
     "Flucht",
     /* kStringTradingCard32Title: */
     "Liebe",
+    /* kStringYes: */
+    "Ja",
 };
 
 const LangROMSpec GermanLanguage =

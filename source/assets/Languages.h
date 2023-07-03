@@ -20,8 +20,12 @@ enum LanguageStrings
 {
     kStringAutomaticPauseBody,
     kStringAutomaticPauseTitle,
+    kStringContinue,
+    kStringDeleteData,
     kStringMobileError,
     kStringMobilePrepareCommunication,
+    kStringNewGame,
+    kStringNo,
     kStringPrecautionScreenBody,
     kStringTradingCard01Title,
     kStringTradingCard02Title,
@@ -55,6 +59,7 @@ enum LanguageStrings
     kStringTradingCard30Title,
     kStringTradingCard31Title,
     kStringTradingCard32Title,
+    kStringYes,
 };
 
 

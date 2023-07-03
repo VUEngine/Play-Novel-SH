@@ -20,7 +20,11 @@
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-// The save data default values 
+const GameProgress EmptyProgress =
+{
+	0, 0, 0, 0, 0, 0, false 
+};
+
 const GameSaveData GameSaveDataDefaults =
 {
 	// base save data

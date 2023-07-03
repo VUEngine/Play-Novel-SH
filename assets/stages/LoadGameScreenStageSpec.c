@@ -34,14 +34,14 @@ PositionedEntityROMSpec LoadGameScreenStageSpecEntities[] =
 {
 	{&SaveSlotBorderEntity,					{192,  64,  -1,  0},   	0, "CURSOR", NULL, NULL, false},
 
-	{&SaveSlotWideBackgroundEntity,			{192,  64,   0,  0},   	0, NULL, NULL, NULL, false},
+	{&SaveSlotWideBackgroundEntity,			{192,  64,   0,  0},   	0, "SLOT0", NULL, NULL, false},
+	{&SaveSlotWideBackgroundEntity,			{192, 112,   0,  0},   	0, "SLOT1", NULL, NULL, false},
+	{&SaveSlotWideBackgroundEntity,			{192, 160,   0,  0},   	0, "SLOT2", NULL, NULL, false},
 	{&SaveSlotWideBackgroundExtraEntity,	{192, 104,   0,  0},   	0, "SUBCHPTR", NULL, NULL, false},
-	{&SaveSlotWideBackgroundEntity,			{192, 112,   0,  0},   	0, NULL, NULL, NULL, false},
-	{&SaveSlotWideBackgroundEntity,			{192, 160,   0,  0},   	0, NULL, NULL, NULL, false},
 
-	{&SaveSlotLabelEntity,					{ 84,  56,  -1,  0},   	0, "0", NULL, NULL, false},
-	{&SaveSlotLabelEntity,					{ 84, 104,  -1,  0},   	0, "1", NULL, NULL, false},
-	{&SaveSlotLabelEntity,					{ 84, 152,  -1,  0},   	0, "2", NULL, NULL, false},
+	{&SaveSlotLabelEntity,					{ 84,  56,  -1,  0},   	0, "LABEL0", NULL, NULL, false},
+	{&SaveSlotLabelEntity,					{ 84, 104,  -1,  0},   	0, "LABEL1", NULL, NULL, false},
+	{&SaveSlotLabelEntity,					{ 84, 152,  -1,  0},   	0, "LABEL2", NULL, NULL, false},
 
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
 };

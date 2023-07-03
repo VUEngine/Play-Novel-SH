@@ -66,7 +66,7 @@ void VisualNovelState::enter(void* owner)
 	GameState::startClocks(GameState::safeCast(this));
 
 	// optimize printing layer to save performance
-	Printing::setWorldCoordinates(Printing::getInstance(), 16, 172, -4, -1);
+	Printing::setWorldCoordinates(Printing::getInstance(), 16, 172, -4, 0);
 	Printing::setPalette(Printing::getInstance(), 3);
 
 	// initialize variables
@@ -442,7 +442,7 @@ Vector3D VisualNovelState::findFlaurosPosition()
 	return (Vector3D){
 		__PIXELS_TO_METERS((x << 3) + 24),
 		__PIXELS_TO_METERS((y << 4) + 178),
-		__PIXELS_TO_METERS(-4),
+		__PIXELS_TO_METERS(0),
 	};
 }
 
