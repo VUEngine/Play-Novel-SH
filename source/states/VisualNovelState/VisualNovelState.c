@@ -104,6 +104,19 @@ void VisualNovelState::enter(void* owner)
 	VisualNovelState::showPage(this);
 }
 
+void VisualNovelState::execute(void* owner)
+{
+	Base::execute(this, owner);
+
+	/*
+	Printing::int32(Printing::getInstance(), this->progress.act, 0, 5, "Silent");
+	Printing::int32(Printing::getInstance(), this->progress.chapter, 3, 5, "Silent");
+	Printing::int32(Printing::getInstance(), this->progress.subChapter, 6, 5, "Silent");
+	Printing::int32(Printing::getInstance(), this->progress.scene, 9, 5, "Silent");
+	Printing::int32(Printing::getInstance(), this->progress.page, 12, 5, "Silent");
+	*/
+}
+
 bool VisualNovelState::handleMessage(Telegram telegram)
 {
 	switch(Telegram::getMessage(telegram))
@@ -192,7 +205,7 @@ void VisualNovelState::nextChapter()
 
 void VisualNovelState::nextAct()
 {
-	this->progress.chapter++;
+	this->progress.act++;
 	if(PlayNovelScenarios.scenarios[this->progress.scenario]
 		->acts[this->progress.act] == NULL)
 	{

@@ -346,7 +346,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene13 = {
 
 const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene14 = {
 	kFadeTypeNormal,
-	kFadeTypeSlow,
+	kFadeTypeNormal,
 	kSoundWrapperPlaybackNormal,
 	&CarBrakingSound,
 	NULL,
@@ -380,6 +380,7 @@ const struct SubChapter PlayNovelScenarioHarryAct0Chapter1Sub1 = {
 		&PlayNovelScenarioHarryAct0Chapter1Sub1Scene12,
 		&PlayNovelScenarioHarryAct0Chapter1Sub1Scene13,
 		&PlayNovelScenarioHarryAct0Chapter1Sub1Scene14,
+		NULL,
 	},
 };
 
@@ -390,5 +391,6 @@ const struct Chapter PlayNovelScenarioHarryAct0Chapter1 = {
 	},
 	{
 		&PlayNovelScenarioHarryAct0Chapter1Sub1,
+		NULL,
 	},
 };

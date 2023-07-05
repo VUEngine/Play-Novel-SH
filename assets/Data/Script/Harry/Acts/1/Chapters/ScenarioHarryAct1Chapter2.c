@@ -54,6 +54,7 @@ const struct SubChapter PlayNovelScenarioHarryAct1Chapter2Sub1 = {
 	},
 	{
 		&PlayNovelScenarioHarryAct1Chapter2Sub1Scene1,
+		NULL,
 	},
 };
 
@@ -66,5 +67,6 @@ const struct Chapter PlayNovelScenarioHarryAct1Chapter2 = {
 	},
 	{
 		&PlayNovelScenarioHarryAct1Chapter2Sub1,
+		NULL,
 	},
 };

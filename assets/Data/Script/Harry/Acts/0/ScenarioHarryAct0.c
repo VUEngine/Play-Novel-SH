@@ -32,5 +32,6 @@ const struct Act PlayNovelScenarioHarryAct0 = {
 	},
 	{
 		&PlayNovelScenarioHarryAct0Chapter1,
+		NULL,
 	},
 };

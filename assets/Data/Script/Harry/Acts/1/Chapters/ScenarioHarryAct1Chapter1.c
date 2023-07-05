@@ -18,6 +18,8 @@
 //												DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
+extern EntitySpec Scene001Entity;
+
 
 //---------------------------------------------------------------------------------------------------------
 // 												DEFINITIONS
@@ -27,6 +29,7 @@
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter1Sub1Scene1Entities[] =
 {
+	{&Scene001Entity, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
 };
 
@@ -170,6 +173,7 @@ const struct SubChapter PlayNovelScenarioHarryAct1Chapter1Sub3 = {
 	{
 		&PlayNovelScenarioHarryAct1Chapter1Sub3Scene1,
 		&PlayNovelScenarioHarryAct1Chapter1Sub3Scene2,
+		NULL,
 	},
 };
 
@@ -182,5 +186,6 @@ const struct Chapter PlayNovelScenarioHarryAct1Chapter1 = {
 		&PlayNovelScenarioHarryAct1Chapter1Sub1,
 		&PlayNovelScenarioHarryAct1Chapter1Sub2,
 		&PlayNovelScenarioHarryAct1Chapter1Sub3,
+		NULL,
 	},
 };
