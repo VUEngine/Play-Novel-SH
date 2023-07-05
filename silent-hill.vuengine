@@ -179,7 +179,7 @@
                     "bgMapPalette0": "11100100",
                     "bgMapPalette1": "11100000",
                     "bgMapPalette2": "10010000",
-                    "bgMapPalette3": "11010100",
+                    "bgMapPalette3": "01000000",
                     "objectPalette0": "11100100",
                     "objectPalette1": "11100000",
                     "objectPalette2": "10010000",
@@ -9342,6 +9342,13 @@
                 "range": 4,
                 "section": "rom",
                 "sourceFile": "assets/PCM/Source/CarBraking.wav"
+            },
+            "sVbpEEYY9WT0ou0n": {
+                "loop": true,
+                "name": "Silence End",
+                "range": 3,
+                "section": "rom",
+                "sourceFile": "assets/PCM/Source/SilenceEnd.wav"
             }
         }
     }

@@ -67,7 +67,7 @@ void VisualNovelState::enter(void* owner)
 
 	// optimize printing layer to save performance
 	Printing::setWorldCoordinates(Printing::getInstance(), 16, 172, -4, 0);
-	Printing::setPalette(Printing::getInstance(), 3);
+	Printing::setPalette(Printing::getInstance(), 0);
 
 	// initialize variables
 	this->entityFlauros = Entity::safeCast(Container::getChildByName(Container::safeCast(VUEngine::getStage(VUEngine::getInstance())), "FLAUROS", true));
@@ -78,6 +78,8 @@ void VisualNovelState::enter(void* owner)
 	this->textLength = 0;
 	this->pageFinished = false;
 	this->language = I18n::getActiveLanguage(I18n::getInstance());
+	this->choicesMenuOption = 0;
+	this->choicesMenuOptionCount = 0;
 
 	// load progress, always start at page 0
 	VisualNovelState::loadProgress(this);
@@ -223,11 +225,11 @@ void VisualNovelState::showPage()
 			->subChapters[this->progress.subChapter]
 			->scenes[this->progress.scene]
 			->fadeInType
-		: kFadeTypeNoFade;
+		: kFadeTypeNone;
 
 	switch(fade)
 	{
-		case kFadeTypeNoFade:
+		case kFadeTypeNone:
 		{
 			ListenerObject::sendMessageToSelf(ListenerObject::safeCast(this), kVisualNovelMessageStartPage, 100, 0);
 			break;
@@ -273,13 +275,13 @@ void VisualNovelState::hidePage()
 			->subChapters[this->progress.subChapter]
 			->scenes[this->progress.scene]
 			->fadeOutType
-		: kFadeTypeNoFade;
+		: kFadeTypeNone;
 
 	VUEngine::disableKeypad(VUEngine::getInstance());
 
 	switch(fade)
 	{
-		case kFadeTypeNoFade:
+		case kFadeTypeNone:
 		{
 			VisualNovelState::nextPage(this);
 			break;
@@ -329,6 +331,8 @@ void VisualNovelState::setUpPage()
 		->text[this->language][this->progress.page];
 	this->textLength = strlen(this->text);
 	this->pageFinished = false;
+
+	Printing::setPalette(Printing::getInstance(), 0);
 }
 
 void VisualNovelState::setUpScene()
@@ -453,8 +457,8 @@ Vector3D VisualNovelState::findFlaurosPosition()
 	}
 
 	return (Vector3D){
-		__PIXELS_TO_METERS((x << 3) + 24),
-		__PIXELS_TO_METERS((y << 4) + 178),
+		__PIXELS_TO_METERS((x << 3) + 26),
+		__PIXELS_TO_METERS((y << 4) + 179),
 		__PIXELS_TO_METERS(0),
 	};
 }
@@ -465,11 +469,36 @@ void VisualNovelState::processUserInput(UserInput userInput)
 	{
 		if(this->pageFinished)
 		{
-			VisualNovelState::hidePage(this);
+			if(VisualNovelState::sceneHasChoices(this))
+			{
+				Printing::clear(Printing::getInstance());
+				Entity::hide(this->entityFlauros);
+				VisualNovelState::printChoices(this);
+			}
+			else
+			{
+				VisualNovelState::hidePage(this);
+			}
 		}
 		else
 		{
 			VisualNovelState::finishPage(this);
+		}
+	}
+	else if(userInput.pressedKey & (K_LU | K_RU))
+	{
+		if (this->choicesMenuOption > 0)
+		{
+			this->choicesMenuOption--;
+			VisualNovelState::printChoices(this);
+		}
+	}
+	else if(userInput.pressedKey & (K_LD | K_RD))
+	{
+		if (this->choicesMenuOption < (this->choicesMenuOptionCount - 1))
+		{
+			this->choicesMenuOption++;
+			VisualNovelState::printChoices(this);
 		}
 	}
 }
@@ -477,4 +506,39 @@ void VisualNovelState::processUserInput(UserInput userInput)
 void VisualNovelState::setSaveSlot(uint8 saveSlot)
 {
 	this->saveSlot = saveSlot;
+}
+
+bool VisualNovelState::sceneHasChoices()
+{
+	return PlayNovelScenarios.scenarios[this->progress.scenario]
+		->acts[this->progress.act]->chapters[this->progress.chapter]
+		->subChapters[this->progress.subChapter]
+		->scenes[this->progress.scene]
+		->choices != NULL;
+}
+
+void VisualNovelState::printChoices() 
+{
+	const struct Choices *choices = PlayNovelScenarios.scenarios[this->progress.scenario]
+		->acts[this->progress.act]->chapters[this->progress.chapter]
+		->subChapters[this->progress.subChapter]
+		->scenes[this->progress.scene]
+		->choices;
+
+	this->choicesMenuOptionCount = 0;
+	for(uint8 i = 0; i < MAX_CHOICES; i++)
+	{
+		if(choices->choices[i].text[0] != NULL)
+		{
+			this->choicesMenuOptionCount++;
+			Printing::setPalette(Printing::getInstance(), i == this->choicesMenuOption ? 0 : 3);
+			switch(i)
+			{
+				case 0: Printing::text(Printing::getInstance(), "A)", 0, i * 2, "Silent"); break;
+				case 1: Printing::text(Printing::getInstance(), "B)", 0, i * 2, "Silent"); break;
+				case 2: Printing::text(Printing::getInstance(), "C)", 0, i * 2, "Silent"); break;
+			}
+			Printing::text(Printing::getInstance(), choices->choices[i].text[this->language], 3, i * 2, "Silent");
+		}
+	}
 }

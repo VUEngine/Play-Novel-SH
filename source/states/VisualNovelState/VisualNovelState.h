@@ -22,6 +22,7 @@
 
 #define CHARACTER_DELAY			1
 #define NUMBER_OF_LANGUAGES		2
+#define MAX_CHOICES				3
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -43,7 +44,7 @@ enum PlayNovelScenario
 
 enum PlayNovelFadeTypes
 {
-	kFadeTypeNoFade,
+	kFadeTypeNone,
 	kFadeTypeNormal,
 	kFadeTypeSlow,
 };
@@ -53,6 +54,26 @@ enum PlayNovelFadeTypes
 // 											TYPE DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
+typedef struct TargetPage
+{
+	uint16 act;
+	uint16 chapter;
+	uint16 subChapter;
+	uint16 scene;
+	uint16 page;
+} TargetPage;
+
+typedef struct Choice
+{
+	char* text[NUMBER_OF_LANGUAGES];
+	TargetPage targetPage;
+} Choice;
+
+typedef struct Choices
+{
+	Choice choices[MAX_CHOICES];
+} Choices;
+
 typedef struct Scene
 {
 	uint8 fadeInType;
@@ -60,6 +81,7 @@ typedef struct Scene
 	uint8 soundPlaybackType;
 	const Sound *sound;
 	const PositionedEntity* positionedEntities;
+	const Choices* choices;
 	char* text[NUMBER_OF_LANGUAGES][MAX_TEXT_PER_SCENE];
 } Scene;
 
@@ -110,6 +132,8 @@ singleton class VisualNovelState : GameState
 	uint8 charY;
 	uint8 saveSlot;
 	uint8 language;
+	uint8 choicesMenuOptionCount;
+	uint8 choicesMenuOption;
 
 	static VisualNovelState getInstance();
 	

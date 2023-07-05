@@ -369,7 +369,7 @@ void LoadGameScreenState::showDeleteSlot()
 
 void LoadGameScreenState::printSlotMenu() 
 {
-	Printing::setPalette(Printing::getInstance(), 3);
+	Printing::setPalette(Printing::getInstance(), 0);
 	LoadGameScreenState::clearMenu(this);
 	VirtualList options = new VirtualList();
 
@@ -396,7 +396,7 @@ void LoadGameScreenState::printSlotMenu()
 
 void LoadGameScreenState::printDeleteMenu() 
 {
-	Printing::setPalette(Printing::getInstance(), 3);
+	Printing::setPalette(Printing::getInstance(), 0);
 	LoadGameScreenState::clearMenu(this);
 
 	const char* deleteDataText = I18n::getText(I18n::getInstance(), kStringDeleteData);

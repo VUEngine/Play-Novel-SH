@@ -18,6 +18,8 @@
 //												DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
+extern EntitySpec Scene011Entity;
+
 
 //---------------------------------------------------------------------------------------------------------
 // 												DEFINITIONS
@@ -27,20 +29,45 @@
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter2Sub1Scene1Entities[] =
 {
+	{&Scene011Entity, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
 };
 
+const struct Choices PlayNovelScenarioHarryAct1Chapter2Sub1Scene1Choices =
+{
+	{
+		{
+			{
+				"Cheryl's destination is...",
+				"",
+			},
+			{
+				1, 2, 0, 0, 0,
+			},
+		},
+		{
+			{
+				"Is there no one in the town...",
+				"",
+			},
+			{
+				1, 3, 0, 0, 0,
+			},
+		},
+		{{ NULL }, { 0, 0, 0, 0, 0 },},
+	},
+};
+
 const struct Scene PlayNovelScenarioHarryAct1Chapter2Sub1Scene1 = {
-	kFadeTypeNormal,
+	kFadeTypeNone,
 	kFadeTypeNormal,
 	kSoundWrapperPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter2Sub1Scene1Entities,
+	&PlayNovelScenarioHarryAct1Chapter2Sub1Scene1Choices,
 	{
 		{
 			"What is going on...",
-			"Cheryl's destination is...",
-			"Is there no one in the town...",
 		},
 		{
 		}

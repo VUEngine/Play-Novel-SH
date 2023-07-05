@@ -30,7 +30,6 @@ extern EntitySpec Scene008Entity;
 
 extern Sound CarEngineSound;
 extern Sound CarBrakingSound;
-extern Sound CarEngineSound;
 extern Sound EnteringOtherWorldSound;
 extern Sound SomethingStrangeSound;
 
@@ -51,6 +50,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene1 = {
 	kSoundWrapperPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene1Entities,
+	NULL,
 	{
 		{
 			"It's been a while since I have taken a\nvacation. I am driving my jeep, heading to-\nwards the quiet resort town of Silent Hill.",
@@ -76,6 +76,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene2 = {
 	kSoundWrapperPlaybackNormal,
 	&CarEngineSound,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene2Entities,
+	NULL,
 	{
 		{
 			"I am Harry Mason.\nA run of the mill writer.",
@@ -98,6 +99,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene3 = {
 	kSoundWrapperPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene3Entities,
+	NULL,
 	{
 		{
 			"Her eyes closed, my daughter Cheryl \nsleeps peacefully in the passenger seat.",
@@ -126,6 +128,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene4 = {
 	kSoundWrapperPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene4Entities,
+	NULL,
 	{
 		{
 			"Although paved, this is still very much a \nmountain road. At this hour there is little \nreason for any other drivers to be about.",
@@ -148,6 +151,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene5 = {
 	kSoundWrapperPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene5Entities,
+	NULL,
 	{
 		{
 			"Light reflects off the rear view mirror. \nThere is a motorcycle headed toward the same \ndestination as we are at ",
@@ -172,6 +176,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene6 = {
 	kSoundWrapperPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene6Entities,
+	NULL,
 	{
 		{
 			"Cheryl is sleeping. A child should not \nbe awake at this hour. I wonder if she \nis dreaming about something?",
@@ -194,6 +199,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene7 = {
 	kSoundWrapperPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene7Entities,
+	NULL,
 	{
 		{
 			"I glance over at Cheryl's sleeping face and \nthen return my eyes forward.",
@@ -217,6 +223,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene8 = {
 	kSoundWrapperPlaybackNormal,
 	&SomethingStrangeSound,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene8Entities,
+	NULL,
 	{
 		{
 			"It's the motorcycle from just before. \nIt is lying on its shoulder on the side \nof the road.",
@@ -241,6 +248,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene9 = {
 	kSoundWrapperPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene9Entities,
+	NULL,
 	{
 		{
 			"I carefully check the way in which my \nvehicle is headed.",
@@ -264,6 +272,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene10 = {
 	kSoundWrapperPlaybackNormal,
 	&EnteringOtherWorldSound,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene10Entities,
+	NULL,
 	{
 		{
 			"Perhaps I should turn back? But my foot \npersistently pushes down the accelerator \nwith no intention of letting off.",
@@ -287,6 +296,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene11 = {
 	kSoundWrapperPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene11Entities,
+	NULL,
 	{
 		{
 			"Cheryl's eyes are closed. She is dreaming.\nI know that I should be awake.\nBut what is this uneasy feeling?",
@@ -313,6 +323,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene12 = {
 	kSoundWrapperPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene12Entities,
+	NULL,
 	{
 		{
 			"Ah...",
@@ -334,6 +345,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene13 = {
 	kSoundWrapperPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene13Entities,
+	NULL,
 	{
 		{
 			"When I saw the human figure on the road \nI cut the wheel hard, and then there was \nnowhere else for my jeep and I to go ",
@@ -349,6 +361,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene14 = {
 	kFadeTypeNormal,
 	kSoundWrapperPlaybackNormal,
 	&CarBrakingSound,
+	NULL,
 	NULL,
 	{
 		{
