@@ -147,16 +147,36 @@ bool VisualNovelState::handleMessage(Telegram telegram)
 
 void VisualNovelState::nextPage()
 {
-	this->progress.page++;
-	if(PlayNovelScenarios.scenarios[this->progress.scenario]
-		->acts[this->progress.act]
-		->chapters[this->progress.chapter]
-		->subChapters[this->progress.subChapter]
-		->scenes[this->progress.scene]
-		->text[this->language][this->progress.page] == NULL)
-	{
+	if (this->choicesMenuOptionCount > 0) {
+		const struct Choices *choices = PlayNovelScenarios.scenarios[this->progress.scenario]
+			->acts[this->progress.act]->chapters[this->progress.chapter]
+			->subChapters[this->progress.subChapter]
+			->scenes[this->progress.scene]
+			->choices;
+
+		this->progress.act = choices->choices[this->choicesMenuOption].targetPage.act;
+		this->progress.chapter = choices->choices[this->choicesMenuOption].targetPage.chapter;
+		this->progress.subChapter = choices->choices[this->choicesMenuOption].targetPage.subChapter;
+		this->progress.scene = choices->choices[this->choicesMenuOption].targetPage.scene;
 		this->progress.page = 0;
-		VisualNovelState::nextScene(this);
+
+
+		VisualNovelState::setUpScene(this);
+		VisualNovelState::saveProgress(this);
+	}
+	else 
+	{
+		this->progress.page++;
+		if(PlayNovelScenarios.scenarios[this->progress.scenario]
+			->acts[this->progress.act]
+			->chapters[this->progress.chapter]
+			->subChapters[this->progress.subChapter]
+			->scenes[this->progress.scene]
+			->text[this->language][this->progress.page] == NULL)
+		{
+			this->progress.page = 0;
+			VisualNovelState::nextScene(this);
+		}
 	}
 
 	VisualNovelState::setUpPage(this);
@@ -331,6 +351,7 @@ void VisualNovelState::setUpPage()
 		->text[this->language][this->progress.page];
 	this->textLength = strlen(this->text);
 	this->pageFinished = false;
+	this->choicesMenuOptionCount = 0;
 
 	Printing::setPalette(Printing::getInstance(), 0);
 }
@@ -469,7 +490,7 @@ void VisualNovelState::processUserInput(UserInput userInput)
 	{
 		if(this->pageFinished)
 		{
-			if(VisualNovelState::sceneHasChoices(this))
+			if(this->choicesMenuOptionCount == 0 && VisualNovelState::sceneHasChoices(this))
 			{
 				Printing::clear(Printing::getInstance());
 				Entity::hide(this->entityFlauros);

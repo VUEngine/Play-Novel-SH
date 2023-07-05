@@ -60,7 +60,6 @@ typedef struct TargetPage
 	uint16 chapter;
 	uint16 subChapter;
 	uint16 scene;
-	uint16 page;
 } TargetPage;
 
 typedef struct Choice

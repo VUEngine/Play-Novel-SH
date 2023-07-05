@@ -18,7 +18,7 @@
 //												DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
-extern EntitySpec Scene011Entity;
+extern EntitySpec Scene012Entity;
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -27,71 +27,51 @@ extern EntitySpec Scene011Entity;
 
 // SUB CHAPTER 1
 
-PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter2Sub1Scene1Entities[] =
+PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter3Sub1Scene1Entities[] =
 {
-	{&Scene011Entity, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
+	{&Scene012Entity, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
 };
 
-const struct Choices PlayNovelScenarioHarryAct1Chapter2Sub1Scene1Choices =
-{
-	{
-		{
-			{
-				"Cheryl's destination is...",
-				"",
-			},
-			{
-				1, 3, 0, 0,
-			},
-		},
-		{
-			{
-				"Is there no one in the town...",
-				"",
-			},
-			{
-				1, 2, 0, 0,
-			},
-		},
-		{{ NULL }, { 0, 0, 0, 0 },},
-	},
-};
 
-const struct Scene PlayNovelScenarioHarryAct1Chapter2Sub1Scene1 = {
-	kFadeTypeNone,
+const struct Scene PlayNovelScenarioHarryAct1Chapter3Sub1Scene1 = {
+	kFadeTypeNormal,
 	kFadeTypeNormal,
 	kSoundWrapperPlaybackNormal,
 	NULL,
-	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter2Sub1Scene1Entities,
-	&PlayNovelScenarioHarryAct1Chapter2Sub1Scene1Choices,
+	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter3Sub1Scene1Entities,
+	NULL,
 	{
 		{
-			"What is going on...",
+			"I thought, I must find out if there \nis anyone other than myself here.",
+			"This is definitely Silent Hill. I recognize \nthe signboard on that store. A long time \nago, when I was young I visited here once.",
+			"All the doors on the shops and houses are \ntightly shut. \nNo...",
+			"Among them there is one shop with its door \nopen, but there is no sign of anyone \ninside.",
+			"It feels like just the people here suddenly \nvanished."
 		},
 		{
 		}
 	},
 };
 
-const struct SubChapter PlayNovelScenarioHarryAct1Chapter2Sub1 = {
+const struct SubChapter PlayNovelScenarioHarryAct1Chapter3Sub1 = {
 	{
-		"In search of anyone",
+		"Is there no one else here?",
 		""
 	},
 	{
-		&PlayNovelScenarioHarryAct1Chapter2Sub1Scene1,
+		&PlayNovelScenarioHarryAct1Chapter3Sub1Scene1,
 		NULL,
 	},
 };
 
-const struct Chapter PlayNovelScenarioHarryAct1Chapter2 = {
+const struct Chapter PlayNovelScenarioHarryAct1Chapter3 = {
 	{
-		"The Deserted Town",
+		"The Presence of Townspeople",
 		""
 	},
 	{
-		&PlayNovelScenarioHarryAct1Chapter2Sub1,
+		&PlayNovelScenarioHarryAct1Chapter3Sub1,
 		NULL,
 	},
 };
