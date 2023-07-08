@@ -77,7 +77,7 @@ typedef struct Scene
 {
 	uint8 fadeInType;
 	uint8 fadeOutType;
-	uint8 soundPlaybackType;
+	int8 soundPlaybackType;
 	const Sound *sound;
 	const PositionedEntity* positionedEntities;
 	const Choices* choices;

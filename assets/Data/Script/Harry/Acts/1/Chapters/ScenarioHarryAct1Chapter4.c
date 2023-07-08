@@ -20,6 +20,8 @@
 
 extern EntitySpec Scene012Entity;
 extern EntitySpec Scene012CherylEntity;
+extern EntitySpec Scene013Entity;
+extern EntitySpec Scene014Entity;
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -85,7 +87,6 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter4Sub1Scene3Entities[] =
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
 };
 
-
 const struct Scene PlayNovelScenarioHarryAct1Chapter4Sub1Scene3 = {
 	kFadeTypeNone,
 	kFadeTypeNormal,
@@ -105,6 +106,53 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter4Sub1Scene3 = {
 	},
 };
 
+PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter4Sub1Scene4Entities[] =
+{
+	{&Scene013Entity, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
+	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+};
+
+const struct Scene PlayNovelScenarioHarryAct1Chapter4Sub1Scene4 = {
+	kFadeTypeNormal,
+	kFadeTypeNormal,
+	kSoundWrapperPlaybackNormal,
+	NULL,
+	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter4Sub1Scene4Entities,
+	NULL,
+	{
+		{
+			"The figure appears to be absorbed by the fog \nas it begins to disappear.",
+			"In order not to lose it, I run with all my \nstrength while keeping my vision centered \non the figure.",
+			"I then notice that I have come to an alley \nsurrounded by buildings."
+		},
+		{
+		}
+	},
+};
+
+PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter4Sub1Scene5Entities[] =
+{
+	{&Scene014Entity, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
+	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+};
+
+const struct Scene PlayNovelScenarioHarryAct1Chapter4Sub1Scene5 = {
+	kFadeTypeNormal,
+	kFadeTypeNone,
+	-1,
+	NULL,
+	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter4Sub1Scene5Entities,
+	NULL,
+	{
+		{
+			"I don't know how, but it is like a cover was \nplaced over the sky, which had provided light \nuntil now.",
+			"And the area has become engulfed \nin darkness."
+		},
+		{
+		}
+	},
+};
+
 const struct SubChapter PlayNovelScenarioHarryAct1Chapter4Sub1 = {
 	{
 		"Beginning the search for Cheryl",
@@ -114,6 +162,8 @@ const struct SubChapter PlayNovelScenarioHarryAct1Chapter4Sub1 = {
 		&PlayNovelScenarioHarryAct1Chapter4Sub1Scene1,
 		&PlayNovelScenarioHarryAct1Chapter4Sub1Scene2,
 		&PlayNovelScenarioHarryAct1Chapter4Sub1Scene3,
+		&PlayNovelScenarioHarryAct1Chapter4Sub1Scene4,
+		&PlayNovelScenarioHarryAct1Chapter4Sub1Scene5,
 		NULL,
 	},
 };

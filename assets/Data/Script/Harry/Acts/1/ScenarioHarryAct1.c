@@ -22,6 +22,9 @@ extern Chapter PlayNovelScenarioHarryAct1Chapter1;
 extern Chapter PlayNovelScenarioHarryAct1Chapter2;
 extern Chapter PlayNovelScenarioHarryAct1Chapter3;
 extern Chapter PlayNovelScenarioHarryAct1Chapter4;
+extern Chapter PlayNovelScenarioHarryAct1Chapter5;
+extern Chapter PlayNovelScenarioHarryAct1Chapter6;
+extern Chapter PlayNovelScenarioHarryAct1Chapter7;
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -38,6 +41,9 @@ const struct Act PlayNovelScenarioHarryAct1 = {
 		&PlayNovelScenarioHarryAct1Chapter2,
 		&PlayNovelScenarioHarryAct1Chapter3,
 		&PlayNovelScenarioHarryAct1Chapter4,
+		&PlayNovelScenarioHarryAct1Chapter5,
+		&PlayNovelScenarioHarryAct1Chapter6,
+		&PlayNovelScenarioHarryAct1Chapter7,
 		NULL,
 	},
 };

@@ -9318,7 +9318,7 @@
             "nEGKevaFxi06bQ1J": {
                 "loop": false,
                 "name": "The Beast Lurks",
-                "range": 4,
+                "range": 3,
                 "section": "rom",
                 "sourceFile": "assets/PCM/Source/TheBeastLurks.wav"
             },
@@ -9349,6 +9349,13 @@
                 "range": 3,
                 "section": "rom",
                 "sourceFile": "assets/PCM/Source/SilenceEnd.wav"
+            },
+            "e6DazN6iPLy0fyfR": {
+                "loop": false,
+                "name": "Monster Sound",
+                "range": 4,
+                "section": "rom",
+                "sourceFile": "assets/PCM/Source/MonsterSound.wav"
             }
         }
     }

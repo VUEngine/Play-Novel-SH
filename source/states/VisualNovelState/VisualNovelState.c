@@ -376,6 +376,10 @@ void VisualNovelState::setUpScene()
 		SoundManager::stopAllSounds(SoundManager::getInstance(), true, NULL);
 		SoundManager::playSound(SoundManager::getInstance(), scene->sound, kPlayAll, NULL, scene->soundPlaybackType, NULL, NULL);
 	}
+	else if(scene->soundPlaybackType == -1)
+	{
+		SoundManager::stopAllSounds(SoundManager::getInstance(), true, NULL);
+	}
 }
 
 void VisualNovelState::startPage()
