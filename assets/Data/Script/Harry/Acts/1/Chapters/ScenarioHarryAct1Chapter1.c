@@ -104,7 +104,7 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter1Sub2Scene2Entities[] =
 
 const struct Scene PlayNovelScenarioHarryAct1Chapter1Sub2Scene2 = {
 	kFadeTypeNormal,
-	kFadeTypeNormal,
+	kFadeTypeNone,
 	kSoundWrapperPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter1Sub2Scene2Entities,
@@ -140,7 +140,7 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter1Sub3Scene1Entities[] =
 };
 
 const struct Scene PlayNovelScenarioHarryAct1Chapter1Sub3Scene1 = {
-	kFadeTypeNormal,
+	kFadeTypeNone,
 	kFadeTypeNormal,
 	kSoundWrapperPlaybackNormal,
 	NULL,

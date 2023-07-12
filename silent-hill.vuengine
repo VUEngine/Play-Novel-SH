@@ -9297,7 +9297,7 @@
             "JfwAwcFOMWa3XnS1": {
                 "loop": true,
                 "name": "Car Engine",
-                "range": 2,
+                "range": 1,
                 "section": "rom",
                 "sourceFile": "assets/PCM/Source/CarEngine.wav"
             },
@@ -9318,7 +9318,7 @@
             "nEGKevaFxi06bQ1J": {
                 "loop": false,
                 "name": "The Beast Lurks",
-                "range": 3,
+                "range": 4,
                 "section": "rom",
                 "sourceFile": "assets/PCM/Source/TheBeastLurks.wav"
             },
@@ -9353,7 +9353,7 @@
             "e6DazN6iPLy0fyfR": {
                 "loop": false,
                 "name": "Monster Sound",
-                "range": 4,
+                "range": 5,
                 "section": "rom",
                 "sourceFile": "assets/PCM/Source/MonsterSound.wav"
             }
