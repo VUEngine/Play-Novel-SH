@@ -23,6 +23,7 @@
 #define CHARACTER_DELAY			1
 #define NUMBER_OF_LANGUAGES		2
 #define MAX_CHOICES				3
+#define MAX_BRANCHING_TARGETS	3
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -62,6 +63,17 @@ typedef struct TargetPage
 	uint16 scene;
 } TargetPage;
 
+typedef struct BranchingTarget
+{
+	TargetPage target;
+	//TODO: conditions
+} BranchingTarget;
+
+typedef struct BranchingTargets
+{
+	BranchingTarget branchingTargets[MAX_BRANCHING_TARGETS];
+} BranchingTargets;
+
 typedef struct Choice
 {
 	char* text[NUMBER_OF_LANGUAGES];
@@ -82,6 +94,7 @@ typedef struct Scene
 	const PositionedEntity* positionedEntities;
 	const Choices* choices;
 	char* text[NUMBER_OF_LANGUAGES][MAX_TEXT_PER_SCENE];
+	const BranchingTargets* branchingTargets;
 } Scene;
 
 typedef struct SubChapter

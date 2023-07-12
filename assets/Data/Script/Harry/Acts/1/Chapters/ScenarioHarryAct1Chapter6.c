@@ -52,12 +52,24 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter6Sub1Scene1 = {
 		{
 		}
 	},
+	NULL,
 };
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter6Sub1Scene2Entities[] =
 {
 	{&Scene015Entity, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+};
+
+const struct BranchingTargets PlayNovelScenarioHarryAct1Chapter6Sub1Scene2BranchingTargets =
+{
+	{
+		{
+			{
+				1, 6, 0, 2,
+			},
+		}
+	}
 };
 
 const struct Scene PlayNovelScenarioHarryAct1Chapter6Sub1Scene2 = {
@@ -75,27 +87,7 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter6Sub1Scene2 = {
 		{
 		}
 	},
-};
-
-PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter6Sub1Scene3Entities[] =
-{
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
-};
-
-const struct Scene PlayNovelScenarioHarryAct1Chapter6Sub1Scene3 = {
-	kFadeTypeNormal,
-	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
-	&MonsterSoundSound,
-	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter6Sub1Scene3Entities,
-	NULL,
-	{
-		{
-			"You have reached the end of this demo.",
-		},
-		{
-		}
-	},
+	&PlayNovelScenarioHarryAct1Chapter6Sub1Scene2BranchingTargets,
 };
 
 const struct SubChapter PlayNovelScenarioHarryAct1Chapter6Sub1 = {
@@ -106,7 +98,6 @@ const struct SubChapter PlayNovelScenarioHarryAct1Chapter6Sub1 = {
 	{
 		&PlayNovelScenarioHarryAct1Chapter6Sub1Scene1,
 		&PlayNovelScenarioHarryAct1Chapter6Sub1Scene2,
-		&PlayNovelScenarioHarryAct1Chapter6Sub1Scene3,
 		NULL,
 	},
 };

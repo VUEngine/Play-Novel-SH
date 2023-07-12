@@ -56,6 +56,7 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter7Sub1Scene1 = {
 		{
 		}
 	},
+	NULL,
 };
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter7Sub1Scene2Entities[] =
@@ -79,6 +80,7 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter7Sub1Scene2 = {
 		{
 		}
 	},
+	NULL,
 };
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter7Sub1Scene3Entities[] =
@@ -100,6 +102,7 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter7Sub1Scene3 = {
 		{
 		}
 	},
+	NULL,
 };
 
 const struct SubChapter PlayNovelScenarioHarryAct1Chapter7Sub1 = {

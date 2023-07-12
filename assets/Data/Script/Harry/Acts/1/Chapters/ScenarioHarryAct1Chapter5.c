@@ -74,6 +74,7 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter5Sub1Scene1 = {
 		{
 		}
 	},
+	NULL,
 };
 
 const struct SubChapter PlayNovelScenarioHarryAct1Chapter5Sub1 = {

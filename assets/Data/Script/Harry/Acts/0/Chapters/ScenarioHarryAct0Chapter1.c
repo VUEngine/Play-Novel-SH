@@ -61,6 +61,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene1 = {
 			"Das Geräusch des Motors hallt in der \nDunkelheit wider. Wegen einer kleinen Panne\nvorhin ist es so spät geworden.",
 		}
 	},
+	NULL,
 };
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene2Entities[] =
@@ -85,6 +86,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene2 = {
 			"Ich bin Harry Mason.\nEin Allerweltsschriftsteller.",
 		}
 	},
+	NULL,
 };
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene3Entities[] =
@@ -114,6 +116,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene3 = {
 			"unersetzlich geworden. \nCheryl hatte sich sehr auf diese Reise \ngefreut.",
 		}
 	},
+	NULL,
 };
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene4Entities[] =
@@ -137,6 +140,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene4 = {
 		{
 		}
 	},
+	NULL,
 };
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene5Entities[] =
@@ -162,6 +166,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene5 = {
 		{
 		}
 	},
+	NULL,
 };
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene6Entities[] =
@@ -185,6 +190,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene6 = {
 		{
 		}
 	},
+	NULL,
 };
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene7Entities[] =
@@ -209,6 +215,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene7 = {
 		{
 		}
 	},
+	NULL,
 };
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene8Entities[] =
@@ -234,6 +241,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene8 = {
 		{
 		}
 	},
+	NULL,
 };
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene9Entities[] =
@@ -258,6 +266,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene9 = {
 		{
 		}
 	},
+	NULL,
 };
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene10Entities[] =
@@ -282,6 +291,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene10 = {
 		{
 		}
 	},
+	NULL,
 };
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene11Entities[] =
@@ -309,6 +319,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene11 = {
 		{
 		}
 	},
+	NULL,
 };
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene12Entities[] =
@@ -331,6 +342,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene12 = {
 		{
 		}
 	},
+	NULL,
 };
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene13Entities[] =
@@ -354,6 +366,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene13 = {
 		{
 		}
 	},
+	NULL,
 };
 
 const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene14 = {
@@ -371,6 +384,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene14 = {
 			""
 		}
 	},
+	NULL,
 };
 
 const struct SubChapter PlayNovelScenarioHarryAct0Chapter1Sub1 = {

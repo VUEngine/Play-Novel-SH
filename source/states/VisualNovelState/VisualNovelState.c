@@ -147,6 +147,12 @@ bool VisualNovelState::handleMessage(Telegram telegram)
 
 void VisualNovelState::nextPage()
 {
+	const struct BranchingTargets *branchingTargets = PlayNovelScenarios.scenarios[this->progress.scenario]
+		->acts[this->progress.act]->chapters[this->progress.chapter]
+		->subChapters[this->progress.subChapter]
+		->scenes[this->progress.scene]
+		->branchingTargets;
+
 	if (this->choicesMenuOptionCount > 0) {
 		const struct Choices *choices = PlayNovelScenarios.scenarios[this->progress.scenario]
 			->acts[this->progress.act]->chapters[this->progress.chapter]
@@ -174,8 +180,23 @@ void VisualNovelState::nextPage()
 			->scenes[this->progress.scene]
 			->text[this->language][this->progress.page] == NULL)
 		{
-			this->progress.page = 0;
-			VisualNovelState::nextScene(this);
+			if (branchingTargets != NULL)
+			{
+				// TODO: iterate and check conditions
+				this->progress.act = branchingTargets->branchingTargets[0].target.act;
+				this->progress.chapter = branchingTargets->branchingTargets[0].target.chapter;
+				this->progress.subChapter = branchingTargets->branchingTargets[0].target.subChapter;
+				this->progress.scene = branchingTargets->branchingTargets[0].target.scene;
+				this->progress.page = 0;
+
+				VisualNovelState::setUpScene(this);
+				VisualNovelState::saveProgress(this);
+			}
+			else
+			{
+				this->progress.page = 0;
+				VisualNovelState::nextScene(this);
+			}
 		}
 	}
 
