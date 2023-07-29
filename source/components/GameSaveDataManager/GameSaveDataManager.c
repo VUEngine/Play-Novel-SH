@@ -49,9 +49,9 @@ const GameSaveData GameSaveDataDefaults =
 		// 1
 		{
 			0, // scenario
-			0, // act
+			1, // act
 			0, // chapter
-			0, // subChapter
+			1, // subChapter
 			0, // scene
 			0, // page
 			false, // started

@@ -66,7 +66,7 @@ void VisualNovelState::enter(void* owner)
 	GameState::startClocks(GameState::safeCast(this));
 
 	// optimize printing layer to save performance
-	Printing::setWorldCoordinates(Printing::getInstance(), 16, 172, -4, 0);
+	Printing::setWorldCoordinates(Printing::getInstance(), 16, 172, -6, 0);
 	Printing::setPalette(Printing::getInstance(), 0);
 
 	// initialize variables
