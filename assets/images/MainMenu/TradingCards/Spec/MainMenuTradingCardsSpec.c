@@ -11,7 +11,6 @@
 //---------------------------------------------------------------------------------------------------------
 
 #include <BgmapAnimatedSprite.h>
-#include <macros.h>
 #include <LocalizedEntity.h>
 #include <Actor.h>
 
