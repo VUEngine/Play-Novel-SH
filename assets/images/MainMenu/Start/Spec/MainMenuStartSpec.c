@@ -10,9 +10,10 @@
 //												INCLUDES
 //---------------------------------------------------------------------------------------------------------
 
-#include <BgmapAnimatedSprite.h>
-#include <LocalizedEntity.h>
 #include <Actor.h>
+#include <LocalizedEntity.h>
+#include <VIPManager.h>
+#include <BgmapAnimatedSprite.h>
 
 
 //---------------------------------------------------------------------------------------------------------

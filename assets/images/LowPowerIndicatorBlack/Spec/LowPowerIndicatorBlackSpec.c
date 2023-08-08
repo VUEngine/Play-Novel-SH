@@ -10,8 +10,9 @@
 //												INCLUDES
 //---------------------------------------------------------------------------------------------------------
 
-#include <GuiBgmapAnimatedSprite.h>
 #include <LowPowerEntity.h>
+#include <VIPManager.h>
+#include <GuiBgmapAnimatedSprite.h>
 
 
 //---------------------------------------------------------------------------------------------------------

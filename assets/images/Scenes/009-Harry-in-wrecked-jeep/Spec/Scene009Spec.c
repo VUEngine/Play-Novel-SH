@@ -11,6 +11,7 @@
 //---------------------------------------------------------------------------------------------------------
 
 #include <Entity.h>
+#include <VIPManager.h>
 #include <AutoScrollingMBgmapSprite.h>
 
 

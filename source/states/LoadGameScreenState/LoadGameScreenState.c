@@ -15,6 +15,7 @@
 #include <Utilities.h>
 #include <AnimatedEntity.h>
 #include <Camera.h>
+#include <CameraEffectManager.h>
 #include <MessageDispatcher.h>
 #include <I18n.h>
 #include <Languages.h>
@@ -22,6 +23,7 @@
 #include <LoadGameScreenState.h>
 #include <ParticleSystem.h>
 #include <KeypadManager.h>
+#include <Telegram.h>
 #include <GameEvents.h>
 #include <debugUtilities.h>
 #include <AutomaticPauseManager.h>

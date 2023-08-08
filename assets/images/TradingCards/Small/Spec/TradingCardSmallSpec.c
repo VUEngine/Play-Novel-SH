@@ -12,6 +12,7 @@
 
 #include <Libgccvb.h>
 #include <AnimatedEntity.h>
+#include <VIPManager.h>
 #include <BgmapAnimatedSprite.h>
 
 

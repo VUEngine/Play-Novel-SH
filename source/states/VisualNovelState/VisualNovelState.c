@@ -15,9 +15,11 @@
 #include <Utilities.h>
 #include <AnimatedEntity.h>
 #include <Camera.h>
+#include <CameraEffectManager.h>
 #include <MessageDispatcher.h>
 #include <I18n.h>
 #include <Languages.h>
+#include <Telegram.h>
 #include <PhysicalWorld.h>
 #include <VisualNovelState.h>
 #include <ParticleSystem.h>
