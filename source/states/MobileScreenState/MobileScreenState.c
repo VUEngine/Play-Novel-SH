@@ -16,6 +16,7 @@
 #include <Camera.h>
 #include <CameraEffectManager.h>
 #include <MessageDispatcher.h>
+#include <Telegram.h>
 #include <I18n.h>
 #include <Languages.h>
 #include <PhysicalWorld.h>

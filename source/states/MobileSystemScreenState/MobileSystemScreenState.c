@@ -11,6 +11,7 @@
 //---------------------------------------------------------------------------------------------------------
 
 #include <VUEngine.h>
+#include <Telegram.h>
 #include <MobileSystemScreenState.h>
 #include <IntroScreenState.h>
 

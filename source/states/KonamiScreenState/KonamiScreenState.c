@@ -11,6 +11,7 @@
 //---------------------------------------------------------------------------------------------------------
 
 #include <VUEngine.h>
+#include <Telegram.h>
 #include <KonamiScreenState.h>
 #include <KCETScreenState.h>
 

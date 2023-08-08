@@ -11,9 +11,10 @@
 //---------------------------------------------------------------------------------------------------------
 
 #include <VUEngine.h>
+#include <Telegram.h>
+#include <AnimatedEntity.h>
 #include <IntroScreenState.h>
 #include <TitleScreenState.h>
-#include <AnimatedEntity.h>
 
 
 //---------------------------------------------------------------------------------------------------------
