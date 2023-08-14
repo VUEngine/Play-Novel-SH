@@ -50,7 +50,7 @@ int32 game(void)
 	);
 
 	// start the game
-	VUEngine::start(VUEngine::getInstance(), GameState::safeCast(VisualNovelState::getInstance()));
+	//VUEngine::start(VUEngine::getInstance(), GameState::safeCast(VisualNovelState::getInstance()));
 	//VUEngine::start(VUEngine::getInstance(), GameState::safeCast(ScenarioSelectScreenState::getInstance()));
 	//VUEngine::start(VUEngine::getInstance(), GameState::safeCast(LoadGameScreenState::getInstance()));
 	//VUEngine::start(VUEngine::getInstance(), GameState::safeCast(MobileScreenState::getInstance()));
@@ -60,6 +60,7 @@ int32 game(void)
 	//VUEngine::start(VUEngine::getInstance(), GameState::safeCast(MobileSystemScreenState::getInstance()));
 	//VUEngine::start(VUEngine::getInstance(), GameState::safeCast(KCETScreenState::getInstance()));
 	//VUEngine::start(VUEngine::getInstance(), GameState::safeCast(KonamiScreenState::getInstance()));
+	//VUEngine::start(VUEngine::getInstance(), GameState::safeCast(AdjustmentScreenState::getInstance()));
 	VUEngine::start(VUEngine::getInstance(), GameState::safeCast(PrecautionScreenState::getInstance()));
 
 	// end program

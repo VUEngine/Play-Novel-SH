@@ -24,6 +24,7 @@
 #include <ParticleSystem.h>
 #include <KeypadManager.h>
 #include <Telegram.h>
+#include <VirtualList.h>
 #include <GameEvents.h>
 #include <debugUtilities.h>
 #include <AutomaticPauseManager.h>
