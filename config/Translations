@@ -1,0 +1,174 @@
+{
+    "languages": [
+        {
+            "code": "en",
+            "flag": "",
+            "localizedName": "English",
+            "name": "English"
+        },
+        {
+            "code": "de",
+            "flag": "",
+            "localizedName": "German",
+            "name": "German"
+        }
+    ],
+    "translations": {
+        "Continue": {
+            "de": "Fortsetzen",
+            "en": "Continue"
+        },
+        "DeleteData": {
+            "de": "Daten Löschen",
+            "en": "Delete Data"
+        },
+        "MobileError": {
+            "de": "10-000\nMobil-Adapter ist nicht richtig eingesteckt.\nBitte lesen Sie die Anleitung und stecken \ndiesen sicher ein.",
+            "en": "10-000\nMobile adapter is not plugged in properly.\nPlease refer to the instruction manual and\nplug it in securely."
+        },
+        "MobilePrepareCommunication": {
+            "de": "Bereite Kommunikation vor.",
+            "en": "Preparing for communication."
+        },
+        "NewGame": {
+            "de": "Neues Spiel",
+            "en": "New Game"
+        },
+        "No": {
+            "de": "Nein",
+            "en": "No"
+        },
+        "TradingCard01Title": {
+            "de": "Inkubus",
+            "en": "Incubus"
+        },
+        "TradingCard02Title": {
+            "de": "Cybil",
+            "en": "Cybil"
+        },
+        "TradingCard03Title": {
+            "de": "Cheryl",
+            "en": "Cheryl"
+        },
+        "TradingCard04Title": {
+            "de": "Alessa",
+            "en": "Alessa"
+        },
+        "TradingCard05Title": {
+            "de": "Dahlia",
+            "en": "Dahlia"
+        },
+        "TradingCard06Title": {
+            "de": "Kaufmann",
+            "en": "Kaufmann"
+        },
+        "TradingCard07Title": {
+            "de": "Lisa",
+            "en": "Lisa"
+        },
+        "TradingCard08Title": {
+            "de": "Mumbler",
+            "en": "Mumbler"
+        },
+        "TradingCard09Title": {
+            "de": "Air Screamer",
+            "en": "Air Screamer"
+        },
+        "TradingCard10Title": {
+            "de": "Split Head",
+            "en": "Split Head"
+        },
+        "TradingCard11Title": {
+            "de": "Krankenschwester",
+            "en": "Puppet Nurse"
+        },
+        "TradingCard12Title": {
+            "de": "Twinfeeler",
+            "en": "Twinfeeler"
+        },
+        "TradingCard13Title": {
+            "de": "Floatstinger",
+            "en": "Floatstinger"
+        },
+        "TradingCard14Title": {
+            "de": "Groaner",
+            "en": "Groaner"
+        },
+        "TradingCard15Title": {
+            "de": "Harry",
+            "en": "Harry"
+        },
+        "TradingCard16Title": {
+            "de": "Schalttafel",
+            "en": "Switchboard"
+        },
+        "TradingCard17Title": {
+            "de": "Chemikalien",
+            "en": "Chemicals"
+        },
+        "TradingCard18Title": {
+            "de": "Präparate",
+            "en": "Specimens"
+        },
+        "TradingCard19Title": {
+            "de": "Telefon",
+            "en": "Telephone"
+        },
+        "TradingCard20Title": {
+            "de": "Schlüssel",
+            "en": "Key"
+        },
+        "TradingCard21Title": {
+            "de": "Café",
+            "en": "Cafe"
+        },
+        "TradingCard22Title": {
+            "de": "Musikraum",
+            "en": "Music Room"
+        },
+        "TradingCard23Title": {
+            "de": "Krankenhaus",
+            "en": "Hospital"
+        },
+        "TradingCard24Title": {
+            "de": "Untersuchung",
+            "en": "Study"
+        },
+        "TradingCard25Title": {
+            "de": "Aquädukt",
+            "en": "Aqueduct"
+        },
+        "TradingCard26Title": {
+            "de": "Aufzug",
+            "en": "Elevator"
+        },
+        "TradingCard27Title": {
+            "de": "Friedhof",
+            "en": "Cemetery"
+        },
+        "TradingCard28Title": {
+            "de": "Sein Schicksal",
+            "en": "His Fate"
+        },
+        "TradingCard29Title": {
+            "de": "Ihr Schicksal",
+            "en": "Her Fate"
+        },
+        "TradingCard30Title": {
+            "de": "Erster Blick",
+            "en": "First Sight"
+        },
+        "TradingCard31Title": {
+            "de": "Flucht",
+            "en": "Escape"
+        },
+        "TradingCard32Title": {
+            "de": "Liebe",
+            "en": "Love"
+        },
+        "Yes": {
+            "de": "Ja",
+            "en": "Yes"
+        }
+    }
+}

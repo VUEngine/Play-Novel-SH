@@ -1,12 +1,10 @@
 /**
- * VUEngine Plugins Library
+ * Play Novel: Silent Hill
+ * ©1999 2001 KCE Tokyo ALL RIGHTS RESERVED.
  *
- * (c) Christian Radke and Jorge Eremiev
- *
- * For the full copyright and license information, please view the LICENSE file
- * that was distributed with this source code.
+ * Virtual Boy port by Christian Radke <c.radke@posteo.de>
  */
-
+ 
 
 //---------------------------------------------------------------------------------------------------------
 //												INCLUDES
@@ -15,14 +13,14 @@
 #include <VUEngine.h>
 #include <Camera.h>
 #include <CameraEffectManager.h>
-#include <SplashScreenState.h>
+#include <PnSplashScreenState.h>
 
 
 //---------------------------------------------------------------------------------------------------------
 //												CLASS'S METHODS
 //---------------------------------------------------------------------------------------------------------
 
-void SplashScreenState::constructor()
+void PnSplashScreenState::constructor()
 {
 	Base::constructor();
 
@@ -31,30 +29,30 @@ void SplashScreenState::constructor()
 	this->nextState = NULL;
 }
 
-void SplashScreenState::destructor()
+void PnSplashScreenState::destructor()
 {
 	// destroy the super object
 	// must always be called at the end of the destructor
 	Base::destructor();
 }
 
-void SplashScreenState::enter(void* owner)
+void PnSplashScreenState::enter(void* owner)
 {
 	// call base
 	Base::enter(this, owner);
 
 	if(this->stageSpec)
 	{
-		SplashScreenState::loadStage(this, this->stageSpec, NULL, true, false);
+		PnSplashScreenState::loadStage(this, this->stageSpec, NULL, true, false);
 	}
 
-	SplashScreenState::print(this);
-	SplashScreenState::startClocks(this);
+	PnSplashScreenState::print(this);
+	PnSplashScreenState::startClocks(this);
 	Camera::startEffect(Camera::getInstance(), kShow);
 	VUEngine::enableKeypad(VUEngine::getInstance());
 }
 
-void SplashScreenState::exit(void* owner)
+void PnSplashScreenState::exit(void* owner)
 {
 	// call base
 	Base::exit(this, owner);
@@ -64,7 +62,7 @@ void SplashScreenState::exit(void* owner)
 }
 
 // state's suspend
-void SplashScreenState::suspend(void* owner)
+void PnSplashScreenState::suspend(void* owner)
 {
 	if(!VUEngine::isEnteringSpecialMode(VUEngine::getInstance()))
 	{
@@ -76,11 +74,11 @@ void SplashScreenState::suspend(void* owner)
 }
 
 // state's resume
-void SplashScreenState::resume(void* owner)
+void PnSplashScreenState::resume(void* owner)
 {
 	Base::resume(this, owner);
 
-	SplashScreenState::print(this);
+	PnSplashScreenState::print(this);
 
 	if(!VUEngine::isExitingSpecialMode(VUEngine::getInstance()))
 	{
@@ -88,38 +86,38 @@ void SplashScreenState::resume(void* owner)
 	}
 }
 
-bool SplashScreenState::processMessage(void* owner __attribute__ ((unused)), Telegram telegram __attribute__ ((unused)))
+bool PnSplashScreenState::processMessage(void* owner __attribute__ ((unused)), Telegram telegram __attribute__ ((unused)))
 {
 	return false;
 }
 
-void SplashScreenState::processUserInput(UserInput userInput)
+void PnSplashScreenState::processUserInput(UserInput userInput)
 {
 	if(userInput.pressedKey & (K_STA | K_SEL | K_A | K_B))
 	{
-		SplashScreenState::loadNextState(this);
+		PnSplashScreenState::loadNextState(this);
 	}
 }
 
-void SplashScreenState::print()
+void PnSplashScreenState::print()
 {
 }
 
-void SplashScreenState::initNextState()
+void PnSplashScreenState::initNextState()
 {
 }
 
-void SplashScreenState::setNextState(GameState nextState)
+void PnSplashScreenState::setNextState(GameState nextState)
 {
 	this->nextState = nextState;
 }
 
-void SplashScreenState::loadNextState()
+void PnSplashScreenState::loadNextState()
 {
 	Camera::startEffect(Camera::getInstance(), kHide);
 	if(this->nextState == NULL)
 	{
-		SplashScreenState::initNextState(this);
+		PnSplashScreenState::initNextState(this);
 	}
 	VUEngine::changeState(VUEngine::getInstance(), this->nextState);
 }

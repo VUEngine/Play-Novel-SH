@@ -1,0 +1,8 @@
+{
+    "_id": "e6DazN6iPLy0fyfR",
+    "loop": false,
+    "name": "Monster Sound",
+    "range": 5,
+    "section": "rom",
+    "sourceFile": "assets/PCM/Source/MonsterSound.wav"
+}

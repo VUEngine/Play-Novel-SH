@@ -34,7 +34,7 @@ const char* const EnglishLanguageStrings[] =
     /* kStringMobilePrepareCommunication: */
     "Preparing for communication.",
     /* kStringNewGame: */
-    "New",
+    "New Game",
     /* kStringNo: */
     "No",
     /* kStringPrecautionScreenBody: */
@@ -128,7 +128,7 @@ const char* const GermanLanguageStrings[] =
     /* kStringContinue: */
     "Fortsetzen",
     /* kStringDeleteData: */
-    "Daten Lï¿½schen",
+    "Daten Löschen",
     /* kStringMobileError: */
     "10-000\nMobil-Adapter ist nicht richtig eingesteckt.\nBitte lesen Sie die Anleitung und stecken \ndiesen sicher ein.",
     /* kStringMobilePrepareCommunication: */
@@ -174,13 +174,13 @@ const char* const GermanLanguageStrings[] =
     /* kStringTradingCard17Title: */
     "Chemikalien",
     /* kStringTradingCard18Title: */
-    "Prï¿½parate",
+    "Präparate",
     /* kStringTradingCard19Title: */
     "Telefon",
     /* kStringTradingCard20Title: */
-    "Schlï¿½ssel",
+    "Schlüssel",
     /* kStringTradingCard21Title: */
-    "Cafï¿½",
+    "Café",
     /* kStringTradingCard22Title: */
     "Musikraum",
     /* kStringTradingCard23Title: */
@@ -188,7 +188,7 @@ const char* const GermanLanguageStrings[] =
     /* kStringTradingCard24Title: */
     "Untersuchung",
     /* kStringTradingCard25Title: */
-    "Aquï¿½dukt",
+    "Aquädukt",
     /* kStringTradingCard26Title: */
     "Aufzug",
     /* kStringTradingCard27Title: */

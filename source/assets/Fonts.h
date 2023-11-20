@@ -20,6 +20,7 @@
 
 extern FontSpec DefaultFont;
 extern FontSpec ProfilerFont;
+extern FontSpec DebugFont;
 extern FontSpec SilentFont;
 
 

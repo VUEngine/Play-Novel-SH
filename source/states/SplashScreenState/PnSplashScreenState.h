@@ -1,14 +1,12 @@
 /**
- * VUEngine Plugins Library
+ * Play Novel: Silent Hill
+ * ©1999 2001 KCE Tokyo ALL RIGHTS RESERVED.
  *
- * (c) Christian Radke and Jorge Eremiev
- *
- * For the full copyright and license information, please view the LICENSE file
- * that was distributed with this source code.
+ * Virtual Boy port by Christian Radke <c.radke@posteo.de>
  */
-
-#ifndef SPLASH_SCREEN_STATE_H_
-#define SPLASH_SCREEN_STATE_H_
+ 
+#ifndef PN_SPLASH_SCREEN_STATE_H_
+#define PN_SPLASH_SCREEN_STATE_H_
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -20,20 +18,10 @@
 
 
 //---------------------------------------------------------------------------------------------------------
-//											CLASS'S ENUMS
-//---------------------------------------------------------------------------------------------------------
-
-enum SplashScreenMessageTypes
-{
-	kMessageAllowUserInput = kMessageLastEngine + 1
-};
-
-
-//---------------------------------------------------------------------------------------------------------
 //											CLASS'S DECLARATION
 //---------------------------------------------------------------------------------------------------------
 
-abstract class SplashScreenState : GameState
+abstract class PnSplashScreenState : GameState
 {
 	// state to enter after this one
 	GameState nextState;
