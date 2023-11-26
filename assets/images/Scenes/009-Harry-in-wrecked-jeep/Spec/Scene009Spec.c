@@ -39,14 +39,14 @@ extern uint16 Scene009FrameMap[];
 
 CharSetROMSpec Scene009Charset =
 {
-	// number of chars, depending on allocation type:
-	// __ANIMATED_SINGLE*, __ANIMATED_SHARED*: number of chars of a single animation frame (cols * rows)
-	// __ANIMATED_MULTI, __NOT_ANIMATED: sum of all chars
+	// number of chars in function of the number of frames to load at the same time
 	507,
 
-	// allocation type
-	// (__ANIMATED_SINGLE, __ANIMATED_SINGLE_OPTIMIZED, __ANIMATED_SHARED, __ANIMATED_SHARED_COORDINATED, __ANIMATED_MULTI or __NOT_ANIMATED)
-	__NOT_ANIMATED,
+	// whether it is shared or not
+	true,
+	
+	// whether the tiles are optimized or not
+	false,
 
 	// char spec
 	Scene009Tiles,
@@ -72,9 +72,7 @@ TextureROMSpec Scene009BackgroundBaseTexture =
 	// padding for affine/hbias transformations (cols, rows)
 	{0, 0},
 
-	// number of frames, depending on charset's allocation type:
-	// __ANIMATED_SINGLE*, __ANIMATED_SHARED*, __NOT_ANIMATED: 1
-	// __ANIMATED_MULTI: total number of frames
+	// number of frames
 	1,
 
 	// palette number (0-3)
@@ -134,9 +132,7 @@ TextureROMSpec Scene009BackgroundOverlayTexture =
 	// padding for affine/hbias transformations (cols, rows)
 	{0, 0},
 
-	// number of frames, depending on charset's allocation type:
-	// __ANIMATED_SINGLE*, __ANIMATED_SHARED*, __NOT_ANIMATED: 1
-	// __ANIMATED_MULTI: total number of frames
+	// number of frames
 	1,
 
 	// palette number (0-3)
@@ -196,9 +192,7 @@ TextureROMSpec Scene009Snow1Texture =
 	// padding for affine/hbias transformations (cols, rows)
 	{0, 0},
 
-	// number of frames, depending on charset's allocation type:
-	// __ANIMATED_SINGLE*, __ANIMATED_SHARED*, __NOT_ANIMATED: 1
-	// __ANIMATED_MULTI: total number of frames
+	// number of frames
 	1,
 
 	// palette number (0-3)
@@ -290,9 +284,7 @@ TextureROMSpec Scene009Snow2Texture =
 	// padding for affine/hbias transformations (cols, rows)
 	{0, 0},
 
-	// number of frames, depending on charset's allocation type:
-	// __ANIMATED_SINGLE*, __ANIMATED_SHARED*, __NOT_ANIMATED: 1
-	// __ANIMATED_MULTI: total number of frames
+	// number of frames
 	1,
 
 	// palette number (0-3)
@@ -384,9 +376,7 @@ TextureROMSpec Scene009CarInteriorTexture =
 	// padding for affine/hbias transformations (cols, rows)
 	{0, 0},
 
-	// number of frames, depending on charset's allocation type:
-	// __ANIMATED_SINGLE*, __ANIMATED_SHARED*, __NOT_ANIMATED: 1
-	// __ANIMATED_MULTI: total number of frames
+	// number of frames
 	1,
 
 	// palette number (0-3)
@@ -446,9 +436,7 @@ TextureROMSpec Scene009SeatTexture =
 	// padding for affine/hbias transformations (cols, rows)
 	{0, 0},
 
-	// number of frames, depending on charset's allocation type:
-	// __ANIMATED_SINGLE*, __ANIMATED_SHARED*, __NOT_ANIMATED: 1
-	// __ANIMATED_MULTI: total number of frames
+	// number of frames
 	1,
 
 	// palette number (0-3)
@@ -508,9 +496,7 @@ TextureROMSpec Scene009HarryBlackTexture =
 	// padding for affine/hbias transformations (cols, rows)
 	{0, 0},
 
-	// number of frames, depending on charset's allocation type:
-	// __ANIMATED_SINGLE*, __ANIMATED_SHARED*, __NOT_ANIMATED: 1
-	// __ANIMATED_MULTI: total number of frames
+	// number of frames
 	1,
 
 	// palette number (0-3)
@@ -570,9 +556,7 @@ TextureROMSpec Scene009HarryBaseTexture =
 	// padding for affine/hbias transformations (cols, rows)
 	{0, 0},
 
-	// number of frames, depending on charset's allocation type:
-	// __ANIMATED_SINGLE*, __ANIMATED_SHARED*, __NOT_ANIMATED: 1
-	// __ANIMATED_MULTI: total number of frames
+	// number of frames
 	1,
 
 	// palette number (0-3)
@@ -632,9 +616,7 @@ TextureROMSpec Scene009HarryOverlayTexture =
 	// padding for affine/hbias transformations (cols, rows)
 	{0, 0},
 
-	// number of frames, depending on charset's allocation type:
-	// __ANIMATED_SINGLE*, __ANIMATED_SHARED*, __NOT_ANIMATED: 1
-	// __ANIMATED_MULTI: total number of frames
+	// number of frames
 	1,
 
 	// palette number (0-3)
@@ -694,9 +676,7 @@ TextureROMSpec Scene009SteeringWheelTexture =
 	// padding for affine/hbias transformations (cols, rows)
 	{0, 0},
 
-	// number of frames, depending on charset's allocation type:
-	// __ANIMATED_SINGLE*, __ANIMATED_SHARED*, __NOT_ANIMATED: 1
-	// __ANIMATED_MULTI: total number of frames
+	// number of frames
 	1,
 
 	// palette number (0-3)
@@ -756,9 +736,7 @@ TextureROMSpec Scene009FrameTexture =
 	// padding for affine/hbias transformations (cols, rows)
 	{0, 0},
 
-	// number of frames, depending on charset's allocation type:
-	// __ANIMATED_SINGLE*, __ANIMATED_SHARED*, __NOT_ANIMATED: 1
-	// __ANIMATED_MULTI: total number of frames
+	// number of frames
 	1,
 
 	// palette number (0-3)

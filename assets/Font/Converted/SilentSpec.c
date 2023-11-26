@@ -120,7 +120,11 @@ CharSetROMSpec SilentFontCharSet =
 	182,
 
 	// allocation type
-	__NOT_ANIMATED,
+	// whether it is shared or not
+	true,
+	
+	// whether the tiles are optimized or not
+	false,
 
 	// char data
 	(uint32*)SilentFontTiles,
