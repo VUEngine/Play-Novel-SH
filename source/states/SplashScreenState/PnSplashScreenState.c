@@ -64,7 +64,7 @@ void PnSplashScreenState::exit(void* owner)
 // state's suspend
 void PnSplashScreenState::suspend(void* owner)
 {
-	if(!VUEngine::isEnteringSpecialMode(VUEngine::getInstance()))
+	if(!VUEngine::isEnteringToolState(VUEngine::getInstance()))
 	{
 		Camera::startEffect(Camera::getInstance(), kHide);
 	}
@@ -80,7 +80,7 @@ void PnSplashScreenState::resume(void* owner)
 
 	PnSplashScreenState::print(this);
 
-	if(!VUEngine::isExitingSpecialMode(VUEngine::getInstance()))
+	if(!VUEngine::isExitingToolState(VUEngine::getInstance()))
 	{
 		Camera::startEffect(Camera::getInstance(), kShow);
 	}
