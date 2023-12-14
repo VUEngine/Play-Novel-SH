@@ -357,11 +357,11 @@
 
 #define __FRICTION_FORCE_FACTOR_POWER								4
 
-// smaller values allow movement to start when colliding against a shape and trying to move towards it
-#define __SHAPE_ANGLE_TO_PREVENT_DISPLACEMENT						__FIX7_9_TO_FIXED(__COS(10))
+// smaller values allow movement to start when colliding against a collider and trying to move towards it
+#define __COLLIDER_ANGLE_TO_PREVENT_DISPLACEMENT						__FIX7_9_TO_FIXED(__COS(10))
 
 // maximum size of shapes allows to avoid checks against far away shapes
-#define __SHAPE_MAXIMUM_SIZE										__PIXELS_TO_METERS(256)
+#define __COLLIDER_MAXIMUM_SIZE										__PIXELS_TO_METERS(256)
 
 
 //---------------------------------------------------------------------------------------------------------

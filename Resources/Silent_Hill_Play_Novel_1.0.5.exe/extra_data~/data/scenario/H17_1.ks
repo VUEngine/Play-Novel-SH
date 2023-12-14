@@ -237,7 +237,7 @@ This is where she lived.[p]
 Her hate spirals out in this cursed wing of the hospital.[p]
 However, there is no way to prove the reality of it.[p]
 As all I have is a vague sense of it.[p]
-Reflecting in my blank eyes, the room I am standing in begins to change shape.[p]
+Reflecting in my blank eyes, the room I am standing in begins to change collider.[p]
 The bed and picture frame from before are gone, and the room transforms into a completely different one.[p]
 
 

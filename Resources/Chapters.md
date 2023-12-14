@@ -241,7 +241,7 @@ Harry readies his gun
 Harry runs away
 The approaching monsters
 
-The Strangely Shaped Things
+The Strangely Colliderd Things
 I cannot waste bullets…
 Pointing the gun forward
 Readying the gun to the rear

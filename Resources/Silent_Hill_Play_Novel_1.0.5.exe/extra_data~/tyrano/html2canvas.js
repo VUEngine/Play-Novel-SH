@@ -961,43 +961,43 @@ function h2cRenderContext(width, height) {
         'arguments': arguments
       });
     },
-    drawShape: function() {
+    drawCollider: function() {
 
-      var shape = [];
+      var collider = [];
 
       storage.push({
         type: "function",
-        name: "drawShape",
-        'arguments': shape
+        name: "drawCollider",
+        'arguments': collider
       });
 
       return {
         moveTo: function() {
-          shape.push({
+          collider.push({
             name: "moveTo",
             'arguments': arguments
           });
         },
         lineTo: function() {
-          shape.push({
+          collider.push({
             name: "lineTo",
             'arguments': arguments
           });
         },
         arcTo: function() {
-          shape.push({
+          collider.push({
             name: "arcTo",
             'arguments': arguments
           });
         },
         bezierCurveTo: function() {
-          shape.push({
+          collider.push({
             name: "bezierCurveTo",
             'arguments': arguments
           });
         },
         quadraticCurveTo: function() {
-          shape.push({
+          collider.push({
             name: "quadraticCurveTo",
             'arguments': arguments
           });
@@ -1738,18 +1738,18 @@ _html2canvas.Parse = function (images, options) {
     return borderData;
   }
 
-  function createShape(ctx, args) {
-    var shape = ctx.drawShape();
+  function createCollider(ctx, args) {
+    var collider = ctx.drawCollider();
     args.forEach(function(border, index) {
-      shape[(index === 0) ? "moveTo" : border[0] + "To" ].apply(null, border.slice(1));
+      collider[(index === 0) ? "moveTo" : border[0] + "To" ].apply(null, border.slice(1));
     });
-    return shape;
+    return collider;
   }
 
   function renderBorders(ctx, borderArgs, color) {
     if (color !== "transparent") {
       ctx.setVariable( "fillStyle", color);
-      createShape(ctx, borderArgs);
+      createCollider(ctx, borderArgs);
       ctx.fill();
       numDraws+=1;
     }
@@ -1875,13 +1875,13 @@ _html2canvas.Parse = function (images, options) {
     ctx.translate(-offsetX, -offsetY);
   }
 
-  function backgroundRepeatShape(ctx, image, backgroundPosition, bounds, left, top, width, height) {
+  function backgroundRepeatCollider(ctx, image, backgroundPosition, bounds, left, top, width, height) {
     var args = [];
     args.push(["line", Math.round(left), Math.round(top)]);
     args.push(["line", Math.round(left + width), Math.round(top)]);
     args.push(["line", Math.round(left + width), Math.round(height + top)]);
     args.push(["line", Math.round(left), Math.round(height + top)]);
-    createShape(ctx, args);
+    createCollider(ctx, args);
     ctx.save();
     ctx.clip();
     renderBackgroundRepeat(ctx, image, backgroundPosition, bounds);
@@ -1910,17 +1910,17 @@ _html2canvas.Parse = function (images, options) {
 
     switch (backgroundRepeat) {
       case "repeat-x":
-        backgroundRepeatShape(ctx, image, backgroundPosition, bounds,
+        backgroundRepeatCollider(ctx, image, backgroundPosition, bounds,
           bounds.left, bounds.top + backgroundPosition.top, 99999, image.height);
         break;
 
       case "repeat-y":
-        backgroundRepeatShape(ctx, image, backgroundPosition, bounds,
+        backgroundRepeatCollider(ctx, image, backgroundPosition, bounds,
           bounds.left + backgroundPosition.left, bounds.top, image.width, 99999);
         break;
 
       case "no-repeat":
-        backgroundRepeatShape(ctx, image, backgroundPosition, bounds,
+        backgroundRepeatCollider(ctx, image, backgroundPosition, bounds,
           bounds.left + backgroundPosition.left, bounds.top + backgroundPosition.top, image.width, image.height);
         break;
 
@@ -2065,7 +2065,7 @@ _html2canvas.Parse = function (images, options) {
     backgroundColor = (ignoreElementsRegExp.test(element.nodeName)) ? "#efefef" : getCSS(element, "backgroundColor");
 
 
-    createShape(ctx, borderData.clip);
+    createCollider(ctx, borderData.clip);
 
     ctx.save();
     ctx.clip();
@@ -2747,7 +2747,7 @@ _html2canvas.Renderer.Canvas = function(options) {
   Util = _html2canvas.Util,
   canvas = options.canvas || doc.createElement('canvas');
 
-  function createShape(ctx, args) {
+  function createCollider(ctx, args) {
     ctx.beginPath();
     args.forEach(function(arg) {
       ctx[arg.name].apply(ctx, arg['arguments']);
@@ -2787,8 +2787,8 @@ _html2canvas.Renderer.Canvas = function(options) {
               }
             }
             break;
-          case "drawShape":
-            createShape(ctx, item['arguments']);
+          case "drawCollider":
+            createCollider(ctx, item['arguments']);
             break;
           case "drawImage":
             if (item['arguments'][8] > 0 && item['arguments'][7] > 0) {

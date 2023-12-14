@@ -2834,7 +2834,7 @@ situation unnatural.
 Page 4 (Black)
 I leave the examination room.
 I pass through the medicine room and reach a planked floor corridor that
-silently extends in an L-shape. 
+silently extends in an L-collider. 
 I moved forward and found that there was an elevator with a large door at
 the end of the corridor.
 
@@ -2855,7 +2855,7 @@ I begin to run.
 
 Page 2
 I pass through the medicine room and reach a planked floor corridor that
-silently extends in an L-shape. 
+silently extends in an L-collider. 
 I moved forward and found that there was an elevator with a large door at
 the end of the corridor.
 
@@ -3359,7 +3359,7 @@ Go to 8-6
 _______________________________________________________________________________
 第八章　　「異形の物」    　      　  　        　　　　　                  8-6
 弾を無駄にはできない…                            (Nightmare hospital corridor)
-Chapter 8   "The Strangely Shaped Things"
+Chapter 8   "The Strangely Colliderd Things"
 I cannot waste bullets...
 
 Page 1 (Black)
@@ -3375,7 +3375,7 @@ B ) Run past the monster behind me.
 _______________________________________________________________________________
 第八章　　「異形の物」    　      　  　        　　　　　                  8-7
 正面に銃を向けて                                  (Nightmare hospital corridor)
-Chapter 8   "The Strangely Shaped Things"
+Chapter 8   "The Strangely Colliderd Things"
 Pointing the gun forward
 
 Page 1 (Black)
@@ -3394,7 +3394,7 @@ Go to 8-9
 _______________________________________________________________________________
 第八章　　「異形の物」    　      　  　        　　　　　                  8-8
 背後に銃を構えて                                  (Nightmare hospital corridor)
-Chapter 8   "The Strangely Shaped Things"
+Chapter 8   "The Strangely Colliderd Things"
 Readying the gun to the rear
 
 Page 1 (Black)
@@ -8418,7 +8418,7 @@ begins squirming.
 Page 21 
 A nasty liquid-like monster bursts out of Cybil's lifeless back.
 It crawls on the floor, and begins to move at a speed not unthinkable for its
-shape.
+collider.
 
 Page 22
 Keeping only it in my sight, I pursue it. 
@@ -10268,7 +10268,7 @@ Chapter 17   "Nowhere"
 Child's room
 
 Page 39
-Reflecting in my blank eyes, the room I am standing in begins to change shape.
+Reflecting in my blank eyes, the room I am standing in begins to change collider.
 The bed and picture frame from before are gone, and the room transforms
 into a completely different one.
 
@@ -11347,7 +11347,7 @@ Area 5-9, page 2
 This is probably the single most confusing piece of Japanese I have ever
 read, and is actually one of the reasons I stopped work on this translation
 in the past. Between consulations with Japanese friends and some advice from
-Blue Phoenix I think it is in good shape now!
+Blue Phoenix I think it is in good collider now!
 
 Area 6-1, page 11
 This is where the original game script really begins to show up in Harry's

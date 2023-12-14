@@ -197,7 +197,7 @@ EntityROMSpec Scene014Entity =
 	(WireframeSpec**)NULL,
 
 	// collision shapes
-	(ShapeSpec*)NULL,
+	(ColliderSpec*)NULL,
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
