@@ -35,9 +35,9 @@
 int32 game(void)
 {
 	// initialize plugins
-	SaveDataManager::restoreSettings(SaveDataManager::safeCast(GameSaveDataManager::getInstance()));
-	//AutomaticPauseManager::setAutomaticPauseState(AutomaticPauseManager::getInstance(), GameState::safeCast(AutomaticPauseScreenState::getInstance()));
-	//AutomaticPauseManager::setActive(AutomaticPauseManager::getInstance(), true);
+	AutomaticPauseManager::setActive(AutomaticPauseManager::getInstance(), GameSaveDataManager::getAutomaticPauseStatus(GameSaveDataManager::getInstance()));
+	I18n::setActiveLanguage(I18n::getInstance(), GameSaveDataManager::getLanguage(GameSaveDataManager::getInstance()));
+
 	TradingCardsManager::initialize(TradingCardsManager::getInstance());
 
 	SplashScreenState::setNextState(
