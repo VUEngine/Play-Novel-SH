@@ -107,16 +107,16 @@
     "optics": {
         "baseFactor": 32,
         "cameraMinimumDisplacementPixelsPower": 1,
-        "cameraNearPlane": 16,
+        "cameraNearPlane": 0,
         "horizontalViewPointCenter": 192,
         "maximumXViewDistance": 2048,
         "maximumYViewDistance": 2048,
         "parallaxCorrectionFactor": 2,
-        "scalingModifierFactor": 0.1,
+        "scalingModifierFactor": 1,
         "screenDepth": 2048,
         "screenHeight": 224,
         "screenWidth": 384,
-        "useLegacyCoordinateProjection": true,
+        "useLegacyCoordinateProjection": false,
         "verticalViewPointCenter": 112
     },
     "palettes": {

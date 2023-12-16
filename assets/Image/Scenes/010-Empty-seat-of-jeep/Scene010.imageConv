@@ -1,0 +1,26 @@
+{
+    "_id": "0LhkhvSV66rQmntg",
+    "animation": {
+        "frames": 0,
+        "individualFiles": false,
+        "isAnimation": false
+    },
+    "files": [
+        "assets/Image/Scenes/010-Empty-seat-of-jeep/Scene010Base.png",
+        "assets/Image/Scenes/010-Empty-seat-of-jeep/Scene010Overlay.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "Scene 010",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": true
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "_id": "5LzKfWiOk9z549IW",
+    "animation": {
+        "frames": 0,
+        "individualFiles": true,
+        "isAnimation": true
+    },
+    "files": [
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge01IncubusOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge02CybilOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge03CherylOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge04AlessaOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge05DahliaOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge06KaufmannOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge07LisaOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge08MumblerOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge09AirScreamerOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge10SplitHeadOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge11PuppetNurseOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge12TwinfeelerOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge13FloatstingerOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge14GroanerOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge15HarryOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge16SwitchboardOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge17ChemicalsOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge18SpecimensOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge19TelephoneOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge20KeyOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge21CafeOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge22MusicRoomOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge23HospitalOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge24StudyOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge25AqueductOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge26ElevatorOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge27CemeteryOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge28HisFateOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge29HerFateOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge30FirstSightOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge31EscapeOverlay.png",
+        "assets/Image/TradingCards/Large/Overlay/TradingCardLarge32LoveOverlay.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "Trading Card Large Overlay",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": false
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "files": [],
+    "name": "ScenarioBookBase",
+    "section": "rom",
+    "tileset": {
+        "shared": false,
+        "compression": "none"
+    },
+    "map": {
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        },
+        "compression": "none"
+    },
+    "animation": {
+        "isAnimation": true,
+        "individualFiles": true,
+        "frames": 0
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "_id": "OJ1WoRTOYg47p6cy",
+    "animation": {
+        "frames": 0,
+        "individualFiles": false,
+        "isAnimation": false
+    },
+    "files": [
+        "assets/Image/TradingCards/Background/TradingCardsBackground.png",
+        "assets/Image/TradingCards/Background/TradingCardsBackgroundSpine.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "Trading Cards Background",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": false
+    }
+}

@@ -25,10 +25,8 @@
 #include <KeypadManager.h>
 #include <Telegram.h>
 #include <VirtualList.h>
-#include <GameEvents.h>
 #include <debugUtilities.h>
 #include <AutomaticPauseManager.h>
-#include <GameEvents.h>
 #include <ScenarioSelectScreenState.h>
 #include <VisualNovelState.h>
 
@@ -67,15 +65,15 @@ void LoadGameScreenState::enter(void* owner)
 
 	Printing::setWorldCoordinates(Printing::getInstance(), 0, 2, -4, -1);
 
-	Container stage = Container::safeCast(VUEngine::getStage(VUEngine::getInstance()));
-	this->entityCursor = AnimatedEntity::safeCast(Container::getChildByName(stage, "CURSOR", true));
-	this->entitySubChapterBackground = Entity::safeCast(Container::getChildByName(stage, "SUBCHPTR", true));
-	this->entitySlot[0] = Entity::safeCast(Container::getChildByName(stage, "SLOT0", true));
-	this->entitySlot[1] = Entity::safeCast(Container::getChildByName(stage, "SLOT1", true));
-	this->entitySlot[2] = Entity::safeCast(Container::getChildByName(stage, "SLOT2", true));
-	this->entitySlotLabel[0] = AnimatedEntity::safeCast(Container::getChildByName(stage, "LABEL0", true));
-	this->entitySlotLabel[1] = AnimatedEntity::safeCast(Container::getChildByName(stage, "LABEL1", true));
-	this->entitySlotLabel[2] = AnimatedEntity::safeCast(Container::getChildByName(stage, "LABEL2", true));
+	UIContainer uiContainer = Stage::getUIContainer(VUEngine::getStage(VUEngine::getInstance()));
+	this->entityCursor = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "CURSOR", true));
+	this->entitySubChapterBackground = Entity::safeCast(UIContainer::getChildByName(uiContainer, "SUBCHPTR", true));
+	this->entitySlot[0] = Entity::safeCast(UIContainer::getChildByName(uiContainer, "SLOT0", true));
+	this->entitySlot[1] = Entity::safeCast(UIContainer::getChildByName(uiContainer, "SLOT1", true));
+	this->entitySlot[2] = Entity::safeCast(UIContainer::getChildByName(uiContainer, "SLOT2", true));
+	this->entitySlotLabel[0] = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "LABEL0", true));
+	this->entitySlotLabel[1] = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "LABEL1", true));
+	this->entitySlotLabel[2] = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "LABEL2", true));
 
 	this->slot = 0;
 	this->slotMenuOption = 0;
@@ -211,8 +209,8 @@ void LoadGameScreenState::positionCursor()
 {
 	Vector3D position =
 	{
-		__PIXELS_TO_METERS(192),
-		__PIXELS_TO_METERS(64 + this->slot * 48),
+		__PIXELS_TO_METERS(0),
+		__PIXELS_TO_METERS(-48 + this->slot * 48),
 		__PIXELS_TO_METERS(0),
 	};
 	Entity::setLocalPosition(this->entityCursor, &position);

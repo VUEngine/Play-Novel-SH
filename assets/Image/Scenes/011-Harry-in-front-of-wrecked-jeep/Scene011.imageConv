@@ -1,0 +1,26 @@
+{
+    "_id": "NDJUzcd8Xl8cgfBM",
+    "animation": {
+        "frames": 0,
+        "individualFiles": false,
+        "isAnimation": false
+    },
+    "files": [
+        "assets/Image/Scenes/011-Harry-in-front-of-wrecked-jeep/Scene011Base.png",
+        "assets/Image/Scenes/011-Harry-in-front-of-wrecked-jeep/Scene011Overlay.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "Scene 011",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": true
+    }
+}

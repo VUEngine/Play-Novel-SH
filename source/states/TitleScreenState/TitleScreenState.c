@@ -22,10 +22,8 @@
 #include <TitleScreenState.h>
 #include <ParticleSystem.h>
 #include <KeypadManager.h>
-#include <GameEvents.h>
 #include <debugUtilities.h>
 #include <AutomaticPauseManager.h>
-#include <GameEvents.h>
 #include <LoadGameScreenState.h>
 #include <TradingCardsScreenState.h>
 #include <MobileScreenState.h>
@@ -66,9 +64,10 @@ void TitleScreenState::enter(void* owner)
 	// enable user input
 	VUEngine::enableKeypad(VUEngine::getInstance());
 
-	this->entityStart = AnimatedEntity::safeCast(Container::getChildByName(Container::safeCast(VUEngine::getStage(VUEngine::getInstance())), "Start", true));
-	this->entityCards = AnimatedEntity::safeCast(Container::getChildByName(Container::safeCast(VUEngine::getStage(VUEngine::getInstance())), "Cards", true));
-	this->entityMobile = AnimatedEntity::safeCast(Container::getChildByName(Container::safeCast(VUEngine::getStage(VUEngine::getInstance())), "Mobile", true));
+	UIContainer uiContainer = Stage::getUIContainer(VUEngine::getStage(VUEngine::getInstance()));
+	this->entityStart = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "Start", true));
+	this->entityCards = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "Cards", true));
+	this->entityMobile = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "Mobile", true));
 	this->option = 0;
 	TitleScreenState::updateOptionAnimations(this);
 

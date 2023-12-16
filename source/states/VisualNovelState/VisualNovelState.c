@@ -24,10 +24,8 @@
 #include <VisualNovelState.h>
 #include <ParticleSystem.h>
 #include <KeypadManager.h>
-#include <GameEvents.h>
 #include <debugUtilities.h>
 #include <AutomaticPauseManager.h>
-#include <GameEvents.h>
 #include <GameSaveDataManager.h>
 
 
@@ -72,7 +70,7 @@ void VisualNovelState::enter(void* owner)
 	Printing::setPalette(Printing::getInstance(), 0);
 
 	// initialize variables
-	this->entityFlauros = Entity::safeCast(Container::getChildByName(Container::safeCast(VUEngine::getStage(VUEngine::getInstance())), "FLAUROS", true));
+	this->entityFlauros = Entity::safeCast(UIContainer::getChildByName(Stage::getUIContainer(VUEngine::getStage(VUEngine::getInstance())), "FLAUROS", true));
 	this->charNumber = 0;
 	this->charX = 0;
 	this->charY = 0;
@@ -391,7 +389,7 @@ void VisualNovelState::setUpScene()
 	if(!isDeleted(sceneEntity)) {
 		Stage::removeChild(stage, sceneEntity, true);
 	}
-	PositionedEntity scenePositionedEntity = {&DummyContainerEntity, {192, 80, 0, 0}, 0, "SCENE", (struct PositionedEntity*)scene->positionedEntities, NULL, false};
+	PositionedEntity scenePositionedEntity = {&DummyContainerEntity, {0, -32, 0, 0}, 0, "SCENE", (struct PositionedEntity*)scene->positionedEntities, NULL, false};
 	Stage::addChildEntity(stage, &scenePositionedEntity, true);
 
 	if(scene->sound)
@@ -505,8 +503,8 @@ Vector3D VisualNovelState::findFlaurosPosition()
 	}
 
 	return (Vector3D){
-		__PIXELS_TO_METERS((x << 3) + 26),
-		__PIXELS_TO_METERS((y << 4) + 179),
+		__PIXELS_TO_METERS((x << 3) - 166),
+		__PIXELS_TO_METERS((y << 4) + 67),
 		__PIXELS_TO_METERS(0),
 	};
 }

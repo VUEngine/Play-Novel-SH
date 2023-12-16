@@ -1,0 +1,26 @@
+{
+    "_id": "BoML8BFfkPOJbFx7",
+    "animation": {
+        "frames": 0,
+        "individualFiles": false,
+        "isAnimation": false
+    },
+    "files": [
+        "assets/Image/Scenes/005-Fallen-motorcycle/Scene005Base.png",
+        "assets/Image/Scenes/005-Fallen-motorcycle/Scene005Overlay.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "Scene 005",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": true
+    }
+}

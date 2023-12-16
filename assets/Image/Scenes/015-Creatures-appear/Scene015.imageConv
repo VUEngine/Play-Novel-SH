@@ -1,0 +1,26 @@
+{
+    "_id": "kTLAuBOvz5gryUoI",
+    "animation": {
+        "frames": 0,
+        "individualFiles": false,
+        "isAnimation": false
+    },
+    "files": [
+        "assets/Image/Scenes/015-Creatures-appear/Scene015Base.png",
+        "assets/Image/Scenes/015-Creatures-appear/Scene015Overlay.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "Scene 015",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": true
+    }
+}

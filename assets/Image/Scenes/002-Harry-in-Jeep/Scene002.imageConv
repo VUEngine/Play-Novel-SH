@@ -1,0 +1,27 @@
+{
+    "_id": "XciblcAtvrvUar9v",
+    "animation": {
+        "frames": 0,
+        "individualFiles": false,
+        "isAnimation": false
+    },
+    "files": [
+        "assets/Image/Scenes/002-Harry-in-Jeep/Scene002Base.png",
+        "assets/Image/Scenes/002-Harry-in-Jeep/Scene002Highlight.png",
+        "assets/Image/Scenes/002-Harry-in-Jeep/Scene002Overlay.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "Scene 002",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": true
+    }
+}

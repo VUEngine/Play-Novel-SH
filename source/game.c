@@ -11,6 +11,7 @@
 //---------------------------------------------------------------------------------------------------------
 
 #include <VUEngine.h>
+#include <I18n.h>
 #include <GameSaveDataManager.h>
 #include <TradingCardsManager.h>
 #include <AutomaticPauseManager.h>
@@ -35,9 +36,10 @@
 int32 game(void)
 {
 	// initialize plugins
-	SaveDataManager::restoreSettings(SaveDataManager::safeCast(GameSaveDataManager::getInstance()));
 	//AutomaticPauseManager::setAutomaticPauseState(AutomaticPauseManager::getInstance(), GameState::safeCast(AutomaticPauseScreenState::getInstance()));
 	//AutomaticPauseManager::setActive(AutomaticPauseManager::getInstance(), true);
+	I18n::setActiveLanguage(I18n::getInstance(), GameSaveDataManager::getLanguage(GameSaveDataManager::getInstance()));
+	
 	TradingCardsManager::initialize(TradingCardsManager::getInstance());
 
 	SplashScreenState::setNextState(

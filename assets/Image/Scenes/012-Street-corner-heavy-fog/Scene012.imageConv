@@ -1,0 +1,28 @@
+{
+    "_id": "ztFAKzbNkZGoEU2Z",
+    "animation": {
+        "frames": 0,
+        "individualFiles": false,
+        "isAnimation": false
+    },
+    "files": [
+        "assets/Image/Scenes/012-Street-corner-heavy-fog/Scene012Base.png",
+        "assets/Image/Scenes/012-Street-corner-heavy-fog/Scene012CherylBase.png",
+        "assets/Image/Scenes/012-Street-corner-heavy-fog/Scene012CherylOverlay.png",
+        "assets/Image/Scenes/012-Street-corner-heavy-fog/Scene012Overlay.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "Scene 012",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": true
+    }
+}

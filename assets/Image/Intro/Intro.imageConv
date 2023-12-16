@@ -1,0 +1,23 @@
+{
+    "_id": "ki0FmPeDsevfjSP5",
+    "animation": {
+        "frames": 0,
+        "individualFiles": true,
+        "isAnimation": true
+    },
+    "files": [],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "Intro",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": false
+    }
+}

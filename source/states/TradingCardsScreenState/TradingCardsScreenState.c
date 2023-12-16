@@ -22,10 +22,8 @@
 #include <TradingCardsScreenState.h>
 #include <ParticleSystem.h>
 #include <KeypadManager.h>
-#include <GameEvents.h>
 #include <debugUtilities.h>
 #include <AutomaticPauseManager.h>
-#include <GameEvents.h>
 #include <TradingCardsManager.h>
 #include <TitleScreenState.h>
 
@@ -66,18 +64,19 @@ void TradingCardsScreenState::enter(void* owner)
 	GameState::startClocks(GameState::safeCast(this));
 
 	// get entity references
-	this->entityBackground = Entity::safeCast(Container::getChildByName(Container::safeCast(VUEngine::getStage(VUEngine::getInstance())), "BG", true));
-	this->entityCursor = Entity::safeCast(Container::getChildByName(Container::safeCast(VUEngine::getStage(VUEngine::getInstance())), "CURSOR", true));
-	this->entityNumbers = AnimatedEntity::safeCast(Container::getChildByName(Container::safeCast(VUEngine::getStage(VUEngine::getInstance())), "NUM", true));
-	this->entityCard1 = AnimatedEntity::safeCast(Container::getChildByName(Container::safeCast(VUEngine::getStage(VUEngine::getInstance())), "0", true));
-	this->entityCard2 = AnimatedEntity::safeCast(Container::getChildByName(Container::safeCast(VUEngine::getStage(VUEngine::getInstance())), "1", true));
-	this->entityCard3 = AnimatedEntity::safeCast(Container::getChildByName(Container::safeCast(VUEngine::getStage(VUEngine::getInstance())), "2", true));
-	this->entityCard4 = AnimatedEntity::safeCast(Container::getChildByName(Container::safeCast(VUEngine::getStage(VUEngine::getInstance())), "3", true));
-	this->entityCard5 = AnimatedEntity::safeCast(Container::getChildByName(Container::safeCast(VUEngine::getStage(VUEngine::getInstance())), "4", true));
-	this->entityCard6 = AnimatedEntity::safeCast(Container::getChildByName(Container::safeCast(VUEngine::getStage(VUEngine::getInstance())), "5", true));
-	this->entityCard7 = AnimatedEntity::safeCast(Container::getChildByName(Container::safeCast(VUEngine::getStage(VUEngine::getInstance())), "6", true));
-	this->entityCard8 = AnimatedEntity::safeCast(Container::getChildByName(Container::safeCast(VUEngine::getStage(VUEngine::getInstance())), "7", true));
-	this->entityLargeCard = AnimatedEntity::safeCast(Container::getChildByName(Container::safeCast(VUEngine::getStage(VUEngine::getInstance())), "CARD", true));
+	UIContainer uiContainer = Stage::getUIContainer(VUEngine::getStage(VUEngine::getInstance()));
+	this->entityBackground = Entity::safeCast(UIContainer::getChildByName(uiContainer, "BG", true));
+	this->entityCursor = Entity::safeCast(UIContainer::getChildByName(uiContainer, "CURSOR", true));
+	this->entityNumbers = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "NUM", true));
+	this->entityCard1 = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "0", true));
+	this->entityCard2 = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "1", true));
+	this->entityCard3 = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "2", true));
+	this->entityCard4 = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "3", true));
+	this->entityCard5 = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "4", true));
+	this->entityCard6 = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "5", true));
+	this->entityCard7 = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "6", true));
+	this->entityCard8 = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "7", true));
+	this->entityLargeCard = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "CARD", true));
 
 	// initial selection
 	this->page = 0;
@@ -202,8 +201,8 @@ void TradingCardsScreenState::positionCursor()
 {
 	Vector3D position =
 	{
-		__PIXELS_TO_METERS(128 + ((this->card % 4) * 48)),
-		__PIXELS_TO_METERS(this->card < 4 ? 88 : 152),
+		__PIXELS_TO_METERS(-64 + ((this->card % 4) * 48)),
+		__PIXELS_TO_METERS(this->card < 4 ? -24 : 40),
 		__PIXELS_TO_METERS(-4),
 	};
 	Entity::setLocalPosition(Entity::safeCast(this->entityCursor), &position);

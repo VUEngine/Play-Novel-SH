@@ -1,0 +1,26 @@
+{
+    "_id": "lb2j4iicK7QTHz5s",
+    "animation": {
+        "frames": 0,
+        "individualFiles": false,
+        "isAnimation": false
+    },
+    "files": [
+        "assets/Image/Scenes/008-Silhouette-in-jeep-headlights/Scene008Base.png",
+        "assets/Image/Scenes/008-Silhouette-in-jeep-headlights/Scene008Overlay.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "Scene 008",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": true
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "_id": "j346V2TkaSPkFv5g",
+    "animation": {
+        "frames": 7,
+        "individualFiles": false,
+        "isAnimation": true
+    },
+    "files": [
+        "assets/Image/Flauros/FlaurosBase.png",
+        "assets/Image/Flauros/FlaurosBlack.png",
+        "assets/Image/Flauros/FlaurosOverlay.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": false,
+            "unique": false
+        }
+    },
+    "name": "Flauros",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": false
+    }
+}

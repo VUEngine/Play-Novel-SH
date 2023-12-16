@@ -1,0 +1,26 @@
+{
+    "_id": "5EitU7qpsRpH1SXM",
+    "animation": {
+        "frames": 0,
+        "individualFiles": false,
+        "isAnimation": false
+    },
+    "files": [
+        "assets/Image/Scenes/003-Cheryl-in-Jeep/Scene003Base.png",
+        "assets/Image/Scenes/003-Cheryl-in-Jeep/Scene003Overlay.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "Scene 003",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": true
+    }
+}

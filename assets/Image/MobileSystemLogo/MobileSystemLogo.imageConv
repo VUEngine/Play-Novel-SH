@@ -1,0 +1,26 @@
+{
+    "_id": "iArKYsjECoz32QyJ",
+    "animation": {
+        "frames": 0,
+        "individualFiles": false,
+        "isAnimation": false
+    },
+    "files": [
+        "assets/Image/MobileSystemLogo/MobileSystemLogoA.png",
+        "assets/Image/MobileSystemLogo/MobileSystemLogoB.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "Mobile System Logo",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": true
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "_id": "e1Q19qSrFoHdllJR",
+    "animation": {
+        "frames": 0,
+        "individualFiles": false,
+        "isAnimation": false
+    },
+    "files": [
+        "assets/Image/LoadGame/SaveSlotBackground/SaveSlotBackground.png",
+        "assets/Image/LoadGame/SaveSlotBackground/SaveSlotWideBackground.png",
+        "assets/Image/LoadGame/SaveSlotBackground/SaveSlotWideBackgroundExtra.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "Save Slot Background",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": true
+    }
+}

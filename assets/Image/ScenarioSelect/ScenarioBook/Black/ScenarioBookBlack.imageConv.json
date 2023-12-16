@@ -1,0 +1,22 @@
+{
+    "files": [],
+    "name": "",
+    "section": "rom",
+    "tileset": {
+        "shared": false,
+        "compression": "none"
+    },
+    "map": {
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        },
+        "compression": "none"
+    },
+    "animation": {
+        "isAnimation": false,
+        "individualFiles": false,
+        "frames": 0
+    }
+}

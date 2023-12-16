@@ -57,7 +57,8 @@ bool IntroScreenState::handleMessage(Telegram telegram)
 		case kIntroMessageStartVideo:
 		{
 			VUEngine::enableKeypad(VUEngine::getInstance());
-			AnimatedEntity animatedEntity = AnimatedEntity::safeCast(GameState::getEntityByName(GameState::safeCast(this), "VIDEO"));
+			UIContainer uiContainer = Stage::getUIContainer(VUEngine::getStage(VUEngine::getInstance()));
+			AnimatedEntity animatedEntity = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "VIDEO", true));
 			AnimatedEntity::playAnimation(animatedEntity, "Default");
 			break;
 		}

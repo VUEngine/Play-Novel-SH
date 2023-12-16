@@ -23,10 +23,8 @@
 #include <MobileScreenState.h>
 #include <ParticleSystem.h>
 #include <KeypadManager.h>
-#include <GameEvents.h>
 #include <debugUtilities.h>
 #include <AutomaticPauseManager.h>
-#include <GameEvents.h>
 #include <TitleScreenState.h>
 
 
