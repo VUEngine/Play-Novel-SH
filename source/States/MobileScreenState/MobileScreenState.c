@@ -23,7 +23,7 @@
 #include <MobileScreenState.h>
 #include <ParticleSystem.h>
 #include <KeypadManager.h>
-#include <debugUtilities.h>
+#include <DebugUtilities.h>
 #include <AutomaticPauseManager.h>
 #include <TitleScreenState.h>
 

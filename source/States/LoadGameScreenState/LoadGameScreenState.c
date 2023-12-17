@@ -25,7 +25,7 @@
 #include <KeypadManager.h>
 #include <Telegram.h>
 #include <VirtualList.h>
-#include <debugUtilities.h>
+#include <DebugUtilities.h>
 #include <AutomaticPauseManager.h>
 #include <ScenarioSelectScreenState.h>
 #include <VisualNovelState.h>
