@@ -6858,7 +6858,7 @@ SoundROM IntroSound =
 	false,
 
 	// Target timer resolution in us
-	0,
+	100,
 
 	// Tracks
 	(SoundChannel**)IntroSoundChannels

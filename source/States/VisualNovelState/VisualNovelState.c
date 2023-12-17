@@ -392,7 +392,7 @@ void VisualNovelState::setUpScene()
 	PositionedEntity scenePositionedEntity = {&DummyContainerEntity, {0, -32, 0, 0}, 0, "SCENE", (struct PositionedEntity*)scene->positionedEntities, NULL, false};
 	Stage::addChildEntity(stage, &scenePositionedEntity, true);
 
-	if(scene->sound)
+	if(NULL != scene->sound)
 	{
 		SoundManager::stopAllSounds(SoundManager::getInstance(), true, NULL);
 		SoundManager::playSound(SoundManager::getInstance(), scene->sound, kPlayAll, NULL, scene->soundPlaybackType, NULL, NULL);
