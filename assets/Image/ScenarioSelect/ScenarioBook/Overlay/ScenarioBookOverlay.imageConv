@@ -1,0 +1,26 @@
+{
+    "_id": "SVgMRNw2U99gPlym",
+    "animation": {
+        "frames": 0,
+        "individualFiles": true,
+        "isAnimation": true
+    },
+    "files": [
+        "assets/Image/ScenarioSelect/ScenarioBook/Overlay/ScenarioBookCybilOverlay.png",
+        "assets/Image/ScenarioSelect/ScenarioBook/Overlay/ScenarioBookHarryOverlay.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "Scenario Book Overlay",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": false
+    }
+}

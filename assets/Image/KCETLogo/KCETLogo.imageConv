@@ -1,0 +1,26 @@
+{
+    "_id": "DjXPjKD2ayJrqAlQ",
+    "animation": {
+        "frames": 0,
+        "individualFiles": false,
+        "isAnimation": false
+    },
+    "files": [
+        "assets/Image/KCETLogo/KCETLogoA.png",
+        "assets/Image/KCETLogo/KCETLogoB.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "KCETLogo",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": true
+    }
+}

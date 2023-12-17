@@ -1,0 +1,35 @@
+{
+    "_id": "X5n9aFtSLj3xPzQb",
+    "animation": {
+        "frames": 0,
+        "individualFiles": false,
+        "isAnimation": false
+    },
+    "files": [
+        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009BackgroundBase.png",
+        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009BackgroundOverlay.png",
+        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009CarInterior.png",
+        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009Frame.png",
+        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009HarryBase.png",
+        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009HarryBlack.png",
+        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009HarryOverlay.png",
+        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009Seat.png",
+        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009Snow1.png",
+        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009Snow2.png",
+        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009SteeringWheel.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "Scene 009",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": true
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "_id": "j7ek2AuZOVjaMbNR",
+    "animation": {
+        "frames": 13,
+        "individualFiles": false,
+        "isAnimation": true
+    },
+    "files": [
+        "assets/Image/MainMenu/TradingCards/MainMenuTradingCards.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": false,
+            "unique": false
+        }
+    },
+    "name": "Main Menu Trading Cards",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": false
+    }
+}

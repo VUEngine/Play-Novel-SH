@@ -1,0 +1,26 @@
+{
+    "_id": "P8yYOrSZkYv6R5U8",
+    "animation": {
+        "frames": 0,
+        "individualFiles": false,
+        "isAnimation": false
+    },
+    "files": [
+        "assets/Image/KonamiLogo/KonamiLogoA.png",
+        "assets/Image/KonamiLogo/KonamiLogoB.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "KonamiLogo",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": true
+    }
+}

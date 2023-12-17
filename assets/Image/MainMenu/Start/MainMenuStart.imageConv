@@ -1,0 +1,25 @@
+{
+    "_id": "29sEhMjk7SLrf5Z6",
+    "animation": {
+        "frames": 13,
+        "individualFiles": false,
+        "isAnimation": true
+    },
+    "files": [
+        "assets/Image/MainMenu/Start/MainMenuStart.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": false,
+            "unique": false
+        }
+    },
+    "name": "Main Menu Start",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": false
+    }
+}

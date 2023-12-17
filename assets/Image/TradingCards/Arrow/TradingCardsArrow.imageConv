@@ -1,0 +1,25 @@
+{
+    "_id": "1YfEeN2onDJ8RGUI",
+    "animation": {
+        "frames": 0,
+        "individualFiles": false,
+        "isAnimation": false
+    },
+    "files": [
+        "assets/Image/TradingCards/Arrow/TradingCardsArrow.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "Trading Cards Arrow",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": false
+    }
+}

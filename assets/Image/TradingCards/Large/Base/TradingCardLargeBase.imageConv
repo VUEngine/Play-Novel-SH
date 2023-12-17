@@ -1,0 +1,56 @@
+{
+    "_id": "MoPc8b9Ijf0Fhh4r",
+    "animation": {
+        "frames": 0,
+        "individualFiles": true,
+        "isAnimation": true
+    },
+    "files": [
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge01IncubusBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge02CybilBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge03CherylBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge04AlessaBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge05DahliaBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge06KaufmannBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge07LisaBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge08MumblerBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge09AirScreamerBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge10SplitHeadBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge11PuppetNurseBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge12TwinfeelerBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge13FloatstingerBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge14GroanerBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge15HarryBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge16SwitchboardBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge17ChemicalsBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge18SpecimensBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge19TelephoneBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge20KeyBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge21CafeBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge22MusicRoomBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge23HospitalBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge24StudyBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge25AqueductBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge26ElevatorBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge27CemeteryBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge28HisFateBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge29HerFateBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge30FirstSightBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge31EscapeBase.png",
+        "assets/Image/TradingCards/Large/Base/TradingCardLarge32LoveBase.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "Trading Card Large Base",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": false
+    }
+}

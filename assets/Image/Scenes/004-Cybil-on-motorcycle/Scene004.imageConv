@@ -1,0 +1,26 @@
+{
+    "_id": "dYtMBcs5RLHUbcQX",
+    "animation": {
+        "frames": 0,
+        "individualFiles": false,
+        "isAnimation": false
+    },
+    "files": [
+        "assets/Image/Scenes/004-Cybil-on-motorcycle/Scene004Base.png",
+        "assets/Image/Scenes/004-Cybil-on-motorcycle/Scene004Overlay.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "Scene 004",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": true
+    }
+}

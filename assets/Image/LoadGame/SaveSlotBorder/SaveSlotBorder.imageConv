@@ -1,0 +1,25 @@
+{
+    "_id": "V3tZ6Hsa0j1qOIMH",
+    "animation": {
+        "frames": 26,
+        "individualFiles": false,
+        "isAnimation": true
+    },
+    "files": [
+        "assets/Image/LoadGame/SaveSlotBorder/SaveSlotBorder.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": false,
+            "unique": false
+        }
+    },
+    "name": "Save Slot Border",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": false
+    }
+}

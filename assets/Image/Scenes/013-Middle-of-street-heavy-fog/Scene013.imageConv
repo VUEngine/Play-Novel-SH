@@ -1,0 +1,26 @@
+{
+    "_id": "jRMMZqL6gpFWEOq5",
+    "animation": {
+        "frames": 0,
+        "individualFiles": false,
+        "isAnimation": false
+    },
+    "files": [
+        "assets/Image/Scenes/013-Middle-of-street-heavy-fog/Scene013Base.png",
+        "assets/Image/Scenes/013-Middle-of-street-heavy-fog/Scene013Overlay.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "Scene 013",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": true
+    }
+}

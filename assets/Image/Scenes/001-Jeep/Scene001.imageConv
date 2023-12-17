@@ -1,0 +1,26 @@
+{
+    "_id": "5rf3e2ZEkhJ8gn4Y",
+    "animation": {
+        "frames": 0,
+        "individualFiles": false,
+        "isAnimation": false
+    },
+    "files": [
+        "assets/Image/Scenes/001-Jeep/Scene001Base.png",
+        "assets/Image/Scenes/001-Jeep/Scene001Overlay.png"
+    ],
+    "map": {
+        "compression": "none",
+        "generate": true,
+        "reduce": {
+            "flipped": true,
+            "unique": true
+        }
+    },
+    "name": "Scene 001",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": true
+    }
+}
