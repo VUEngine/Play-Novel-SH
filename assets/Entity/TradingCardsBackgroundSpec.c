@@ -226,5 +226,5 @@ EntityROMSpec TradingCardsBackgroundEntity =
 	kTypeNone,
 
 	// physical specification
-	(PhysicalSpecification*)NULL,
+	(PhysicalProperties*)NULL,
 };

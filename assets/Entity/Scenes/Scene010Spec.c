@@ -207,5 +207,5 @@ EntityROMSpec Scene010Entity =
 	kTypeNone,
 
 	// physical specification
-	(PhysicalSpecification*)NULL,
+	(PhysicalProperties*)NULL,
 };

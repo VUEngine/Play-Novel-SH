@@ -203,7 +203,7 @@ LocalizedEntityROMSpec OptionsMainMenuTradingCardsEntity =
 		kTypeNone,
 
 		// physical specification
-		(PhysicalSpecification*)NULL,
+		(PhysicalProperties*)NULL,
 	},
 
 	// pointer to the animation spec for the item

@@ -207,5 +207,5 @@ EntityROMSpec KCETLogoEntity =
 	kTypeNone,
 
 	// physical specification
-	(PhysicalSpecification*)NULL,
+	(PhysicalProperties*)NULL,
 };

@@ -145,5 +145,5 @@ EntityROMSpec SaveSlotWideBackgroundEntity =
 	kTypeNone,
 
 	// physical specification
-	(PhysicalSpecification*)NULL,
+	(PhysicalProperties*)NULL,
 };

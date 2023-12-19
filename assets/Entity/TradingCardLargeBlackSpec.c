@@ -145,5 +145,5 @@ EntityROMSpec TradingCardLargeBlackEntity =
 	kTypeNone,
 
 	// physical specification
-	(PhysicalSpecification*)NULL,
+	(PhysicalProperties*)NULL,
 };

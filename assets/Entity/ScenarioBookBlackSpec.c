@@ -145,5 +145,5 @@ EntityROMSpec ScenarioBookBlackEntity =
 	kTypeNone,
 
 	// physical specification
-	(PhysicalSpecification*)NULL,
+	(PhysicalProperties*)NULL,
 };

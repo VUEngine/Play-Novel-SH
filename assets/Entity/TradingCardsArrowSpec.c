@@ -145,7 +145,7 @@ EntityROMSpec TradingCardsArrowEntity =
 	kTypeNone,
 
 	// physical specification
-	(PhysicalSpecification*)NULL,
+	(PhysicalProperties*)NULL,
 };
 
 TextureROMSpec TradingCardsArrowRightTexture =
@@ -248,5 +248,5 @@ EntityROMSpec TradingCardsArrowRightEntity =
 	kTypeNone,
 
 	// physical specification
-	(PhysicalSpecification*)NULL,
+	(PhysicalProperties*)NULL,
 };

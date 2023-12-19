@@ -214,7 +214,7 @@ AnimatedEntityROMSpec IntroEntity =
 		0,
 
 		// physical specification
-		(PhysicalSpecification*)NULL,
+		(PhysicalProperties*)NULL,
 	},
 
 	// pointer to the animation spec for the item

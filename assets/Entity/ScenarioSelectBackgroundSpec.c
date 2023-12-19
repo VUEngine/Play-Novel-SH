@@ -145,5 +145,5 @@ EntityROMSpec ScenarioSelectBackgroundEntity =
 	kTypeNone,
 
 	// physical specification
-	(PhysicalSpecification*)NULL,
+	(PhysicalProperties*)NULL,
 };

@@ -189,5 +189,5 @@ EntityROMSpec Scene012CherylEntity =
 	kTypeNone,
 
 	// physical specification
-	(PhysicalSpecification*)NULL,
+	(PhysicalProperties*)NULL,
 };

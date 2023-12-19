@@ -127,5 +127,5 @@ EntityROMSpec Scene002HighlightEntity =
 	kTypeNone,
 
 	// physical specification
-	(PhysicalSpecification*)NULL,
+	(PhysicalProperties*)NULL,
 };
