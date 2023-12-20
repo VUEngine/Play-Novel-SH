@@ -18,7 +18,7 @@
 //												DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
-extern EntitySpec Scene011Entity;
+extern EntitySpec Scene011EntitySpec;
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -29,7 +29,7 @@ extern EntitySpec Scene011Entity;
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter2Sub1Scene1Entities[] =
 {
-	{&Scene011Entity, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
+	{&Scene011EntitySpec, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
 };
 

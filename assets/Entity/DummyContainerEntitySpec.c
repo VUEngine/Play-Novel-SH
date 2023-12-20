@@ -17,7 +17,7 @@
 //											DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
-EntityROMSpec DummyContainerEntity =
+EntityROMSpec DummyContainerEntitySpec =
 {
 	// class allocator
 	__TYPE(Entity),

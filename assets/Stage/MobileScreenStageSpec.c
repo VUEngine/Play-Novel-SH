@@ -19,7 +19,7 @@
 //											DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
-extern EntitySpec LowPowerIndicatorEntity;
+extern EntitySpec LowPowerIndicatorEntitySpec;
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -33,7 +33,7 @@ PositionedEntityROMSpec MobileScreenStageSpecEntities[] =
 
 PositionedEntityROMSpec MobileScreenStageSpecUiEntities[] =
 {
-	{&LowPowerIndicatorEntity, 		{ 176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
+	{&LowPowerIndicatorEntitySpec, 		{ 176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
 
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
 };

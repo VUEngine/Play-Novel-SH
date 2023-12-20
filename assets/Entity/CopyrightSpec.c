@@ -27,7 +27,7 @@ extern uint16 CopyrightMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-CharSetROMSpec CopyrightCharset =
+CharSetROMSpec CopyrightCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	56,
@@ -45,10 +45,10 @@ CharSetROMSpec CopyrightCharset =
 	NULL,
 };
 
-TextureROMSpec CopyrightTexture =
+TextureROMSpec CopyrightTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&CopyrightCharset,
+	(CharSetSpec*)&CopyrightCharSetSpec,
 
 	// bgmap spec
 	CopyrightMap,
@@ -78,14 +78,14 @@ TextureROMSpec CopyrightTexture =
 	false,
 };
 
-BgmapSpriteROMSpec CopyrightSprite =
+BgmapSpriteROMSpec CopyrightSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&CopyrightTexture,
+		(TextureSpec*)&CopyrightTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -105,13 +105,13 @@ BgmapSpriteROMSpec CopyrightSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const CopyrightSprites[] =
+BgmapSpriteROMSpec* const CopyrightSpriteSpecs[] =
 {
-	&CopyrightSprite,
+	&CopyrightSpriteSpec,
 	NULL
 };
 
-EntityROMSpec CopyrightEntity =
+EntityROMSpec CopyrightEntitySpec =
 {
 	// class allocator
 	__TYPE(Entity),
@@ -126,7 +126,7 @@ EntityROMSpec CopyrightEntity =
 	NULL,
 
 	// sprites
-	(SpriteSpec**)CopyrightSprites,
+	(SpriteSpec**)CopyrightSpriteSpecs,
 
 	// use z displacement in projection
 	false,

@@ -27,7 +27,7 @@ extern uint16 ScenarioSelectBackgroundMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-CharSetROMSpec ScenarioSelectBackgroundCharset =
+CharSetROMSpec ScenarioSelectBackgroundCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	709,
@@ -45,10 +45,10 @@ CharSetROMSpec ScenarioSelectBackgroundCharset =
 	NULL,
 };
 
-TextureROMSpec ScenarioSelectBackgroundTexture =
+TextureROMSpec ScenarioSelectBackgroundTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&ScenarioSelectBackgroundCharset,
+	(CharSetSpec*)&ScenarioSelectBackgroundCharSetSpec,
 
 	// bgmap spec
 	ScenarioSelectBackgroundMap,
@@ -78,14 +78,14 @@ TextureROMSpec ScenarioSelectBackgroundTexture =
 	false,
 };
 
-BgmapSpriteROMSpec ScenarioSelectBackgroundSprite =
+BgmapSpriteROMSpec ScenarioSelectBackgroundSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&ScenarioSelectBackgroundTexture,
+		(TextureSpec*)&ScenarioSelectBackgroundTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -105,13 +105,13 @@ BgmapSpriteROMSpec ScenarioSelectBackgroundSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const ScenarioSelectBackgroundSprites[] =
+BgmapSpriteROMSpec* const ScenarioSelectBackgroundSpriteSpecs[] =
 {
-	&ScenarioSelectBackgroundSprite,
+	&ScenarioSelectBackgroundSpriteSpec,
 	NULL
 };
 
-EntityROMSpec ScenarioSelectBackgroundEntity =
+EntityROMSpec ScenarioSelectBackgroundEntitySpec =
 {
 	// class allocator
 	__TYPE(Entity),
@@ -126,7 +126,7 @@ EntityROMSpec ScenarioSelectBackgroundEntity =
 	NULL,
 
 	// sprites
-	(SpriteSpec**)ScenarioSelectBackgroundSprites,
+	(SpriteSpec**)ScenarioSelectBackgroundSpriteSpecs,
 
 	// use z displacement in projection
 	false,

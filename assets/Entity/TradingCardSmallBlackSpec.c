@@ -27,7 +27,7 @@ extern uint16 TradingCardSmallBlackMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-CharSetROMSpec TradingCardSmallBlackCharset =
+CharSetROMSpec TradingCardSmallBlackCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	1,
@@ -45,10 +45,10 @@ CharSetROMSpec TradingCardSmallBlackCharset =
 	NULL,
 };
 
-TextureROMSpec TradingCardSmallBlackTexture =
+TextureROMSpec TradingCardSmallBlackTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&TradingCardSmallBlackCharset,
+	(CharSetSpec*)&TradingCardSmallBlackCharSetSpec,
 
 	// bgmap spec
 	TradingCardSmallBlackMap,
@@ -78,14 +78,14 @@ TextureROMSpec TradingCardSmallBlackTexture =
 	false,
 };
 
-BgmapSpriteROMSpec TradingCardSmallBlackSprite =
+BgmapSpriteROMSpec TradingCardSmallBlackSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&TradingCardSmallBlackTexture,
+		(TextureSpec*)&TradingCardSmallBlackTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -105,13 +105,13 @@ BgmapSpriteROMSpec TradingCardSmallBlackSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const TradingCardSmallBlackSprites[] =
+BgmapSpriteROMSpec* const TradingCardSmallBlackSpriteSpecs[] =
 {
-	&TradingCardSmallBlackSprite,
+	&TradingCardSmallBlackSpriteSpec,
 	NULL
 };
 
-EntityROMSpec TradingCardSmallBlackEntity =
+EntityROMSpec TradingCardSmallBlackEntitySpec =
 {
 	// class allocator
 	__TYPE(Entity),
@@ -126,7 +126,7 @@ EntityROMSpec TradingCardSmallBlackEntity =
 	NULL,
 
 	// sprites
-	(SpriteSpec**)TradingCardSmallBlackSprites,
+	(SpriteSpec**)TradingCardSmallBlackSpriteSpecs,
 
 	// use z displacement in projection
 	false,

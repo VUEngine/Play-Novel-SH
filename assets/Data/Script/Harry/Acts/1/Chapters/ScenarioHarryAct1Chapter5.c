@@ -18,7 +18,7 @@
 //												DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
-extern EntitySpec Scene014Entity;
+extern EntitySpec Scene014EntitySpec;
 
 extern Sound TheBeastLurksSound;
 
@@ -31,7 +31,7 @@ extern Sound TheBeastLurksSound;
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter5Sub1Scene1Entities[] =
 {
-	{&Scene014Entity, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
+	{&Scene014EntitySpec, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
 };
 

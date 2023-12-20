@@ -26,14 +26,14 @@ extern uint16 TradingCardLargeBaseMap[];
 extern uint32 TradingCardLargeOverlayTiles[];
 extern uint32 TradingCardLargeOverlayTilesFrameOffsets[];
 extern uint16 TradingCardLargeOverlayMap[];
-extern EntitySpec TradingCardLargeBlackEntity;
+extern EntitySpec TradingCardLargeBlackEntitySpec;
 
 
 //---------------------------------------------------------------------------------------------------------
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-AnimationFunctionROMSpec TradingCardLarge0Animation =
+AnimationFunctionROMSpec TradingCardLarge0AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -54,7 +54,7 @@ AnimationFunctionROMSpec TradingCardLarge0Animation =
 	"0",
 };
 
-AnimationFunctionROMSpec TradingCardLarge1Animation =
+AnimationFunctionROMSpec TradingCardLarge1AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -75,7 +75,7 @@ AnimationFunctionROMSpec TradingCardLarge1Animation =
 	"1",
 };
 
-AnimationFunctionROMSpec TradingCardLarge2Animation =
+AnimationFunctionROMSpec TradingCardLarge2AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -96,7 +96,7 @@ AnimationFunctionROMSpec TradingCardLarge2Animation =
 	"2",
 };
 
-AnimationFunctionROMSpec TradingCardLarge3Animation =
+AnimationFunctionROMSpec TradingCardLarge3AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -117,7 +117,7 @@ AnimationFunctionROMSpec TradingCardLarge3Animation =
 	"3",
 };
 
-AnimationFunctionROMSpec TradingCardLarge4Animation =
+AnimationFunctionROMSpec TradingCardLarge4AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -138,7 +138,7 @@ AnimationFunctionROMSpec TradingCardLarge4Animation =
 	"4",
 };
 
-AnimationFunctionROMSpec TradingCardLarge5Animation =
+AnimationFunctionROMSpec TradingCardLarge5AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -159,7 +159,7 @@ AnimationFunctionROMSpec TradingCardLarge5Animation =
 	"5",
 };
 
-AnimationFunctionROMSpec TradingCardLarge6Animation =
+AnimationFunctionROMSpec TradingCardLarge6AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -180,7 +180,7 @@ AnimationFunctionROMSpec TradingCardLarge6Animation =
 	"6",
 };
 
-AnimationFunctionROMSpec TradingCardLarge7Animation =
+AnimationFunctionROMSpec TradingCardLarge7AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -201,7 +201,7 @@ AnimationFunctionROMSpec TradingCardLarge7Animation =
 	"7",
 };
 
-AnimationFunctionROMSpec TradingCardLarge8Animation =
+AnimationFunctionROMSpec TradingCardLarge8AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -222,7 +222,7 @@ AnimationFunctionROMSpec TradingCardLarge8Animation =
 	"8",
 };
 
-AnimationFunctionROMSpec TradingCardLarge9Animation =
+AnimationFunctionROMSpec TradingCardLarge9AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -243,7 +243,7 @@ AnimationFunctionROMSpec TradingCardLarge9Animation =
 	"9",
 };
 
-AnimationFunctionROMSpec TradingCardLarge10Animation =
+AnimationFunctionROMSpec TradingCardLarge10AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -264,7 +264,7 @@ AnimationFunctionROMSpec TradingCardLarge10Animation =
 	"10",
 };
 
-AnimationFunctionROMSpec TradingCardLarge11Animation =
+AnimationFunctionROMSpec TradingCardLarge11AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -285,7 +285,7 @@ AnimationFunctionROMSpec TradingCardLarge11Animation =
 	"11",
 };
 
-AnimationFunctionROMSpec TradingCardLarge12Animation =
+AnimationFunctionROMSpec TradingCardLarge12AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -306,7 +306,7 @@ AnimationFunctionROMSpec TradingCardLarge12Animation =
 	"12",
 };
 
-AnimationFunctionROMSpec TradingCardLarge13Animation =
+AnimationFunctionROMSpec TradingCardLarge13AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -327,7 +327,7 @@ AnimationFunctionROMSpec TradingCardLarge13Animation =
 	"13",
 };
 
-AnimationFunctionROMSpec TradingCardLarge14Animation =
+AnimationFunctionROMSpec TradingCardLarge14AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -348,7 +348,7 @@ AnimationFunctionROMSpec TradingCardLarge14Animation =
 	"14",
 };
 
-AnimationFunctionROMSpec TradingCardLarge15Animation =
+AnimationFunctionROMSpec TradingCardLarge15AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -369,7 +369,7 @@ AnimationFunctionROMSpec TradingCardLarge15Animation =
 	"15",
 };
 
-AnimationFunctionROMSpec TradingCardLarge16Animation =
+AnimationFunctionROMSpec TradingCardLarge16AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -390,7 +390,7 @@ AnimationFunctionROMSpec TradingCardLarge16Animation =
 	"16",
 };
 
-AnimationFunctionROMSpec TradingCardLarge17Animation =
+AnimationFunctionROMSpec TradingCardLarge17AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -411,7 +411,7 @@ AnimationFunctionROMSpec TradingCardLarge17Animation =
 	"17",
 };
 
-AnimationFunctionROMSpec TradingCardLarge18Animation =
+AnimationFunctionROMSpec TradingCardLarge18AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -432,7 +432,7 @@ AnimationFunctionROMSpec TradingCardLarge18Animation =
 	"18",
 };
 
-AnimationFunctionROMSpec TradingCardLarge19Animation =
+AnimationFunctionROMSpec TradingCardLarge19AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -453,7 +453,7 @@ AnimationFunctionROMSpec TradingCardLarge19Animation =
 	"19",
 };
 
-AnimationFunctionROMSpec TradingCardLarge20Animation =
+AnimationFunctionROMSpec TradingCardLarge20AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -474,7 +474,7 @@ AnimationFunctionROMSpec TradingCardLarge20Animation =
 	"20",
 };
 
-AnimationFunctionROMSpec TradingCardLarge21Animation =
+AnimationFunctionROMSpec TradingCardLarge21AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -495,7 +495,7 @@ AnimationFunctionROMSpec TradingCardLarge21Animation =
 	"21",
 };
 
-AnimationFunctionROMSpec TradingCardLarge22Animation =
+AnimationFunctionROMSpec TradingCardLarge22AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -516,7 +516,7 @@ AnimationFunctionROMSpec TradingCardLarge22Animation =
 	"22",
 };
 
-AnimationFunctionROMSpec TradingCardLarge23Animation =
+AnimationFunctionROMSpec TradingCardLarge23AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -537,7 +537,7 @@ AnimationFunctionROMSpec TradingCardLarge23Animation =
 	"23",
 };
 
-AnimationFunctionROMSpec TradingCardLarge24Animation =
+AnimationFunctionROMSpec TradingCardLarge24AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -558,7 +558,7 @@ AnimationFunctionROMSpec TradingCardLarge24Animation =
 	"24",
 };
 
-AnimationFunctionROMSpec TradingCardLarge25Animation =
+AnimationFunctionROMSpec TradingCardLarge25AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -579,7 +579,7 @@ AnimationFunctionROMSpec TradingCardLarge25Animation =
 	"25",
 };
 
-AnimationFunctionROMSpec TradingCardLarge26Animation =
+AnimationFunctionROMSpec TradingCardLarge26AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -600,7 +600,7 @@ AnimationFunctionROMSpec TradingCardLarge26Animation =
 	"26",
 };
 
-AnimationFunctionROMSpec TradingCardLarge27Animation =
+AnimationFunctionROMSpec TradingCardLarge27AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -621,7 +621,7 @@ AnimationFunctionROMSpec TradingCardLarge27Animation =
 	"27",
 };
 
-AnimationFunctionROMSpec TradingCardLarge28Animation =
+AnimationFunctionROMSpec TradingCardLarge28AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -642,7 +642,7 @@ AnimationFunctionROMSpec TradingCardLarge28Animation =
 	"28",
 };
 
-AnimationFunctionROMSpec TradingCardLarge29Animation =
+AnimationFunctionROMSpec TradingCardLarge29AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -663,7 +663,7 @@ AnimationFunctionROMSpec TradingCardLarge29Animation =
 	"29",
 };
 
-AnimationFunctionROMSpec TradingCardLarge30Animation =
+AnimationFunctionROMSpec TradingCardLarge30AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -684,7 +684,7 @@ AnimationFunctionROMSpec TradingCardLarge30Animation =
 	"30",
 };
 
-AnimationFunctionROMSpec TradingCardLarge31Animation =
+AnimationFunctionROMSpec TradingCardLarge31AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -705,44 +705,44 @@ AnimationFunctionROMSpec TradingCardLarge31Animation =
 	"31",
 };
 
-AnimationFunctionROMSpec* const TradingCardLargeAnimation[] =
+AnimationFunctionROMSpec* const TradingCardLargeAnimationSpecs[] =
 {
-	(AnimationFunction*)&TradingCardLarge0Animation,
-	(AnimationFunction*)&TradingCardLarge1Animation,
-	(AnimationFunction*)&TradingCardLarge2Animation,
-	(AnimationFunction*)&TradingCardLarge3Animation,
-	(AnimationFunction*)&TradingCardLarge4Animation,
-	(AnimationFunction*)&TradingCardLarge5Animation,
-	(AnimationFunction*)&TradingCardLarge6Animation,
-	(AnimationFunction*)&TradingCardLarge7Animation,
-	(AnimationFunction*)&TradingCardLarge8Animation,
-	(AnimationFunction*)&TradingCardLarge9Animation,
-	(AnimationFunction*)&TradingCardLarge10Animation,
-	(AnimationFunction*)&TradingCardLarge11Animation,
-	(AnimationFunction*)&TradingCardLarge12Animation,
-	(AnimationFunction*)&TradingCardLarge13Animation,
-	(AnimationFunction*)&TradingCardLarge14Animation,
-	(AnimationFunction*)&TradingCardLarge15Animation,
-	(AnimationFunction*)&TradingCardLarge16Animation,
-	(AnimationFunction*)&TradingCardLarge17Animation,
-	(AnimationFunction*)&TradingCardLarge18Animation,
-	(AnimationFunction*)&TradingCardLarge19Animation,
-	(AnimationFunction*)&TradingCardLarge20Animation,
-	(AnimationFunction*)&TradingCardLarge21Animation,
-	(AnimationFunction*)&TradingCardLarge22Animation,
-	(AnimationFunction*)&TradingCardLarge23Animation,
-	(AnimationFunction*)&TradingCardLarge24Animation,
-	(AnimationFunction*)&TradingCardLarge25Animation,
-	(AnimationFunction*)&TradingCardLarge26Animation,
-	(AnimationFunction*)&TradingCardLarge27Animation,
-	(AnimationFunction*)&TradingCardLarge28Animation,
-	(AnimationFunction*)&TradingCardLarge29Animation,
-	(AnimationFunction*)&TradingCardLarge30Animation,
-	(AnimationFunction*)&TradingCardLarge31Animation,
+	(AnimationFunction*)&TradingCardLarge0AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge1AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge2AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge3AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge4AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge5AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge6AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge7AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge8AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge9AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge10AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge11AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge12AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge13AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge14AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge15AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge16AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge17AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge18AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge19AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge20AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge21AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge22AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge23AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge24AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge25AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge26AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge27AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge28AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge29AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge30AnimationSpec,
+	(AnimationFunction*)&TradingCardLarge31AnimationSpec,
     NULL,
 };
 
-CharSetROMSpec TradingCardLargeBaseCharset =
+CharSetROMSpec TradingCardLargeBaseCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	148,
@@ -760,10 +760,10 @@ CharSetROMSpec TradingCardLargeBaseCharset =
 	TradingCardLargeBaseTilesFrameOffsets,
 };
 
-TextureROMSpec TradingCardLargeBaseTexture =
+TextureROMSpec TradingCardLargeBaseTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&TradingCardLargeBaseCharset,
+	(CharSetSpec*)&TradingCardLargeBaseCharSetSpec,
 
 	// bgmap spec
 	TradingCardLargeBaseMap,
@@ -793,14 +793,14 @@ TextureROMSpec TradingCardLargeBaseTexture =
 	false,
 };
 
-BgmapSpriteROMSpec TradingCardLargeBaseSprite =
+BgmapSpriteROMSpec TradingCardLargeBaseSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapAnimatedSprite),
 
 		// texture spec
-		(TextureSpec*)&TradingCardLargeBaseTexture,
+		(TextureSpec*)&TradingCardLargeBaseTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -820,7 +820,7 @@ BgmapSpriteROMSpec TradingCardLargeBaseSprite =
 	__WORLD_ON,
 };
 
-CharSetROMSpec TradingCardLargeOverlayCharset =
+CharSetROMSpec TradingCardLargeOverlayCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	150,
@@ -838,10 +838,10 @@ CharSetROMSpec TradingCardLargeOverlayCharset =
 	TradingCardLargeOverlayTilesFrameOffsets,
 };
 
-TextureROMSpec TradingCardLargeOverlayTexture =
+TextureROMSpec TradingCardLargeOverlayTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&TradingCardLargeOverlayCharset,
+	(CharSetSpec*)&TradingCardLargeOverlayCharSetSpec,
 
 	// bgmap spec
 	TradingCardLargeOverlayMap,
@@ -871,14 +871,14 @@ TextureROMSpec TradingCardLargeOverlayTexture =
 	false,
 };
 
-BgmapSpriteROMSpec TradingCardLargeOverlaySprite =
+BgmapSpriteROMSpec TradingCardLargeOverlaySpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapAnimatedSprite),
 
 		// texture spec
-		(TextureSpec*)&TradingCardLargeOverlayTexture,
+		(TextureSpec*)&TradingCardLargeOverlayTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_EVEN,
@@ -898,20 +898,20 @@ BgmapSpriteROMSpec TradingCardLargeOverlaySprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const TradingCardLargeSprites[] =
+BgmapSpriteROMSpec* const TradingCardLargeSpriteSpecs[] =
 {
-	&TradingCardLargeBaseSprite,
-	&TradingCardLargeOverlaySprite,
+	&TradingCardLargeBaseSpriteSpec,
+	&TradingCardLargeOverlaySpriteSpec,
 	NULL
 };
 
 PositionedEntityROMSpec TradingCardLargeChildrenEntities[] =
 {
-	{&TradingCardLargeBlackEntity, {0, 0, 0, 0}, 0, NULL, NULL, NULL, true},
+	{&TradingCardLargeBlackEntitySpec, {0, 0, 0, 0}, 0, NULL, NULL, NULL, true},
 	{NULL, {0, 0, 0, 0}, 0, NULL, NULL, NULL, true},
 };
 
-AnimatedEntityROMSpec TradingCardLargeEntity =
+AnimatedEntityROMSpec TradingCardLargeEntitySpec =
 {
 	{
 		// class allocator
@@ -927,7 +927,7 @@ AnimatedEntityROMSpec TradingCardLargeEntity =
 		NULL,
 
 		// sprites
-		(SpriteSpec**)TradingCardLargeSprites,
+		(SpriteSpec**)TradingCardLargeSpriteSpecs,
 
 		// use z displacement in projection
 		false,
@@ -950,7 +950,7 @@ AnimatedEntityROMSpec TradingCardLargeEntity =
 	},
 
 	// pointer to the animation spec for the item
-	(const AnimationFunction**)&TradingCardLargeAnimation,
+	(const AnimationFunction**)&TradingCardLargeAnimationSpecs,
 
 	// initial animation
 	"0",

@@ -28,7 +28,7 @@ extern uint16 MainMenuTradingCardsMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-AnimationFunctionROMSpec OptionsMainMenuTradingCardsDefaultEnglishAnimation =
+AnimationFunctionROMSpec OptionsMainMenuTradingCardsDefaultEnglishAnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -51,7 +51,7 @@ AnimationFunctionROMSpec OptionsMainMenuTradingCardsDefaultEnglishAnimation =
 	"0",
 };
 
-AnimationFunctionROMSpec OptionsMainMenuTradingCardsBlinkEnglishAnimation =
+AnimationFunctionROMSpec OptionsMainMenuTradingCardsBlinkEnglishAnimationSpec =
 {
 	// number of frames of this animation function
 	30,
@@ -77,14 +77,14 @@ AnimationFunctionROMSpec OptionsMainMenuTradingCardsBlinkEnglishAnimation =
 };
 
 // an animation spec
-AnimationFunctionROMSpec* const OptionsMainMenuTradingCardsAnimation[] =
+AnimationFunctionROMSpec* const OptionsMainMenuTradingCardsAnimationSpecs[] =
 {
-    (AnimationFunction*)&OptionsMainMenuTradingCardsDefaultEnglishAnimation,
-    (AnimationFunction*)&OptionsMainMenuTradingCardsBlinkEnglishAnimation,
+    (AnimationFunction*)&OptionsMainMenuTradingCardsDefaultEnglishAnimationSpec,
+    (AnimationFunction*)&OptionsMainMenuTradingCardsBlinkEnglishAnimationSpec,
     NULL,
 };
 
-CharSetROMSpec OptionsMainMenuTradingCardsCharset =
+CharSetROMSpec OptionsMainMenuTradingCardsCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	32,
@@ -102,10 +102,10 @@ CharSetROMSpec OptionsMainMenuTradingCardsCharset =
 	NULL,
 };
 
-TextureROMSpec OptionsMainMenuTradingCardsTexture =
+TextureROMSpec OptionsMainMenuTradingCardsTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&OptionsMainMenuTradingCardsCharset,
+	(CharSetSpec*)&OptionsMainMenuTradingCardsCharSetSpec,
 
 	// bgmap spec
 	MainMenuTradingCardsMap,
@@ -135,14 +135,14 @@ TextureROMSpec OptionsMainMenuTradingCardsTexture =
 	false,
 };
 
-BgmapSpriteROMSpec OptionsMainMenuTradingCardsSprite =
+BgmapSpriteROMSpec OptionsMainMenuTradingCardsSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapAnimatedSprite),
 
 		// texture spec
-		(TextureSpec*)&OptionsMainMenuTradingCardsTexture,
+		(TextureSpec*)&OptionsMainMenuTradingCardsTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -162,13 +162,13 @@ BgmapSpriteROMSpec OptionsMainMenuTradingCardsSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const OptionsMainMenuTradingCardsSprites[] =
+BgmapSpriteROMSpec* const OptionsMainMenuTradingCardsSpriteSpecs[] =
 {
-	&OptionsMainMenuTradingCardsSprite,
+	&OptionsMainMenuTradingCardsSpriteSpec,
 	NULL
 };
 
-LocalizedEntityROMSpec OptionsMainMenuTradingCardsEntity =
+LocalizedEntityROMSpec OptionsMainMenuTradingCardsEntitySpec =
 {
 	{
 		// class allocator
@@ -184,7 +184,7 @@ LocalizedEntityROMSpec OptionsMainMenuTradingCardsEntity =
 		NULL,
 
 		// sprites
-		(SpriteSpec**)OptionsMainMenuTradingCardsSprites,
+		(SpriteSpec**)OptionsMainMenuTradingCardsSpriteSpecs,
 
 		// use z displacement in projection
 		false,
@@ -207,7 +207,7 @@ LocalizedEntityROMSpec OptionsMainMenuTradingCardsEntity =
 	},
 
 	// pointer to the animation spec for the item
-	(const AnimationFunction**)&OptionsMainMenuTradingCardsAnimation,
+	(const AnimationFunction**)&OptionsMainMenuTradingCardsAnimationSpecs,
 
 	// initial animation
 	"0"

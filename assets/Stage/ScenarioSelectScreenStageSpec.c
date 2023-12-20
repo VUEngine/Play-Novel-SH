@@ -19,9 +19,9 @@
 //											DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
-extern EntitySpec LowPowerIndicatorEntity;
-extern EntitySpec ScenarioSelectBackgroundEntity;
-extern EntitySpec ScenarioBookEntity;
+extern EntitySpec LowPowerIndicatorEntitySpec;
+extern EntitySpec ScenarioSelectBackgroundEntitySpec;
+extern EntitySpec ScenarioBookEntitySpec;
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -35,9 +35,9 @@ PositionedEntityROMSpec ScenarioSelectScreenStageSpecEntities[] =
 
 PositionedEntityROMSpec ScenarioSelectScreenStageSpecUiEntities[] =
 {
-	{&ScenarioSelectBackgroundEntity,	{   0,    0,   0, 0},   0, NULL, NULL, NULL, false},
-	{&ScenarioBookEntity,				{   0,    0,  -1, 0},   0, NULL, NULL, NULL, false},
-	{&LowPowerIndicatorEntity, 			{ 176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
+	{&ScenarioSelectBackgroundEntitySpec,	{   0,    0,   0, 0},   0, NULL, NULL, NULL, false},
+	{&ScenarioBookEntitySpec,				{   0,    0,  -1, 0},   0, NULL, NULL, NULL, false},
+	{&LowPowerIndicatorEntitySpec, 			{ 176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
 	
 
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},

@@ -19,7 +19,7 @@
 //												DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
-extern CharSetSpec Scene002Charset;
+extern CharSetSpec Scene002CharSetSpec;
 extern uint16 Scene002HighlightMap[];
 
 
@@ -27,10 +27,10 @@ extern uint16 Scene002HighlightMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-TextureROMSpec Scene002HighlightTexture =
+TextureROMSpec Scene002HighlightTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&Scene002Charset,
+	(CharSetSpec*)&Scene002CharSetSpec,
 
 	// bgmap spec
 	Scene002HighlightMap,
@@ -60,14 +60,14 @@ TextureROMSpec Scene002HighlightTexture =
 	false,
 };
 
-BgmapSpriteROMSpec Scene002HighlightSprite =
+BgmapSpriteROMSpec Scene002HighlightSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&Scene002HighlightTexture,
+		(TextureSpec*)&Scene002HighlightTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -87,13 +87,13 @@ BgmapSpriteROMSpec Scene002HighlightSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const Scene002HighlightSprites[] =
+BgmapSpriteROMSpec* const Scene002HighlightSpriteSpecs[] =
 {
-	&Scene002HighlightSprite,
+	&Scene002HighlightSpriteSpec,
 	NULL
 };
 
-EntityROMSpec Scene002HighlightEntity =
+EntityROMSpec Scene002HighlightEntitySpec =
 {
 	// class allocator
 	__TYPE(Entity),
@@ -108,7 +108,7 @@ EntityROMSpec Scene002HighlightEntity =
 	NULL,
 
 	// sprites
-	(SpriteSpec**)Scene002HighlightSprites,
+	(SpriteSpec**)Scene002HighlightSpriteSpecs,
 
 	// use z displacement in projection
 	false,

@@ -28,7 +28,7 @@ extern uint16 Scene008OverlayMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-CharSetROMSpec Scene008Charset =
+CharSetROMSpec Scene008CharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	873,
@@ -46,10 +46,10 @@ CharSetROMSpec Scene008Charset =
 	NULL,
 };
 
-TextureROMSpec Scene008BaseTexture =
+TextureROMSpec Scene008BaseTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&Scene008Charset,
+	(CharSetSpec*)&Scene008CharSetSpec,
 
 	// bgmap spec
 	Scene008BaseMap,
@@ -79,14 +79,14 @@ TextureROMSpec Scene008BaseTexture =
 	false,
 };
 
-BgmapSpriteROMSpec Scene008BaseSprite =
+BgmapSpriteROMSpec Scene008BaseSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&Scene008BaseTexture,
+		(TextureSpec*)&Scene008BaseTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -106,10 +106,10 @@ BgmapSpriteROMSpec Scene008BaseSprite =
 	__WORLD_ON,
 };
 
-TextureROMSpec Scene008OverlayTexture =
+TextureROMSpec Scene008OverlayTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&Scene008Charset,
+	(CharSetSpec*)&Scene008CharSetSpec,
 
 	// bgmap spec
 	Scene008OverlayMap,
@@ -139,14 +139,14 @@ TextureROMSpec Scene008OverlayTexture =
 	false,
 };
 
-BgmapSpriteROMSpec Scene008OverlaySprite =
+BgmapSpriteROMSpec Scene008OverlaySpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&Scene008OverlayTexture,
+		(TextureSpec*)&Scene008OverlayTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_EVEN,
@@ -166,14 +166,14 @@ BgmapSpriteROMSpec Scene008OverlaySprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const Scene008Sprites[] =
+BgmapSpriteROMSpec* const Scene008SpriteSpecs[] =
 {
-	&Scene008BaseSprite,
-	&Scene008OverlaySprite,
+	&Scene008BaseSpriteSpec,
+	&Scene008OverlaySpriteSpec,
 	NULL
 };
 
-EntityROMSpec Scene008Entity =
+EntityROMSpec Scene008EntitySpec =
 {
 	// class allocator
 	__TYPE(Entity),
@@ -188,7 +188,7 @@ EntityROMSpec Scene008Entity =
 	NULL,
 
 	// sprites
-	(SpriteSpec**)Scene008Sprites,
+	(SpriteSpec**)Scene008SpriteSpecs,
 
 	// use z displacement in projection
 	false,

@@ -28,7 +28,7 @@ extern uint16 SaveSlotBorderMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-AnimationFunctionROMSpec SaveSlotBorderDefaultAnimation =
+AnimationFunctionROMSpec SaveSlotBorderDefaultAnimationSpec =
 {
 	// number of frames of this animation function
 	26,
@@ -52,13 +52,13 @@ AnimationFunctionROMSpec SaveSlotBorderDefaultAnimation =
 	"Default",
 };
 
-AnimationFunctionROMSpec* const SaveSlotBorderAnimation[] =
+AnimationFunctionROMSpec* const SaveSlotBorderAnimationSpecs[] =
 {
-    (AnimationFunction*)&SaveSlotBorderDefaultAnimation,
+    (AnimationFunction*)&SaveSlotBorderDefaultAnimationSpec,
     NULL,
 };
 
-CharSetROMSpec SaveSlotBorderCharset =
+CharSetROMSpec SaveSlotBorderCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	240,
@@ -76,10 +76,10 @@ CharSetROMSpec SaveSlotBorderCharset =
 	NULL,
 };
 
-TextureROMSpec SaveSlotBorderTexture =
+TextureROMSpec SaveSlotBorderTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&SaveSlotBorderCharset,
+	(CharSetSpec*)&SaveSlotBorderCharSetSpec,
 
 	// bgmap spec
 	SaveSlotBorderMap,
@@ -109,14 +109,14 @@ TextureROMSpec SaveSlotBorderTexture =
 	false,
 };
 
-BgmapSpriteROMSpec SaveSlotBorderSprite =
+BgmapSpriteROMSpec SaveSlotBorderSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapAnimatedSprite),
 
 		// texture spec
-		(TextureSpec*)&SaveSlotBorderTexture,
+		(TextureSpec*)&SaveSlotBorderTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -136,13 +136,13 @@ BgmapSpriteROMSpec SaveSlotBorderSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const SaveSlotBorderSprites[] =
+BgmapSpriteROMSpec* const SaveSlotBorderSpriteSpecs[] =
 {
-	&SaveSlotBorderSprite,
+	&SaveSlotBorderSpriteSpec,
 	NULL
 };
 
-AnimatedEntityROMSpec SaveSlotBorderEntity =
+AnimatedEntityROMSpec SaveSlotBorderEntitySpec =
 {
 	{
 		// class allocator
@@ -158,7 +158,7 @@ AnimatedEntityROMSpec SaveSlotBorderEntity =
 		NULL,
 
 		// sprites
-		(SpriteSpec**)SaveSlotBorderSprites,
+		(SpriteSpec**)SaveSlotBorderSpriteSpecs,
 
 		// use z displacement in projection
 		false,
@@ -181,7 +181,7 @@ AnimatedEntityROMSpec SaveSlotBorderEntity =
 	},
 
 	// pointer to the animation spec for the item
-	(const AnimationFunction**)&SaveSlotBorderAnimation,
+	(const AnimationFunction**)&SaveSlotBorderAnimationSpecs,
 
 	// initial animation
 	"Default",

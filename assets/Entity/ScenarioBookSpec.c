@@ -26,14 +26,14 @@ extern uint16 ScenarioBookBaseMap[];
 extern uint32 ScenarioBookOverlayTiles[];
 extern uint32 ScenarioBookOverlayTilesFrameOffsets[];
 extern uint16 ScenarioBookOverlayMap[];
-extern EntitySpec ScenarioBookBlackEntity;
+extern EntitySpec ScenarioBookBlackEntitySpec;
 
 
 //---------------------------------------------------------------------------------------------------------
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-AnimationFunctionROMSpec ScenarioBookHarryAnimation =
+AnimationFunctionROMSpec ScenarioBookHarryAnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -54,7 +54,7 @@ AnimationFunctionROMSpec ScenarioBookHarryAnimation =
 	"0",
 };
 
-AnimationFunctionROMSpec ScenarioBookCybilAnimation =
+AnimationFunctionROMSpec ScenarioBookCybilAnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -75,14 +75,14 @@ AnimationFunctionROMSpec ScenarioBookCybilAnimation =
 	"1",
 };
 
-AnimationFunctionROMSpec* const ScenarioBookAnimation[] =
+AnimationFunctionROMSpec* const ScenarioBookAnimationSpecs[] =
 {
-	(AnimationFunction*)&ScenarioBookHarryAnimation,
-	(AnimationFunction*)&ScenarioBookCybilAnimation,
+	(AnimationFunction*)&ScenarioBookHarryAnimationSpec,
+	(AnimationFunction*)&ScenarioBookCybilAnimationSpec,
     NULL,
 };
 
-CharSetROMSpec ScenarioBookBaseCharset =
+CharSetROMSpec ScenarioBookBaseCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	204,
@@ -100,10 +100,10 @@ CharSetROMSpec ScenarioBookBaseCharset =
 	ScenarioBookBaseTilesFrameOffsets,
 };
 
-TextureROMSpec ScenarioBookBaseTexture =
+TextureROMSpec ScenarioBookBaseTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&ScenarioBookBaseCharset,
+	(CharSetSpec*)&ScenarioBookBaseCharSetSpec,
 
 	// bgmap spec
 	ScenarioBookBaseMap,
@@ -133,14 +133,14 @@ TextureROMSpec ScenarioBookBaseTexture =
 	false,
 };
 
-BgmapSpriteROMSpec ScenarioBookBaseSprite =
+BgmapSpriteROMSpec ScenarioBookBaseSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapAnimatedSprite),
 
 		// texture spec
-		(TextureSpec*)&ScenarioBookBaseTexture,
+		(TextureSpec*)&ScenarioBookBaseTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -160,7 +160,7 @@ BgmapSpriteROMSpec ScenarioBookBaseSprite =
 	__WORLD_ON,
 };
 
-CharSetROMSpec ScenarioBookOverlayCharset =
+CharSetROMSpec ScenarioBookOverlayCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	208,
@@ -178,10 +178,10 @@ CharSetROMSpec ScenarioBookOverlayCharset =
 	ScenarioBookOverlayTilesFrameOffsets,
 };
 
-TextureROMSpec ScenarioBookOverlayTexture =
+TextureROMSpec ScenarioBookOverlayTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&ScenarioBookOverlayCharset,
+	(CharSetSpec*)&ScenarioBookOverlayCharSetSpec,
 
 	// bgmap spec
 	ScenarioBookOverlayMap,
@@ -211,14 +211,14 @@ TextureROMSpec ScenarioBookOverlayTexture =
 	false,
 };
 
-BgmapSpriteROMSpec ScenarioBookOverlaySprite =
+BgmapSpriteROMSpec ScenarioBookOverlaySpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapAnimatedSprite),
 
 		// texture spec
-		(TextureSpec*)&ScenarioBookOverlayTexture,
+		(TextureSpec*)&ScenarioBookOverlayTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_EVEN,
@@ -238,20 +238,20 @@ BgmapSpriteROMSpec ScenarioBookOverlaySprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const ScenarioBookSprites[] =
+BgmapSpriteROMSpec* const ScenarioBookSpriteSpecs[] =
 {
-	&ScenarioBookBaseSprite,
-	&ScenarioBookOverlaySprite,
+	&ScenarioBookBaseSpriteSpec,
+	&ScenarioBookOverlaySpriteSpec,
 	NULL
 };
 
 PositionedEntityROMSpec ScenarioBookChildrenEntities[] =
 {
-	{&ScenarioBookBlackEntity, {0, 0, 0, 0}, 0, NULL, NULL, NULL, true},
+	{&ScenarioBookBlackEntitySpec, {0, 0, 0, 0}, 0, NULL, NULL, NULL, true},
 	{NULL, {0, 0, 0, 0}, 0, NULL, NULL, NULL, true},
 };
 
-AnimatedEntityROMSpec ScenarioBookEntity =
+AnimatedEntityROMSpec ScenarioBookEntitySpec =
 {
 	{
 		// class allocator
@@ -267,7 +267,7 @@ AnimatedEntityROMSpec ScenarioBookEntity =
 		NULL,
 
 		// sprites
-		(SpriteSpec**)ScenarioBookSprites,
+		(SpriteSpec**)ScenarioBookSpriteSpecs,
 
 		// use z displacement in projection
 		false,
@@ -290,7 +290,7 @@ AnimatedEntityROMSpec ScenarioBookEntity =
 	},
 
 	// pointer to the animation spec for the item
-	(const AnimationFunction**)&ScenarioBookAnimation,
+	(const AnimationFunction**)&ScenarioBookAnimationSpecs,
 
 	// initial animation
 	"0",

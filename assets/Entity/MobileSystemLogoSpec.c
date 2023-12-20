@@ -28,7 +28,7 @@ extern uint16 MobileSystemLogoBMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-CharSetROMSpec MobileSystemLogoCharset =
+CharSetROMSpec MobileSystemLogoCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	264,
@@ -46,10 +46,10 @@ CharSetROMSpec MobileSystemLogoCharset =
 	NULL,
 };
 
-TextureROMSpec MobileSystemLogoATexture =
+TextureROMSpec MobileSystemLogoATextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&MobileSystemLogoCharset,
+	(CharSetSpec*)&MobileSystemLogoCharSetSpec,
 
 	// bgmap spec
 	MobileSystemLogoAMap,
@@ -79,14 +79,14 @@ TextureROMSpec MobileSystemLogoATexture =
 	false,
 };
 
-BgmapSpriteROMSpec MobileSystemLogoASprite =
+BgmapSpriteROMSpec MobileSystemLogoASpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&MobileSystemLogoATexture,
+		(TextureSpec*)&MobileSystemLogoATextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -106,10 +106,10 @@ BgmapSpriteROMSpec MobileSystemLogoASprite =
 	__WORLD_ON,
 };
 
-TextureROMSpec MobileSystemLogoBTexture =
+TextureROMSpec MobileSystemLogoBTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&MobileSystemLogoCharset,
+	(CharSetSpec*)&MobileSystemLogoCharSetSpec,
 
 	// bgmap spec
 	MobileSystemLogoBMap,
@@ -139,14 +139,14 @@ TextureROMSpec MobileSystemLogoBTexture =
 	false,
 };
 
-BgmapSpriteROMSpec MobileSystemLogoBSprite =
+BgmapSpriteROMSpec MobileSystemLogoBSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&MobileSystemLogoBTexture,
+		(TextureSpec*)&MobileSystemLogoBTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -166,14 +166,14 @@ BgmapSpriteROMSpec MobileSystemLogoBSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const MobileSystemLogoSprites[] =
+BgmapSpriteROMSpec* const MobileSystemLogoSpriteSpecs[] =
 {
-	&MobileSystemLogoASprite,
-	&MobileSystemLogoBSprite,
+	&MobileSystemLogoASpriteSpec,
+	&MobileSystemLogoBSpriteSpec,
 	NULL
 };
 
-EntityROMSpec MobileSystemLogoEntity =
+EntityROMSpec MobileSystemLogoEntitySpec =
 {
 	// class allocator
 	__TYPE(Entity),
@@ -188,7 +188,7 @@ EntityROMSpec MobileSystemLogoEntity =
 	NULL,
 
 	// sprites
-	(SpriteSpec**)MobileSystemLogoSprites,
+	(SpriteSpec**)MobileSystemLogoSpriteSpecs,
 
 	// use z displacement in projection
 	false,

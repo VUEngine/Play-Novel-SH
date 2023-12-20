@@ -19,12 +19,12 @@
 //											DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
-extern EntitySpec LowPowerIndicatorEntity;
-extern EntitySpec TradingCardsBackgroundEntity;
-extern EntitySpec TradingCardsBackgroundNumbersEntity;
-extern EntitySpec TradingCardSmallEntity;
-extern EntitySpec TradingCardLargeEntity;
-extern EntitySpec TradingCardsCursorEntity;
+extern EntitySpec LowPowerIndicatorEntitySpec;
+extern EntitySpec TradingCardsBackgroundEntitySpec;
+extern EntitySpec TradingCardsBackgroundNumbersEntitySpec;
+extern EntitySpec TradingCardSmallEntitySpec;
+extern EntitySpec TradingCardLargeEntitySpec;
+extern EntitySpec TradingCardsCursorEntitySpec;
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -38,22 +38,22 @@ PositionedEntityROMSpec TradingCardsScreenStageSpecEntities[] =
 
 PositionedEntityROMSpec TradingCardsScreenStageSpecUiEntities[] =
 {
-	{&TradingCardsBackgroundEntity,				{  0,   0,  0,  0},   	0, "BG", NULL, NULL, false},
-	{&TradingCardsBackgroundNumbersEntity,		{  0,  24, -1,  0},   	0, "NUM", NULL, NULL, false},
+	{&TradingCardsBackgroundEntitySpec,				{  0,   0,  0,  0},   	0, "BG", NULL, NULL, false},
+	{&TradingCardsBackgroundNumbersEntitySpec,		{  0,  24, -1,  0},   	0, "NUM", NULL, NULL, false},
 
-	{&TradingCardsCursorEntity,					{-64,  88, -4,  0},   	0, "CURSOR", NULL, NULL, false},
+	{&TradingCardsCursorEntitySpec,					{-64,  88, -4,  0},   	0, "CURSOR", NULL, NULL, false},
 	
-	{&TradingCardSmallEntity,					{-72, -40, -1,  0},   	0, "0", NULL, NULL, false},
-	{&TradingCardSmallEntity,					{-24, -40, -1,  0},   	0, "1", NULL, NULL, false},
-	{&TradingCardSmallEntity,					{ 24, -40, -1,  0},   	0, "2", NULL, NULL, false},
-	{&TradingCardSmallEntity,					{ 72, -40, -1,  0},   	0, "3", NULL, NULL, false},
-	{&TradingCardSmallEntity,					{-72,  24, -1,  0},   	0, "4", NULL, NULL, false},
-	{&TradingCardSmallEntity,					{-24,  24, -1,  0},   	0, "5", NULL, NULL, false},
-	{&TradingCardSmallEntity,					{ 24,  24, -1,  0},   	0, "6", NULL, NULL, false},
-	{&TradingCardSmallEntity,					{ 72,  24, -1,  0},   	0, "7", NULL, NULL, false},
-	{&TradingCardLargeEntity,					{  0,   0, -4,  0},   	0, "CARD", NULL, NULL, false},
+	{&TradingCardSmallEntitySpec,					{-72, -40, -1,  0},   	0, "0", NULL, NULL, false},
+	{&TradingCardSmallEntitySpec,					{-24, -40, -1,  0},   	0, "1", NULL, NULL, false},
+	{&TradingCardSmallEntitySpec,					{ 24, -40, -1,  0},   	0, "2", NULL, NULL, false},
+	{&TradingCardSmallEntitySpec,					{ 72, -40, -1,  0},   	0, "3", NULL, NULL, false},
+	{&TradingCardSmallEntitySpec,					{-72,  24, -1,  0},   	0, "4", NULL, NULL, false},
+	{&TradingCardSmallEntitySpec,					{-24,  24, -1,  0},   	0, "5", NULL, NULL, false},
+	{&TradingCardSmallEntitySpec,					{ 24,  24, -1,  0},   	0, "6", NULL, NULL, false},
+	{&TradingCardSmallEntitySpec,					{ 72,  24, -1,  0},   	0, "7", NULL, NULL, false},
+	{&TradingCardLargeEntitySpec,					{  0,   0, -4,  0},   	0, "CARD", NULL, NULL, false},
 
-	{&LowPowerIndicatorEntity, 					{ 368,  12,  -1, 0},	0, NULL, NULL, NULL, false},
+	{&LowPowerIndicatorEntitySpec, 					{ 368,  12,  -1, 0},	0, NULL, NULL, NULL, false},
 
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
 };

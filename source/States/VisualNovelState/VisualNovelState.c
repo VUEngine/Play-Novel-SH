@@ -35,7 +35,7 @@
 
 extern StageROMSpec VisualNovelStageSpec;
 extern Script PlayNovelScenarios;
-extern EntitySpec DummyContainerEntity;
+extern EntitySpec DummyContainerEntitySpec;
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -389,7 +389,7 @@ void VisualNovelState::setUpScene()
 	if(!isDeleted(sceneEntity)) {
 		Stage::removeChild(stage, sceneEntity, true);
 	}
-	PositionedEntity scenePositionedEntity = {&DummyContainerEntity, {0, -32, 0, 0}, 0, "SCENE", (struct PositionedEntity*)scene->positionedEntities, NULL, false};
+	PositionedEntity scenePositionedEntity = {&DummyContainerEntitySpec, {0, -32, 0, 0}, 0, "SCENE", (struct PositionedEntity*)scene->positionedEntities, NULL, false};
 	Stage::addChildEntity(stage, &scenePositionedEntity, true);
 
 	if(NULL != scene->sound)

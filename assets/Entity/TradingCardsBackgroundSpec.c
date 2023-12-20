@@ -29,7 +29,7 @@ extern uint16 TradingCardsBackgroundSpineMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-CharSetROMSpec TradingCardsBackgroundCharset =
+CharSetROMSpec TradingCardsBackgroundCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	97,
@@ -47,10 +47,10 @@ CharSetROMSpec TradingCardsBackgroundCharset =
 	NULL,
 };
 
-TextureROMSpec TradingCardsBackgroundTexture =
+TextureROMSpec TradingCardsBackgroundTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&TradingCardsBackgroundCharset,
+	(CharSetSpec*)&TradingCardsBackgroundCharSetSpec,
 
 	// bgmap spec
 	TradingCardsBackgroundMap,
@@ -80,14 +80,14 @@ TextureROMSpec TradingCardsBackgroundTexture =
 	false,
 };
 
-BgmapSpriteROMSpec TradingCardsBackgroundSprite =
+BgmapSpriteROMSpec TradingCardsBackgroundSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&TradingCardsBackgroundTexture,
+		(TextureSpec*)&TradingCardsBackgroundTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -107,7 +107,7 @@ BgmapSpriteROMSpec TradingCardsBackgroundSprite =
 	__WORLD_ON,
 };
 
-CharSetROMSpec TradingCardsBackgroundSpineCharset =
+CharSetROMSpec TradingCardsBackgroundSpineCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	3,
@@ -125,10 +125,10 @@ CharSetROMSpec TradingCardsBackgroundSpineCharset =
 	NULL,
 };
 
-TextureROMSpec TradingCardsBackgroundSpineTexture =
+TextureROMSpec TradingCardsBackgroundSpineTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&TradingCardsBackgroundSpineCharset,
+	(CharSetSpec*)&TradingCardsBackgroundSpineCharSetSpec,
 
 	// bgmap spec
 	TradingCardsBackgroundSpineMap,
@@ -158,14 +158,14 @@ TextureROMSpec TradingCardsBackgroundSpineTexture =
 	false,
 };
 
-BgmapSpriteROMSpec TradingCardsBackgroundSpineSprite =
+BgmapSpriteROMSpec TradingCardsBackgroundSpineSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&TradingCardsBackgroundSpineTexture,
+		(TextureSpec*)&TradingCardsBackgroundSpineTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -185,14 +185,14 @@ BgmapSpriteROMSpec TradingCardsBackgroundSpineSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const TradingCardsBackgroundSprites[] =
+BgmapSpriteROMSpec* const TradingCardsBackgroundSpriteSpecs[] =
 {
-	&TradingCardsBackgroundSprite,
-	&TradingCardsBackgroundSpineSprite,
+	&TradingCardsBackgroundSpriteSpec,
+	&TradingCardsBackgroundSpineSpriteSpec,
 	NULL
 };
 
-EntityROMSpec TradingCardsBackgroundEntity =
+EntityROMSpec TradingCardsBackgroundEntitySpec =
 {
 	// class allocator
 	__TYPE(Entity),
@@ -207,7 +207,7 @@ EntityROMSpec TradingCardsBackgroundEntity =
 	NULL,
 
 	// sprites
-	(SpriteSpec**)TradingCardsBackgroundSprites,
+	(SpriteSpec**)TradingCardsBackgroundSpriteSpecs,
 
 	// use z displacement in projection
 	false,

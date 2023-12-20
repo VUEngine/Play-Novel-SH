@@ -19,8 +19,8 @@
 //											DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
-extern EntitySpec LowPowerIndicatorEntity;
-extern EntitySpec IntroEntity;
+extern EntitySpec LowPowerIndicatorEntitySpec;
+extern EntitySpec IntroEntitySpec;
 extern Sound IntroSound;
 
 
@@ -35,8 +35,8 @@ PositionedEntityROMSpec IntroScreenStageSpecEntities[] =
 
 PositionedEntityROMSpec IntroScreenStageSpecUiEntities[] =
 {
-	{&IntroEntity,					{	0, 	  0,   0, 0},  	0, "VIDEO", NULL, NULL, false},
-	{&LowPowerIndicatorEntity, 		{ 176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
+	{&IntroEntitySpec,					{	0, 	  0,   0, 0},  	0, "VIDEO", NULL, NULL, false},
+	{&LowPowerIndicatorEntitySpec, 		{ 176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
 
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
 };

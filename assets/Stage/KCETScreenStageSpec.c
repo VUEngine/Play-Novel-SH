@@ -19,8 +19,8 @@
 //											DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
-extern EntitySpec LowPowerIndicatorBlackEntity;
-extern EntitySpec KCETLogoEntity;
+extern EntitySpec LowPowerIndicatorBlackEntitySpec;
+extern EntitySpec KCETLogoEntitySpec;
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -34,8 +34,8 @@ PositionedEntityROMSpec KCETScreenStageSpecEntities[] =
 
 PositionedEntityROMSpec KCETScreenStageSpecUiEntities[] =
 {
-	{&KCETLogoEntity,				{   0,    0,   0, 0},  	0, NULL, NULL, NULL, false},
-	{&LowPowerIndicatorBlackEntity, { 176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
+	{&KCETLogoEntitySpec,				{   0,    0,   0, 0},  	0, NULL, NULL, NULL, false},
+	{&LowPowerIndicatorBlackEntitySpec, { 176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
 
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
 };

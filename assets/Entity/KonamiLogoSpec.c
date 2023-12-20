@@ -28,7 +28,7 @@ extern uint16 KonamiLogoBMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-CharSetROMSpec KonamiLogoCharset =
+CharSetROMSpec KonamiLogoCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	92,
@@ -46,10 +46,10 @@ CharSetROMSpec KonamiLogoCharset =
 	NULL,
 };
 
-TextureROMSpec KonamiLogoATexture =
+TextureROMSpec KonamiLogoATextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&KonamiLogoCharset,
+	(CharSetSpec*)&KonamiLogoCharSetSpec,
 
 	// bgmap spec
 	KonamiLogoAMap,
@@ -79,14 +79,14 @@ TextureROMSpec KonamiLogoATexture =
 	false,
 };
 
-BgmapSpriteROMSpec KonamiLogoASprite =
+BgmapSpriteROMSpec KonamiLogoASpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&KonamiLogoATexture,
+		(TextureSpec*)&KonamiLogoATextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -106,10 +106,10 @@ BgmapSpriteROMSpec KonamiLogoASprite =
 	__WORLD_ON,
 };
 
-TextureROMSpec KonamiLogoBTexture =
+TextureROMSpec KonamiLogoBTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&KonamiLogoCharset,
+	(CharSetSpec*)&KonamiLogoCharSetSpec,
 
 	// bgmap spec
 	KonamiLogoBMap,
@@ -139,14 +139,14 @@ TextureROMSpec KonamiLogoBTexture =
 	false,
 };
 
-BgmapSpriteROMSpec KonamiLogoBSprite =
+BgmapSpriteROMSpec KonamiLogoBSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&KonamiLogoBTexture,
+		(TextureSpec*)&KonamiLogoBTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -166,14 +166,14 @@ BgmapSpriteROMSpec KonamiLogoBSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const KonamiLogoSprites[] =
+BgmapSpriteROMSpec* const KonamiLogoSpriteSpecs[] =
 {
-	&KonamiLogoASprite,
-	&KonamiLogoBSprite,
+	&KonamiLogoASpriteSpec,
+	&KonamiLogoBSpriteSpec,
 	NULL
 };
 
-EntityROMSpec KonamiLogoEntity =
+EntityROMSpec KonamiLogoEntitySpec =
 {
 	// class allocator
 	__TYPE(Entity),
@@ -188,7 +188,7 @@ EntityROMSpec KonamiLogoEntity =
 	NULL,
 
 	// sprites
-	(SpriteSpec**)KonamiLogoSprites,
+	(SpriteSpec**)KonamiLogoSpriteSpecs,
 
 	// use z displacement in projection
 	false,

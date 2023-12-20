@@ -27,7 +27,7 @@ extern uint16 TradingCardsCursorMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-CharSetROMSpec TradingCardsCursorCharset =
+CharSetROMSpec TradingCardsCursorCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	4,
@@ -45,10 +45,10 @@ CharSetROMSpec TradingCardsCursorCharset =
 	NULL,
 };
 
-TextureROMSpec TradingCardsCursorTexture =
+TextureROMSpec TradingCardsCursorTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&TradingCardsCursorCharset,
+	(CharSetSpec*)&TradingCardsCursorCharSetSpec,
 
 	// bgmap spec
 	TradingCardsCursorMap,
@@ -78,14 +78,14 @@ TextureROMSpec TradingCardsCursorTexture =
 	false,
 };
 
-BgmapSpriteROMSpec TradingCardsCursorSprite =
+BgmapSpriteROMSpec TradingCardsCursorSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&TradingCardsCursorTexture,
+		(TextureSpec*)&TradingCardsCursorTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -105,13 +105,13 @@ BgmapSpriteROMSpec TradingCardsCursorSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const TradingCardsCursorSprites[] =
+BgmapSpriteROMSpec* const TradingCardsCursorSpriteSpecs[] =
 {
-	&TradingCardsCursorSprite,
+	&TradingCardsCursorSpriteSpec,
 	NULL
 };
 
-EntityROMSpec TradingCardsCursorEntity =
+EntityROMSpec TradingCardsCursorEntitySpec =
 {
 	// class allocator
 	__TYPE(Entity),
@@ -126,7 +126,7 @@ EntityROMSpec TradingCardsCursorEntity =
 	NULL,
 
 	// sprites
-	(SpriteSpec**)TradingCardsCursorSprites,
+	(SpriteSpec**)TradingCardsCursorSpriteSpecs,
 
 	// use z displacement in projection
 	false,

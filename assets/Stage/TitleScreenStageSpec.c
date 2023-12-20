@@ -19,12 +19,12 @@
 //											DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
-extern EntitySpec LogoEntity;
-extern EntitySpec CopyrightEntity;
-extern EntitySpec OptionsMainMenuStartEntity;
-extern EntitySpec OptionsMainMenuTradingCardsEntity;
-extern EntitySpec OptionsMainMenuMobileEntity;
-extern EntitySpec LowPowerIndicatorEntity;
+extern EntitySpec LogoEntitySpec;
+extern EntitySpec CopyrightEntitySpec;
+extern EntitySpec OptionsMainMenuStartEntitySpec;
+extern EntitySpec OptionsMainMenuTradingCardsEntitySpec;
+extern EntitySpec OptionsMainMenuMobileEntitySpec;
+extern EntitySpec LowPowerIndicatorEntitySpec;
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -38,12 +38,12 @@ PositionedEntityROMSpec TitleScreenStageSpecEntities[] =
 
 PositionedEntityROMSpec TitleScreenStageSpecUiEntities[] =
 {
-	{&LogoEntity,							{  0,  -48,   0, 0},   	0, NULL, NULL, NULL, false},
-	{&OptionsMainMenuStartEntity,			{  0,   16,   0, 0},   	0, "Start", NULL, NULL, false},
-	{&OptionsMainMenuTradingCardsEntity,	{  0,   32,   0, 0},   	0, "Cards", NULL, NULL, false},
-	{&OptionsMainMenuMobileEntity,			{  0,   48,   0, 0},   	0, "Mobile", NULL, NULL, false},
-	{&CopyrightEntity,						{  0,   88,   0, 0},   	0, NULL, NULL, NULL, false},
-	{&LowPowerIndicatorEntity, 				{176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
+	{&LogoEntitySpec,							{  0,  -48,   0, 0},   	0, NULL, NULL, NULL, false},
+	{&OptionsMainMenuStartEntitySpec,			{  0,   16,   0, 0},   	0, "Start", NULL, NULL, false},
+	{&OptionsMainMenuTradingCardsEntitySpec,	{  0,   32,   0, 0},   	0, "Cards", NULL, NULL, false},
+	{&OptionsMainMenuMobileEntitySpec,			{  0,   48,   0, 0},   	0, "Mobile", NULL, NULL, false},
+	{&CopyrightEntitySpec,						{  0,   88,   0, 0},   	0, NULL, NULL, NULL, false},
+	{&LowPowerIndicatorEntitySpec, 				{176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
 
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
 };

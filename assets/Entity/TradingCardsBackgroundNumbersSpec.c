@@ -29,7 +29,7 @@ extern uint16 TradingCardsBackgroundNumbersMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-AnimationFunctionROMSpec TradingCardsBackgroundNumbers0Animation =
+AnimationFunctionROMSpec TradingCardsBackgroundNumbers0AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -50,7 +50,7 @@ AnimationFunctionROMSpec TradingCardsBackgroundNumbers0Animation =
 	"0",
 };
 
-AnimationFunctionROMSpec TradingCardsBackgroundNumbers1Animation =
+AnimationFunctionROMSpec TradingCardsBackgroundNumbers1AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -71,7 +71,7 @@ AnimationFunctionROMSpec TradingCardsBackgroundNumbers1Animation =
 	"1",
 };
 
-AnimationFunctionROMSpec TradingCardsBackgroundNumbers2Animation =
+AnimationFunctionROMSpec TradingCardsBackgroundNumbers2AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -92,7 +92,7 @@ AnimationFunctionROMSpec TradingCardsBackgroundNumbers2Animation =
 	"2",
 };
 
-AnimationFunctionROMSpec TradingCardsBackgroundNumbers3Animation =
+AnimationFunctionROMSpec TradingCardsBackgroundNumbers3AnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -113,16 +113,16 @@ AnimationFunctionROMSpec TradingCardsBackgroundNumbers3Animation =
 	"3",
 };
 
-AnimationFunctionROMSpec* const TradingCardsBackgroundNumbersAnimation[] =
+AnimationFunctionROMSpec* const TradingCardsBackgroundNumbersAnimationSpecs[] =
 {
-    (AnimationFunction*)&TradingCardsBackgroundNumbers0Animation,
-    (AnimationFunction*)&TradingCardsBackgroundNumbers1Animation,
-    (AnimationFunction*)&TradingCardsBackgroundNumbers2Animation,
-    (AnimationFunction*)&TradingCardsBackgroundNumbers3Animation,
+    (AnimationFunction*)&TradingCardsBackgroundNumbers0AnimationSpec,
+    (AnimationFunction*)&TradingCardsBackgroundNumbers1AnimationSpec,
+    (AnimationFunction*)&TradingCardsBackgroundNumbers2AnimationSpec,
+    (AnimationFunction*)&TradingCardsBackgroundNumbers3AnimationSpec,
     NULL,
 };
 
-CharSetROMSpec TradingCardsBackgroundNumbersCharset =
+CharSetROMSpec TradingCardsBackgroundNumbersCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	51,
@@ -140,10 +140,10 @@ CharSetROMSpec TradingCardsBackgroundNumbersCharset =
 	TradingCardsBackgroundNumbersTilesFrameOffsets,
 };
 
-TextureROMSpec TradingCardsBackgroundNumbersTexture =
+TextureROMSpec TradingCardsBackgroundNumbersTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&TradingCardsBackgroundNumbersCharset,
+	(CharSetSpec*)&TradingCardsBackgroundNumbersCharSetSpec,
 
 	// bgmap spec
 	TradingCardsBackgroundNumbersMap,
@@ -173,14 +173,14 @@ TextureROMSpec TradingCardsBackgroundNumbersTexture =
 	false,
 };
 
-BgmapSpriteROMSpec TradingCardsBackgroundNumbersSprite =
+BgmapSpriteROMSpec TradingCardsBackgroundNumbersSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapAnimatedSprite),
 
 		// texture spec
-		(TextureSpec*)&TradingCardsBackgroundNumbersTexture,
+		(TextureSpec*)&TradingCardsBackgroundNumbersTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -200,13 +200,13 @@ BgmapSpriteROMSpec TradingCardsBackgroundNumbersSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const TradingCardsBackgroundNumbersSprites[] =
+BgmapSpriteROMSpec* const TradingCardsBackgroundNumbersSpriteSpecs[] =
 {
-	&TradingCardsBackgroundNumbersSprite,
+	&TradingCardsBackgroundNumbersSpriteSpec,
 	NULL
 };
 
-AnimatedEntityROMSpec TradingCardsBackgroundNumbersEntity =
+AnimatedEntityROMSpec TradingCardsBackgroundNumbersEntitySpec =
 {
 	{
 		// class allocator
@@ -222,7 +222,7 @@ AnimatedEntityROMSpec TradingCardsBackgroundNumbersEntity =
 		NULL,
 
 		// sprites
-		(SpriteSpec**)TradingCardsBackgroundNumbersSprites,
+		(SpriteSpec**)TradingCardsBackgroundNumbersSpriteSpecs,
 
 		// use z displacement in projection
 		false,
@@ -245,7 +245,7 @@ AnimatedEntityROMSpec TradingCardsBackgroundNumbersEntity =
 	},
 
 	// pointer to the animation spec for the item
-	(const AnimationFunction**)&TradingCardsBackgroundNumbersAnimation,
+	(const AnimationFunction**)&TradingCardsBackgroundNumbersAnimationSpecs,
 
 	// initial animation
 	"0",

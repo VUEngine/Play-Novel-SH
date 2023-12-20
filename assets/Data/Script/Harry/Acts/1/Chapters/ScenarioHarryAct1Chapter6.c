@@ -18,8 +18,8 @@
 //												DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
-extern EntitySpec Scene014Entity;
-extern EntitySpec Scene015Entity;
+extern EntitySpec Scene014EntitySpec;
+extern EntitySpec Scene015EntitySpec;
 
 extern Sound MonsterSoundSound;
 
@@ -32,7 +32,7 @@ extern Sound MonsterSoundSound;
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter6Sub1Scene1Entities[] =
 {
-	{&Scene014Entity, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
+	{&Scene014EntitySpec, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
 };
 
@@ -57,7 +57,7 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter6Sub1Scene1 = {
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter6Sub1Scene2Entities[] =
 {
-	{&Scene015Entity, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
+	{&Scene015EntitySpec, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
 };
 

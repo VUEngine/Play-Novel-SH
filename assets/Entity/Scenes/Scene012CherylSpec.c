@@ -19,7 +19,7 @@
 //												DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
-extern CharSetROMSpec Scene012Charset;
+extern CharSetROMSpec Scene012CharSetSpec;
 extern uint16 Scene012CherylBaseMap[];
 extern uint16 Scene012CherylOverlayMap[];
 
@@ -28,10 +28,10 @@ extern uint16 Scene012CherylOverlayMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-TextureROMSpec Scene012CherylBaseTexture =
+TextureROMSpec Scene012CherylBaseTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&Scene012Charset,
+	(CharSetSpec*)&Scene012CharSetSpec,
 
 	// bgmap spec
 	Scene012CherylBaseMap,
@@ -61,14 +61,14 @@ TextureROMSpec Scene012CherylBaseTexture =
 	false,
 };
 
-BgmapSpriteROMSpec Scene012CherylBaseSprite =
+BgmapSpriteROMSpec Scene012CherylBaseSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&Scene012CherylBaseTexture,
+		(TextureSpec*)&Scene012CherylBaseTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -88,10 +88,10 @@ BgmapSpriteROMSpec Scene012CherylBaseSprite =
 	__WORLD_ON,
 };
 
-TextureROMSpec Scene012CherylOverlayTexture =
+TextureROMSpec Scene012CherylOverlayTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&Scene012Charset,
+	(CharSetSpec*)&Scene012CharSetSpec,
 
 	// bgmap spec
 	Scene012CherylOverlayMap,
@@ -121,14 +121,14 @@ TextureROMSpec Scene012CherylOverlayTexture =
 	false,
 };
 
-BgmapSpriteROMSpec Scene012CherylOverlaySprite =
+BgmapSpriteROMSpec Scene012CherylOverlaySpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&Scene012CherylOverlayTexture,
+		(TextureSpec*)&Scene012CherylOverlayTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_EVEN,
@@ -148,14 +148,14 @@ BgmapSpriteROMSpec Scene012CherylOverlaySprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const Scene012CherylSprites[] =
+BgmapSpriteROMSpec* const Scene012CherylSpriteSpecs[] =
 {
-	&Scene012CherylBaseSprite,
-	&Scene012CherylOverlaySprite,
+	&Scene012CherylBaseSpriteSpec,
+	&Scene012CherylOverlaySpriteSpec,
 	NULL
 };
 
-EntityROMSpec Scene012CherylEntity =
+EntityROMSpec Scene012CherylEntitySpec =
 {
 	// class allocator
 	__TYPE(Entity),
@@ -170,7 +170,7 @@ EntityROMSpec Scene012CherylEntity =
 	NULL,
 
 	// sprites
-	(SpriteSpec**)Scene012CherylSprites,
+	(SpriteSpec**)Scene012CherylSpriteSpecs,
 
 	// use z displacement in projection
 	false,

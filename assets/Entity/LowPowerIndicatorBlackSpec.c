@@ -27,7 +27,7 @@ extern uint16 LowPowerIndicatorBlackMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-AnimationFunctionROMSpec LowPowerIndicatorBlackHideAnimation =
+AnimationFunctionROMSpec LowPowerIndicatorBlackHideAnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -50,7 +50,7 @@ AnimationFunctionROMSpec LowPowerIndicatorBlackHideAnimation =
 	"Hide",
 };
 
-AnimationFunctionROMSpec LowPowerIndicatorBlackFlashAnimation =
+AnimationFunctionROMSpec LowPowerIndicatorBlackFlashAnimationSpec =
 {
 	// number of frames of this animation function
 	12,
@@ -73,14 +73,14 @@ AnimationFunctionROMSpec LowPowerIndicatorBlackFlashAnimation =
 	"Flash",
 };
 
-AnimationFunctionROMSpec* const LowPowerIndicatorBlackAnimations[] =
+AnimationFunctionROMSpec* const LowPowerIndicatorBlackAnimationSpecs[] =
 {
-	&LowPowerIndicatorBlackHideAnimation,
-	&LowPowerIndicatorBlackFlashAnimation,
+	&LowPowerIndicatorBlackHideAnimationSpec,
+	&LowPowerIndicatorBlackFlashAnimationSpec,
 	NULL,
 };
 
-CharSetROMSpec LowPowerIndicatorBlackCharset =
+CharSetROMSpec LowPowerIndicatorBlackCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	2,
@@ -98,10 +98,10 @@ CharSetROMSpec LowPowerIndicatorBlackCharset =
 	NULL
 };
 
-TextureROMSpec LowPowerIndicatorBlackTexture =
+TextureROMSpec LowPowerIndicatorBlackTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&LowPowerIndicatorBlackCharset,
+	(CharSetSpec*)&LowPowerIndicatorBlackCharSetSpec,
 
 	// bgmap spec
 	LowPowerIndicatorBlackMap,
@@ -131,14 +131,14 @@ TextureROMSpec LowPowerIndicatorBlackTexture =
 	false,
 };
 
-BgmapSpriteROMSpec LowPowerIndicatorBlackSprite =
+BgmapSpriteROMSpec LowPowerIndicatorBlackSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(GuiBgmapAnimatedSprite),
 
 		// texture spec
-		(TextureSpec*)&LowPowerIndicatorBlackTexture,
+		(TextureSpec*)&LowPowerIndicatorBlackTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -158,13 +158,13 @@ BgmapSpriteROMSpec LowPowerIndicatorBlackSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const LowPowerIndicatorBlackSprites[] =
+BgmapSpriteROMSpec* const LowPowerIndicatorBlackSpriteSpecs[] =
 {
-	&LowPowerIndicatorBlackSprite,
+	&LowPowerIndicatorBlackSpriteSpec,
 	NULL
 };
 
-LowPowerEntityROMSpec LowPowerIndicatorBlackEntity =
+LowPowerEntityROMSpec LowPowerIndicatorBlackEntitySpec =
 {
 	{
 		// class allocator
@@ -180,7 +180,7 @@ LowPowerEntityROMSpec LowPowerIndicatorBlackEntity =
 		NULL,
 
 		// sprites
-		(SpriteSpec**)LowPowerIndicatorBlackSprites,
+		(SpriteSpec**)LowPowerIndicatorBlackSpriteSpecs,
 
 		// use z displacement in projection
 		false,
@@ -203,7 +203,7 @@ LowPowerEntityROMSpec LowPowerIndicatorBlackEntity =
 	},
 
 	// pointer to the animation spec for the item
-	(const AnimationFunction**)LowPowerIndicatorBlackAnimations,
+	(const AnimationFunction**)LowPowerIndicatorBlackAnimationSpecs,
 
 	// initial animation
 	"Hide",

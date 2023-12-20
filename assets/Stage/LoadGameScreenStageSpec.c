@@ -19,11 +19,11 @@
 //											DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
-extern EntitySpec LowPowerIndicatorEntity;
-extern EntitySpec SaveSlotWideBackgroundEntity;
-extern EntitySpec SaveSlotWideBackgroundExtraEntity;
-extern EntitySpec SaveSlotLabelEntity;
-extern EntitySpec SaveSlotBorderEntity;
+extern EntitySpec LowPowerIndicatorEntitySpec;
+extern EntitySpec SaveSlotWideBackgroundEntitySpec;
+extern EntitySpec SaveSlotWideBackgroundExtraEntitySpec;
+extern EntitySpec SaveSlotLabelEntitySpec;
+extern EntitySpec SaveSlotBorderEntitySpec;
 extern Sound EnterLoadGameScreenSound;
 
 
@@ -38,18 +38,18 @@ PositionedEntityROMSpec LoadGameScreenStageSpecEntities[] =
 
 PositionedEntityROMSpec LoadGameScreenStageSpecUiEntities[] =
 {
-	{&SaveSlotBorderEntity,					{   0, -48,  -1,  0},   0, "CURSOR", NULL, NULL, false},
+	{&SaveSlotBorderEntitySpec,					{   0, -48,  -1,  0},   0, "CURSOR", NULL, NULL, false},
 
-	{&SaveSlotWideBackgroundEntity,			{   0, -48,   0,  0},  	0, "SLOT0", NULL, NULL, false},
-	{&SaveSlotWideBackgroundEntity,			{   0,   0,   0,  0},  	0, "SLOT1", NULL, NULL, false},
-	{&SaveSlotWideBackgroundEntity,			{   0,  48,   0,  0},  	0, "SLOT2", NULL, NULL, false},
-	{&SaveSlotWideBackgroundExtraEntity,	{   0,  -8,   0,  0},  	0, "SUBCHPTR", NULL, NULL, false},
+	{&SaveSlotWideBackgroundEntitySpec,			{   0, -48,   0,  0},  	0, "SLOT0", NULL, NULL, false},
+	{&SaveSlotWideBackgroundEntitySpec,			{   0,   0,   0,  0},  	0, "SLOT1", NULL, NULL, false},
+	{&SaveSlotWideBackgroundEntitySpec,			{   0,  48,   0,  0},  	0, "SLOT2", NULL, NULL, false},
+	{&SaveSlotWideBackgroundExtraEntitySpec,	{   0,  -8,   0,  0},  	0, "SUBCHPTR", NULL, NULL, false},
 
-	{&SaveSlotLabelEntity,					{-108, -56,  -1,  0},  	0, "LABEL0", NULL, NULL, false},
-	{&SaveSlotLabelEntity,					{-108,  -8,  -1,  0},  	0, "LABEL1", NULL, NULL, false},
-	{&SaveSlotLabelEntity,					{-108,  40,  -1,  0},  	0, "LABEL2", NULL, NULL, false},
+	{&SaveSlotLabelEntitySpec,					{-108, -56,  -1,  0},  	0, "LABEL0", NULL, NULL, false},
+	{&SaveSlotLabelEntitySpec,					{-108,  -8,  -1,  0},  	0, "LABEL1", NULL, NULL, false},
+	{&SaveSlotLabelEntitySpec,					{-108,  40,  -1,  0},  	0, "LABEL2", NULL, NULL, false},
 
-	{&LowPowerIndicatorEntity, 				{ 176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
+	{&LowPowerIndicatorEntitySpec, 				{ 176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
 
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
 };

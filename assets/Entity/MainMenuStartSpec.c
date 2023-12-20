@@ -28,7 +28,7 @@ extern uint16 MainMenuStartMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-AnimationFunctionROMSpec OptionsMainMenuStartDefaultEnglishAnimation =
+AnimationFunctionROMSpec OptionsMainMenuStartDefaultEnglishAnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -51,7 +51,7 @@ AnimationFunctionROMSpec OptionsMainMenuStartDefaultEnglishAnimation =
 	"0",
 };
 
-AnimationFunctionROMSpec OptionsMainMenuStartBlinkEnglishAnimation =
+AnimationFunctionROMSpec OptionsMainMenuStartBlinkEnglishAnimationSpec =
 {
 	// number of frames of this animation function
 	30,
@@ -77,14 +77,14 @@ AnimationFunctionROMSpec OptionsMainMenuStartBlinkEnglishAnimation =
 };
 
 // an animation spec
-AnimationFunctionROMSpec* const OptionsMainMenuStartAnimation[] =
+AnimationFunctionROMSpec* const OptionsMainMenuStartAnimationSpecs[] =
 {
-    (AnimationFunction*)&OptionsMainMenuStartDefaultEnglishAnimation,
-	(AnimationFunction*)&OptionsMainMenuStartBlinkEnglishAnimation,
+    (AnimationFunction*)&OptionsMainMenuStartDefaultEnglishAnimationSpec,
+	(AnimationFunction*)&OptionsMainMenuStartBlinkEnglishAnimationSpec,
     NULL,
 };
 
-CharSetROMSpec OptionsMainMenuStartCharset =
+CharSetROMSpec OptionsMainMenuStartCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	14,
@@ -102,10 +102,10 @@ CharSetROMSpec OptionsMainMenuStartCharset =
 	NULL,
 };
 
-TextureROMSpec OptionsMainMenuStartTexture =
+TextureROMSpec OptionsMainMenuStartTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&OptionsMainMenuStartCharset,
+	(CharSetSpec*)&OptionsMainMenuStartCharSetSpec,
 
 	// bgmap spec
 	MainMenuStartMap,
@@ -135,14 +135,14 @@ TextureROMSpec OptionsMainMenuStartTexture =
 	false,
 };
 
-BgmapSpriteROMSpec OptionsMainMenuStartSprite =
+BgmapSpriteROMSpec OptionsMainMenuStartSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapAnimatedSprite),
 
 		// texture spec
-		(TextureSpec*)&OptionsMainMenuStartTexture,
+		(TextureSpec*)&OptionsMainMenuStartTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -162,13 +162,13 @@ BgmapSpriteROMSpec OptionsMainMenuStartSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const OptionsMainMenuStartSprites[] =
+BgmapSpriteROMSpec* const OptionsMainMenuStartSpriteSpecs[] =
 {
-	&OptionsMainMenuStartSprite,
+	&OptionsMainMenuStartSpriteSpec,
 	NULL
 };
 
-LocalizedEntityROMSpec OptionsMainMenuStartEntity =
+LocalizedEntityROMSpec OptionsMainMenuStartEntitySpec =
 {
 	{
 		// class allocator
@@ -184,7 +184,7 @@ LocalizedEntityROMSpec OptionsMainMenuStartEntity =
 		NULL,
 
 		// sprites
-		(SpriteSpec**)OptionsMainMenuStartSprites,
+		(SpriteSpec**)OptionsMainMenuStartSpriteSpecs,
 
 		// use z displacement in projection
 		false,
@@ -207,7 +207,7 @@ LocalizedEntityROMSpec OptionsMainMenuStartEntity =
 	},
 
 	// pointer to the animation spec for the item
-	(const AnimationFunction**)&OptionsMainMenuStartAnimation,
+	(const AnimationFunction**)&OptionsMainMenuStartAnimationSpecs,
 
 	// initial animation
 	"0"

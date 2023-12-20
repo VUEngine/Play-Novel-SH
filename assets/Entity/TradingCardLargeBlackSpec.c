@@ -27,7 +27,7 @@ extern uint16 TradingCardLargeBlackMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-CharSetROMSpec TradingCardLargeBlackCharset =
+CharSetROMSpec TradingCardLargeBlackCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	4,
@@ -45,10 +45,10 @@ CharSetROMSpec TradingCardLargeBlackCharset =
 	NULL,
 };
 
-TextureROMSpec TradingCardLargeBlackTexture =
+TextureROMSpec TradingCardLargeBlackTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&TradingCardLargeBlackCharset,
+	(CharSetSpec*)&TradingCardLargeBlackCharSetSpec,
 
 	// bgmap spec
 	TradingCardLargeBlackMap,
@@ -78,14 +78,14 @@ TextureROMSpec TradingCardLargeBlackTexture =
 	false,
 };
 
-BgmapSpriteROMSpec TradingCardLargeBlackSprite =
+BgmapSpriteROMSpec TradingCardLargeBlackSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&TradingCardLargeBlackTexture,
+		(TextureSpec*)&TradingCardLargeBlackTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -105,13 +105,13 @@ BgmapSpriteROMSpec TradingCardLargeBlackSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const TradingCardLargeBlackSprites[] =
+BgmapSpriteROMSpec* const TradingCardLargeBlackSpriteSpecs[] =
 {
-	&TradingCardLargeBlackSprite,
+	&TradingCardLargeBlackSpriteSpec,
 	NULL
 };
 
-EntityROMSpec TradingCardLargeBlackEntity =
+EntityROMSpec TradingCardLargeBlackEntitySpec =
 {
 	// class allocator
 	__TYPE(Entity),
@@ -126,7 +126,7 @@ EntityROMSpec TradingCardLargeBlackEntity =
 	NULL,
 
 	// sprites
-	(SpriteSpec**)TradingCardLargeBlackSprites,
+	(SpriteSpec**)TradingCardLargeBlackSpriteSpecs,
 
 	// use z displacement in projection
 	false,

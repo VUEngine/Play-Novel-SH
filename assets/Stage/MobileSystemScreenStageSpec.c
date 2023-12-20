@@ -19,8 +19,8 @@
 //											DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
-extern EntitySpec LowPowerIndicatorBlackEntity;
-extern EntitySpec MobileSystemLogoEntity;
+extern EntitySpec LowPowerIndicatorBlackEntitySpec;
+extern EntitySpec MobileSystemLogoEntitySpec;
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -34,8 +34,8 @@ PositionedEntityROMSpec MobileSystemScreenStageSpecEntities[] =
 
 PositionedEntityROMSpec MobileSystemScreenStageSpecUiEntities[] =
 {
-	{&MobileSystemLogoEntity,		{   0,    0,   0, 0},  	0, NULL, NULL, NULL, false},
-	{&LowPowerIndicatorBlackEntity, { 176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
+	{&MobileSystemLogoEntitySpec,		{   0,    0,   0, 0},  	0, NULL, NULL, NULL, false},
+	{&LowPowerIndicatorBlackEntitySpec, { 176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
 
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
 };

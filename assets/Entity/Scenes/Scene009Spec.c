@@ -37,7 +37,7 @@ extern uint16 Scene009FrameMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-CharSetROMSpec Scene009Charset =
+CharSetROMSpec Scene009CharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	507,
@@ -55,10 +55,10 @@ CharSetROMSpec Scene009Charset =
 	NULL,
 };
 
-TextureROMSpec Scene009BackgroundBaseTexture =
+TextureROMSpec Scene009BackgroundBaseTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&Scene009Charset,
+	(CharSetSpec*)&Scene009CharSetSpec,
 
 	// bgmap spec
 	Scene009BackgroundBaseMap,
@@ -88,14 +88,14 @@ TextureROMSpec Scene009BackgroundBaseTexture =
 	false,
 };
 
-BgmapSpriteROMSpec Scene009BackgroundBaseSprite =
+BgmapSpriteROMSpec Scene009BackgroundBaseSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&Scene009BackgroundBaseTexture,
+		(TextureSpec*)&Scene009BackgroundBaseTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -115,10 +115,10 @@ BgmapSpriteROMSpec Scene009BackgroundBaseSprite =
 	__WORLD_ON,
 };
 
-TextureROMSpec Scene009BackgroundOverlayTexture =
+TextureROMSpec Scene009BackgroundOverlayTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&Scene009Charset,
+	(CharSetSpec*)&Scene009CharSetSpec,
 
 	// bgmap spec
 	Scene009BackgroundOverlayMap,
@@ -148,14 +148,14 @@ TextureROMSpec Scene009BackgroundOverlayTexture =
 	false,
 };
 
-BgmapSpriteROMSpec Scene009BackgroundOverlaySprite =
+BgmapSpriteROMSpec Scene009BackgroundOverlaySpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&Scene009BackgroundOverlayTexture,
+		(TextureSpec*)&Scene009BackgroundOverlayTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_EVEN,
@@ -175,10 +175,10 @@ BgmapSpriteROMSpec Scene009BackgroundOverlaySprite =
 	__WORLD_ON,
 };
 
-TextureROMSpec Scene009Snow1Texture =
+TextureROMSpec Scene009Snow1TextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&Scene009Charset,
+	(CharSetSpec*)&Scene009CharSetSpec,
 
 	// bgmap spec
 	Scene009Snow1Map,
@@ -210,11 +210,11 @@ TextureROMSpec Scene009Snow1Texture =
 
 TextureROMSpec* const Scene009Snow1Textures[] =
 {
-	(TextureSpec*)&Scene009Snow1Texture,
+	(TextureSpec*)&Scene009Snow1TextureSpec,
 	NULL
 };
 
-AutoScrollingMBgmapSpriteROMSpec Scene009Snow1Sprite =
+AutoScrollingMBgmapSpriteROMSpec Scene009Snow1SpriteSpec =
 {
 	{
 		{
@@ -267,10 +267,10 @@ AutoScrollingMBgmapSpriteROMSpec Scene009Snow1Sprite =
 	20,
 };
 
-TextureROMSpec Scene009Snow2Texture =
+TextureROMSpec Scene009Snow2TextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&Scene009Charset,
+	(CharSetSpec*)&Scene009CharSetSpec,
 
 	// bgmap spec
 	Scene009Snow2Map,
@@ -302,11 +302,11 @@ TextureROMSpec Scene009Snow2Texture =
 
 TextureROMSpec* const Scene009Snow2Textures[] =
 {
-	(TextureSpec*)&Scene009Snow2Texture,
+	(TextureSpec*)&Scene009Snow2TextureSpec,
 	NULL
 };
 
-AutoScrollingMBgmapSpriteROMSpec Scene009Snow2Sprite =
+AutoScrollingMBgmapSpriteROMSpec Scene009Snow2SpriteSpec =
 {
 	{
 		{
@@ -359,10 +359,10 @@ AutoScrollingMBgmapSpriteROMSpec Scene009Snow2Sprite =
 	10,
 };
 
-TextureROMSpec Scene009CarInteriorTexture =
+TextureROMSpec Scene009CarInteriorTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&Scene009Charset,
+	(CharSetSpec*)&Scene009CharSetSpec,
 
 	// bgmap spec
 	Scene009CarInteriorMap,
@@ -392,14 +392,14 @@ TextureROMSpec Scene009CarInteriorTexture =
 	false,
 };
 
-BgmapSpriteROMSpec Scene009CarInteriorSprite =
+BgmapSpriteROMSpec Scene009CarInteriorSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&Scene009CarInteriorTexture,
+		(TextureSpec*)&Scene009CarInteriorTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -419,10 +419,10 @@ BgmapSpriteROMSpec Scene009CarInteriorSprite =
 	__WORLD_ON,
 };
 
-TextureROMSpec Scene009SeatTexture =
+TextureROMSpec Scene009SeatTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&Scene009Charset,
+	(CharSetSpec*)&Scene009CharSetSpec,
 
 	// bgmap spec
 	Scene009SeatMap,
@@ -452,14 +452,14 @@ TextureROMSpec Scene009SeatTexture =
 	false,
 };
 
-BgmapSpriteROMSpec Scene009SeatSprite =
+BgmapSpriteROMSpec Scene009SeatSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&Scene009SeatTexture,
+		(TextureSpec*)&Scene009SeatTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -479,10 +479,10 @@ BgmapSpriteROMSpec Scene009SeatSprite =
 	__WORLD_ON,
 };
 
-TextureROMSpec Scene009HarryBlackTexture =
+TextureROMSpec Scene009HarryBlackTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&Scene009Charset,
+	(CharSetSpec*)&Scene009CharSetSpec,
 
 	// bgmap spec
 	Scene009HarryBlackMap,
@@ -512,14 +512,14 @@ TextureROMSpec Scene009HarryBlackTexture =
 	false,
 };
 
-BgmapSpriteROMSpec Scene009HarryBlackSprite =
+BgmapSpriteROMSpec Scene009HarryBlackSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&Scene009HarryBlackTexture,
+		(TextureSpec*)&Scene009HarryBlackTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -539,10 +539,10 @@ BgmapSpriteROMSpec Scene009HarryBlackSprite =
 	__WORLD_ON,
 };
 
-TextureROMSpec Scene009HarryBaseTexture =
+TextureROMSpec Scene009HarryBaseTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&Scene009Charset,
+	(CharSetSpec*)&Scene009CharSetSpec,
 
 	// bgmap spec
 	Scene009HarryBaseMap,
@@ -572,14 +572,14 @@ TextureROMSpec Scene009HarryBaseTexture =
 	false,
 };
 
-BgmapSpriteROMSpec Scene009HarryBaseSprite =
+BgmapSpriteROMSpec Scene009HarryBaseSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&Scene009HarryBaseTexture,
+		(TextureSpec*)&Scene009HarryBaseTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -599,10 +599,10 @@ BgmapSpriteROMSpec Scene009HarryBaseSprite =
 	__WORLD_ON,
 };
 
-TextureROMSpec Scene009HarryOverlayTexture =
+TextureROMSpec Scene009HarryOverlayTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&Scene009Charset,
+	(CharSetSpec*)&Scene009CharSetSpec,
 
 	// bgmap spec
 	Scene009HarryOverlayMap,
@@ -632,14 +632,14 @@ TextureROMSpec Scene009HarryOverlayTexture =
 	false,
 };
 
-BgmapSpriteROMSpec Scene009HarryOverlaySprite =
+BgmapSpriteROMSpec Scene009HarryOverlaySpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&Scene009HarryOverlayTexture,
+		(TextureSpec*)&Scene009HarryOverlayTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_EVEN,
@@ -659,10 +659,10 @@ BgmapSpriteROMSpec Scene009HarryOverlaySprite =
 	__WORLD_ON,
 };
 
-TextureROMSpec Scene009SteeringWheelTexture =
+TextureROMSpec Scene009SteeringWheelTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&Scene009Charset,
+	(CharSetSpec*)&Scene009CharSetSpec,
 
 	// bgmap spec
 	Scene009SteeringWheelMap,
@@ -692,14 +692,14 @@ TextureROMSpec Scene009SteeringWheelTexture =
 	false,
 };
 
-BgmapSpriteROMSpec Scene009SteeringWheelSprite =
+BgmapSpriteROMSpec Scene009SteeringWheelSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&Scene009SteeringWheelTexture,
+		(TextureSpec*)&Scene009SteeringWheelTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -719,10 +719,10 @@ BgmapSpriteROMSpec Scene009SteeringWheelSprite =
 	__WORLD_ON,
 };
 
-TextureROMSpec Scene009FrameTexture =
+TextureROMSpec Scene009FrameTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&Scene009Charset,
+	(CharSetSpec*)&Scene009CharSetSpec,
 
 	// bgmap spec
 	Scene009FrameMap,
@@ -752,14 +752,14 @@ TextureROMSpec Scene009FrameTexture =
 	false,
 };
 
-BgmapSpriteROMSpec Scene009FrameSprite =
+BgmapSpriteROMSpec Scene009FrameSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&Scene009FrameTexture,
+		(TextureSpec*)&Scene009FrameTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -779,23 +779,23 @@ BgmapSpriteROMSpec Scene009FrameSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const Scene009Sprites[] =
+BgmapSpriteROMSpec* const Scene009SpriteSpecs[] =
 {
-	(BgmapSpriteROMSpec*)&Scene009BackgroundBaseSprite,
-	(BgmapSpriteROMSpec*)&Scene009BackgroundOverlaySprite,
-	(BgmapSpriteROMSpec*)&Scene009Snow1Sprite,
-	(BgmapSpriteROMSpec*)&Scene009Snow2Sprite,
-	(BgmapSpriteROMSpec*)&Scene009CarInteriorSprite,
-	(BgmapSpriteROMSpec*)&Scene009SeatSprite,
-	(BgmapSpriteROMSpec*)&Scene009HarryBlackSprite,
-	(BgmapSpriteROMSpec*)&Scene009HarryBaseSprite,
-	(BgmapSpriteROMSpec*)&Scene009HarryOverlaySprite,
-	(BgmapSpriteROMSpec*)&Scene009SteeringWheelSprite,
-	(BgmapSpriteROMSpec*)&Scene009FrameSprite,
+	(BgmapSpriteROMSpec*)&Scene009BackgroundBaseSpriteSpec,
+	(BgmapSpriteROMSpec*)&Scene009BackgroundOverlaySpriteSpec,
+	(BgmapSpriteROMSpec*)&Scene009Snow1SpriteSpec,
+	(BgmapSpriteROMSpec*)&Scene009Snow2SpriteSpec,
+	(BgmapSpriteROMSpec*)&Scene009CarInteriorSpriteSpec,
+	(BgmapSpriteROMSpec*)&Scene009SeatSpriteSpec,
+	(BgmapSpriteROMSpec*)&Scene009HarryBlackSpriteSpec,
+	(BgmapSpriteROMSpec*)&Scene009HarryBaseSpriteSpec,
+	(BgmapSpriteROMSpec*)&Scene009HarryOverlaySpriteSpec,
+	(BgmapSpriteROMSpec*)&Scene009SteeringWheelSpriteSpec,
+	(BgmapSpriteROMSpec*)&Scene009FrameSpriteSpec,
 	NULL
 };
 
-EntityROMSpec Scene009Entity =
+EntityROMSpec Scene009EntitySpec =
 {
 	// class allocator
 	__TYPE(Entity),
@@ -810,7 +810,7 @@ EntityROMSpec Scene009Entity =
 	NULL,
 
 	// sprites
-	(SpriteSpec**)Scene009Sprites,
+	(SpriteSpec**)Scene009SpriteSpecs,
 
 	// use z displacement in projection
 	false,

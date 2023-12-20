@@ -28,7 +28,7 @@ extern uint16 SaveSlotLabelMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-AnimationFunctionROMSpec SaveSlotLabelNoneAnimation =
+AnimationFunctionROMSpec SaveSlotLabelNoneAnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -51,7 +51,7 @@ AnimationFunctionROMSpec SaveSlotLabelNoneAnimation =
 	"Default",
 };
 
-AnimationFunctionROMSpec SaveSlotLabelEmptyEnglishAnimation =
+AnimationFunctionROMSpec SaveSlotLabelEmptyEnglishAnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -74,7 +74,7 @@ AnimationFunctionROMSpec SaveSlotLabelEmptyEnglishAnimation =
 	"EmptyEN",
 };
 
-AnimationFunctionROMSpec SaveSlotLabelEmptyGermanAnimation =
+AnimationFunctionROMSpec SaveSlotLabelEmptyGermanAnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -97,7 +97,7 @@ AnimationFunctionROMSpec SaveSlotLabelEmptyGermanAnimation =
 	"EmptyDE",
 };
 
-AnimationFunctionROMSpec SaveSlotLabelHarryAnimation =
+AnimationFunctionROMSpec SaveSlotLabelHarryAnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -120,7 +120,7 @@ AnimationFunctionROMSpec SaveSlotLabelHarryAnimation =
 	"0",
 };
 
-AnimationFunctionROMSpec SaveSlotLabelCybilAnimation =
+AnimationFunctionROMSpec SaveSlotLabelCybilAnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -143,17 +143,17 @@ AnimationFunctionROMSpec SaveSlotLabelCybilAnimation =
 	"1",
 };
 
-AnimationFunctionROMSpec* const SaveSlotLabelAnimation[] =
+AnimationFunctionROMSpec* const SaveSlotLabelAnimationSpecs[] =
 {
-    (AnimationFunction*)&SaveSlotLabelNoneAnimation,
-    (AnimationFunction*)&SaveSlotLabelEmptyEnglishAnimation,
-    (AnimationFunction*)&SaveSlotLabelEmptyGermanAnimation,
-    (AnimationFunction*)&SaveSlotLabelHarryAnimation,
-    (AnimationFunction*)&SaveSlotLabelCybilAnimation,
+    (AnimationFunction*)&SaveSlotLabelNoneAnimationSpec,
+    (AnimationFunction*)&SaveSlotLabelEmptyEnglishAnimationSpec,
+    (AnimationFunction*)&SaveSlotLabelEmptyGermanAnimationSpec,
+    (AnimationFunction*)&SaveSlotLabelHarryAnimationSpec,
+    (AnimationFunction*)&SaveSlotLabelCybilAnimationSpec,
     NULL,
 };
 
-CharSetROMSpec SaveSlotLabelCharset =
+CharSetROMSpec SaveSlotLabelCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	16,
@@ -171,10 +171,10 @@ CharSetROMSpec SaveSlotLabelCharset =
 	NULL,
 };
 
-TextureROMSpec SaveSlotLabelTexture =
+TextureROMSpec SaveSlotLabelTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&SaveSlotLabelCharset,
+	(CharSetSpec*)&SaveSlotLabelCharSetSpec,
 
 	// bgmap spec
 	SaveSlotLabelMap,
@@ -204,14 +204,14 @@ TextureROMSpec SaveSlotLabelTexture =
 	false,
 };
 
-BgmapSpriteROMSpec SaveSlotLabelSprite =
+BgmapSpriteROMSpec SaveSlotLabelSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapAnimatedSprite),
 
 		// texture spec
-		(TextureSpec*)&SaveSlotLabelTexture,
+		(TextureSpec*)&SaveSlotLabelTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -231,13 +231,13 @@ BgmapSpriteROMSpec SaveSlotLabelSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const SaveSlotLabelSprites[] =
+BgmapSpriteROMSpec* const SaveSlotLabelSpriteSpecs[] =
 {
-	&SaveSlotLabelSprite,
+	&SaveSlotLabelSpriteSpec,
 	NULL
 };
 
-AnimatedEntityROMSpec SaveSlotLabelEntity =
+AnimatedEntityROMSpec SaveSlotLabelEntitySpec =
 {
 	{
 		// class allocator
@@ -253,7 +253,7 @@ AnimatedEntityROMSpec SaveSlotLabelEntity =
 		NULL,
 
 		// sprites
-		(SpriteSpec**)SaveSlotLabelSprites,
+		(SpriteSpec**)SaveSlotLabelSpriteSpecs,
 
 		// use z displacement in projection
 		false,
@@ -276,7 +276,7 @@ AnimatedEntityROMSpec SaveSlotLabelEntity =
 	},
 
 	// pointer to the animation spec for the item
-	(const AnimationFunction**)&SaveSlotLabelAnimation,
+	(const AnimationFunction**)&SaveSlotLabelAnimationSpecs,
 
 	// initial animation
 	"Default",

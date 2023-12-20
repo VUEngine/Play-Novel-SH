@@ -29,7 +29,7 @@ extern uint16 IntroMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-AnimationFunctionROMSpec IntroBlankAnimation =
+AnimationFunctionROMSpec IntroBlankAnimationSpec =
 {
 	// number of frames of this animation function
 	1,
@@ -52,7 +52,7 @@ AnimationFunctionROMSpec IntroBlankAnimation =
 	"Blank",
 };
 
-AnimationFunctionROMSpec IntroDefaultAnimation =
+AnimationFunctionROMSpec IntroDefaultAnimationSpec =
 {
 	// number of frames of this animation function
 	136,
@@ -88,14 +88,14 @@ AnimationFunctionROMSpec IntroDefaultAnimation =
 	"Default",
 };
 
-AnimationFunctionROMSpec* const IntroAnimation[] =
+AnimationFunctionROMSpec* const IntroAnimationSpecs[] =
 {
-	(AnimationFunction*)&IntroBlankAnimation,
-    (AnimationFunction*)&IntroDefaultAnimation,
+	(AnimationFunction*)&IntroBlankAnimationSpec,
+    (AnimationFunction*)&IntroDefaultAnimationSpec,
     NULL,
 };
 
-CharSetROMSpec IntroCharset =
+CharSetROMSpec IntroCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	581,
@@ -113,10 +113,10 @@ CharSetROMSpec IntroCharset =
 	IntroTilesFrameOffsets,
 };
 
-TextureROMSpec IntroTexture =
+TextureROMSpec IntroTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&IntroCharset,
+	(CharSetSpec*)&IntroCharSetSpec,
 
 	// bgmap spec
 	IntroMap,
@@ -146,14 +146,14 @@ TextureROMSpec IntroTexture =
 	false,
 };
 
-BgmapSpriteROMSpec IntroSprite =
+BgmapSpriteROMSpec IntroSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapAnimatedSprite),
 
 		// texture spec
-		(TextureSpec*)&IntroTexture,
+		(TextureSpec*)&IntroTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -173,13 +173,13 @@ BgmapSpriteROMSpec IntroSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const IntroSprites[] =
+BgmapSpriteROMSpec* const IntroSpriteSpecs[] =
 {
-	&IntroSprite,
+	&IntroSpriteSpec,
 	NULL
 };
 
-AnimatedEntityROMSpec IntroEntity =
+AnimatedEntityROMSpec IntroEntitySpec =
 {
 	{
 		// class allocator
@@ -195,7 +195,7 @@ AnimatedEntityROMSpec IntroEntity =
 		NULL,
 
 		// sprites
-		(SpriteSpec**)IntroSprites,
+		(SpriteSpec**)IntroSpriteSpecs,
 
 		// use z displacement in projection
 		false,
@@ -218,7 +218,7 @@ AnimatedEntityROMSpec IntroEntity =
 	},
 
 	// pointer to the animation spec for the item
-	(const AnimationFunction**)&IntroAnimation,
+	(const AnimationFunction**)&IntroAnimationSpecs,
 
 	// initial animation
 	"Blank",

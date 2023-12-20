@@ -19,8 +19,8 @@
 //											DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
-extern EntitySpec LowPowerIndicatorBlackEntity;
-extern EntitySpec KonamiLogoEntity;
+extern EntitySpec LowPowerIndicatorBlackEntitySpec;
+extern EntitySpec KonamiLogoEntitySpec;
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -34,8 +34,8 @@ PositionedEntityROMSpec KonamiScreenStageSpecEntities[] =
 
 PositionedEntityROMSpec KonamiScreenStageSpecUiEntities[] =
 {
-	{&KonamiLogoEntity,				{   0,    0,   0, 0},  	0, NULL, NULL, NULL, false},
-	{&LowPowerIndicatorBlackEntity, { 176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
+	{&KonamiLogoEntitySpec,				{   0,    0,   0, 0},  	0, NULL, NULL, NULL, false},
+	{&LowPowerIndicatorBlackEntitySpec, { 176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
 
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
 };

@@ -27,7 +27,7 @@ extern uint16 TradingCardsArrowMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-CharSetROMSpec TradingCardsArrowCharset =
+CharSetROMSpec TradingCardsArrowCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	6,
@@ -45,10 +45,10 @@ CharSetROMSpec TradingCardsArrowCharset =
 	NULL,
 };
 
-TextureROMSpec TradingCardsArrowTexture =
+TextureROMSpec TradingCardsArrowTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&TradingCardsArrowCharset,
+	(CharSetSpec*)&TradingCardsArrowCharSetSpec,
 
 	// bgmap spec
 	TradingCardsArrowMap,
@@ -78,14 +78,14 @@ TextureROMSpec TradingCardsArrowTexture =
 	false,
 };
 
-BgmapSpriteROMSpec TradingCardsArrowSprite =
+BgmapSpriteROMSpec TradingCardsArrowSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&TradingCardsArrowTexture,
+		(TextureSpec*)&TradingCardsArrowTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -105,13 +105,13 @@ BgmapSpriteROMSpec TradingCardsArrowSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const TradingCardsArrowSprites[] =
+BgmapSpriteROMSpec* const TradingCardsArrowSpriteSpecs[] =
 {
-	&TradingCardsArrowSprite,
+	&TradingCardsArrowSpriteSpec,
 	NULL
 };
 
-EntityROMSpec TradingCardsArrowEntity =
+EntityROMSpec TradingCardsArrowEntitySpec =
 {
 	// class allocator
 	__TYPE(Entity),
@@ -126,7 +126,7 @@ EntityROMSpec TradingCardsArrowEntity =
 	NULL,
 
 	// sprites
-	(SpriteSpec**)TradingCardsArrowSprites,
+	(SpriteSpec**)TradingCardsArrowSpriteSpecs,
 
 	// use z displacement in projection
 	false,
@@ -148,10 +148,10 @@ EntityROMSpec TradingCardsArrowEntity =
 	(PhysicalProperties*)NULL,
 };
 
-TextureROMSpec TradingCardsArrowRightTexture =
+TextureROMSpec TradingCardsArrowRightTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&TradingCardsArrowCharset,
+	(CharSetSpec*)&TradingCardsArrowCharSetSpec,
 
 	// bgmap spec
 	TradingCardsArrowMap,
@@ -181,14 +181,14 @@ TextureROMSpec TradingCardsArrowRightTexture =
 	true,
 };
 
-BgmapSpriteROMSpec TradingCardsArrowRightSprite =
+BgmapSpriteROMSpec TradingCardsArrowRightSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&TradingCardsArrowRightTexture,
+		(TextureSpec*)&TradingCardsArrowRightTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -208,13 +208,13 @@ BgmapSpriteROMSpec TradingCardsArrowRightSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const TradingCardsArrowRightSprites[] =
+BgmapSpriteROMSpec* const TradingCardsArrowRightSpriteSpecs[] =
 {
-	&TradingCardsArrowRightSprite,
+	&TradingCardsArrowRightSpriteSpec,
 	NULL
 };
 
-EntityROMSpec TradingCardsArrowRightEntity =
+EntityROMSpec TradingCardsArrowRightEntitySpec =
 {
 	// class allocator
 	__TYPE(Entity),
@@ -229,7 +229,7 @@ EntityROMSpec TradingCardsArrowRightEntity =
 	NULL,
 
 	// sprites
-	(SpriteSpec**)TradingCardsArrowRightSprites,
+	(SpriteSpec**)TradingCardsArrowRightSpriteSpecs,
 
 	// use z displacement in projection
 	false,

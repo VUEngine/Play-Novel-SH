@@ -27,7 +27,7 @@ extern uint16 ScenarioBookBlackMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-CharSetROMSpec ScenarioBookBlackCharset =
+CharSetROMSpec ScenarioBookBlackCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	4,
@@ -45,10 +45,10 @@ CharSetROMSpec ScenarioBookBlackCharset =
 	NULL,
 };
 
-TextureROMSpec ScenarioBookBlackTexture =
+TextureROMSpec ScenarioBookBlackTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&ScenarioBookBlackCharset,
+	(CharSetSpec*)&ScenarioBookBlackCharSetSpec,
 
 	// bgmap spec
 	ScenarioBookBlackMap,
@@ -78,14 +78,14 @@ TextureROMSpec ScenarioBookBlackTexture =
 	false,
 };
 
-BgmapSpriteROMSpec ScenarioBookBlackSprite =
+BgmapSpriteROMSpec ScenarioBookBlackSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&ScenarioBookBlackTexture,
+		(TextureSpec*)&ScenarioBookBlackTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -105,13 +105,13 @@ BgmapSpriteROMSpec ScenarioBookBlackSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const ScenarioBookBlackSprites[] =
+BgmapSpriteROMSpec* const ScenarioBookBlackSpriteSpecs[] =
 {
-	&ScenarioBookBlackSprite,
+	&ScenarioBookBlackSpriteSpec,
 	NULL
 };
 
-EntityROMSpec ScenarioBookBlackEntity =
+EntityROMSpec ScenarioBookBlackEntitySpec =
 {
 	// class allocator
 	__TYPE(Entity),
@@ -126,7 +126,7 @@ EntityROMSpec ScenarioBookBlackEntity =
 	NULL,
 
 	// sprites
-	(SpriteSpec**)ScenarioBookBlackSprites,
+	(SpriteSpec**)ScenarioBookBlackSpriteSpecs,
 
 	// use z displacement in projection
 	false,

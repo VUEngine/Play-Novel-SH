@@ -28,7 +28,7 @@ extern uint16 LogoBMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-CharSetROMSpec LogoCharset =
+CharSetROMSpec LogoCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	192,
@@ -46,10 +46,10 @@ CharSetROMSpec LogoCharset =
 	NULL,
 };
 
-TextureROMSpec LogoATexture =
+TextureROMSpec LogoATextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&LogoCharset,
+	(CharSetSpec*)&LogoCharSetSpec,
 
 	// bgmap spec
 	LogoAMap,
@@ -79,14 +79,14 @@ TextureROMSpec LogoATexture =
 	false,
 };
 
-BgmapSpriteROMSpec LogoASprite =
+BgmapSpriteROMSpec LogoASpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&LogoATexture,
+		(TextureSpec*)&LogoATextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -106,10 +106,10 @@ BgmapSpriteROMSpec LogoASprite =
 	__WORLD_ON,
 };
 
-TextureROMSpec LogoBTexture =
+TextureROMSpec LogoBTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&LogoCharset,
+	(CharSetSpec*)&LogoCharSetSpec,
 
 	// bgmap spec
 	LogoBMap,
@@ -139,14 +139,14 @@ TextureROMSpec LogoBTexture =
 	false,
 };
 
-BgmapSpriteROMSpec LogoBSprite =
+BgmapSpriteROMSpec LogoBSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&LogoBTexture,
+		(TextureSpec*)&LogoBTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -166,14 +166,14 @@ BgmapSpriteROMSpec LogoBSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const LogoSprites[] =
+BgmapSpriteROMSpec* const LogoSpriteSpecs[] =
 {
-	&LogoASprite,
-	&LogoBSprite,
+	&LogoASpriteSpec,
+	&LogoBSpriteSpec,
 	NULL
 };
 
-EntityROMSpec LogoEntity =
+EntityROMSpec LogoEntitySpec =
 {
 	// class allocator
 	__TYPE(Entity),
@@ -188,7 +188,7 @@ EntityROMSpec LogoEntity =
 	NULL,
 
 	// sprites
-	(SpriteSpec**)LogoSprites,
+	(SpriteSpec**)LogoSpriteSpecs,
 
 	// use z displacement in projection
 	false,

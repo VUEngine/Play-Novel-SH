@@ -28,7 +28,7 @@ extern uint16 KCETLogoBMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-CharSetROMSpec KCETLogoCharset =
+CharSetROMSpec KCETLogoCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	175,
@@ -46,10 +46,10 @@ CharSetROMSpec KCETLogoCharset =
 	NULL,
 };
 
-TextureROMSpec KCETLogoATexture =
+TextureROMSpec KCETLogoATextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&KCETLogoCharset,
+	(CharSetSpec*)&KCETLogoCharSetSpec,
 
 	// bgmap spec
 	KCETLogoAMap,
@@ -79,14 +79,14 @@ TextureROMSpec KCETLogoATexture =
 	false,
 };
 
-BgmapSpriteROMSpec KCETLogoASprite =
+BgmapSpriteROMSpec KCETLogoASpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&KCETLogoATexture,
+		(TextureSpec*)&KCETLogoATextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -106,10 +106,10 @@ BgmapSpriteROMSpec KCETLogoASprite =
 	__WORLD_ON,
 };
 
-TextureROMSpec KCETLogoBTexture =
+TextureROMSpec KCETLogoBTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&KCETLogoCharset,
+	(CharSetSpec*)&KCETLogoCharSetSpec,
 
 	// bgmap spec
 	KCETLogoBMap,
@@ -139,14 +139,14 @@ TextureROMSpec KCETLogoBTexture =
 	false,
 };
 
-BgmapSpriteROMSpec KCETLogoBSprite =
+BgmapSpriteROMSpec KCETLogoBSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&KCETLogoBTexture,
+		(TextureSpec*)&KCETLogoBTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -166,14 +166,14 @@ BgmapSpriteROMSpec KCETLogoBSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const KCETLogoSprites[] =
+BgmapSpriteROMSpec* const KCETLogoSpriteSpecs[] =
 {
-	&KCETLogoASprite,
-	&KCETLogoBSprite,
+	&KCETLogoASpriteSpec,
+	&KCETLogoBSpriteSpec,
 	NULL
 };
 
-EntityROMSpec KCETLogoEntity =
+EntityROMSpec KCETLogoEntitySpec =
 {
 	// class allocator
 	__TYPE(Entity),
@@ -188,7 +188,7 @@ EntityROMSpec KCETLogoEntity =
 	NULL,
 
 	// sprites
-	(SpriteSpec**)KCETLogoSprites,
+	(SpriteSpec**)KCETLogoSpriteSpecs,
 
 	// use z displacement in projection
 	false,

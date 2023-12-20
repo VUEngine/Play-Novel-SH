@@ -27,7 +27,7 @@ extern uint16 SaveSlotWideBackgroundMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-CharSetROMSpec SaveSlotBackgroundCharset =
+CharSetROMSpec SaveSlotBackgroundCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	311,
@@ -45,10 +45,10 @@ CharSetROMSpec SaveSlotBackgroundCharset =
 	NULL,
 };
 
-TextureROMSpec SaveSlotWideBackgroundTexture =
+TextureROMSpec SaveSlotWideBackgroundTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&SaveSlotBackgroundCharset,
+	(CharSetSpec*)&SaveSlotBackgroundCharSetSpec,
 
 	// bgmap spec
 	SaveSlotWideBackgroundMap,
@@ -78,14 +78,14 @@ TextureROMSpec SaveSlotWideBackgroundTexture =
 	false,
 };
 
-BgmapSpriteROMSpec SaveSlotWideBackgroundSprite =
+BgmapSpriteROMSpec SaveSlotWideBackgroundSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapSprite),
 
 		// texture spec
-		(TextureSpec*)&SaveSlotWideBackgroundTexture,
+		(TextureSpec*)&SaveSlotWideBackgroundTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -105,13 +105,13 @@ BgmapSpriteROMSpec SaveSlotWideBackgroundSprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const SaveSlotWideBackgroundSprites[] =
+BgmapSpriteROMSpec* const SaveSlotWideBackgroundSpriteSpecs[] =
 {
-	&SaveSlotWideBackgroundSprite,
+	&SaveSlotWideBackgroundSpriteSpec,
 	NULL
 };
 
-EntityROMSpec SaveSlotWideBackgroundEntity =
+EntityROMSpec SaveSlotWideBackgroundEntitySpec =
 {
 	// class allocator
 	__TYPE(Entity),
@@ -126,7 +126,7 @@ EntityROMSpec SaveSlotWideBackgroundEntity =
 	NULL,
 
 	// sprites
-	(SpriteSpec**)SaveSlotWideBackgroundSprites,
+	(SpriteSpec**)SaveSlotWideBackgroundSpriteSpecs,
 
 	// use z displacement in projection
 	false,

@@ -32,7 +32,7 @@ extern uint16 FlaurosOverlayMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-AnimationFunctionROMSpec FlaurosDefaultAnimation =
+AnimationFunctionROMSpec FlaurosDefaultAnimationSpec =
 {
 	// number of frames of this animation function
 	7,
@@ -55,13 +55,13 @@ AnimationFunctionROMSpec FlaurosDefaultAnimation =
 	"Default",
 };
 
-AnimationFunctionROMSpec* const FlaurosAnimation[] =
+AnimationFunctionROMSpec* const FlaurosAnimationSpecs[] =
 {
-    (AnimationFunction*)&FlaurosDefaultAnimation,
+    (AnimationFunction*)&FlaurosDefaultAnimationSpec,
     NULL,
 };
 
-CharSetROMSpec FlaurosBlackCharset =
+CharSetROMSpec FlaurosBlackCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	4,
@@ -79,10 +79,10 @@ CharSetROMSpec FlaurosBlackCharset =
 	NULL,
 };
 
-TextureROMSpec FlaurosBlackTexture =
+TextureROMSpec FlaurosBlackTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&FlaurosBlackCharset,
+	(CharSetSpec*)&FlaurosBlackCharSetSpec,
 
 	// bgmap spec
 	FlaurosBlackMap,
@@ -112,14 +112,14 @@ TextureROMSpec FlaurosBlackTexture =
 	false,
 };
 
-BgmapSpriteROMSpec FlaurosBlackSprite =
+BgmapSpriteROMSpec FlaurosBlackSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapAnimatedSprite),
 
 		// texture spec
-		(TextureSpec*)&FlaurosBlackTexture,
+		(TextureSpec*)&FlaurosBlackTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -139,7 +139,7 @@ BgmapSpriteROMSpec FlaurosBlackSprite =
 	__WORLD_ON,
 };
 
-CharSetROMSpec FlaurosBaseCharset =
+CharSetROMSpec FlaurosBaseCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	4,
@@ -157,10 +157,10 @@ CharSetROMSpec FlaurosBaseCharset =
 	NULL,
 };
 
-TextureROMSpec FlaurosBaseTexture =
+TextureROMSpec FlaurosBaseTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&FlaurosBaseCharset,
+	(CharSetSpec*)&FlaurosBaseCharSetSpec,
 
 	// bgmap spec
 	FlaurosBaseMap,
@@ -190,14 +190,14 @@ TextureROMSpec FlaurosBaseTexture =
 	false,
 };
 
-BgmapSpriteROMSpec FlaurosBaseSprite =
+BgmapSpriteROMSpec FlaurosBaseSpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapAnimatedSprite),
 
 		// texture spec
-		(TextureSpec*)&FlaurosBaseTexture,
+		(TextureSpec*)&FlaurosBaseTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
@@ -217,7 +217,7 @@ BgmapSpriteROMSpec FlaurosBaseSprite =
 	__WORLD_ON,
 };
 
-CharSetROMSpec FlaurosOverlayCharset =
+CharSetROMSpec FlaurosOverlayCharSetSpec =
 {
 	// number of chars in function of the number of frames to load at the same time
 	4,
@@ -235,10 +235,10 @@ CharSetROMSpec FlaurosOverlayCharset =
 	NULL,
 };
 
-TextureROMSpec FlaurosOverlayTexture =
+TextureROMSpec FlaurosOverlayTextureSpec =
 {
 	// charset spec
-	(CharSetSpec*)&FlaurosOverlayCharset,
+	(CharSetSpec*)&FlaurosOverlayCharSetSpec,
 
 	// bgmap spec
 	FlaurosOverlayMap,
@@ -268,14 +268,14 @@ TextureROMSpec FlaurosOverlayTexture =
 	false,
 };
 
-BgmapSpriteROMSpec FlaurosOverlaySprite =
+BgmapSpriteROMSpec FlaurosOverlaySpriteSpec =
 {
 	{
 		// sprite's type
 		__TYPE(BgmapAnimatedSprite),
 
 		// texture spec
-		(TextureSpec*)&FlaurosOverlayTexture,
+		(TextureSpec*)&FlaurosOverlayTextureSpec,
 
 		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_EVEN,
@@ -295,15 +295,15 @@ BgmapSpriteROMSpec FlaurosOverlaySprite =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const FlaurosSprites[] =
+BgmapSpriteROMSpec* const FlaurosSpriteSpecs[] =
 {
-	//&FlaurosBlackSprite,
-	&FlaurosBaseSprite,
-	&FlaurosOverlaySprite,
+	//&FlaurosBlackSpriteSpec,
+	&FlaurosBaseSpriteSpec,
+	&FlaurosOverlaySpriteSpec,
 	NULL
 };
 
-AnimatedEntityROMSpec FlaurosEntity =
+AnimatedEntityROMSpec FlaurosEntitySpec =
 {
 	{
 		// class allocator
@@ -319,7 +319,7 @@ AnimatedEntityROMSpec FlaurosEntity =
 		NULL,
 
 		// sprites
-		(SpriteSpec**)FlaurosSprites,
+		(SpriteSpec**)FlaurosSpriteSpecs,
 
 		// use z displacement in projection
 		false,
@@ -342,7 +342,7 @@ AnimatedEntityROMSpec FlaurosEntity =
 	},
 
 	// pointer to the animation spec for the item
-	(const AnimationFunction**)&FlaurosAnimation,
+	(const AnimationFunction**)&FlaurosAnimationSpecs,
 
 	// initial animation
 	"Default",
