@@ -1894,7 +1894,7 @@ SoundChannelROM* const EnterLoadGameScreenSoundChannels[] =
     NULL
 };
 
-SoundROM EnterLoadGameScreenSound =
+SoundROMSpec EnterLoadGameScreenSoundSpec =
 {
 	// Name
 	"Enter Load Game Screen",

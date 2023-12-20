@@ -21,7 +21,7 @@
 extern EntitySpec Scene014EntitySpec;
 extern EntitySpec Scene015EntitySpec;
 
-extern Sound MonsterSoundSound;
+extern SoundSpec MonsterSoundSoundSpec;
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -39,7 +39,7 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter7Sub1Scene1Entities[] =
 const struct Scene PlayNovelScenarioHarryAct1Chapter7Sub1Scene1 = {
 	kFadeTypeNormal,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
+	kSoundPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter7Sub1Scene1Entities,
 	NULL,
@@ -68,7 +68,7 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter7Sub1Scene2Entities[] =
 const struct Scene PlayNovelScenarioHarryAct1Chapter7Sub1Scene2 = {
 	kFadeTypeNormal,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
+	kSoundPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter7Sub1Scene2Entities,
 	NULL,
@@ -91,8 +91,8 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter7Sub1Scene3Entities[] =
 const struct Scene PlayNovelScenarioHarryAct1Chapter7Sub1Scene3 = {
 	kFadeTypeNormal,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
-	&MonsterSoundSound,
+	kSoundPlaybackNormal,
+	&MonsterSoundSoundSpec,
 	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter7Sub1Scene3Entities,
 	NULL,
 	{

@@ -9127,7 +9127,7 @@ SoundChannelROM* const SilenceEndSoundChannels[] =
     NULL
 };
 
-SoundROM SilenceEndSound =
+SoundROMSpec SilenceEndSoundSpec =
 {
 	// Name
 	"Silence End",

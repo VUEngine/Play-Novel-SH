@@ -90,7 +90,7 @@ typedef struct Scene
 	uint8 fadeInType;
 	uint8 fadeOutType;
 	int8 soundPlaybackType;
-	const Sound *sound;
+	const SoundSpec* sound;
 	const PositionedEntity* positionedEntities;
 	const Choices* choices;
 	char* text[NUMBER_OF_LANGUAGES][MAX_TEXT_PER_SCENE];

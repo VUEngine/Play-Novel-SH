@@ -20,7 +20,7 @@
 
 extern EntitySpec Scene014EntitySpec;
 
-extern Sound TheBeastLurksSound;
+extern SoundSpec TheBeastLurksSoundSpec;
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -63,8 +63,8 @@ const struct Choices PlayNovelScenarioHarryAct1Chapter5Sub1Scene1Choices =
 const struct Scene PlayNovelScenarioHarryAct1Chapter5Sub1Scene1 = {
 	kFadeTypeNone,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
-	&TheBeastLurksSound,
+	kSoundPlaybackNormal,
+	&TheBeastLurksSoundSpec,
 	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter5Sub1Scene1Entities,
 	&PlayNovelScenarioHarryAct1Chapter5Sub1Scene1Choices,
 	{

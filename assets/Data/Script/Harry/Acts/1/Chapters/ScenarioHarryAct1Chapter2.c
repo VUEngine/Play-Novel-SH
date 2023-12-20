@@ -61,7 +61,7 @@ const struct Choices PlayNovelScenarioHarryAct1Chapter2Sub1Scene1Choices =
 const struct Scene PlayNovelScenarioHarryAct1Chapter2Sub1Scene1 = {
 	kFadeTypeNone,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
+	kSoundPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter2Sub1Scene1Entities,
 	&PlayNovelScenarioHarryAct1Chapter2Sub1Scene1Choices,

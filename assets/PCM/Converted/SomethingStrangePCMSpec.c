@@ -1493,7 +1493,7 @@ SoundChannelROM* const SomethingStrangeSoundChannels[] =
     NULL
 };
 
-SoundROM SomethingStrangeSound =
+SoundROMSpec SomethingStrangeSoundSpec =
 {
 	// Name
 	"Something Strange",

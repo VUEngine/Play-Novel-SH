@@ -22,7 +22,7 @@ extern EntitySpec Scene009EntitySpec;
 extern EntitySpec Scene010EntitySpec;
 extern EntitySpec Scene011EntitySpec;
 
-extern Sound SilenceEndSound;
+extern SoundSpec SilenceEndSoundSpec;
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -39,7 +39,7 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter1Sub1Scene1Entities[] =
 const struct Scene PlayNovelScenarioHarryAct1Chapter1Sub1Scene1 = {
 	kFadeTypeNormal,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
+	kSoundPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter1Sub1Scene1Entities,
 	NULL,
@@ -78,8 +78,8 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter1Sub2Scene1Entities[] =
 const struct Scene PlayNovelScenarioHarryAct1Chapter1Sub2Scene1 = {
 	kFadeTypeNormal,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
-	&SilenceEndSound,
+	kSoundPlaybackNormal,
+	&SilenceEndSoundSpec,
 	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter1Sub2Scene1Entities,
 	NULL,
 	{
@@ -105,7 +105,7 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter1Sub2Scene2Entities[] =
 const struct Scene PlayNovelScenarioHarryAct1Chapter1Sub2Scene2 = {
 	kFadeTypeNormal,
 	kFadeTypeNone,
-	kSoundWrapperPlaybackNormal,
+	kSoundPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter1Sub2Scene2Entities,
 	NULL,
@@ -142,7 +142,7 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter1Sub3Scene1Entities[] =
 const struct Scene PlayNovelScenarioHarryAct1Chapter1Sub3Scene1 = {
 	kFadeTypeNone,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
+	kSoundPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter1Sub3Scene1Entities,
 	NULL,
@@ -169,7 +169,7 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter1Sub3Scene2Entities[] =
 const struct Scene PlayNovelScenarioHarryAct1Chapter1Sub3Scene2 = {
 	kFadeTypeNormal,
 	kFadeTypeNone,
-	kSoundWrapperPlaybackNormal,
+	kSoundPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter1Sub3Scene2Entities,
 	NULL,

@@ -37,7 +37,7 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter3Sub1Scene1Entities[] =
 const struct Scene PlayNovelScenarioHarryAct1Chapter3Sub1Scene1 = {
 	kFadeTypeNormal,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
+	kSoundPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter3Sub1Scene1Entities,
 	NULL,

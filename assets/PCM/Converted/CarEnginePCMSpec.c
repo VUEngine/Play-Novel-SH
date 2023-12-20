@@ -662,7 +662,7 @@ SoundChannelROM* const CarEngineSoundChannels[] =
     NULL
 };
 
-SoundROM CarEngineSound =
+SoundROMSpec CarEngineSoundSpec =
 {
 	// Name
 	"Car Engine",

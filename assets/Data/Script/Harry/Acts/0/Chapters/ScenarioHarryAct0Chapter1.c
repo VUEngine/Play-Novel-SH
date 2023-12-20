@@ -28,10 +28,10 @@ extern EntitySpec Scene006EntitySpec;
 extern EntitySpec Scene007EntitySpec;
 extern EntitySpec Scene008EntitySpec;
 
-extern Sound CarEngineSound;
-extern Sound CarBrakingSound;
-extern Sound EnteringOtherWorldSound;
-extern Sound SomethingStrangeSound;
+extern SoundSpec CarEngineSoundSpec;
+extern SoundSpec CarBrakingSoundSpec;
+extern SoundSpec EnteringOtherWorldSoundSpec;
+extern SoundSpec SomethingStrangeSoundSpec;
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -47,7 +47,7 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene1Entities[] =
 const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene1 = {
 	kFadeTypeNormal,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
+	kSoundPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene1Entities,
 	NULL,
@@ -74,8 +74,8 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene2Entities[] =
 const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene2 = {
 	kFadeTypeNormal,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
-	&CarEngineSound,
+	kSoundPlaybackNormal,
+	&CarEngineSoundSpec,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene2Entities,
 	NULL,
 	{
@@ -98,7 +98,7 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene3Entities[] =
 const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene3 = {
 	kFadeTypeNormal,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
+	kSoundPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene3Entities,
 	NULL,
@@ -128,7 +128,7 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene4Entities[] =
 const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene4 = {
 	kFadeTypeNormal,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
+	kSoundPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene4Entities,
 	NULL,
@@ -152,7 +152,7 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene5Entities[] =
 const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene5 = {
 	kFadeTypeNormal,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
+	kSoundPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene5Entities,
 	NULL,
@@ -178,7 +178,7 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene6Entities[] =
 const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene6 = {
 	kFadeTypeNormal,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
+	kSoundPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene6Entities,
 	NULL,
@@ -202,7 +202,7 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene7Entities[] =
 const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene7 = {
 	kFadeTypeNormal,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
+	kSoundPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene7Entities,
 	NULL,
@@ -227,8 +227,8 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene8Entities[] =
 const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene8 = {
 	kFadeTypeNormal,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
-	&SomethingStrangeSound,
+	kSoundPlaybackNormal,
+	&SomethingStrangeSoundSpec,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene8Entities,
 	NULL,
 	{
@@ -253,7 +253,7 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene9Entities[] =
 const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene9 = {
 	kFadeTypeNormal,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
+	kSoundPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene9Entities,
 	NULL,
@@ -278,8 +278,8 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene10Entities[] 
 const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene10 = {
 	kFadeTypeNormal,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
-	&EnteringOtherWorldSound,
+	kSoundPlaybackNormal,
+	&EnteringOtherWorldSoundSpec,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene10Entities,
 	NULL,
 	{
@@ -303,7 +303,7 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene11Entities[] 
 const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene11 = {
 	kFadeTypeNormal,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
+	kSoundPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene11Entities,
 	NULL,
@@ -331,7 +331,7 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene12Entities[] 
 const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene12 = {
 	kFadeTypeNormal,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
+	kSoundPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene12Entities,
 	NULL,
@@ -354,7 +354,7 @@ PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene13Entities[] 
 const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene13 = {
 	kFadeTypeNormal,
 	kFadeTypeSlow,
-	kSoundWrapperPlaybackNormal,
+	kSoundPlaybackNormal,
 	NULL,
 	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene13Entities,
 	NULL,
@@ -372,8 +372,8 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene13 = {
 const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene14 = {
 	kFadeTypeNormal,
 	kFadeTypeNormal,
-	kSoundWrapperPlaybackNormal,
-	&CarBrakingSound,
+	kSoundPlaybackNormal,
+	&CarBrakingSoundSpec,
 	NULL,
 	NULL,
 	{

@@ -737,7 +737,7 @@ SoundChannelROM* const CarBrakingSoundChannels[] =
     NULL
 };
 
-SoundROM CarBrakingSound =
+SoundROMSpec CarBrakingSoundSpec =
 {
 	// Name
 	"Car Braking",

@@ -21,7 +21,7 @@
 
 extern EntitySpec LowPowerIndicatorEntitySpec;
 extern EntitySpec IntroEntitySpec;
-extern Sound IntroSound;
+extern SoundSpec IntroSoundSpec;
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -41,9 +41,9 @@ PositionedEntityROMSpec IntroScreenStageSpecUiEntities[] =
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
 };
 
-SoundROM* const IntroScreenStageSounds[] =
+SoundROMSpec* const IntroScreenStageSoundSpecs[] =
 {
-	&IntroSound,
+	&IntroSoundSpec,
 	NULL
 };
 
@@ -260,7 +260,7 @@ StageROMSpec IntroScreenStageSpec =
 		(TextureSpec**)NULL,
 
 		// background music
-		(Sound**)&IntroScreenStageSounds,
+		(SoundSpec**)&IntroScreenStageSoundSpecs,
 	},
 
 	// entities

@@ -253,7 +253,7 @@ StageROMSpec KonamiScreenStageSpec =
 		(TextureSpec**)NULL,
 
 		// background music
-		(Sound**)NULL,
+		(SoundSpec**)NULL,
 	},
 
 	// entities

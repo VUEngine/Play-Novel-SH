@@ -4267,7 +4267,7 @@ SoundChannelROM* const EnteringOtherWorldSoundChannels[] =
     NULL
 };
 
-SoundROM EnteringOtherWorldSound =
+SoundROMSpec EnteringOtherWorldSoundSpec =
 {
 	// Name
 	"Entering Other World",

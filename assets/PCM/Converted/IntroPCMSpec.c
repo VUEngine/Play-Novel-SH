@@ -6849,7 +6849,7 @@ SoundChannelROM* const IntroSoundChannels[] =
     NULL
 };
 
-SoundROM IntroSound =
+SoundROMSpec IntroSoundSpec =
 {
 	// Name
 	"Intro",

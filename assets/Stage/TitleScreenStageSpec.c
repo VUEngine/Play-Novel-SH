@@ -261,7 +261,7 @@ StageROMSpec TitleScreenStageSpec =
 		(TextureSpec**)NULL,
 
 		// background music
-		(Sound**)NULL,
+		(SoundSpec**)NULL,
 	},
 
 	// entities

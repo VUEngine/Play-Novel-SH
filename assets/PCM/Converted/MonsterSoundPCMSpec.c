@@ -1819,7 +1819,7 @@ SoundChannelROM* const MonsterSoundSoundChannels[] =
     NULL
 };
 
-SoundROM MonsterSoundSound =
+SoundROMSpec MonsterSoundSoundSpec =
 {
 	// Name
 	"Monster Sound",

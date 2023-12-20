@@ -24,7 +24,7 @@ extern EntitySpec SaveSlotWideBackgroundEntitySpec;
 extern EntitySpec SaveSlotWideBackgroundExtraEntitySpec;
 extern EntitySpec SaveSlotLabelEntitySpec;
 extern EntitySpec SaveSlotBorderEntitySpec;
-extern Sound EnterLoadGameScreenSound;
+extern SoundSpec EnterLoadGameScreenSoundSpec;
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -54,9 +54,9 @@ PositionedEntityROMSpec LoadGameScreenStageSpecUiEntities[] =
 	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
 };
 
-SoundROM* const LoadGameScreenStageSounds[] =
+SoundROMSpec* const LoadGameScreenStageSoundSpecs[] =
 {
-	&EnterLoadGameScreenSound,
+	&EnterLoadGameScreenSoundSpec,
 	NULL
 };
 
@@ -273,7 +273,7 @@ StageROMSpec LoadGameScreenStageSpec =
 		(TextureSpec**)NULL,
 
 		// background music
-		(Sound**)&LoadGameScreenStageSounds,
+		(SoundSpec**)&LoadGameScreenStageSoundSpecs,
 	},
 
 	// entities
