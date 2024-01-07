@@ -1,10 +1,4 @@
 {
-	"name": "Play Novel: Silent Hill",
-    "folders": [
-        {
-            "path": "."
-        }
-    ],
     "plugins": [
         "vuengine//entities/LocalizedEntity",
         "vuengine//entities/LowPowerEntity",
@@ -14,5 +8,6 @@
         "vuengine//states/splash/AdjustmentScreenNintendo",
         "vuengine//states/splash/PrecautionScreen",
         "vuengine//states/splash/SplashScreen"
-    ]
+    ],
+    "projectTitle": "Play Novel: Silent Hill"
 }
