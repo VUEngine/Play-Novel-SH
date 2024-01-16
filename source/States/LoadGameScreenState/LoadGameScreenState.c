@@ -65,7 +65,7 @@ void LoadGameScreenState::enter(void* owner)
 
 	Printing::setWorldCoordinates(Printing::getInstance(), 0, 2, -4, -1);
 
-	UIContainer uiContainer = Stage::getUIContainer(VUEngine::getStage(VUEngine::getInstance()));
+	UIContainer uiContainer = VUEngine::getUIContainer(VUEngine::getInstance());
 	this->entityCursor = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "CURSOR", true));
 	this->entitySubChapterBackground = Entity::safeCast(UIContainer::getChildByName(uiContainer, "SUBCHPTR", true));
 	this->entitySlot[0] = Entity::safeCast(UIContainer::getChildByName(uiContainer, "SLOT0", true));

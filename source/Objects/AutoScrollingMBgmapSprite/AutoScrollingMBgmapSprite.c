@@ -19,9 +19,9 @@
 //												CLASS'S METHODS
 //---------------------------------------------------------------------------------------------------------
 
-void AutoScrollingMBgmapSprite::constructor(const AutoScrollingMBgmapSpriteSpec* autoScrollingMBgmapSpriteSpec, ListenerObject owner)
+void AutoScrollingMBgmapSprite::constructor(SpatialObject owner, const AutoScrollingMBgmapSpriteSpec* autoScrollingMBgmapSpriteSpec)
 {
-	Base::constructor(&autoScrollingMBgmapSpriteSpec->mBgmapSpriteSpec, owner);
+	Base::constructor(owner, &autoScrollingMBgmapSpriteSpec->mBgmapSpriteSpec);
 	this->scrollDelay = autoScrollingMBgmapSpriteSpec->scrollDelay;
 
 	ListenerObject::sendMessageToSelf(ListenerObject::safeCast(this), kAutoScrollingMBgmapSpriteMessageScroll, this->scrollDelay, 0);
@@ -52,5 +52,5 @@ bool AutoScrollingMBgmapSprite::handleMessage(Telegram telegram)
 void AutoScrollingMBgmapSprite::scroll()
 {
 	this->position.y += 1;
-	this->renderFlag = true;
+	this->rendered = false;
 }

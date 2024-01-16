@@ -70,7 +70,8 @@ void VisualNovelState::enter(void* owner)
 	Printing::setPalette(Printing::getInstance(), 0);
 
 	// initialize variables
-	this->entityFlauros = Entity::safeCast(UIContainer::getChildByName(Stage::getUIContainer(VUEngine::getStage(VUEngine::getInstance())), "FLAUROS", true));
+	UIContainer uiContainer = VUEngine::getUIContainer(VUEngine::getInstance());
+	this->entityFlauros = Entity::safeCast(UIContainer::getChildByName(uiContainer, "FLAUROS", true));
 	this->charNumber = 0;
 	this->charX = 0;
 	this->charY = 0;

@@ -64,7 +64,7 @@ void TitleScreenState::enter(void* owner)
 	// enable user input
 	VUEngine::enableKeypad(VUEngine::getInstance());
 
-	UIContainer uiContainer = Stage::getUIContainer(VUEngine::getStage(VUEngine::getInstance()));
+	UIContainer uiContainer = VUEngine::getUIContainer(VUEngine::getInstance());
 	this->entityStart = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "Start", true));
 	this->entityCards = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "Cards", true));
 	this->entityMobile = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "Mobile", true));

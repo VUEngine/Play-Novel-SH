@@ -64,7 +64,7 @@ void TradingCardsScreenState::enter(void* owner)
 	GameState::startClocks(GameState::safeCast(this));
 
 	// get entity references
-	UIContainer uiContainer = Stage::getUIContainer(VUEngine::getStage(VUEngine::getInstance()));
+	UIContainer uiContainer = VUEngine::getUIContainer(VUEngine::getInstance());
 	this->entityBackground = Entity::safeCast(UIContainer::getChildByName(uiContainer, "BG", true));
 	this->entityCursor = Entity::safeCast(UIContainer::getChildByName(uiContainer, "CURSOR", true));
 	this->entityNumbers = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "NUM", true));

@@ -50,7 +50,7 @@ typedef const AutoScrollingMBgmapSpriteSpec AutoScrollingMBgmapSpriteROMSpec;
 class AutoScrollingMBgmapSprite : MBgmapSprite
 {
 	uint16 scrollDelay;
-	void constructor(const AutoScrollingMBgmapSpriteSpec* autoScrollingMBgmapSpriteSpec, ListenerObject owner);
+	void constructor(SpatialObject owner, const AutoScrollingMBgmapSpriteSpec* autoScrollingMBgmapSpriteSpec);
 	override bool handleMessage(Telegram telegram);
 }
 
