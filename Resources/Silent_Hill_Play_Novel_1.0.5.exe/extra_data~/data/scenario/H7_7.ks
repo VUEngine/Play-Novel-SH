@@ -25,7 +25,7 @@ Only people have been erased from this normal scene, making the situation unnatu
 [wait  time="500"  ]
 [tb_show_message_window  ]
 I leave the examination room.[p]
-I pass through the medicine room and reach a planked floor corridor that silently extends in an L-collider. [p]
+I pass through the medicine room and reach a planked floor corridor that silently extends in an L-shape. [p]
 I moved forward and found that there was an elevator with a large door at the end of the corridor.[p]
 
 

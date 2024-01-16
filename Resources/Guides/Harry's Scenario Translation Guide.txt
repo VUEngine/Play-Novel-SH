@@ -2834,7 +2834,7 @@ situation unnatural.
 Page 4 (Black)
 I leave the examination room.
 I pass through the medicine room and reach a planked floor corridor that
-silently extends in an L-collider. 
+silently extends in an L-shape. 
 I moved forward and found that there was an elevator with a large door at
 the end of the corridor.
 
@@ -2855,7 +2855,7 @@ I begin to run.
 
 Page 2
 I pass through the medicine room and reach a planked floor corridor that
-silently extends in an L-collider. 
+silently extends in an L-shape. 
 I moved forward and found that there was an elevator with a large door at
 the end of the corridor.
 
@@ -8418,7 +8418,7 @@ begins squirming.
 Page 21 
 A nasty liquid-like monster bursts out of Cybil's lifeless back.
 It crawls on the floor, and begins to move at a speed not unthinkable for its
-collider.
+shape.
 
 Page 22
 Keeping only it in my sight, I pursue it. 
@@ -10268,7 +10268,7 @@ Chapter 17   "Nowhere"
 Child's room
 
 Page 39
-Reflecting in my blank eyes, the room I am standing in begins to change collider.
+Reflecting in my blank eyes, the room I am standing in begins to change shape.
 The bed and picture frame from before are gone, and the room transforms
 into a completely different one.
 
@@ -11347,7 +11347,7 @@ Area 5-9, page 2
 This is probably the single most confusing piece of Japanese I have ever
 read, and is actually one of the reasons I stopped work on this translation
 in the past. Between consulations with Japanese friends and some advice from
-Blue Phoenix I think it is in good collider now!
+Blue Phoenix I think it is in good shape now!
 
 Area 6-1, page 11
 This is where the original game script really begins to show up in Harry's

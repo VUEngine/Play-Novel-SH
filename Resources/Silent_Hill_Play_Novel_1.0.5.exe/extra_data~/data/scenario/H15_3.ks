@@ -131,7 +131,7 @@ Tears distort my vision.[p]
 "Cybil...why...did this happen..."[p]
 At the moment I am about to touch Cybil, her back suddenly rises and begins squirming.[p]
 A nasty liquid-like monster bursts out of Cybil's lifeless back.[p]
-It crawls on the floor, and begins to move at a speed not unthinkable for its collider.[p]
+It crawls on the floor, and begins to move at a speed not unthinkable for its shape.[p]
 Keeping only it in my sight, I pursue it. [p]
 I am already exhausted, and maybe in no condition to correctly judge things.[p]
 
