@@ -334,7 +334,7 @@
 // smaller values allow movement to start when colliding against a collider and trying to move towards it
 #define __COLLIDER_ANGLE_TO_PREVENT_DISPLACEMENT						__FIX7_9_TO_FIXED(__COS(10))
 
-// maximum size of shapes allows to avoid checks against far away shapes
+// maximum size of colliders allows to avoid checks against far away colliders
 #define __COLLIDER_MAXIMUM_SIZE										__PIXELS_TO_METERS(256)
 
 

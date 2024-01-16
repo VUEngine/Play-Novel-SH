@@ -134,7 +134,7 @@ EntityROMSpec TradingCardsArrowEntitySpec =
 	// wireframes
 	(WireframeSpec**)NULL,
 
-	// collision shapes
+	// collision colliders
 	(ColliderSpec*)NULL,
 
 	// size
@@ -237,7 +237,7 @@ EntityROMSpec TradingCardsArrowRightEntitySpec =
 	// wireframes
 	(WireframeSpec**)NULL,
 
-	// collision shapes
+	// collision colliders
 	(ColliderSpec*)NULL,
 
 	// size

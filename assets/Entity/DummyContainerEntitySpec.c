@@ -40,7 +40,7 @@ EntityROMSpec DummyContainerEntitySpec =
 	// wireframes
 	(WireframeSpec**)NULL,
 
-	// collision shapes
+	// collision colliders
 	NULL,
 
 	// size

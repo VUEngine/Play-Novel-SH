@@ -196,7 +196,7 @@ EntityROMSpec Scene006EntitySpec =
 	// wireframes
 	(WireframeSpec**)NULL,
 
-	// collision shapes
+	// collision colliders
 	(ColliderSpec*)NULL,
 
 	// size

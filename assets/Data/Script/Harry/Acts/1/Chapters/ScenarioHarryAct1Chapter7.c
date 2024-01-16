@@ -75,7 +75,7 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter7Sub1Scene2 = {
 	{
 		{
 			"\"Ah...\"",
-			"And then my vitality is sucked away by these \nstrangely shaped monsters until I finally \nlose consciousness..."
+			"And then my vitality is sucked away by these \nstrangely colliderd monsters until I finally \nlose consciousness..."
 		},
 		{
 		}

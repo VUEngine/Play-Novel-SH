@@ -178,7 +178,7 @@ EntityROMSpec Scene012CherylEntitySpec =
 	// wireframes
 	(WireframeSpec**)NULL,
 
-	// collision shapes
+	// collision colliders
 	(ColliderSpec*)NULL,
 
 	// size

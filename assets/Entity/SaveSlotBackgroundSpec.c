@@ -134,7 +134,7 @@ EntityROMSpec SaveSlotWideBackgroundEntitySpec =
 	// wireframes
 	(WireframeSpec**)NULL,
 
-	// collision shapes
+	// collision colliders
 	(ColliderSpec*)NULL,
 
 	// size
