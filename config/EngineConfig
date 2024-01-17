@@ -5,7 +5,7 @@
     },
     "animation": {
         "maxAnimationFunctionNameLength": 16,
-        "maxFramesPerAnimationFunction": 136
+        "maxFramesPerAnimationFunction": 160
     },
     "brightness": {
         "brightRed": 128,
