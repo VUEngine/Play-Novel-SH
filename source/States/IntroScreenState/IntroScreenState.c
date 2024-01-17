@@ -54,6 +54,7 @@ void IntroScreenState::enter(void* owner)
 void IntroScreenState::onIntroDefaultAnimationComplete(ListenerObject eventFirer __attribute__((unused)))
 {
 	ListenerObject::sendMessageToSelf(ListenerObject::safeCast(this), kIntroMessageEndVideo, INTRO_DELAY, 0);	
+	IntroScreenState::removeEventListener(this, ListenerObject::safeCast(this), (EventListener)IntroScreenState::onIntroDefaultAnimationComplete, kEventIntroAnimationCompleted);
 }
 
 bool IntroScreenState::handleMessage(Telegram telegram)
