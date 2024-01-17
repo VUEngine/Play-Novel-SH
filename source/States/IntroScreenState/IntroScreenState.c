@@ -10,11 +10,13 @@
 //												INCLUDES
 //---------------------------------------------------------------------------------------------------------
 
-#include <VUEngine.h>
-#include <Telegram.h>
 #include <AnimatedEntity.h>
-#include <IntroScreenState.h>
+#include <GameEvents.h>
+#include <Telegram.h>
 #include <TitleScreenState.h>
+#include <VUEngine.h>
+
+#include "IntroScreenState.h"
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -46,24 +48,21 @@ void IntroScreenState::enter(void* owner)
 
 	VUEngine::disableKeypad(VUEngine::getInstance());
 	this->nextState = GameState::safeCast(TitleScreenState::getInstance());
-	ListenerObject::sendMessageToSelf(ListenerObject::safeCast(this), kIntroMessageStartVideo, INTRO_DELAY, 0);
-	ListenerObject::sendMessageToSelf(ListenerObject::safeCast(this), kIntroMessageEndVideo, INTRO_DELAY + INTRO_DURATION, 0);
+	IntroScreenState::addEventListener(this, ListenerObject::safeCast(this), (EventListener)IntroScreenState::onIntroDefaultAnimationComplete, kEventIntroAnimationCompleted);
+}
+
+void IntroScreenState::onIntroDefaultAnimationComplete(ListenerObject eventFirer __attribute__((unused)))
+{
+	ListenerObject::sendMessageToSelf(ListenerObject::safeCast(this), kIntroMessageEndVideo, INTRO_DELAY, 0);	
 }
 
 bool IntroScreenState::handleMessage(Telegram telegram)
 {
 	switch(Telegram::getMessage(telegram))
 	{
-		case kIntroMessageStartVideo:
-		{
-			VUEngine::enableKeypad(VUEngine::getInstance());
-			UIContainer uiContainer = VUEngine::getUIContainer(VUEngine::getInstance());
-			AnimatedEntity animatedEntity = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "VIDEO", true));
-			AnimatedEntity::playAnimation(animatedEntity, "Default");
-			break;
-		}
 		case kIntroMessageEndVideo:
 		{
+			IntroScreenState::removeEventListener(this, ListenerObject::safeCast(this), (EventListener)IntroScreenState::onIntroDefaultAnimationComplete, kEventIntroAnimationCompleted);
 			SplashScreenState::loadNextState(SplashScreenState::safeCast(this));
 			break;
 		}

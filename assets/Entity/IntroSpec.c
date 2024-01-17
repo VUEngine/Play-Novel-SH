@@ -10,10 +10,10 @@
 //												INCLUDES
 //---------------------------------------------------------------------------------------------------------
 
-#include <Libgccvb.h>
-#include <AnimatedEntity.h>
-#include <VIPManager.h>
+#include <AnimatedEntityExtensions.h>
 #include <BgmapAnimatedSprite.h>
+#include <Libgccvb.h>
+#include <VIPManager.h>
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -29,36 +29,14 @@ extern uint16 IntroMap[];
 //												DEFINITIONS
 //---------------------------------------------------------------------------------------------------------
 
-AnimationFunctionROMSpec IntroBlankAnimationSpec =
-{
-	// number of frames of this animation function
-	1,
-
-	// frames to play in animation
-	{
-		135, 
-	},
-
-	// number of cycles a frame of animation is displayed
-	8,
-
-	// whether to play it in loop or not
-	false,
-
-	// method to call on function completion
-	NULL,
-
-	// function's name
-	"Blank",
-};
-
 AnimationFunctionROMSpec IntroDefaultAnimationSpec =
 {
 	// number of frames of this animation function
-	136,
+	146,
 
 	// frames to play in animation
 	{
+		135, 135, 135, 135, 135, 135, 135, 135, 135, 135,
 		  0,   1,   2,   3,   4,   5,   6,   7,   8,   9,
 		 10,  11,  12,  13,  14,  15,  16,  17,  18,  19,
 		 20,  21,  22,  23,  24,  25,  26,  27,  28,  29,
@@ -82,7 +60,7 @@ AnimationFunctionROMSpec IntroDefaultAnimationSpec =
 	false,
 
 	// method to call on function completion
-	NULL,
+	(EventListener)AnimatedEntity_onIntroDefaultAnimationComplete,
 
 	// function's name
 	"Default",
@@ -90,7 +68,6 @@ AnimationFunctionROMSpec IntroDefaultAnimationSpec =
 
 AnimationFunctionROMSpec* const IntroAnimationSpecs[] =
 {
-	(AnimationFunction*)&IntroBlankAnimationSpec,
     (AnimationFunction*)&IntroDefaultAnimationSpec,
     NULL,
 };
@@ -221,5 +198,5 @@ AnimatedEntityROMSpec IntroEntitySpec =
 	(const AnimationFunction**)&IntroAnimationSpecs,
 
 	// initial animation
-	"Blank",
+	"Default",
 };
