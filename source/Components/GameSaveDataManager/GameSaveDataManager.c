@@ -30,7 +30,7 @@ const GameSaveData GameSaveDataDefaults =
 	// base save data
 	{
 		// save stamp
-		__SAVE_DATA_MANAGER_SAVE_STAMP,
+		__PLUGIN_SAVE_DATA_MANAGER_SAVE_STAMP,
 		// checksum
 		0,
 		// active language id

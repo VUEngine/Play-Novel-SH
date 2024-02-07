@@ -1,13 +1,24 @@
 {
-    "plugins": [
-        "vuengine//entities/LocalizedEntity",
-        "vuengine//entities/LowPowerEntity",
-        "vuengine//other/AutomaticPause",
-        "vuengine//other/I18n",
-        "vuengine//other/SaveDataManager",
-        "vuengine//states/splash/AdjustmentScreenNintendo",
-        "vuengine//states/splash/PrecautionScreen",
-        "vuengine//states/splash/SplashScreen"
-    ],
+    "plugins": {
+        "vuengine//entities/LocalizedEntity": {},
+        "vuengine//entities/LowPowerEntity": {
+            "xPosition": 368,
+            "yPosition": 12
+        },
+        "vuengine//other/AutomaticPause": {},
+        "vuengine//other/I18n": {},
+        "vuengine//other/SaveDataManager": {
+            "saveStamp": "SILENTHL"
+        },
+        "vuengine//states/splash/AdjustmentScreenNintendo": {
+            "useLowPowerEntity": true,
+            "lowPowerEntityXPosition": 352,
+            "lowPowerEntityYPosition": 12
+        },
+        "vuengine//states/splash/PrecautionScreen": {
+            "textFont": "Silent"
+        },
+        "vuengine//states/splash/SplashScreen": {}
+    },
     "projectTitle": "Play Novel: Silent Hill"
 }

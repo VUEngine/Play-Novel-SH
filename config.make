@@ -2,7 +2,7 @@
 #                               THIS FILE WAS AUTO-GENERATED - DO NOT EDIT                                #
 ###########################################################################################################
 
-# VUEngine based plugins that the project uses
+# VUEngine plugins which the project uses
 PLUGINS 						= vuengine//entities/LocalizedEntity \
 								  vuengine//entities/LowPowerEntity \
 								  vuengine//other/AutomaticPause \
