@@ -263,8 +263,11 @@
 //                                            SPRITE MANAGEMENT                                            
 //---------------------------------------------------------------------------------------------------------
 
-// total number of layers (basically the number of worlds)
+// total number of WORLDS
 #define __TOTAL_LAYERS												32
+
+// total number of OBJECTS
+#define __TOTAL_OBJECTS												1024
 
 // Account for VIP's design to draw 8 pixel when BGMAP WORLD's height is less than 8
 #define __HACK_BGMAP_SPRITE_HEIGHT
