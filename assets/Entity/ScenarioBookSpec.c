@@ -247,8 +247,8 @@ BgmapSpriteROMSpec* const ScenarioBookSpriteSpecs[] =
 
 PositionedEntityROMSpec ScenarioBookChildrenEntities[] =
 {
-	{&ScenarioBookBlackEntitySpec, {0, 0, 0, 0}, 0, NULL, NULL, NULL, true},
-	{NULL, {0, 0, 0, 0}, 0, NULL, NULL, NULL, true},
+	{&ScenarioBookBlackEntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, true},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, true},
 };
 
 AnimatedEntityROMSpec ScenarioBookEntitySpec =

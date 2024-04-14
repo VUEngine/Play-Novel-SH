@@ -33,25 +33,25 @@ extern SoundSpec EnterLoadGameScreenSoundSpec;
 
 PositionedEntityROMSpec LoadGameScreenStageSpecEntities[] =
 {
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 PositionedEntityROMSpec LoadGameScreenStageSpecUiEntities[] =
 {
-	{&SaveSlotBorderEntitySpec,					{   0, -48,  -1,  0},   0, "CURSOR", NULL, NULL, false},
+	{&SaveSlotBorderEntitySpec,					{   0, -48,  -1}, {0, 0, 0}, {1, 1, 1},   0, "CURSOR", NULL, NULL, false},
 
-	{&SaveSlotWideBackgroundEntitySpec,			{   0, -48,   0,  0},  	0, "SLOT0", NULL, NULL, false},
-	{&SaveSlotWideBackgroundEntitySpec,			{   0,   0,   0,  0},  	0, "SLOT1", NULL, NULL, false},
-	{&SaveSlotWideBackgroundEntitySpec,			{   0,  48,   0,  0},  	0, "SLOT2", NULL, NULL, false},
-	{&SaveSlotWideBackgroundExtraEntitySpec,	{   0,  -8,   0,  0},  	0, "SUBCHPTR", NULL, NULL, false},
+	{&SaveSlotWideBackgroundEntitySpec,			{   0, -48,   0}, {0, 0, 0}, {1, 1, 1},  	0, "SLOT0", NULL, NULL, false},
+	{&SaveSlotWideBackgroundEntitySpec,			{   0,   0,   0}, {0, 0, 0}, {1, 1, 1},  	0, "SLOT1", NULL, NULL, false},
+	{&SaveSlotWideBackgroundEntitySpec,			{   0,  48,   0}, {0, 0, 0}, {1, 1, 1},  	0, "SLOT2", NULL, NULL, false},
+	{&SaveSlotWideBackgroundExtraEntitySpec,	{   0,  -8,   0}, {0, 0, 0}, {1, 1, 1},  	0, "SUBCHPTR", NULL, NULL, false},
 
-	{&SaveSlotLabelEntitySpec,					{-108, -56,  -1,  0},  	0, "LABEL0", NULL, NULL, false},
-	{&SaveSlotLabelEntitySpec,					{-108,  -8,  -1,  0},  	0, "LABEL1", NULL, NULL, false},
-	{&SaveSlotLabelEntitySpec,					{-108,  40,  -1,  0},  	0, "LABEL2", NULL, NULL, false},
+	{&SaveSlotLabelEntitySpec,					{-108, -56,  -1}, {0, 0, 0}, {1, 1, 1},  	0, "LABEL0", NULL, NULL, false},
+	{&SaveSlotLabelEntitySpec,					{-108,  -8,  -1}, {0, 0, 0}, {1, 1, 1},  	0, "LABEL1", NULL, NULL, false},
+	{&SaveSlotLabelEntitySpec,					{-108,  40,  -1}, {0, 0, 0}, {1, 1, 1},  	0, "LABEL2", NULL, NULL, false},
 
-	{&LowPowerIndicatorEntitySpec, 				{ 176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
+	{&LowPowerIndicatorEntitySpec, 				{ 176, -100,  -1}, {0, 0, 0}, {1, 1, 1},	0, NULL, NULL, NULL, false},
 
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 SoundROMSpec* const LoadGameScreenStageSoundSpecs[] =

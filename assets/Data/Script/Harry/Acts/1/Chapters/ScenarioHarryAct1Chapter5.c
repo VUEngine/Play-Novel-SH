@@ -31,8 +31,8 @@ extern SoundSpec TheBeastLurksSoundSpec;
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter5Sub1Scene1Entities[] =
 {
-	{&Scene014EntitySpec, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{&Scene014EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 const struct Choices PlayNovelScenarioHarryAct1Chapter5Sub1Scene1Choices =

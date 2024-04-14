@@ -30,17 +30,17 @@ extern EntitySpec ScenarioBookEntitySpec;
 
 PositionedEntityROMSpec ScenarioSelectScreenStageSpecEntities[] =
 {
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 PositionedEntityROMSpec ScenarioSelectScreenStageSpecUiEntities[] =
 {
-	{&ScenarioSelectBackgroundEntitySpec,	{   0,    0,   0, 0},   0, NULL, NULL, NULL, false},
-	{&ScenarioBookEntitySpec,				{   0,    0,  -1, 0},   0, NULL, NULL, NULL, false},
-	{&LowPowerIndicatorEntitySpec, 			{ 176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
+	{&ScenarioSelectBackgroundEntitySpec,	{   0,    0,   0}, {0, 0, 0}, {1, 1, 1},   0, NULL, NULL, NULL, false},
+	{&ScenarioBookEntitySpec,				{   0,    0,  -1}, {0, 0, 0}, {1, 1, 1},   0, NULL, NULL, NULL, false},
+	{&LowPowerIndicatorEntitySpec, 			{ 176, -100,  -1}, {0, 0, 0}, {1, 1, 1},   0, NULL, NULL, NULL, false},
 	
 
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 

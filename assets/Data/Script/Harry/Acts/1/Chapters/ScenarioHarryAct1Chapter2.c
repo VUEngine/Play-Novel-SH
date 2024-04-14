@@ -29,8 +29,8 @@ extern EntitySpec Scene011EntitySpec;
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter2Sub1Scene1Entities[] =
 {
-	{&Scene011EntitySpec, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{&Scene011EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 const struct Choices PlayNovelScenarioHarryAct1Chapter2Sub1Scene1Choices =

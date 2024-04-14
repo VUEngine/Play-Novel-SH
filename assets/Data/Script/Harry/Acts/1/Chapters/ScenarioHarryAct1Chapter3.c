@@ -29,8 +29,8 @@ extern EntitySpec Scene012EntitySpec;
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter3Sub1Scene1Entities[] =
 {
-	{&Scene012EntitySpec, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{&Scene012EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 

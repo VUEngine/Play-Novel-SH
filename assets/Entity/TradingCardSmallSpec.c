@@ -907,8 +907,8 @@ BgmapSpriteROMSpec* const TradingCardSmallSpriteSpecs[] =
 
 PositionedEntityROMSpec TradingCardSmallChildrenEntities[] =
 {
-	{&TradingCardSmallBlackEntitySpec, {0, 0, 0, 0}, 0, NULL, NULL, NULL, true},
-	{NULL, {0, 0, 0, 0}, 0, NULL, NULL, NULL, true},
+	{&TradingCardSmallBlackEntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, true},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, true},
 };
 
 AnimatedEntityROMSpec TradingCardSmallEntitySpec =

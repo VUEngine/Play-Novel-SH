@@ -25,10 +25,10 @@
 #include <KeypadManager.h>
 #include <Telegram.h>
 #include <VirtualList.h>
-#include <DebugUtilities.h>
 #include <AutomaticPauseManager.h>
 #include <ScenarioSelectScreenState.h>
 #include <VisualNovelState.h>
+#include <Printing.h>
 
 
 //---------------------------------------------------------------------------------------------------------

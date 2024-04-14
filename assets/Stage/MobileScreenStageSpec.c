@@ -28,14 +28,14 @@ extern EntitySpec LowPowerIndicatorEntitySpec;
 
 PositionedEntityROMSpec MobileScreenStageSpecEntities[] =
 {
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 PositionedEntityROMSpec MobileScreenStageSpecUiEntities[] =
 {
-	{&LowPowerIndicatorEntitySpec, 		{ 176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
+	{&LowPowerIndicatorEntitySpec, 		{ 176, -100,  -1}, {0, 0, 0}, {1, 1, 1},	0, NULL, NULL, NULL, false},
 
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 

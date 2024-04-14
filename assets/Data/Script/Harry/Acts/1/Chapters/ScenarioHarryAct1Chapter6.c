@@ -32,8 +32,8 @@ extern SoundSpec MonsterSoundSoundSpec;
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter6Sub1Scene1Entities[] =
 {
-	{&Scene014EntitySpec, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{&Scene014EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 const struct Scene PlayNovelScenarioHarryAct1Chapter6Sub1Scene1 = {
@@ -57,8 +57,8 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter6Sub1Scene1 = {
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter6Sub1Scene2Entities[] =
 {
-	{&Scene015EntitySpec, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{&Scene015EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 const struct BranchingTargets PlayNovelScenarioHarryAct1Chapter6Sub1Scene2BranchingTargets =

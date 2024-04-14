@@ -29,15 +29,15 @@ extern EntitySpec LowPowerIndicatorEntitySpec;
 
 PositionedEntityROMSpec VisualNovelStageSpecEntities[] =
 {
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 PositionedEntityROMSpec VisualNovelStageSpecUiEntities[] =
 {
-	{&FlaurosEntitySpec,					{144,  96,   0,  0},   	0, "FLAUROS", NULL, NULL, true},
-	{&LowPowerIndicatorEntitySpec, 			{368,  12,  -6, -1},	0, NULL, NULL, NULL, false},
+	{&FlaurosEntitySpec,					{144,  96,   0}, {0, 0, 0}, {1, 1, 1}, 0, "FLAUROS", NULL, NULL, true},
+	{&LowPowerIndicatorEntitySpec, 			{368,  12,  -6}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 

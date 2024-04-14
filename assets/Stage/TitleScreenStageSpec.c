@@ -33,19 +33,19 @@ extern EntitySpec LowPowerIndicatorEntitySpec;
 
 PositionedEntityROMSpec TitleScreenStageSpecEntities[] =
 {
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 PositionedEntityROMSpec TitleScreenStageSpecUiEntities[] =
 {
-	{&LogoEntitySpec,							{  0,  -48,   0, 0},   	0, NULL, NULL, NULL, false},
-	{&OptionsMainMenuStartEntitySpec,			{  0,   16,   0, 0},   	0, "Start", NULL, NULL, false},
-	{&OptionsMainMenuTradingCardsEntitySpec,	{  0,   32,   0, 0},   	0, "Cards", NULL, NULL, false},
-	{&OptionsMainMenuMobileEntitySpec,			{  0,   48,   0, 0},   	0, "Mobile", NULL, NULL, false},
-	{&CopyrightEntitySpec,						{  0,   88,   0, 0},   	0, NULL, NULL, NULL, false},
-	{&LowPowerIndicatorEntitySpec, 				{176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
+	{&LogoEntitySpec,							{  0,  -48,   0}, {0, 0, 0}, {1, 1, 1},   	0, NULL, NULL, NULL, false},
+	{&OptionsMainMenuStartEntitySpec,			{  0,   16,   0}, {0, 0, 0}, {1, 1, 1},   	0, "Start", NULL, NULL, false},
+	{&OptionsMainMenuTradingCardsEntitySpec,	{  0,   32,   0}, {0, 0, 0}, {1, 1, 1},   	0, "Cards", NULL, NULL, false},
+	{&OptionsMainMenuMobileEntitySpec,			{  0,   48,   0}, {0, 0, 0}, {1, 1, 1},   	0, "Mobile", NULL, NULL, false},
+	{&CopyrightEntitySpec,						{  0,   88,   0}, {0, 0, 0}, {1, 1, 1},   	0, NULL, NULL, NULL, false},
+	{&LowPowerIndicatorEntitySpec, 				{176, -100,  -1}, {0, 0, 0}, {1, 1, 1},		0, NULL, NULL, NULL, false},
 
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 

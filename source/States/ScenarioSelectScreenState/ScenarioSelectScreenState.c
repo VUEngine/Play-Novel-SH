@@ -22,7 +22,6 @@
 #include <ScenarioSelectScreenState.h>
 #include <ParticleSystem.h>
 #include <KeypadManager.h>
-#include <DebugUtilities.h>
 #include <AutomaticPauseManager.h>
 #include <LoadGameScreenState.h>
 #include <TradingCardsScreenState.h>

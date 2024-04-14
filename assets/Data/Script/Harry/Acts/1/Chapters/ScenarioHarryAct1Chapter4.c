@@ -32,8 +32,8 @@ extern EntitySpec Scene014EntitySpec;
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter4Sub1Scene1Entities[] =
 {
-	{&Scene012EntitySpec, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{&Scene012EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 
@@ -57,9 +57,9 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter4Sub1Scene1 = {
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter4Sub1Scene2Entities[] =
 {
-	{&Scene012EntitySpec, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
-	{&Scene012CherylEntitySpec, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{&Scene012EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene012CherylEntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 
@@ -85,8 +85,8 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter4Sub1Scene2 = {
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter4Sub1Scene3Entities[] =
 {
-	{&Scene012EntitySpec, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{&Scene012EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 const struct Scene PlayNovelScenarioHarryAct1Chapter4Sub1Scene3 = {
@@ -111,8 +111,8 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter4Sub1Scene3 = {
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter4Sub1Scene4Entities[] =
 {
-	{&Scene013EntitySpec, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{&Scene013EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 const struct Scene PlayNovelScenarioHarryAct1Chapter4Sub1Scene4 = {
@@ -136,8 +136,8 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter4Sub1Scene4 = {
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter4Sub1Scene5Entities[] =
 {
-	{&Scene014EntitySpec, {0, 0, 0, 0}, 0, NULL, NULL, NULL, false},
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{&Scene014EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 const struct Scene PlayNovelScenarioHarryAct1Chapter4Sub1Scene5 = {

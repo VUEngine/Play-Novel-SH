@@ -29,15 +29,15 @@ extern EntitySpec MobileSystemLogoEntitySpec;
 
 PositionedEntityROMSpec MobileSystemScreenStageSpecEntities[] =
 {
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 PositionedEntityROMSpec MobileSystemScreenStageSpecUiEntities[] =
 {
-	{&MobileSystemLogoEntitySpec,		{   0,    0,   0, 0},  	0, NULL, NULL, NULL, false},
-	{&LowPowerIndicatorBlackEntitySpec, { 176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
+	{&MobileSystemLogoEntitySpec,		{   0,    0,   0}, {0, 0, 0}, {1, 1, 1},  	0, NULL, NULL, NULL, false},
+	{&LowPowerIndicatorBlackEntitySpec, { 176, -100,  -1}, {0, 0, 0}, {1, 1, 1},	0, NULL, NULL, NULL, false},
 
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 

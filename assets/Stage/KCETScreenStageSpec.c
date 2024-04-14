@@ -29,15 +29,15 @@ extern EntitySpec KCETLogoEntitySpec;
 
 PositionedEntityROMSpec KCETScreenStageSpecEntities[] =
 {
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 PositionedEntityROMSpec KCETScreenStageSpecUiEntities[] =
 {
-	{&KCETLogoEntitySpec,				{   0,    0,   0, 0},  	0, NULL, NULL, NULL, false},
-	{&LowPowerIndicatorBlackEntitySpec, { 176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
+	{&KCETLogoEntitySpec,				{   0,    0,   0}, {0, 0, 0}, {1, 1, 1},  	0, NULL, NULL, NULL, false},
+	{&LowPowerIndicatorBlackEntitySpec, { 176, -100,  -1}, {0, 0, 0}, {1, 1, 1},	0, NULL, NULL, NULL, false},
 
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 

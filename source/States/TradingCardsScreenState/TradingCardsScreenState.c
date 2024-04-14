@@ -20,9 +20,9 @@
 #include <Languages.h>
 #include <PhysicalWorld.h>
 #include <TradingCardsScreenState.h>
+#include <Printing.h>
 #include <ParticleSystem.h>
 #include <KeypadManager.h>
-#include <DebugUtilities.h>
 #include <AutomaticPauseManager.h>
 #include <TradingCardsManager.h>
 #include <TitleScreenState.h>

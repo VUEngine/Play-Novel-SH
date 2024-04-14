@@ -30,15 +30,15 @@ extern SoundSpec IntroSoundSpec;
 
 PositionedEntityROMSpec IntroScreenStageSpecEntities[] =
 {
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 PositionedEntityROMSpec IntroScreenStageSpecUiEntities[] =
 {
-	{&IntroEntitySpec,					{	0, 	  0,   0, 0},  	0, "VIDEO", NULL, NULL, false},
-	{&LowPowerIndicatorEntitySpec, 		{ 176, -100,  -1, 0},	0, NULL, NULL, NULL, false},
+	{&IntroEntitySpec,					{	0, 	  0,   0}, {0, 0, 0}, {1, 1, 1},  	0, "VIDEO", NULL, NULL, false},
+	{&LowPowerIndicatorEntitySpec, 		{ 176, -100,  -1}, {0, 0, 0}, {1, 1, 1},	0, NULL, NULL, NULL, false},
 
-	{NULL, {0,0,0,0}, 0, NULL, NULL, NULL, false},
+	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
 SoundROMSpec* const IntroScreenStageSoundSpecs[] =
