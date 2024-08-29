@@ -4250,7 +4250,7 @@ SoundChannelROM EnteringOtherWorldSoundChannel =
 	// Configuration
 	(SoundChannelConfiguration*) &EnteringOtherWorldSoundChannelConfiguration,
 
-	/// Total number of samples
+	// Total number of samples
 	EnteringOtherWorldSoundTrackLength,
 
 	// Sound track
@@ -4270,13 +4270,13 @@ SoundChannelROM* const EnteringOtherWorldSoundChannels[] =
 SoundROMSpec EnteringOtherWorldSoundSpec =
 {
 	// Name
-	"Entering Other World",
+	"EnteringOtherWorld",
 
 	// Play in loop
 	false,
 
 	// Target timer resolution in us
-	0,
+	100,
 
 	// Tracks
 	(SoundChannel**)EnteringOtherWorldSoundChannels

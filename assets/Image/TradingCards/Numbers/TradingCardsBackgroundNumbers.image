@@ -5,12 +5,19 @@
         "individualFiles": true,
         "isAnimation": true
     },
+    "colorMode": 0,
     "files": [
-        "assets/Image/TradingCards/Numbers/TradingCardsBackgroundNumbers1.png",
-        "assets/Image/TradingCards/Numbers/TradingCardsBackgroundNumbers2.png",
-        "assets/Image/TradingCards/Numbers/TradingCardsBackgroundNumbers3.png",
-        "assets/Image/TradingCards/Numbers/TradingCardsBackgroundNumbers4.png"
+        "TradingCardsBackgroundNumbers1.png",
+        "TradingCardsBackgroundNumbers2.png",
+        "TradingCardsBackgroundNumbers3.png",
+        "TradingCardsBackgroundNumbers4.png"
     ],
+    "imageProcessingSettings": {
+        "distanceCalculator": "euclidean",
+        "imageQuantizationAlgorithm": "nearest",
+        "minimumColorDistanceToDither": 0,
+        "serpentine": false
+    },
     "map": {
         "compression": "none",
         "generate": true,

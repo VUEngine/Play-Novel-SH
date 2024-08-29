@@ -43,7 +43,7 @@ AnimationFunctionROMSpec FlaurosDefaultAnimationSpec =
 	},
 
 	// number of cycles a frame of animation is displayed
-	8,
+	4,
 
 	// whether to play it in loop or not
 	true,

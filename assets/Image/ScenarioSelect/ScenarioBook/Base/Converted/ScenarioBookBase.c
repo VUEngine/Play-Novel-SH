@@ -4,11 +4,11 @@
 //	* 357 tiles, reduced by non-unique and flipped tiles, not compressed
 //	* 13x16 map, not compressed
 //	* 2 animation frames, individual files, largest frame: 204 tiles
-//	Size: 5716 + 832 = 6548
+//	Size: 5716 + 832 = 6548 byte
 //
 //---------------------------------------------------------------------------------------------------------
 
-const uint32 ScenarioBookBaseTiles[1429] __attribute__((aligned(4))) =
+const uint32 ScenarioBookBaseTiles[] __attribute__((aligned(4))) =
 {
 	0x00000000,
 	0x00000000,0x44005000,0x44005400,0x44005400,0x00000000,0x04441555,0x55555555,0x45155515,
@@ -192,7 +192,7 @@ const uint32 ScenarioBookBaseTiles[1429] __attribute__((aligned(4))) =
 	0x6A9A6969,0x6AA96AA9,0x55556AA9,0x00000000,
 };
 
-const uint16 ScenarioBookBaseMap[416] __attribute__((aligned(4))) =
+const uint16 ScenarioBookBaseMap[] __attribute__((aligned(4))) =
 {
 	0x0000,0x0001,0x0002,0x0003,0x0004,0x0005,0x0006,0x0007,
 	0x0008,0x0009,0x000A,0x000B,0x000C,0x000D,0x000E,0x000F,
@@ -248,7 +248,7 @@ const uint16 ScenarioBookBaseMap[416] __attribute__((aligned(4))) =
 	0x0091,0x0092,0x0093,0x0094,0x0095,0x0096,0x0097,0x0098,
 };
 
-const uint32 ScenarioBookBaseTilesFrameOffsets[2] __attribute__((aligned(4))) =
+const uint32 ScenarioBookBaseTilesFrameOffsets[] __attribute__((aligned(4))) =
 {
 	0x00000001,0x00000331,
 };

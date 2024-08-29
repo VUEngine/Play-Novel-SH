@@ -5,9 +5,16 @@
         "individualFiles": false,
         "isAnimation": true
     },
+    "colorMode": 0,
     "files": [
-        "assets/Image/LoadGame/SaveSlotBorder/SaveSlotBorder.png"
+        "SaveSlotBorder.png"
     ],
+    "imageProcessingSettings": {
+        "distanceCalculator": "euclidean",
+        "imageQuantizationAlgorithm": "nearest",
+        "minimumColorDistanceToDither": 0,
+        "serpentine": false
+    },
     "map": {
         "compression": "none",
         "generate": true,

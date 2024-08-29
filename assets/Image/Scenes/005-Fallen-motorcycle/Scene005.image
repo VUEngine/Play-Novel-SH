@@ -5,10 +5,17 @@
         "individualFiles": false,
         "isAnimation": false
     },
+    "colorMode": 0,
     "files": [
-        "assets/Image/Scenes/005-Fallen-motorcycle/Scene005Base.png",
-        "assets/Image/Scenes/005-Fallen-motorcycle/Scene005Overlay.png"
+        "Scene005Base.png",
+        "Scene005Overlay.png"
     ],
+    "imageProcessingSettings": {
+        "distanceCalculator": "euclidean",
+        "imageQuantizationAlgorithm": "nearest",
+        "minimumColorDistanceToDither": 0,
+        "serpentine": false
+    },
     "map": {
         "compression": "none",
         "generate": true,

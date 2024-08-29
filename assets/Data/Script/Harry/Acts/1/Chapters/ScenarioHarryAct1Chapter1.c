@@ -71,7 +71,7 @@ const struct SubChapter PlayNovelScenarioHarryAct1Chapter1Sub1 = {
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter1Sub2Scene1Entities[] =
 {
-	{&Scene009EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, NULL, NULL, NULL, false},
+	{&Scene009EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
@@ -98,7 +98,7 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter1Sub2Scene1 = {
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter1Sub2Scene2Entities[] =
 {
-	{&Scene010EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, NULL, NULL, NULL, false},
+	{&Scene010EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
@@ -135,7 +135,7 @@ const struct SubChapter PlayNovelScenarioHarryAct1Chapter1Sub2 = {
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter1Sub3Scene1Entities[] =
 {
-	{&Scene010EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, NULL, NULL, NULL, false},
+	{&Scene010EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
@@ -162,7 +162,7 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter1Sub3Scene1 = {
 
 PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter1Sub3Scene2Entities[] =
 {
-	{&Scene011EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, NULL, NULL, NULL, false},
+	{&Scene011EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 

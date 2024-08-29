@@ -5,9 +5,16 @@
         "individualFiles": false,
         "isAnimation": false
     },
+    "colorMode": 0,
     "files": [
-        "assets/Image/TradingCards/Small/Black/TradingCardSmallBlack.png"
+        "TradingCardSmallBlack.png"
     ],
+    "imageProcessingSettings": {
+        "distanceCalculator": "euclidean",
+        "imageQuantizationAlgorithm": "nearest",
+        "minimumColorDistanceToDither": 0,
+        "serpentine": false
+    },
     "map": {
         "compression": "none",
         "generate": true,

@@ -5,10 +5,17 @@
         "individualFiles": false,
         "isAnimation": false
     },
+    "colorMode": 0,
     "files": [
-        "assets/Image/Scenes/007-Harry-trying-to-pull-jeep-around/Scene007Base.png",
-        "assets/Image/Scenes/007-Harry-trying-to-pull-jeep-around/Scene007Overlay.png"
+        "Scene007Base.png",
+        "Scene007Overlay.png"
     ],
+    "imageProcessingSettings": {
+        "distanceCalculator": "euclidean",
+        "imageQuantizationAlgorithm": "nearest",
+        "minimumColorDistanceToDither": 0,
+        "serpentine": false
+    },
     "map": {
         "compression": "none",
         "generate": true,

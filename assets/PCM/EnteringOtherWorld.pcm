@@ -4,5 +4,5 @@
     "name": "Entering Other World",
     "range": 3,
     "section": "rom",
-    "sourceFile": "assets/PCM/Source/EnteringOtherWorld.wav"
+    "sourceFile": "Source/EnteringOtherWorld.wav"
 }

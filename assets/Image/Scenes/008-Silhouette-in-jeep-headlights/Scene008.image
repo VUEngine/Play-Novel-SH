@@ -5,10 +5,17 @@
         "individualFiles": false,
         "isAnimation": false
     },
+    "colorMode": 0,
     "files": [
-        "assets/Image/Scenes/008-Silhouette-in-jeep-headlights/Scene008Base.png",
-        "assets/Image/Scenes/008-Silhouette-in-jeep-headlights/Scene008Overlay.png"
+        "Scene008Base.png",
+        "Scene008Overlay.png"
     ],
+    "imageProcessingSettings": {
+        "distanceCalculator": "euclidean",
+        "imageQuantizationAlgorithm": "nearest",
+        "minimumColorDistanceToDither": 0,
+        "serpentine": false
+    },
     "map": {
         "compression": "none",
         "generate": true,

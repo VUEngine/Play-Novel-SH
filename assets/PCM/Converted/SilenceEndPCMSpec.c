@@ -9110,7 +9110,7 @@ SoundChannelROM SilenceEndSoundChannel =
 	// Configuration
 	(SoundChannelConfiguration*) &SilenceEndSoundChannelConfiguration,
 
-	/// Total number of samples
+	// Total number of samples
 	SilenceEndSoundTrackLength,
 
 	// Sound track
@@ -9130,13 +9130,13 @@ SoundChannelROM* const SilenceEndSoundChannels[] =
 SoundROMSpec SilenceEndSoundSpec =
 {
 	// Name
-	"Silence End",
+	"SilenceEnd",
 
 	// Play in loop
 	true,
 
 	// Target timer resolution in us
-	0,
+	100,
 
 	// Tracks
 	(SoundChannel**)SilenceEndSoundChannels

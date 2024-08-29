@@ -5,12 +5,19 @@
         "individualFiles": false,
         "isAnimation": false
     },
+    "colorMode": 0,
     "files": [
-        "assets/Image/Scenes/012-Street-corner-heavy-fog/Scene012Base.png",
-        "assets/Image/Scenes/012-Street-corner-heavy-fog/Scene012CherylBase.png",
-        "assets/Image/Scenes/012-Street-corner-heavy-fog/Scene012CherylOverlay.png",
-        "assets/Image/Scenes/012-Street-corner-heavy-fog/Scene012Overlay.png"
+        "Scene012Base.png",
+        "Scene012CherylBase.png",
+        "Scene012CherylOverlay.png",
+        "Scene012Overlay.png"
     ],
+    "imageProcessingSettings": {
+        "distanceCalculator": "euclidean",
+        "imageQuantizationAlgorithm": "nearest",
+        "minimumColorDistanceToDither": 0,
+        "serpentine": false
+    },
     "map": {
         "compression": "none",
         "generate": true,

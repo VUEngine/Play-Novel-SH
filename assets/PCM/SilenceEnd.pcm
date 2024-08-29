@@ -4,5 +4,5 @@
     "name": "Silence End",
     "range": 3,
     "section": "rom",
-    "sourceFile": "assets/PCM/Source/SilenceEnd.wav"
+    "sourceFile": "Source/SilenceEnd.wav"
 }

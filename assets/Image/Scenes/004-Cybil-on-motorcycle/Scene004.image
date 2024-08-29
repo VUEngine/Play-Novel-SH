@@ -5,10 +5,17 @@
         "individualFiles": false,
         "isAnimation": false
     },
+    "colorMode": 0,
     "files": [
-        "assets/Image/Scenes/004-Cybil-on-motorcycle/Scene004Base.png",
-        "assets/Image/Scenes/004-Cybil-on-motorcycle/Scene004Overlay.png"
+        "Scene004Base.png",
+        "Scene004Overlay.png"
     ],
+    "imageProcessingSettings": {
+        "distanceCalculator": "euclidean",
+        "imageQuantizationAlgorithm": "nearest",
+        "minimumColorDistanceToDither": 0,
+        "serpentine": false
+    },
     "map": {
         "compression": "none",
         "generate": true,

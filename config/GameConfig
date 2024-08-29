@@ -11,9 +11,9 @@
             "saveStamp": "SILENTHL"
         },
         "vuengine//states/splash/AdjustmentScreenNintendo": {
-            "useLowPowerEntity": true,
             "lowPowerEntityXPosition": 352,
-            "lowPowerEntityYPosition": 12
+            "lowPowerEntityYPosition": 12,
+            "useLowPowerEntity": true
         },
         "vuengine//states/splash/PrecautionScreen": {
             "textFont": "Silent"

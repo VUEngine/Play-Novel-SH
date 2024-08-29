@@ -1800,7 +1800,7 @@ SoundChannelROM MonsterSoundSoundChannel =
 	// Configuration
 	(SoundChannelConfiguration*) &MonsterSoundSoundChannelConfiguration,
 
-	/// Total number of samples
+	// Total number of samples
 	MonsterSoundSoundTrackLength,
 
 	// Sound track
@@ -1822,13 +1822,13 @@ SoundChannelROM* const MonsterSoundSoundChannels[] =
 SoundROMSpec MonsterSoundSoundSpec =
 {
 	// Name
-	"Monster Sound",
+	"MonsterSound",
 
 	// Play in loop
 	false,
 
 	// Target timer resolution in us
-	0,
+	100,
 
 	// Tracks
 	(SoundChannel**)MonsterSoundSoundChannels

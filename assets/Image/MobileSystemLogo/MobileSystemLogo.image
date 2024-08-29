@@ -5,10 +5,17 @@
         "individualFiles": false,
         "isAnimation": false
     },
+    "colorMode": 0,
     "files": [
-        "assets/Image/MobileSystemLogo/MobileSystemLogoA.png",
-        "assets/Image/MobileSystemLogo/MobileSystemLogoB.png"
+        "MobileSystemLogoA.png",
+        "MobileSystemLogoB.png"
     ],
+    "imageProcessingSettings": {
+        "distanceCalculator": "euclidean",
+        "imageQuantizationAlgorithm": "nearest",
+        "minimumColorDistanceToDither": 0,
+        "serpentine": false
+    },
     "map": {
         "compression": "none",
         "generate": true,

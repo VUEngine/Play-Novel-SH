@@ -5,10 +5,17 @@
         "individualFiles": false,
         "isAnimation": false
     },
+    "colorMode": 0,
     "files": [
-        "assets/Image/Scenes/011-Harry-in-front-of-wrecked-jeep/Scene011Base.png",
-        "assets/Image/Scenes/011-Harry-in-front-of-wrecked-jeep/Scene011Overlay.png"
+        "Scene011Base.png",
+        "Scene011Overlay.png"
     ],
+    "imageProcessingSettings": {
+        "distanceCalculator": "euclidean",
+        "imageQuantizationAlgorithm": "nearest",
+        "minimumColorDistanceToDither": 0,
+        "serpentine": false
+    },
     "map": {
         "compression": "none",
         "generate": true,

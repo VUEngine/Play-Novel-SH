@@ -56,7 +56,7 @@ AnimationFunctionROMSpec IntroDefaultAnimationSpec =
 	},
 
 	// number of cycles a frame of animation is displayed
-	5,
+	3,
 
 	// whether to play it in loop or not
 	false,

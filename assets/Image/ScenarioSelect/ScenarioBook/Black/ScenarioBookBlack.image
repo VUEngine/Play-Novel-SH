@@ -1,23 +1,32 @@
 {
     "_id": "SpdiV3fCOfj6NMfl",
-    "files": [],
-    "name": "",
-    "section": "rom",
-    "tileset": {
-        "shared": false,
-        "compression": "none"
+    "animation": {
+        "frames": 0,
+        "individualFiles": false,
+        "isAnimation": false
+    },
+    "colorMode": 0,
+    "files": [
+        "ScenarioBookBlack.png"
+    ],
+    "imageProcessingSettings": {
+        "distanceCalculator": "euclidean",
+        "imageQuantizationAlgorithm": "nearest",
+        "minimumColorDistanceToDither": 0,
+        "serpentine": false
     },
     "map": {
+        "compression": "none",
         "generate": true,
         "reduce": {
             "flipped": true,
             "unique": true
-        },
-        "compression": "none"
+        }
     },
-    "animation": {
-        "isAnimation": false,
-        "individualFiles": false,
-        "frames": 0
+    "name": "ScenarioBookBlack",
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": false
     }
 }

@@ -5,11 +5,18 @@
         "individualFiles": false,
         "isAnimation": false
     },
+    "colorMode": 0,
     "files": [
-        "assets/Image/Scenes/002-Harry-in-Jeep/Scene002Base.png",
-        "assets/Image/Scenes/002-Harry-in-Jeep/Scene002Highlight.png",
-        "assets/Image/Scenes/002-Harry-in-Jeep/Scene002Overlay.png"
+        "Scene002Base.png",
+        "Scene002Highlight.png",
+        "Scene002Overlay.png"
     ],
+    "imageProcessingSettings": {
+        "distanceCalculator": "euclidean",
+        "imageQuantizationAlgorithm": "nearest",
+        "minimumColorDistanceToDither": 0,
+        "serpentine": false
+    },
     "map": {
         "compression": "none",
         "generate": true,

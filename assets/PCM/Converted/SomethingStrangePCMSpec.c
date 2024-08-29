@@ -1475,7 +1475,7 @@ SoundChannelROM SomethingStrangeSoundChannel =
 	// Configuration
 	(SoundChannelConfiguration*) &SomethingStrangeSoundChannelConfiguration,
 
-	/// Total number of samples
+	// Total number of samples
 	SomethingStrangeSoundTrackLength,
 
 	// Sound track
@@ -1496,13 +1496,13 @@ SoundChannelROM* const SomethingStrangeSoundChannels[] =
 SoundROMSpec SomethingStrangeSoundSpec =
 {
 	// Name
-	"Something Strange",
+	"SomethingStrange",
 
 	// Play in loop
 	false,
 
 	// Target timer resolution in us
-	0,
+	100,
 
 	// Tracks
 	(SoundChannel**)SomethingStrangeSoundChannels

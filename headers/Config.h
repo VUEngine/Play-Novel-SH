@@ -111,9 +111,17 @@
 
 // Sort the wireframes based on their distance to the camera to cull off those that are far off if necessary.
 #define __WIREFRAME_MANAGER_SORT_FOR_DRAWING
-
 // The distance to start interlacing wireframe graphics.
 #define __DIRECT_DRAW_INTERLACED_THRESHOLD							__PIXELS_TO_METERS(4096)  
+
+// Threshold before shriking lines
+#define __DIRECT_DRAW_LINE_SHRINKING_PADDING						0 
+
+// Frustum extension power for line shriking checks
+#define __DIRECT_DRAW_FRUSTUM_EXTENSION_POWER						0 
+
+// Optimize the drawing of vertical lines
+#undef __DIRECT_DRAW_OPTIMIZED_VERTICAL_LINES
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -163,10 +171,6 @@
 //---------------------------------------------------------------------------------------------------------
 //                                           FRAME RATE CONTROL                                            
 //---------------------------------------------------------------------------------------------------------
-
-// when defined, the engine skips to the next game frame when the VIP's GAMESTART interrupt is fired
-// beforethe current game frame is done
-#undef __FORCE_VIP_SYNC
 
 // timer resolution
 #define __TIMER_RESOLUTION											10
@@ -269,6 +273,9 @@
 // total number of OBJECTS
 #define __TOTAL_OBJECTS												1024
 
+// sprites rotation in 3D
+#undef __SPRITE_ROTATE_IN_3D
+
 // Account for VIP's design to draw 8 pixel when BGMAP WORLD's height is less than 8
 #define __HACK_BGMAP_SPRITE_HEIGHT
 
@@ -323,7 +330,7 @@
 #define __PHYSICS_TIME_ELAPSED_DIVISOR								1
 
 // define to use fix7.9 computation on Body's direction
-#undef 		__PHYSICS_HIGH_PRECISION
+#undef __PHYSICS_HIGH_PRECISION
 
 // thresholds to stop bodies
 #define __STOP_VELOCITY_THRESHOLD									__PIXELS_TO_METERS(8)
@@ -376,15 +383,15 @@
 #define __PRINTING_PALETTE											0
 
 // default palette values, actual values are set in stage specs
-#define __BGMAP_PALETTE_0											0xE4
-#define __BGMAP_PALETTE_1											0xE0
-#define __BGMAP_PALETTE_2											0x90
-#define __BGMAP_PALETTE_3											0x40
+#define __BGMAP_PALETTE_0											0xE4 // 11100100
+#define __BGMAP_PALETTE_1											0xE0 // 11100000
+#define __BGMAP_PALETTE_2											0x90 // 10010000
+#define __BGMAP_PALETTE_3											0x40 // 01000000
 
-#define __OBJECT_PALETTE_0											0xE4
-#define __OBJECT_PALETTE_1											0xE0
-#define __OBJECT_PALETTE_2											0x90
-#define __OBJECT_PALETTE_3											0x50
+#define __OBJECT_PALETTE_0											0xE4 // 11100100
+#define __OBJECT_PALETTE_1											0xE0 // 11100000
+#define __OBJECT_PALETTE_2											0x90 // 10010000
+#define __OBJECT_PALETTE_3											0x50 // 01010000
 
 
 //---------------------------------------------------------------------------------------------------------

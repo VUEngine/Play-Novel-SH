@@ -647,7 +647,7 @@ SoundChannelROM CarEngineSoundChannel =
 	// Configuration
 	(SoundChannelConfiguration*) &CarEngineSoundChannelConfiguration,
 
-	/// Total number of samples
+	// Total number of samples
 	CarEngineSoundTrackLength,
 
 	// Sound track
@@ -665,13 +665,13 @@ SoundChannelROM* const CarEngineSoundChannels[] =
 SoundROMSpec CarEngineSoundSpec =
 {
 	// Name
-	"Car Engine",
+	"CarEngine",
 
 	// Play in loop
 	true,
 
 	// Target timer resolution in us
-	0,
+	100,
 
 	// Tracks
 	(SoundChannel**)CarEngineSoundChannels

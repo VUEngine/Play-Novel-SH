@@ -19,10 +19,6 @@ enum LanguageIdentifiers
 enum LanguageStrings
 {
     kStringAutomaticPauseBody,
-    kStringAutomaticPauseSelectionBody,
-    kStringAutomaticPauseSelectionOff,
-    kStringAutomaticPauseSelectionOn,
-    kStringAutomaticPauseSelectionTitle,
     kStringAutomaticPauseTitle,
     kStringContinue,
     kStringDeleteData,
