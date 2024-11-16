@@ -55,7 +55,7 @@ void TitleScreenState::enter(void* owner)
 	Base::enter(this, owner);
 
 	// load stage
-	GameState::loadStage(GameState::safeCast(this), (StageSpec*)&TitleScreenStageSpec, NULL, true, false);
+	GameState::loadStage(GameState::safeCast(this), (StageSpec*)&TitleScreenStageSpec, NULL);
 
 	// start clocks to start animations
 	GameState::startClocks(GameState::safeCast(this));

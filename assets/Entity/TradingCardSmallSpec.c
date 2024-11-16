@@ -802,7 +802,7 @@ BgmapSpriteROMSpec TradingCardSmallBaseSpriteSpec =
 		// texture spec
 		(TextureSpec*)&TradingCardSmallBaseTextureSpec,
 
-		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
 
 		// displacement
@@ -880,7 +880,7 @@ BgmapSpriteROMSpec TradingCardSmallOverlaySpriteSpec =
 		// texture spec
 		(TextureSpec*)&TradingCardSmallOverlayTextureSpec,
 
-		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_EVEN,
 
 		// displacement

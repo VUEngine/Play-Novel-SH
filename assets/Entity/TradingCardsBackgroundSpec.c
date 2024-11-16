@@ -89,7 +89,7 @@ BgmapSpriteROMSpec TradingCardsBackgroundSpriteSpec =
 		// texture spec
 		(TextureSpec*)&TradingCardsBackgroundTextureSpec,
 
-		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
 
 		// displacement
@@ -167,7 +167,7 @@ BgmapSpriteROMSpec TradingCardsBackgroundSpineSpriteSpec =
 		// texture spec
 		(TextureSpec*)&TradingCardsBackgroundSpineTextureSpec,
 
-		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
 
 		// displacement

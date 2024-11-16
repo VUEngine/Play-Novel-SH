@@ -69,7 +69,7 @@ BgmapSpriteROMSpec Scene002HighlightSpriteSpec =
 		// texture spec
 		(TextureSpec*)&Scene002HighlightTextureSpec,
 
-		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
 
 		// displacement

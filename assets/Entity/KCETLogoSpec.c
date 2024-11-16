@@ -88,7 +88,7 @@ BgmapSpriteROMSpec KCETLogoASpriteSpec =
 		// texture spec
 		(TextureSpec*)&KCETLogoATextureSpec,
 
-		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
 
 		// displacement
@@ -148,7 +148,7 @@ BgmapSpriteROMSpec KCETLogoBSpriteSpec =
 		// texture spec
 		(TextureSpec*)&KCETLogoBTextureSpec,
 
-		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
 
 		// displacement

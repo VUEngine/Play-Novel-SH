@@ -97,7 +97,7 @@ BgmapSpriteROMSpec Scene009BackgroundBaseSpriteSpec =
 		// texture spec
 		(TextureSpec*)&Scene009BackgroundBaseTextureSpec,
 
-		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
 
 		// displacement
@@ -157,7 +157,7 @@ BgmapSpriteROMSpec Scene009BackgroundOverlaySpriteSpec =
 		// texture spec
 		(TextureSpec*)&Scene009BackgroundOverlayTextureSpec,
 
-		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_EVEN,
 
 		// displacement
@@ -225,7 +225,7 @@ AutoScrollingMBgmapSpriteROMSpec Scene009Snow1SpriteSpec =
 				// texture spec
 				(TextureSpec*)NULL,
 
-				// transparent
+				// transparency
 				__TRANSPARENCY_NONE,
 
 				// displacement
@@ -317,7 +317,7 @@ AutoScrollingMBgmapSpriteROMSpec Scene009Snow2SpriteSpec =
 				// texture spec
 				(TextureSpec*)NULL,
 
-				// transparent
+				// transparency
 				__TRANSPARENCY_NONE,
 
 				// displacement
@@ -401,7 +401,7 @@ BgmapSpriteROMSpec Scene009CarInteriorSpriteSpec =
 		// texture spec
 		(TextureSpec*)&Scene009CarInteriorTextureSpec,
 
-		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
 
 		// displacement
@@ -461,7 +461,7 @@ BgmapSpriteROMSpec Scene009SeatSpriteSpec =
 		// texture spec
 		(TextureSpec*)&Scene009SeatTextureSpec,
 
-		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
 
 		// displacement
@@ -521,7 +521,7 @@ BgmapSpriteROMSpec Scene009HarryBlackSpriteSpec =
 		// texture spec
 		(TextureSpec*)&Scene009HarryBlackTextureSpec,
 
-		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
 
 		// displacement
@@ -581,7 +581,7 @@ BgmapSpriteROMSpec Scene009HarryBaseSpriteSpec =
 		// texture spec
 		(TextureSpec*)&Scene009HarryBaseTextureSpec,
 
-		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
 
 		// displacement
@@ -641,7 +641,7 @@ BgmapSpriteROMSpec Scene009HarryOverlaySpriteSpec =
 		// texture spec
 		(TextureSpec*)&Scene009HarryOverlayTextureSpec,
 
-		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_EVEN,
 
 		// displacement
@@ -701,7 +701,7 @@ BgmapSpriteROMSpec Scene009SteeringWheelSpriteSpec =
 		// texture spec
 		(TextureSpec*)&Scene009SteeringWheelTextureSpec,
 
-		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
 
 		// displacement
@@ -761,7 +761,7 @@ BgmapSpriteROMSpec Scene009FrameSpriteSpec =
 		// texture spec
 		(TextureSpec*)&Scene009FrameTextureSpec,
 
-		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
 
 		// displacement

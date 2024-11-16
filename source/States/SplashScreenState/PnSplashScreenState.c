@@ -43,7 +43,7 @@ void PnSplashScreenState::enter(void* owner)
 
 	if(this->stageSpec)
 	{
-		PnSplashScreenState::loadStage(this, this->stageSpec, NULL, true, false);
+		PnSplashScreenState::loadStage(this, this->stageSpec, NULL);
 	}
 
 	PnSplashScreenState::print(this);

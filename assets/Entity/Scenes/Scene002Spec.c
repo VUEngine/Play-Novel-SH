@@ -88,7 +88,7 @@ BgmapSpriteROMSpec Scene002BaseSpriteSpec =
 		// texture spec
 		(TextureSpec*)&Scene002BaseTextureSpec,
 
-		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
 
 		// displacement
@@ -148,7 +148,7 @@ BgmapSpriteROMSpec Scene002OverlaySpriteSpec =
 		// texture spec
 		(TextureSpec*)&Scene002OverlayTextureSpec,
 
-		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_EVEN,
 
 		// displacement

@@ -415,7 +415,7 @@ _html2canvas.Util.Children = function( elem ) {
 };
 
 _html2canvas.Util.isTransparent = function(backgroundColor) {
-  return (backgroundColor === "transparent" || backgroundColor === "rgba(0, 0, 0, 0)");
+  return (backgroundColor === "transparency" || backgroundColor === "rgba(0, 0, 0, 0)");
 };
 _html2canvas.Util.Font = (function () {
 
@@ -1072,7 +1072,7 @@ _html2canvas.Parse = function (images, options) {
   }
 
   function renderRect (ctx, x, y, w, h, bgcolor) {
-    if (bgcolor !== "transparent"){
+    if (bgcolor !== "transparency"){
       ctx.setVariable("fillStyle", bgcolor);
       ctx.fillRect(x, y, w, h);
       numDraws+=1;
@@ -1747,7 +1747,7 @@ _html2canvas.Parse = function (images, options) {
   }
 
   function renderBorders(ctx, borderArgs, color) {
-    if (color !== "transparent") {
+    if (color !== "transparency") {
       ctx.setVariable( "fillStyle", color);
       createCollider(ctx, borderArgs);
       ctx.fill();

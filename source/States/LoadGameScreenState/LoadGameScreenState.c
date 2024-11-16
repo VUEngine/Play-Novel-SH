@@ -58,7 +58,7 @@ void LoadGameScreenState::enter(void* owner)
 {
 	Base::enter(this, owner);
 
-	GameState::loadStage(GameState::safeCast(this), (StageSpec*)&LoadGameScreenStageSpec, NULL, true, false);
+	GameState::loadStage(GameState::safeCast(this), (StageSpec*)&LoadGameScreenStageSpec, NULL);
 	SplashScreenState::setNextState(SplashScreenState::safeCast(this), GameState::safeCast(ScenarioSelectScreenState::getInstance()));
 
 	GameState::startClocks(GameState::safeCast(this));

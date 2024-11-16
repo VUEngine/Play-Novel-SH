@@ -121,7 +121,7 @@ BgmapSpriteROMSpec FlaurosBlackSpriteSpec =
 		// texture spec
 		(TextureSpec*)&FlaurosBlackTextureSpec,
 
-		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
 
 		// displacement
@@ -199,7 +199,7 @@ BgmapSpriteROMSpec FlaurosBaseSpriteSpec =
 		// texture spec
 		(TextureSpec*)&FlaurosBaseTextureSpec,
 
-		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
 
 		// displacement
@@ -277,7 +277,7 @@ BgmapSpriteROMSpec FlaurosOverlaySpriteSpec =
 		// texture spec
 		(TextureSpec*)&FlaurosOverlayTextureSpec,
 
-		// transparent (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_EVEN,
 
 		// displacement

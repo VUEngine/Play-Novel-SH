@@ -55,7 +55,7 @@ void TradingCardsScreenState::enter(void* owner)
 	Base::enter(this, owner);
 
 	// load stage
-	GameState::loadStage(GameState::safeCast(this), (StageSpec*)&TradingCardsScreenStageSpec, NULL, true, false);
+	GameState::loadStage(GameState::safeCast(this), (StageSpec*)&TradingCardsScreenStageSpec, NULL);
 
 	// set next state
 	SplashScreenState::setNextState(SplashScreenState::safeCast(this), GameState::safeCast(TitleScreenState::getInstance()));
