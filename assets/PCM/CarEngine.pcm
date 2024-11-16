@@ -4,5 +4,5 @@
     "name": "Car Engine",
     "range": 1,
     "section": "rom",
-    "sourceFile": "assets/PCM/Source/CarEngine.wav"
+    "sourceFile": "Source/CarEngine.wav"
 }

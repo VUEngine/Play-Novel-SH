@@ -5,19 +5,26 @@
         "individualFiles": false,
         "isAnimation": false
     },
+    "colorMode": 0,
     "files": [
-        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009BackgroundBase.png",
-        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009BackgroundOverlay.png",
-        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009CarInterior.png",
-        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009Frame.png",
-        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009HarryBase.png",
-        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009HarryBlack.png",
-        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009HarryOverlay.png",
-        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009Seat.png",
-        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009Snow1.png",
-        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009Snow2.png",
-        "assets/Image/Scenes/009-Harry-in-wrecked-jeep/Scene009SteeringWheel.png"
+        "Scene009BackgroundBase.png",
+        "Scene009BackgroundOverlay.png",
+        "Scene009CarInterior.png",
+        "Scene009Frame.png",
+        "Scene009HarryBase.png",
+        "Scene009HarryBlack.png",
+        "Scene009HarryOverlay.png",
+        "Scene009Seat.png",
+        "Scene009Snow1.png",
+        "Scene009Snow2.png",
+        "Scene009SteeringWheel.png"
     ],
+    "imageProcessingSettings": {
+        "distanceCalculator": "euclidean",
+        "imageQuantizationAlgorithm": "nearest",
+        "minimumColorDistanceToDither": 0,
+        "serpentine": false
+    },
     "map": {
         "compression": "none",
         "generate": true,

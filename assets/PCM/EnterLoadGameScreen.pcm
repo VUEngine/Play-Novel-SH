@@ -4,5 +4,5 @@
     "name": "Enter Load Game Screen",
     "range": 1,
     "section": "rom",
-    "sourceFile": "assets/PCM/Source/StartSound.wav"
+    "sourceFile": "Source/StartSound.wav"
 }

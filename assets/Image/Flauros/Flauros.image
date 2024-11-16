@@ -5,11 +5,18 @@
         "individualFiles": false,
         "isAnimation": true
     },
+    "colorMode": 0,
     "files": [
-        "assets/Image/Flauros/FlaurosBase.png",
-        "assets/Image/Flauros/FlaurosBlack.png",
-        "assets/Image/Flauros/FlaurosOverlay.png"
+        "FlaurosBase.png",
+        "FlaurosBlack.png",
+        "FlaurosOverlay.png"
     ],
+    "imageProcessingSettings": {
+        "distanceCalculator": "euclidean",
+        "imageQuantizationAlgorithm": "nearest",
+        "minimumColorDistanceToDither": 0,
+        "serpentine": false
+    },
     "map": {
         "compression": "none",
         "generate": true,

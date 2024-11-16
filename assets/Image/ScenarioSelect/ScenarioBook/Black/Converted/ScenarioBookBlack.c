@@ -3,18 +3,18 @@
 //	ScenarioBookBlack
 //	* 4 tiles, reduced by non-unique and flipped tiles, not compressed
 //	* 13x16 map, not compressed
-//	Size: 68 + 416 = 484
+//	Size: 68 + 416 = 484 byte
 //
 //---------------------------------------------------------------------------------------------------------
 
-const uint32 ScenarioBookBlackTiles[17] __attribute__((aligned(4))) =
+const uint32 ScenarioBookBlackTiles[] __attribute__((aligned(4))) =
 {
 	0x00000000,
 	0x00000000,0x55545554,0x55545554,0x55545554,0x00000000,0x55555555,0x55555555,0x55555555,
 	0x55545554,0x55545554,0x55545554,0x55545554,0x55555555,0x55555555,0x55555555,0x55555555,
 };
 
-const uint16 ScenarioBookBlackMap[208] __attribute__((aligned(4))) =
+const uint16 ScenarioBookBlackMap[] __attribute__((aligned(4))) =
 {
 	0x0000,0x0001,0x0001,0x0001,0x0001,0x0001,0x0001,0x0001,
 	0x0001,0x0001,0x0001,0x0001,0x0001,0x0002,0x0003,0x0003,

@@ -6834,7 +6834,7 @@ SoundChannelROM IntroSoundChannel =
 	// Configuration
 	(SoundChannelConfiguration*) &IntroSoundChannelConfiguration,
 
-	/// Total number of samples
+	// Total number of samples
 	IntroSoundTrackLength,
 
 	// Sound track

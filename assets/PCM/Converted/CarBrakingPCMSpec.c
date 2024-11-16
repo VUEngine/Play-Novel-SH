@@ -721,7 +721,7 @@ SoundChannelROM CarBrakingSoundChannel =
 	// Configuration
 	(SoundChannelConfiguration*) &CarBrakingSoundChannelConfiguration,
 
-	/// Total number of samples
+	// Total number of samples
 	CarBrakingSoundTrackLength,
 
 	// Sound track
@@ -742,13 +742,13 @@ SoundChannelROM* const CarBrakingSoundChannels[] =
 SoundROMSpec CarBrakingSoundSpec =
 {
 	// Name
-	"Car Braking",
+	"CarBraking",
 
 	// Play in loop
 	false,
 
 	// Target timer resolution in us
-	0,
+	100,
 
 	// Tracks
 	(SoundChannel**)CarBrakingSoundChannels

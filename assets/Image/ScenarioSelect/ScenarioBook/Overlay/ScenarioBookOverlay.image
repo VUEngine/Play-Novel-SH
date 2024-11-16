@@ -5,10 +5,17 @@
         "individualFiles": true,
         "isAnimation": true
     },
+    "colorMode": 0,
     "files": [
-        "assets/Image/ScenarioSelect/ScenarioBook/Overlay/ScenarioBookCybilOverlay.png",
-        "assets/Image/ScenarioSelect/ScenarioBook/Overlay/ScenarioBookHarryOverlay.png"
+        "ScenarioBookCybilOverlay.png",
+        "ScenarioBookHarryOverlay.png"
     ],
+    "imageProcessingSettings": {
+        "distanceCalculator": "euclidean",
+        "imageQuantizationAlgorithm": "nearest",
+        "minimumColorDistanceToDither": 0,
+        "serpentine": false
+    },
     "map": {
         "compression": "none",
         "generate": true,

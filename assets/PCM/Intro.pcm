@@ -4,5 +4,5 @@
     "name": "Intro",
     "range": 3,
     "section": "rom",
-    "sourceFile": "assets/PCM/Source/Intro.wav"
+    "sourceFile": "Source/Intro.wav"
 }

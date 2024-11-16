@@ -4,5 +4,5 @@
     "name": "Something Strange",
     "range": 4,
     "section": "rom",
-    "sourceFile": "assets/PCM/Source/SomethingStrange.wav"
+    "sourceFile": "Source/SomethingStrange.wav"
 }

@@ -4,5 +4,5 @@
     "name": "The Beast Lurks",
     "range": 4,
     "section": "rom",
-    "sourceFile": "assets/PCM/Source/TheBeastLurks.wav"
+    "sourceFile": "Source/TheBeastLurks.wav"
 }

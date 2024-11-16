@@ -4,5 +4,5 @@
     "name": "Car Braking",
     "range": 4,
     "section": "rom",
-    "sourceFile": "assets/PCM/Source/CarBraking.wav"
+    "sourceFile": "Source/CarBraking.wav"
 }

@@ -1881,7 +1881,7 @@ SoundChannelROM EnterLoadGameScreenSoundChannel =
 	// Configuration
 	(SoundChannelConfiguration*) &EnterLoadGameScreenSoundChannelConfiguration,
 
-	// Length (PCM)
+	// Total number of samples
 	EnterLoadGameScreenSoundTrackLength,
 
 	// Sound track
@@ -1899,13 +1899,13 @@ SoundChannelROM* const EnterLoadGameScreenSoundChannels[] =
 SoundROMSpec EnterLoadGameScreenSoundSpec =
 {
 	// Name
-	"Enter Load Game Screen",
+	"EnterLoadGameScreen",
 
 	// Play in loop
 	false,
 
 	// Target timer resolution in us
-	0,
+	100,
 
 	// Tracks
 	(SoundChannel**)EnterLoadGameScreenSoundChannels

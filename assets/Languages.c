@@ -34,14 +34,6 @@ const char* const EnglishLanguageStrings[] =
 {
     /* kStringAutomaticPauseBody: */
     "Please take a rest!",
-    /* kStringAutomaticPauseSelectionBody: */
-    "The Automatic Pause feature will\nremind you to take a break from\nplaying approx. every 30 minutes",
-    /* kStringAutomaticPauseSelectionOff: */
-    "Off",
-    /* kStringAutomaticPauseSelectionOn: */
-    "On",
-    /* kStringAutomaticPauseSelectionTitle: */
-    "AUTOMATIC PAUSE",
     /* kStringAutomaticPauseTitle: */
     "AUTOMATIC PAUSE",
     /* kStringContinue: */
@@ -142,14 +134,6 @@ const char* const GermanLanguageStrings[] =
 {
     /* kStringAutomaticPauseBody: */
     "Bitte mache eine Pause!",
-    /* kStringAutomaticPauseSelectionBody: */
-    " Die Automatische Pause Funktion\nerinnert dich daran, das Spiel ca.\n  alle 30 Minuten zu pausieren",
-    /* kStringAutomaticPauseSelectionOff: */
-    "Aus",
-    /* kStringAutomaticPauseSelectionOn: */
-    "An",
-    /* kStringAutomaticPauseSelectionTitle: */
-    "AUTOMATISCHE PAUSE",
     /* kStringAutomaticPauseTitle: */
     "AUTOMATISCHE PAUSE",
     /* kStringContinue: */

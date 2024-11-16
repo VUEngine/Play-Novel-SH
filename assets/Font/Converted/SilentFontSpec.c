@@ -13,7 +13,7 @@
 //                                              DECLARATIONS                                               
 //---------------------------------------------------------------------------------------------------------
 
-const uint32 SilentFontTiles[732] __attribute__((aligned(4))) =
+const uint32 SilentFontTiles[] __attribute__((aligned(4))) =
 {
     0x00000000,
     0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,0x00000000,
@@ -114,7 +114,7 @@ const uint32 SilentFontTiles[732] __attribute__((aligned(4))) =
 //                                               DEFINITIONS                                               
 //---------------------------------------------------------------------------------------------------------
 
-CharSetROMSpec SilentFontCharSetSpec =
+CharSetROMSpec SilentFontCharSet =
 {
 	// number of chars
 	182,
@@ -135,7 +135,7 @@ CharSetROMSpec SilentFontCharSetSpec =
 FontROMSpec SilentFontSpec =
 {
 	// font charset spec pointer
-	(CharSetSpec*)&SilentFontCharSetSpec,
+	(CharSetSpec*)&SilentFontCharSet,
 
 	// character number at which the font starts, allows you to skip the control characters for example
 	32,

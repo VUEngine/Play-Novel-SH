@@ -4,5 +4,5 @@
     "name": "Monster Sound",
     "range": 5,
     "section": "rom",
-    "sourceFile": "assets/PCM/Source/MonsterSound.wav"
+    "sourceFile": "Source/MonsterSound.wav"
 }

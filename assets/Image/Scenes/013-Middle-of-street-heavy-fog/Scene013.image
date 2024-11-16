@@ -5,10 +5,17 @@
         "individualFiles": false,
         "isAnimation": false
     },
+    "colorMode": 0,
     "files": [
-        "assets/Image/Scenes/013-Middle-of-street-heavy-fog/Scene013Base.png",
-        "assets/Image/Scenes/013-Middle-of-street-heavy-fog/Scene013Overlay.png"
+        "Scene013Base.png",
+        "Scene013Overlay.png"
     ],
+    "imageProcessingSettings": {
+        "distanceCalculator": "euclidean",
+        "imageQuantizationAlgorithm": "nearest",
+        "minimumColorDistanceToDither": 0,
+        "serpentine": false
+    },
     "map": {
         "compression": "none",
         "generate": true,
