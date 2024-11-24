@@ -58,7 +58,7 @@ void LoadGameScreenState::enter(void* owner)
 {
 	Base::enter(this, owner);
 
-	GameState::loadStage(GameState::safeCast(this), (StageSpec*)&LoadGameScreenStageSpec, NULL);
+	GameState::configureStage(GameState::safeCast(this), (StageSpec*)&LoadGameScreenStageSpec, NULL);
 	SplashScreenState::setNextState(SplashScreenState::safeCast(this), GameState::safeCast(ScenarioSelectScreenState::getInstance()));
 
 	GameState::startClocks(GameState::safeCast(this));
@@ -392,7 +392,7 @@ void LoadGameScreenState::printSlotMenu()
 	this->slotMenuOption = 0;
 	OptionsSelector::setSelectedOption(this->slotMenu, this->slotMenuOption);
 	OptionsSelector::setColumnWidth(this->slotMenu, 8);
-	OptionsSelector::printOptions(this->slotMenu, 20, 20, kOptionsAlignLeft, 0);
+	OptionsSelector::print(this->slotMenu, 20, 20, kOptionsAlignLeft, 0);
 }
 
 void LoadGameScreenState::printDeleteMenu() 
@@ -424,7 +424,7 @@ void LoadGameScreenState::printDeleteMenu()
 	this->slotMenuOption = 0;
 	OptionsSelector::setSelectedOption(this->slotMenu, this->slotMenuOption);
 	OptionsSelector::setColumnWidth(this->slotMenu, 8);
-	OptionsSelector::printOptions(this->slotMenu, 20, 20, kOptionsAlignLeft, 0);
+	OptionsSelector::print(this->slotMenu, 20, 20, kOptionsAlignLeft, 0);
 }
 
 void LoadGameScreenState::startSlot() 

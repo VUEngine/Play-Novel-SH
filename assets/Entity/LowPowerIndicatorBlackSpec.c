@@ -10,9 +10,9 @@
 //												INCLUDES
 //---------------------------------------------------------------------------------------------------------
 
+#include <BgmapAnimatedSprite.h>
 #include <LowPowerEntity.h>
 #include <VIPManager.h>
-#include <GuiBgmapAnimatedSprite.h>
 
 
 //---------------------------------------------------------------------------------------------------------
@@ -135,7 +135,7 @@ BgmapSpriteROMSpec LowPowerIndicatorBlackSpriteSpec =
 {
 	{
 		// sprite's type
-		__TYPE(GuiBgmapAnimatedSprite),
+		__TYPE(BgmapAnimatedSprite),
 
 		// texture spec
 		(TextureSpec*)&LowPowerIndicatorBlackTextureSpec,

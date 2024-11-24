@@ -43,7 +43,7 @@ void PnSplashScreenState::enter(void* owner)
 
 	if(this->stageSpec)
 	{
-		PnSplashScreenState::loadStage(this, this->stageSpec, NULL);
+		PnSplashScreenState::configureStage(this, this->stageSpec, NULL);
 	}
 
 	PnSplashScreenState::print(this);
@@ -64,10 +64,7 @@ void PnSplashScreenState::exit(void* owner)
 // state's suspend
 void PnSplashScreenState::suspend(void* owner)
 {
-	if(!VUEngine::isEnteringToolState(VUEngine::getInstance()))
-	{
-		Camera::startEffect(Camera::getInstance(), kHide);
-	}
+	Camera::startEffect(Camera::getInstance(), kHide);
 
 	// call base
 	Base::suspend(this, owner);
@@ -80,10 +77,7 @@ void PnSplashScreenState::resume(void* owner)
 
 	PnSplashScreenState::print(this);
 
-	if(!VUEngine::isExitingToolState(VUEngine::getInstance()))
-	{
-		Camera::startEffect(Camera::getInstance(), kShow);
-	}
+	Camera::startEffect(Camera::getInstance(), kShow);
 }
 
 bool PnSplashScreenState::processMessage(void* owner __attribute__ ((unused)), Telegram telegram __attribute__ ((unused)))

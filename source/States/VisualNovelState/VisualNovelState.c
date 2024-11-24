@@ -60,7 +60,7 @@ void VisualNovelState::enter(void* owner)
 	Base::enter(this, owner);
 
 	// load stage
-	GameState::loadStage(GameState::safeCast(this), (StageSpec*)&VisualNovelStageSpec, NULL);
+	GameState::configureStage(GameState::safeCast(this), (StageSpec*)&VisualNovelStageSpec, NULL);
 
 	// start clocks to start animations
 	GameState::startClocks(GameState::safeCast(this));
@@ -388,7 +388,7 @@ void VisualNovelState::setUpScene()
 	Stage stage = VUEngine::getStage(VUEngine::getInstance());
 	Container sceneEntity = Container::getChildByName(Container::safeCast(stage), "SCENE", true);
 	if(!isDeleted(sceneEntity)) {
-		Stage::destroyChildEntity(stage, sceneEntity);
+		Stage::destroyChildEntity(stage, Entity::safeCast(sceneEntity));
 	}
 	PositionedEntity scenePositionedEntity = {&DummyContainerEntitySpec, {0, -32, 0}, {0, 0, 0}, {1, 1, 1}, 0, "SCENE", (struct PositionedEntity*)scene->positionedEntities, NULL, false};
 	Stage::spawnChildEntity(stage, &scenePositionedEntity, true);

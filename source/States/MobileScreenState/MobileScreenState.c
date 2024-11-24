@@ -54,7 +54,7 @@ void MobileScreenState::enter(void* owner)
 	Base::enter(this, owner);
 
 	// load stage
-	GameState::loadStage(GameState::safeCast(this), (StageSpec*)&MobileScreenStageSpec, NULL);
+	GameState::configureStage(GameState::safeCast(this), (StageSpec*)&MobileScreenStageSpec, NULL);
 
 	// set next state
 	SplashScreenState::setNextState(SplashScreenState::safeCast(this), GameState::safeCast(TitleScreenState::getInstance()));
