@@ -170,45 +170,49 @@ BgmapSpriteROMSpec* const OptionsMainMenuTradingCardsSpriteSpecs[] =
 
 LocalizedEntityROMSpec OptionsMainMenuTradingCardsEntitySpec =
 {
+	// animated entity
 	{
-		// class allocator
-		__TYPE(LocalizedEntity),
+		// entity
+		{
+			// class allocator
+			__TYPE(LocalizedEntity),
 
-		// children
-		NULL,
+			// children
+			NULL,
 
-		// behaviors
-		NULL,
+			// behaviors
+			NULL,
 
-		// extra
-		NULL,
+			// extra
+			NULL,
 
-		// sprites
-		(SpriteSpec**)OptionsMainMenuTradingCardsSpriteSpecs,
+			// sprites
+			(SpriteSpec**)OptionsMainMenuTradingCardsSpriteSpecs,
 
-		// use z displacement in projection
-		false,
-			
-		// wireframes
-		(WireframeSpec**)NULL,
+			// use z displacement in projection
+			false,
+				
+			// wireframes
+			(WireframeSpec**)NULL,
 
-		// collision colliders
-		(ColliderSpec*)NULL,
+			// collision colliders
+			(ColliderSpec*)NULL,
 
-		// size
-		// if 0, width and height will be inferred from the first sprite's texture's size
-		{0, 0, 0},
+			// size
+			// if 0, width and height will be inferred from the first sprite's texture's size
+			{0, 0, 0},
 
-		// gameworld's character's type
-		kTypeNone,
+			// gameworld's character's type
+			kTypeNone,
 
-		// physical specification
-		(PhysicalProperties*)NULL,
-	},
+			// physical specification
+			(PhysicalProperties*)NULL,
+		},
 
-	// pointer to the animation spec for the item
-	(const AnimationFunction**)&OptionsMainMenuTradingCardsAnimationSpecs,
+		// pointer to the animation spec for the item
+		(const AnimationFunction**)&OptionsMainMenuTradingCardsAnimationSpecs,
 
-	// initial animation
-	"0"
+		// initial animation
+		"0"
+	}
 };
