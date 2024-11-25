@@ -1,4 +1,4 @@
-/**
+/*
  * Play Novel: Silent Hill
  * ©1999 2001 KCE Tokyo ALL RIGHTS RESERVED.
  *

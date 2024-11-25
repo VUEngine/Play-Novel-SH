@@ -1,4 +1,4 @@
-/**
+/*
  * Play Novel: Silent Hill
  * ©1999 2001 KCE Tokyo ALL RIGHTS RESERVED.
  *
@@ -9,9 +9,9 @@
 #define PN_SPLASH_SCREEN_STATE_H_
 
 
-//---------------------------------------------------------------------------------------------------------
-//												INCLUDES
-//---------------------------------------------------------------------------------------------------------
+//=========================================================================================================
+// INCLUDES
+//=========================================================================================================
 
 #include <GameState.h>
 
@@ -30,7 +30,6 @@ abstract class PnSplashScreenState : GameState
 	void constructor();
 	void loadNextState();
 	void setNextState(GameState nextState);
-	virtual void initNextState();
 	virtual void print();
 	override bool processMessage(void* owner, Telegram telegram);
 	override void enter(void* owner);

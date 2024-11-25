@@ -1,4 +1,4 @@
-/**
+/*
  * Play Novel: Silent Hill
  * ©1999 2001 KCE Tokyo ALL RIGHTS RESERVED.
  *
@@ -6,9 +6,9 @@
  */
  
 
-//---------------------------------------------------------------------------------------------------------
-//												INCLUDES
-//---------------------------------------------------------------------------------------------------------
+//=========================================================================================================
+// INCLUDES
+//=========================================================================================================
 
 #include <VUEngine.h>
 #include <Camera.h>
@@ -96,11 +96,6 @@ void PnSplashScreenState::processUserInput(UserInput userInput)
 void PnSplashScreenState::print()
 {
 }
-
-void PnSplashScreenState::initNextState()
-{
-}
-
 void PnSplashScreenState::setNextState(GameState nextState)
 {
 	this->nextState = nextState;
@@ -109,9 +104,6 @@ void PnSplashScreenState::setNextState(GameState nextState)
 void PnSplashScreenState::loadNextState()
 {
 	Camera::startEffect(Camera::getInstance(), kHide);
-	if(this->nextState == NULL)
-	{
-		PnSplashScreenState::initNextState(this);
-	}
+
 	VUEngine::changeState(VUEngine::getInstance(), this->nextState);
 }
