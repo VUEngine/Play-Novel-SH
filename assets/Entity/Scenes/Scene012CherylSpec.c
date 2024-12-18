@@ -64,8 +64,14 @@ TextureROMSpec Scene012CherylBaseTextureSpec =
 BgmapSpriteROMSpec Scene012CherylBaseSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&Scene012CherylBaseTextureSpec,
@@ -124,8 +130,14 @@ TextureROMSpec Scene012CherylOverlayTextureSpec =
 BgmapSpriteROMSpec Scene012CherylOverlaySpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&Scene012CherylOverlayTextureSpec,
@@ -155,6 +167,11 @@ BgmapSpriteROMSpec* const Scene012CherylSpriteSpecs[] =
 	NULL
 };
 
+ComponentSpec** Scene012CherylEntitySpecComponentSpecs[] = 
+{
+	@COMPONENTS:Scene012CherylEntitySpec@
+};
+
 EntityROMSpec Scene012CherylEntitySpec =
 {
 	// class allocator
@@ -163,23 +180,19 @@ EntityROMSpec Scene012CherylEntitySpec =
 	// children
 	NULL,
 
-	// behaviors
-	NULL,
+	@BEHAVIORS:NULL@,
 
 	// extra
 	NULL,
 
-	// sprites
-	(SpriteSpec**)Scene012CherylSpriteSpecs,
+	@SPRITES:(SpriteSpec**)Scene012CherylSpriteSpecs@,
 
 	// use z displacement in projection
 	false,
 			
-	// wireframes
-	(WireframeSpec**)NULL,
+	@WIREFRAMES:(WireframeSpec**)NULL@,
 
-	// collision colliders
-	(ColliderSpec*)NULL,
+	@COLLIDERS:(ColliderSpec*)NULL@,
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
@@ -188,6 +201,5 @@ EntityROMSpec Scene012CherylEntitySpec =
 	// gameworld's character's type
 	kTypeNone,
 
-	// physical specification
-	(PhysicalProperties*)NULL,
+	@PHYSICS:(PhysicalProperties*)NULL@,
 };

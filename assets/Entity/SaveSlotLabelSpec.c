@@ -207,8 +207,14 @@ TextureROMSpec SaveSlotLabelTextureSpec =
 BgmapSpriteROMSpec SaveSlotLabelSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapAnimatedSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapAnimatedSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&SaveSlotLabelTextureSpec,
@@ -237,6 +243,11 @@ BgmapSpriteROMSpec* const SaveSlotLabelSpriteSpecs[] =
 	NULL
 };
 
+ComponentSpec** SaveSlotLabelEntitySpecComponentSpecs[] = 
+{
+	@COMPONENTS:SaveSlotLabelEntitySpec@
+};
+
 AnimatedEntityROMSpec SaveSlotLabelEntitySpec =
 {
 	{
@@ -246,23 +257,19 @@ AnimatedEntityROMSpec SaveSlotLabelEntitySpec =
 		// children
 		NULL,
 
-		// behaviors
-		NULL,
+		@BEHAVIORS:NULL@,
 
 		// extra
 		NULL,
 
-		// sprites
-		(SpriteSpec**)SaveSlotLabelSpriteSpecs,
+		@SPRITES:(SpriteSpec**)SaveSlotLabelSpriteSpecs@,
 
 		// use z displacement in projection
 		false,
 			
-		// wireframes
-		(WireframeSpec**)NULL,
+		@WIREFRAMES:(WireframeSpec**)NULL@,
 
-		// collision colliders
-		(ColliderSpec*)NULL,
+		@COLLIDERS:(ColliderSpec*)NULL@,
 
 		// size
 		// if 0, width and height will be inferred from the first sprite's texture's size
@@ -271,8 +278,7 @@ AnimatedEntityROMSpec SaveSlotLabelEntitySpec =
 		// gameworld's character's type
 		0,
 
-		// physical specification
-		(PhysicalProperties*)NULL,
+		@PHYSICS:(PhysicalProperties*)NULL@,
 	},
 
 	// pointer to the animation spec for the item

@@ -82,8 +82,14 @@ TextureROMSpec KCETLogoATextureSpec =
 BgmapSpriteROMSpec KCETLogoASpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&KCETLogoATextureSpec,
@@ -142,8 +148,14 @@ TextureROMSpec KCETLogoBTextureSpec =
 BgmapSpriteROMSpec KCETLogoBSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&KCETLogoBTextureSpec,
@@ -173,6 +185,11 @@ BgmapSpriteROMSpec* const KCETLogoSpriteSpecs[] =
 	NULL
 };
 
+ComponentSpec** KCETLogoEntitySpecComponentSpecs[] = 
+{
+	@COMPONENTS:KCETLogoEntitySpec@
+};
+
 EntityROMSpec KCETLogoEntitySpec =
 {
 	// class allocator
@@ -181,23 +198,19 @@ EntityROMSpec KCETLogoEntitySpec =
 	// children
 	NULL,
 
-	// behaviors
-	NULL,
+	@BEHAVIORS:NULL@,
 
 	// extra
 	NULL,
 
-	// sprites
-	(SpriteSpec**)KCETLogoSpriteSpecs,
+	@SPRITES:(SpriteSpec**)KCETLogoSpriteSpecs@,
 
 	// use z displacement in projection
 	false,
 			
-	// wireframes
-	(WireframeSpec**)NULL,
+	@WIREFRAMES:(WireframeSpec**)NULL@,
 
-	// collision colliders
-	(ColliderSpec*)NULL,
+	@COLLIDERS:(ColliderSpec*)NULL@,
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
@@ -206,6 +219,5 @@ EntityROMSpec KCETLogoEntitySpec =
 	// gameworld's character's type
 	kTypeNone,
 
-	// physical specification
-	(PhysicalProperties*)NULL,
+	@PHYSICS:(PhysicalProperties*)NULL@,
 };

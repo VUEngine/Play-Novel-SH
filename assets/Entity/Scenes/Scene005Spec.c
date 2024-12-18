@@ -82,8 +82,14 @@ TextureROMSpec Scene005BaseTextureSpec =
 BgmapSpriteROMSpec Scene005BaseSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&Scene005BaseTextureSpec,
@@ -142,8 +148,14 @@ TextureROMSpec Scene005OverlayTextureSpec =
 BgmapSpriteROMSpec Scene005OverlaySpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&Scene005OverlayTextureSpec,
@@ -173,6 +185,11 @@ BgmapSpriteROMSpec* const Scene005SpriteSpecs[] =
 	NULL
 };
 
+ComponentSpec** Scene005EntitySpecComponentSpecs[] = 
+{
+	@COMPONENTS:Scene005EntitySpec@
+};
+
 EntityROMSpec Scene005EntitySpec =
 {
 	// class allocator
@@ -181,23 +198,19 @@ EntityROMSpec Scene005EntitySpec =
 	// children
 	NULL,
 
-	// behaviors
-	NULL,
+	@BEHAVIORS:NULL@,
 
 	// extra
 	NULL,
 
-	// sprites
-	(SpriteSpec**)Scene005SpriteSpecs,
+	@SPRITES:(SpriteSpec**)Scene005SpriteSpecs@,
 
 	// use z displacement in projection
 	false,
 			
-	// wireframes
-	(WireframeSpec**)NULL,
+	@WIREFRAMES:(WireframeSpec**)NULL@,
 
-	// collision colliders
-	(ColliderSpec*)NULL,
+	@COLLIDERS:(ColliderSpec*)NULL@,
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
@@ -206,6 +219,5 @@ EntityROMSpec Scene005EntitySpec =
 	// gameworld's character's type
 	kTypeNone,
 
-	// physical specification
-	(PhysicalProperties*)NULL,
+	@PHYSICS:(PhysicalProperties*)NULL@,
 };

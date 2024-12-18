@@ -138,8 +138,14 @@ TextureROMSpec OptionsMainMenuStartTextureSpec =
 BgmapSpriteROMSpec OptionsMainMenuStartSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapAnimatedSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapAnimatedSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&OptionsMainMenuStartTextureSpec,
@@ -168,6 +174,11 @@ BgmapSpriteROMSpec* const OptionsMainMenuStartSpriteSpecs[] =
 	NULL
 };
 
+ComponentSpec** OptionsMainMenuStartEntitySpecComponentSpecs[] = 
+{
+	@COMPONENTS:OptionsMainMenuStartEntitySpec@
+};
+
 LocalizedEntityROMSpec OptionsMainMenuStartEntitySpec =
 {
 	// animated entity
@@ -180,23 +191,19 @@ LocalizedEntityROMSpec OptionsMainMenuStartEntitySpec =
 			// children
 			NULL,
 
-			// behaviors
-			NULL,
+			@BEHAVIORS:NULL@,
 
 			// extra
 			NULL,
 
-			// sprites
-			(SpriteSpec**)OptionsMainMenuStartSpriteSpecs,
+			@SPRITES:(SpriteSpec**)OptionsMainMenuStartSpriteSpecs@,
 
 			// use z displacement in projection
 			false,
 				
-			// wireframes
-			(WireframeSpec**)NULL,
+			@WIREFRAMES:(WireframeSpec**)NULL@,
 
-			// collision colliders
-			(ColliderSpec*)NULL,
+			@COLLIDERS:(ColliderSpec*)NULL@,
 
 			// size
 			// if 0, width and height will be inferred from the first sprite's texture's size
@@ -205,8 +212,7 @@ LocalizedEntityROMSpec OptionsMainMenuStartEntitySpec =
 			// gameworld's character's type
 			kTypeNone,
 
-			// physical specification
-			(PhysicalProperties*)NULL,
+			@PHYSICS:(PhysicalProperties*)NULL@,
 		},
 
 		// pointer to the animation spec for the item

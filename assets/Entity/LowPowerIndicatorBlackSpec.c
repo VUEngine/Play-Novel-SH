@@ -134,8 +134,14 @@ TextureROMSpec LowPowerIndicatorBlackTextureSpec =
 BgmapSpriteROMSpec LowPowerIndicatorBlackSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapAnimatedSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapAnimatedSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&LowPowerIndicatorBlackTextureSpec,
@@ -164,6 +170,11 @@ BgmapSpriteROMSpec* const LowPowerIndicatorBlackSpriteSpecs[] =
 	NULL
 };
 
+ComponentSpec** LowPowerIndicatorBlackEntitySpecComponentSpecs[] = 
+{
+	@COMPONENTS:LowPowerIndicatorBlackEntitySpec@
+};
+
 LowPowerEntityROMSpec LowPowerIndicatorBlackEntitySpec =
 {
 	// animated entity
@@ -176,23 +187,19 @@ LowPowerEntityROMSpec LowPowerIndicatorBlackEntitySpec =
 			// children
 			NULL,
 
-			// behaviors
-			NULL,
+			@BEHAVIORS:NULL@,
 
 			// extra
 			NULL,
 
-			// sprites
-			(SpriteSpec**)LowPowerIndicatorBlackSpriteSpecs,
+			@SPRITES:(SpriteSpec**)LowPowerIndicatorBlackSpriteSpecs@,
 
 			// use z displacement in projection
 			false,
 				
-			// wireframes
-			(WireframeSpec**)NULL,
+			@WIREFRAMES:(WireframeSpec**)NULL@,
 
-			// collision colliders
-			(ColliderSpec*)NULL,
+			@COLLIDERS:(ColliderSpec*)NULL@,
 
 			// size
 			// if 0, width and height will be inferred from the first sprite's texture's size
@@ -201,8 +208,7 @@ LowPowerEntityROMSpec LowPowerIndicatorBlackEntitySpec =
 			// gameworld's character's type
 			kTypeNone,
 
-			// physical specification
-			(PhysicalProperties*)NULL,
+			@PHYSICS:(PhysicalProperties*)NULL@,
 		},
 
 		// pointer to the animation spec for the item

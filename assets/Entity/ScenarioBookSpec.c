@@ -136,8 +136,14 @@ TextureROMSpec ScenarioBookBaseTextureSpec =
 BgmapSpriteROMSpec ScenarioBookBaseSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapAnimatedSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapAnimatedSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&ScenarioBookBaseTextureSpec,
@@ -214,8 +220,14 @@ TextureROMSpec ScenarioBookOverlayTextureSpec =
 BgmapSpriteROMSpec ScenarioBookOverlaySpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapAnimatedSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapAnimatedSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&ScenarioBookOverlayTextureSpec,
@@ -251,6 +263,11 @@ PositionedEntityROMSpec ScenarioBookChildrenEntities[] =
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, true},
 };
 
+ComponentSpec** ScenarioBookEntitySpecComponentSpecs[] = 
+{
+	@COMPONENTS:ScenarioBookEntitySpec@
+};
+
 AnimatedEntityROMSpec ScenarioBookEntitySpec =
 {
 	{
@@ -260,23 +277,19 @@ AnimatedEntityROMSpec ScenarioBookEntitySpec =
 		// children
 		(PositionedEntity*)ScenarioBookChildrenEntities,
 
-		// behaviors
-		NULL,
+		@BEHAVIORS:NULL@,
 
 		// extra
 		NULL,
 
-		// sprites
-		(SpriteSpec**)ScenarioBookSpriteSpecs,
+		@SPRITES:(SpriteSpec**)ScenarioBookSpriteSpecs@,
 
 		// use z displacement in projection
 		false,
 			
-		// wireframes
-		(WireframeSpec**)NULL,
+		@WIREFRAMES:(WireframeSpec**)NULL@,
 
-		// collision colliders
-		(ColliderSpec*)NULL,
+		@COLLIDERS:(ColliderSpec*)NULL@,
 
 		// size
 		// if 0, width and height will be inferred from the first sprite's texture's size
@@ -285,8 +298,7 @@ AnimatedEntityROMSpec ScenarioBookEntitySpec =
 		// gameworld's character's type
 		0,
 
-		// physical specification
-		(PhysicalProperties*)NULL,
+		@PHYSICS:(PhysicalProperties*)NULL@,
 	},
 
 	// pointer to the animation spec for the item

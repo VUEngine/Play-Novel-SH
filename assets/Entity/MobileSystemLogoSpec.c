@@ -82,8 +82,14 @@ TextureROMSpec MobileSystemLogoATextureSpec =
 BgmapSpriteROMSpec MobileSystemLogoASpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&MobileSystemLogoATextureSpec,
@@ -142,8 +148,14 @@ TextureROMSpec MobileSystemLogoBTextureSpec =
 BgmapSpriteROMSpec MobileSystemLogoBSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&MobileSystemLogoBTextureSpec,
@@ -173,6 +185,11 @@ BgmapSpriteROMSpec* const MobileSystemLogoSpriteSpecs[] =
 	NULL
 };
 
+ComponentSpec** MobileSystemLogoEntitySpecComponentSpecs[] = 
+{
+	@COMPONENTS:MobileSystemLogoEntitySpec@
+};
+
 EntityROMSpec MobileSystemLogoEntitySpec =
 {
 	// class allocator
@@ -181,23 +198,19 @@ EntityROMSpec MobileSystemLogoEntitySpec =
 	// children
 	NULL,
 
-	// behaviors
-	NULL,
+	@BEHAVIORS:NULL@,
 
 	// extra
 	NULL,
 
-	// sprites
-	(SpriteSpec**)MobileSystemLogoSpriteSpecs,
+	@SPRITES:(SpriteSpec**)MobileSystemLogoSpriteSpecs@,
 
 	// use z displacement in projection
 	false,
 			
-	// wireframes
-	(WireframeSpec**)NULL,
+	@WIREFRAMES:(WireframeSpec**)NULL@,
 
-	// collision colliders
-	(ColliderSpec*)NULL,
+	@COLLIDERS:(ColliderSpec*)NULL@,
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
@@ -206,6 +219,5 @@ EntityROMSpec MobileSystemLogoEntitySpec =
 	// gameworld's character's type
 	kTypeNone,
 
-	// physical specification
-	(PhysicalProperties*)NULL,
+	@PHYSICS:(PhysicalProperties*)NULL@,
 };

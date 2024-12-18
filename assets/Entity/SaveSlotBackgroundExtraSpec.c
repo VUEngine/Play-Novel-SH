@@ -63,8 +63,14 @@ TextureROMSpec SaveSlotWideBackgroundExtraTextureSpec =
 BgmapSpriteROMSpec SaveSlotWideBackgroundExtraSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&SaveSlotWideBackgroundExtraTextureSpec,
@@ -93,6 +99,11 @@ BgmapSpriteROMSpec* const SaveSlotWideBackgroundExtraSpriteSpecs[] =
 	NULL
 };
 
+ComponentSpec** SaveSlotWideBackgroundExtraEntitySpecComponentSpecs[] = 
+{
+	@COMPONENTS:SaveSlotWideBackgroundExtraEntitySpec@
+};
+
 EntityROMSpec SaveSlotWideBackgroundExtraEntitySpec =
 {
 	// class allocator
@@ -101,23 +112,19 @@ EntityROMSpec SaveSlotWideBackgroundExtraEntitySpec =
 	// children
 	NULL,
 
-	// behaviors
-	NULL,
+	@BEHAVIORS:NULL@,
 
 	// extra
 	NULL,
 
-	// sprites
-	(SpriteSpec**)SaveSlotWideBackgroundExtraSpriteSpecs,
+	@SPRITES:(SpriteSpec**)SaveSlotWideBackgroundExtraSpriteSpecs@,
 
 	// use z displacement in projection
 	false,
 			
-	// wireframes
-	(WireframeSpec**)NULL,
+	@WIREFRAMES:(WireframeSpec**)NULL@,
 
-	// collision colliders
-	(ColliderSpec*)NULL,
+	@COLLIDERS:(ColliderSpec*)NULL@,
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
@@ -126,6 +133,5 @@ EntityROMSpec SaveSlotWideBackgroundExtraEntitySpec =
 	// gameworld's character's type
 	kTypeNone,
 
-	// physical specification
-	(PhysicalProperties*)NULL,
+	@PHYSICS:(PhysicalProperties*)NULL@,
 };

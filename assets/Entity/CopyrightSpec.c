@@ -81,8 +81,14 @@ TextureROMSpec CopyrightTextureSpec =
 BgmapSpriteROMSpec CopyrightSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&CopyrightTextureSpec,
@@ -111,6 +117,11 @@ BgmapSpriteROMSpec* const CopyrightSpriteSpecs[] =
 	NULL
 };
 
+ComponentSpec** CopyrightEntitySpecComponentSpecs[] = 
+{
+	@COMPONENTS:CopyrightEntitySpec@
+};
+
 EntityROMSpec CopyrightEntitySpec =
 {
 	// class allocator
@@ -119,23 +130,19 @@ EntityROMSpec CopyrightEntitySpec =
 	// children
 	NULL,
 
-	// behaviors
-	NULL,
+	@BEHAVIORS:NULL@,
 
 	// extra
 	NULL,
 
-	// sprites
-	(SpriteSpec**)CopyrightSpriteSpecs,
+	@SPRITES:(SpriteSpec**)CopyrightSpriteSpecs@,
 
 	// use z displacement in projection
 	false,
 			
-	// wireframes
-	(WireframeSpec**)NULL,
+	@WIREFRAMES:(WireframeSpec**)NULL@,
 
-	// collision colliders
-	(ColliderSpec*)NULL,
+	@COLLIDERS:(ColliderSpec*)NULL@,
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
@@ -144,6 +151,5 @@ EntityROMSpec CopyrightEntitySpec =
 	// gameworld's character's type
 	kTypeNone,
 
-	// physical specification
-	(PhysicalProperties*)NULL,
+	@PHYSICS:(PhysicalProperties*)NULL@,
 };

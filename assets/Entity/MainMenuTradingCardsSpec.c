@@ -138,8 +138,14 @@ TextureROMSpec OptionsMainMenuTradingCardsTextureSpec =
 BgmapSpriteROMSpec OptionsMainMenuTradingCardsSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapAnimatedSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapAnimatedSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&OptionsMainMenuTradingCardsTextureSpec,
@@ -168,6 +174,11 @@ BgmapSpriteROMSpec* const OptionsMainMenuTradingCardsSpriteSpecs[] =
 	NULL
 };
 
+ComponentSpec** OptionsMainMenuTradingCardsEntitySpecComponentSpecs[] = 
+{
+	@COMPONENTS:OptionsMainMenuTradingCardsEntitySpec@
+};
+
 LocalizedEntityROMSpec OptionsMainMenuTradingCardsEntitySpec =
 {
 	// animated entity
@@ -180,23 +191,19 @@ LocalizedEntityROMSpec OptionsMainMenuTradingCardsEntitySpec =
 			// children
 			NULL,
 
-			// behaviors
-			NULL,
+			@BEHAVIORS:NULL@,
 
 			// extra
 			NULL,
 
-			// sprites
-			(SpriteSpec**)OptionsMainMenuTradingCardsSpriteSpecs,
+			@SPRITES:(SpriteSpec**)OptionsMainMenuTradingCardsSpriteSpecs@,
 
 			// use z displacement in projection
 			false,
 				
-			// wireframes
-			(WireframeSpec**)NULL,
+			@WIREFRAMES:(WireframeSpec**)NULL@,
 
-			// collision colliders
-			(ColliderSpec*)NULL,
+			@COLLIDERS:(ColliderSpec*)NULL@,
 
 			// size
 			// if 0, width and height will be inferred from the first sprite's texture's size
@@ -205,8 +212,7 @@ LocalizedEntityROMSpec OptionsMainMenuTradingCardsEntitySpec =
 			// gameworld's character's type
 			kTypeNone,
 
-			// physical specification
-			(PhysicalProperties*)NULL,
+			@PHYSICS:(PhysicalProperties*)NULL@,
 		},
 
 		// pointer to the animation spec for the item

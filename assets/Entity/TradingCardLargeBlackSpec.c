@@ -81,8 +81,14 @@ TextureROMSpec TradingCardLargeBlackTextureSpec =
 BgmapSpriteROMSpec TradingCardLargeBlackSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&TradingCardLargeBlackTextureSpec,
@@ -111,6 +117,11 @@ BgmapSpriteROMSpec* const TradingCardLargeBlackSpriteSpecs[] =
 	NULL
 };
 
+ComponentSpec** TradingCardLargeBlackEntitySpecComponentSpecs[] = 
+{
+	@COMPONENTS:TradingCardLargeBlackEntitySpec@
+};
+
 EntityROMSpec TradingCardLargeBlackEntitySpec =
 {
 	// class allocator
@@ -119,23 +130,19 @@ EntityROMSpec TradingCardLargeBlackEntitySpec =
 	// children
 	NULL,
 
-	// behaviors
-	NULL,
+	@BEHAVIORS:NULL@,
 
 	// extra
 	NULL,
 
-	// sprites
-	(SpriteSpec**)TradingCardLargeBlackSpriteSpecs,
+	@SPRITES:(SpriteSpec**)TradingCardLargeBlackSpriteSpecs@,
 
 	// use z displacement in projection
 	false,
 			
-	// wireframes
-	(WireframeSpec**)NULL,
+	@WIREFRAMES:(WireframeSpec**)NULL@,
 
-	// collision colliders
-	(ColliderSpec*)NULL,
+	@COLLIDERS:(ColliderSpec*)NULL@,
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
@@ -144,6 +151,5 @@ EntityROMSpec TradingCardLargeBlackEntitySpec =
 	// gameworld's character's type
 	kTypeNone,
 
-	// physical specification
-	(PhysicalProperties*)NULL,
+	@PHYSICS:(PhysicalProperties*)NULL@,
 };

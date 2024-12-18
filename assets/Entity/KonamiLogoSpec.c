@@ -82,8 +82,14 @@ TextureROMSpec KonamiLogoATextureSpec =
 BgmapSpriteROMSpec KonamiLogoASpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&KonamiLogoATextureSpec,
@@ -142,8 +148,14 @@ TextureROMSpec KonamiLogoBTextureSpec =
 BgmapSpriteROMSpec KonamiLogoBSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&KonamiLogoBTextureSpec,
@@ -173,6 +185,11 @@ BgmapSpriteROMSpec* const KonamiLogoSpriteSpecs[] =
 	NULL
 };
 
+ComponentSpec** KonamiLogoEntitySpecComponentSpecs[] = 
+{
+	@COMPONENTS:KonamiLogoEntitySpec@
+};
+
 EntityROMSpec KonamiLogoEntitySpec =
 {
 	// class allocator
@@ -181,23 +198,19 @@ EntityROMSpec KonamiLogoEntitySpec =
 	// children
 	NULL,
 
-	// behaviors
-	NULL,
+	@BEHAVIORS:NULL@,
 
 	// extra
 	NULL,
 
-	// sprites
-	(SpriteSpec**)KonamiLogoSpriteSpecs,
+	@SPRITES:(SpriteSpec**)KonamiLogoSpriteSpecs@,
 
 	// use z displacement in projection
 	false,
 			
-	// wireframes
-	(WireframeSpec**)NULL,
+	@WIREFRAMES:(WireframeSpec**)NULL@,
 
-	// collision colliders
-	(ColliderSpec*)NULL,
+	@COLLIDERS:(ColliderSpec*)NULL@,
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
@@ -206,6 +219,5 @@ EntityROMSpec KonamiLogoEntitySpec =
 	// gameworld's character's type
 	kTypeNone,
 
-	// physical specification
-	(PhysicalProperties*)NULL,
+	@PHYSICS:(PhysicalProperties*)NULL@,
 };

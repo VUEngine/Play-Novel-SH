@@ -83,8 +83,14 @@ TextureROMSpec TradingCardsBackgroundTextureSpec =
 BgmapSpriteROMSpec TradingCardsBackgroundSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&TradingCardsBackgroundTextureSpec,
@@ -161,8 +167,14 @@ TextureROMSpec TradingCardsBackgroundSpineTextureSpec =
 BgmapSpriteROMSpec TradingCardsBackgroundSpineSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&TradingCardsBackgroundSpineTextureSpec,
@@ -192,6 +204,11 @@ BgmapSpriteROMSpec* const TradingCardsBackgroundSpriteSpecs[] =
 	NULL
 };
 
+ComponentSpec** TradingCardsBackgroundEntitySpecComponentSpecs[] = 
+{
+	@COMPONENTS:TradingCardsBackgroundEntitySpec@
+};
+
 EntityROMSpec TradingCardsBackgroundEntitySpec =
 {
 	// class allocator
@@ -200,23 +217,19 @@ EntityROMSpec TradingCardsBackgroundEntitySpec =
 	// children
 	NULL,
 
-	// behaviors
-	NULL,
+	@BEHAVIORS:NULL@,
 
 	// extra
 	NULL,
 
-	// sprites
-	(SpriteSpec**)TradingCardsBackgroundSpriteSpecs,
+	@SPRITES:(SpriteSpec**)TradingCardsBackgroundSpriteSpecs@,
 
 	// use z displacement in projection
 	false,
 			
-	// wireframes
-	(WireframeSpec**)NULL,
+	@WIREFRAMES:(WireframeSpec**)NULL@,
 
-	// collision colliders
-	(ColliderSpec*)NULL,
+	@COLLIDERS:(ColliderSpec*)NULL@,
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
@@ -225,6 +238,5 @@ EntityROMSpec TradingCardsBackgroundEntitySpec =
 	// gameworld's character's type
 	kTypeNone,
 
-	// physical specification
-	(PhysicalProperties*)NULL,
+	@PHYSICS:(PhysicalProperties*)NULL@,
 };
