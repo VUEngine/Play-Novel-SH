@@ -168,15 +168,16 @@ BgmapSpriteROMSpec OptionsMainMenuStartSpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const OptionsMainMenuStartSpriteSpecs[] =
-{
+@COMP_ARRAY_START:OptionsMainMenuStartSpriteSpecs
 	&OptionsMainMenuStartSpriteSpec,
-	NULL
-};
+	
+@COMP_ARRAY_END:OptionsMainMenuStartSpriteSpecs
 
-ComponentSpec** OptionsMainMenuStartEntitySpecComponentSpecs[] = 
+const ComponentSpec* OptionsMainMenuStartEntitySpecComponentSpecs[] = 
 {
-	@COMPONENTS:OptionsMainMenuStartEntitySpec@
+	
+    (ComponentSpec*)OptionsMainMenuStartSpriteSpec,
+
 };
 
 LocalizedEntityROMSpec OptionsMainMenuStartEntitySpec =
@@ -191,19 +192,19 @@ LocalizedEntityROMSpec OptionsMainMenuStartEntitySpec =
 			// children
 			NULL,
 
-			@BEHAVIORS:NULL@,
+			(ComponentSpec**)OptionsMainMenuStartEntitySpecComponentSpecs,
 
 			// extra
 			NULL,
 
-			@SPRITES:(SpriteSpec**)OptionsMainMenuStartSpriteSpecs@,
+			
 
 			// use z displacement in projection
 			false,
 				
-			@WIREFRAMES:(WireframeSpec**)NULL@,
+			
 
-			@COLLIDERS:(ColliderSpec*)NULL@,
+			
 
 			// size
 			// if 0, width and height will be inferred from the first sprite's texture's size
@@ -212,7 +213,7 @@ LocalizedEntityROMSpec OptionsMainMenuStartEntitySpec =
 			// gameworld's character's type
 			kTypeNone,
 
-			@PHYSICS:(PhysicalProperties*)NULL@,
+			
 		},
 
 		// pointer to the animation spec for the item

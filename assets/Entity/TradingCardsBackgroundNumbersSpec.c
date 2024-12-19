@@ -206,15 +206,16 @@ BgmapSpriteROMSpec TradingCardsBackgroundNumbersSpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const TradingCardsBackgroundNumbersSpriteSpecs[] =
-{
+@COMP_ARRAY_START:TradingCardsBackgroundNumbersSpriteSpecs
 	&TradingCardsBackgroundNumbersSpriteSpec,
-	NULL
-};
+	
+@COMP_ARRAY_END:TradingCardsBackgroundNumbersSpriteSpecs
 
-ComponentSpec** TradingCardsBackgroundNumbersEntitySpecComponentSpecs[] = 
+const ComponentSpec* TradingCardsBackgroundNumbersEntitySpecComponentSpecs[] = 
 {
-	@COMPONENTS:TradingCardsBackgroundNumbersEntitySpec@
+	
+    (ComponentSpec*)TradingCardsBackgroundNumbersSpriteSpec,
+
 };
 
 AnimatedEntityROMSpec TradingCardsBackgroundNumbersEntitySpec =
@@ -226,19 +227,19 @@ AnimatedEntityROMSpec TradingCardsBackgroundNumbersEntitySpec =
 		// children
 		NULL,
 
-		@BEHAVIORS:NULL@,
+		(ComponentSpec**)TradingCardsBackgroundNumbersEntitySpecComponentSpecs,
 
 		// extra
 		NULL,
 
-		@SPRITES:(SpriteSpec**)TradingCardsBackgroundNumbersSpriteSpecs@,
+		
 
 		// use z displacement in projection
 		false,
 			
-		@WIREFRAMES:(WireframeSpec**)NULL@,
+		
 
-		@COLLIDERS:(ColliderSpec*)NULL@,
+		
 
 		// size
 		// if 0, width and height will be inferred from the first sprite's texture's size
@@ -247,7 +248,7 @@ AnimatedEntityROMSpec TradingCardsBackgroundNumbersEntitySpec =
 		// gameworld's character's type
 		0,
 
-		@PHYSICS:(PhysicalProperties*)NULL@,
+		
 	},
 
 	// pointer to the animation spec for the item

@@ -178,16 +178,18 @@ BgmapSpriteROMSpec LogoBSpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const LogoSpriteSpecs[] =
-{
+@COMP_ARRAY_START:LogoSpriteSpecs
 	&LogoASpriteSpec,
 	&LogoBSpriteSpec,
-	NULL
-};
+	
+@COMP_ARRAY_END:LogoSpriteSpecs
 
-ComponentSpec** LogoEntitySpecComponentSpecs[] = 
+const ComponentSpec* LogoEntitySpecComponentSpecs[] = 
 {
-	@COMPONENTS:LogoEntitySpec@
+	
+    (ComponentSpec*)LogoASpriteSpec,
+    (ComponentSpec*)LogoBSpriteSpec,
+
 };
 
 EntityROMSpec LogoEntitySpec =
@@ -198,19 +200,19 @@ EntityROMSpec LogoEntitySpec =
 	// children
 	NULL,
 
-	@BEHAVIORS:NULL@,
+	(ComponentSpec**)LogoEntitySpecComponentSpecs,
 
 	// extra
 	NULL,
 
-	@SPRITES:(SpriteSpec**)LogoSpriteSpecs@,
+	
 
 	// use z displacement in projection
 	false,
 			
-	@WIREFRAMES:(WireframeSpec**)NULL@,
+	
 
-	@COLLIDERS:(ColliderSpec*)NULL@,
+	
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
@@ -219,5 +221,5 @@ EntityROMSpec LogoEntitySpec =
 	// gameworld's character's type
 	kTypeNone,
 
-	@PHYSICS:(PhysicalProperties*)NULL@,
+	
 };

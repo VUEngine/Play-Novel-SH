@@ -111,15 +111,16 @@ BgmapSpriteROMSpec TradingCardSmallBlackSpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const TradingCardSmallBlackSpriteSpecs[] =
-{
+@COMP_ARRAY_START:TradingCardSmallBlackSpriteSpecs
 	&TradingCardSmallBlackSpriteSpec,
-	NULL
-};
+	
+@COMP_ARRAY_END:TradingCardSmallBlackSpriteSpecs
 
-ComponentSpec** TradingCardSmallBlackEntitySpecComponentSpecs[] = 
+const ComponentSpec* TradingCardSmallBlackEntitySpecComponentSpecs[] = 
 {
-	@COMPONENTS:TradingCardSmallBlackEntitySpec@
+	
+    (ComponentSpec*)TradingCardSmallBlackSpriteSpec,
+
 };
 
 EntityROMSpec TradingCardSmallBlackEntitySpec =
@@ -130,19 +131,19 @@ EntityROMSpec TradingCardSmallBlackEntitySpec =
 	// children
 	NULL,
 
-	@BEHAVIORS:NULL@,
+	(ComponentSpec**)TradingCardSmallBlackEntitySpecComponentSpecs,
 
 	// extra
 	NULL,
 
-	@SPRITES:(SpriteSpec**)TradingCardSmallBlackSpriteSpecs@,
+	
 
 	// use z displacement in projection
 	false,
 			
-	@WIREFRAMES:(WireframeSpec**)NULL@,
+	
 
-	@COLLIDERS:(ColliderSpec*)NULL@,
+	
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
@@ -151,5 +152,5 @@ EntityROMSpec TradingCardSmallBlackEntitySpec =
 	// gameworld's character's type
 	kTypeNone,
 
-	@PHYSICS:(PhysicalProperties*)NULL@,
+	
 };

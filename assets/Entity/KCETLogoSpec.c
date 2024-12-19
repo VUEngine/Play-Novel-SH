@@ -178,16 +178,18 @@ BgmapSpriteROMSpec KCETLogoBSpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const KCETLogoSpriteSpecs[] =
-{
+@COMP_ARRAY_START:KCETLogoSpriteSpecs
 	&KCETLogoASpriteSpec,
 	&KCETLogoBSpriteSpec,
-	NULL
-};
+	
+@COMP_ARRAY_END:KCETLogoSpriteSpecs
 
-ComponentSpec** KCETLogoEntitySpecComponentSpecs[] = 
+const ComponentSpec* KCETLogoEntitySpecComponentSpecs[] = 
 {
-	@COMPONENTS:KCETLogoEntitySpec@
+	
+    (ComponentSpec*)KCETLogoASpriteSpec,
+    (ComponentSpec*)KCETLogoBSpriteSpec,
+
 };
 
 EntityROMSpec KCETLogoEntitySpec =
@@ -198,19 +200,19 @@ EntityROMSpec KCETLogoEntitySpec =
 	// children
 	NULL,
 
-	@BEHAVIORS:NULL@,
+	(ComponentSpec**)KCETLogoEntitySpecComponentSpecs,
 
 	// extra
 	NULL,
 
-	@SPRITES:(SpriteSpec**)KCETLogoSpriteSpecs@,
+	
 
 	// use z displacement in projection
 	false,
 			
-	@WIREFRAMES:(WireframeSpec**)NULL@,
+	
 
-	@COLLIDERS:(ColliderSpec*)NULL@,
+	
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
@@ -219,5 +221,5 @@ EntityROMSpec KCETLogoEntitySpec =
 	// gameworld's character's type
 	kTypeNone,
 
-	@PHYSICS:(PhysicalProperties*)NULL@,
+	
 };

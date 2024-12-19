@@ -111,15 +111,16 @@ BgmapSpriteROMSpec TradingCardsCursorSpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const TradingCardsCursorSpriteSpecs[] =
-{
+@COMP_ARRAY_START:TradingCardsCursorSpriteSpecs
 	&TradingCardsCursorSpriteSpec,
-	NULL
-};
+	
+@COMP_ARRAY_END:TradingCardsCursorSpriteSpecs
 
-ComponentSpec** TradingCardsCursorEntitySpecComponentSpecs[] = 
+const ComponentSpec* TradingCardsCursorEntitySpecComponentSpecs[] = 
 {
-	@COMPONENTS:TradingCardsCursorEntitySpec@
+	
+    (ComponentSpec*)TradingCardsCursorSpriteSpec,
+
 };
 
 EntityROMSpec TradingCardsCursorEntitySpec =
@@ -130,19 +131,19 @@ EntityROMSpec TradingCardsCursorEntitySpec =
 	// children
 	NULL,
 
-	@BEHAVIORS:NULL@,
+	(ComponentSpec**)TradingCardsCursorEntitySpecComponentSpecs,
 
 	// extra
 	NULL,
 
-	@SPRITES:(SpriteSpec**)TradingCardsCursorSpriteSpecs@,
+	
 
 	// use z displacement in projection
 	false,
 			
-	@WIREFRAMES:(WireframeSpec**)NULL@,
+	
 
-	@COLLIDERS:(ColliderSpec*)NULL@,
+	
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
@@ -151,5 +152,5 @@ EntityROMSpec TradingCardsCursorEntitySpec =
 	// gameworld's character's type
 	kTypeNone,
 
-	@PHYSICS:(PhysicalProperties*)NULL@,
+	
 };

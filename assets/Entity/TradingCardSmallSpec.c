@@ -910,12 +910,11 @@ BgmapSpriteROMSpec TradingCardSmallOverlaySpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const TradingCardSmallSpriteSpecs[] =
-{
+@COMP_ARRAY_START:TradingCardSmallSpriteSpecs
 	&TradingCardSmallBaseSpriteSpec,
 	&TradingCardSmallOverlaySpriteSpec,
-	NULL
-};
+	
+@COMP_ARRAY_END:TradingCardSmallSpriteSpecs
 
 PositionedEntityROMSpec TradingCardSmallChildrenEntities[] =
 {
@@ -923,9 +922,12 @@ PositionedEntityROMSpec TradingCardSmallChildrenEntities[] =
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, true},
 };
 
-ComponentSpec** TradingCardSmallEntitySpecComponentSpecs[] = 
+const ComponentSpec* TradingCardSmallEntitySpecComponentSpecs[] = 
 {
-	@COMPONENTS:TradingCardSmallEntitySpec@
+	
+    (ComponentSpec*)TradingCardSmallBaseSpriteSpec,
+    (ComponentSpec*)TradingCardSmallOverlaySpriteSpec,
+
 };
 
 AnimatedEntityROMSpec TradingCardSmallEntitySpec =
@@ -937,19 +939,19 @@ AnimatedEntityROMSpec TradingCardSmallEntitySpec =
 		// children
 		(PositionedEntity*)TradingCardSmallChildrenEntities,
 
-		@BEHAVIORS:NULL@,
+		(ComponentSpec**)TradingCardSmallEntitySpecComponentSpecs,
 
 		// extra
 		NULL,
 
-		@SPRITES:(SpriteSpec**)TradingCardSmallSpriteSpecs@,
+		
 
 		// use z displacement in projection
 		false,
 			
-		@WIREFRAMES:(WireframeSpec**)NULL@,
+		
 
-		@COLLIDERS:(ColliderSpec*)NULL@,
+		
 
 		// size
 		// if 0, width and height will be inferred from the first sprite's texture's size
@@ -958,7 +960,7 @@ AnimatedEntityROMSpec TradingCardSmallEntitySpec =
 		// gameworld's character's type
 		0,
 
-		@PHYSICS:(PhysicalProperties*)NULL@,
+		
 	},
 
 	// pointer to the animation spec for the item

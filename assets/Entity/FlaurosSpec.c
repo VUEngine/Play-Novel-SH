@@ -313,17 +313,20 @@ BgmapSpriteROMSpec FlaurosOverlaySpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const FlaurosSpriteSpecs[] =
-{
+@COMP_ARRAY_START:FlaurosSpriteSpecs
 	//&FlaurosBlackSpriteSpec,
 	&FlaurosBaseSpriteSpec,
 	&FlaurosOverlaySpriteSpec,
-	NULL
-};
+	
+@COMP_ARRAY_END:FlaurosSpriteSpecs
 
-ComponentSpec** FlaurosEntitySpecComponentSpecs[] = 
+const ComponentSpec* FlaurosEntitySpecComponentSpecs[] = 
 {
-	@COMPONENTS:FlaurosEntitySpec@
+	
+    (ComponentSpec*)//FlaurosBlackSpriteSpec,
+    (ComponentSpec*)FlaurosBaseSpriteSpec,
+    (ComponentSpec*)FlaurosOverlaySpriteSpec,
+
 };
 
 AnimatedEntityROMSpec FlaurosEntitySpec =
@@ -335,19 +338,19 @@ AnimatedEntityROMSpec FlaurosEntitySpec =
 		// children
 		NULL,
 
-		@BEHAVIORS:NULL@,
+		(ComponentSpec**)FlaurosEntitySpecComponentSpecs,
 
 		// extra
 		NULL,
 
-		@SPRITES:(SpriteSpec**)FlaurosSpriteSpecs@,
+		
 
 		// use z displacement in projection
 		false,
 			
-		@WIREFRAMES:(WireframeSpec**)NULL@,
+		
 
-		@COLLIDERS:(ColliderSpec*)NULL@,
+		
 
 		// size
 		// if 0, width and height will be inferred from the first sprite's texture's size
@@ -356,7 +359,7 @@ AnimatedEntityROMSpec FlaurosEntitySpec =
 		// gameworld's character's type
 		0,
 
-		@PHYSICS:(PhysicalProperties*)NULL@,
+		
 	},
 
 	// pointer to the animation spec for the item

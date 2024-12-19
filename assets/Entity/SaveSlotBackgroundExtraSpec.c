@@ -93,15 +93,16 @@ BgmapSpriteROMSpec SaveSlotWideBackgroundExtraSpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const SaveSlotWideBackgroundExtraSpriteSpecs[] =
-{
+@COMP_ARRAY_START:SaveSlotWideBackgroundExtraSpriteSpecs
 	&SaveSlotWideBackgroundExtraSpriteSpec,
-	NULL
-};
+	
+@COMP_ARRAY_END:SaveSlotWideBackgroundExtraSpriteSpecs
 
-ComponentSpec** SaveSlotWideBackgroundExtraEntitySpecComponentSpecs[] = 
+const ComponentSpec* SaveSlotWideBackgroundExtraEntitySpecComponentSpecs[] = 
 {
-	@COMPONENTS:SaveSlotWideBackgroundExtraEntitySpec@
+	
+    (ComponentSpec*)SaveSlotWideBackgroundExtraSpriteSpec,
+
 };
 
 EntityROMSpec SaveSlotWideBackgroundExtraEntitySpec =
@@ -112,19 +113,19 @@ EntityROMSpec SaveSlotWideBackgroundExtraEntitySpec =
 	// children
 	NULL,
 
-	@BEHAVIORS:NULL@,
+	(ComponentSpec**)SaveSlotWideBackgroundExtraEntitySpecComponentSpecs,
 
 	// extra
 	NULL,
 
-	@SPRITES:(SpriteSpec**)SaveSlotWideBackgroundExtraSpriteSpecs@,
+	
 
 	// use z displacement in projection
 	false,
 			
-	@WIREFRAMES:(WireframeSpec**)NULL@,
+	
 
-	@COLLIDERS:(ColliderSpec*)NULL@,
+	
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
@@ -133,5 +134,5 @@ EntityROMSpec SaveSlotWideBackgroundExtraEntitySpec =
 	// gameworld's character's type
 	kTypeNone,
 
-	@PHYSICS:(PhysicalProperties*)NULL@,
+	
 };

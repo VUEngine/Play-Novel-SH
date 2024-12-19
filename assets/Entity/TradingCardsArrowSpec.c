@@ -111,15 +111,16 @@ BgmapSpriteROMSpec TradingCardsArrowSpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const TradingCardsArrowSpriteSpecs[] =
-{
+@COMP_ARRAY_START:TradingCardsArrowSpriteSpecs
 	&TradingCardsArrowSpriteSpec,
-	NULL
-};
+	
+@COMP_ARRAY_END:TradingCardsArrowSpriteSpecs
 
-ComponentSpec** TradingCardsArrowEntitySpecComponentSpecs[] = 
+const ComponentSpec* TradingCardsArrowEntitySpecComponentSpecs[] = 
 {
-	@COMPONENTS:TradingCardsArrowEntitySpec@
+	
+    (ComponentSpec*)TradingCardsArrowSpriteSpec,
+
 };
 
 EntityROMSpec TradingCardsArrowEntitySpec =
@@ -130,19 +131,19 @@ EntityROMSpec TradingCardsArrowEntitySpec =
 	// children
 	NULL,
 
-	@BEHAVIORS:NULL@,
+	(ComponentSpec**)TradingCardsArrowEntitySpecComponentSpecs,
 
 	// extra
 	NULL,
 
-	@SPRITES:(SpriteSpec**)TradingCardsArrowSpriteSpecs@,
+	
 
 	// use z displacement in projection
 	false,
 			
-	@WIREFRAMES:(WireframeSpec**)NULL@,
+	
 
-	@COLLIDERS:(ColliderSpec*)NULL@,
+	
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
@@ -151,7 +152,7 @@ EntityROMSpec TradingCardsArrowEntitySpec =
 	// gameworld's character's type
 	kTypeNone,
 
-	@PHYSICS:(PhysicalProperties*)NULL@,
+	
 };
 
 TextureROMSpec TradingCardsArrowRightTextureSpec =
@@ -220,15 +221,15 @@ BgmapSpriteROMSpec TradingCardsArrowRightSpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const TradingCardsArrowRightSpriteSpecs[] =
-{
+@COMP_ARRAY_START:TradingCardsArrowRightSpriteSpecs
 	&TradingCardsArrowRightSpriteSpec,
-	NULL
-};
+	
+@COMP_ARRAY_END:TradingCardsArrowRightSpriteSpecs
 
-ComponentSpec** TradingCardsArrowRightEntitySpecComponentSpecs[] = 
+const ComponentSpec* TradingCardsArrowRightEntitySpecComponentSpecs[] = 
 {
-	@COMPONENTS:TradingCardsArrowRightEntitySpec@
+	
+
 };
 
 EntityROMSpec TradingCardsArrowRightEntitySpec =
@@ -239,19 +240,19 @@ EntityROMSpec TradingCardsArrowRightEntitySpec =
 	// children
 	NULL,
 
-	@BEHAVIORS:NULL@,
+	(ComponentSpec**)TradingCardsArrowEntitySpecComponentSpecs,
 
 	// extra
 	NULL,
 
-	@SPRITES:(SpriteSpec**)TradingCardsArrowRightSpriteSpecs@,
+	
 
 	// use z displacement in projection
 	false,
 			
-	@WIREFRAMES:(WireframeSpec**)NULL@,
+	
 
-	@COLLIDERS:(ColliderSpec*)NULL@,
+	
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
@@ -260,5 +261,5 @@ EntityROMSpec TradingCardsArrowRightEntitySpec =
 	// gameworld's character's type
 	kTypeNone,
 
-	@PHYSICS:(PhysicalProperties*)NULL@,
+	
 };

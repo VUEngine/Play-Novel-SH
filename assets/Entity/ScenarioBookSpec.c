@@ -250,12 +250,11 @@ BgmapSpriteROMSpec ScenarioBookOverlaySpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const ScenarioBookSpriteSpecs[] =
-{
+@COMP_ARRAY_START:ScenarioBookSpriteSpecs
 	&ScenarioBookBaseSpriteSpec,
 	&ScenarioBookOverlaySpriteSpec,
-	NULL
-};
+	
+@COMP_ARRAY_END:ScenarioBookSpriteSpecs
 
 PositionedEntityROMSpec ScenarioBookChildrenEntities[] =
 {
@@ -263,9 +262,12 @@ PositionedEntityROMSpec ScenarioBookChildrenEntities[] =
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, true},
 };
 
-ComponentSpec** ScenarioBookEntitySpecComponentSpecs[] = 
+const ComponentSpec* ScenarioBookEntitySpecComponentSpecs[] = 
 {
-	@COMPONENTS:ScenarioBookEntitySpec@
+	
+    (ComponentSpec*)ScenarioBookBaseSpriteSpec,
+    (ComponentSpec*)ScenarioBookOverlaySpriteSpec,
+
 };
 
 AnimatedEntityROMSpec ScenarioBookEntitySpec =
@@ -277,19 +279,19 @@ AnimatedEntityROMSpec ScenarioBookEntitySpec =
 		// children
 		(PositionedEntity*)ScenarioBookChildrenEntities,
 
-		@BEHAVIORS:NULL@,
+		(ComponentSpec**)ScenarioBookEntitySpecComponentSpecs,
 
 		// extra
 		NULL,
 
-		@SPRITES:(SpriteSpec**)ScenarioBookSpriteSpecs@,
+		
 
 		// use z displacement in projection
 		false,
 			
-		@WIREFRAMES:(WireframeSpec**)NULL@,
+		
 
-		@COLLIDERS:(ColliderSpec*)NULL@,
+		
 
 		// size
 		// if 0, width and height will be inferred from the first sprite's texture's size
@@ -298,7 +300,7 @@ AnimatedEntityROMSpec ScenarioBookEntitySpec =
 		// gameworld's character's type
 		0,
 
-		@PHYSICS:(PhysicalProperties*)NULL@,
+		
 	},
 
 	// pointer to the animation spec for the item

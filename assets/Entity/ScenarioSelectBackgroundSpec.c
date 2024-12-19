@@ -111,15 +111,16 @@ BgmapSpriteROMSpec ScenarioSelectBackgroundSpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const ScenarioSelectBackgroundSpriteSpecs[] =
-{
+@COMP_ARRAY_START:ScenarioSelectBackgroundSpriteSpecs
 	&ScenarioSelectBackgroundSpriteSpec,
-	NULL
-};
+	
+@COMP_ARRAY_END:ScenarioSelectBackgroundSpriteSpecs
 
-ComponentSpec** ScenarioSelectBackgroundEntitySpecComponentSpecs[] = 
+const ComponentSpec* ScenarioSelectBackgroundEntitySpecComponentSpecs[] = 
 {
-	@COMPONENTS:ScenarioSelectBackgroundEntitySpec@
+	
+    (ComponentSpec*)ScenarioSelectBackgroundSpriteSpec,
+
 };
 
 EntityROMSpec ScenarioSelectBackgroundEntitySpec =
@@ -130,19 +131,19 @@ EntityROMSpec ScenarioSelectBackgroundEntitySpec =
 	// children
 	NULL,
 
-	@BEHAVIORS:NULL@,
+	(ComponentSpec**)ScenarioSelectBackgroundEntitySpecComponentSpecs,
 
 	// extra
 	NULL,
 
-	@SPRITES:(SpriteSpec**)ScenarioSelectBackgroundSpriteSpecs@,
+	
 
 	// use z displacement in projection
 	false,
 			
-	@WIREFRAMES:(WireframeSpec**)NULL@,
+	
 
-	@COLLIDERS:(ColliderSpec*)NULL@,
+	
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
@@ -151,5 +152,5 @@ EntityROMSpec ScenarioSelectBackgroundEntitySpec =
 	// gameworld's character's type
 	kTypeNone,
 
-	@PHYSICS:(PhysicalProperties*)NULL@,
+	
 };

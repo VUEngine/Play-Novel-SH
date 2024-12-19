@@ -17,9 +17,10 @@
 //											DECLARATIONS
 //---------------------------------------------------------------------------------------------------------
 
-ComponentSpec** DummyContainerEntitySpecComponentSpecs[] = 
+const ComponentSpec* DummyContainerEntitySpecComponentSpecs[] = 
 {
-	@COMPONENTS:DummyContainerEntitySpec@
+	
+
 };
 
 EntityROMSpec DummyContainerEntitySpec =
@@ -30,19 +31,19 @@ EntityROMSpec DummyContainerEntitySpec =
 	// children
 	NULL,
 
-	@BEHAVIORS:NULL@,
+	(ComponentSpec**)DummyContainerEntitySpecComponentSpecs,
 
 	// extra
 	NULL,
 
-	@SPRITES:NULL@,
+	
 
 	// use z displacement in projection
 	false,
 			
-	@WIREFRAMES:(WireframeSpec**)NULL@,
+	
 
-	@COLLIDERS:NULL@,
+	
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
@@ -51,5 +52,5 @@ EntityROMSpec DummyContainerEntitySpec =
 	// gameworld's character's type
 	kTypeNone,
 
-	@PHYSICS:NULL@,
+	
 };

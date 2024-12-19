@@ -845,8 +845,7 @@ BgmapSpriteROMSpec Scene009FrameSpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const Scene009SpriteSpecs[] =
-{
+@COMP_ARRAY_START:Scene009SpriteSpecs
 	(BgmapSpriteROMSpec*)&Scene009BackgroundBaseSpriteSpec,
 	(BgmapSpriteROMSpec*)&Scene009BackgroundOverlaySpriteSpec,
 	(BgmapSpriteROMSpec*)&Scene009Snow1SpriteSpec,
@@ -858,12 +857,24 @@ BgmapSpriteROMSpec* const Scene009SpriteSpecs[] =
 	(BgmapSpriteROMSpec*)&Scene009HarryOverlaySpriteSpec,
 	(BgmapSpriteROMSpec*)&Scene009SteeringWheelSpriteSpec,
 	(BgmapSpriteROMSpec*)&Scene009FrameSpriteSpec,
-	NULL
-};
+	
+@COMP_ARRAY_END:Scene009SpriteSpecs
 
-ComponentSpec** Scene009EntitySpecComponentSpecs[] = 
+const ComponentSpec* Scene009EntitySpecComponentSpecs[] = 
 {
-	@COMPONENTS:Scene009EntitySpec@
+	
+    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009BackgroundBaseSpriteSpec,
+    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009BackgroundOverlaySpriteSpec,
+    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009Snow1SpriteSpec,
+    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009Snow2SpriteSpec,
+    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009CarInteriorSpriteSpec,
+    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009SeatSpriteSpec,
+    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009HarryBlackSpriteSpec,
+    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009HarryBaseSpriteSpec,
+    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009HarryOverlaySpriteSpec,
+    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009SteeringWheelSpriteSpec,
+    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009FrameSpriteSpec,
+
 };
 
 EntityROMSpec Scene009EntitySpec =
@@ -874,19 +885,19 @@ EntityROMSpec Scene009EntitySpec =
 	// children
 	NULL,
 
-	@BEHAVIORS:NULL@,
+	(ComponentSpec**)Scene009EntitySpecComponentSpecs,
 
 	// extra
 	NULL,
 
-	@SPRITES:(SpriteSpec**)Scene009SpriteSpecs@,
+	
 
 	// use z displacement in projection
 	false,
 			
-	@WIREFRAMES:(WireframeSpec**)NULL@,
+	
 
-	@COLLIDERS:(ColliderSpec*)NULL@,
+	
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
@@ -895,5 +906,5 @@ EntityROMSpec Scene009EntitySpec =
 	// gameworld's character's type
 	kTypeNone,
 
-	@PHYSICS:(PhysicalProperties*)NULL@,
+	
 };

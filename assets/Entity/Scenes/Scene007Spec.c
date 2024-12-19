@@ -178,16 +178,18 @@ BgmapSpriteROMSpec Scene007OverlaySpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const Scene007SpriteSpecs[] =
-{
+@COMP_ARRAY_START:Scene007SpriteSpecs
 	&Scene007BaseSpriteSpec,
 	&Scene007OverlaySpriteSpec,
-	NULL
-};
+	
+@COMP_ARRAY_END:Scene007SpriteSpecs
 
-ComponentSpec** Scene007EntitySpecComponentSpecs[] = 
+const ComponentSpec* Scene007EntitySpecComponentSpecs[] = 
 {
-	@COMPONENTS:Scene007EntitySpec@
+	
+    (ComponentSpec*)Scene007BaseSpriteSpec,
+    (ComponentSpec*)Scene007OverlaySpriteSpec,
+
 };
 
 EntityROMSpec Scene007EntitySpec =
@@ -198,19 +200,19 @@ EntityROMSpec Scene007EntitySpec =
 	// children
 	NULL,
 
-	@BEHAVIORS:NULL@,
+	(ComponentSpec**)Scene007EntitySpecComponentSpecs,
 
 	// extra
 	NULL,
 
-	@SPRITES:(SpriteSpec**)Scene007SpriteSpecs@,
+	
 
 	// use z displacement in projection
 	false,
 			
-	@WIREFRAMES:(WireframeSpec**)NULL@,
+	
 
-	@COLLIDERS:(ColliderSpec*)NULL@,
+	
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
@@ -219,5 +221,5 @@ EntityROMSpec Scene007EntitySpec =
 	// gameworld's character's type
 	kTypeNone,
 
-	@PHYSICS:(PhysicalProperties*)NULL@,
+	
 };
