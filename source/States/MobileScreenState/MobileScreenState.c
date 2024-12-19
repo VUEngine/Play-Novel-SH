@@ -19,7 +19,7 @@
 #include <Telegram.h>
 #include <I18n.h>
 #include <Languages.h>
-#include <PhysicalWorld.h>
+#include <BodyManager.h>
 #include <MobileScreenState.h>
 #include <ParticleSystem.h>
 #include <KeypadManager.h>

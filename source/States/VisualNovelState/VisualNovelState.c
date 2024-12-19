@@ -20,7 +20,7 @@
 #include <I18n.h>
 #include <Languages.h>
 #include <Telegram.h>
-#include <PhysicalWorld.h>
+#include <BodyManager.h>
 #include <VisualNovelState.h>
 #include <ParticleSystem.h>
 #include <KeypadManager.h>
