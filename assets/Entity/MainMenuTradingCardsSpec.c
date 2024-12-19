@@ -168,7 +168,7 @@ BgmapSpriteROMSpec OptionsMainMenuTradingCardsSpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* OptionsMainMenuTradingCardsEntitySpecComponentSpecs[] = 
+const ComponentSpec* OptionsMainMenuTradingCardsEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&OptionsMainMenuTradingCardsSpriteSpec,
 	NULL
@@ -180,16 +180,16 @@ LocalizedEntityROMSpec OptionsMainMenuTradingCardsEntitySpec =
 	{
 		// entity
 		{
-			// class allocator			
+			// Class allocator			
 			__TYPE(LocalizedEntity),
 
-			// Components
-			(ComponentSpec**)OptionsMainMenuTradingCardsEntitySpecComponentSpecs,
+			// Component specs
+			(ComponentSpec**)OptionsMainMenuTradingCardsEntityComponentSpecs,
 
-			// children
+			// Children specs
 			NULL,
 
-			// extra
+			// Extra info
 			NULL,
 
 			
@@ -200,11 +200,11 @@ LocalizedEntityROMSpec OptionsMainMenuTradingCardsEntitySpec =
 
 			
 
-			// size
-			// if 0, width and height will be inferred from the first sprite's texture's size
+			// Size
+			// If 0, it is computed from the visual components if any
 			{0, 0, 0},
 
-			// gameworld's character's type
+			// In-game entity's type
 			kTypeNone,
 
 			

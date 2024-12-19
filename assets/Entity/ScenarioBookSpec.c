@@ -258,7 +258,7 @@ PositionedEntityROMSpec ScenarioBookChildrenEntities[] =
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, true},
 };
 
-const ComponentSpec* ScenarioBookEntitySpecComponentSpecs[] = 
+const ComponentSpec* ScenarioBookEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&ScenarioBookBaseSpriteSpec,
 	(ComponentSpec*)&ScenarioBookOverlaySpriteSpec,
@@ -268,16 +268,16 @@ const ComponentSpec* ScenarioBookEntitySpecComponentSpecs[] =
 AnimatedEntityROMSpec ScenarioBookEntitySpec =
 {
 	{
-		// class allocator		
+		// Class allocator		
 		__TYPE(AnimatedEntity),
 
-		// Components
-		(ComponentSpec**)ScenarioBookEntitySpecComponentSpecs,
+		// Component specs
+		(ComponentSpec**)ScenarioBookEntityComponentSpecs,
 
-		// children
+		// Children specs
 		(PositionedEntity*)ScenarioBookChildrenEntities,
 
-		// extra
+		// Extra info
 		NULL,
 
 		
@@ -288,11 +288,11 @@ AnimatedEntityROMSpec ScenarioBookEntitySpec =
 
 		
 
-		// size
-		// if 0, width and height will be inferred from the first sprite's texture's size
+		// Size
+		// If 0, it is computed from the visual components if any
 		{0, 0, 0},
 
-		// gameworld's character's type
+		// In-game entity's type
 		0,
 
 		

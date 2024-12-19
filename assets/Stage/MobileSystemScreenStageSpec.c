@@ -75,7 +75,7 @@ StageROMSpec MobileSystemScreenStageSpec =
 
 	// level
 	{
-		// size
+		// Size
 		{
 			// x
 			__SCREEN_WIDTH,
@@ -264,7 +264,7 @@ StageROMSpec MobileSystemScreenStageSpec =
 			__TYPE(UIContainer),
 		},
 
-		// children
+		// Children specs
 		(PositionedEntity*)MobileSystemScreenStageSpecEntities,
 	},
 

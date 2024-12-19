@@ -164,7 +164,7 @@ BgmapSpriteROMSpec LowPowerIndicatorBlackSpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* LowPowerIndicatorBlackEntitySpecComponentSpecs[] = 
+const ComponentSpec* LowPowerIndicatorBlackEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&LowPowerIndicatorBlackSpriteSpec,
 	NULL
@@ -176,16 +176,16 @@ LowPowerEntityROMSpec LowPowerIndicatorBlackEntitySpec =
 	{
 		// entity
 		{
-			// class allocator			
+			// Class allocator			
 			__TYPE(LowPowerEntity),
 
-			// Components
-			(ComponentSpec**)LowPowerIndicatorBlackEntitySpecComponentSpecs,
+			// Component specs
+			(ComponentSpec**)LowPowerIndicatorBlackEntityComponentSpecs,
 
-			// children
+			// Children specs
 			NULL,
 
-			// extra
+			// Extra info
 			NULL,
 
 			
@@ -196,11 +196,11 @@ LowPowerEntityROMSpec LowPowerIndicatorBlackEntitySpec =
 
 			
 
-			// size
-			// if 0, width and height will be inferred from the first sprite's texture's size
+			// Size
+			// If 0, it is computed from the visual components if any
 			{0, 0, 0},
 
-			// gameworld's character's type
+			// In-game entity's type
 			kTypeNone,
 
 			

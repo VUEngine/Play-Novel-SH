@@ -78,7 +78,7 @@ StageROMSpec ScenarioSelectScreenStageSpec =
 
 	// level
 	{
-		// size
+		// Size
 		{
 			// x
 			__SCREEN_WIDTH,
@@ -267,7 +267,7 @@ StageROMSpec ScenarioSelectScreenStageSpec =
 			__TYPE(UIContainer),
 		},
 
-		// children
+		// Children specs
 		(PositionedEntity*)ScenarioSelectScreenStageSpecEntities,
 	},
 

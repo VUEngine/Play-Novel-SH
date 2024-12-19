@@ -93,7 +93,7 @@ BgmapSpriteROMSpec Scene002HighlightSpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* Scene002HighlightEntitySpecComponentSpecs[] = 
+const ComponentSpec* Scene002HighlightEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&Scene002HighlightSpriteSpec,
 	NULL
@@ -101,22 +101,22 @@ const ComponentSpec* Scene002HighlightEntitySpecComponentSpecs[] =
 
 EntityROMSpec Scene002HighlightEntitySpec =
 {
-	// class allocator	
+	// Class allocator	
 	__TYPE(Entity),
 
-	// Components
-	(ComponentSpec**)Scene002HighlightEntitySpecComponentSpecs,
+	// Component specs
+	(ComponentSpec**)Scene002HighlightEntityComponentSpecs,
 
-	// children
+	// Children specs
 	NULL,
 
-	// extra
+	// Extra info
 	NULL,
 
-	// size
-	// if 0, width and height will be inferred from the first sprite's texture's size
+	// Size
+	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// gameworld's character's type
+	// In-game entity's type
 	kTypeNone
 };

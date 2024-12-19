@@ -168,7 +168,7 @@ BgmapSpriteROMSpec OptionsMainMenuMobileSpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* OptionsMainMenuMobileEntitySpecComponentSpecs[] = 
+const ComponentSpec* OptionsMainMenuMobileEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&OptionsMainMenuMobileSpriteSpec,
 	NULL
@@ -180,16 +180,16 @@ LocalizedEntityROMSpec OptionsMainMenuMobileEntitySpec =
 	{
 		// entity
 		{
-			// class allocator			
+			// Class allocator			
 			__TYPE(LocalizedEntity),
 
-			// Components
-			(ComponentSpec**)OptionsMainMenuMobileEntitySpecComponentSpecs,
+			// Component specs
+			(ComponentSpec**)OptionsMainMenuMobileEntityComponentSpecs,
 
-			// children
+			// Children specs
 			NULL,
 
-			// extra
+			// Extra info
 			NULL,
 
 			
@@ -200,11 +200,11 @@ LocalizedEntityROMSpec OptionsMainMenuMobileEntitySpec =
 
 			
 
-			// size
-			// if 0, width and height will be inferred from the first sprite's texture's size
+			// Size
+			// If 0, it is computed from the visual components if any
 			{0, 0, 0},
 
-			// gameworld's character's type
+			// In-game entity's type
 			kTypeNone,
 
 			

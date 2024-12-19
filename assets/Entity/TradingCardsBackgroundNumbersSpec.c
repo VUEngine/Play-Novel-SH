@@ -206,7 +206,7 @@ BgmapSpriteROMSpec TradingCardsBackgroundNumbersSpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* TradingCardsBackgroundNumbersEntitySpecComponentSpecs[] = 
+const ComponentSpec* TradingCardsBackgroundNumbersEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&TradingCardsBackgroundNumbersSpriteSpec,
 	NULL
@@ -215,16 +215,16 @@ const ComponentSpec* TradingCardsBackgroundNumbersEntitySpecComponentSpecs[] =
 AnimatedEntityROMSpec TradingCardsBackgroundNumbersEntitySpec =
 {
 	{
-		// class allocator		
+		// Class allocator		
 		__TYPE(AnimatedEntity),
 
-		// Components
-		(ComponentSpec**)TradingCardsBackgroundNumbersEntitySpecComponentSpecs,
+		// Component specs
+		(ComponentSpec**)TradingCardsBackgroundNumbersEntityComponentSpecs,
 
-		// children
+		// Children specs
 		NULL,
 
-		// extra
+		// Extra info
 		NULL,
 
 		
@@ -235,11 +235,11 @@ AnimatedEntityROMSpec TradingCardsBackgroundNumbersEntitySpec =
 
 		
 
-		// size
-		// if 0, width and height will be inferred from the first sprite's texture's size
+		// Size
+		// If 0, it is computed from the visual components if any
 		{0, 0, 0},
 
-		// gameworld's character's type
+		// In-game entity's type
 		0,
 
 		

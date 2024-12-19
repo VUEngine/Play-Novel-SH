@@ -178,7 +178,7 @@ BgmapSpriteROMSpec Scene002OverlaySpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* Scene002EntitySpecComponentSpecs[] = 
+const ComponentSpec* Scene002EntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&Scene002BaseSpriteSpec,
 	(ComponentSpec*)&Scene002OverlaySpriteSpec,
@@ -187,22 +187,22 @@ const ComponentSpec* Scene002EntitySpecComponentSpecs[] =
 
 EntityROMSpec Scene002EntitySpec =
 {
-	// class allocator	
+	// Class allocator	
 	__TYPE(Entity),
 
-	// Components
-	(ComponentSpec**)Scene002EntitySpecComponentSpecs,
+	// Component specs
+	(ComponentSpec**)Scene002EntityComponentSpecs,
 
-	// children
+	// Children specs
 	NULL,
 
-	// extra
+	// Extra info
 	NULL,
 
-	// size
-	// if 0, width and height will be inferred from the first sprite's texture's size
+	// Size
+	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// gameworld's character's type
+	// In-game entity's type
 	kTypeNone
 };

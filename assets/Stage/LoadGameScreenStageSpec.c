@@ -95,7 +95,7 @@ StageROMSpec LoadGameScreenStageSpec =
 
 	// level
 	{
-		// size
+		// Size
 		{
 			// x
 			__SCREEN_WIDTH,
@@ -284,7 +284,7 @@ StageROMSpec LoadGameScreenStageSpec =
 			__TYPE(UIContainer),
 		},
 
-		// children
+		// Children specs
 		(PositionedEntity*)LoadGameScreenStageSpecEntities,
 	},
 

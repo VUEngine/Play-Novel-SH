@@ -918,7 +918,7 @@ PositionedEntityROMSpec TradingCardSmallChildrenEntities[] =
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, true},
 };
 
-const ComponentSpec* TradingCardSmallEntitySpecComponentSpecs[] = 
+const ComponentSpec* TradingCardSmallEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&TradingCardSmallBaseSpriteSpec,
 	(ComponentSpec*)&TradingCardSmallOverlaySpriteSpec,
@@ -928,16 +928,16 @@ const ComponentSpec* TradingCardSmallEntitySpecComponentSpecs[] =
 AnimatedEntityROMSpec TradingCardSmallEntitySpec =
 {
 	{
-		// class allocator		
+		// Class allocator		
 		__TYPE(AnimatedEntity),
 
-		// Components
-		(ComponentSpec**)TradingCardSmallEntitySpecComponentSpecs,
+		// Component specs
+		(ComponentSpec**)TradingCardSmallEntityComponentSpecs,
 
-		// children
+		// Children specs
 		(PositionedEntity*)TradingCardSmallChildrenEntities,
 
-		// extra
+		// Extra info
 		NULL,
 
 		
@@ -948,11 +948,11 @@ AnimatedEntityROMSpec TradingCardSmallEntitySpec =
 
 		
 
-		// size
-		// if 0, width and height will be inferred from the first sprite's texture's size
+		// Size
+		// If 0, it is computed from the visual components if any
 		{0, 0, 0},
 
-		// gameworld's character's type
+		// In-game entity's type
 		0,
 
 		

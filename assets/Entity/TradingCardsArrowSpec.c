@@ -111,7 +111,7 @@ BgmapSpriteROMSpec TradingCardsArrowSpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* TradingCardsArrowEntitySpecComponentSpecs[] = 
+const ComponentSpec* TradingCardsArrowEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&TradingCardsArrowSpriteSpec,
 	NULL
@@ -119,23 +119,23 @@ const ComponentSpec* TradingCardsArrowEntitySpecComponentSpecs[] =
 
 EntityROMSpec TradingCardsArrowEntitySpec =
 {
-	// class allocator	
+	// Class allocator	
 	__TYPE(Entity),
 
-	// Components
-	(ComponentSpec**)TradingCardsArrowEntitySpecComponentSpecs,
+	// Component specs
+	(ComponentSpec**)TradingCardsArrowEntityComponentSpecs,
 
-	// children
+	// Children specs
 	NULL,
 
-	// extra
+	// Extra info
 	NULL,
 
-	// size
-	// if 0, width and height will be inferred from the first sprite's texture's size
+	// Size
+	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// gameworld's character's type
+	// In-game entity's type
 	kTypeNone
 };
 
@@ -205,30 +205,24 @@ BgmapSpriteROMSpec TradingCardsArrowRightSpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* TradingCardsArrowRightEntitySpecComponentSpecs[] = 
-{
-	
-
-};
-
 EntityROMSpec TradingCardsArrowRightEntitySpec =
 {
-	// class allocator	
+	// Class allocator	
 	__TYPE(Entity),
 
-	// Components
-	(ComponentSpec**)TradingCardsArrowRightEntitySpecComponentSpecs,
-
-	// children
+	// Component specs
 	NULL,
 
-	// extra
+	// Children specs
 	NULL,
 
-	// size
-	// if 0, width and height will be inferred from the first sprite's texture's size
+	// Extra info
+	NULL,
+
+	// Size
+	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// gameworld's character's type
+	// In-game entity's type
 	kTypeNone
 };

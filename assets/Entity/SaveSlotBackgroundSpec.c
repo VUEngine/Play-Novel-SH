@@ -111,7 +111,7 @@ BgmapSpriteROMSpec SaveSlotWideBackgroundSpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* SaveSlotWideBackgroundEntitySpecComponentSpecs[] = 
+const ComponentSpec* SaveSlotWideBackgroundEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&SaveSlotWideBackgroundSpriteSpec,
 	NULL
@@ -119,22 +119,22 @@ const ComponentSpec* SaveSlotWideBackgroundEntitySpecComponentSpecs[] =
 
 EntityROMSpec SaveSlotWideBackgroundEntitySpec =
 {
-	// class allocator	
+	// Class allocator	
 	__TYPE(Entity),
 
-	// Components
-	(ComponentSpec**)SaveSlotWideBackgroundEntitySpecComponentSpecs,
+	// Component specs
+	(ComponentSpec**)SaveSlotWideBackgroundEntityComponentSpecs,
 
-	// children
+	// Children specs
 	NULL,
 
-	// extra
+	// Extra info
 	NULL,
 
-	// size
-	// if 0, width and height will be inferred from the first sprite's texture's size
+	// Size
+	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// gameworld's character's type
+	// In-game entity's type
 	kTypeNone
 };
