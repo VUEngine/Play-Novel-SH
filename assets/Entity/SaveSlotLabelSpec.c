@@ -145,11 +145,11 @@ AnimationFunctionROMSpec SaveSlotLabelCybilAnimationSpec =
 
 AnimationFunctionROMSpec* const SaveSlotLabelAnimationSpecs[] =
 {
-    (AnimationFunction*)&SaveSlotLabelNoneAnimationSpec,
-    (AnimationFunction*)&SaveSlotLabelEmptyEnglishAnimationSpec,
-    (AnimationFunction*)&SaveSlotLabelEmptyGermanAnimationSpec,
-    (AnimationFunction*)&SaveSlotLabelHarryAnimationSpec,
-    (AnimationFunction*)&SaveSlotLabelCybilAnimationSpec,
+	(AnimationFunction*)&SaveSlotLabelNoneAnimationSpec,
+	(AnimationFunction*)&SaveSlotLabelEmptyEnglishAnimationSpec,
+	(AnimationFunction*)&SaveSlotLabelEmptyGermanAnimationSpec,
+	(AnimationFunction*)&SaveSlotLabelHarryAnimationSpec,
+	(AnimationFunction*)&SaveSlotLabelCybilAnimationSpec,
     NULL,
 };
 

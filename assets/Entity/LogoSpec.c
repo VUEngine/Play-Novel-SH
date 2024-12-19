@@ -181,7 +181,7 @@ BgmapSpriteROMSpec LogoBSpriteSpec =
 const ComponentSpec* LogoEntitySpecComponentSpecs[] = 
 {
 	(ComponentSpec*)&LogoASpriteSpec,
-    (ComponentSpec*)&LogoBSpriteSpec,
+	(ComponentSpec*)&LogoBSpriteSpec,
 	NULL
 };
 

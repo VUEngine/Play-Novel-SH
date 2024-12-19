@@ -115,10 +115,10 @@ AnimationFunctionROMSpec TradingCardsBackgroundNumbers3AnimationSpec =
 
 AnimationFunctionROMSpec* const TradingCardsBackgroundNumbersAnimationSpecs[] =
 {
-    (AnimationFunction*)&TradingCardsBackgroundNumbers0AnimationSpec,
-    (AnimationFunction*)&TradingCardsBackgroundNumbers1AnimationSpec,
-    (AnimationFunction*)&TradingCardsBackgroundNumbers2AnimationSpec,
-    (AnimationFunction*)&TradingCardsBackgroundNumbers3AnimationSpec,
+	(AnimationFunction*)&TradingCardsBackgroundNumbers0AnimationSpec,
+	(AnimationFunction*)&TradingCardsBackgroundNumbers1AnimationSpec,
+	(AnimationFunction*)&TradingCardsBackgroundNumbers2AnimationSpec,
+	(AnimationFunction*)&TradingCardsBackgroundNumbers3AnimationSpec,
     NULL,
 };
 

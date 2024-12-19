@@ -200,7 +200,7 @@ BgmapSpriteROMSpec TradingCardsBackgroundSpineSpriteSpec =
 const ComponentSpec* TradingCardsBackgroundEntitySpecComponentSpecs[] = 
 {
 	(ComponentSpec*)&TradingCardsBackgroundSpriteSpec,
-    (ComponentSpec*)&TradingCardsBackgroundSpineSpriteSpec,
+	(ComponentSpec*)&TradingCardsBackgroundSpineSpriteSpec,
 	NULL
 };
 

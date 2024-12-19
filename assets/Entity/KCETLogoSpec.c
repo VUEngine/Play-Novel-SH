@@ -181,7 +181,7 @@ BgmapSpriteROMSpec KCETLogoBSpriteSpec =
 const ComponentSpec* KCETLogoEntitySpecComponentSpecs[] = 
 {
 	(ComponentSpec*)&KCETLogoASpriteSpec,
-    (ComponentSpec*)&KCETLogoBSpriteSpec,
+	(ComponentSpec*)&KCETLogoBSpriteSpec,
 	NULL
 };
 

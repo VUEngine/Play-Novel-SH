@@ -847,17 +847,17 @@ BgmapSpriteROMSpec Scene009FrameSpriteSpec =
 
 const ComponentSpec* Scene009EntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009BackgroundBaseSpriteSpec,
-    (ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009BackgroundOverlaySpriteSpec,
-    (ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009Snow1SpriteSpec,
-    (ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009Snow2SpriteSpec,
-    (ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009CarInteriorSpriteSpec,
-    (ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009SeatSpriteSpec,
-    (ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009HarryBlackSpriteSpec,
-    (ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009HarryBaseSpriteSpec,
-    (ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009HarryOverlaySpriteSpec,
-    (ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009SteeringWheelSpriteSpec,
-    (ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009FrameSpriteSpec,
+	(ComponentSpec*)&Scene009BackgroundBaseSpriteSpec,
+	(ComponentSpec*)&Scene009BackgroundOverlaySpriteSpec,
+	(ComponentSpec*)&Scene009Snow1SpriteSpec,
+	(ComponentSpec*)&Scene009Snow2SpriteSpec,
+	(ComponentSpec*)&Scene009CarInteriorSpriteSpec,
+	(ComponentSpec*)&Scene009SeatSpriteSpec,
+	(ComponentSpec*)&Scene009HarryBlackSpriteSpec,
+	(ComponentSpec*)&Scene009HarryBaseSpriteSpec,
+	(ComponentSpec*)&Scene009HarryOverlaySpriteSpec,
+	(ComponentSpec*)&Scene009SteeringWheelSpriteSpec,
+	(ComponentSpec*)&Scene009FrameSpriteSpec,
 	NULL
 };
 

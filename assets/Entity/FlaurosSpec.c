@@ -57,7 +57,7 @@ AnimationFunctionROMSpec FlaurosDefaultAnimationSpec =
 
 AnimationFunctionROMSpec* const FlaurosAnimationSpecs[] =
 {
-    (AnimationFunction*)&FlaurosDefaultAnimationSpec,
+	(AnimationFunction*)&FlaurosDefaultAnimationSpec,
     NULL,
 };
 
@@ -316,8 +316,8 @@ BgmapSpriteROMSpec FlaurosOverlaySpriteSpec =
 const ComponentSpec* FlaurosEntitySpecComponentSpecs[] = 
 {
 	(ComponentSpec*)&//FlaurosBlackSpriteSpec,
-    (ComponentSpec*)&FlaurosBaseSpriteSpec,
-    (ComponentSpec*)&FlaurosOverlaySpriteSpec,
+	(ComponentSpec*)&FlaurosBaseSpriteSpec,
+	(ComponentSpec*)&FlaurosOverlaySpriteSpec,
 	NULL
 };
 

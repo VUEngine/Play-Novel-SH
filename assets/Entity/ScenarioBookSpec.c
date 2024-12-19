@@ -261,7 +261,7 @@ PositionedEntityROMSpec ScenarioBookChildrenEntities[] =
 const ComponentSpec* ScenarioBookEntitySpecComponentSpecs[] = 
 {
 	(ComponentSpec*)&ScenarioBookBaseSpriteSpec,
-    (ComponentSpec*)&ScenarioBookOverlaySpriteSpec,
+	(ComponentSpec*)&ScenarioBookOverlaySpriteSpec,
 	NULL
 };
 

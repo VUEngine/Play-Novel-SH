@@ -921,7 +921,7 @@ PositionedEntityROMSpec TradingCardLargeChildrenEntities[] =
 const ComponentSpec* TradingCardLargeEntitySpecComponentSpecs[] = 
 {
 	(ComponentSpec*)&TradingCardLargeBaseSpriteSpec,
-    (ComponentSpec*)&TradingCardLargeOverlaySpriteSpec,
+	(ComponentSpec*)&TradingCardLargeOverlaySpriteSpec,
 	NULL
 };
 

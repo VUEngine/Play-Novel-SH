@@ -181,7 +181,7 @@ BgmapSpriteROMSpec KonamiLogoBSpriteSpec =
 const ComponentSpec* KonamiLogoEntitySpecComponentSpecs[] = 
 {
 	(ComponentSpec*)&KonamiLogoASpriteSpec,
-    (ComponentSpec*)&KonamiLogoBSpriteSpec,
+	(ComponentSpec*)&KonamiLogoBSpriteSpec,
 	NULL
 };
 

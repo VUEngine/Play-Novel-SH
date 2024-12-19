@@ -70,7 +70,7 @@ AnimationFunctionROMSpec IntroDefaultAnimationSpec =
 
 AnimationFunctionROMSpec* const IntroAnimationSpecs[] =
 {
-    (AnimationFunction*)&IntroDefaultAnimationSpec,
+	(AnimationFunction*)&IntroDefaultAnimationSpec,
     NULL,
 };
 

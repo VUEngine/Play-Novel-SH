@@ -54,7 +54,7 @@ AnimationFunctionROMSpec SaveSlotBorderDefaultAnimationSpec =
 
 AnimationFunctionROMSpec* const SaveSlotBorderAnimationSpecs[] =
 {
-    (AnimationFunction*)&SaveSlotBorderDefaultAnimationSpec,
+	(AnimationFunction*)&SaveSlotBorderDefaultAnimationSpec,
     NULL,
 };
 

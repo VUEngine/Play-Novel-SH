@@ -181,7 +181,7 @@ BgmapSpriteROMSpec MobileSystemLogoBSpriteSpec =
 const ComponentSpec* MobileSystemLogoEntitySpecComponentSpecs[] = 
 {
 	(ComponentSpec*)&MobileSystemLogoASpriteSpec,
-    (ComponentSpec*)&MobileSystemLogoBSpriteSpec,
+	(ComponentSpec*)&MobileSystemLogoBSpriteSpec,
 	NULL
 };
 

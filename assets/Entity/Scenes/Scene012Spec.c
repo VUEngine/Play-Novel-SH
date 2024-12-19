@@ -181,7 +181,7 @@ BgmapSpriteROMSpec Scene012OverlaySpriteSpec =
 const ComponentSpec* Scene012EntitySpecComponentSpecs[] = 
 {
 	(ComponentSpec*)&Scene012BaseSpriteSpec,
-    (ComponentSpec*)&Scene012OverlaySpriteSpec,
+	(ComponentSpec*)&Scene012OverlaySpriteSpec,
 	NULL
 };
 
