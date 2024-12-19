@@ -237,12 +237,10 @@ BgmapSpriteROMSpec SaveSlotLabelSpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* SaveSlotLabelEntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)SaveSlotLabelSpriteSpec,
-
+	(ComponentSpec*)&SaveSlotLabelSpriteSpec,
+	NULL
 };
 
 AnimatedEntityROMSpec SaveSlotLabelEntitySpec =

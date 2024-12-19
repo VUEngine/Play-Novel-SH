@@ -168,12 +168,10 @@ BgmapSpriteROMSpec OptionsMainMenuTradingCardsSpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* OptionsMainMenuTradingCardsEntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)OptionsMainMenuTradingCardsSpriteSpec,
-
+	(ComponentSpec*)&OptionsMainMenuTradingCardsSpriteSpec,
+	NULL
 };
 
 LocalizedEntityROMSpec OptionsMainMenuTradingCardsEntitySpec =

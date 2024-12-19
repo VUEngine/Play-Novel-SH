@@ -111,12 +111,10 @@ BgmapSpriteROMSpec ScenarioBookBlackSpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* ScenarioBookBlackEntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)ScenarioBookBlackSpriteSpec,
-
+	(ComponentSpec*)&ScenarioBookBlackSpriteSpec,
+	NULL
 };
 
 EntityROMSpec ScenarioBookBlackEntitySpec =

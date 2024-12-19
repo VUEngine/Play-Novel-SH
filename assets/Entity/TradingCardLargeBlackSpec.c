@@ -111,12 +111,10 @@ BgmapSpriteROMSpec TradingCardLargeBlackSpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* TradingCardLargeBlackEntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)TradingCardLargeBlackSpriteSpec,
-
+	(ComponentSpec*)&TradingCardLargeBlackSpriteSpec,
+	NULL
 };
 
 EntityROMSpec TradingCardLargeBlackEntitySpec =

@@ -178,13 +178,11 @@ BgmapSpriteROMSpec MobileSystemLogoBSpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* MobileSystemLogoEntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)MobileSystemLogoASpriteSpec,
-    (ComponentSpec*)MobileSystemLogoBSpriteSpec,
-
+	(ComponentSpec*)&MobileSystemLogoASpriteSpec,
+    (ComponentSpec*)&MobileSystemLogoBSpriteSpec,
+	NULL
 };
 
 EntityROMSpec MobileSystemLogoEntitySpec =

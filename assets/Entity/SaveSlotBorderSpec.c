@@ -142,12 +142,10 @@ BgmapSpriteROMSpec SaveSlotBorderSpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* SaveSlotBorderEntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)SaveSlotBorderSpriteSpec,
-
+	(ComponentSpec*)&SaveSlotBorderSpriteSpec,
+	NULL
 };
 
 AnimatedEntityROMSpec SaveSlotBorderEntitySpec =

@@ -111,12 +111,10 @@ BgmapSpriteROMSpec TradingCardsArrowSpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* TradingCardsArrowEntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)TradingCardsArrowSpriteSpec,
-
+	(ComponentSpec*)&TradingCardsArrowSpriteSpec,
+	NULL
 };
 
 EntityROMSpec TradingCardsArrowEntitySpec =
@@ -206,8 +204,6 @@ BgmapSpriteROMSpec TradingCardsArrowRightSpriteSpec =
 	// display mode (__WORLD_ON, __WORLD_LON or __WORLD_RON)
 	__WORLD_ON,
 };
-
-
 
 const ComponentSpec* TradingCardsArrowRightEntitySpecComponentSpecs[] = 
 {

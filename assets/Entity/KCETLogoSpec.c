@@ -178,13 +178,11 @@ BgmapSpriteROMSpec KCETLogoBSpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* KCETLogoEntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)KCETLogoASpriteSpec,
-    (ComponentSpec*)KCETLogoBSpriteSpec,
-
+	(ComponentSpec*)&KCETLogoASpriteSpec,
+    (ComponentSpec*)&KCETLogoBSpriteSpec,
+	NULL
 };
 
 EntityROMSpec KCETLogoEntitySpec =

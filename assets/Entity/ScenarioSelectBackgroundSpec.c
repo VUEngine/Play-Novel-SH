@@ -111,12 +111,10 @@ BgmapSpriteROMSpec ScenarioSelectBackgroundSpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* ScenarioSelectBackgroundEntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)ScenarioSelectBackgroundSpriteSpec,
-
+	(ComponentSpec*)&ScenarioSelectBackgroundSpriteSpec,
+	NULL
 };
 
 EntityROMSpec ScenarioSelectBackgroundEntitySpec =

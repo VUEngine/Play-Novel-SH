@@ -111,12 +111,10 @@ BgmapSpriteROMSpec TradingCardsCursorSpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* TradingCardsCursorEntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)TradingCardsCursorSpriteSpec,
-
+	(ComponentSpec*)&TradingCardsCursorSpriteSpec,
+	NULL
 };
 
 EntityROMSpec TradingCardsCursorEntitySpec =

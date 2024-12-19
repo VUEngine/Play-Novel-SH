@@ -178,13 +178,11 @@ BgmapSpriteROMSpec Scene011OverlaySpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* Scene011EntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)Scene011BaseSpriteSpec,
-    (ComponentSpec*)Scene011OverlaySpriteSpec,
-
+	(ComponentSpec*)&Scene011BaseSpriteSpec,
+    (ComponentSpec*)&Scene011OverlaySpriteSpec,
+	NULL
 };
 
 EntityROMSpec Scene011EntitySpec =

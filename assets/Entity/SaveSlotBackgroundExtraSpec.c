@@ -93,12 +93,10 @@ BgmapSpriteROMSpec SaveSlotWideBackgroundExtraSpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* SaveSlotWideBackgroundExtraEntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)SaveSlotWideBackgroundExtraSpriteSpec,
-
+	(ComponentSpec*)&SaveSlotWideBackgroundExtraSpriteSpec,
+	NULL
 };
 
 EntityROMSpec SaveSlotWideBackgroundExtraEntitySpec =

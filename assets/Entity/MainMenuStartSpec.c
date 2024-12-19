@@ -168,12 +168,10 @@ BgmapSpriteROMSpec OptionsMainMenuStartSpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* OptionsMainMenuStartEntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)OptionsMainMenuStartSpriteSpec,
-
+	(ComponentSpec*)&OptionsMainMenuStartSpriteSpec,
+	NULL
 };
 
 LocalizedEntityROMSpec OptionsMainMenuStartEntitySpec =

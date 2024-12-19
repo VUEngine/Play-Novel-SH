@@ -158,12 +158,10 @@ BgmapSpriteROMSpec IntroSpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* IntroEntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)IntroSpriteSpec,
-
+	(ComponentSpec*)&IntroSpriteSpec,
+	NULL
 };
 
 AnimatedEntityROMSpec IntroEntitySpec =

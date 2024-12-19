@@ -197,13 +197,11 @@ BgmapSpriteROMSpec TradingCardsBackgroundSpineSpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* TradingCardsBackgroundEntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)TradingCardsBackgroundSpriteSpec,
-    (ComponentSpec*)TradingCardsBackgroundSpineSpriteSpec,
-
+	(ComponentSpec*)&TradingCardsBackgroundSpriteSpec,
+    (ComponentSpec*)&TradingCardsBackgroundSpineSpriteSpec,
+	NULL
 };
 
 EntityROMSpec TradingCardsBackgroundEntitySpec =

@@ -178,13 +178,11 @@ BgmapSpriteROMSpec LogoBSpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* LogoEntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)LogoASpriteSpec,
-    (ComponentSpec*)LogoBSpriteSpec,
-
+	(ComponentSpec*)&LogoASpriteSpec,
+    (ComponentSpec*)&LogoBSpriteSpec,
+	NULL
 };
 
 EntityROMSpec LogoEntitySpec =

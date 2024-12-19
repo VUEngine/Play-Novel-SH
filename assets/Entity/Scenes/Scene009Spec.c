@@ -845,22 +845,20 @@ BgmapSpriteROMSpec Scene009FrameSpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* Scene009EntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)(BgmapSpriteROMSpec*)Scene009BackgroundBaseSpriteSpec,
-    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009BackgroundOverlaySpriteSpec,
-    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009Snow1SpriteSpec,
-    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009Snow2SpriteSpec,
-    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009CarInteriorSpriteSpec,
-    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009SeatSpriteSpec,
-    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009HarryBlackSpriteSpec,
-    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009HarryBaseSpriteSpec,
-    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009HarryOverlaySpriteSpec,
-    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009SteeringWheelSpriteSpec,
-    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009FrameSpriteSpec,
-
+	(ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009BackgroundBaseSpriteSpec,
+    (ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009BackgroundOverlaySpriteSpec,
+    (ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009Snow1SpriteSpec,
+    (ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009Snow2SpriteSpec,
+    (ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009CarInteriorSpriteSpec,
+    (ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009SeatSpriteSpec,
+    (ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009HarryBlackSpriteSpec,
+    (ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009HarryBaseSpriteSpec,
+    (ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009HarryOverlaySpriteSpec,
+    (ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009SteeringWheelSpriteSpec,
+    (ComponentSpec*)&(BgmapSpriteROMSpec*)Scene009FrameSpriteSpec,
+	NULL
 };
 
 EntityROMSpec Scene009EntitySpec =

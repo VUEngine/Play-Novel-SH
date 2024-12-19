@@ -164,12 +164,10 @@ BgmapSpriteROMSpec LowPowerIndicatorBlackSpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* LowPowerIndicatorBlackEntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)LowPowerIndicatorBlackSpriteSpec,
-
+	(ComponentSpec*)&LowPowerIndicatorBlackSpriteSpec,
+	NULL
 };
 
 LowPowerEntityROMSpec LowPowerIndicatorBlackEntitySpec =

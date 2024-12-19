@@ -313,14 +313,12 @@ BgmapSpriteROMSpec FlaurosOverlaySpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* FlaurosEntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)//FlaurosBlackSpriteSpec,
-    (ComponentSpec*)FlaurosBaseSpriteSpec,
-    (ComponentSpec*)FlaurosOverlaySpriteSpec,
-
+	(ComponentSpec*)&//FlaurosBlackSpriteSpec,
+    (ComponentSpec*)&FlaurosBaseSpriteSpec,
+    (ComponentSpec*)&FlaurosOverlaySpriteSpec,
+	NULL
 };
 
 AnimatedEntityROMSpec FlaurosEntitySpec =

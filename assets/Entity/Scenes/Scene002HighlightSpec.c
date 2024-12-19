@@ -93,12 +93,10 @@ BgmapSpriteROMSpec Scene002HighlightSpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* Scene002HighlightEntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)Scene002HighlightSpriteSpec,
-
+	(ComponentSpec*)&Scene002HighlightSpriteSpec,
+	NULL
 };
 
 EntityROMSpec Scene002HighlightEntitySpec =

@@ -111,12 +111,10 @@ BgmapSpriteROMSpec CopyrightSpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* CopyrightEntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)CopyrightSpriteSpec,
-
+	(ComponentSpec*)&CopyrightSpriteSpec,
+	NULL
 };
 
 EntityROMSpec CopyrightEntitySpec =

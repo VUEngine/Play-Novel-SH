@@ -206,12 +206,10 @@ BgmapSpriteROMSpec TradingCardsBackgroundNumbersSpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* TradingCardsBackgroundNumbersEntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)TradingCardsBackgroundNumbersSpriteSpec,
-
+	(ComponentSpec*)&TradingCardsBackgroundNumbersSpriteSpec,
+	NULL
 };
 
 AnimatedEntityROMSpec TradingCardsBackgroundNumbersEntitySpec =

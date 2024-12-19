@@ -178,13 +178,11 @@ BgmapSpriteROMSpec KonamiLogoBSpriteSpec =
 	__WORLD_ON,
 };
 
-
-
 const ComponentSpec* KonamiLogoEntitySpecComponentSpecs[] = 
 {
-	(ComponentSpec*)KonamiLogoASpriteSpec,
-    (ComponentSpec*)KonamiLogoBSpriteSpec,
-
+	(ComponentSpec*)&KonamiLogoASpriteSpec,
+    (ComponentSpec*)&KonamiLogoBSpriteSpec,
+	NULL
 };
 
 EntityROMSpec KonamiLogoEntitySpec =
