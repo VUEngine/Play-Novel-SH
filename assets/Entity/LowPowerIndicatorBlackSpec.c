@@ -164,15 +164,11 @@ BgmapSpriteROMSpec LowPowerIndicatorBlackSpriteSpec =
 	__WORLD_ON,
 };
 
-@COMP_ARRAY_START:LowPowerIndicatorBlackSpriteSpecs
-	&LowPowerIndicatorBlackSpriteSpec,
-	
-@COMP_ARRAY_END:LowPowerIndicatorBlackSpriteSpecs
+
 
 const ComponentSpec* LowPowerIndicatorBlackEntitySpecComponentSpecs[] = 
 {
-	
-    (ComponentSpec*)LowPowerIndicatorBlackSpriteSpec,
+	(ComponentSpec*)LowPowerIndicatorBlackSpriteSpec,
 
 };
 
@@ -182,21 +178,21 @@ LowPowerEntityROMSpec LowPowerIndicatorBlackEntitySpec =
 	{
 		// entity
 		{
-			// class allocator
+			// class allocator			
 			__TYPE(LowPowerEntity),
+
+			// Components
+			(ComponentSpec**)LowPowerIndicatorBlackEntitySpecComponentSpecs,
 
 			// children
 			NULL,
-
-			(ComponentSpec**)LowPowerIndicatorBlackEntitySpecComponentSpecs,
 
 			// extra
 			NULL,
 
 			
 
-			// use z displacement in projection
-			false,
+			
 				
 			
 

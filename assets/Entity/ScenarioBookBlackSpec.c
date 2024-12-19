@@ -111,46 +111,32 @@ BgmapSpriteROMSpec ScenarioBookBlackSpriteSpec =
 	__WORLD_ON,
 };
 
-@COMP_ARRAY_START:ScenarioBookBlackSpriteSpecs
-	&ScenarioBookBlackSpriteSpec,
-	
-@COMP_ARRAY_END:ScenarioBookBlackSpriteSpecs
+
 
 const ComponentSpec* ScenarioBookBlackEntitySpecComponentSpecs[] = 
 {
-	
-    (ComponentSpec*)ScenarioBookBlackSpriteSpec,
+	(ComponentSpec*)ScenarioBookBlackSpriteSpec,
 
 };
 
 EntityROMSpec ScenarioBookBlackEntitySpec =
 {
-	// class allocator
+	// class allocator	
 	__TYPE(Entity),
+
+	// Components
+	(ComponentSpec**)ScenarioBookBlackEntitySpecComponentSpecs,
 
 	// children
 	NULL,
 
-	(ComponentSpec**)ScenarioBookBlackEntitySpecComponentSpecs,
-
 	// extra
 	NULL,
-
-	
-
-	// use z displacement in projection
-	false,
-			
-	
-
-	
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
 	{0, 0, 0},
 
 	// gameworld's character's type
-	kTypeNone,
-
-	
+	kTypeNone
 };

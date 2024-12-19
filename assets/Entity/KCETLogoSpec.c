@@ -178,48 +178,33 @@ BgmapSpriteROMSpec KCETLogoBSpriteSpec =
 	__WORLD_ON,
 };
 
-@COMP_ARRAY_START:KCETLogoSpriteSpecs
-	&KCETLogoASpriteSpec,
-	&KCETLogoBSpriteSpec,
-	
-@COMP_ARRAY_END:KCETLogoSpriteSpecs
+
 
 const ComponentSpec* KCETLogoEntitySpecComponentSpecs[] = 
 {
-	
-    (ComponentSpec*)KCETLogoASpriteSpec,
+	(ComponentSpec*)KCETLogoASpriteSpec,
     (ComponentSpec*)KCETLogoBSpriteSpec,
 
 };
 
 EntityROMSpec KCETLogoEntitySpec =
 {
-	// class allocator
+	// class allocator	
 	__TYPE(Entity),
+
+	// Components
+	(ComponentSpec**)KCETLogoEntitySpecComponentSpecs,
 
 	// children
 	NULL,
 
-	(ComponentSpec**)KCETLogoEntitySpecComponentSpecs,
-
 	// extra
 	NULL,
-
-	
-
-	// use z displacement in projection
-	false,
-			
-	
-
-	
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
 	{0, 0, 0},
 
 	// gameworld's character's type
-	kTypeNone,
-
-	
+	kTypeNone
 };

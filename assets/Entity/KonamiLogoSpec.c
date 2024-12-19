@@ -178,48 +178,33 @@ BgmapSpriteROMSpec KonamiLogoBSpriteSpec =
 	__WORLD_ON,
 };
 
-@COMP_ARRAY_START:KonamiLogoSpriteSpecs
-	&KonamiLogoASpriteSpec,
-	&KonamiLogoBSpriteSpec,
-	
-@COMP_ARRAY_END:KonamiLogoSpriteSpecs
+
 
 const ComponentSpec* KonamiLogoEntitySpecComponentSpecs[] = 
 {
-	
-    (ComponentSpec*)KonamiLogoASpriteSpec,
+	(ComponentSpec*)KonamiLogoASpriteSpec,
     (ComponentSpec*)KonamiLogoBSpriteSpec,
 
 };
 
 EntityROMSpec KonamiLogoEntitySpec =
 {
-	// class allocator
+	// class allocator	
 	__TYPE(Entity),
+
+	// Components
+	(ComponentSpec**)KonamiLogoEntitySpecComponentSpecs,
 
 	// children
 	NULL,
 
-	(ComponentSpec**)KonamiLogoEntitySpecComponentSpecs,
-
 	// extra
 	NULL,
-
-	
-
-	// use z displacement in projection
-	false,
-			
-	
-
-	
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
 	{0, 0, 0},
 
 	// gameworld's character's type
-	kTypeNone,
-
-	
+	kTypeNone
 };

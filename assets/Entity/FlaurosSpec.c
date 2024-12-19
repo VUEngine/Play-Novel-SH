@@ -313,17 +313,11 @@ BgmapSpriteROMSpec FlaurosOverlaySpriteSpec =
 	__WORLD_ON,
 };
 
-@COMP_ARRAY_START:FlaurosSpriteSpecs
-	//&FlaurosBlackSpriteSpec,
-	&FlaurosBaseSpriteSpec,
-	&FlaurosOverlaySpriteSpec,
-	
-@COMP_ARRAY_END:FlaurosSpriteSpecs
+
 
 const ComponentSpec* FlaurosEntitySpecComponentSpecs[] = 
 {
-	
-    (ComponentSpec*)//FlaurosBlackSpriteSpec,
+	(ComponentSpec*)//FlaurosBlackSpriteSpec,
     (ComponentSpec*)FlaurosBaseSpriteSpec,
     (ComponentSpec*)FlaurosOverlaySpriteSpec,
 
@@ -332,21 +326,21 @@ const ComponentSpec* FlaurosEntitySpecComponentSpecs[] =
 AnimatedEntityROMSpec FlaurosEntitySpec =
 {
 	{
-		// class allocator
+		// class allocator		
 		__TYPE(AnimatedEntity),
+
+		// Components
+		(ComponentSpec**)FlaurosEntitySpecComponentSpecs,
 
 		// children
 		NULL,
-
-		(ComponentSpec**)FlaurosEntitySpecComponentSpecs,
 
 		// extra
 		NULL,
 
 		
 
-		// use z displacement in projection
-		false,
+		
 			
 		
 

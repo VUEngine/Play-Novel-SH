@@ -111,46 +111,32 @@ BgmapSpriteROMSpec CopyrightSpriteSpec =
 	__WORLD_ON,
 };
 
-@COMP_ARRAY_START:CopyrightSpriteSpecs
-	&CopyrightSpriteSpec,
-	
-@COMP_ARRAY_END:CopyrightSpriteSpecs
+
 
 const ComponentSpec* CopyrightEntitySpecComponentSpecs[] = 
 {
-	
-    (ComponentSpec*)CopyrightSpriteSpec,
+	(ComponentSpec*)CopyrightSpriteSpec,
 
 };
 
 EntityROMSpec CopyrightEntitySpec =
 {
-	// class allocator
+	// class allocator	
 	__TYPE(Entity),
+
+	// Components
+	(ComponentSpec**)CopyrightEntitySpecComponentSpecs,
 
 	// children
 	NULL,
 
-	(ComponentSpec**)CopyrightEntitySpecComponentSpecs,
-
 	// extra
 	NULL,
-
-	
-
-	// use z displacement in projection
-	false,
-			
-	
-
-	
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
 	{0, 0, 0},
 
 	// gameworld's character's type
-	kTypeNone,
-
-	
+	kTypeNone
 };

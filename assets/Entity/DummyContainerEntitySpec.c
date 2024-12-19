@@ -25,32 +25,22 @@ const ComponentSpec* DummyContainerEntitySpecComponentSpecs[] =
 
 EntityROMSpec DummyContainerEntitySpec =
 {
-	// class allocator
+	// class allocator	
 	__TYPE(Entity),
+
+	// Components
+	(ComponentSpec**)DummyContainerEntitySpecComponentSpecs,
 
 	// children
 	NULL,
 
-	(ComponentSpec**)DummyContainerEntitySpecComponentSpecs,
-
 	// extra
 	NULL,
-
-	
-
-	// use z displacement in projection
-	false,
-			
-	
-
-	
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
 	{0, 0, 0},
 
 	// gameworld's character's type
-	kTypeNone,
-
-	
+	kTypeNone
 };

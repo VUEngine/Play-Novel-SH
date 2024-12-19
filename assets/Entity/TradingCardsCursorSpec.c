@@ -111,46 +111,32 @@ BgmapSpriteROMSpec TradingCardsCursorSpriteSpec =
 	__WORLD_ON,
 };
 
-@COMP_ARRAY_START:TradingCardsCursorSpriteSpecs
-	&TradingCardsCursorSpriteSpec,
-	
-@COMP_ARRAY_END:TradingCardsCursorSpriteSpecs
+
 
 const ComponentSpec* TradingCardsCursorEntitySpecComponentSpecs[] = 
 {
-	
-    (ComponentSpec*)TradingCardsCursorSpriteSpec,
+	(ComponentSpec*)TradingCardsCursorSpriteSpec,
 
 };
 
 EntityROMSpec TradingCardsCursorEntitySpec =
 {
-	// class allocator
+	// class allocator	
 	__TYPE(Entity),
+
+	// Components
+	(ComponentSpec**)TradingCardsCursorEntitySpecComponentSpecs,
 
 	// children
 	NULL,
 
-	(ComponentSpec**)TradingCardsCursorEntitySpecComponentSpecs,
-
 	// extra
 	NULL,
-
-	
-
-	// use z displacement in projection
-	false,
-			
-	
-
-	
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
 	{0, 0, 0},
 
 	// gameworld's character's type
-	kTypeNone,
-
-	
+	kTypeNone
 };

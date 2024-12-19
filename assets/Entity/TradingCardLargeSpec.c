@@ -910,11 +910,7 @@ BgmapSpriteROMSpec TradingCardLargeOverlaySpriteSpec =
 	__WORLD_ON,
 };
 
-@COMP_ARRAY_START:TradingCardLargeSpriteSpecs
-	&TradingCardLargeBaseSpriteSpec,
-	&TradingCardLargeOverlaySpriteSpec,
-	
-@COMP_ARRAY_END:TradingCardLargeSpriteSpecs
+
 
 PositionedEntityROMSpec TradingCardLargeChildrenEntities[] =
 {
@@ -924,8 +920,7 @@ PositionedEntityROMSpec TradingCardLargeChildrenEntities[] =
 
 const ComponentSpec* TradingCardLargeEntitySpecComponentSpecs[] = 
 {
-	
-    (ComponentSpec*)TradingCardLargeBaseSpriteSpec,
+	(ComponentSpec*)TradingCardLargeBaseSpriteSpec,
     (ComponentSpec*)TradingCardLargeOverlaySpriteSpec,
 
 };
@@ -933,21 +928,21 @@ const ComponentSpec* TradingCardLargeEntitySpecComponentSpecs[] =
 AnimatedEntityROMSpec TradingCardLargeEntitySpec =
 {
 	{
-		// class allocator
+		// class allocator		
 		__TYPE(AnimatedEntity),
+
+		// Components
+		(ComponentSpec**)TradingCardLargeEntitySpecComponentSpecs,
 
 		// children
 		(PositionedEntity*)TradingCardLargeChildrenEntities,
-
-		(ComponentSpec**)TradingCardLargeEntitySpecComponentSpecs,
 
 		// extra
 		NULL,
 
 		
 
-		// use z displacement in projection
-		false,
+		
 			
 		
 

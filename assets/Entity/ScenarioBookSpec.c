@@ -250,11 +250,7 @@ BgmapSpriteROMSpec ScenarioBookOverlaySpriteSpec =
 	__WORLD_ON,
 };
 
-@COMP_ARRAY_START:ScenarioBookSpriteSpecs
-	&ScenarioBookBaseSpriteSpec,
-	&ScenarioBookOverlaySpriteSpec,
-	
-@COMP_ARRAY_END:ScenarioBookSpriteSpecs
+
 
 PositionedEntityROMSpec ScenarioBookChildrenEntities[] =
 {
@@ -264,8 +260,7 @@ PositionedEntityROMSpec ScenarioBookChildrenEntities[] =
 
 const ComponentSpec* ScenarioBookEntitySpecComponentSpecs[] = 
 {
-	
-    (ComponentSpec*)ScenarioBookBaseSpriteSpec,
+	(ComponentSpec*)ScenarioBookBaseSpriteSpec,
     (ComponentSpec*)ScenarioBookOverlaySpriteSpec,
 
 };
@@ -273,21 +268,21 @@ const ComponentSpec* ScenarioBookEntitySpecComponentSpecs[] =
 AnimatedEntityROMSpec ScenarioBookEntitySpec =
 {
 	{
-		// class allocator
+		// class allocator		
 		__TYPE(AnimatedEntity),
+
+		// Components
+		(ComponentSpec**)ScenarioBookEntitySpecComponentSpecs,
 
 		// children
 		(PositionedEntity*)ScenarioBookChildrenEntities,
-
-		(ComponentSpec**)ScenarioBookEntitySpecComponentSpecs,
 
 		// extra
 		NULL,
 
 		
 
-		// use z displacement in projection
-		false,
+		
 			
 		
 

@@ -178,48 +178,33 @@ BgmapSpriteROMSpec MobileSystemLogoBSpriteSpec =
 	__WORLD_ON,
 };
 
-@COMP_ARRAY_START:MobileSystemLogoSpriteSpecs
-	&MobileSystemLogoASpriteSpec,
-	&MobileSystemLogoBSpriteSpec,
-	
-@COMP_ARRAY_END:MobileSystemLogoSpriteSpecs
+
 
 const ComponentSpec* MobileSystemLogoEntitySpecComponentSpecs[] = 
 {
-	
-    (ComponentSpec*)MobileSystemLogoASpriteSpec,
+	(ComponentSpec*)MobileSystemLogoASpriteSpec,
     (ComponentSpec*)MobileSystemLogoBSpriteSpec,
 
 };
 
 EntityROMSpec MobileSystemLogoEntitySpec =
 {
-	// class allocator
+	// class allocator	
 	__TYPE(Entity),
+
+	// Components
+	(ComponentSpec**)MobileSystemLogoEntitySpecComponentSpecs,
 
 	// children
 	NULL,
 
-	(ComponentSpec**)MobileSystemLogoEntitySpecComponentSpecs,
-
 	// extra
 	NULL,
-
-	
-
-	// use z displacement in projection
-	false,
-			
-	
-
-	
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
 	{0, 0, 0},
 
 	// gameworld's character's type
-	kTypeNone,
-
-	
+	kTypeNone
 };

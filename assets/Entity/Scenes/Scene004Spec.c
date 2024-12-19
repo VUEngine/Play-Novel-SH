@@ -178,48 +178,33 @@ BgmapSpriteROMSpec Scene004OverlaySpriteSpec =
 	__WORLD_ON,
 };
 
-@COMP_ARRAY_START:Scene004SpriteSpecs
-	&Scene004BaseSpriteSpec,
-	&Scene004OverlaySpriteSpec,
-	
-@COMP_ARRAY_END:Scene004SpriteSpecs
+
 
 const ComponentSpec* Scene004EntitySpecComponentSpecs[] = 
 {
-	
-    (ComponentSpec*)Scene004BaseSpriteSpec,
+	(ComponentSpec*)Scene004BaseSpriteSpec,
     (ComponentSpec*)Scene004OverlaySpriteSpec,
 
 };
 
 EntityROMSpec Scene004EntitySpec =
 {
-	// class allocator
+	// class allocator	
 	__TYPE(Entity),
+
+	// Components
+	(ComponentSpec**)Scene004EntitySpecComponentSpecs,
 
 	// children
 	NULL,
 
-	(ComponentSpec**)Scene004EntitySpecComponentSpecs,
-
 	// extra
 	NULL,
-
-	
-
-	// use z displacement in projection
-	false,
-			
-	
-
-	
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
 	{0, 0, 0},
 
 	// gameworld's character's type
-	kTypeNone,
-
-	
+	kTypeNone
 };

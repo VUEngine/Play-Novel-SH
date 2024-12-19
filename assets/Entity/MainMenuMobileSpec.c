@@ -168,15 +168,11 @@ BgmapSpriteROMSpec OptionsMainMenuMobileSpriteSpec =
 	__WORLD_ON,
 };
 
-@COMP_ARRAY_START:OptionsMainMenuMobileSpriteSpecs
-	&OptionsMainMenuMobileSpriteSpec,
-	
-@COMP_ARRAY_END:OptionsMainMenuMobileSpriteSpecs
+
 
 const ComponentSpec* OptionsMainMenuMobileEntitySpecComponentSpecs[] = 
 {
-	
-    (ComponentSpec*)OptionsMainMenuMobileSpriteSpec,
+	(ComponentSpec*)OptionsMainMenuMobileSpriteSpec,
 
 };
 
@@ -186,21 +182,21 @@ LocalizedEntityROMSpec OptionsMainMenuMobileEntitySpec =
 	{
 		// entity
 		{
-			// class allocator
+			// class allocator			
 			__TYPE(LocalizedEntity),
+
+			// Components
+			(ComponentSpec**)OptionsMainMenuMobileEntitySpecComponentSpecs,
 
 			// children
 			NULL,
-
-			(ComponentSpec**)OptionsMainMenuMobileEntitySpecComponentSpecs,
 
 			// extra
 			NULL,
 
 			
 
-			// use z displacement in projection
-			false,
+			
 				
 			
 

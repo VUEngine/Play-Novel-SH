@@ -206,36 +206,32 @@ BgmapSpriteROMSpec TradingCardsBackgroundNumbersSpriteSpec =
 	__WORLD_ON,
 };
 
-@COMP_ARRAY_START:TradingCardsBackgroundNumbersSpriteSpecs
-	&TradingCardsBackgroundNumbersSpriteSpec,
-	
-@COMP_ARRAY_END:TradingCardsBackgroundNumbersSpriteSpecs
+
 
 const ComponentSpec* TradingCardsBackgroundNumbersEntitySpecComponentSpecs[] = 
 {
-	
-    (ComponentSpec*)TradingCardsBackgroundNumbersSpriteSpec,
+	(ComponentSpec*)TradingCardsBackgroundNumbersSpriteSpec,
 
 };
 
 AnimatedEntityROMSpec TradingCardsBackgroundNumbersEntitySpec =
 {
 	{
-		// class allocator
+		// class allocator		
 		__TYPE(AnimatedEntity),
+
+		// Components
+		(ComponentSpec**)TradingCardsBackgroundNumbersEntitySpecComponentSpecs,
 
 		// children
 		NULL,
-
-		(ComponentSpec**)TradingCardsBackgroundNumbersEntitySpecComponentSpecs,
 
 		// extra
 		NULL,
 
 		
 
-		// use z displacement in projection
-		false,
+		
 			
 		
 

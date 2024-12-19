@@ -142,36 +142,32 @@ BgmapSpriteROMSpec SaveSlotBorderSpriteSpec =
 	__WORLD_ON,
 };
 
-@COMP_ARRAY_START:SaveSlotBorderSpriteSpecs
-	&SaveSlotBorderSpriteSpec,
-	
-@COMP_ARRAY_END:SaveSlotBorderSpriteSpecs
+
 
 const ComponentSpec* SaveSlotBorderEntitySpecComponentSpecs[] = 
 {
-	
-    (ComponentSpec*)SaveSlotBorderSpriteSpec,
+	(ComponentSpec*)SaveSlotBorderSpriteSpec,
 
 };
 
 AnimatedEntityROMSpec SaveSlotBorderEntitySpec =
 {
 	{
-		// class allocator
+		// class allocator		
 		__TYPE(AnimatedEntity),
+
+		// Components
+		(ComponentSpec**)SaveSlotBorderEntitySpecComponentSpecs,
 
 		// children
 		NULL,
-
-		(ComponentSpec**)SaveSlotBorderEntitySpecComponentSpecs,
 
 		// extra
 		NULL,
 
 		
 
-		// use z displacement in projection
-		false,
+		
 			
 		
 

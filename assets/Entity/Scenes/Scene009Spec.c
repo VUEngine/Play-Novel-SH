@@ -845,25 +845,11 @@ BgmapSpriteROMSpec Scene009FrameSpriteSpec =
 	__WORLD_ON,
 };
 
-@COMP_ARRAY_START:Scene009SpriteSpecs
-	(BgmapSpriteROMSpec*)&Scene009BackgroundBaseSpriteSpec,
-	(BgmapSpriteROMSpec*)&Scene009BackgroundOverlaySpriteSpec,
-	(BgmapSpriteROMSpec*)&Scene009Snow1SpriteSpec,
-	(BgmapSpriteROMSpec*)&Scene009Snow2SpriteSpec,
-	(BgmapSpriteROMSpec*)&Scene009CarInteriorSpriteSpec,
-	(BgmapSpriteROMSpec*)&Scene009SeatSpriteSpec,
-	(BgmapSpriteROMSpec*)&Scene009HarryBlackSpriteSpec,
-	(BgmapSpriteROMSpec*)&Scene009HarryBaseSpriteSpec,
-	(BgmapSpriteROMSpec*)&Scene009HarryOverlaySpriteSpec,
-	(BgmapSpriteROMSpec*)&Scene009SteeringWheelSpriteSpec,
-	(BgmapSpriteROMSpec*)&Scene009FrameSpriteSpec,
-	
-@COMP_ARRAY_END:Scene009SpriteSpecs
+
 
 const ComponentSpec* Scene009EntitySpecComponentSpecs[] = 
 {
-	
-    (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009BackgroundBaseSpriteSpec,
+	(ComponentSpec*)(BgmapSpriteROMSpec*)Scene009BackgroundBaseSpriteSpec,
     (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009BackgroundOverlaySpriteSpec,
     (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009Snow1SpriteSpec,
     (ComponentSpec*)(BgmapSpriteROMSpec*)Scene009Snow2SpriteSpec,
@@ -879,32 +865,22 @@ const ComponentSpec* Scene009EntitySpecComponentSpecs[] =
 
 EntityROMSpec Scene009EntitySpec =
 {
-	// class allocator
+	// class allocator	
 	__TYPE(Entity),
+
+	// Components
+	(ComponentSpec**)Scene009EntitySpecComponentSpecs,
 
 	// children
 	NULL,
 
-	(ComponentSpec**)Scene009EntitySpecComponentSpecs,
-
 	// extra
 	NULL,
-
-	
-
-	// use z displacement in projection
-	false,
-			
-	
-
-	
 
 	// size
 	// if 0, width and height will be inferred from the first sprite's texture's size
 	{0, 0, 0},
 
 	// gameworld's character's type
-	kTypeNone,
-
-	
+	kTypeNone
 };

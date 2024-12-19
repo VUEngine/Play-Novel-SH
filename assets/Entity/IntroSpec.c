@@ -158,36 +158,32 @@ BgmapSpriteROMSpec IntroSpriteSpec =
 	__WORLD_ON,
 };
 
-@COMP_ARRAY_START:IntroSpriteSpecs
-	&IntroSpriteSpec,
-	
-@COMP_ARRAY_END:IntroSpriteSpecs
+
 
 const ComponentSpec* IntroEntitySpecComponentSpecs[] = 
 {
-	
-    (ComponentSpec*)IntroSpriteSpec,
+	(ComponentSpec*)IntroSpriteSpec,
 
 };
 
 AnimatedEntityROMSpec IntroEntitySpec =
 {
 	{
-		// class allocator
+		// class allocator		
 		__TYPE(AnimatedEntity),
+
+		// Components
+		(ComponentSpec**)IntroEntitySpecComponentSpecs,
 
 		// children
 		NULL,
-
-		(ComponentSpec**)IntroEntitySpecComponentSpecs,
 
 		// extra
 		NULL,
 
 		
 
-		// use z displacement in projection
-		false,
+		
 			
 		
 

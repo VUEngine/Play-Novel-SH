@@ -237,36 +237,32 @@ BgmapSpriteROMSpec SaveSlotLabelSpriteSpec =
 	__WORLD_ON,
 };
 
-@COMP_ARRAY_START:SaveSlotLabelSpriteSpecs
-	&SaveSlotLabelSpriteSpec,
-	
-@COMP_ARRAY_END:SaveSlotLabelSpriteSpecs
+
 
 const ComponentSpec* SaveSlotLabelEntitySpecComponentSpecs[] = 
 {
-	
-    (ComponentSpec*)SaveSlotLabelSpriteSpec,
+	(ComponentSpec*)SaveSlotLabelSpriteSpec,
 
 };
 
 AnimatedEntityROMSpec SaveSlotLabelEntitySpec =
 {
 	{
-		// class allocator
+		// class allocator		
 		__TYPE(AnimatedEntity),
+
+		// Components
+		(ComponentSpec**)SaveSlotLabelEntitySpecComponentSpecs,
 
 		// children
 		NULL,
-
-		(ComponentSpec**)SaveSlotLabelEntitySpecComponentSpecs,
 
 		// extra
 		NULL,
 
 		
 
-		// use z displacement in projection
-		false,
+		
 			
 		
 
