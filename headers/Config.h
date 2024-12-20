@@ -268,7 +268,7 @@
 #define __TOTAL_OBJECTS												1024
 
 // sprites rotation in 3D
-#undef __SPRITE_ROTATE_IN_3D
+#define __SPRITE_ROTATE_IN_3D
 
 // Account for VIP's design to draw 8 pixel when BGMAP WORLD's height is less than 8
 #define __HACK_BGMAP_SPRITE_HEIGHT
