@@ -79,8 +79,8 @@ AnimationFunctionROMSpec OptionsMainMenuMobileBlinkEnglishAnimationSpec =
 // an animation spec
 AnimationFunctionROMSpec* const OptionsMainMenuMobileAnimationSpecs[] =
 {
-    (AnimationFunction*)&OptionsMainMenuMobileDefaultEnglishAnimationSpec,
-    (AnimationFunction*)&OptionsMainMenuMobileBlinkEnglishAnimationSpec,
+	(AnimationFunction*)&OptionsMainMenuMobileDefaultEnglishAnimationSpec,
+	(AnimationFunction*)&OptionsMainMenuMobileBlinkEnglishAnimationSpec,
     NULL,
 };
 
@@ -138,8 +138,14 @@ TextureROMSpec OptionsMainMenuMobileTextureSpec =
 BgmapSpriteROMSpec OptionsMainMenuMobileSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapAnimatedSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapAnimatedSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&OptionsMainMenuMobileTextureSpec,
@@ -162,9 +168,9 @@ BgmapSpriteROMSpec OptionsMainMenuMobileSpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const OptionsMainMenuMobileSpriteSpecs[] =
+ComponentSpec* const OptionsMainMenuMobileEntityComponentSpecs[] = 
 {
-	&OptionsMainMenuMobileSpriteSpec,
+	(ComponentSpec*)&OptionsMainMenuMobileSpriteSpec,
 	NULL
 };
 
@@ -174,39 +180,34 @@ LocalizedEntityROMSpec OptionsMainMenuMobileEntitySpec =
 	{
 		// entity
 		{
-			// class allocator
+			// Class allocator			
 			__TYPE(LocalizedEntity),
 
-			// children
+			// Component specs
+			(ComponentSpec**)OptionsMainMenuMobileEntityComponentSpecs,
+
+			// Children specs
 			NULL,
 
-			// behaviors
+			// Extra info
 			NULL,
 
-			// extra
-			NULL,
+			
 
-			// sprites
-			(SpriteSpec**)OptionsMainMenuMobileSpriteSpecs,
-
-			// use z displacement in projection
-			false,
+			
 				
-			// wireframes
-			(WireframeSpec**)NULL,
+			
 
-			// collision colliders
-			(ColliderSpec*)NULL,
+			
 
-			// size
-			// if 0, width and height will be inferred from the first sprite's texture's size
+			// Size
+			// If 0, it is computed from the visual components if any
 			{0, 0, 0},
 
-			// gameworld's character's type
+			// Entity's in-game type
 			kTypeNone,
 
-			// physical specification
-			(PhysicalProperties*)NULL,
+			
 		},
 
 		// pointer to the animation spec for the item

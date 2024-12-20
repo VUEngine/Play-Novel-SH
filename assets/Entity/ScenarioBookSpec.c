@@ -136,8 +136,14 @@ TextureROMSpec ScenarioBookBaseTextureSpec =
 BgmapSpriteROMSpec ScenarioBookBaseSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapAnimatedSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapAnimatedSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&ScenarioBookBaseTextureSpec,
@@ -214,8 +220,14 @@ TextureROMSpec ScenarioBookOverlayTextureSpec =
 BgmapSpriteROMSpec ScenarioBookOverlaySpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapAnimatedSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapAnimatedSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&ScenarioBookOverlayTextureSpec,
@@ -238,12 +250,7 @@ BgmapSpriteROMSpec ScenarioBookOverlaySpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const ScenarioBookSpriteSpecs[] =
-{
-	&ScenarioBookBaseSpriteSpec,
-	&ScenarioBookOverlaySpriteSpec,
-	NULL
-};
+
 
 PositionedEntityROMSpec ScenarioBookChildrenEntities[] =
 {
@@ -251,42 +258,44 @@ PositionedEntityROMSpec ScenarioBookChildrenEntities[] =
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, true},
 };
 
+ComponentSpec* const ScenarioBookEntityComponentSpecs[] = 
+{
+	(ComponentSpec*)&ScenarioBookBaseSpriteSpec,
+	(ComponentSpec*)&ScenarioBookOverlaySpriteSpec,
+	NULL
+};
+
 AnimatedEntityROMSpec ScenarioBookEntitySpec =
 {
 	{
-		// class allocator
+		// Class allocator		
 		__TYPE(AnimatedEntity),
 
-		// children
+		// Component specs
+		(ComponentSpec**)ScenarioBookEntityComponentSpecs,
+
+		// Children specs
 		(PositionedEntity*)ScenarioBookChildrenEntities,
 
-		// behaviors
+		// Extra info
 		NULL,
 
-		// extra
-		NULL,
+		
 
-		// sprites
-		(SpriteSpec**)ScenarioBookSpriteSpecs,
-
-		// use z displacement in projection
-		false,
+		
 			
-		// wireframes
-		(WireframeSpec**)NULL,
+		
 
-		// collision colliders
-		(ColliderSpec*)NULL,
+		
 
-		// size
-		// if 0, width and height will be inferred from the first sprite's texture's size
+		// Size
+		// If 0, it is computed from the visual components if any
 		{0, 0, 0},
 
-		// gameworld's character's type
+		// Entity's in-game type
 		0,
 
-		// physical specification
-		(PhysicalProperties*)NULL,
+		
 	},
 
 	// pointer to the animation spec for the item

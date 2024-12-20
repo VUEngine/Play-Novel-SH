@@ -82,7 +82,7 @@ StageROMSpec IntroScreenStageSpec =
 
 	// level
 	{
-		// size
+		// Size
 		{
 			// x
 			__SCREEN_WIDTH,
@@ -271,7 +271,7 @@ StageROMSpec IntroScreenStageSpec =
 			__TYPE(UIContainer),
 		},
 
-		// children
+		// Children specs
 		(PositionedEntity*)IntroScreenStageSpecEntities,
 	},
 

@@ -1,5 +1,6 @@
 {
     "_id": "RSmgdIMm4rB5uwys",
+    "_version": "1.0.0",
     "animation": {
         "frames": 0,
         "individualFiles": true,
@@ -26,7 +27,6 @@
             "unique": true
         }
     },
-    "name": "Trading Cards Background Numbers",
     "section": "rom",
     "tileset": {
         "compression": "none",

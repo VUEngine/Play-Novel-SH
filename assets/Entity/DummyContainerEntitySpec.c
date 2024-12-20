@@ -19,37 +19,22 @@
 
 EntityROMSpec DummyContainerEntitySpec =
 {
-	// class allocator
+	// Class allocator	
 	__TYPE(Entity),
 
-	// children
+	// Component specs
 	NULL,
 
-	// behaviors
+	// Children specs
 	NULL,
 
-	// extra
+	// Extra info
 	NULL,
 
-	// sprites
-	NULL,
-
-	// use z displacement in projection
-	false,
-			
-	// wireframes
-	(WireframeSpec**)NULL,
-
-	// collision colliders
-	NULL,
-
-	// size
-	// if 0, width and height will be inferred from the first sprite's texture's size
+	// Size
+	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// gameworld's character's type
-	kTypeNone,
-
-	// physical specification
-	NULL,
+	// Entity's in-game type
+	kTypeNone
 };

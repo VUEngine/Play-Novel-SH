@@ -81,8 +81,14 @@ TextureROMSpec ScenarioBookBlackTextureSpec =
 BgmapSpriteROMSpec ScenarioBookBlackSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&ScenarioBookBlackTextureSpec,
@@ -105,45 +111,30 @@ BgmapSpriteROMSpec ScenarioBookBlackSpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const ScenarioBookBlackSpriteSpecs[] =
+ComponentSpec* const ScenarioBookBlackEntityComponentSpecs[] = 
 {
-	&ScenarioBookBlackSpriteSpec,
+	(ComponentSpec*)&ScenarioBookBlackSpriteSpec,
 	NULL
 };
 
 EntityROMSpec ScenarioBookBlackEntitySpec =
 {
-	// class allocator
+	// Class allocator	
 	__TYPE(Entity),
 
-	// children
+	// Component specs
+	(ComponentSpec**)ScenarioBookBlackEntityComponentSpecs,
+
+	// Children specs
 	NULL,
 
-	// behaviors
+	// Extra info
 	NULL,
 
-	// extra
-	NULL,
-
-	// sprites
-	(SpriteSpec**)ScenarioBookBlackSpriteSpecs,
-
-	// use z displacement in projection
-	false,
-			
-	// wireframes
-	(WireframeSpec**)NULL,
-
-	// collision colliders
-	(ColliderSpec*)NULL,
-
-	// size
-	// if 0, width and height will be inferred from the first sprite's texture's size
+	// Size
+	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// gameworld's character's type
-	kTypeNone,
-
-	// physical specification
-	(PhysicalProperties*)NULL,
+	// Entity's in-game type
+	kTypeNone
 };

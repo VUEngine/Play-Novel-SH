@@ -796,8 +796,14 @@ TextureROMSpec TradingCardLargeBaseTextureSpec =
 BgmapSpriteROMSpec TradingCardLargeBaseSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapAnimatedSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapAnimatedSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&TradingCardLargeBaseTextureSpec,
@@ -874,8 +880,14 @@ TextureROMSpec TradingCardLargeOverlayTextureSpec =
 BgmapSpriteROMSpec TradingCardLargeOverlaySpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapAnimatedSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapAnimatedSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&TradingCardLargeOverlayTextureSpec,
@@ -898,12 +910,7 @@ BgmapSpriteROMSpec TradingCardLargeOverlaySpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const TradingCardLargeSpriteSpecs[] =
-{
-	&TradingCardLargeBaseSpriteSpec,
-	&TradingCardLargeOverlaySpriteSpec,
-	NULL
-};
+
 
 PositionedEntityROMSpec TradingCardLargeChildrenEntities[] =
 {
@@ -911,42 +918,44 @@ PositionedEntityROMSpec TradingCardLargeChildrenEntities[] =
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, true},
 };
 
+ComponentSpec* const TradingCardLargeEntityComponentSpecs[] = 
+{
+	(ComponentSpec*)&TradingCardLargeBaseSpriteSpec,
+	(ComponentSpec*)&TradingCardLargeOverlaySpriteSpec,
+	NULL
+};
+
 AnimatedEntityROMSpec TradingCardLargeEntitySpec =
 {
 	{
-		// class allocator
+		// Class allocator		
 		__TYPE(AnimatedEntity),
 
-		// children
+		// Component specs
+		(ComponentSpec**)TradingCardLargeEntityComponentSpecs,
+
+		// Children specs
 		(PositionedEntity*)TradingCardLargeChildrenEntities,
 
-		// behaviors
+		// Extra info
 		NULL,
 
-		// extra
-		NULL,
+		
 
-		// sprites
-		(SpriteSpec**)TradingCardLargeSpriteSpecs,
-
-		// use z displacement in projection
-		false,
+		
 			
-		// wireframes
-		(WireframeSpec**)NULL,
+		
 
-		// collision colliders
-		(ColliderSpec*)NULL,
+		
 
-		// size
-		// if 0, width and height will be inferred from the first sprite's texture's size
+		// Size
+		// If 0, it is computed from the visual components if any
 		{0, 0, 0},
 
-		// gameworld's character's type
+		// Entity's in-game type
 		0,
 
-		// physical specification
-		(PhysicalProperties*)NULL,
+		
 	},
 
 	// pointer to the animation spec for the item

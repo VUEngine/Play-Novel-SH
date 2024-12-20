@@ -1,5 +1,6 @@
 {
     "_id": "4kXH3ixYziC6l30Q",
+    "_version": "1.0.0",
     "animation": {
         "frames": 0,
         "individualFiles": false,
@@ -23,7 +24,6 @@
             "unique": true
         }
     },
-    "name": "Trading Card Small Black",
     "section": "rom",
     "tileset": {
         "compression": "none",

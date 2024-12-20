@@ -20,7 +20,7 @@
 #include <I18n.h>
 #include <Languages.h>
 #include <Telegram.h>
-#include <PhysicalWorld.h>
+#include <BodyManager.h>
 #include <VisualNovelState.h>
 #include <ParticleSystem.h>
 #include <KeypadManager.h>
@@ -396,7 +396,7 @@ void VisualNovelState::setUpScene()
 	if(NULL != scene->sound)
 	{
 		SoundManager::stopAllSounds(SoundManager::getInstance(), true, NULL);
-		SoundManager::playSound(SoundManager::getInstance(), scene->sound, kPlayAll, NULL, scene->soundPlaybackType, NULL, NULL);
+		SoundManager::playSound(SoundManager::getInstance(), scene->sound, NULL, scene->soundPlaybackType, NULL, NULL);
 	}
 	else if(scene->soundPlaybackType == -1)
 	{

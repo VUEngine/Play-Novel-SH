@@ -19,7 +19,7 @@
 #include <MessageDispatcher.h>
 #include <I18n.h>
 #include <Languages.h>
-#include <PhysicalWorld.h>
+#include <BodyManager.h>
 #include <LoadGameScreenState.h>
 #include <ParticleSystem.h>
 #include <KeypadManager.h>

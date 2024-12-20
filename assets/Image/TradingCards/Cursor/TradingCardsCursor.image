@@ -1,5 +1,6 @@
 {
     "_id": "XMIREhRibAlBL47I",
+    "_version": "1.0.0",
     "animation": {
         "frames": 0,
         "individualFiles": false,
@@ -23,7 +24,6 @@
             "unique": true
         }
     },
-    "name": "Trading Cards Cursor",
     "section": "rom",
     "tileset": {
         "compression": "none",

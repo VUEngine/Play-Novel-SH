@@ -1,5 +1,6 @@
 {
     "_id": "dWKXgZWMn5NkUvBJ",
+    "_version": "1.0.0",
     "animation": {
         "frames": 5,
         "individualFiles": false,
@@ -23,7 +24,6 @@
             "unique": false
         }
     },
-    "name": "Save Slot Label",
     "section": "rom",
     "tileset": {
         "compression": "none",

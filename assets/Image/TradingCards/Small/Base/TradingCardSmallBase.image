@@ -1,5 +1,6 @@
 {
     "_id": "87rakqxIrhCcsoKW",
+    "_version": "1.0.0",
     "animation": {
         "frames": 0,
         "individualFiles": true,
@@ -54,7 +55,6 @@
             "unique": true
         }
     },
-    "name": "Trading Card Small Base",
     "section": "rom",
     "tileset": {
         "compression": "none",

@@ -75,7 +75,7 @@ StageROMSpec KonamiScreenStageSpec =
 
 	// level
 	{
-		// size
+		// Size
 		{
 			// x
 			__SCREEN_WIDTH,
@@ -264,7 +264,7 @@ StageROMSpec KonamiScreenStageSpec =
 			__TYPE(UIContainer),
 		},
 
-		// children
+		// Children specs
 		(PositionedEntity*)KonamiScreenStageSpecEntities,
 	},
 

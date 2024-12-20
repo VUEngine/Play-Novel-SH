@@ -18,7 +18,7 @@
 #include <MessageDispatcher.h>
 #include <I18n.h>
 #include <Languages.h>
-#include <PhysicalWorld.h>
+#include <BodyManager.h>
 #include <TradingCardsScreenState.h>
 #include <Printing.h>
 #include <ParticleSystem.h>

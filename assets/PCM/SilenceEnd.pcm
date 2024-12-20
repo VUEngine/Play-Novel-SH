@@ -1,8 +1,7 @@
 {
     "_id": "sVbpEEYY9WT0ou0n",
+    "_version": "0.6.0",
     "loop": true,
-    "name": "Silence End",
-    "range": 3,
     "section": "rom",
     "sourceFile": "Source/SilenceEnd.wav"
 }

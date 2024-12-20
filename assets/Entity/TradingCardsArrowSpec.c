@@ -81,8 +81,14 @@ TextureROMSpec TradingCardsArrowTextureSpec =
 BgmapSpriteROMSpec TradingCardsArrowSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&TradingCardsArrowTextureSpec,
@@ -105,47 +111,32 @@ BgmapSpriteROMSpec TradingCardsArrowSpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const TradingCardsArrowSpriteSpecs[] =
+ComponentSpec* const TradingCardsArrowEntityComponentSpecs[] = 
 {
-	&TradingCardsArrowSpriteSpec,
+	(ComponentSpec*)&TradingCardsArrowSpriteSpec,
 	NULL
 };
 
 EntityROMSpec TradingCardsArrowEntitySpec =
 {
-	// class allocator
+	// Class allocator	
 	__TYPE(Entity),
 
-	// children
+	// Component specs
+	(ComponentSpec**)TradingCardsArrowEntityComponentSpecs,
+
+	// Children specs
 	NULL,
 
-	// behaviors
+	// Extra info
 	NULL,
 
-	// extra
-	NULL,
-
-	// sprites
-	(SpriteSpec**)TradingCardsArrowSpriteSpecs,
-
-	// use z displacement in projection
-	false,
-			
-	// wireframes
-	(WireframeSpec**)NULL,
-
-	// collision colliders
-	(ColliderSpec*)NULL,
-
-	// size
-	// if 0, width and height will be inferred from the first sprite's texture's size
+	// Size
+	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// gameworld's character's type
-	kTypeNone,
-
-	// physical specification
-	(PhysicalProperties*)NULL,
+	// Entity's in-game type
+	kTypeNone
 };
 
 TextureROMSpec TradingCardsArrowRightTextureSpec =
@@ -184,8 +175,14 @@ TextureROMSpec TradingCardsArrowRightTextureSpec =
 BgmapSpriteROMSpec TradingCardsArrowRightSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&TradingCardsArrowRightTextureSpec,
@@ -208,45 +205,24 @@ BgmapSpriteROMSpec TradingCardsArrowRightSpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const TradingCardsArrowRightSpriteSpecs[] =
-{
-	&TradingCardsArrowRightSpriteSpec,
-	NULL
-};
-
 EntityROMSpec TradingCardsArrowRightEntitySpec =
 {
-	// class allocator
+	// Class allocator	
 	__TYPE(Entity),
 
-	// children
+	// Component specs
 	NULL,
 
-	// behaviors
+	// Children specs
 	NULL,
 
-	// extra
+	// Extra info
 	NULL,
 
-	// sprites
-	(SpriteSpec**)TradingCardsArrowRightSpriteSpecs,
-
-	// use z displacement in projection
-	false,
-			
-	// wireframes
-	(WireframeSpec**)NULL,
-
-	// collision colliders
-	(ColliderSpec*)NULL,
-
-	// size
-	// if 0, width and height will be inferred from the first sprite's texture's size
+	// Size
+	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// gameworld's character's type
-	kTypeNone,
-
-	// physical specification
-	(PhysicalProperties*)NULL,
+	// Entity's in-game type
+	kTypeNone
 };

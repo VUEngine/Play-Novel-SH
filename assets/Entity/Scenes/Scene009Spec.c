@@ -91,8 +91,14 @@ TextureROMSpec Scene009BackgroundBaseTextureSpec =
 BgmapSpriteROMSpec Scene009BackgroundBaseSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&Scene009BackgroundBaseTextureSpec,
@@ -151,8 +157,14 @@ TextureROMSpec Scene009BackgroundOverlayTextureSpec =
 BgmapSpriteROMSpec Scene009BackgroundOverlaySpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&Scene009BackgroundOverlayTextureSpec,
@@ -219,8 +231,14 @@ AutoScrollingMBgmapSpriteROMSpec Scene009Snow1SpriteSpec =
 	{
 		{
 			{
-				// sprite's type
-				__TYPE(AutoScrollingMBgmapSprite),
+				// Component
+				{
+					// Allocator
+					__TYPE(AutoScrollingMBgmapSprite),
+
+					// Component type
+					kSpriteComponent
+				},
 
 				// texture spec
 				(TextureSpec*)NULL,
@@ -311,8 +329,14 @@ AutoScrollingMBgmapSpriteROMSpec Scene009Snow2SpriteSpec =
 	{
 		{
 			{
-				// sprite's type
-				__TYPE(AutoScrollingMBgmapSprite),
+				// Component
+				{
+					// Allocator
+					__TYPE(AutoScrollingMBgmapSprite),
+
+					// Component type
+					kSpriteComponent
+				},
 
 				// texture spec
 				(TextureSpec*)NULL,
@@ -395,8 +419,14 @@ TextureROMSpec Scene009CarInteriorTextureSpec =
 BgmapSpriteROMSpec Scene009CarInteriorSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&Scene009CarInteriorTextureSpec,
@@ -455,8 +485,14 @@ TextureROMSpec Scene009SeatTextureSpec =
 BgmapSpriteROMSpec Scene009SeatSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&Scene009SeatTextureSpec,
@@ -515,8 +551,14 @@ TextureROMSpec Scene009HarryBlackTextureSpec =
 BgmapSpriteROMSpec Scene009HarryBlackSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&Scene009HarryBlackTextureSpec,
@@ -575,8 +617,14 @@ TextureROMSpec Scene009HarryBaseTextureSpec =
 BgmapSpriteROMSpec Scene009HarryBaseSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&Scene009HarryBaseTextureSpec,
@@ -635,8 +683,14 @@ TextureROMSpec Scene009HarryOverlayTextureSpec =
 BgmapSpriteROMSpec Scene009HarryOverlaySpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&Scene009HarryOverlayTextureSpec,
@@ -695,8 +749,14 @@ TextureROMSpec Scene009SteeringWheelTextureSpec =
 BgmapSpriteROMSpec Scene009SteeringWheelSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&Scene009SteeringWheelTextureSpec,
@@ -755,8 +815,14 @@ TextureROMSpec Scene009FrameTextureSpec =
 BgmapSpriteROMSpec Scene009FrameSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&Scene009FrameTextureSpec,
@@ -779,55 +845,40 @@ BgmapSpriteROMSpec Scene009FrameSpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const Scene009SpriteSpecs[] =
+ComponentSpec* const Scene009EntityComponentSpecs[] = 
 {
-	(BgmapSpriteROMSpec*)&Scene009BackgroundBaseSpriteSpec,
-	(BgmapSpriteROMSpec*)&Scene009BackgroundOverlaySpriteSpec,
-	(BgmapSpriteROMSpec*)&Scene009Snow1SpriteSpec,
-	(BgmapSpriteROMSpec*)&Scene009Snow2SpriteSpec,
-	(BgmapSpriteROMSpec*)&Scene009CarInteriorSpriteSpec,
-	(BgmapSpriteROMSpec*)&Scene009SeatSpriteSpec,
-	(BgmapSpriteROMSpec*)&Scene009HarryBlackSpriteSpec,
-	(BgmapSpriteROMSpec*)&Scene009HarryBaseSpriteSpec,
-	(BgmapSpriteROMSpec*)&Scene009HarryOverlaySpriteSpec,
-	(BgmapSpriteROMSpec*)&Scene009SteeringWheelSpriteSpec,
-	(BgmapSpriteROMSpec*)&Scene009FrameSpriteSpec,
+	(ComponentSpec*)&Scene009BackgroundBaseSpriteSpec,
+	(ComponentSpec*)&Scene009BackgroundOverlaySpriteSpec,
+	(ComponentSpec*)&Scene009Snow1SpriteSpec,
+	(ComponentSpec*)&Scene009Snow2SpriteSpec,
+	(ComponentSpec*)&Scene009CarInteriorSpriteSpec,
+	(ComponentSpec*)&Scene009SeatSpriteSpec,
+	(ComponentSpec*)&Scene009HarryBlackSpriteSpec,
+	(ComponentSpec*)&Scene009HarryBaseSpriteSpec,
+	(ComponentSpec*)&Scene009HarryOverlaySpriteSpec,
+	(ComponentSpec*)&Scene009SteeringWheelSpriteSpec,
+	(ComponentSpec*)&Scene009FrameSpriteSpec,
 	NULL
 };
 
 EntityROMSpec Scene009EntitySpec =
 {
-	// class allocator
+	// Class allocator	
 	__TYPE(Entity),
 
-	// children
+	// Component specs
+	(ComponentSpec**)Scene009EntityComponentSpecs,
+
+	// Children specs
 	NULL,
 
-	// behaviors
+	// Extra info
 	NULL,
 
-	// extra
-	NULL,
-
-	// sprites
-	(SpriteSpec**)Scene009SpriteSpecs,
-
-	// use z displacement in projection
-	false,
-			
-	// wireframes
-	(WireframeSpec**)NULL,
-
-	// collision colliders
-	(ColliderSpec*)NULL,
-
-	// size
-	// if 0, width and height will be inferred from the first sprite's texture's size
+	// Size
+	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// gameworld's character's type
-	kTypeNone,
-
-	// physical specification
-	(PhysicalProperties*)NULL,
+	// Entity's in-game type
+	kTypeNone
 };

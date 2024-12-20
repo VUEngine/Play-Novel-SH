@@ -82,8 +82,14 @@ TextureROMSpec Scene014BaseTextureSpec =
 BgmapSpriteROMSpec Scene014BaseSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&Scene014BaseTextureSpec,
@@ -142,8 +148,14 @@ TextureROMSpec Scene014OverlayTextureSpec =
 BgmapSpriteROMSpec Scene014OverlaySpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&Scene014OverlayTextureSpec,
@@ -166,46 +178,31 @@ BgmapSpriteROMSpec Scene014OverlaySpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const Scene014SpriteSpecs[] =
+ComponentSpec* const Scene014EntityComponentSpecs[] = 
 {
-	&Scene014BaseSpriteSpec,
-	&Scene014OverlaySpriteSpec,
+	(ComponentSpec*)&Scene014BaseSpriteSpec,
+	(ComponentSpec*)&Scene014OverlaySpriteSpec,
 	NULL
 };
 
 EntityROMSpec Scene014EntitySpec =
 {
-	// class allocator
+	// Class allocator	
 	__TYPE(Entity),
 
-	// children
+	// Component specs
+	(ComponentSpec**)Scene014EntityComponentSpecs,
+
+	// Children specs
 	NULL,
 
-	// behaviors
+	// Extra info
 	NULL,
 
-	// extra
-	NULL,
-
-	// sprites
-	(SpriteSpec**)Scene014SpriteSpecs,
-
-	// use z displacement in projection
-	false,
-			
-	// wireframes
-	(WireframeSpec**)NULL,
-
-	// collision colliders
-	(ColliderSpec*)NULL,
-
-	// size
-	// if 0, width and height will be inferred from the first sprite's texture's size
+	// Size
+	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// gameworld's character's type
-	kTypeNone,
-
-	// physical specification
-	(PhysicalProperties*)NULL,
+	// Entity's in-game type
+	kTypeNone
 };

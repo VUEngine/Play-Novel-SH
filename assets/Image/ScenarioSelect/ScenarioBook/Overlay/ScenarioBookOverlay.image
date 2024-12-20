@@ -1,5 +1,6 @@
 {
     "_id": "SVgMRNw2U99gPlym",
+    "_version": "1.0.0",
     "animation": {
         "frames": 0,
         "individualFiles": true,
@@ -24,7 +25,6 @@
             "unique": true
         }
     },
-    "name": "Scenario Book Overlay",
     "section": "rom",
     "tileset": {
         "compression": "none",

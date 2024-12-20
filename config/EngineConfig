@@ -1,4 +1,5 @@
 {
+    "_version": "1.0.0",
     "affine": {
         "maxRowsPerCall": 16,
         "maxScale": 4
@@ -39,7 +40,6 @@
         }
     },
     "frameRate": {
-        "forceVipSync": false,
         "frameCycle": 0,
         "runDelayedMessagesAtHalfFrameRate": false,
         "timerResolution": 10
@@ -106,12 +106,10 @@
     },
     "optics": {
         "baseFactor": 32,
-        "cameraMinimumDisplacementPixelsPower": 1,
         "cameraNearPlane": 0,
         "horizontalViewPointCenter": 192,
         "maximumXViewDistance": 2048,
         "maximumYViewDistance": 2048,
-        "parallaxCorrectionFactor": 2,
         "scalingModifierFactor": 1,
         "screenDepth": 2048,
         "screenHeight": 224,
@@ -132,7 +130,6 @@
     },
     "physics": {
         "angleToPreventColliderDisplacement": 10,
-        "bodiesToCheckForGravity": 10,
         "frictionForceFactorPower": 4,
         "gravity": 17.6,
         "highPrecision": false,
@@ -152,6 +149,7 @@
     },
     "sprite": {
         "hackBgmapSpriteHeight": true,
+        "spritesRotateIn3D": true,
         "totalLayers": 32,
         "totalObjects": 1024
     },
@@ -171,7 +169,10 @@
         }
     },
     "wireframes": {
+        "frustumExtensionPower": 0,
         "interlacedThreshold": 4096,
-        "sort": true
+        "lineShrinkingPadding": 0,
+        "sort": true,
+        "verticalLineOptimization": false
     }
 }

@@ -1,8 +1,7 @@
 {
     "_id": "c5UII5JmetPaQEbu",
+    "_version": "0.6.0",
     "loop": false,
-    "name": "Intro",
-    "range": 3,
     "section": "rom",
     "sourceFile": "Source/Intro.wav"
 }

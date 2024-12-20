@@ -1,8 +1,7 @@
 {
     "_id": "uHrJ4oF7IwlNb0ED",
+    "_version": "0.6.0",
     "loop": false,
-    "name": "Enter Load Game Screen",
-    "range": 1,
     "section": "rom",
     "sourceFile": "Source/StartSound.wav"
 }

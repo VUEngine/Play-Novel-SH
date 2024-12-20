@@ -79,7 +79,7 @@ AnimationFunctionROMSpec OptionsMainMenuStartBlinkEnglishAnimationSpec =
 // an animation spec
 AnimationFunctionROMSpec* const OptionsMainMenuStartAnimationSpecs[] =
 {
-    (AnimationFunction*)&OptionsMainMenuStartDefaultEnglishAnimationSpec,
+	(AnimationFunction*)&OptionsMainMenuStartDefaultEnglishAnimationSpec,
 	(AnimationFunction*)&OptionsMainMenuStartBlinkEnglishAnimationSpec,
     NULL,
 };
@@ -138,8 +138,14 @@ TextureROMSpec OptionsMainMenuStartTextureSpec =
 BgmapSpriteROMSpec OptionsMainMenuStartSpriteSpec =
 {
 	{
-		// sprite's type
-		__TYPE(BgmapAnimatedSprite),
+		// Component
+		{
+			// Allocator
+			__TYPE(BgmapAnimatedSprite),
+
+			// Component type
+			kSpriteComponent
+		},
 
 		// texture spec
 		(TextureSpec*)&OptionsMainMenuStartTextureSpec,
@@ -162,9 +168,9 @@ BgmapSpriteROMSpec OptionsMainMenuStartSpriteSpec =
 	__WORLD_ON,
 };
 
-BgmapSpriteROMSpec* const OptionsMainMenuStartSpriteSpecs[] =
+ComponentSpec* const OptionsMainMenuStartEntityComponentSpecs[] = 
 {
-	&OptionsMainMenuStartSpriteSpec,
+	(ComponentSpec*)&OptionsMainMenuStartSpriteSpec,
 	NULL
 };
 
@@ -174,39 +180,34 @@ LocalizedEntityROMSpec OptionsMainMenuStartEntitySpec =
 	{
 		// entity
 		{
-			// class allocator
+			// Class allocator			
 			__TYPE(LocalizedEntity),
 
-			// children
+			// Component specs
+			(ComponentSpec**)OptionsMainMenuStartEntityComponentSpecs,
+
+			// Children specs
 			NULL,
 
-			// behaviors
+			// Extra info
 			NULL,
 
-			// extra
-			NULL,
+			
 
-			// sprites
-			(SpriteSpec**)OptionsMainMenuStartSpriteSpecs,
-
-			// use z displacement in projection
-			false,
+			
 				
-			// wireframes
-			(WireframeSpec**)NULL,
+			
 
-			// collision colliders
-			(ColliderSpec*)NULL,
+			
 
-			// size
-			// if 0, width and height will be inferred from the first sprite's texture's size
+			// Size
+			// If 0, it is computed from the visual components if any
 			{0, 0, 0},
 
-			// gameworld's character's type
+			// Entity's in-game type
 			kTypeNone,
 
-			// physical specification
-			(PhysicalProperties*)NULL,
+			
 		},
 
 		// pointer to the animation spec for the item

@@ -1,5 +1,6 @@
 {
     "_id": "LtoDQx7C8a047TGs",
+    "_version": "1.0.0",
     "animation": {
         "frames": 0,
         "individualFiles": false,
@@ -24,7 +25,6 @@
             "unique": true
         }
     },
-    "name": "Logo",
     "section": "rom",
     "tileset": {
         "compression": "none",
