@@ -918,7 +918,7 @@ PositionedEntityROMSpec TradingCardLargeChildrenEntities[] =
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, true},
 };
 
-const ComponentSpec* TradingCardLargeEntityComponentSpecs[] = 
+ComponentSpec* const TradingCardLargeEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&TradingCardLargeBaseSpriteSpec,
 	(ComponentSpec*)&TradingCardLargeOverlaySpriteSpec,
@@ -952,7 +952,7 @@ AnimatedEntityROMSpec TradingCardLargeEntitySpec =
 		// If 0, it is computed from the visual components if any
 		{0, 0, 0},
 
-		// In-game entity's type
+		// Entity's in-game type
 		0,
 
 		

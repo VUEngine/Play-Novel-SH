@@ -168,7 +168,7 @@ BgmapSpriteROMSpec OptionsMainMenuMobileSpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* OptionsMainMenuMobileEntityComponentSpecs[] = 
+ComponentSpec* const OptionsMainMenuMobileEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&OptionsMainMenuMobileSpriteSpec,
 	NULL
@@ -204,7 +204,7 @@ LocalizedEntityROMSpec OptionsMainMenuMobileEntitySpec =
 			// If 0, it is computed from the visual components if any
 			{0, 0, 0},
 
-			// In-game entity's type
+			// Entity's in-game type
 			kTypeNone,
 
 			

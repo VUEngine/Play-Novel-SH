@@ -158,7 +158,7 @@ BgmapSpriteROMSpec IntroSpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* IntroEntityComponentSpecs[] = 
+ComponentSpec* const IntroEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&IntroSpriteSpec,
 	NULL
@@ -191,7 +191,7 @@ AnimatedEntityROMSpec IntroEntitySpec =
 		// If 0, it is computed from the visual components if any
 		{0, 0, 0},
 
-		// In-game entity's type
+		// Entity's in-game type
 		0,
 
 		

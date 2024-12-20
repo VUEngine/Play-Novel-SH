@@ -178,7 +178,7 @@ BgmapSpriteROMSpec Scene013OverlaySpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* Scene013EntityComponentSpecs[] = 
+ComponentSpec* const Scene013EntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&Scene013BaseSpriteSpec,
 	(ComponentSpec*)&Scene013OverlaySpriteSpec,
@@ -203,6 +203,6 @@ EntityROMSpec Scene013EntitySpec =
 	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// In-game entity's type
+	// Entity's in-game type
 	kTypeNone
 };

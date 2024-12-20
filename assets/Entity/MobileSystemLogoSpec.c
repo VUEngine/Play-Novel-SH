@@ -178,7 +178,7 @@ BgmapSpriteROMSpec MobileSystemLogoBSpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* MobileSystemLogoEntityComponentSpecs[] = 
+ComponentSpec* const MobileSystemLogoEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&MobileSystemLogoASpriteSpec,
 	(ComponentSpec*)&MobileSystemLogoBSpriteSpec,
@@ -203,6 +203,6 @@ EntityROMSpec MobileSystemLogoEntitySpec =
 	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// In-game entity's type
+	// Entity's in-game type
 	kTypeNone
 };

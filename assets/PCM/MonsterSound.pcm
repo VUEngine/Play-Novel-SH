@@ -1,8 +1,7 @@
 {
     "_id": "e6DazN6iPLy0fyfR",
+    "_version": "0.6.0",
     "loop": false,
-    "name": "Monster Sound",
-    "range": 5,
     "section": "rom",
     "sourceFile": "Source/MonsterSound.wav"
 }

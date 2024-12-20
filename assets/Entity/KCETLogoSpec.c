@@ -178,7 +178,7 @@ BgmapSpriteROMSpec KCETLogoBSpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* KCETLogoEntityComponentSpecs[] = 
+ComponentSpec* const KCETLogoEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&KCETLogoASpriteSpec,
 	(ComponentSpec*)&KCETLogoBSpriteSpec,
@@ -203,6 +203,6 @@ EntityROMSpec KCETLogoEntitySpec =
 	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// In-game entity's type
+	// Entity's in-game type
 	kTypeNone
 };

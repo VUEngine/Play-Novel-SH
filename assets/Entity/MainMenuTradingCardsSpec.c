@@ -168,7 +168,7 @@ BgmapSpriteROMSpec OptionsMainMenuTradingCardsSpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* OptionsMainMenuTradingCardsEntityComponentSpecs[] = 
+ComponentSpec* const OptionsMainMenuTradingCardsEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&OptionsMainMenuTradingCardsSpriteSpec,
 	NULL
@@ -204,7 +204,7 @@ LocalizedEntityROMSpec OptionsMainMenuTradingCardsEntitySpec =
 			// If 0, it is computed from the visual components if any
 			{0, 0, 0},
 
-			// In-game entity's type
+			// Entity's in-game type
 			kTypeNone,
 
 			

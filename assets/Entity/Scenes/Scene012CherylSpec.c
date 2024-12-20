@@ -160,7 +160,7 @@ BgmapSpriteROMSpec Scene012CherylOverlaySpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* Scene012CherylEntityComponentSpecs[] = 
+ComponentSpec* const Scene012CherylEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&Scene012CherylBaseSpriteSpec,
 	(ComponentSpec*)&Scene012CherylOverlaySpriteSpec,
@@ -185,6 +185,6 @@ EntityROMSpec Scene012CherylEntitySpec =
 	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// In-game entity's type
+	// Entity's in-game type
 	kTypeNone
 };

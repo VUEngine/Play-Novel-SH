@@ -1,8 +1,7 @@
 {
     "_id": "iIK0ccEC14WZC43y",
+    "_version": "0.6.0",
     "loop": false,
-    "name": "Entering Other World",
-    "range": 3,
     "section": "rom",
     "sourceFile": "Source/EnteringOtherWorld.wav"
 }

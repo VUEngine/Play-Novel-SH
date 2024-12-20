@@ -178,7 +178,7 @@ BgmapSpriteROMSpec KonamiLogoBSpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* KonamiLogoEntityComponentSpecs[] = 
+ComponentSpec* const KonamiLogoEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&KonamiLogoASpriteSpec,
 	(ComponentSpec*)&KonamiLogoBSpriteSpec,
@@ -203,6 +203,6 @@ EntityROMSpec KonamiLogoEntitySpec =
 	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// In-game entity's type
+	// Entity's in-game type
 	kTypeNone
 };

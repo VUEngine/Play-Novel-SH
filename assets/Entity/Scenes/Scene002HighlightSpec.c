@@ -93,7 +93,7 @@ BgmapSpriteROMSpec Scene002HighlightSpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* Scene002HighlightEntityComponentSpecs[] = 
+ComponentSpec* const Scene002HighlightEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&Scene002HighlightSpriteSpec,
 	NULL
@@ -117,6 +117,6 @@ EntityROMSpec Scene002HighlightEntitySpec =
 	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// In-game entity's type
+	// Entity's in-game type
 	kTypeNone
 };

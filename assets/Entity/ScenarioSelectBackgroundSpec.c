@@ -111,7 +111,7 @@ BgmapSpriteROMSpec ScenarioSelectBackgroundSpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* ScenarioSelectBackgroundEntityComponentSpecs[] = 
+ComponentSpec* const ScenarioSelectBackgroundEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&ScenarioSelectBackgroundSpriteSpec,
 	NULL
@@ -135,6 +135,6 @@ EntityROMSpec ScenarioSelectBackgroundEntitySpec =
 	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// In-game entity's type
+	// Entity's in-game type
 	kTypeNone
 };

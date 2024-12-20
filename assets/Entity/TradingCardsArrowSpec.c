@@ -111,7 +111,7 @@ BgmapSpriteROMSpec TradingCardsArrowSpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* TradingCardsArrowEntityComponentSpecs[] = 
+ComponentSpec* const TradingCardsArrowEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&TradingCardsArrowSpriteSpec,
 	NULL
@@ -135,7 +135,7 @@ EntityROMSpec TradingCardsArrowEntitySpec =
 	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// In-game entity's type
+	// Entity's in-game type
 	kTypeNone
 };
 
@@ -223,6 +223,6 @@ EntityROMSpec TradingCardsArrowRightEntitySpec =
 	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// In-game entity's type
+	// Entity's in-game type
 	kTypeNone
 };

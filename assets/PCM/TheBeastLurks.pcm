@@ -1,8 +1,7 @@
 {
     "_id": "nEGKevaFxi06bQ1J",
+    "_version": "0.6.0",
     "loop": false,
-    "name": "The Beast Lurks",
-    "range": 4,
     "section": "rom",
     "sourceFile": "Source/TheBeastLurks.wav"
 }

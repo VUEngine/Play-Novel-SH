@@ -111,7 +111,7 @@ BgmapSpriteROMSpec ScenarioBookBlackSpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* ScenarioBookBlackEntityComponentSpecs[] = 
+ComponentSpec* const ScenarioBookBlackEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&ScenarioBookBlackSpriteSpec,
 	NULL
@@ -135,6 +135,6 @@ EntityROMSpec ScenarioBookBlackEntitySpec =
 	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// In-game entity's type
+	// Entity's in-game type
 	kTypeNone
 };

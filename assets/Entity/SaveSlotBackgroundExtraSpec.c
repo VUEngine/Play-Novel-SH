@@ -93,7 +93,7 @@ BgmapSpriteROMSpec SaveSlotWideBackgroundExtraSpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* SaveSlotWideBackgroundExtraEntityComponentSpecs[] = 
+ComponentSpec* const SaveSlotWideBackgroundExtraEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&SaveSlotWideBackgroundExtraSpriteSpec,
 	NULL
@@ -117,6 +117,6 @@ EntityROMSpec SaveSlotWideBackgroundExtraEntitySpec =
 	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// In-game entity's type
+	// Entity's in-game type
 	kTypeNone
 };

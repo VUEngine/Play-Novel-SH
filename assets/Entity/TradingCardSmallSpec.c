@@ -918,7 +918,7 @@ PositionedEntityROMSpec TradingCardSmallChildrenEntities[] =
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, true},
 };
 
-const ComponentSpec* TradingCardSmallEntityComponentSpecs[] = 
+ComponentSpec* const TradingCardSmallEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&TradingCardSmallBaseSpriteSpec,
 	(ComponentSpec*)&TradingCardSmallOverlaySpriteSpec,
@@ -952,7 +952,7 @@ AnimatedEntityROMSpec TradingCardSmallEntitySpec =
 		// If 0, it is computed from the visual components if any
 		{0, 0, 0},
 
-		// In-game entity's type
+		// Entity's in-game type
 		0,
 
 		

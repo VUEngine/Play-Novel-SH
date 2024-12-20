@@ -313,9 +313,9 @@ BgmapSpriteROMSpec FlaurosOverlaySpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* FlaurosEntityComponentSpecs[] = 
+ComponentSpec* const FlaurosEntityComponentSpecs[] = 
 {
-	(ComponentSpec*)&//FlaurosBlackSpriteSpec,
+	//(ComponentSpec*)&FlaurosBlackSpriteSpec,
 	(ComponentSpec*)&FlaurosBaseSpriteSpec,
 	(ComponentSpec*)&FlaurosOverlaySpriteSpec,
 	NULL
@@ -348,7 +348,7 @@ AnimatedEntityROMSpec FlaurosEntitySpec =
 		// If 0, it is computed from the visual components if any
 		{0, 0, 0},
 
-		// In-game entity's type
+		// Entity's in-game type
 		0,
 
 		

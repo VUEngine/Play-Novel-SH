@@ -1,8 +1,7 @@
 {
     "_id": "JDnYZ7CDHQHuLZOL",
+    "_version": "0.6.0",
     "loop": false,
-    "name": "Something Strange",
-    "range": 4,
     "section": "rom",
     "sourceFile": "Source/SomethingStrange.wav"
 }

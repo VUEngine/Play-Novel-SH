@@ -197,7 +197,7 @@ BgmapSpriteROMSpec TradingCardsBackgroundSpineSpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* TradingCardsBackgroundEntityComponentSpecs[] = 
+ComponentSpec* const TradingCardsBackgroundEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&TradingCardsBackgroundSpriteSpec,
 	(ComponentSpec*)&TradingCardsBackgroundSpineSpriteSpec,
@@ -222,6 +222,6 @@ EntityROMSpec TradingCardsBackgroundEntitySpec =
 	// If 0, it is computed from the visual components if any
 	{0, 0, 0},
 
-	// In-game entity's type
+	// Entity's in-game type
 	kTypeNone
 };

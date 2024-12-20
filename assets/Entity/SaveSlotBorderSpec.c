@@ -142,7 +142,7 @@ BgmapSpriteROMSpec SaveSlotBorderSpriteSpec =
 	__WORLD_ON,
 };
 
-const ComponentSpec* SaveSlotBorderEntityComponentSpecs[] = 
+ComponentSpec* const SaveSlotBorderEntityComponentSpecs[] = 
 {
 	(ComponentSpec*)&SaveSlotBorderSpriteSpec,
 	NULL
@@ -175,7 +175,7 @@ AnimatedEntityROMSpec SaveSlotBorderEntitySpec =
 		// If 0, it is computed from the visual components if any
 		{0, 0, 0},
 
-		// In-game entity's type
+		// Entity's in-game type
 		0,
 
 		
