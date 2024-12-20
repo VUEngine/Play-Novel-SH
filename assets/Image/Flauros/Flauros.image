@@ -1,5 +1,6 @@
 {
     "_id": "j346V2TkaSPkFv5g",
+    "_version": "1.0.0",
     "animation": {
         "frames": 7,
         "individualFiles": false,
@@ -25,7 +26,6 @@
             "unique": false
         }
     },
-    "name": "Flauros",
     "section": "rom",
     "tileset": {
         "compression": "none",

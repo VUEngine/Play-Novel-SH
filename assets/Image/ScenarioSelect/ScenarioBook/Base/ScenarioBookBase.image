@@ -1,23 +1,30 @@
 {
     "_id": "Ujv0ByNw3NoWRkvC",
+    "_version": "1.0.0",
+    "animation": {
+        "frames": 0,
+        "individualFiles": true,
+        "isAnimation": true
+    },
+    "colorMode": 0,
     "files": [],
-    "name": "ScenarioBookBase",
-    "section": "rom",
-    "tileset": {
-        "shared": false,
-        "compression": "none"
+    "imageProcessingSettings": {
+        "distanceCalculator": "euclidean",
+        "imageQuantizationAlgorithm": "nearest",
+        "minimumColorDistanceToDither": 0,
+        "serpentine": false
     },
     "map": {
+        "compression": "none",
         "generate": true,
         "reduce": {
             "flipped": true,
             "unique": true
-        },
-        "compression": "none"
+        }
     },
-    "animation": {
-        "isAnimation": true,
-        "individualFiles": true,
-        "frames": 0
+    "section": "rom",
+    "tileset": {
+        "compression": "none",
+        "shared": false
     }
 }

@@ -1,5 +1,6 @@
 {
     "_id": "imDyl0KB5V2EinMy",
+    "_version": "1.0.0",
     "animation": {
         "frames": 0,
         "individualFiles": false,
@@ -23,7 +24,6 @@
             "unique": true
         }
     },
-    "name": "Copyright",
     "section": "rom",
     "tileset": {
         "compression": "none",

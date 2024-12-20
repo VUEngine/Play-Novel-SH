@@ -1,5 +1,6 @@
 {
     "_id": "5EitU7qpsRpH1SXM",
+    "_version": "1.0.0",
     "animation": {
         "frames": 0,
         "individualFiles": false,
@@ -24,7 +25,6 @@
             "unique": true
         }
     },
-    "name": "Scene 003",
     "section": "rom",
     "tileset": {
         "compression": "none",

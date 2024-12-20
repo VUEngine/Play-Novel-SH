@@ -1,5 +1,6 @@
 {
     "_id": "j7ek2AuZOVjaMbNR",
+    "_version": "1.0.0",
     "animation": {
         "frames": 13,
         "individualFiles": false,
@@ -23,7 +24,6 @@
             "unique": false
         }
     },
-    "name": "Main Menu Trading Cards",
     "section": "rom",
     "tileset": {
         "compression": "none",

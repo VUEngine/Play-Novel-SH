@@ -1,5 +1,6 @@
 {
     "_id": "e1Q19qSrFoHdllJR",
+    "_version": "1.0.0",
     "animation": {
         "frames": 0,
         "individualFiles": false,
@@ -25,7 +26,6 @@
             "unique": true
         }
     },
-    "name": "Save Slot Background",
     "section": "rom",
     "tileset": {
         "compression": "none",
