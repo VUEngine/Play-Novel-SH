@@ -41,11 +41,12 @@ extern StageROMSpec TradingCardsScreenStageSpec;
 
 void TradingCardsScreenState::constructor()
 {
+	// Always explicitly call the base's constructor 
 	Base::constructor();
 }
 
 void TradingCardsScreenState::destructor()
-{
+{	// Always explicitly call the base's destructor 
 	Base::destructor();
 }
 

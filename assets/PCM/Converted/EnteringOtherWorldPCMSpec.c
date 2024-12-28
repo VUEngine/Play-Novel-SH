@@ -4249,40 +4249,40 @@ const SoundTrackKeyframe EnteringOtherWorldSoundTrack1Keyframes[] =
 
 SoundTrackROMSpec EnteringOtherWorldSoundTrack =
 {
-	/// kTrackNative, kTrackPCM
+	// kTrackNative, kTrackPCM
 	kTrackPCM,
 
-	/// Skip if no sound source available?
+	// Skip if no sound source available?
 	false,
 
-	/// Total number of samples (0 if not PCM)
+	// Total number of samples (0 if not PCM)
 	EnteringOtherWorldSoundTrackLength,
 
-	/// Keyframes that define the track
+	// Keyframes that define the track
 	(SoundTrackKeyframe*)EnteringOtherWorldSoundTrack1Keyframes,
 
-	/// SxINT values
+	// SxINT values
 	(uint8*)EnteringOtherWorldSoundTrack1SxINT,
 
-	/// SxLRV values
+	// SxLRV values
 	(uint8*)EnteringOtherWorldSoundTrack1SxLRV,
 
-	/// SxFQH and SxFQL values
+	// SxFQH and SxFQL values
 	(uint16*)EnteringOtherWorldSoundTrack1SxFQ,
 
-	/// SxEV0 values
+	// SxEV0 values
 	(uint8*)EnteringOtherWorldSoundTrack1SxEV0,
 
-	/// SxEV1 values
+	// SxEV1 values
 	(uint8*)EnteringOtherWorldSoundTrack1SxEV1,
 
-	/// SxRAM pointers
+	// SxRAM pointers
 	(int8**)EnteringOtherWorldSoundTrack1SxRAM,
 
-	/// SxSWP values
+	// SxSWP values
 	(uint8*)EnteringOtherWorldSoundTrack1SxSWP,
 
-	/// SxMOD pointers
+	// SxMOD pointers
 	(int8**)EnteringOtherWorldSoundTrack1SxMOD,
 };
 

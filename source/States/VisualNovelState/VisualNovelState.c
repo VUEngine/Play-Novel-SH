@@ -44,13 +44,14 @@ extern EntitySpec DummyContainerEntitySpec;
 
 void VisualNovelState::constructor()
 {
+	// Always explicitly call the base's constructor 
 	Base::constructor();
 
 	this->saveSlot = 0;
 }
 
 void VisualNovelState::destructor()
-{
+{	// Always explicitly call the base's destructor 
 	Base::destructor();
 }
 

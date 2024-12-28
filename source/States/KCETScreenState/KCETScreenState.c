@@ -29,13 +29,14 @@ extern StageROMSpec KCETScreenStageSpec;
 
 void KCETScreenState::constructor()
 {
+	// Always explicitly call the base's constructor 
 	Base::constructor();
 
 	this->stageSpec = (StageSpec*)&KCETScreenStageSpec;
 }
 
 void KCETScreenState::destructor()
-{
+{	// Always explicitly call the base's destructor 
 	Base::destructor();
 }
 

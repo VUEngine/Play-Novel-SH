@@ -9109,40 +9109,40 @@ const SoundTrackKeyframe SilenceEndSoundTrack1Keyframes[] =
 
 SoundTrackROMSpec SilenceEndSoundTrack =
 {
-	/// kTrackNative, kTrackPCM
+	// kTrackNative, kTrackPCM
 	kTrackPCM,
 
-	/// Skip if no sound source available?
+	// Skip if no sound source available?
 	false,
 
-	/// Total number of samples (0 if not PCM)
+	// Total number of samples (0 if not PCM)
 	SilenceEndSoundTrackLength,
 
-	/// Keyframes that define the track
+	// Keyframes that define the track
 	(SoundTrackKeyframe*)SilenceEndSoundTrack1Keyframes,
 
-	/// SxINT values
+	// SxINT values
 	(uint8*)SilenceEndSoundTrack1SxINT,
 
-	/// SxLRV values
+	// SxLRV values
 	(uint8*)SilenceEndSoundTrack1SxLRV,
 
-	/// SxFQH and SxFQL values
+	// SxFQH and SxFQL values
 	(uint16*)SilenceEndSoundTrack1SxFQ,
 
-	/// SxEV0 values
+	// SxEV0 values
 	(uint8*)SilenceEndSoundTrack1SxEV0,
 
-	/// SxEV1 values
+	// SxEV1 values
 	(uint8*)SilenceEndSoundTrack1SxEV1,
 
-	/// SxRAM pointers
+	// SxRAM pointers
 	(int8**)SilenceEndSoundTrack1SxRAM,
 
-	/// SxSWP values
+	// SxSWP values
 	(uint8*)SilenceEndSoundTrack1SxSWP,
 
-	/// SxMOD pointers
+	// SxMOD pointers
 	(int8**)SilenceEndSoundTrack1SxMOD,
 };
 

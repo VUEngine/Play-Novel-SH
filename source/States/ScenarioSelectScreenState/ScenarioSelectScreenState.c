@@ -41,11 +41,12 @@ extern StageROMSpec ScenarioSelectScreenStageSpec;
 
 void ScenarioSelectScreenState::constructor()
 {
+	// Always explicitly call the base's constructor 
 	Base::constructor();
 }
 
 void ScenarioSelectScreenState::destructor()
-{
+{	// Always explicitly call the base's destructor 
 	Base::destructor();
 }
 

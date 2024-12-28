@@ -41,11 +41,12 @@ extern StageROMSpec TitleScreenStageSpec;
 
 void TitleScreenState::constructor()
 {
+	// Always explicitly call the base's constructor 
 	Base::constructor();
 }
 
 void TitleScreenState::destructor()
-{
+{	// Always explicitly call the base's destructor 
 	Base::destructor();
 }
 

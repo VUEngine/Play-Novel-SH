@@ -718,40 +718,40 @@ const SoundTrackKeyframe CarBrakingSoundTrack1Keyframes[] =
 
 SoundTrackROMSpec CarBrakingSoundTrack =
 {
-	/// kTrackNative, kTrackPCM
+	// kTrackNative, kTrackPCM
 	kTrackPCM,
 
-	/// Skip if no sound source available?
+	// Skip if no sound source available?
 	false,
 
-	/// Total number of samples (0 if not PCM)
+	// Total number of samples (0 if not PCM)
 	CarBrakingSoundTrackLength,
 
-	/// Keyframes that define the track
+	// Keyframes that define the track
 	(SoundTrackKeyframe*)CarBrakingSoundTrack1Keyframes,
 
-	/// SxINT values
+	// SxINT values
 	(uint8*)CarBrakingSoundTrack1SxINT,
 
-	/// SxLRV values
+	// SxLRV values
 	(uint8*)CarBrakingSoundTrack1SxLRV,
 
-	/// SxFQH and SxFQL values
+	// SxFQH and SxFQL values
 	(uint16*)CarBrakingSoundTrack1SxFQ,
 
-	/// SxEV0 values
+	// SxEV0 values
 	(uint8*)CarBrakingSoundTrack1SxEV0,
 
-	/// SxEV1 values
+	// SxEV1 values
 	(uint8*)CarBrakingSoundTrack1SxEV1,
 
-	/// SxRAM pointers
+	// SxRAM pointers
 	(int8**)CarBrakingSoundTrack1SxRAM,
 
-	/// SxSWP values
+	// SxSWP values
 	(uint8*)CarBrakingSoundTrack1SxSWP,
 
-	/// SxMOD pointers
+	// SxMOD pointers
 	(int8**)CarBrakingSoundTrack1SxMOD,
 };
 

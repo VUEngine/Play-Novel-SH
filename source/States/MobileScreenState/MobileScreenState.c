@@ -40,11 +40,12 @@ extern StageROMSpec MobileScreenStageSpec;
 
 void MobileScreenState::constructor()
 {
+	// Always explicitly call the base's constructor 
 	Base::constructor();
 }
 
 void MobileScreenState::destructor()
-{
+{	// Always explicitly call the base's destructor 
 	Base::destructor();
 }
 

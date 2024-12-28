@@ -46,11 +46,12 @@ extern GameProgress EmptyProgress;
 
 void LoadGameScreenState::constructor()
 {
+	// Always explicitly call the base's constructor 
 	Base::constructor();
 }
 
 void LoadGameScreenState::destructor()
-{
+{	// Always explicitly call the base's destructor 
 	Base::destructor();
 }
 

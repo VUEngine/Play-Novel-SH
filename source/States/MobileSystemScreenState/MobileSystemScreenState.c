@@ -29,13 +29,14 @@ extern StageROMSpec MobileSystemScreenStageSpec;
 
 void MobileSystemScreenState::constructor()
 {
+	// Always explicitly call the base's constructor 
 	Base::constructor();
 
 	this->stageSpec = (StageSpec*)&MobileSystemScreenStageSpec;
 }
 
 void MobileSystemScreenState::destructor()
-{
+{	// Always explicitly call the base's destructor 
 	Base::destructor();
 }
 

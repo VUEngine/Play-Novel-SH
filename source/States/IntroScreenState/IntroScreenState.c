@@ -32,13 +32,14 @@ extern StageROMSpec IntroScreenStageSpec;
 
 void IntroScreenState::constructor()
 {
+	// Always explicitly call the base's constructor 
 	Base::constructor();
 
 	this->stageSpec = (StageSpec*)&IntroScreenStageSpec;
 }
 
 void IntroScreenState::destructor()
-{
+{	// Always explicitly call the base's destructor 
 	Base::destructor();
 }
 

@@ -21,6 +21,7 @@
 
 void AutoScrollingMBgmapSprite::constructor(SpatialObject owner, const AutoScrollingMBgmapSpriteSpec* autoScrollingMBgmapSpriteSpec)
 {
+	// Always explicitly call the base's constructor 
 	Base::constructor(owner, &autoScrollingMBgmapSpriteSpec->mBgmapSpriteSpec);
 	this->scrollDelay = autoScrollingMBgmapSpriteSpec->scrollDelay;
 
@@ -29,8 +30,7 @@ void AutoScrollingMBgmapSprite::constructor(SpatialObject owner, const AutoScrol
 
 void AutoScrollingMBgmapSprite::destructor()
 {
-	// destroy the super object
-	// must always be called at the end of the destructor
+	// Always explicitly call the base's destructor 
 	Base::destructor();
 }
 

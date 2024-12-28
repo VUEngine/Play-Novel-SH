@@ -31,10 +31,10 @@ extern uint16 IntroMap[];
 
 AnimationFunctionROMSpec IntroDefaultAnimationSpec =
 {
-	// number of frames of this animation function
+	// Number of frames that the texture supports of this animation function
 	160,
 
-	// frames to play in animation
+	// Frames to play in animation
 	{
 		135, 135, 135, 135,  
 		135, 135, 135, 135, 135, 135, 135, 135, 135, 135,
@@ -55,16 +55,16 @@ AnimationFunctionROMSpec IntroDefaultAnimationSpec =
 		130, 131, 132, 133, 134, 135, 
 	},
 
-	// number of cycles a frame of animation is displayed
+	// Number of cycles a frame of animation is displayed
 	3,
 
-	// whether to play it in loop or not
+	// Whether to play it in loop or not
 	false,
 
-	// method to call on function completion
+	// Callback on animation completion
 	(EventListener)AnimatedEntity_onIntroDefaultAnimationComplete,
 
-	// function's name
+	// Animation's name
 	"Default",
 };
 
@@ -76,52 +76,52 @@ AnimationFunctionROMSpec* const IntroAnimationSpecs[] =
 
 CharSetROMSpec IntroCharSetSpec =
 {
-	// number of chars in function of the number of frames to load at the same time
+	// Number of chars in function of the number of frames to load at the same time
 	581,
 
-	// whether it is shared or not
+	// Whether it is shared or not
 	false,
 	
-	// whether the tiles are optimized or not
+	// Whether the tiles are optimized or not
 	true,
 
-	// char spec
+	// Tiles array
 	IntroTiles,
 
-	// pointer to the frames offsets
+	// Frame offsets array
 	IntroTilesFrameOffsets,
 };
 
 TextureROMSpec IntroTextureSpec =
 {
-	// charset spec
+	// Pointer to the char spec that the texture uses
 	(CharSetSpec*)&IntroCharSetSpec,
 
-	// bgmap spec
+	// Pointer to the map array that defines how to use the tiles from the char set
 	IntroMap,
 
-	// cols (max 64)
+	// Horizontal size in tiles of the texture (max. 64)
 	30,
 
-	// rows (max 64)
+	// Vertical size in tiles of the texture (max. 64)
 	20,
 
 	// padding for affine transformations
 	{0, 0},
 
-	// number of frames
+	// Number of frames that the texture supports
 	1,
 
-	// palette number (0-3)
+	// Palette index to use by the graphical data (0 - 3)
 	0,
 
-	// recyclable
+	// Flag to recyble the texture with a different map
 	false,
 
-	// vertical flip
+	// Flag to vertically flip the image
 	false,
 
-	// horizontal flip
+	// Flag to horizontally flip the image
 	false,
 };
 
@@ -137,24 +137,24 @@ BgmapSpriteROMSpec IntroSpriteSpec =
 			kSpriteComponent
 		},
 
-		// texture spec
+		// Spec for the texture to display
 		(TextureSpec*)&IntroTextureSpec,
 
-		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// Transparency mode (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
 
-		// displacement
+		// Displacement added to the sprite's position
 		{0, 0, 0, 0},
 	},
 
-	// bgmap mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
+	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
 	// make sure to use the proper corresponding sprite type throughout the spec (BgmapSprite or ObjectSprite)
 	__WORLD_BGMAP,
 
 	// pointer to affine / hbias manipulation function
 	NULL,
 
-	// display mode (__WORLD_ON, __WORLD_LON or __WORLD_RON)
+	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
 	__WORLD_ON,
 };
 
@@ -197,9 +197,9 @@ AnimatedEntityROMSpec IntroEntitySpec =
 		
 	},
 
-	// pointer to the animation spec for the item
+	// Pointer to animation functions array
 	(const AnimationFunction**)&IntroAnimationSpecs,
 
-	// initial animation
+	// Animation to play automatically
 	"Default",
 };

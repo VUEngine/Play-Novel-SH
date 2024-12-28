@@ -23,14 +23,14 @@
 // class's constructor
 void TradingCardsManager::constructor()
 {
-	// construct base object
+	// Always explicitly call the base's constructor 
 	Base::constructor();
 }
 
 // class's destructor
 void TradingCardsManager::destructor()
 {
-	// destroy base
+	// Always explicitly call the base's destructor 
 	Base::destructor();
 }
 

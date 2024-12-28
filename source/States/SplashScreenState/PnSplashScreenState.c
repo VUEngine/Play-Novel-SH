@@ -22,6 +22,7 @@
 
 void PnSplashScreenState::constructor()
 {
+	// Always explicitly call the base's constructor 
 	Base::constructor();
 
 	// init class members
@@ -31,8 +32,7 @@ void PnSplashScreenState::constructor()
 
 void PnSplashScreenState::destructor()
 {
-	// destroy the super object
-	// must always be called at the end of the destructor
+	// Always explicitly call the base's destructor 
 	Base::destructor();
 }
 

@@ -30,34 +30,34 @@ extern uint16 Scene012CherylOverlayMap[];
 
 TextureROMSpec Scene012CherylBaseTextureSpec =
 {
-	// charset spec
+	// Pointer to the char spec that the texture uses
 	(CharSetSpec*)&Scene012CharSetSpec,
 
-	// bgmap spec
+	// Pointer to the map array that defines how to use the tiles from the char set
 	Scene012CherylBaseMap,
 
-	// cols (max 64)
+	// Horizontal size in tiles of the texture (max. 64)
 	3,
 
-	// rows (max 64)
+	// Vertical size in tiles of the texture (max. 64)
 	8,
 
-	// padding for affine/hbias transformations (cols, rows)
+	// Padding added to the size for affine/hbias transformations (cols, rows)
 	{0, 0},
 
-	// number of frames
+	// Number of frames that the texture supports
 	1,
 
-	// palette number (0-3)
+	// Palette index to use by the graphical data (0 - 3)
 	0,
 
-	// recyclable
+	// Flag to recyble the texture with a different map
 	false,
 
-	// vertical flip
+	// Flag to vertically flip the image
 	false,
 
-	// horizontal flip
+	// Flag to horizontally flip the image
 	false,
 };
 
@@ -73,57 +73,57 @@ BgmapSpriteROMSpec Scene012CherylBaseSpriteSpec =
 			kSpriteComponent
 		},
 
-		// texture spec
+		// Spec for the texture to display
 		(TextureSpec*)&Scene012CherylBaseTextureSpec,
 
-		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// Transparency mode (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_NONE,
 
-		// displacement
+		// Displacement added to the sprite's position
 		{5, 20, -2, 0},
 	},
 
-	// bgmap mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
+	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
 	// make sure to use the proper corresponding sprite type throughout the spec (BgmapSprite or ObjectSprite)
 	__WORLD_BGMAP,
 
-	// pointer to affine/hbias manipulation function
+	// Pointer to affine/hbias manipulation function
 	NULL,
 
-	// display mode (__WORLD_ON, __WORLD_LON or __WORLD_RON)
+	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
 	__WORLD_ON,
 };
 
 TextureROMSpec Scene012CherylOverlayTextureSpec =
 {
-	// charset spec
+	// Pointer to the char spec that the texture uses
 	(CharSetSpec*)&Scene012CharSetSpec,
 
-	// bgmap spec
+	// Pointer to the map array that defines how to use the tiles from the char set
 	Scene012CherylOverlayMap,
 
-	// cols (max 64)
+	// Horizontal size in tiles of the texture (max. 64)
 	3,
 
-	// rows (max 64)
+	// Vertical size in tiles of the texture (max. 64)
 	8,
 
-	// padding for affine/hbias transformations (cols, rows)
+	// Padding added to the size for affine/hbias transformations (cols, rows)
 	{0, 0},
 
-	// number of frames
+	// Number of frames that the texture supports
 	1,
 
-	// palette number (0-3)
+	// Palette index to use by the graphical data (0 - 3)
 	0,
 
-	// recyclable
+	// Flag to recyble the texture with a different map
 	false,
 
-	// vertical flip
+	// Flag to vertically flip the image
 	false,
 
-	// horizontal flip
+	// Flag to horizontally flip the image
 	false,
 };
 
@@ -139,24 +139,24 @@ BgmapSpriteROMSpec Scene012CherylOverlaySpriteSpec =
 			kSpriteComponent
 		},
 
-		// texture spec
+		// Spec for the texture to display
 		(TextureSpec*)&Scene012CherylOverlayTextureSpec,
 
-		// transparency (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
+		// Transparency mode (__TRANSPARENCY_NONE, __TRANSPARENCY_EVEN or __TRANSPARENCY_ODD)
 		__TRANSPARENCY_EVEN,
 
-		// displacement
+		// Displacement added to the sprite's position
 		{5, 20, -2, 0},
 	},
 
-	// bgmap mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
+	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
 	// make sure to use the proper corresponding sprite type throughout the spec (BgmapSprite or ObjectSprite)
 	__WORLD_BGMAP,
 
-	// pointer to affine/hbias manipulation function
+	// Pointer to affine/hbias manipulation function
 	NULL,
 
-	// display mode (__WORLD_ON, __WORLD_LON or __WORLD_RON)
+	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
 	__WORLD_ON,
 };
 

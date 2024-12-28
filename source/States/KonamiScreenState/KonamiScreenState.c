@@ -29,13 +29,14 @@ extern StageROMSpec KonamiScreenStageSpec;
 
 void KonamiScreenState::constructor()
 {
+	// Always explicitly call the base's constructor 
 	Base::constructor();
 
 	this->stageSpec = (StageSpec*)&KonamiScreenStageSpec;
 }
 
 void KonamiScreenState::destructor()
-{
+{	// Always explicitly call the base's destructor 
 	Base::destructor();
 }
 
