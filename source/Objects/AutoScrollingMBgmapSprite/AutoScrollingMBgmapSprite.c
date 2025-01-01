@@ -6,20 +6,22 @@
  */
 
 
-//=========================================================================================================
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————
 // INCLUDES
-//=========================================================================================================
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 #include <AutoScrollingMBgmapSprite.h>
 #include <VirtualList.h>
 #include <Telegram.h>
 
 
-//---------------------------------------------------------------------------------------------------------
-//												CLASS'S METHODS
-//---------------------------------------------------------------------------------------------------------
 
-void AutoScrollingMBgmapSprite::constructor(SpatialObject owner, const AutoScrollingMBgmapSpriteSpec* autoScrollingMBgmapSpriteSpec)
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+// CLASS'S METHODS
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+
+
+void AutoScrollingMBgmapSprite::constructor(GameObject owner, const AutoScrollingMBgmapSpriteSpec* autoScrollingMBgmapSpriteSpec)
 {
 	// Always explicitly call the base's constructor 
 	Base::constructor(owner, &autoScrollingMBgmapSpriteSpec->mBgmapSpriteSpec);
