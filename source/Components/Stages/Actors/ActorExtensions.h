@@ -7,8 +7,8 @@
  * that was distributed with this source code.
  */
 
-#ifndef ANIMATED_ACTOR_EXTENSIONS_H_
-#define ANIMATED_ACTOR_EXTENSIONS_H_
+#ifndef ACTOR_EXTENSIONS_H_
+#define ACTOR_EXTENSIONS_H_
 
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // INCLUDES
@@ -22,7 +22,7 @@
 
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-extension class Actor : Actor
+extension class Actor : Container
 {
 	void onIntroDefaultAnimationComplete(ListenerObject eventFirer);
 }
