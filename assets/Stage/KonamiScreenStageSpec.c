@@ -5,57 +5,50 @@
  * Virtual Boy port by Christian Radke <c.radke@posteo.de>
  */
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // INCLUDES
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 #include <Stage.h>
 #include <Fonts.h>
 #include <ObjectSpriteContainer.h>
 
-
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DECLARATIONS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
+extern ActorSpec LowPowerIndicatorBlackActorSpec;
+extern ActorSpec KonamiLogoActorSpec;
 
-extern EntitySpec LowPowerIndicatorBlackEntitySpec;
-extern EntitySpec KonamiLogoEntitySpec;
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+// ACTOR LISTS
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
-// ENTITY LISTS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
-
-PositionedEntityROMSpec KonamiScreenStageSpecEntities[] =
+PositionedActorROMSpec KonamiScreenStageSpecActors[] =
 {
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
-PositionedEntityROMSpec KonamiScreenStageSpecUiEntities[] =
+PositionedActorROMSpec KonamiScreenStageSpecUiActors[] =
 {
-	{&KonamiLogoEntitySpec,				{   0,    0,   0}, {0, 0, 0}, {1, 1, 1},  	0, NULL, NULL, NULL, false},
-	{&LowPowerIndicatorBlackEntitySpec, { 176, -100,  -1}, {0, 0, 0}, {1, 1, 1},	0, NULL, NULL, NULL, false},
+	{&KonamiLogoActorSpec,				{   0,    0,   0}, {0, 0, 0}, {1, 1, 1},  	0, NULL, NULL, NULL, false},
+	{&LowPowerIndicatorBlackActorSpec, { 176, -100,  -1}, {0, 0, 0}, {1, 1, 1},	0, NULL, NULL, NULL, false},
 
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // ASSETS LISTS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 FontROMSpec* const KonamiScreenStageSpecFonts[] =
 {
 	NULL
 };
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // STAGE DEFINITION
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 StageROMSpec KonamiScreenStageSpec =
 {
@@ -118,15 +111,15 @@ StageROMSpec KonamiScreenStageSpec =
 
 	// Streaming
 	{
-		// Padding to be added to camera's frustum when checking if a entity spec
-		// describes an entity that is within the camera's range
+		// Padding to be added to camera's frustum when checking if a actor spec
+		// describes an actor that is within the camera's range
 		40,
-		// Padding to be added to camera's frustum when checking if a entity is
+		// Padding to be added to camera's frustum when checking if a actor is
 		// out of the camera's range
 		16,
-		// Amount of entity descriptions to check for streaming in entities
+		// Amount of actor descriptions to check for streaming in actors
 		24,
-		// If true, entity instantiation is done over time
+		// If true, actor instantiation is done over time
 		false,
 	},
 
@@ -258,16 +251,16 @@ StageROMSpec KonamiScreenStageSpec =
 		(SoundSpec**)NULL,
 	},
 
-	// Entities
+	// Actors
 	{
 		// UI configuration
 		{
-			(PositionedEntity*)KonamiScreenStageSpecUiEntities,
+			(PositionedActor*)KonamiScreenStageSpecUiActors,
 			__TYPE(UIContainer),
 		},
 
-		// Stage's children entities
-		(PositionedEntity*)KonamiScreenStageSpecEntities,
+		// Stage's children actors
+		(PositionedActor*)KonamiScreenStageSpecActors,
 	},
 
 	// Post processing effects

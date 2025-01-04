@@ -5,36 +5,31 @@
  * Virtual Boy port by Christian Radke <c.radke@posteo.de>
  */
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // INCLUDES
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 #include <VisualNovelState.h>
 #include <Languages.h>
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DECLARATIONS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-extern EntitySpec Scene014EntitySpec;
-extern EntitySpec Scene015EntitySpec;
+extern ActorSpec Scene014ActorSpec;
+extern ActorSpec Scene015ActorSpec;
 
 extern SoundSpec MonsterSoundSoundSpec;
 
-
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DEFINITIONS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
-
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 // SUB CHAPTER 1
 
-PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter7Sub1Scene1Entities[] =
+PositionedActorROMSpec PlayNovelScenarioHarryAct1Chapter7Sub1Scene1Actors[] =
 {
-	{&Scene014EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene014ActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
@@ -43,7 +38,7 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter7Sub1Scene1 = {
 	kFadeTypeNormal,
 	kSoundPlaybackNormal,
 	NULL,
-	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter7Sub1Scene1Entities,
+	(PositionedActor*)PlayNovelScenarioHarryAct1Chapter7Sub1Scene1Actors,
 	NULL,
 	{
 		{
@@ -61,9 +56,9 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter7Sub1Scene1 = {
 	NULL,
 };
 
-PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter7Sub1Scene2Entities[] =
+PositionedActorROMSpec PlayNovelScenarioHarryAct1Chapter7Sub1Scene2Actors[] =
 {
-	{&Scene015EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene015ActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
@@ -72,7 +67,7 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter7Sub1Scene2 = {
 	kFadeTypeNormal,
 	kSoundPlaybackNormal,
 	NULL,
-	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter7Sub1Scene2Entities,
+	(PositionedActor*)PlayNovelScenarioHarryAct1Chapter7Sub1Scene2Actors,
 	NULL,
 	{
 		{
@@ -85,7 +80,7 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter7Sub1Scene2 = {
 	NULL,
 };
 
-PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter7Sub1Scene3Entities[] =
+PositionedActorROMSpec PlayNovelScenarioHarryAct1Chapter7Sub1Scene3Actors[] =
 {
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
@@ -95,7 +90,7 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter7Sub1Scene3 = {
 	kFadeTypeNormal,
 	kSoundPlaybackNormal,
 	&MonsterSoundSoundSpec,
-	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter7Sub1Scene3Entities,
+	(PositionedActor*)PlayNovelScenarioHarryAct1Chapter7Sub1Scene3Actors,
 	NULL,
 	{
 		{

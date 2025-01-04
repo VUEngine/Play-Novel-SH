@@ -5,75 +5,68 @@
  * Virtual Boy port by Christian Radke <c.radke@posteo.de>
  */
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // INCLUDES
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 #include <Stage.h>
 #include <Fonts.h>
 #include <ObjectSpriteContainer.h>
 
-
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DECLARATIONS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
+extern ActorSpec LowPowerIndicatorActorSpec;
+extern ActorSpec TradingCardsBackgroundActorSpec;
+extern ActorSpec TradingCardsBackgroundNumbersActorSpec;
+extern ActorSpec TradingCardSmallActorSpec;
+extern ActorSpec TradingCardLargeActorSpec;
+extern ActorSpec TradingCardsCursorActorSpec;
 
-extern EntitySpec LowPowerIndicatorEntitySpec;
-extern EntitySpec TradingCardsBackgroundEntitySpec;
-extern EntitySpec TradingCardsBackgroundNumbersEntitySpec;
-extern EntitySpec TradingCardSmallEntitySpec;
-extern EntitySpec TradingCardLargeEntitySpec;
-extern EntitySpec TradingCardsCursorEntitySpec;
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+// ACTOR LISTS
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
-// ENTITY LISTS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
-
-PositionedEntityROMSpec TradingCardsScreenStageSpecEntities[] =
+PositionedActorROMSpec TradingCardsScreenStageSpecActors[] =
 {
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
-PositionedEntityROMSpec TradingCardsScreenStageSpecUiEntities[] =
+PositionedActorROMSpec TradingCardsScreenStageSpecUiActors[] =
 {
-	{&TradingCardsBackgroundEntitySpec,				{  0,   0, 0},  {0, 0, 0}, {1, 1, 1},   	0, "BG", NULL, NULL, false},
-	{&TradingCardsBackgroundNumbersEntitySpec,		{  0,  24, -1}, {0, 0, 0}, {1, 1, 1},   	0, "NUM", NULL, NULL, false},
+	{&TradingCardsBackgroundActorSpec,				{  0,   0, 0},  {0, 0, 0}, {1, 1, 1},   	0, "BG", NULL, NULL, false},
+	{&TradingCardsBackgroundNumbersActorSpec,		{  0,  24, -1}, {0, 0, 0}, {1, 1, 1},   	0, "NUM", NULL, NULL, false},
 
-	{&TradingCardsCursorEntitySpec,					{-64,  88, -4}, {0, 0, 0}, {1, 1, 1},   	0, "CURSOR", NULL, NULL, false},
+	{&TradingCardsCursorActorSpec,					{-64,  88, -4}, {0, 0, 0}, {1, 1, 1},   	0, "CURSOR", NULL, NULL, false},
 	
-	{&TradingCardSmallEntitySpec,					{-72, -40, -1}, {0, 0, 0}, {1, 1, 1},   	0, "0", NULL, NULL, false},
-	{&TradingCardSmallEntitySpec,					{-24, -40, -1}, {0, 0, 0}, {1, 1, 1},   	0, "1", NULL, NULL, false},
-	{&TradingCardSmallEntitySpec,					{ 24, -40, -1}, {0, 0, 0}, {1, 1, 1},   	0, "2", NULL, NULL, false},
-	{&TradingCardSmallEntitySpec,					{ 72, -40, -1}, {0, 0, 0}, {1, 1, 1},   	0, "3", NULL, NULL, false},
-	{&TradingCardSmallEntitySpec,					{-72,  24, -1}, {0, 0, 0}, {1, 1, 1},   	0, "4", NULL, NULL, false},
-	{&TradingCardSmallEntitySpec,					{-24,  24, -1}, {0, 0, 0}, {1, 1, 1},   	0, "5", NULL, NULL, false},
-	{&TradingCardSmallEntitySpec,					{ 24,  24, -1}, {0, 0, 0}, {1, 1, 1},   	0, "6", NULL, NULL, false},
-	{&TradingCardSmallEntitySpec,					{ 72,  24, -1}, {0, 0, 0}, {1, 1, 1},   	0, "7", NULL, NULL, false},
-	{&TradingCardLargeEntitySpec,					{  0,   0, -4}, {0, 0, 0}, {1, 1, 1},   	0, "CARD", NULL, NULL, false},
+	{&TradingCardSmallActorSpec,					{-72, -40, -1}, {0, 0, 0}, {1, 1, 1},   	0, "0", NULL, NULL, false},
+	{&TradingCardSmallActorSpec,					{-24, -40, -1}, {0, 0, 0}, {1, 1, 1},   	0, "1", NULL, NULL, false},
+	{&TradingCardSmallActorSpec,					{ 24, -40, -1}, {0, 0, 0}, {1, 1, 1},   	0, "2", NULL, NULL, false},
+	{&TradingCardSmallActorSpec,					{ 72, -40, -1}, {0, 0, 0}, {1, 1, 1},   	0, "3", NULL, NULL, false},
+	{&TradingCardSmallActorSpec,					{-72,  24, -1}, {0, 0, 0}, {1, 1, 1},   	0, "4", NULL, NULL, false},
+	{&TradingCardSmallActorSpec,					{-24,  24, -1}, {0, 0, 0}, {1, 1, 1},   	0, "5", NULL, NULL, false},
+	{&TradingCardSmallActorSpec,					{ 24,  24, -1}, {0, 0, 0}, {1, 1, 1},   	0, "6", NULL, NULL, false},
+	{&TradingCardSmallActorSpec,					{ 72,  24, -1}, {0, 0, 0}, {1, 1, 1},   	0, "7", NULL, NULL, false},
+	{&TradingCardLargeActorSpec,					{  0,   0, -4}, {0, 0, 0}, {1, 1, 1},   	0, "CARD", NULL, NULL, false},
 
-	{&LowPowerIndicatorEntitySpec, 					{ 368,  12,  -1}, {0, 0, 0}, {1, 1, 1},	0, NULL, NULL, NULL, false},
+	{&LowPowerIndicatorActorSpec, 					{ 368,  12,  -1}, {0, 0, 0}, {1, 1, 1},	0, NULL, NULL, NULL, false},
 
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // ASSETS LISTS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 FontROMSpec* const TradingCardsScreenStageSpecFonts[] =
 {
 	NULL
 };
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // STAGE DEFINITION
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 StageROMSpec TradingCardsScreenStageSpec =
 {
@@ -136,15 +129,15 @@ StageROMSpec TradingCardsScreenStageSpec =
 
 	// Streaming
 	{
-		// Padding to be added to camera's frustum when checking if a entity spec
-		// describes an entity that is within the camera's range
+		// Padding to be added to camera's frustum when checking if a actor spec
+		// describes an actor that is within the camera's range
 		40,
-		// Padding to be added to camera's frustum when checking if a entity is
+		// Padding to be added to camera's frustum when checking if a actor is
 		// out of the camera's range
 		16,
-		// Amount of entity descriptions to check for streaming in entities
+		// Amount of actor descriptions to check for streaming in actors
 		24,
-		// If true, entity instantiation is done over time
+		// If true, actor instantiation is done over time
 		false,
 	},
 
@@ -276,16 +269,16 @@ StageROMSpec TradingCardsScreenStageSpec =
 		(SoundSpec**)NULL,
 	},
 
-	// Entities
+	// Actors
 	{
 		// UI configuration
 		{
-			(PositionedEntity*)TradingCardsScreenStageSpecUiEntities,
+			(PositionedActor*)TradingCardsScreenStageSpecUiActors,
 			__TYPE(UIContainer),
 		},
 
-		// Stage's children entities
-		(PositionedEntity*)TradingCardsScreenStageSpecEntities,
+		// Stage's children actors
+		(PositionedActor*)TradingCardsScreenStageSpecActors,
 	},
 
 	// Post processing effects

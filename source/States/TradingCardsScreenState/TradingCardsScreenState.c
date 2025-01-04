@@ -5,14 +5,13 @@
  * Virtual Boy port by Christian Radke <c.radke@posteo.de>
  */
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // INCLUDES
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 #include <VUEngine.h>
 #include <Utilities.h>
-#include <AnimatedEntity.h>
+#include <Actor.h>
 #include <Camera.h>
 #include <CameraEffectManager.h>
 #include <MessageDispatcher.h>
@@ -27,19 +26,15 @@
 #include <TradingCardsManager.h>
 #include <TitleScreenState.h>
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DECLARATIONS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 extern StageROMSpec TradingCardsScreenStageSpec;
 
-
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // CLASS'S METHODS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
-
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 void TradingCardsScreenState::constructor()
 {
@@ -54,7 +49,6 @@ void TradingCardsScreenState::destructor()
 
 void TradingCardsScreenState::enter(void* owner)
 {
-	// call base
 	Base::enter(this, owner);
 
 	// load stage
@@ -66,20 +60,20 @@ void TradingCardsScreenState::enter(void* owner)
 	// start clocks to start animations
 	GameState::startClocks(GameState::safeCast(this));
 
-	// get entity references
+	// get actor references
 	UIContainer uiContainer = VUEngine::getUIContainer(VUEngine::getInstance());
-	this->entityBackground = Entity::safeCast(UIContainer::getChildByName(uiContainer, "BG", true));
-	this->entityCursor = Entity::safeCast(UIContainer::getChildByName(uiContainer, "CURSOR", true));
-	this->entityNumbers = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "NUM", true));
-	this->entityCard1 = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "0", true));
-	this->entityCard2 = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "1", true));
-	this->entityCard3 = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "2", true));
-	this->entityCard4 = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "3", true));
-	this->entityCard5 = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "4", true));
-	this->entityCard6 = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "5", true));
-	this->entityCard7 = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "6", true));
-	this->entityCard8 = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "7", true));
-	this->entityLargeCard = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "CARD", true));
+	this->actorBackground = Actor::safeCast(UIContainer::getChildByName(uiContainer, "BG", true));
+	this->actorCursor = Actor::safeCast(UIContainer::getChildByName(uiContainer, "CURSOR", true));
+	this->actorNumbers = Actor::safeCast(UIContainer::getChildByName(uiContainer, "NUM", true));
+	this->actorCard1 = Actor::safeCast(UIContainer::getChildByName(uiContainer, "0", true));
+	this->actorCard2 = Actor::safeCast(UIContainer::getChildByName(uiContainer, "1", true));
+	this->actorCard3 = Actor::safeCast(UIContainer::getChildByName(uiContainer, "2", true));
+	this->actorCard4 = Actor::safeCast(UIContainer::getChildByName(uiContainer, "3", true));
+	this->actorCard5 = Actor::safeCast(UIContainer::getChildByName(uiContainer, "4", true));
+	this->actorCard6 = Actor::safeCast(UIContainer::getChildByName(uiContainer, "5", true));
+	this->actorCard7 = Actor::safeCast(UIContainer::getChildByName(uiContainer, "6", true));
+	this->actorCard8 = Actor::safeCast(UIContainer::getChildByName(uiContainer, "7", true));
+	this->actorLargeCard = Actor::safeCast(UIContainer::getChildByName(uiContainer, "CARD", true));
 
 	// initial selection
 	this->page = 0;
@@ -208,7 +202,7 @@ void TradingCardsScreenState::positionCursor()
 		__PIXELS_TO_METERS(this->card < 4 ? -24 : 40),
 		__PIXELS_TO_METERS(-4),
 	};
-	Entity::setLocalPosition(Entity::safeCast(this->entityCursor), &position);
+	Actor::setLocalPosition(Actor::safeCast(this->actorCursor), &position);
 }
 
 void TradingCardsScreenState::applyMode()
@@ -217,18 +211,18 @@ void TradingCardsScreenState::applyMode()
 	{
 		case kTradingCardsScreenModeShowCards:
 		{
-			Entity::hide(Entity::safeCast(this->entityLargeCard));
-			Entity::show(Entity::safeCast(this->entityBackground));
-			Entity::show(Entity::safeCast(this->entityNumbers));
-			Entity::show(Entity::safeCast(this->entityCard1));
-			Entity::show(Entity::safeCast(this->entityCard2));
-			Entity::show(Entity::safeCast(this->entityCard3));
-			Entity::show(Entity::safeCast(this->entityCard4));
-			Entity::show(Entity::safeCast(this->entityCard5));
-			Entity::show(Entity::safeCast(this->entityCard6));
-			Entity::show(Entity::safeCast(this->entityCard7));
-			Entity::show(Entity::safeCast(this->entityCard8));
-			Entity::show(this->entityCursor);
+			Actor::hide(Actor::safeCast(this->actorLargeCard));
+			Actor::show(Actor::safeCast(this->actorBackground));
+			Actor::show(Actor::safeCast(this->actorNumbers));
+			Actor::show(Actor::safeCast(this->actorCard1));
+			Actor::show(Actor::safeCast(this->actorCard2));
+			Actor::show(Actor::safeCast(this->actorCard3));
+			Actor::show(Actor::safeCast(this->actorCard4));
+			Actor::show(Actor::safeCast(this->actorCard5));
+			Actor::show(Actor::safeCast(this->actorCard6));
+			Actor::show(Actor::safeCast(this->actorCard7));
+			Actor::show(Actor::safeCast(this->actorCard8));
+			Actor::show(this->actorCursor);
 			TradingCardsScreenState::applyPage(this);
 			Printing::clear(Printing::getInstance());
 			break;
@@ -236,24 +230,24 @@ void TradingCardsScreenState::applyMode()
 		case kTradingCardsScreenModeHighlightCard:
 		{
 			uint8 cardNumber = (this->page << 3) + this->card;
-			Entity::hide(Entity::safeCast(this->entityBackground));
-			Entity::hide(this->entityCursor);
-			Entity::hide(Entity::safeCast(this->entityNumbers));
-			Entity::hide(Entity::safeCast(this->entityCard1));
-			Entity::hide(Entity::safeCast(this->entityCard2));
-			Entity::hide(Entity::safeCast(this->entityCard3));
-			Entity::hide(Entity::safeCast(this->entityCard4));
-			Entity::hide(Entity::safeCast(this->entityCard5));
-			Entity::hide(Entity::safeCast(this->entityCard6));
-			Entity::hide(Entity::safeCast(this->entityCard7));
-			Entity::hide(Entity::safeCast(this->entityCard8));
-			AnimatedEntity::playAnimation(this->entityLargeCard, Utilities::itoa(cardNumber, 10, 1));
+			Actor::hide(Actor::safeCast(this->actorBackground));
+			Actor::hide(this->actorCursor);
+			Actor::hide(Actor::safeCast(this->actorNumbers));
+			Actor::hide(Actor::safeCast(this->actorCard1));
+			Actor::hide(Actor::safeCast(this->actorCard2));
+			Actor::hide(Actor::safeCast(this->actorCard3));
+			Actor::hide(Actor::safeCast(this->actorCard4));
+			Actor::hide(Actor::safeCast(this->actorCard5));
+			Actor::hide(Actor::safeCast(this->actorCard6));
+			Actor::hide(Actor::safeCast(this->actorCard7));
+			Actor::hide(Actor::safeCast(this->actorCard8));
+			Actor::playAnimation(this->actorLargeCard, Utilities::itoa(cardNumber, 10, 1));
 
 			const char* translation = I18n::getText(I18n::getInstance(), kStringTradingCard01Title + cardNumber);
 			FontSize translationTextSize = Printing::getTextSize(Printing::getInstance(), translation, "Silent");
 			Printing::text(Printing::getInstance(), translation, ((__HALF_SCREEN_WIDTH_IN_CHARS) - (translationTextSize.x >> 1)), 23, "Silent");
 			Printing::int32(Printing::getInstance(), cardNumber + 1, cardNumber < 9 ? 24 : 23, 25, "Silent");
-			Entity::show(Entity::safeCast(this->entityLargeCard));
+			Actor::show(Actor::safeCast(this->actorLargeCard));
 			break;
 		}
 	}
@@ -261,90 +255,90 @@ void TradingCardsScreenState::applyMode()
 
 void TradingCardsScreenState::applyPage()
 {
-	AnimatedEntity::playAnimation(this->entityNumbers, Utilities::itoa(this->page, 10, 1));
+	Actor::playAnimation(this->actorNumbers, Utilities::itoa(this->page, 10, 1));
 
 	uint8 pageBase = this->page << 3;
-	AnimatedEntity::playAnimation(this->entityCard1, Utilities::itoa(pageBase + 0, 10, 1));
-	AnimatedEntity::playAnimation(this->entityCard2, Utilities::itoa(pageBase + 1, 10, 1));
-	AnimatedEntity::playAnimation(this->entityCard3, Utilities::itoa(pageBase + 2, 10, 1));
-	AnimatedEntity::playAnimation(this->entityCard4, Utilities::itoa(pageBase + 3, 10, 1));
-	AnimatedEntity::playAnimation(this->entityCard5, Utilities::itoa(pageBase + 4, 10, 1));
-	AnimatedEntity::playAnimation(this->entityCard6, Utilities::itoa(pageBase + 5, 10, 1));
-	AnimatedEntity::playAnimation(this->entityCard7, Utilities::itoa(pageBase + 6, 10, 1));
-	AnimatedEntity::playAnimation(this->entityCard8, Utilities::itoa(pageBase + 7, 10, 1));
+	Actor::playAnimation(this->actorCard1, Utilities::itoa(pageBase + 0, 10, 1));
+	Actor::playAnimation(this->actorCard2, Utilities::itoa(pageBase + 1, 10, 1));
+	Actor::playAnimation(this->actorCard3, Utilities::itoa(pageBase + 2, 10, 1));
+	Actor::playAnimation(this->actorCard4, Utilities::itoa(pageBase + 3, 10, 1));
+	Actor::playAnimation(this->actorCard5, Utilities::itoa(pageBase + 4, 10, 1));
+	Actor::playAnimation(this->actorCard6, Utilities::itoa(pageBase + 5, 10, 1));
+	Actor::playAnimation(this->actorCard7, Utilities::itoa(pageBase + 6, 10, 1));
+	Actor::playAnimation(this->actorCard8, Utilities::itoa(pageBase + 7, 10, 1));
 
 	TradingCardsManager tradingCardsManager = TradingCardsManager::getInstance();
 	
 	if(TradingCardsManager::getCardUnlocked(tradingCardsManager, pageBase + 0))
 	{
-		Entity::show(Entity::safeCast(this->entityCard1));
+		Actor::show(Actor::safeCast(this->actorCard1));
 	}
 	else
 	{
-		Entity::hide(Entity::safeCast(this->entityCard1));
+		Actor::hide(Actor::safeCast(this->actorCard1));
 	}
 	
 	if(TradingCardsManager::getCardUnlocked(tradingCardsManager, pageBase + 1))
 	{
-		Entity::show(Entity::safeCast(this->entityCard2));
+		Actor::show(Actor::safeCast(this->actorCard2));
 	}
 	else
 	{
-		Entity::hide(Entity::safeCast(this->entityCard2));
+		Actor::hide(Actor::safeCast(this->actorCard2));
 	}
 	
 	if(TradingCardsManager::getCardUnlocked(tradingCardsManager, pageBase + 2))
 	{
-		Entity::show(Entity::safeCast(this->entityCard3));
+		Actor::show(Actor::safeCast(this->actorCard3));
 	}
 	else
 	{
-		Entity::hide(Entity::safeCast(this->entityCard3));
+		Actor::hide(Actor::safeCast(this->actorCard3));
 	}
 	
 	if(TradingCardsManager::getCardUnlocked(tradingCardsManager, pageBase + 3))
 	{
-		Entity::show(Entity::safeCast(this->entityCard4));
+		Actor::show(Actor::safeCast(this->actorCard4));
 	}
 	else
 	{
-		Entity::hide(Entity::safeCast(this->entityCard4));
+		Actor::hide(Actor::safeCast(this->actorCard4));
 	}
 	
 	if(TradingCardsManager::getCardUnlocked(tradingCardsManager, pageBase + 4))
 	{
-		Entity::show(Entity::safeCast(this->entityCard5));
+		Actor::show(Actor::safeCast(this->actorCard5));
 	}
 	else
 	{
-		Entity::hide(Entity::safeCast(this->entityCard5));
+		Actor::hide(Actor::safeCast(this->actorCard5));
 	}
 	
 	if(TradingCardsManager::getCardUnlocked(tradingCardsManager, pageBase + 5))
 	{
-		Entity::show(Entity::safeCast(this->entityCard6));
+		Actor::show(Actor::safeCast(this->actorCard6));
 	}
 	else
 	{
-		Entity::hide(Entity::safeCast(this->entityCard6));
+		Actor::hide(Actor::safeCast(this->actorCard6));
 	}
 	
 	if(TradingCardsManager::getCardUnlocked(tradingCardsManager, pageBase + 6))
 	{
-		Entity::show(Entity::safeCast(this->entityCard7));
+		Actor::show(Actor::safeCast(this->actorCard7));
 	}
 	else
 	{
-		Entity::hide(Entity::safeCast(this->entityCard7));
+		Actor::hide(Actor::safeCast(this->actorCard7));
 	}
 	
 	if(TradingCardsManager::getCardUnlocked(tradingCardsManager, pageBase + 7))
 	{
-		Entity::show(Entity::safeCast(this->entityCard8));
+		Actor::show(Actor::safeCast(this->actorCard8));
 	}
 	else
 	{
-		Entity::hide(Entity::safeCast(this->entityCard8));
+		Actor::hide(Actor::safeCast(this->actorCard8));
 	}
 
 }

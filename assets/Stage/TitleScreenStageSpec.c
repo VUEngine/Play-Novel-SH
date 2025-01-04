@@ -5,65 +5,58 @@
  * Virtual Boy port by Christian Radke <c.radke@posteo.de>
  */
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // INCLUDES
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 #include <Stage.h>
 #include <Fonts.h>
 #include <ObjectSpriteContainer.h>
 
-
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DECLARATIONS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
+extern ActorSpec LogoActorSpec;
+extern ActorSpec CopyrightActorSpec;
+extern ActorSpec OptionsMainMenuStartActorSpec;
+extern ActorSpec OptionsMainMenuTradingCardsActorSpec;
+extern ActorSpec OptionsMainMenuMobileActorSpec;
+extern ActorSpec LowPowerIndicatorActorSpec;
 
-extern EntitySpec LogoEntitySpec;
-extern EntitySpec CopyrightEntitySpec;
-extern EntitySpec OptionsMainMenuStartEntitySpec;
-extern EntitySpec OptionsMainMenuTradingCardsEntitySpec;
-extern EntitySpec OptionsMainMenuMobileEntitySpec;
-extern EntitySpec LowPowerIndicatorEntitySpec;
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+// ACTOR LISTS
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
-// ENTITY LISTS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
-
-PositionedEntityROMSpec TitleScreenStageSpecEntities[] =
+PositionedActorROMSpec TitleScreenStageSpecActors[] =
 {
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
-PositionedEntityROMSpec TitleScreenStageSpecUiEntities[] =
+PositionedActorROMSpec TitleScreenStageSpecUiActors[] =
 {
-	{&LogoEntitySpec,							{  0,  -48,   0}, {0, 0, 0}, {1, 1, 1},   	0, NULL, NULL, NULL, false},
-	{&OptionsMainMenuStartEntitySpec,			{  0,   16,   0}, {0, 0, 0}, {1, 1, 1},   	0, "Start", NULL, NULL, false},
-	{&OptionsMainMenuTradingCardsEntitySpec,	{  0,   32,   0}, {0, 0, 0}, {1, 1, 1},   	0, "Cards", NULL, NULL, false},
-	{&OptionsMainMenuMobileEntitySpec,			{  0,   48,   0}, {0, 0, 0}, {1, 1, 1},   	0, "Mobile", NULL, NULL, false},
-	{&CopyrightEntitySpec,						{  0,   88,   0}, {0, 0, 0}, {1, 1, 1},   	0, NULL, NULL, NULL, false},
-	{&LowPowerIndicatorEntitySpec, 				{176, -100,  -1}, {0, 0, 0}, {1, 1, 1},		0, NULL, NULL, NULL, false},
+	{&LogoActorSpec,							{  0,  -48,   0}, {0, 0, 0}, {1, 1, 1},   	0, NULL, NULL, NULL, false},
+	{&OptionsMainMenuStartActorSpec,			{  0,   16,   0}, {0, 0, 0}, {1, 1, 1},   	0, "Start", NULL, NULL, false},
+	{&OptionsMainMenuTradingCardsActorSpec,	{  0,   32,   0}, {0, 0, 0}, {1, 1, 1},   	0, "Cards", NULL, NULL, false},
+	{&OptionsMainMenuMobileActorSpec,			{  0,   48,   0}, {0, 0, 0}, {1, 1, 1},   	0, "Mobile", NULL, NULL, false},
+	{&CopyrightActorSpec,						{  0,   88,   0}, {0, 0, 0}, {1, 1, 1},   	0, NULL, NULL, NULL, false},
+	{&LowPowerIndicatorActorSpec, 				{176, -100,  -1}, {0, 0, 0}, {1, 1, 1},		0, NULL, NULL, NULL, false},
 
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // ASSETS LISTS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 FontROMSpec* const TitleScreenStageSpecFonts[] =
 {
 	NULL
 };
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // STAGE DEFINITION
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 StageROMSpec TitleScreenStageSpec =
 {
@@ -126,15 +119,15 @@ StageROMSpec TitleScreenStageSpec =
 
 	// Streaming
 	{
-		// Padding to be added to camera's frustum when checking if a entity spec
-		// describes an entity that is within the camera's range
+		// Padding to be added to camera's frustum when checking if a actor spec
+		// describes an actor that is within the camera's range
 		40,
-		// Padding to be added to camera's frustum when checking if a entity is
+		// Padding to be added to camera's frustum when checking if a actor is
 		// out of the camera's range
 		16,
-		// Amount of entity descriptions to check for streaming in entities
+		// Amount of actor descriptions to check for streaming in actors
 		24,
-		// If true, entity instantiation is done over time
+		// If true, actor instantiation is done over time
 		false,
 	},
 
@@ -266,16 +259,16 @@ StageROMSpec TitleScreenStageSpec =
 		(SoundSpec**)NULL,
 	},
 
-	// Entities
+	// Actors
 	{
 		// UI configuration
 		{
-			(PositionedEntity*)TitleScreenStageSpecUiEntities,
+			(PositionedActor*)TitleScreenStageSpecUiActors,
 			__TYPE(UIContainer),
 		},
 
-		// Stage's children entities
-		(PositionedEntity*)TitleScreenStageSpecEntities,
+		// Stage's children actors
+		(PositionedActor*)TitleScreenStageSpecActors,
 	},
 
 	// Post processing effects

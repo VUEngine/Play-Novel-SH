@@ -5,14 +5,13 @@
  * Virtual Boy port by Christian Radke <c.radke@posteo.de>
  */
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // INCLUDES
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 #include <VUEngine.h>
 #include <Utilities.h>
-#include <AnimatedEntity.h>
+#include <Actor.h>
 #include <Camera.h>
 #include <CameraEffectManager.h>
 #include <MessageDispatcher.h>
@@ -27,19 +26,15 @@
 #include <TradingCardsScreenState.h>
 #include <MobileScreenState.h>
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DECLARATIONS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 extern StageROMSpec TitleScreenStageSpec;
 
-
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // CLASS'S METHODS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
-
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 void TitleScreenState::constructor()
 {
@@ -54,7 +49,6 @@ void TitleScreenState::destructor()
 
 void TitleScreenState::enter(void* owner)
 {
-	// call base
 	Base::enter(this, owner);
 
 	// load stage
@@ -67,9 +61,9 @@ void TitleScreenState::enter(void* owner)
 	VUEngine::enableKeypad(VUEngine::getInstance());
 
 	UIContainer uiContainer = VUEngine::getUIContainer(VUEngine::getInstance());
-	this->entityStart = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "Start", true));
-	this->entityCards = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "Cards", true));
-	this->entityMobile = AnimatedEntity::safeCast(UIContainer::getChildByName(uiContainer, "Mobile", true));
+	this->actorStart = Actor::safeCast(UIContainer::getChildByName(uiContainer, "Start", true));
+	this->actorCards = Actor::safeCast(UIContainer::getChildByName(uiContainer, "Cards", true));
+	this->actorMobile = Actor::safeCast(UIContainer::getChildByName(uiContainer, "Mobile", true));
 	this->option = 0;
 	TitleScreenState::updateOptionAnimations(this);
 
@@ -108,19 +102,19 @@ void TitleScreenState::updateOptionAnimations()
 	switch(this->option)
 	{
 		case 0:
-			AnimatedEntity::playAnimation(this->entityStart, "10");
-			AnimatedEntity::playAnimation(this->entityCards, "0");
-			AnimatedEntity::playAnimation(this->entityMobile, "0");
+			Actor::playAnimation(this->actorStart, "10");
+			Actor::playAnimation(this->actorCards, "0");
+			Actor::playAnimation(this->actorMobile, "0");
 			break;
 		case 1:
-			AnimatedEntity::playAnimation(this->entityStart, "0");
-			AnimatedEntity::playAnimation(this->entityCards, "10");
-			AnimatedEntity::playAnimation(this->entityMobile, "0");
+			Actor::playAnimation(this->actorStart, "0");
+			Actor::playAnimation(this->actorCards, "10");
+			Actor::playAnimation(this->actorMobile, "0");
 			break;
 		case 2:
-			AnimatedEntity::playAnimation(this->entityStart, "0");
-			AnimatedEntity::playAnimation(this->entityCards, "0");
-			AnimatedEntity::playAnimation(this->entityMobile, "10");
+			Actor::playAnimation(this->actorStart, "0");
+			Actor::playAnimation(this->actorCards, "0");
+			Actor::playAnimation(this->actorMobile, "10");
 			break;
 	}
 }

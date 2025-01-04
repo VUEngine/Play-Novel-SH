@@ -5,57 +5,50 @@
  * Virtual Boy port by Christian Radke <c.radke@posteo.de>
  */
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // INCLUDES
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 #include <Stage.h>
 #include <Fonts.h>
 #include <ObjectSpriteContainer.h>
 
-
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DECLARATIONS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
+extern ActorSpec FlaurosActorSpec;
+extern ActorSpec LowPowerIndicatorActorSpec;
 
-extern EntitySpec FlaurosEntitySpec;
-extern EntitySpec LowPowerIndicatorEntitySpec;
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+// ACTOR LISTS
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
-// ENTITY LISTS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
-
-PositionedEntityROMSpec VisualNovelStageSpecEntities[] =
+PositionedActorROMSpec VisualNovelStageSpecActors[] =
 {
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
-PositionedEntityROMSpec VisualNovelStageSpecUiEntities[] =
+PositionedActorROMSpec VisualNovelStageSpecUiActors[] =
 {
-	{&FlaurosEntitySpec,					{144,  96,   0}, {0, 0, 0}, {1, 1, 1}, 0, "FLAUROS", NULL, NULL, true},
-	{&LowPowerIndicatorEntitySpec, 			{368,  12,  -6}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&FlaurosActorSpec,					{144,  96,   0}, {0, 0, 0}, {1, 1, 1}, 0, "FLAUROS", NULL, NULL, true},
+	{&LowPowerIndicatorActorSpec, 			{368,  12,  -6}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // ASSETS LISTS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 FontROMSpec* const VisualNovelStageSpecFonts[] =
 {
 	NULL
 };
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // STAGE DEFINITION
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 StageROMSpec VisualNovelStageSpec =
 {
@@ -118,15 +111,15 @@ StageROMSpec VisualNovelStageSpec =
 
 	// Streaming
 	{
-		// Padding to be added to camera's frustum when checking if a entity spec
-		// describes an entity that is within the camera's range
+		// Padding to be added to camera's frustum when checking if a actor spec
+		// describes an actor that is within the camera's range
 		40,
-		// Padding to be added to camera's frustum when checking if a entity is
+		// Padding to be added to camera's frustum when checking if a actor is
 		// out of the camera's range
 		16,
-		// Amount of entity descriptions to check for streaming in entities
+		// Amount of actor descriptions to check for streaming in actors
 		24,
-		// If true, entity instantiation is done over time
+		// If true, actor instantiation is done over time
 		false,
 	},
 
@@ -258,16 +251,16 @@ StageROMSpec VisualNovelStageSpec =
 		(SoundSpec**)NULL,
 	},
 
-	// Entities
+	// Actors
 	{
 		// UI configuration
 		{
-			(PositionedEntity*)VisualNovelStageSpecUiEntities,
+			(PositionedActor*)VisualNovelStageSpecUiActors,
 			__TYPE(UIContainer),
 		},
 
-		// Stage's children entities
-		(PositionedEntity*)VisualNovelStageSpecEntities,
+		// Stage's children actors
+		(PositionedActor*)VisualNovelStageSpecActors,
 	},
 
 	// Post processing effects

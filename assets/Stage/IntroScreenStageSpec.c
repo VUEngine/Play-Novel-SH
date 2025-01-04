@@ -5,40 +5,35 @@
  * Virtual Boy port by Christian Radke <c.radke@posteo.de>
  */
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // INCLUDES
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 #include <Stage.h>
 #include <Fonts.h>
 #include <ObjectSpriteContainer.h>
 
-
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DECLARATIONS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-
-extern EntitySpec LowPowerIndicatorEntitySpec;
-extern EntitySpec IntroEntitySpec;
+extern ActorSpec LowPowerIndicatorActorSpec;
+extern ActorSpec IntroActorSpec;
 extern SoundSpec IntroSoundSpec;
 
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+// ACTOR LISTS
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
-// ENTITY LISTS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
-
-PositionedEntityROMSpec IntroScreenStageSpecEntities[] =
+PositionedActorROMSpec IntroScreenStageSpecActors[] =
 {
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
-PositionedEntityROMSpec IntroScreenStageSpecUiEntities[] =
+PositionedActorROMSpec IntroScreenStageSpecUiActors[] =
 {
-	{&IntroEntitySpec,					{	0, 	  0,   0}, {0, 0, 0}, {1, 1, 1},  	0, "VIDEO", NULL, NULL, false},
-	{&LowPowerIndicatorEntitySpec, 		{ 176, -100,  -1}, {0, 0, 0}, {1, 1, 1},	0, NULL, NULL, NULL, false},
+	{&IntroActorSpec,					{	0, 	  0,   0}, {0, 0, 0}, {1, 1, 1},  	0, "VIDEO", NULL, NULL, false},
+	{&LowPowerIndicatorActorSpec, 		{ 176, -100,  -1}, {0, 0, 0}, {1, 1, 1},	0, NULL, NULL, NULL, false},
 
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
@@ -49,20 +44,18 @@ SoundROMSpec* const IntroScreenStageSoundSpecs[] =
 	NULL
 };
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // ASSETS LISTS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 FontROMSpec* const IntroScreenStageSpecFonts[] =
 {
 	NULL
 };
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // STAGE DEFINITION
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 StageROMSpec IntroScreenStageSpec =
 {
@@ -125,15 +118,15 @@ StageROMSpec IntroScreenStageSpec =
 
 	// Streaming
 	{
-		// Padding to be added to camera's frustum when checking if a entity spec
-		// describes an entity that is within the camera's range
+		// Padding to be added to camera's frustum when checking if a actor spec
+		// describes an actor that is within the camera's range
 		40,
-		// Padding to be added to camera's frustum when checking if a entity is
+		// Padding to be added to camera's frustum when checking if a actor is
 		// out of the camera's range
 		16,
-		// Amount of entity descriptions to check for streaming in entities
+		// Amount of actor descriptions to check for streaming in actors
 		24,
-		// If true, entity instantiation is done over time
+		// If true, actor instantiation is done over time
 		false,
 	},
 
@@ -265,16 +258,16 @@ StageROMSpec IntroScreenStageSpec =
 		(SoundSpec**)&IntroScreenStageSoundSpecs,
 	},
 
-	// Entities
+	// Actors
 	{
 		// UI configuration
 		{
-			(PositionedEntity*)IntroScreenStageSpecUiEntities,
+			(PositionedActor*)IntroScreenStageSpecUiActors,
 			__TYPE(UIContainer),
 		},
 
-		// Stage's children entities
-		(PositionedEntity*)IntroScreenStageSpecEntities,
+		// Stage's children actors
+		(PositionedActor*)IntroScreenStageSpecActors,
 	},
 
 	// Post processing effects

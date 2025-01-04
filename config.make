@@ -3,8 +3,8 @@
 ###########################################################################################################
 
 # VUEngine plugins which the project uses
-PLUGINS							= vuengine//entities/LocalizedEntity \
-								  vuengine//entities/LowPowerEntity \
+PLUGINS							= vuengine//actors/LocalizedActor \
+								  vuengine//actors/LowPowerActor \
 								  vuengine//other/AutomaticPause \
 								  vuengine//other/I18n \
 								  vuengine//other/SaveDataManager \

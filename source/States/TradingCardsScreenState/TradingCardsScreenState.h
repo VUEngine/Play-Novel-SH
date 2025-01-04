@@ -8,17 +8,15 @@
 #ifndef TRADING_CARDS_SCREEN_STATE_H_
 #define TRADING_CARDS_SCREEN_STATE_H_
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // INCLUDES
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 #include <SplashScreenState.h>
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DEFINITIONS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 enum TradingCardsScreenModes
 {
@@ -26,29 +24,26 @@ enum TradingCardsScreenModes
 	kTradingCardsScreenModeHighlightCard,
 };
 
-
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 //											CLASS'S DECLARATION
 
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
-
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 singleton class TradingCardsScreenState : SplashScreenState
 {
-	Entity entityBackground;
-	Entity entityCursor;
-	AnimatedEntity entityNumbers;
-	AnimatedEntity entityCard1;
-	AnimatedEntity entityCard2;
-	AnimatedEntity entityCard3;
-	AnimatedEntity entityCard4;
-	AnimatedEntity entityCard5;
-	AnimatedEntity entityCard6;
-	AnimatedEntity entityCard7;
-	AnimatedEntity entityCard8;
-	AnimatedEntity entityLargeCard;
+	Actor actorBackground;
+	Actor actorCursor;
+	Actor actorNumbers;
+	Actor actorCard1;
+	Actor actorCard2;
+	Actor actorCard3;
+	Actor actorCard4;
+	Actor actorCard5;
+	Actor actorCard6;
+	Actor actorCard7;
+	Actor actorCard8;
+	Actor actorLargeCard;
 	uint8 page;
 	uint8 card;
 	uint8 mode;
@@ -58,6 +53,5 @@ singleton class TradingCardsScreenState : SplashScreenState
 	override void enter(void* owner);
 	override void processUserInput(UserInput userInput);
 }
-
 
 #endif

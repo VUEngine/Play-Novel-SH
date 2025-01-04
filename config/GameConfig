@@ -1,8 +1,8 @@
 {
     "_version": "1.0.0",
     "plugins": {
-        "vuengine//entities/LocalizedEntity": {},
-        "vuengine//entities/LowPowerEntity": {
+        "vuengine//actors/LocalizedActor": {},
+        "vuengine//actors/LowPowerActor": {
             "xPosition": 368,
             "yPosition": 12
         },
@@ -12,9 +12,9 @@
             "saveStamp": "SILENTHL"
         },
         "vuengine//states/splash/AdjustmentScreenNintendo": {
-            "lowPowerEntityXPosition": 352,
-            "lowPowerEntityYPosition": 12,
-            "useLowPowerEntity": true
+            "lowPowerActorXPosition": 352,
+            "lowPowerActorYPosition": 12,
+            "useLowPowerActor": true
         },
         "vuengine//states/splash/PrecautionScreen": {
             "textFont": "Silent"

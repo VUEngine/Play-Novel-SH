@@ -5,44 +5,39 @@
  * Virtual Boy port by Christian Radke <c.radke@posteo.de>
  */
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // INCLUDES
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 #include <VisualNovelState.h>
 #include <Languages.h>
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DECLARATIONS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-extern EntitySpec Scene001EntitySpec;
-extern EntitySpec Scene002EntitySpec;
-extern EntitySpec Scene002HighlightEntitySpec;
-extern EntitySpec Scene003EntitySpec;
-extern EntitySpec Scene004EntitySpec;
-extern EntitySpec Scene005EntitySpec;
-extern EntitySpec Scene006EntitySpec;
-extern EntitySpec Scene007EntitySpec;
-extern EntitySpec Scene008EntitySpec;
+extern ActorSpec Scene001ActorSpec;
+extern ActorSpec Scene002ActorSpec;
+extern ActorSpec Scene002HighlightActorSpec;
+extern ActorSpec Scene003ActorSpec;
+extern ActorSpec Scene004ActorSpec;
+extern ActorSpec Scene005ActorSpec;
+extern ActorSpec Scene006ActorSpec;
+extern ActorSpec Scene007ActorSpec;
+extern ActorSpec Scene008ActorSpec;
 
 extern SoundSpec CarEngineSoundSpec;
 extern SoundSpec CarBrakingSoundSpec;
 extern SoundSpec EnteringOtherWorldSoundSpec;
 extern SoundSpec SomethingStrangeSoundSpec;
 
-
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DEFINITIONS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-
-PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene1Entities[] =
+PositionedActorROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene1Actors[] =
 {
-	{&Scene001EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene001ActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
@@ -51,7 +46,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene1 = {
 	kFadeTypeNormal,
 	kSoundPlaybackNormal,
 	NULL,
-	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene1Entities,
+	(PositionedActor*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene1Actors,
 	NULL,
 	{
 		{
@@ -66,10 +61,10 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene1 = {
 	NULL,
 };
 
-PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene2Entities[] =
+PositionedActorROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene2Actors[] =
 {
-	{&Scene002EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
-	//{&Scene002HighlightEntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene002ActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	//{&Scene002HighlightActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
@@ -78,7 +73,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene2 = {
 	kFadeTypeNormal,
 	kSoundPlaybackNormal,
 	&CarEngineSoundSpec,
-	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene2Entities,
+	(PositionedActor*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene2Actors,
 	NULL,
 	{
 		{
@@ -91,9 +86,9 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene2 = {
 	NULL,
 };
 
-PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene3Entities[] =
+PositionedActorROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene3Actors[] =
 {
-	{&Scene003EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene003ActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
@@ -102,7 +97,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene3 = {
 	kFadeTypeNormal,
 	kSoundPlaybackNormal,
 	NULL,
-	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene3Entities,
+	(PositionedActor*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene3Actors,
 	NULL,
 	{
 		{
@@ -121,9 +116,9 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene3 = {
 	NULL,
 };
 
-PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene4Entities[] =
+PositionedActorROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene4Actors[] =
 {
-	{&Scene002EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene002ActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
@@ -132,7 +127,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene4 = {
 	kFadeTypeNormal,
 	kSoundPlaybackNormal,
 	NULL,
-	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene4Entities,
+	(PositionedActor*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene4Actors,
 	NULL,
 	{
 		{
@@ -145,9 +140,9 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene4 = {
 	NULL,
 };
 
-PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene5Entities[] =
+PositionedActorROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene5Actors[] =
 {
-	{&Scene004EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene004ActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
@@ -156,7 +151,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene5 = {
 	kFadeTypeNormal,
 	kSoundPlaybackNormal,
 	NULL,
-	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene5Entities,
+	(PositionedActor*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene5Actors,
 	NULL,
 	{
 		{
@@ -171,9 +166,9 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene5 = {
 	NULL,
 };
 
-PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene6Entities[] =
+PositionedActorROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene6Actors[] =
 {
-	{&Scene003EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene003ActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
@@ -182,7 +177,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene6 = {
 	kFadeTypeNormal,
 	kSoundPlaybackNormal,
 	NULL,
-	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene6Entities,
+	(PositionedActor*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene6Actors,
 	NULL,
 	{
 		{
@@ -195,9 +190,9 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene6 = {
 	NULL,
 };
 
-PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene7Entities[] =
+PositionedActorROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene7Actors[] =
 {
-	{&Scene002EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene002ActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
@@ -206,7 +201,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene7 = {
 	kFadeTypeNormal,
 	kSoundPlaybackNormal,
 	NULL,
-	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene7Entities,
+	(PositionedActor*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene7Actors,
 	NULL,
 	{
 		{
@@ -220,9 +215,9 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene7 = {
 	NULL,
 };
 
-PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene8Entities[] =
+PositionedActorROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene8Actors[] =
 {
-	{&Scene005EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene005ActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
@@ -231,7 +226,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene8 = {
 	kFadeTypeNormal,
 	kSoundPlaybackNormal,
 	&SomethingStrangeSoundSpec,
-	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene8Entities,
+	(PositionedActor*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene8Actors,
 	NULL,
 	{
 		{
@@ -246,9 +241,9 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene8 = {
 	NULL,
 };
 
-PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene9Entities[] =
+PositionedActorROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene9Actors[] =
 {
-	{&Scene006EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene006ActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
@@ -257,7 +252,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene9 = {
 	kFadeTypeNormal,
 	kSoundPlaybackNormal,
 	NULL,
-	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene9Entities,
+	(PositionedActor*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene9Actors,
 	NULL,
 	{
 		{
@@ -271,9 +266,9 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene9 = {
 	NULL,
 };
 
-PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene10Entities[] =
+PositionedActorROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene10Actors[] =
 {
-	{&Scene002EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene002ActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
@@ -282,7 +277,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene10 = {
 	kFadeTypeNormal,
 	kSoundPlaybackNormal,
 	&EnteringOtherWorldSoundSpec,
-	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene10Entities,
+	(PositionedActor*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene10Actors,
 	NULL,
 	{
 		{
@@ -296,9 +291,9 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene10 = {
 	NULL,
 };
 
-PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene11Entities[] =
+PositionedActorROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene11Actors[] =
 {
-	{&Scene003EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene003ActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
@@ -307,7 +302,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene11 = {
 	kFadeTypeNormal,
 	kSoundPlaybackNormal,
 	NULL,
-	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene11Entities,
+	(PositionedActor*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene11Actors,
 	NULL,
 	{
 		{
@@ -324,9 +319,9 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene11 = {
 	NULL,
 };
 
-PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene12Entities[] =
+PositionedActorROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene12Actors[] =
 {
-	{&Scene007EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene007ActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
@@ -335,7 +330,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene12 = {
 	kFadeTypeNormal,
 	kSoundPlaybackNormal,
 	NULL,
-	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene12Entities,
+	(PositionedActor*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene12Actors,
 	NULL,
 	{
 		{
@@ -347,9 +342,9 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene12 = {
 	NULL,
 };
 
-PositionedEntityROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene13Entities[] =
+PositionedActorROMSpec PlayNovelScenarioHarryAct0Chapter1Sub1Scene13Actors[] =
 {
-	{&Scene008EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene008ActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
@@ -358,7 +353,7 @@ const struct Scene PlayNovelScenarioHarryAct0Chapter1Sub1Scene13 = {
 	kFadeTypeSlow,
 	kSoundPlaybackNormal,
 	NULL,
-	(PositionedEntity*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene13Entities,
+	(PositionedActor*)PlayNovelScenarioHarryAct0Chapter1Sub1Scene13Actors,
 	NULL,
 	{
 		{

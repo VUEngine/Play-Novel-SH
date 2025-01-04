@@ -5,15 +5,14 @@
  * Virtual Boy port by Christian Radke <c.radke@posteo.de>
  */
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // INCLUDES
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 #include <string.h>
 #include <VUEngine.h>
 #include <Utilities.h>
-#include <AnimatedEntity.h>
+#include <Actor.h>
 #include <Camera.h>
 #include <CameraEffectManager.h>
 #include <MessageDispatcher.h>
@@ -28,21 +27,17 @@
 #include <AutomaticPauseManager.h>
 #include <GameSaveDataManager.h>
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DECLARATIONS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 extern StageROMSpec VisualNovelStageSpec;
 extern Script PlayNovelScenarios;
-extern EntitySpec DummyContainerEntitySpec;
+extern ActorSpec DummyContainerActorSpec;
 
-
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // CLASS'S METHODS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
-
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 void VisualNovelState::constructor()
 {
@@ -59,7 +54,6 @@ void VisualNovelState::destructor()
 
 void VisualNovelState::enter(void* owner)
 {
-	// call base
 	Base::enter(this, owner);
 
 	// load stage
@@ -74,7 +68,7 @@ void VisualNovelState::enter(void* owner)
 
 	// initialize variables
 	UIContainer uiContainer = VUEngine::getUIContainer(VUEngine::getInstance());
-	this->entityFlauros = Entity::safeCast(UIContainer::getChildByName(uiContainer, "FLAUROS", true));
+	this->actorFlauros = Actor::safeCast(UIContainer::getChildByName(uiContainer, "FLAUROS", true));
 	this->charNumber = 0;
 	this->charX = 0;
 	this->charY = 0;
@@ -169,7 +163,6 @@ void VisualNovelState::nextPage()
 		this->progress.subChapter = choices->choices[this->choicesMenuOption].targetPage.subChapter;
 		this->progress.scene = choices->choices[this->choicesMenuOption].targetPage.scene;
 		this->progress.page = 0;
-
 
 		VisualNovelState::setUpScene(this);
 		VisualNovelState::saveProgress(this);
@@ -368,7 +361,7 @@ void VisualNovelState::setUpPage()
 	this->charX = 0;
 	this->charY = 0;
 	Printing::clear(Printing::getInstance());
-	Entity::hide(this->entityFlauros);
+	Actor::hide(this->actorFlauros);
 	this->text = PlayNovelScenarios.scenarios[this->progress.scenario]
 		->acts[this->progress.act]->chapters[this->progress.chapter]
 		->subChapters[this->progress.subChapter]
@@ -389,12 +382,12 @@ void VisualNovelState::setUpScene()
 			->scenes[this->progress.scene];
 
 	Stage stage = VUEngine::getStage(VUEngine::getInstance());
-	Container sceneEntity = Container::getChildByName(Container::safeCast(stage), "SCENE", true);
-	if(!isDeleted(sceneEntity)) {
-		Stage::destroyChildEntity(stage, Entity::safeCast(sceneEntity));
+	Container sceneActor = Container::getChildByName(Container::safeCast(stage), "SCENE", true);
+	if(!isDeleted(sceneActor)) {
+		Stage::destroyChildActor(stage, Actor::safeCast(sceneActor));
 	}
-	PositionedEntity scenePositionedEntity = {&DummyContainerEntitySpec, {0, -32, 0}, {0, 0, 0}, {1, 1, 1}, 0, "SCENE", (struct PositionedEntity*)scene->positionedEntities, NULL, false};
-	Stage::spawnChildEntity(stage, &scenePositionedEntity, true);
+	PositionedActor scenePositionedActor = {&DummyContainerActorSpec, {0, -32, 0}, {0, 0, 0}, {1, 1, 1}, 0, "SCENE", (struct PositionedActor*)scene->positionedActors, NULL, false};
+	Stage::spawnChildActor(stage, &scenePositionedActor, true);
 
 	if(NULL != scene->sound)
 	{
@@ -475,10 +468,10 @@ void VisualNovelState::finishPage()
 	Printing::text(Printing::getInstance(), this->text, 0, 0, "Silent");
 	if(this->textLength > 0)
 	{
-		Entity::show(this->entityFlauros);
+		Actor::show(this->actorFlauros);
 	}
 	Vector3D position = VisualNovelState::findFlaurosPosition(this);
-	Entity::setLocalPosition(this->entityFlauros, &position);
+	Actor::setLocalPosition(this->actorFlauros, &position);
 }
 
 Vector3D VisualNovelState::findFlaurosPosition()
@@ -522,7 +515,7 @@ void VisualNovelState::processUserInput(UserInput userInput)
 			if(this->choicesMenuOptionCount == 0 && VisualNovelState::sceneHasChoices(this))
 			{
 				Printing::clear(Printing::getInstance());
-				Entity::hide(this->entityFlauros);
+				Actor::hide(this->actorFlauros);
 				VisualNovelState::printChoices(this);
 			}
 			else

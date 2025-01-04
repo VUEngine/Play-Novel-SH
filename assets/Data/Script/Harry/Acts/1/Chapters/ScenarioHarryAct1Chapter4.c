@@ -5,46 +5,40 @@
  * Virtual Boy port by Christian Radke <c.radke@posteo.de>
  */
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // INCLUDES
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 #include <VisualNovelState.h>
 #include <Languages.h>
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DECLARATIONS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-extern EntitySpec Scene012EntitySpec;
-extern EntitySpec Scene012CherylEntitySpec;
-extern EntitySpec Scene013EntitySpec;
-extern EntitySpec Scene014EntitySpec;
+extern ActorSpec Scene012ActorSpec;
+extern ActorSpec Scene012CherylActorSpec;
+extern ActorSpec Scene013ActorSpec;
+extern ActorSpec Scene014ActorSpec;
 
-
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DEFINITIONS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
-
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 // SUB CHAPTER 1
 
-PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter4Sub1Scene1Entities[] =
+PositionedActorROMSpec PlayNovelScenarioHarryAct1Chapter4Sub1Scene1Actors[] =
 {
-	{&Scene012EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene012ActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
-
 
 const struct Scene PlayNovelScenarioHarryAct1Chapter4Sub1Scene1 = {
 	kFadeTypeNormal,
 	kFadeTypeNone,
 	kSoundPlaybackNormal,
 	NULL,
-	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter4Sub1Scene1Entities,
+	(PositionedActor*)PlayNovelScenarioHarryAct1Chapter4Sub1Scene1Actors,
 	NULL,
 	{
 		{
@@ -57,20 +51,19 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter4Sub1Scene1 = {
 	NULL,
 };
 
-PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter4Sub1Scene2Entities[] =
+PositionedActorROMSpec PlayNovelScenarioHarryAct1Chapter4Sub1Scene2Actors[] =
 {
-	{&Scene012EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
-	{&Scene012CherylEntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene012ActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene012CherylActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
-
 
 const struct Scene PlayNovelScenarioHarryAct1Chapter4Sub1Scene2 = {
 	kFadeTypeNone,
 	kFadeTypeNone,
 	kSoundPlaybackNormal,
 	NULL,
-	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter4Sub1Scene2Entities,
+	(PositionedActor*)PlayNovelScenarioHarryAct1Chapter4Sub1Scene2Actors,
 	NULL,
 	{
 		{
@@ -85,9 +78,9 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter4Sub1Scene2 = {
 	NULL,
 };
 
-PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter4Sub1Scene3Entities[] =
+PositionedActorROMSpec PlayNovelScenarioHarryAct1Chapter4Sub1Scene3Actors[] =
 {
-	{&Scene012EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene012ActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
@@ -96,7 +89,7 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter4Sub1Scene3 = {
 	kFadeTypeNormal,
 	kSoundPlaybackNormal,
 	NULL,
-	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter4Sub1Scene3Entities,
+	(PositionedActor*)PlayNovelScenarioHarryAct1Chapter4Sub1Scene3Actors,
 	NULL,
 	{
 		{
@@ -111,9 +104,9 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter4Sub1Scene3 = {
 	NULL,
 };
 
-PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter4Sub1Scene4Entities[] =
+PositionedActorROMSpec PlayNovelScenarioHarryAct1Chapter4Sub1Scene4Actors[] =
 {
-	{&Scene013EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene013ActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
@@ -122,7 +115,7 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter4Sub1Scene4 = {
 	kFadeTypeNormal,
 	kSoundPlaybackNormal,
 	NULL,
-	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter4Sub1Scene4Entities,
+	(PositionedActor*)PlayNovelScenarioHarryAct1Chapter4Sub1Scene4Actors,
 	NULL,
 	{
 		{
@@ -136,9 +129,9 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter4Sub1Scene4 = {
 	NULL,
 };
 
-PositionedEntityROMSpec PlayNovelScenarioHarryAct1Chapter4Sub1Scene5Entities[] =
+PositionedActorROMSpec PlayNovelScenarioHarryAct1Chapter4Sub1Scene5Actors[] =
 {
-	{&Scene014EntitySpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
+	{&Scene014ActorSpec, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
@@ -147,7 +140,7 @@ const struct Scene PlayNovelScenarioHarryAct1Chapter4Sub1Scene5 = {
 	kFadeTypeNone,
 	-1,
 	NULL,
-	(PositionedEntity*)PlayNovelScenarioHarryAct1Chapter4Sub1Scene5Entities,
+	(PositionedActor*)PlayNovelScenarioHarryAct1Chapter4Sub1Scene5Actors,
 	NULL,
 	{
 		{

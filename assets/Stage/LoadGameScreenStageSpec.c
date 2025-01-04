@@ -5,53 +5,48 @@
  * Virtual Boy port by Christian Radke <c.radke@posteo.de>
  */
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // INCLUDES
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 #include <Stage.h>
 #include <Fonts.h>
 #include <ObjectSpriteContainer.h>
 
-
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DECLARATIONS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-
-extern EntitySpec LowPowerIndicatorEntitySpec;
-extern EntitySpec SaveSlotWideBackgroundEntitySpec;
-extern EntitySpec SaveSlotWideBackgroundExtraEntitySpec;
-extern EntitySpec SaveSlotLabelEntitySpec;
-extern EntitySpec SaveSlotBorderEntitySpec;
+extern ActorSpec LowPowerIndicatorActorSpec;
+extern ActorSpec SaveSlotWideBackgroundActorSpec;
+extern ActorSpec SaveSlotWideBackgroundExtraActorSpec;
+extern ActorSpec SaveSlotLabelActorSpec;
+extern ActorSpec SaveSlotBorderActorSpec;
 extern SoundSpec EnterLoadGameScreenSoundSpec;
 
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
+// ACTOR LISTS
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
-// ENTITY LISTS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
-
-PositionedEntityROMSpec LoadGameScreenStageSpecEntities[] =
+PositionedActorROMSpec LoadGameScreenStageSpecActors[] =
 {
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
 
-PositionedEntityROMSpec LoadGameScreenStageSpecUiEntities[] =
+PositionedActorROMSpec LoadGameScreenStageSpecUiActors[] =
 {
-	{&SaveSlotBorderEntitySpec,					{   0, -48,  -1}, {0, 0, 0}, {1, 1, 1},   0, "CURSOR", NULL, NULL, false},
+	{&SaveSlotBorderActorSpec,					{   0, -48,  -1}, {0, 0, 0}, {1, 1, 1},   0, "CURSOR", NULL, NULL, false},
 
-	{&SaveSlotWideBackgroundEntitySpec,			{   0, -48,   0}, {0, 0, 0}, {1, 1, 1},  	0, "SLOT0", NULL, NULL, false},
-	{&SaveSlotWideBackgroundEntitySpec,			{   0,   0,   0}, {0, 0, 0}, {1, 1, 1},  	0, "SLOT1", NULL, NULL, false},
-	{&SaveSlotWideBackgroundEntitySpec,			{   0,  48,   0}, {0, 0, 0}, {1, 1, 1},  	0, "SLOT2", NULL, NULL, false},
-	{&SaveSlotWideBackgroundExtraEntitySpec,	{   0,  -8,   0}, {0, 0, 0}, {1, 1, 1},  	0, "SUBCHPTR", NULL, NULL, false},
+	{&SaveSlotWideBackgroundActorSpec,			{   0, -48,   0}, {0, 0, 0}, {1, 1, 1},  	0, "SLOT0", NULL, NULL, false},
+	{&SaveSlotWideBackgroundActorSpec,			{   0,   0,   0}, {0, 0, 0}, {1, 1, 1},  	0, "SLOT1", NULL, NULL, false},
+	{&SaveSlotWideBackgroundActorSpec,			{   0,  48,   0}, {0, 0, 0}, {1, 1, 1},  	0, "SLOT2", NULL, NULL, false},
+	{&SaveSlotWideBackgroundExtraActorSpec,	{   0,  -8,   0}, {0, 0, 0}, {1, 1, 1},  	0, "SUBCHPTR", NULL, NULL, false},
 
-	{&SaveSlotLabelEntitySpec,					{-108, -56,  -1}, {0, 0, 0}, {1, 1, 1},  	0, "LABEL0", NULL, NULL, false},
-	{&SaveSlotLabelEntitySpec,					{-108,  -8,  -1}, {0, 0, 0}, {1, 1, 1},  	0, "LABEL1", NULL, NULL, false},
-	{&SaveSlotLabelEntitySpec,					{-108,  40,  -1}, {0, 0, 0}, {1, 1, 1},  	0, "LABEL2", NULL, NULL, false},
+	{&SaveSlotLabelActorSpec,					{-108, -56,  -1}, {0, 0, 0}, {1, 1, 1},  	0, "LABEL0", NULL, NULL, false},
+	{&SaveSlotLabelActorSpec,					{-108,  -8,  -1}, {0, 0, 0}, {1, 1, 1},  	0, "LABEL1", NULL, NULL, false},
+	{&SaveSlotLabelActorSpec,					{-108,  40,  -1}, {0, 0, 0}, {1, 1, 1},  	0, "LABEL2", NULL, NULL, false},
 
-	{&LowPowerIndicatorEntitySpec, 				{ 176, -100,  -1}, {0, 0, 0}, {1, 1, 1},	0, NULL, NULL, NULL, false},
+	{&LowPowerIndicatorActorSpec, 				{ 176, -100,  -1}, {0, 0, 0}, {1, 1, 1},	0, NULL, NULL, NULL, false},
 
 	{NULL, {0, 0, 0}, {0, 0, 0}, {1, 1, 1}, 0, NULL, NULL, NULL, false},
 };
@@ -62,20 +57,18 @@ SoundROMSpec* const LoadGameScreenStageSoundSpecs[] =
 	NULL
 };
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // ASSETS LISTS
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 FontROMSpec* const LoadGameScreenStageSpecFonts[] =
 {
 	NULL
 };
 
-
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // STAGE DEFINITION
-//——————————————————————————————————————————————————————————————————————————————————————————————————————————
+//——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 StageROMSpec LoadGameScreenStageSpec =
 {
@@ -138,15 +131,15 @@ StageROMSpec LoadGameScreenStageSpec =
 
 	// Streaming
 	{
-		// Padding to be added to camera's frustum when checking if a entity spec
-		// describes an entity that is within the camera's range
+		// Padding to be added to camera's frustum when checking if a actor spec
+		// describes an actor that is within the camera's range
 		40,
-		// Padding to be added to camera's frustum when checking if a entity is
+		// Padding to be added to camera's frustum when checking if a actor is
 		// out of the camera's range
 		16,
-		// Amount of entity descriptions to check for streaming in entities
+		// Amount of actor descriptions to check for streaming in actors
 		24,
-		// If true, entity instantiation is done over time
+		// If true, actor instantiation is done over time
 		false,
 	},
 
@@ -278,16 +271,16 @@ StageROMSpec LoadGameScreenStageSpec =
 		(SoundSpec**)&LoadGameScreenStageSoundSpecs,
 	},
 
-	// Entities
+	// Actors
 	{
 		// UI configuration
 		{
-			(PositionedEntity*)LoadGameScreenStageSpecUiEntities,
+			(PositionedActor*)LoadGameScreenStageSpecUiActors,
 			__TYPE(UIContainer),
 		},
 
-		// Stage's children entities
-		(PositionedEntity*)LoadGameScreenStageSpecEntities,
+		// Stage's children actors
+		(PositionedActor*)LoadGameScreenStageSpecActors,
 	},
 
 	// Post processing effects
