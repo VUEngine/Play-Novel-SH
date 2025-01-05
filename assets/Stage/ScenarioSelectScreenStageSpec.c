@@ -182,7 +182,7 @@ StageROMSpec ScenarioSelectScreenStageSpec =
 		// Number of BGMAP segments reserved for the param
 		1,
 
-		// obj segments sizes (must total 1024)
+		// Obj segments sizes (must total 1024)
 		{
 			// __spt0
 			__TOTAL_OBJECTS / __TOTAL_OBJECT_SEGMENTS,

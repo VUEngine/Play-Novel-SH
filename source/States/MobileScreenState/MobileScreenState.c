@@ -50,16 +50,16 @@ void MobileScreenState::enter(void* owner)
 {
 	Base::enter(this, owner);
 
-	// load stage
+	// Load stage
 	GameState::configureStage(GameState::safeCast(this), (StageSpec*)&MobileScreenStageSpec, NULL);
 
-	// set next state
+	// Set next state
 	SplashScreenState::setNextState(SplashScreenState::safeCast(this), GameState::safeCast(TitleScreenState::getInstance()));
 
-	// start clocks to start animations
+	// Start clocks to start animations
 	GameState::startClocks(GameState::safeCast(this));
 
-	// disable user input
+	// Disable user input
 	VUEngine::disableKeypad(VUEngine::getInstance());
 
 	// Show prepare message
@@ -69,7 +69,7 @@ void MobileScreenState::enter(void* owner)
 	ListenerObject::sendMessageToSelf(ListenerObject::safeCast(this), kMobileScreenMessageShowPrepare, 1, 0);
 	ListenerObject::sendMessageToSelf(ListenerObject::safeCast(this), kMobileScreenMessageShowError, CONNECTION_TIMEOUT, 0);
 
-	// start fade in effect
+	// Start fade in effect
 	Camera::startEffect(Camera::getInstance(), kHide);
 	Camera::startEffect(Camera::getInstance(),
 		kFadeTo, // effect type

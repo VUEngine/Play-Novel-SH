@@ -123,7 +123,7 @@ CharSetROMSpec SilentFontCharSet =
 	// Whether the tiles are optimized or not
 	false,
 
-	// char data
+	// Char data
 	(uint32*)SilentFontTiles,
 
 	// Frame offsets array

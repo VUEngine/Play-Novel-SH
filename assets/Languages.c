@@ -118,13 +118,13 @@ const char* const EnglishLanguageStrings[] =
 
 const LangROMSpec EnglishLanguageSpec =
 {
-	// language name
+	// Language name
 	"English",
 
-	// flag actor
+	// Flag actor
 	NULL,
 	
-	// strings
+	// Strings
 	(const char**)EnglishLanguageStrings
 };
 
@@ -218,12 +218,12 @@ const char* const GermanLanguageStrings[] =
 
 const LangROMSpec GermanLanguageSpec =
 {
-	// language name
+	// Language name
 	"German",
 
-	// flag actor
+	// Flag actor
 	NULL,
 	
-	// strings
+	// Strings
 	(const char**)GermanLanguageStrings
 };

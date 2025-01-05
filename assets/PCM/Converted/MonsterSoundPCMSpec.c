@@ -1797,7 +1797,7 @@ const SoundTrackKeyframe MonsterSoundSoundTrack1Keyframes[] =
 
 SoundTrackROMSpec MonsterSoundSoundTrack =
 {
-	// kTrackNative, kTrackPCM
+	// KTrackNative, kTrackPCM
 	kTrackPCM,
 
 	// Skip if no sound source available?

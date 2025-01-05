@@ -25,24 +25,24 @@ const GameProgress EmptyProgress =
 
 const GameSaveData GameSaveDataDefaults =
 {
-	// base save data
+	// Base save data
 	{
-		// save stamp
+		// Save stamp
 		__PLUGIN_SAVE_DATA_MANAGER_SAVE_STAMP,
-		// checksum
+		// Checksum
 		0,
-		// active language id
+		// Active language id
 		0,
-		// auto pause status (0: on, 1: off)
+		// Auto pause status (0: on, 1: off)
 		0
 	},
 
-	// unlocked cards
+	// Unlocked cards
 	//33322222222221111111111000000000
 	//21098765432109876543210987654321
 	0xFFFFFFFF,
 
-	// game progress
+	// Game progress
 	{
 		// 1
 		{

@@ -198,7 +198,7 @@ StageROMSpec TradingCardsScreenStageSpec =
 		// Number of BGMAP segments reserved for the param
 		0,
 
-		// obj segments sizes (must total 1024)
+		// Obj segments sizes (must total 1024)
 		{
 			// __spt0
 			0,

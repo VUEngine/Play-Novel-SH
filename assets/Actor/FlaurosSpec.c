@@ -90,7 +90,7 @@ TextureROMSpec FlaurosBlackTextureSpec =
 	// Vertical size in tiles of the texture (max. 64)
 	2,
 
-	// padding for affine transformations
+	// Padding for affine transformations
 	{0, 0},
 
 	// Number of frames that the texture supports
@@ -135,7 +135,7 @@ BgmapSpriteROMSpec FlaurosBlackSpriteSpec =
 	// make sure to use the proper corresponding sprite type throughout the spec (BgmapSprite or ObjectSprite)
 	__WORLD_BGMAP,
 
-	// pointer to affine / hbias manipulation function
+	// Pointer to affine / hbias manipulation function
 	NULL,
 
 	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
@@ -174,7 +174,7 @@ TextureROMSpec FlaurosBaseTextureSpec =
 	// Vertical size in tiles of the texture (max. 64)
 	2,
 
-	// padding for affine transformations
+	// Padding for affine transformations
 	{0, 0},
 
 	// Number of frames that the texture supports
@@ -219,7 +219,7 @@ BgmapSpriteROMSpec FlaurosBaseSpriteSpec =
 	// make sure to use the proper corresponding sprite type throughout the spec (BgmapSprite or ObjectSprite)
 	__WORLD_BGMAP,
 
-	// pointer to affine / hbias manipulation function
+	// Pointer to affine / hbias manipulation function
 	NULL,
 
 	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
@@ -258,7 +258,7 @@ TextureROMSpec FlaurosOverlayTextureSpec =
 	// Vertical size in tiles of the texture (max. 64)
 	2,
 
-	// padding for affine transformations
+	// Padding for affine transformations
 	{0, 0},
 
 	// Number of frames that the texture supports
@@ -303,7 +303,7 @@ BgmapSpriteROMSpec FlaurosOverlaySpriteSpec =
 	// make sure to use the proper corresponding sprite type throughout the spec (BgmapSprite or ObjectSprite)
 	__WORLD_BGMAP,
 
-	// pointer to affine / hbias manipulation function
+	// Pointer to affine / hbias manipulation function
 	NULL,
 
 	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)

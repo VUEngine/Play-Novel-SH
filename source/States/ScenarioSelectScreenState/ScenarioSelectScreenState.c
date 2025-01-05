@@ -51,21 +51,21 @@ void ScenarioSelectScreenState::enter(void* owner)
 {
 	Base::enter(this, owner);
 
-	// load stage
+	// Load stage
 	GameState::configureStage(GameState::safeCast(this), (StageSpec*)&ScenarioSelectScreenStageSpec, NULL);
 
-	// set next state
+	// Set next state
 	SplashScreenState::setNextState(SplashScreenState::safeCast(this), GameState::safeCast(VisualNovelState::getInstance()));
 
-	// start clocks to start animations
+	// Start clocks to start animations
 	GameState::startClocks(GameState::safeCast(this));
 
-	// enable user input
+	// Enable user input
 	VUEngine::enableKeypad(VUEngine::getInstance());
 
 	this->option = 0;
 
-	// start fade in effect
+	// Start fade in effect
 	Camera::startEffect(Camera::getInstance(), kHide);
 	Camera::startEffect(Camera::getInstance(),
 		kFadeTo, // effect type

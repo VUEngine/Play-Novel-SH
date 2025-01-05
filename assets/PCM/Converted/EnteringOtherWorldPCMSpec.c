@@ -4247,7 +4247,7 @@ const SoundTrackKeyframe EnteringOtherWorldSoundTrack1Keyframes[] =
 
 SoundTrackROMSpec EnteringOtherWorldSoundTrack =
 {
-	// kTrackNative, kTrackPCM
+	// KTrackNative, kTrackPCM
 	kTrackPCM,
 
 	// Skip if no sound source available?

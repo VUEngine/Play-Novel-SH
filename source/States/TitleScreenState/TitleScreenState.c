@@ -51,13 +51,13 @@ void TitleScreenState::enter(void* owner)
 {
 	Base::enter(this, owner);
 
-	// load stage
+	// Load stage
 	GameState::configureStage(GameState::safeCast(this), (StageSpec*)&TitleScreenStageSpec, NULL);
 
-	// start clocks to start animations
+	// Start clocks to start animations
 	GameState::startClocks(GameState::safeCast(this));
 
-	// enable user input
+	// Enable user input
 	VUEngine::enableKeypad(VUEngine::getInstance());
 
 	UIContainer uiContainer = VUEngine::getUIContainer(VUEngine::getInstance());
@@ -67,7 +67,7 @@ void TitleScreenState::enter(void* owner)
 	this->option = 0;
 	TitleScreenState::updateOptionAnimations(this);
 
-	// start fade in effect
+	// Start fade in effect
 	Camera::startEffect(Camera::getInstance(), kHide);
 	Camera::startEffect(Camera::getInstance(),
 		kFadeTo, // effect type

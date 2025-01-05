@@ -111,7 +111,7 @@ TextureROMSpec ScenarioBookBaseTextureSpec =
 	// Vertical size in tiles of the texture (max. 64)
 	16,
 
-	// padding for affine transformations
+	// Padding for affine transformations
 	{0, 0},
 
 	// Number of frames that the texture supports
@@ -156,7 +156,7 @@ BgmapSpriteROMSpec ScenarioBookBaseSpriteSpec =
 	// make sure to use the proper corresponding sprite type throughout the spec (BgmapSprite or ObjectSprite)
 	__WORLD_BGMAP,
 
-	// pointer to affine / hbias manipulation function
+	// Pointer to affine / hbias manipulation function
 	NULL,
 
 	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
@@ -195,7 +195,7 @@ TextureROMSpec ScenarioBookOverlayTextureSpec =
 	// Vertical size in tiles of the texture (max. 64)
 	16,
 
-	// padding for affine transformations
+	// Padding for affine transformations
 	{0, 0},
 
 	// Number of frames that the texture supports
@@ -240,7 +240,7 @@ BgmapSpriteROMSpec ScenarioBookOverlaySpriteSpec =
 	// make sure to use the proper corresponding sprite type throughout the spec (BgmapSprite or ObjectSprite)
 	__WORLD_BGMAP,
 
-	// pointer to affine / hbias manipulation function
+	// Pointer to affine / hbias manipulation function
 	NULL,
 
 	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)

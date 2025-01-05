@@ -173,7 +173,7 @@ ComponentSpec* const OptionsMainMenuStartActorComponentSpecs[] =
 
 LocalizedActorROMSpec OptionsMainMenuStartActorSpec =
 {
-	// animated actor
+	// Animated actor
 	{
 		// actor
 		// Class allocator

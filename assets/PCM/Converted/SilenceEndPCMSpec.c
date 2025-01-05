@@ -9107,7 +9107,7 @@ const SoundTrackKeyframe SilenceEndSoundTrack1Keyframes[] =
 
 SoundTrackROMSpec SilenceEndSoundTrack =
 {
-	// kTrackNative, kTrackPCM
+	// KTrackNative, kTrackPCM
 	kTrackPCM,
 
 	// Skip if no sound source available?

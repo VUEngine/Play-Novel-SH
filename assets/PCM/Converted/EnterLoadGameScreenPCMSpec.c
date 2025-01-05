@@ -1876,7 +1876,7 @@ const SoundTrackKeyframe EnterLoadGameScreenSoundTrack1Keyframes[] =
 
 SoundTrackROMSpec EnterLoadGameScreenSoundTrack =
 {
-	// kTrackNative, kTrackPCM
+	// KTrackNative, kTrackPCM
 	kTrackPCM,
 
 	// Skip if no sound source available?

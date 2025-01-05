@@ -56,17 +56,17 @@ void VisualNovelState::enter(void* owner)
 {
 	Base::enter(this, owner);
 
-	// load stage
+	// Load stage
 	GameState::configureStage(GameState::safeCast(this), (StageSpec*)&VisualNovelStageSpec, NULL);
 
-	// start clocks to start animations
+	// Start clocks to start animations
 	GameState::startClocks(GameState::safeCast(this));
 
-	// optimize printing layer to save performance
+	// Optimize printing layer to save performance
 	Printing::setWorldCoordinates(Printing::getInstance(), 16, 172, -6, 0);
 	Printing::setPalette(Printing::getInstance(), 0);
 
-	// initialize variables
+	// Initialize variables
 	UIContainer uiContainer = VUEngine::getUIContainer(VUEngine::getInstance());
 	this->actorFlauros = Actor::safeCast(UIContainer::getChildByName(uiContainer, "FLAUROS", true));
 	this->charNumber = 0;
@@ -79,15 +79,15 @@ void VisualNovelState::enter(void* owner)
 	this->choicesMenuOption = 0;
 	this->choicesMenuOptionCount = 0;
 
-	// load progress, always start at page 0
+	// Load progress, always start at page 0
 	VisualNovelState::loadProgress(this);
 	this->progress.page = 0;
 	this->progress.started = true;
 
-	// enable user input
+	// Enable user input
 	VUEngine::enableKeypad(VUEngine::getInstance());
 
-	// start fade in effect
+	// Start fade in effect
 	Camera::startEffect(Camera::getInstance(), kHide);
 	Camera::startEffect(Camera::getInstance(),
 		kFadeTo, // effect type
@@ -98,7 +98,7 @@ void VisualNovelState::enter(void* owner)
 		NULL // callback scope
 	);
 
-	// start scene
+	// Start scene
 	VisualNovelState::setUpScene(this);
 	VisualNovelState::setUpPage(this);
 	VisualNovelState::showPage(this);
@@ -442,14 +442,14 @@ void VisualNovelState::printCharacter()
 	text[0] = this->text[this->charNumber++];
 	switch(text[0])
 	{
-		// line feed
+		// Line feed
 		case 13:
 			break;
-		// tab
+		// Tab
 		case 9:
 			this->charX += __TAB_SIZE;
 			break;
-		// carriage return
+		// Carriage return
 		case 10:
 			this->charX = 0;
 			this->charY += 2;
@@ -481,14 +481,14 @@ Vector3D VisualNovelState::findFlaurosPosition()
 	{
 		switch(this->text[i++])
 		{
-			// line feed
+			// Line feed
 			case 13:
 				break;
-			// tab
+			// Tab
 			case 9:
 				x += __TAB_SIZE;
 				break;
-			// carriage return
+			// Carriage return
 			case 10:
 				x = 0;
 				y++;

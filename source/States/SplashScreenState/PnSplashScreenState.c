@@ -23,7 +23,7 @@ void PnSplashScreenState::constructor()
 	// Always explicitly call the base's constructor 
 	Base::constructor();
 
-	// init class members
+	// Init class members
 	this->stageSpec = NULL;
 	this->nextState = NULL;
 }
@@ -53,7 +53,7 @@ void PnSplashScreenState::exit(void* owner)
 {
 	Base::exit(this, owner);
 
-	// destroy the state
+	// Destroy the state
 	delete this;
 }
 

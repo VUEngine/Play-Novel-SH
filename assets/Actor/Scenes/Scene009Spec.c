@@ -269,16 +269,16 @@ AutoScrollingMBgmapSpriteROMSpec Scene009Snow1SpriteSpec =
 		// Flag to loop the y axis
 		true,
 
-		// bounds the sprite's width to provide culling
+		// Bounds the sprite's width to provide culling
 		// if 0, the value is inferred from the texture
 		0,
 
-		// bounds the sprite's height to provide culling
+		// Bounds the sprite's height to provide culling
 		// if 0, the value is inferred from the texture
 		0,
 	},
 
-	// scroll delay
+	// Scroll delay
 	20,
 };
 
@@ -367,16 +367,16 @@ AutoScrollingMBgmapSpriteROMSpec Scene009Snow2SpriteSpec =
 		// Flag to loop the y axis
 		true,
 
-		// bounds the sprite's width to provide culling
+		// Bounds the sprite's width to provide culling
 		// if 0, the value is inferred from the texture
 		0,
 
-		// bounds the sprite's height to provide culling
+		// Bounds the sprite's height to provide culling
 		// if 0, the value is inferred from the texture
 		0,
 	},
 
-	// scroll delay
+	// Scroll delay
 	10,
 };
 

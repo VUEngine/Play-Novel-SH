@@ -716,7 +716,7 @@ const SoundTrackKeyframe CarBrakingSoundTrack1Keyframes[] =
 
 SoundTrackROMSpec CarBrakingSoundTrack =
 {
-	// kTrackNative, kTrackPCM
+	// KTrackNative, kTrackPCM
 	kTrackPCM,
 
 	// Skip if no sound source available?

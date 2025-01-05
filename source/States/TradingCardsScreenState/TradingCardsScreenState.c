@@ -51,16 +51,16 @@ void TradingCardsScreenState::enter(void* owner)
 {
 	Base::enter(this, owner);
 
-	// load stage
+	// Load stage
 	GameState::configureStage(GameState::safeCast(this), (StageSpec*)&TradingCardsScreenStageSpec, NULL);
 
-	// set next state
+	// Set next state
 	SplashScreenState::setNextState(SplashScreenState::safeCast(this), GameState::safeCast(TitleScreenState::getInstance()));
 
-	// start clocks to start animations
+	// Start clocks to start animations
 	GameState::startClocks(GameState::safeCast(this));
 
-	// get actor references
+	// Get actor references
 	UIContainer uiContainer = VUEngine::getUIContainer(VUEngine::getInstance());
 	this->actorBackground = Actor::safeCast(UIContainer::getChildByName(uiContainer, "BG", true));
 	this->actorCursor = Actor::safeCast(UIContainer::getChildByName(uiContainer, "CURSOR", true));
@@ -75,7 +75,7 @@ void TradingCardsScreenState::enter(void* owner)
 	this->actorCard8 = Actor::safeCast(UIContainer::getChildByName(uiContainer, "7", true));
 	this->actorLargeCard = Actor::safeCast(UIContainer::getChildByName(uiContainer, "CARD", true));
 
-	// initial selection
+	// Initial selection
 	this->page = 0;
 	this->card = 0;
 	this->mode = kTradingCardsScreenModeShowCards;
@@ -83,10 +83,10 @@ void TradingCardsScreenState::enter(void* owner)
 	TradingCardsScreenState::positionCursor(this);
 	TradingCardsScreenState::applyMode(this);
 
-	// enable user input
+	// Enable user input
 	VUEngine::enableKeypad(VUEngine::getInstance());
 
-	// start fade in effect
+	// Start fade in effect
 	Camera::startEffect(Camera::getInstance(), kHide);
 	Camera::startEffect(Camera::getInstance(),
 		kFadeTo, // effect type

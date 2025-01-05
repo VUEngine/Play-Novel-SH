@@ -169,7 +169,7 @@ ComponentSpec* const LowPowerIndicatorBlackActorComponentSpecs[] =
 
 LowPowerActorROMSpec LowPowerIndicatorBlackActorSpec =
 {
-	// animated actor
+	// Animated actor
 	{
 		// actor
 		// Class allocator

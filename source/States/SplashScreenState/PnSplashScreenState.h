@@ -22,7 +22,7 @@
 
 abstract class PnSplashScreenState : GameState
 {
-	// state to enter after this one
+	// State to enter after this one
 	GameState nextState;
 	// spec of screen's stage
 	StageSpec* stageSpec;
