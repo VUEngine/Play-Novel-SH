@@ -44,7 +44,7 @@ void IntroScreenState::enter(void* owner)
 {
 	Base::enter(this, owner);
 
-	VUEngine::disableKeypad(VUEngine::getInstance());
+	VUEngine::disableKeypad();
 	this->nextState = GameState::safeCast(TitleScreenState::getInstance());
 	IntroScreenState::addEventListener(this, ListenerObject::safeCast(this), (EventListener)IntroScreenState::onIntroDefaultAnimationComplete, kEventIntroAnimationCompleted);
 }

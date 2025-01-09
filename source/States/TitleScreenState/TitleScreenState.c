@@ -58,9 +58,9 @@ void TitleScreenState::enter(void* owner)
 	GameState::startClocks(GameState::safeCast(this));
 
 	// Enable user input
-	VUEngine::enableKeypad(VUEngine::getInstance());
+	VUEngine::enableKeypad();
 
-	UIContainer uiContainer = VUEngine::getUIContainer(VUEngine::getInstance());
+	UIContainer uiContainer = VUEngine::getUIContainer();
 	this->actorStart = Actor::safeCast(UIContainer::getChildByName(uiContainer, "Start", true));
 	this->actorCards = Actor::safeCast(UIContainer::getChildByName(uiContainer, "Cards", true));
 	this->actorMobile = Actor::safeCast(UIContainer::getChildByName(uiContainer, "Mobile", true));
@@ -68,8 +68,8 @@ void TitleScreenState::enter(void* owner)
 	TitleScreenState::updateOptionAnimations(this);
 
 	// Start fade in effect
-	Camera::startEffect(Camera::getInstance(), kHide);
-	Camera::startEffect(Camera::getInstance(),
+	Camera::startEffect(kHide);
+	Camera::startEffect(
 		kFadeTo, // effect type
 		0, // initial delay (in ms)
 		NULL, // target brightness

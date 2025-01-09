@@ -50,16 +50,16 @@ int32 game(void)
 	);
 
 	// Start the game
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(VisualNovelState::getInstance()));
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(ScenarioSelectScreenState::getInstance()));
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(LoadGameScreenState::getInstance()));
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(MobileScreenState::getInstance()));
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(TradingCardsScreenState::getInstance()));
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(TitleScreenState::getInstance()));
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(IntroScreenState::getInstance()));
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(MobileSystemScreenState::getInstance()));
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(KCETScreenState::getInstance()));
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(KonamiScreenState::getInstance()));
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(AdjustmentScreenState::getInstance()));
-	return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(PrecautionScreenState::getInstance()));
+	//return VUEngine::start(GameState::safeCast(VisualNovelState::getInstance()));
+	//return VUEngine::start(GameState::safeCast(ScenarioSelectScreenState::getInstance()));
+	//return VUEngine::start(GameState::safeCast(LoadGameScreenState::getInstance()));
+	//return VUEngine::start(GameState::safeCast(MobileScreenState::getInstance()));
+	//return VUEngine::start(GameState::safeCast(TradingCardsScreenState::getInstance()));
+	//return VUEngine::start(GameState::safeCast(TitleScreenState::getInstance()));
+	//return VUEngine::start(GameState::safeCast(IntroScreenState::getInstance()));
+	//return VUEngine::start(GameState::safeCast(MobileSystemScreenState::getInstance()));
+	//return VUEngine::start(GameState::safeCast(KCETScreenState::getInstance()));
+	//return VUEngine::start(GameState::safeCast(KonamiScreenState::getInstance()));
+	//return VUEngine::start(GameState::safeCast(AdjustmentScreenState::getInstance()));
+	return VUEngine::start(GameState::safeCast(PrecautionScreenState::getInstance()));
 }

@@ -60,7 +60,7 @@ void MobileScreenState::enter(void* owner)
 	GameState::startClocks(GameState::safeCast(this));
 
 	// Disable user input
-	VUEngine::disableKeypad(VUEngine::getInstance());
+	VUEngine::disableKeypad();
 
 	// Show prepare message
 	ListenerObject::sendMessageToSelf(ListenerObject::safeCast(this), kMobileScreenMessageShowPrepare, 1, 0);
@@ -70,8 +70,8 @@ void MobileScreenState::enter(void* owner)
 	ListenerObject::sendMessageToSelf(ListenerObject::safeCast(this), kMobileScreenMessageShowError, CONNECTION_TIMEOUT, 0);
 
 	// Start fade in effect
-	Camera::startEffect(Camera::getInstance(), kHide);
-	Camera::startEffect(Camera::getInstance(),
+	Camera::startEffect(kHide);
+	Camera::startEffect(
 		kFadeTo, // effect type
 		0, // initial delay (in ms)
 		NULL, // target brightness
@@ -90,7 +90,7 @@ bool MobileScreenState::handleMessage(Telegram telegram)
 			break;
 		case kMobileScreenMessageShowError:
 			MobileScreenState::printError(this);
-			VUEngine::enableKeypad(VUEngine::getInstance());
+			VUEngine::enableKeypad();
 			break;
 	}
 
@@ -100,12 +100,12 @@ bool MobileScreenState::handleMessage(Telegram telegram)
 void MobileScreenState::printPrepare()
 {
 	const char* translations = I18n::getText(I18n::getInstance(), kStringMobilePrepareCommunication);
-	Printing::text(Printing::getInstance(), translations, 0, 0, "Silent");
+	Printing::text(translations, 0, 0, "Silent");
 }
 
 void MobileScreenState::printError()
 {
 	const char* translations = I18n::getText(I18n::getInstance(), kStringMobileError);
-	Printing::clear(Printing::getInstance());
-	Printing::text(Printing::getInstance(), translations, 0, 0, "Silent");
+	Printing::clear();
+	Printing::text(translations, 0, 0, "Silent");
 }

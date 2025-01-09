@@ -97,7 +97,7 @@ void GameSaveDataManager::destructor()
 
 void GameSaveDataManager::writeDefaults()
 {
-	SRAMManager::save(SRAMManager::getInstance(), (BYTE*)&GameSaveDataDefaults, 0, sizeof(GameSaveDataDefaults));
+	SRAMManager::save((BYTE*)&GameSaveDataDefaults, 0, sizeof(GameSaveDataDefaults));
 }
 
 int32 GameSaveDataManager::getSaveDataSize()

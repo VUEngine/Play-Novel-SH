@@ -61,9 +61,9 @@ void LoadGameScreenState::enter(void* owner)
 
 	GameState::startClocks(GameState::safeCast(this));
 
-	Printing::setWorldCoordinates(Printing::getInstance(), 0, 2, -4, -1);
+	Printing::setWorldCoordinates(0, 2, -4, -1);
 
-	UIContainer uiContainer = VUEngine::getUIContainer(VUEngine::getInstance());
+	UIContainer uiContainer = VUEngine::getUIContainer();
 	this->actorCursor = Actor::safeCast(UIContainer::getChildByName(uiContainer, "CURSOR", true));
 	this->actorSubChapterBackground = Actor::safeCast(UIContainer::getChildByName(uiContainer, "SUBCHPTR", true));
 	this->actorSlot[0] = Actor::safeCast(UIContainer::getChildByName(uiContainer, "SLOT0", true));
@@ -83,12 +83,12 @@ void LoadGameScreenState::enter(void* owner)
 	LoadGameScreenState::loadProgress(this);
 	LoadGameScreenState::printSlotsInfo(this);
 
-	VUEngine::disableKeypad(VUEngine::getInstance());
-	Camera::startEffect(Camera::getInstance(), kHide);
+	VUEngine::disableKeypad();
+	Camera::startEffect(kHide);
 	ListenerObject::sendMessageToSelf(ListenerObject::safeCast(this), kLoadGameScreenMessageShowScreen, 1900, 0);
 
-//	VUEngine::enableKeypad(VUEngine::getInstance());
-//	Camera::startEffect(Camera::getInstance(), kShow);
+//	VUEngine::enableKeypad();
+//	Camera::startEffect(kShow);
 }
 
 void LoadGameScreenState::execute(void* owner)
@@ -219,8 +219,8 @@ bool LoadGameScreenState::handleMessage(Telegram telegram)
 	{
 		case kLoadGameScreenMessageShowScreen:
 		{
-			VUEngine::enableKeypad(VUEngine::getInstance());
-			Camera::startEffect(Camera::getInstance(),
+			VUEngine::enableKeypad();
+			Camera::startEffect(
 				kFadeTo, // effect type
 				0, // initial delay (in ms)
 				NULL, // target brightness
@@ -284,18 +284,18 @@ void LoadGameScreenState::printSlotsInfo()
 
 void LoadGameScreenState::printSlotInfo(uint8 slot, int8 yPos, bool withSubChapter)
 {
-	Printing::setPalette(Printing::getInstance(), 1);
+	Printing::setPalette(1);
 	uint16 language = I18n::getActiveLanguage(I18n::getInstance());
 
 	char* actTitle = PlayNovelScenarios.scenarios[this->progress[slot].scenario]->acts[this->progress[slot].act]->title[language];
-	FontSize actTitleTextSize = Printing::getTextSize(Printing::getInstance(), actTitle, "Silent");
-	Printing::text(Printing::getInstance(), actTitle, 43 - actTitleTextSize.x, yPos, "Silent");
+	FontSize actTitleTextSize = Printing::getTextSize(actTitle, "Silent");
+	Printing::text(actTitle, 43 - actTitleTextSize.x, yPos, "Silent");
 
 	char* chapterTitle = PlayNovelScenarios.scenarios[this->progress[slot].scenario]->acts[this->progress[slot].act]->chapters[this->progress[slot].chapter]->title[language];
-	FontSize chapterTitleTextSize = Printing::getTextSize(Printing::getInstance(), chapterTitle, "Silent");
-	Printing::text(Printing::getInstance(), "\"", 41 - chapterTitleTextSize.x, yPos + 2, "Silent");
-	Printing::text(Printing::getInstance(), "\"", 42, yPos + 2, "Silent");
-	Printing::text(Printing::getInstance(), chapterTitle, 42 - chapterTitleTextSize.x, yPos + 2, "Silent");
+	FontSize chapterTitleTextSize = Printing::getTextSize(chapterTitle, "Silent");
+	Printing::text("\"", 41 - chapterTitleTextSize.x, yPos + 2, "Silent");
+	Printing::text("\"", 42, yPos + 2, "Silent");
+	Printing::text(chapterTitle, 42 - chapterTitleTextSize.x, yPos + 2, "Silent");
 
 	if(withSubChapter)
 	{
@@ -304,20 +304,20 @@ void LoadGameScreenState::printSlotInfo(uint8 slot, int8 yPos, bool withSubChapt
 			->chapters[this->progress[slot].chapter]
 			->subChapters[this->progress[slot].subChapter]
 			->title[language];
-		FontSize subChapterTitleTextSize = Printing::getTextSize(Printing::getInstance(), subChapterTitle, "Silent");
-		Printing::text(Printing::getInstance(), "\"", 41 - subChapterTitleTextSize.x, yPos + 6, "Silent");
-		Printing::text(Printing::getInstance(), "\"", 42, yPos + 6, "Silent");
-		Printing::text(Printing::getInstance(), subChapterTitle, 42 - subChapterTitleTextSize.x, yPos + 6, "Silent");
+		FontSize subChapterTitleTextSize = Printing::getTextSize(subChapterTitle, "Silent");
+		Printing::text("\"", 41 - subChapterTitleTextSize.x, yPos + 6, "Silent");
+		Printing::text("\"", 42, yPos + 6, "Silent");
+		Printing::text(subChapterTitle, 42 - subChapterTitleTextSize.x, yPos + 6, "Silent");
 	}
 }
 
 void LoadGameScreenState::selectSlot() 
 {
-	VUEngine::disableKeypad(VUEngine::getInstance());
+	VUEngine::disableKeypad();
 	if(this->progress[this->slot].started) 
 	{
 		Actor::hide(this->actorCursor);
-		Printing::clear(Printing::getInstance());
+		Printing::clear();
 		for(uint8 slot = 0; slot < NUMBER_OF_SAVE_SLOTS; slot++) 
 		{
 			if(this->slot != slot)
@@ -346,13 +346,13 @@ void LoadGameScreenState::clearMenu()
 {
 	for(uint8 i = 14; i < 28; i++)
 	{
-		Printing::text(Printing::getInstance(), "                                                ", 0, i, "Silent");
+		Printing::text("                                                ", 0, i, "Silent");
 	}
 }
 
 void LoadGameScreenState::showSlot() 
 {
-	VUEngine::enableKeypad(VUEngine::getInstance());
+	VUEngine::enableKeypad();
 	this->mode = kLoadGameScreenModeShowSlot;
 	Actor::show(this->actorSubChapterBackground);
 	LoadGameScreenState::printSlotInfo(this, this->slot, 6, true);
@@ -367,7 +367,7 @@ void LoadGameScreenState::showDeleteSlot()
 
 void LoadGameScreenState::printSlotMenu() 
 {
-	Printing::setPalette(Printing::getInstance(), 0);
+	Printing::setPalette(0);
 	LoadGameScreenState::clearMenu(this);
 	VirtualList options = new VirtualList();
 
@@ -394,12 +394,12 @@ void LoadGameScreenState::printSlotMenu()
 
 void LoadGameScreenState::printDeleteMenu() 
 {
-	Printing::setPalette(Printing::getInstance(), 0);
+	Printing::setPalette(0);
 	LoadGameScreenState::clearMenu(this);
 
 	const char* deleteDataText = I18n::getText(I18n::getInstance(), kStringDeleteData);
-	FontSize deleteDataTextFontSize = Printing::getTextSize(Printing::getInstance(), deleteDataText, "Silent");
-	Printing::text(Printing::getInstance(), deleteDataText, (__HALF_SCREEN_WIDTH_IN_CHARS) - (deleteDataTextFontSize.x >> 1), 17, "Silent");
+	FontSize deleteDataTextFontSize = Printing::getTextSize(deleteDataText, "Silent");
+	Printing::text(deleteDataText, (__HALF_SCREEN_WIDTH_IN_CHARS) - (deleteDataTextFontSize.x >> 1), 17, "Silent");
 
 	VirtualList options = new VirtualList();
 

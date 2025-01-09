@@ -61,7 +61,7 @@ void TradingCardsScreenState::enter(void* owner)
 	GameState::startClocks(GameState::safeCast(this));
 
 	// Get actor references
-	UIContainer uiContainer = VUEngine::getUIContainer(VUEngine::getInstance());
+	UIContainer uiContainer = VUEngine::getUIContainer();
 	this->actorBackground = Actor::safeCast(UIContainer::getChildByName(uiContainer, "BG", true));
 	this->actorCursor = Actor::safeCast(UIContainer::getChildByName(uiContainer, "CURSOR", true));
 	this->actorNumbers = Actor::safeCast(UIContainer::getChildByName(uiContainer, "NUM", true));
@@ -84,11 +84,11 @@ void TradingCardsScreenState::enter(void* owner)
 	TradingCardsScreenState::applyMode(this);
 
 	// Enable user input
-	VUEngine::enableKeypad(VUEngine::getInstance());
+	VUEngine::enableKeypad();
 
 	// Start fade in effect
-	Camera::startEffect(Camera::getInstance(), kHide);
-	Camera::startEffect(Camera::getInstance(),
+	Camera::startEffect(kHide);
+	Camera::startEffect(
 		kFadeTo, // effect type
 		0, // initial delay (in ms)
 		NULL, // target brightness
@@ -224,7 +224,7 @@ void TradingCardsScreenState::applyMode()
 			Actor::show(Actor::safeCast(this->actorCard8));
 			Actor::show(this->actorCursor);
 			TradingCardsScreenState::applyPage(this);
-			Printing::clear(Printing::getInstance());
+			Printing::clear();
 			break;
 		}
 		case kTradingCardsScreenModeHighlightCard:
@@ -244,9 +244,9 @@ void TradingCardsScreenState::applyMode()
 			Actor::playAnimation(this->actorLargeCard, Utilities::itoa(cardNumber, 10, 1));
 
 			const char* translation = I18n::getText(I18n::getInstance(), kStringTradingCard01Title + cardNumber);
-			FontSize translationTextSize = Printing::getTextSize(Printing::getInstance(), translation, "Silent");
-			Printing::text(Printing::getInstance(), translation, ((__HALF_SCREEN_WIDTH_IN_CHARS) - (translationTextSize.x >> 1)), 23, "Silent");
-			Printing::int32(Printing::getInstance(), cardNumber + 1, cardNumber < 9 ? 24 : 23, 25, "Silent");
+			FontSize translationTextSize = Printing::getTextSize(translation, "Silent");
+			Printing::text(translation, ((__HALF_SCREEN_WIDTH_IN_CHARS) - (translationTextSize.x >> 1)), 23, "Silent");
+			Printing::int32(cardNumber + 1, cardNumber < 9 ? 24 : 23, 25, "Silent");
 			Actor::show(Actor::safeCast(this->actorLargeCard));
 			break;
 		}

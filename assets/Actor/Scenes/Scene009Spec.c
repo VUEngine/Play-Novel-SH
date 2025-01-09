@@ -107,15 +107,14 @@ BgmapSpriteROMSpec Scene009BackgroundBaseSpriteSpec =
 		{0, -32, 8, 4},
 	},
 
-	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
-	// make sure to use the proper corresponding sprite type throughout the spec (BgmapSprite or ObjectSprite)
+	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
+	__WORLD_ON,
+
+	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE or __WORLD_HBIAS)
 	__WORLD_BGMAP,
 
 	// Pointer to affine/hbias manipulation function
-	NULL,
-
-	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
-	__WORLD_ON,
+	NULL
 };
 
 TextureROMSpec Scene009BackgroundOverlayTextureSpec =
@@ -173,15 +172,14 @@ BgmapSpriteROMSpec Scene009BackgroundOverlaySpriteSpec =
 		{0, -32, 7, 4},
 	},
 
-	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
-	// make sure to use the proper corresponding sprite type throughout the spec (BgmapSprite or ObjectSprite)
+	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
+	__WORLD_ON,
+
+	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE or __WORLD_HBIAS)
 	__WORLD_BGMAP,
 
 	// Pointer to affine/hbias manipulation function
-	NULL,
-
-	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
-	__WORLD_ON,
+	NULL
 };
 
 TextureROMSpec Scene009Snow1TextureSpec =
@@ -247,14 +245,14 @@ AutoScrollingMBgmapSpriteROMSpec Scene009Snow1SpriteSpec =
 				{64, 0, 6, 3},
 			},
 
-			// The display mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
+			// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
+			__WORLD_ON,
+
+			// The display mode (__WORLD_BGMAP, __WORLD_AFFINE or __WORLD_HBIAS)
 			__WORLD_BGMAP,
 
 			// Pointer to affine/hbias manipulation function
-			NULL,
-
-			// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
-			__WORLD_ON,
+			NULL
 		},
 
 		(TextureSpec**)Scene009Snow1Textures,
@@ -345,14 +343,14 @@ AutoScrollingMBgmapSpriteROMSpec Scene009Snow2SpriteSpec =
 				{64, 0, 5, 2},
 			},
 
-			// The display mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
+			// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
+			__WORLD_ON,
+
+			// The display mode (__WORLD_BGMAP, __WORLD_AFFINE or __WORLD_HBIAS)
 			__WORLD_BGMAP,
 
 			// Pointer to affine/hbias manipulation function
-			NULL,
-
-			// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
-			__WORLD_ON,
+			NULL
 		},
 
 		(TextureSpec**)Scene009Snow2Textures,
@@ -435,15 +433,14 @@ BgmapSpriteROMSpec Scene009CarInteriorSpriteSpec =
 		{0, 0, 4, 2},
 	},
 
-	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
-	// make sure to use the proper corresponding sprite type throughout the spec (BgmapSprite or ObjectSprite)
+	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
+	__WORLD_ON,
+
+	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE or __WORLD_HBIAS)
 	__WORLD_BGMAP,
 
 	// Pointer to affine/hbias manipulation function
-	NULL,
-
-	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
-	__WORLD_ON,
+	NULL
 };
 
 TextureROMSpec Scene009SeatTextureSpec =
@@ -501,15 +498,14 @@ BgmapSpriteROMSpec Scene009SeatSpriteSpec =
 		{-68, -16, 3, 1},
 	},
 
-	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
-	// make sure to use the proper corresponding sprite type throughout the spec (BgmapSprite or ObjectSprite)
+	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
+	__WORLD_ON,
+
+	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE or __WORLD_HBIAS)
 	__WORLD_BGMAP,
 
 	// Pointer to affine/hbias manipulation function
-	NULL,
-
-	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
-	__WORLD_ON,
+	NULL
 };
 
 TextureROMSpec Scene009HarryBlackTextureSpec =
@@ -567,15 +563,14 @@ BgmapSpriteROMSpec Scene009HarryBlackSpriteSpec =
 		{20, -8, 2, 0},
 	},
 
-	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
-	// make sure to use the proper corresponding sprite type throughout the spec (BgmapSprite or ObjectSprite)
+	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
+	__WORLD_ON,
+
+	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE or __WORLD_HBIAS)
 	__WORLD_BGMAP,
 
 	// Pointer to affine/hbias manipulation function
-	NULL,
-
-	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
-	__WORLD_ON,
+	NULL
 };
 
 TextureROMSpec Scene009HarryBaseTextureSpec =
@@ -633,15 +628,14 @@ BgmapSpriteROMSpec Scene009HarryBaseSpriteSpec =
 		{20, -8, 1, 0},
 	},
 
-	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
-	// make sure to use the proper corresponding sprite type throughout the spec (BgmapSprite or ObjectSprite)
+	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
+	__WORLD_ON,
+
+	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE or __WORLD_HBIAS)
 	__WORLD_BGMAP,
 
 	// Pointer to affine/hbias manipulation function
-	NULL,
-
-	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
-	__WORLD_ON,
+	NULL
 };
 
 TextureROMSpec Scene009HarryOverlayTextureSpec =
@@ -699,15 +693,14 @@ BgmapSpriteROMSpec Scene009HarryOverlaySpriteSpec =
 		{20, -8, -1, 0},
 	},
 
-	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
-	// make sure to use the proper corresponding sprite type throughout the spec (BgmapSprite or ObjectSprite)
+	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
+	__WORLD_ON,
+
+	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE or __WORLD_HBIAS)
 	__WORLD_BGMAP,
 
 	// Pointer to affine/hbias manipulation function
-	NULL,
-
-	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
-	__WORLD_ON,
+	NULL
 };
 
 TextureROMSpec Scene009SteeringWheelTextureSpec =
@@ -765,15 +758,14 @@ BgmapSpriteROMSpec Scene009SteeringWheelSpriteSpec =
 		{88, 3, -2, -1},
 	},
 
-	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
-	// make sure to use the proper corresponding sprite type throughout the spec (BgmapSprite or ObjectSprite)
+	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
+	__WORLD_ON,
+
+	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE or __WORLD_HBIAS)
 	__WORLD_BGMAP,
 
 	// Pointer to affine/hbias manipulation function
-	NULL,
-
-	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
-	__WORLD_ON,
+	NULL
 };
 
 TextureROMSpec Scene009FrameTextureSpec =
@@ -831,15 +823,14 @@ BgmapSpriteROMSpec Scene009FrameSpriteSpec =
 		{0, 0, -4, 0},
 	},
 
-	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
-	// make sure to use the proper corresponding sprite type throughout the spec (BgmapSprite or ObjectSprite)
+	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
+	__WORLD_ON,
+
+	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE or __WORLD_HBIAS)
 	__WORLD_BGMAP,
 
 	// Pointer to affine/hbias manipulation function
-	NULL,
-
-	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
-	__WORLD_ON,
+	NULL
 };
 
 ComponentSpec* const Scene009ActorComponentSpecs[] = 
@@ -885,4 +876,3 @@ ActorROMSpec Scene009ActorSpec =
 	// Animation to play automatically
 	NULL
 };
-

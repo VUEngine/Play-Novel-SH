@@ -98,15 +98,14 @@ BgmapSpriteROMSpec MobileSystemLogoASpriteSpec =
 		{0, 0, 0, 0},
 	},
 
-	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
-	// make sure to use the proper corresponding sprite type throughout the spec (BgmapSprite or ObjectSprite)
+	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
+	__WORLD_ON,
+
+	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE or __WORLD_HBIAS)
 	__WORLD_BGMAP,
 
 	// Pointer to affine/hbias manipulation function
-	NULL,
-
-	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
-	__WORLD_ON,
+	NULL
 };
 
 TextureROMSpec MobileSystemLogoBTextureSpec =
@@ -164,15 +163,14 @@ BgmapSpriteROMSpec MobileSystemLogoBSpriteSpec =
 		{0, 0, 1, 0},
 	},
 
-	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
-	// make sure to use the proper corresponding sprite type throughout the spec (BgmapSprite or ObjectSprite)
+	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
+	__WORLD_ON,
+
+	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE or __WORLD_HBIAS)
 	__WORLD_BGMAP,
 
 	// Pointer to affine/hbias manipulation function
-	NULL,
-
-	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
-	__WORLD_ON,
+	NULL
 };
 
 ComponentSpec* const MobileSystemLogoActorComponentSpecs[] = 
@@ -209,4 +207,3 @@ ActorROMSpec MobileSystemLogoActorSpec =
 	// Animation to play automatically
 	NULL
 };
-

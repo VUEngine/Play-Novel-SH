@@ -152,15 +152,14 @@ BgmapSpriteROMSpec ScenarioBookBaseSpriteSpec =
 		{0, 0, -1, -2},
 	},
 
-	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
-	// make sure to use the proper corresponding sprite type throughout the spec (BgmapSprite or ObjectSprite)
-	__WORLD_BGMAP,
-
-	// Pointer to affine / hbias manipulation function
-	NULL,
-
 	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
 	__WORLD_ON,
+
+	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE or __WORLD_HBIAS)
+	__WORLD_BGMAP,
+
+	// Pointer to affine/hbias manipulation function
+	NULL
 };
 
 CharSetROMSpec ScenarioBookOverlayCharSetSpec =
@@ -236,15 +235,14 @@ BgmapSpriteROMSpec ScenarioBookOverlaySpriteSpec =
 		{0, 0, -2, -2},
 	},
 
-	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE, __WORLD_OBJECT or __WORLD_HBIAS)
-	// make sure to use the proper corresponding sprite type throughout the spec (BgmapSprite or ObjectSprite)
-	__WORLD_BGMAP,
-
-	// Pointer to affine / hbias manipulation function
-	NULL,
-
 	// Flag to indicate in which display to show the texture (__WORLD_ON, __WORLD_LON or __WORLD_RON)
 	__WORLD_ON,
+
+	// The display mode (__WORLD_BGMAP, __WORLD_AFFINE or __WORLD_HBIAS)
+	__WORLD_BGMAP,
+
+	// Pointer to affine/hbias manipulation function
+	NULL
 };
 
 PositionedActorROMSpec ScenarioBookChildrenActors[] =

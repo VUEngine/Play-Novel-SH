@@ -63,11 +63,11 @@ void VisualNovelState::enter(void* owner)
 	GameState::startClocks(GameState::safeCast(this));
 
 	// Optimize printing layer to save performance
-	Printing::setWorldCoordinates(Printing::getInstance(), 16, 172, -6, 0);
-	Printing::setPalette(Printing::getInstance(), 0);
+	Printing::setWorldCoordinates(16, 172, -6, 0);
+	Printing::setPalette(0);
 
 	// Initialize variables
-	UIContainer uiContainer = VUEngine::getUIContainer(VUEngine::getInstance());
+	UIContainer uiContainer = VUEngine::getUIContainer();
 	this->actorFlauros = Actor::safeCast(UIContainer::getChildByName(uiContainer, "FLAUROS", true));
 	this->charNumber = 0;
 	this->charX = 0;
@@ -85,11 +85,11 @@ void VisualNovelState::enter(void* owner)
 	this->progress.started = true;
 
 	// Enable user input
-	VUEngine::enableKeypad(VUEngine::getInstance());
+	VUEngine::enableKeypad();
 
 	// Start fade in effect
-	Camera::startEffect(Camera::getInstance(), kHide);
-	Camera::startEffect(Camera::getInstance(),
+	Camera::startEffect(kHide);
+	Camera::startEffect(
 		kFadeTo, // effect type
 		0, // initial delay (in ms)
 		NULL, // target brightness
@@ -109,11 +109,11 @@ void VisualNovelState::execute(void* owner)
 	Base::execute(this, owner);
 
 	/*
-	Printing::int32(Printing::getInstance(), this->progress.act, 0, 5, "Silent");
-	Printing::int32(Printing::getInstance(), this->progress.chapter, 3, 5, "Silent");
-	Printing::int32(Printing::getInstance(), this->progress.subChapter, 6, 5, "Silent");
-	Printing::int32(Printing::getInstance(), this->progress.scene, 9, 5, "Silent");
-	Printing::int32(Printing::getInstance(), this->progress.page, 12, 5, "Silent");
+	Printing::int32(this->progress.act, 0, 5, "Silent");
+	Printing::int32(this->progress.chapter, 3, 5, "Silent");
+	Printing::int32(this->progress.subChapter, 6, 5, "Silent");
+	Printing::int32(this->progress.scene, 9, 5, "Silent");
+	Printing::int32(this->progress.page, 12, 5, "Silent");
 	*/
 }
 
@@ -274,7 +274,7 @@ void VisualNovelState::showPage()
 		}
 		case kFadeTypeNormal:
 		{
-			Camera::startEffect(Camera::getInstance(),
+			Camera::startEffect(
 				kFadeTo, // effect type
 				200, // initial delay (in ms)
 				NULL, // target brightness
@@ -286,7 +286,7 @@ void VisualNovelState::showPage()
 		}
 		case kFadeTypeSlow:
 		{
-			Camera::startEffect(Camera::getInstance(),
+			Camera::startEffect(
 				kFadeTo, // effect type
 				200, // initial delay (in ms)
 				NULL, // target brightness
@@ -315,7 +315,7 @@ void VisualNovelState::hidePage()
 			->fadeOutType
 		: kFadeTypeNone;
 
-	VUEngine::disableKeypad(VUEngine::getInstance());
+	VUEngine::disableKeypad();
 
 	switch(fade)
 	{
@@ -326,9 +326,9 @@ void VisualNovelState::hidePage()
 		}
 		case kFadeTypeNormal:
 		{
-			VUEngine::disableKeypad(VUEngine::getInstance());
+			VUEngine::disableKeypad();
 			Brightness brightness = (Brightness){0, 0, 0};
-			Camera::startEffect(Camera::getInstance(),
+			Camera::startEffect(
 				kFadeTo, // effect type
 				0, // initial delay (in ms)
 				&brightness, // target brightness
@@ -340,9 +340,9 @@ void VisualNovelState::hidePage()
 		}
 		case kFadeTypeSlow:
 		{
-			VUEngine::disableKeypad(VUEngine::getInstance());
+			VUEngine::disableKeypad();
 			Brightness brightness = (Brightness){0, 0, 0};
-			Camera::startEffect(Camera::getInstance(),
+			Camera::startEffect(
 				kFadeTo, // effect type
 				0, // initial delay (in ms)
 				&brightness, // target brightness
@@ -360,7 +360,7 @@ void VisualNovelState::setUpPage()
 	this->charNumber = 0;
 	this->charX = 0;
 	this->charY = 0;
-	Printing::clear(Printing::getInstance());
+	Printing::clear();
 	Actor::hide(this->actorFlauros);
 	this->text = PlayNovelScenarios.scenarios[this->progress.scenario]
 		->acts[this->progress.act]->chapters[this->progress.chapter]
@@ -371,7 +371,7 @@ void VisualNovelState::setUpPage()
 	this->pageFinished = false;
 	this->choicesMenuOptionCount = 0;
 
-	Printing::setPalette(Printing::getInstance(), 0);
+	Printing::setPalette(0);
 }
 
 void VisualNovelState::setUpScene()
@@ -381,7 +381,7 @@ void VisualNovelState::setUpScene()
 			->subChapters[this->progress.subChapter]
 			->scenes[this->progress.scene];
 
-	Stage stage = VUEngine::getStage(VUEngine::getInstance());
+	Stage stage = VUEngine::getStage();
 	Container sceneActor = Container::getChildByName(Container::safeCast(stage), "SCENE", true);
 	if(!isDeleted(sceneActor)) {
 		Stage::destroyChildActor(stage, Actor::safeCast(sceneActor));
@@ -391,18 +391,18 @@ void VisualNovelState::setUpScene()
 
 	if(NULL != scene->sound)
 	{
-		SoundManager::stopAllSounds(SoundManager::getInstance(), true, NULL);
-		SoundManager::playSound(SoundManager::getInstance(), scene->sound, NULL, scene->soundPlaybackType, NULL, NULL);
+		SoundManager::stopAllSounds(true, NULL);
+		SoundManager::playSound(scene->sound, NULL, scene->soundPlaybackType, NULL, NULL);
 	}
 	else if(scene->soundPlaybackType == -1)
 	{
-		SoundManager::stopAllSounds(SoundManager::getInstance(), true, NULL);
+		SoundManager::stopAllSounds(true, NULL);
 	}
 }
 
 void VisualNovelState::startPage()
 {
-	VUEngine::enableKeypad(VUEngine::getInstance());
+	VUEngine::enableKeypad();
 	ListenerObject::sendMessageToSelf(ListenerObject::safeCast(this), kVisualNovelMessagePrintChar, CHARACTER_DELAY, 0);
 }
 
@@ -455,7 +455,7 @@ void VisualNovelState::printCharacter()
 			this->charY += 2;
 			break;
 		default:
-			Printing::text(Printing::getInstance(), (const char *)&text, this->charX++, this->charY, "Silent");
+			Printing::text((const char *)&text, this->charX++, this->charY, "Silent");
 			break;
 	}
 
@@ -465,7 +465,7 @@ void VisualNovelState::printCharacter()
 void VisualNovelState::finishPage()
 {
 	this->pageFinished = true;
-	Printing::text(Printing::getInstance(), this->text, 0, 0, "Silent");
+	Printing::text(this->text, 0, 0, "Silent");
 	if(this->textLength > 0)
 	{
 		Actor::show(this->actorFlauros);
@@ -514,7 +514,7 @@ void VisualNovelState::processUserInput(UserInput userInput)
 		{
 			if(this->choicesMenuOptionCount == 0 && VisualNovelState::sceneHasChoices(this))
 			{
-				Printing::clear(Printing::getInstance());
+				Printing::clear();
 				Actor::hide(this->actorFlauros);
 				VisualNovelState::printChoices(this);
 			}
@@ -574,14 +574,14 @@ void VisualNovelState::printChoices()
 		if(choices->choices[i].text[0] != NULL)
 		{
 			this->choicesMenuOptionCount++;
-			Printing::setPalette(Printing::getInstance(), i == this->choicesMenuOption ? 0 : 3);
+			Printing::setPalette(i == this->choicesMenuOption ? 0 : 3);
 			switch(i)
 			{
-				case 0: Printing::text(Printing::getInstance(), "A)", 0, i * 2, "Silent"); break;
-				case 1: Printing::text(Printing::getInstance(), "B)", 0, i * 2, "Silent"); break;
-				case 2: Printing::text(Printing::getInstance(), "C)", 0, i * 2, "Silent"); break;
+				case 0: Printing::text("A)", 0, i * 2, "Silent"); break;
+				case 1: Printing::text("B)", 0, i * 2, "Silent"); break;
+				case 2: Printing::text("C)", 0, i * 2, "Silent"); break;
 			}
-			Printing::text(Printing::getInstance(), choices->choices[i].text[this->language], 3, i * 2, "Silent");
+			Printing::text(choices->choices[i].text[this->language], 3, i * 2, "Silent");
 		}
 	}
 }

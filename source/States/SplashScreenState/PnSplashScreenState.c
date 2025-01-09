@@ -45,8 +45,8 @@ void PnSplashScreenState::enter(void* owner)
 
 	PnSplashScreenState::print(this);
 	PnSplashScreenState::startClocks(this);
-	Camera::startEffect(Camera::getInstance(), kShow);
-	VUEngine::enableKeypad(VUEngine::getInstance());
+	Camera::startEffect(kShow);
+	VUEngine::enableKeypad();
 }
 
 void PnSplashScreenState::exit(void* owner)
@@ -60,7 +60,7 @@ void PnSplashScreenState::exit(void* owner)
 // state's suspend
 void PnSplashScreenState::suspend(void* owner)
 {
-	Camera::startEffect(Camera::getInstance(), kHide);
+	Camera::startEffect(kHide);
 
 	Base::suspend(this, owner);
 }
@@ -72,7 +72,7 @@ void PnSplashScreenState::resume(void* owner)
 
 	PnSplashScreenState::print(this);
 
-	Camera::startEffect(Camera::getInstance(), kShow);
+	Camera::startEffect(kShow);
 }
 
 bool PnSplashScreenState::processMessage(void* owner __attribute__ ((unused)), Telegram telegram __attribute__ ((unused)))
@@ -98,7 +98,7 @@ void PnSplashScreenState::setNextState(GameState nextState)
 
 void PnSplashScreenState::loadNextState()
 {
-	Camera::startEffect(Camera::getInstance(), kHide);
+	Camera::startEffect(kHide);
 
-	VUEngine::changeState(VUEngine::getInstance(), this->nextState);
+	VUEngine::changeState(this->nextState);
 }
