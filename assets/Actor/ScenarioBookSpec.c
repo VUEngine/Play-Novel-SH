@@ -76,7 +76,7 @@ AnimationFunctionROMSpec* const ScenarioBookAnimationSpecs[] =
 {
 	(AnimationFunction*)&ScenarioBookHarryAnimationSpec,
 	(AnimationFunction*)&ScenarioBookCybilAnimationSpec,
-    NULL,
+	NULL,
 };
 
 CharSetROMSpec ScenarioBookBaseCharSetSpec =

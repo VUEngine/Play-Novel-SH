@@ -55,7 +55,7 @@ AnimationFunctionROMSpec FlaurosDefaultAnimationSpec =
 AnimationFunctionROMSpec* const FlaurosAnimationSpecs[] =
 {
 	(AnimationFunction*)&FlaurosDefaultAnimationSpec,
-    NULL,
+	NULL,
 };
 
 CharSetROMSpec FlaurosBlackCharSetSpec =

@@ -78,7 +78,7 @@ AnimationFunctionROMSpec* const OptionsMainMenuTradingCardsAnimationSpecs[] =
 {
 	(AnimationFunction*)&OptionsMainMenuTradingCardsDefaultEnglishAnimationSpec,
 	(AnimationFunction*)&OptionsMainMenuTradingCardsBlinkEnglishAnimationSpec,
-    NULL,
+	NULL,
 };
 
 CharSetROMSpec OptionsMainMenuTradingCardsCharSetSpec =

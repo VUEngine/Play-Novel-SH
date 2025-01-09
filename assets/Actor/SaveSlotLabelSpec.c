@@ -147,7 +147,7 @@ AnimationFunctionROMSpec* const SaveSlotLabelAnimationSpecs[] =
 	(AnimationFunction*)&SaveSlotLabelEmptyGermanAnimationSpec,
 	(AnimationFunction*)&SaveSlotLabelHarryAnimationSpec,
 	(AnimationFunction*)&SaveSlotLabelCybilAnimationSpec,
-    NULL,
+	NULL,
 };
 
 CharSetROMSpec SaveSlotLabelCharSetSpec =

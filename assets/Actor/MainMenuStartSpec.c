@@ -78,7 +78,7 @@ AnimationFunctionROMSpec* const OptionsMainMenuStartAnimationSpecs[] =
 {
 	(AnimationFunction*)&OptionsMainMenuStartDefaultEnglishAnimationSpec,
 	(AnimationFunction*)&OptionsMainMenuStartBlinkEnglishAnimationSpec,
-    NULL,
+	NULL,
 };
 
 CharSetROMSpec OptionsMainMenuStartCharSetSpec =

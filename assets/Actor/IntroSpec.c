@@ -68,7 +68,7 @@ AnimationFunctionROMSpec IntroDefaultAnimationSpec =
 AnimationFunctionROMSpec* const IntroAnimationSpecs[] =
 {
 	(AnimationFunction*)&IntroDefaultAnimationSpec,
-    NULL,
+	NULL,
 };
 
 CharSetROMSpec IntroCharSetSpec =

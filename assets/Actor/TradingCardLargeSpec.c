@@ -736,7 +736,7 @@ AnimationFunctionROMSpec* const TradingCardLargeAnimationSpecs[] =
 	(AnimationFunction*)&TradingCardLarge29AnimationSpec,
 	(AnimationFunction*)&TradingCardLarge30AnimationSpec,
 	(AnimationFunction*)&TradingCardLarge31AnimationSpec,
-    NULL,
+	NULL,
 };
 
 CharSetROMSpec TradingCardLargeBaseCharSetSpec =

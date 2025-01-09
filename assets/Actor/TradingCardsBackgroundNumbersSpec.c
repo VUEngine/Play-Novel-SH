@@ -116,7 +116,7 @@ AnimationFunctionROMSpec* const TradingCardsBackgroundNumbersAnimationSpecs[] =
 	(AnimationFunction*)&TradingCardsBackgroundNumbers1AnimationSpec,
 	(AnimationFunction*)&TradingCardsBackgroundNumbers2AnimationSpec,
 	(AnimationFunction*)&TradingCardsBackgroundNumbers3AnimationSpec,
-    NULL,
+	NULL,
 };
 
 CharSetROMSpec TradingCardsBackgroundNumbersCharSetSpec =
