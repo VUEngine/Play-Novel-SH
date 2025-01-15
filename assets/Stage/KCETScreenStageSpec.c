@@ -65,7 +65,6 @@ StageROMSpec KCETScreenStageSpec =
 	// Sound config
 	{
 		__DEFAULT_PCM_HZ,
-		false
 	},
 
 	// General stage's attributes

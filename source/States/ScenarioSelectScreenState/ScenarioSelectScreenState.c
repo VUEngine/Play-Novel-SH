@@ -61,13 +61,16 @@ void ScenarioSelectScreenState::enter(void* owner)
 	GameState::startClocks(GameState::safeCast(this));
 
 	// Enable user input
-	VUEngine::enableKeypad();
+	KeypadManager::enable();
 
 	this->option = 0;
 
 	// Start fade in effect
-	Camera::startEffect(kHide);
-	Camera::startEffect(
+	Camera::startEffect(Camera::getInstance(), kHide);
+
+	Camera::startEffect
+	(
+		Camera::getInstance(),
 		kFadeTo, // effect type
 		0, // initial delay (in ms)
 		NULL, // target brightness

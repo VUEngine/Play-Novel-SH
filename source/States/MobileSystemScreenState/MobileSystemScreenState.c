@@ -52,7 +52,7 @@ bool MobileSystemScreenState::handleMessage(Telegram telegram)
 	{
 		case kMobileSystemScreenMessageEnableInput:
 		{
-			VUEngine::enableKeypad();
+			KeypadManager::enable();
 			break;
 		}
 		case kMobileSystemScreenMessageAutoSkip:

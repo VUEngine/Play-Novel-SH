@@ -60,7 +60,7 @@ void MobileScreenState::enter(void* owner)
 	GameState::startClocks(GameState::safeCast(this));
 
 	// Disable user input
-	VUEngine::disableKeypad();
+	KeypadManager::disable();
 
 	// Show prepare message
 	ListenerObject::sendMessageToSelf(ListenerObject::safeCast(this), kMobileScreenMessageShowPrepare, 1, 0);
@@ -70,8 +70,10 @@ void MobileScreenState::enter(void* owner)
 	ListenerObject::sendMessageToSelf(ListenerObject::safeCast(this), kMobileScreenMessageShowError, CONNECTION_TIMEOUT, 0);
 
 	// Start fade in effect
-	Camera::startEffect(kHide);
-	Camera::startEffect(
+	Camera::startEffect(Camera::getInstance(), kHide);
+	Camera::startEffect
+	(
+		Camera::getInstance(),
 		kFadeTo, // effect type
 		0, // initial delay (in ms)
 		NULL, // target brightness
@@ -86,11 +88,14 @@ bool MobileScreenState::handleMessage(Telegram telegram)
 	switch(Telegram::getMessage(telegram))
 	{
 		case kMobileScreenMessageShowPrepare:
+			
 			MobileScreenState::printPrepare(this);
 			break;
+		
 		case kMobileScreenMessageShowError:
+			
 			MobileScreenState::printError(this);
-			VUEngine::enableKeypad();
+			KeypadManager::enable();
 			break;
 	}
 

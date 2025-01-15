@@ -67,8 +67,7 @@ void VisualNovelState::enter(void* owner)
 	Printing::setPalette(0);
 
 	// Initialize variables
-	UIContainer uiContainer = VUEngine::getUIContainer();
-	this->actorFlauros = Actor::safeCast(UIContainer::getChildByName(uiContainer, "FLAUROS", true));
+	this->actorFlauros = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "FLAUROS", true));
 	this->charNumber = 0;
 	this->charX = 0;
 	this->charY = 0;
@@ -85,11 +84,14 @@ void VisualNovelState::enter(void* owner)
 	this->progress.started = true;
 
 	// Enable user input
-	VUEngine::enableKeypad();
+	KeypadManager::enable();
 
 	// Start fade in effect
-	Camera::startEffect(kHide);
-	Camera::startEffect(
+	Camera::startEffect(Camera::getInstance(), kHide);
+
+	Camera::startEffect
+	(
+		Camera::getInstance(),
 		kFadeTo, // effect type
 		0, // initial delay (in ms)
 		NULL, // target brightness
@@ -274,7 +276,9 @@ void VisualNovelState::showPage()
 		}
 		case kFadeTypeNormal:
 		{
-			Camera::startEffect(
+			Camera::startEffect
+			(
+				Camera::getInstance(),
 				kFadeTo, // effect type
 				200, // initial delay (in ms)
 				NULL, // target brightness
@@ -286,7 +290,9 @@ void VisualNovelState::showPage()
 		}
 		case kFadeTypeSlow:
 		{
-			Camera::startEffect(
+			Camera::startEffect
+			(
+				Camera::getInstance(),
 				kFadeTo, // effect type
 				200, // initial delay (in ms)
 				NULL, // target brightness
@@ -315,7 +321,7 @@ void VisualNovelState::hidePage()
 			->fadeOutType
 		: kFadeTypeNone;
 
-	VUEngine::disableKeypad();
+	KeypadManager::disable();
 
 	switch(fade)
 	{
@@ -326,9 +332,13 @@ void VisualNovelState::hidePage()
 		}
 		case kFadeTypeNormal:
 		{
-			VUEngine::disableKeypad();
+			KeypadManager::disable();
+
 			Brightness brightness = (Brightness){0, 0, 0};
-			Camera::startEffect(
+
+			Camera::startEffect
+			(
+				Camera::getInstance(),
 				kFadeTo, // effect type
 				0, // initial delay (in ms)
 				&brightness, // target brightness
@@ -340,9 +350,12 @@ void VisualNovelState::hidePage()
 		}
 		case kFadeTypeSlow:
 		{
-			VUEngine::disableKeypad();
+			KeypadManager::disable();
+
 			Brightness brightness = (Brightness){0, 0, 0};
-			Camera::startEffect(
+			Camera::startEffect
+			(
+				Camera::getInstance(),
 				kFadeTo, // effect type
 				0, // initial delay (in ms)
 				&brightness, // target brightness
@@ -391,18 +404,19 @@ void VisualNovelState::setUpScene()
 
 	if(NULL != scene->sound)
 	{
-		SoundManager::stopAllSounds(true, NULL);
+		SoundManager::stopAllSounds(SoundManager::getInstance(), true, NULL);
 		SoundManager::playSound(scene->sound, NULL, scene->soundPlaybackType, NULL, NULL);
 	}
 	else if(scene->soundPlaybackType == -1)
 	{
-		SoundManager::stopAllSounds(true, NULL);
+		SoundManager::stopAllSounds(SoundManager::getInstance(), true, NULL);
 	}
 }
 
 void VisualNovelState::startPage()
 {
-	VUEngine::enableKeypad();
+	KeypadManager::enable();
+
 	ListenerObject::sendMessageToSelf(ListenerObject::safeCast(this), kVisualNovelMessagePrintChar, CHARACTER_DELAY, 0);
 }
 
@@ -418,7 +432,8 @@ void VisualNovelState::onSceneFadeInComplete(ListenerObject eventFirer __attribu
 
 void VisualNovelState::loadProgress()
 {
-	GameSaveDataManager::getValue(
+	GameSaveDataManager::getValue
+	(
 		GameSaveDataManager::getInstance(), 
 		(BYTE*)&this->progress,
 		offsetof(struct GameSaveData, gameProgress) + (this->saveSlot * sizeof(this->progress)), 
@@ -428,7 +443,8 @@ void VisualNovelState::loadProgress()
 
 void VisualNovelState::saveProgress()
 {
-	GameSaveDataManager::setValue(
+	GameSaveDataManager::setValue
+	(
 		GameSaveDataManager::getInstance(), 
 		(BYTE*)&this->progress, 
 		offsetof(struct GameSaveData, gameProgress) + (this->saveSlot * sizeof(this->progress)), 

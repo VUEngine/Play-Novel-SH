@@ -52,7 +52,7 @@ bool KCETScreenState::handleMessage(Telegram telegram)
 	{
 		case kKCETScreenMessageEnableInput:
 		{
-			VUEngine::enableKeypad();
+			KeypadManager::enable();
 			break;
 		}
 		case kKCETScreenMessageAutoSkip:

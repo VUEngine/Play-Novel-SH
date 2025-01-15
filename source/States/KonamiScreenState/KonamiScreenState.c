@@ -52,7 +52,7 @@ bool KonamiScreenState::handleMessage(Telegram telegram)
 	{
 		case kKonamiScreenMessageEnableInput:
 		{
-			VUEngine::enableKeypad();
+			KeypadManager::enable();
 			break;
 		}
 		case kKonamiScreenMessageAutoSkip:

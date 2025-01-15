@@ -10,7 +10,7 @@
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 #include <LocalizedActor.h>
-#include <StatefulActor.h>
+#include <Actor.h>
 #include <VIPManager.h>
 #include <BgmapAnimatedSprite.h>
 

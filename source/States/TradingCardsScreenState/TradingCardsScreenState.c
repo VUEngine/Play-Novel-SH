@@ -61,19 +61,18 @@ void TradingCardsScreenState::enter(void* owner)
 	GameState::startClocks(GameState::safeCast(this));
 
 	// Get actor references
-	UIContainer uiContainer = VUEngine::getUIContainer();
-	this->actorBackground = Actor::safeCast(UIContainer::getChildByName(uiContainer, "BG", true));
-	this->actorCursor = Actor::safeCast(UIContainer::getChildByName(uiContainer, "CURSOR", true));
-	this->actorNumbers = Actor::safeCast(UIContainer::getChildByName(uiContainer, "NUM", true));
-	this->actorCard1 = Actor::safeCast(UIContainer::getChildByName(uiContainer, "0", true));
-	this->actorCard2 = Actor::safeCast(UIContainer::getChildByName(uiContainer, "1", true));
-	this->actorCard3 = Actor::safeCast(UIContainer::getChildByName(uiContainer, "2", true));
-	this->actorCard4 = Actor::safeCast(UIContainer::getChildByName(uiContainer, "3", true));
-	this->actorCard5 = Actor::safeCast(UIContainer::getChildByName(uiContainer, "4", true));
-	this->actorCard6 = Actor::safeCast(UIContainer::getChildByName(uiContainer, "5", true));
-	this->actorCard7 = Actor::safeCast(UIContainer::getChildByName(uiContainer, "6", true));
-	this->actorCard8 = Actor::safeCast(UIContainer::getChildByName(uiContainer, "7", true));
-	this->actorLargeCard = Actor::safeCast(UIContainer::getChildByName(uiContainer, "CARD", true));
+	this->actorBackground = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "BG", true));
+	this->actorCursor = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "CURSOR", true));
+	this->actorNumbers = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "NUM", true));
+	this->actorCard1 = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "0", true));
+	this->actorCard2 = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "1", true));
+	this->actorCard3 = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "2", true));
+	this->actorCard4 = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "3", true));
+	this->actorCard5 = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "4", true));
+	this->actorCard6 = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "5", true));
+	this->actorCard7 = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "6", true));
+	this->actorCard8 = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "7", true));
+	this->actorLargeCard = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "CARD", true));
 
 	// Initial selection
 	this->page = 0;
@@ -84,11 +83,14 @@ void TradingCardsScreenState::enter(void* owner)
 	TradingCardsScreenState::applyMode(this);
 
 	// Enable user input
-	VUEngine::enableKeypad();
+	KeypadManager::enable();
 
 	// Start fade in effect
-	Camera::startEffect(kHide);
-	Camera::startEffect(
+	Camera::startEffect(Camera::getInstance(), kHide);
+
+	Camera::startEffect
+	(
+		Camera::getInstance(),
 		kFadeTo, // effect type
 		0, // initial delay (in ms)
 		NULL, // target brightness

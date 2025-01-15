@@ -9,7 +9,7 @@
 // INCLUDES
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-#include <StatefulActor.h>
+#include <Actor.h>
 #include <LocalizedActor.h>
 #include <VIPManager.h>
 #include <BgmapAnimatedSprite.h>

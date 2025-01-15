@@ -63,15 +63,14 @@ void LoadGameScreenState::enter(void* owner)
 
 	Printing::setWorldCoordinates(0, 2, -4, -1);
 
-	UIContainer uiContainer = VUEngine::getUIContainer();
-	this->actorCursor = Actor::safeCast(UIContainer::getChildByName(uiContainer, "CURSOR", true));
-	this->actorSubChapterBackground = Actor::safeCast(UIContainer::getChildByName(uiContainer, "SUBCHPTR", true));
-	this->actorSlot[0] = Actor::safeCast(UIContainer::getChildByName(uiContainer, "SLOT0", true));
-	this->actorSlot[1] = Actor::safeCast(UIContainer::getChildByName(uiContainer, "SLOT1", true));
-	this->actorSlot[2] = Actor::safeCast(UIContainer::getChildByName(uiContainer, "SLOT2", true));
-	this->actorSlotLabel[0] = Actor::safeCast(UIContainer::getChildByName(uiContainer, "LABEL0", true));
-	this->actorSlotLabel[1] = Actor::safeCast(UIContainer::getChildByName(uiContainer, "LABEL1", true));
-	this->actorSlotLabel[2] = Actor::safeCast(UIContainer::getChildByName(uiContainer, "LABEL2", true));
+	this->actorCursor = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "CURSOR", true));
+	this->actorSubChapterBackground = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "SUBCHPTR", true));
+	this->actorSlot[0] = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "SLOT0", true));
+	this->actorSlot[1] = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "SLOT1", true));
+	this->actorSlot[2] = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "SLOT2", true));
+	this->actorSlotLabel[0] = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "LABEL0", true));
+	this->actorSlotLabel[1] = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "LABEL1", true));
+	this->actorSlotLabel[2] = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "LABEL2", true));
 
 	this->slot = 0;
 	this->slotMenuOption = 0;
@@ -83,12 +82,12 @@ void LoadGameScreenState::enter(void* owner)
 	LoadGameScreenState::loadProgress(this);
 	LoadGameScreenState::printSlotsInfo(this);
 
-	VUEngine::disableKeypad();
-	Camera::startEffect(kHide);
+	KeypadManager::disable();
+	Camera::startEffect(Camera::getInstance(), kHide);
 	ListenerObject::sendMessageToSelf(ListenerObject::safeCast(this), kLoadGameScreenMessageShowScreen, 1900, 0);
 
-//	VUEngine::enableKeypad();
-//	Camera::startEffect(kShow);
+//	KeypadManager::enable();
+//	Camera::startEffect(Camera::getInstance(), kShow);
 }
 
 void LoadGameScreenState::execute(void* owner)
@@ -219,8 +218,11 @@ bool LoadGameScreenState::handleMessage(Telegram telegram)
 	{
 		case kLoadGameScreenMessageShowScreen:
 		{
-			VUEngine::enableKeypad();
-			Camera::startEffect(
+			KeypadManager::enable();
+
+			Camera::startEffect
+			(
+				Camera::getInstance(),
 				kFadeTo, // effect type
 				0, // initial delay (in ms)
 				NULL, // target brightness
@@ -246,7 +248,8 @@ void LoadGameScreenState::loadProgress()
 
 	for(uint8 slot = 0; slot < NUMBER_OF_SAVE_SLOTS; slot++) 
 	{
-		GameSaveDataManager::getValue(
+		GameSaveDataManager::getValue
+		(
 			GameSaveDataManager::getInstance(), 
 			(BYTE*)&this->progress[slot],
 			offsetof(struct GameSaveData, gameProgress) + slot * sizeof(this->progress[slot]), 
@@ -257,7 +260,8 @@ void LoadGameScreenState::loadProgress()
 
 void LoadGameScreenState::clearProgress()
 {
-	GameSaveDataManager::setValue(
+	GameSaveDataManager::setValue
+	(
 		GameSaveDataManager::getInstance(), 
 		(BYTE*)&EmptyProgress, 
 		offsetof(struct GameSaveData, gameProgress) + this->slot * sizeof(EmptyProgress), 
@@ -313,7 +317,8 @@ void LoadGameScreenState::printSlotInfo(uint8 slot, int8 yPos, bool withSubChapt
 
 void LoadGameScreenState::selectSlot() 
 {
-	VUEngine::disableKeypad();
+	KeypadManager::disable();
+
 	if(this->progress[this->slot].started) 
 	{
 		Actor::hide(this->actorCursor);
@@ -352,7 +357,8 @@ void LoadGameScreenState::clearMenu()
 
 void LoadGameScreenState::showSlot() 
 {
-	VUEngine::enableKeypad();
+	KeypadManager::enable();
+
 	this->mode = kLoadGameScreenModeShowSlot;
 	Actor::show(this->actorSubChapterBackground);
 	LoadGameScreenState::printSlotInfo(this, this->slot, 6, true);
