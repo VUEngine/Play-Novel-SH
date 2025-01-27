@@ -12,7 +12,7 @@
 #include <LibVUEngine.h>
 #include <Actor.h>
 #include <VIPManager.h>
-#include <BgmapAnimatedSprite.h>
+#include <BgmapSprite.h>
 
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DECLARATIONS
@@ -44,8 +44,6 @@ AnimationFunctionROMSpec ScenarioBookHarryAnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"0",
@@ -65,8 +63,6 @@ AnimationFunctionROMSpec ScenarioBookCybilAnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"1",
@@ -136,11 +132,14 @@ BgmapSpriteROMSpec ScenarioBookBaseSpriteSpec =
 		// Component
 		{
 			// Allocator
-			__TYPE(BgmapAnimatedSprite),
+			__TYPE(BgmapSprite),
 
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		true,
 
 		// Spec for the texture to display
 		(TextureSpec*)&ScenarioBookBaseTextureSpec,
@@ -219,11 +218,14 @@ BgmapSpriteROMSpec ScenarioBookOverlaySpriteSpec =
 		// Component
 		{
 			// Allocator
-			__TYPE(BgmapAnimatedSprite),
+			__TYPE(BgmapSprite),
 
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		true,
 
 		// Spec for the texture to display
 		(TextureSpec*)&ScenarioBookOverlayTextureSpec,

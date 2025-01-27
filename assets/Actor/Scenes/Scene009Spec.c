@@ -97,6 +97,9 @@ BgmapSpriteROMSpec Scene009BackgroundBaseSpriteSpec =
 			kSpriteComponent
 		},
 
+		// Is animated?
+		false,
+
 		// Spec for the texture to display
 		(TextureSpec*)&Scene009BackgroundBaseTextureSpec,
 
@@ -161,6 +164,9 @@ BgmapSpriteROMSpec Scene009BackgroundOverlaySpriteSpec =
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		false,
 
 		// Spec for the texture to display
 		(TextureSpec*)&Scene009BackgroundOverlayTextureSpec,
@@ -234,6 +240,9 @@ AutoScrollingMBgmapSpriteROMSpec Scene009Snow1SpriteSpec =
 					// Component type
 					kSpriteComponent
 				},
+
+				// Is animated?
+				false,
 
 				// Spec for the texture to display
 				(TextureSpec*)NULL,
@@ -333,6 +342,9 @@ AutoScrollingMBgmapSpriteROMSpec Scene009Snow2SpriteSpec =
 					kSpriteComponent
 				},
 
+				// Is animated?
+				false,
+
 				// Spec for the texture to display
 				(TextureSpec*)NULL,
 
@@ -423,6 +435,9 @@ BgmapSpriteROMSpec Scene009CarInteriorSpriteSpec =
 			kSpriteComponent
 		},
 
+		// Is animated?
+		false,
+
 		// Spec for the texture to display
 		(TextureSpec*)&Scene009CarInteriorTextureSpec,
 
@@ -487,6 +502,9 @@ BgmapSpriteROMSpec Scene009SeatSpriteSpec =
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		false,
 
 		// Spec for the texture to display
 		(TextureSpec*)&Scene009SeatTextureSpec,
@@ -553,6 +571,9 @@ BgmapSpriteROMSpec Scene009HarryBlackSpriteSpec =
 			kSpriteComponent
 		},
 
+		// Is animated?
+		false,
+
 		// Spec for the texture to display
 		(TextureSpec*)&Scene009HarryBlackTextureSpec,
 
@@ -617,6 +638,9 @@ BgmapSpriteROMSpec Scene009HarryBaseSpriteSpec =
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		false,
 
 		// Spec for the texture to display
 		(TextureSpec*)&Scene009HarryBaseTextureSpec,
@@ -683,6 +707,9 @@ BgmapSpriteROMSpec Scene009HarryOverlaySpriteSpec =
 			kSpriteComponent
 		},
 
+		// Is animated?
+		false,
+
 		// Spec for the texture to display
 		(TextureSpec*)&Scene009HarryOverlayTextureSpec,
 
@@ -748,6 +775,9 @@ BgmapSpriteROMSpec Scene009SteeringWheelSpriteSpec =
 			kSpriteComponent
 		},
 
+		// Is animated?
+		false,
+
 		// Spec for the texture to display
 		(TextureSpec*)&Scene009SteeringWheelTextureSpec,
 
@@ -812,6 +842,9 @@ BgmapSpriteROMSpec Scene009FrameSpriteSpec =
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		false,
 
 		// Spec for the texture to display
 		(TextureSpec*)&Scene009FrameTextureSpec,

@@ -88,6 +88,9 @@ BgmapSpriteROMSpec KonamiLogoASpriteSpec =
 			kSpriteComponent
 		},
 
+		// Is animated?
+		false,
+
 		// Spec for the texture to display
 		(TextureSpec*)&KonamiLogoATextureSpec,
 
@@ -152,6 +155,9 @@ BgmapSpriteROMSpec KonamiLogoBSpriteSpec =
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		false,
 
 		// Spec for the texture to display
 		(TextureSpec*)&KonamiLogoBTextureSpec,

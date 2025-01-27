@@ -70,6 +70,9 @@ BgmapSpriteROMSpec Scene012CherylBaseSpriteSpec =
 			kSpriteComponent
 		},
 
+		// Is animated?
+		false,
+
 		// Spec for the texture to display
 		(TextureSpec*)&Scene012CherylBaseTextureSpec,
 
@@ -134,6 +137,9 @@ BgmapSpriteROMSpec Scene012CherylOverlaySpriteSpec =
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		false,
 
 		// Spec for the texture to display
 		(TextureSpec*)&Scene012CherylOverlayTextureSpec,

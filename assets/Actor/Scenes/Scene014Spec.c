@@ -88,6 +88,9 @@ BgmapSpriteROMSpec Scene014BaseSpriteSpec =
 			kSpriteComponent
 		},
 
+		// Is animated?
+		false,
+
 		// Spec for the texture to display
 		(TextureSpec*)&Scene014BaseTextureSpec,
 
@@ -152,6 +155,9 @@ BgmapSpriteROMSpec Scene014OverlaySpriteSpec =
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		false,
 
 		// Spec for the texture to display
 		(TextureSpec*)&Scene014OverlayTextureSpec,

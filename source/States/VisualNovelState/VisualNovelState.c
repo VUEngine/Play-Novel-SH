@@ -9,6 +9,7 @@
 // INCLUDES
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
+#include <Singleton.h>
 #include <string.h>
 #include <VUEngine.h>
 #include <Utilities.h>
@@ -23,7 +24,7 @@
 #include <VisualNovelState.h>
 #include <ParticleSystem.h>
 #include <KeypadManager.h>
-#include <Printing.h>
+#include <Printer.h>
 #include <AutomaticPauseManager.h>
 #include <GameSaveDataManager.h>
 
@@ -63,8 +64,8 @@ void VisualNovelState::enter(void* owner)
 	GameState::startClocks(GameState::safeCast(this));
 
 	// Optimize printing layer to save performance
-	Printing::setWorldCoordinates(16, 172, -6, 0);
-	Printing::setPalette(0);
+	Printer::setWorldCoordinates(16, 172, -6, 0);
+	Printer::setPalette(0);
 
 	// Initialize variables
 	this->actorFlauros = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "FLAUROS", true));
@@ -111,11 +112,11 @@ void VisualNovelState::execute(void* owner)
 	Base::execute(this, owner);
 
 	/*
-	Printing::int32(this->progress.act, 0, 5, "Silent");
-	Printing::int32(this->progress.chapter, 3, 5, "Silent");
-	Printing::int32(this->progress.subChapter, 6, 5, "Silent");
-	Printing::int32(this->progress.scene, 9, 5, "Silent");
-	Printing::int32(this->progress.page, 12, 5, "Silent");
+	Printer::int32(this->progress.act, 0, 5, "Silent");
+	Printer::int32(this->progress.chapter, 3, 5, "Silent");
+	Printer::int32(this->progress.subChapter, 6, 5, "Silent");
+	Printer::int32(this->progress.scene, 9, 5, "Silent");
+	Printer::int32(this->progress.page, 12, 5, "Silent");
 	*/
 }
 
@@ -373,7 +374,7 @@ void VisualNovelState::setUpPage()
 	this->charNumber = 0;
 	this->charX = 0;
 	this->charY = 0;
-	Printing::clear();
+	Printer::clear();
 	Actor::hide(this->actorFlauros);
 	this->text = PlayNovelScenarios.scenarios[this->progress.scenario]
 		->acts[this->progress.act]->chapters[this->progress.chapter]
@@ -384,7 +385,7 @@ void VisualNovelState::setUpPage()
 	this->pageFinished = false;
 	this->choicesMenuOptionCount = 0;
 
-	Printing::setPalette(0);
+	Printer::setPalette(0);
 }
 
 void VisualNovelState::setUpScene()
@@ -394,18 +395,20 @@ void VisualNovelState::setUpScene()
 			->subChapters[this->progress.subChapter]
 			->scenes[this->progress.scene];
 
-	Stage stage = VUEngine::getStage();
+	Stage stage = this->stage;
 	Container sceneActor = Container::getChildByName(Container::safeCast(stage), "SCENE", true);
+	
 	if(!isDeleted(sceneActor)) {
 		Stage::destroyChildActor(stage, Actor::safeCast(sceneActor));
 	}
+
 	PositionedActor scenePositionedActor = {&DummyContainerActorSpec, {0, -32, 0}, {0, 0, 0}, {1, 1, 1}, 0, "SCENE", (struct PositionedActor*)scene->positionedActors, NULL, false};
 	Stage::spawnChildActor(stage, &scenePositionedActor, true);
 
 	if(NULL != scene->sound)
 	{
 		SoundManager::stopAllSounds(SoundManager::getInstance(), true, NULL);
-		SoundManager::playSound(scene->sound, NULL, scene->soundPlaybackType, NULL, NULL);
+		SoundManager::playSound(scene->sound, NULL, scene->soundPlaybackType, NULL);
 	}
 	else if(scene->soundPlaybackType == -1)
 	{
@@ -471,7 +474,7 @@ void VisualNovelState::printCharacter()
 			this->charY += 2;
 			break;
 		default:
-			Printing::text((const char *)&text, this->charX++, this->charY, "Silent");
+			Printer::text((const char *)&text, this->charX++, this->charY, "Silent");
 			break;
 	}
 
@@ -481,7 +484,7 @@ void VisualNovelState::printCharacter()
 void VisualNovelState::finishPage()
 {
 	this->pageFinished = true;
-	Printing::text(this->text, 0, 0, "Silent");
+	Printer::text(this->text, 0, 0, "Silent");
 	if(this->textLength > 0)
 	{
 		Actor::show(this->actorFlauros);
@@ -530,7 +533,7 @@ void VisualNovelState::processUserInput(UserInput userInput)
 		{
 			if(this->choicesMenuOptionCount == 0 && VisualNovelState::sceneHasChoices(this))
 			{
-				Printing::clear();
+				Printer::clear();
 				Actor::hide(this->actorFlauros);
 				VisualNovelState::printChoices(this);
 			}
@@ -590,14 +593,14 @@ void VisualNovelState::printChoices()
 		if(choices->choices[i].text[0] != NULL)
 		{
 			this->choicesMenuOptionCount++;
-			Printing::setPalette(i == this->choicesMenuOption ? 0 : 3);
+			Printer::setPalette(i == this->choicesMenuOption ? 0 : 3);
 			switch(i)
 			{
-				case 0: Printing::text("A)", 0, i * 2, "Silent"); break;
-				case 1: Printing::text("B)", 0, i * 2, "Silent"); break;
-				case 2: Printing::text("C)", 0, i * 2, "Silent"); break;
+				case 0: Printer::text("A)", 0, i * 2, "Silent"); break;
+				case 1: Printer::text("B)", 0, i * 2, "Silent"); break;
+				case 2: Printer::text("C)", 0, i * 2, "Silent"); break;
 			}
-			Printing::text(choices->choices[i].text[this->language], 3, i * 2, "Silent");
+			Printer::text(choices->choices[i].text[this->language], 3, i * 2, "Silent");
 		}
 	}
 }

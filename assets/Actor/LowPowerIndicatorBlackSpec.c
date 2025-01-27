@@ -9,7 +9,7 @@
 // INCLUDES
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-#include <BgmapAnimatedSprite.h>
+#include <BgmapSprite.h>
 #include <LowPowerActor.h>
 #include <VIPManager.h>
 
@@ -40,8 +40,6 @@ AnimationFunctionROMSpec LowPowerIndicatorBlackHideAnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"Hide",
@@ -63,8 +61,6 @@ AnimationFunctionROMSpec LowPowerIndicatorBlackFlashAnimationSpec =
 	// Whether to play it in loop or not
 	true,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"Flash",
@@ -134,11 +130,14 @@ BgmapSpriteROMSpec LowPowerIndicatorBlackSpriteSpec =
 		// Component
 		{
 			// Allocator
-			__TYPE(BgmapAnimatedSprite),
+			__TYPE(BgmapSprite),
 
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		true,
 
 		// Spec for the texture to display
 		(TextureSpec*)&LowPowerIndicatorBlackTextureSpec,

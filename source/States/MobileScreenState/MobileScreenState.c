@@ -9,6 +9,7 @@
 // INCLUDES
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
+#include <Singleton.h>
 #include <VUEngine.h>
 #include <Utilities.h>
 #include <Actor.h>
@@ -105,12 +106,12 @@ bool MobileScreenState::handleMessage(Telegram telegram)
 void MobileScreenState::printPrepare()
 {
 	const char* translations = I18n::getText(I18n::getInstance(), kStringMobilePrepareCommunication);
-	Printing::text(translations, 0, 0, "Silent");
+	Printer::text(translations, 0, 0, "Silent");
 }
 
 void MobileScreenState::printError()
 {
 	const char* translations = I18n::getText(I18n::getInstance(), kStringMobileError);
-	Printing::clear();
-	Printing::text(translations, 0, 0, "Silent");
+	Printer::clear();
+	Printer::text(translations, 0, 0, "Silent");
 }

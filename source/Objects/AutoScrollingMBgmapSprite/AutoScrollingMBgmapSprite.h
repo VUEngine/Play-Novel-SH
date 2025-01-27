@@ -41,9 +41,7 @@ typedef struct AutoScrollingMBgmapSpriteSpec
 typedef const AutoScrollingMBgmapSpriteSpec AutoScrollingMBgmapSpriteROMSpec;
 
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
-
-//											CLASS'S DECLARATION
-
+// CLASS'S DECLARATION
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 class AutoScrollingMBgmapSprite : MBgmapSprite

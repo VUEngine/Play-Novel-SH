@@ -12,12 +12,12 @@
 // DEFINITIONS
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-FontSpec* const _fonts[] =
+FontData _fontData[] =
 {
-	(FontSpec*)&DefaultFontSpec,
-	(FontSpec*)&ProfilerFontSpec,
-	(FontSpec*)&DebugFontSpec,
-	(FontSpec*)&SilentFontSpec,
+	{(FontSpec*)&DefaultFontSpec, NULL},
+	{(FontSpec*)&ProfilerFontSpec, NULL},
+	{(FontSpec*)&DebugFontSpec, NULL},
+	{(FontSpec*)&SilentFontSpec, NULL},
 	
-	NULL
+	{NULL, NULL}
 };

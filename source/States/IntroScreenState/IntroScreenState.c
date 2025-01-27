@@ -9,6 +9,7 @@
 // INCLUDES
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
+#include <Singleton.h>
 #include <Actor.h>
 #include <GameEvents.h>
 #include <Telegram.h>
@@ -40,19 +41,28 @@ void IntroScreenState::destructor()
 	Base::destructor();
 }
 
+bool IntroScreenState::onEvent(ListenerObject eventFirer __attribute__((unused)), uint16 eventCode)
+{
+	switch(eventCode)
+	{
+		case kEventAnimationCompleted:
+		{
+			ListenerObject::sendMessageToSelf(ListenerObject::safeCast(this), kIntroMessageEndVideo, INTRO_DELAY, 0);	
+	
+			return false;
+		}
+	}
+
+	return Base::onEvent(this, eventFirer, eventCode);
+}
+
 void IntroScreenState::enter(void* owner)
 {
 	Base::enter(this, owner);
 
 	KeypadManager::disable();
 	this->nextState = GameState::safeCast(TitleScreenState::getInstance());
-	IntroScreenState::addEventListener(this, ListenerObject::safeCast(this), (EventListener)IntroScreenState::onIntroDefaultAnimationComplete, kEventIntroAnimationCompleted);
-}
-
-void IntroScreenState::onIntroDefaultAnimationComplete(ListenerObject eventFirer __attribute__((unused)))
-{
-	ListenerObject::sendMessageToSelf(ListenerObject::safeCast(this), kIntroMessageEndVideo, INTRO_DELAY, 0);	
-	IntroScreenState::removeEventListener(this, ListenerObject::safeCast(this), (EventListener)IntroScreenState::onIntroDefaultAnimationComplete, kEventIntroAnimationCompleted);
+	IntroScreenState::addEventListener(this, ListenerObject::safeCast(this), kEventIntroAnimationCompleted);
 }
 
 bool IntroScreenState::handleMessage(Telegram telegram)
@@ -61,7 +71,7 @@ bool IntroScreenState::handleMessage(Telegram telegram)
 	{
 		case kIntroMessageEndVideo:
 		{
-			IntroScreenState::removeEventListener(this, ListenerObject::safeCast(this), (EventListener)IntroScreenState::onIntroDefaultAnimationComplete, kEventIntroAnimationCompleted);
+			IntroScreenState::removeEventListener(this, ListenerObject::safeCast(this), kEventIntroAnimationCompleted);
 			SplashScreenState::loadNextState(SplashScreenState::safeCast(this));
 			break;
 		}

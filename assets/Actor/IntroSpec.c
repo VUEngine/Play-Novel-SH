@@ -10,7 +10,7 @@
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
 #include <ActorExtensions.h>
-#include <BgmapAnimatedSprite.h>
+#include <BgmapSprite.h>
 #include <LibVUEngine.h>
 #include <VIPManager.h>
 
@@ -57,9 +57,6 @@ AnimationFunctionROMSpec IntroDefaultAnimationSpec =
 
 	// Whether to play it in loop or not
 	false,
-
-	// Callback on animation completion
-	(EventListener)Actor_onIntroDefaultAnimationComplete,
 
 	// Animation's name
 	"Default",
@@ -128,11 +125,14 @@ BgmapSpriteROMSpec IntroSpriteSpec =
 		// Component
 		{
 			// Allocator
-			__TYPE(BgmapAnimatedSprite),
+			__TYPE(BgmapSprite),
 
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		true,
 
 		// Spec for the texture to display
 		(TextureSpec*)&IntroTextureSpec,

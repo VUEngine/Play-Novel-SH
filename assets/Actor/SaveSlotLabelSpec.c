@@ -12,7 +12,7 @@
 #include <LibVUEngine.h>
 #include <Actor.h>
 #include <VIPManager.h>
-#include <BgmapAnimatedSprite.h>
+#include <BgmapSprite.h>
 
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DECLARATIONS
@@ -41,8 +41,6 @@ AnimationFunctionROMSpec SaveSlotLabelNoneAnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"Default",
@@ -64,8 +62,6 @@ AnimationFunctionROMSpec SaveSlotLabelEmptyEnglishAnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"EmptyEN",
@@ -87,8 +83,6 @@ AnimationFunctionROMSpec SaveSlotLabelEmptyGermanAnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"EmptyDE",
@@ -110,8 +104,6 @@ AnimationFunctionROMSpec SaveSlotLabelHarryAnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"0",
@@ -133,8 +125,6 @@ AnimationFunctionROMSpec SaveSlotLabelCybilAnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"1",
@@ -207,11 +197,14 @@ BgmapSpriteROMSpec SaveSlotLabelSpriteSpec =
 		// Component
 		{
 			// Allocator
-			__TYPE(BgmapAnimatedSprite),
+			__TYPE(BgmapSprite),
 
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		true,
 
 		// Spec for the texture to display
 		(TextureSpec*)&SaveSlotLabelTextureSpec,

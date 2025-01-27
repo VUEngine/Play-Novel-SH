@@ -89,6 +89,9 @@ BgmapSpriteROMSpec TradingCardsBackgroundSpriteSpec =
 			kSpriteComponent
 		},
 
+		// Is animated?
+		false,
+
 		// Spec for the texture to display
 		(TextureSpec*)&TradingCardsBackgroundTextureSpec,
 
@@ -171,6 +174,9 @@ BgmapSpriteROMSpec TradingCardsBackgroundSpineSpriteSpec =
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		false,
 
 		// Spec for the texture to display
 		(TextureSpec*)&TradingCardsBackgroundSpineTextureSpec,

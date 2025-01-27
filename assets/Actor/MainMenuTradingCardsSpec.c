@@ -12,7 +12,7 @@
 #include <Actor.h>
 #include <LocalizedActor.h>
 #include <VIPManager.h>
-#include <BgmapAnimatedSprite.h>
+#include <BgmapSprite.h>
 
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DECLARATIONS
@@ -41,8 +41,6 @@ AnimationFunctionROMSpec OptionsMainMenuTradingCardsDefaultEnglishAnimationSpec 
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"0",
@@ -66,8 +64,6 @@ AnimationFunctionROMSpec OptionsMainMenuTradingCardsBlinkEnglishAnimationSpec =
 	// Whether to play it in loop or not
 	true,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"10",
@@ -138,11 +134,14 @@ BgmapSpriteROMSpec OptionsMainMenuTradingCardsSpriteSpec =
 		// Component
 		{
 			// Allocator
-			__TYPE(BgmapAnimatedSprite),
+			__TYPE(BgmapSprite),
 
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		true,
 
 		// Spec for the texture to display
 		(TextureSpec*)&OptionsMainMenuTradingCardsTextureSpec,

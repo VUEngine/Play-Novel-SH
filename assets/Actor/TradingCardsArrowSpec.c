@@ -87,6 +87,9 @@ BgmapSpriteROMSpec TradingCardsArrowSpriteSpec =
 			kSpriteComponent
 		},
 
+		// Is animated?
+		false,
+
 		// Spec for the texture to display
 		(TextureSpec*)&TradingCardsArrowTextureSpec,
 
@@ -185,6 +188,9 @@ BgmapSpriteROMSpec TradingCardsArrowRightSpriteSpec =
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		false,
 
 		// Spec for the texture to display
 		(TextureSpec*)&TradingCardsArrowRightTextureSpec,

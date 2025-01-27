@@ -12,7 +12,7 @@
 #include <LibVUEngine.h>
 #include <Actor.h>
 #include <VIPManager.h>
-#include <BgmapAnimatedSprite.h>
+#include <BgmapSprite.h>
 
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DECLARATIONS
@@ -40,8 +40,6 @@ AnimationFunctionROMSpec TradingCardsBackgroundNumbers0AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"0",
@@ -61,8 +59,6 @@ AnimationFunctionROMSpec TradingCardsBackgroundNumbers1AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"1",
@@ -82,8 +78,6 @@ AnimationFunctionROMSpec TradingCardsBackgroundNumbers2AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"2",
@@ -103,8 +97,6 @@ AnimationFunctionROMSpec TradingCardsBackgroundNumbers3AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"3",
@@ -176,11 +168,14 @@ BgmapSpriteROMSpec TradingCardsBackgroundNumbersSpriteSpec =
 		// Component
 		{
 			// Allocator
-			__TYPE(BgmapAnimatedSprite),
+			__TYPE(BgmapSprite),
 
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		true,
 
 		// Spec for the texture to display
 		(TextureSpec*)&TradingCardsBackgroundNumbersTextureSpec,

@@ -12,7 +12,7 @@
 #include <LibVUEngine.h>
 #include <Actor.h>
 #include <VIPManager.h>
-#include <BgmapAnimatedSprite.h>
+#include <BgmapSprite.h>
 
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DECLARATIONS
@@ -44,8 +44,6 @@ AnimationFunctionROMSpec TradingCardSmall0AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"0",
@@ -65,8 +63,6 @@ AnimationFunctionROMSpec TradingCardSmall1AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"1",
@@ -86,8 +82,6 @@ AnimationFunctionROMSpec TradingCardSmall2AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"2",
@@ -107,8 +101,6 @@ AnimationFunctionROMSpec TradingCardSmall3AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"3",
@@ -128,8 +120,6 @@ AnimationFunctionROMSpec TradingCardSmall4AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"4",
@@ -149,8 +139,6 @@ AnimationFunctionROMSpec TradingCardSmall5AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"5",
@@ -170,8 +158,6 @@ AnimationFunctionROMSpec TradingCardSmall6AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"6",
@@ -191,8 +177,6 @@ AnimationFunctionROMSpec TradingCardSmall7AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"7",
@@ -212,8 +196,6 @@ AnimationFunctionROMSpec TradingCardSmall8AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"8",
@@ -233,8 +215,6 @@ AnimationFunctionROMSpec TradingCardSmall9AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"9",
@@ -254,8 +234,6 @@ AnimationFunctionROMSpec TradingCardSmall10AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"10",
@@ -275,8 +253,6 @@ AnimationFunctionROMSpec TradingCardSmall11AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"11",
@@ -296,8 +272,6 @@ AnimationFunctionROMSpec TradingCardSmall12AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"12",
@@ -317,8 +291,6 @@ AnimationFunctionROMSpec TradingCardSmall13AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"13",
@@ -338,8 +310,6 @@ AnimationFunctionROMSpec TradingCardSmall14AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"14",
@@ -359,8 +329,6 @@ AnimationFunctionROMSpec TradingCardSmall15AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"15",
@@ -380,8 +348,6 @@ AnimationFunctionROMSpec TradingCardSmall16AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"16",
@@ -401,8 +367,6 @@ AnimationFunctionROMSpec TradingCardSmall17AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"17",
@@ -422,8 +386,6 @@ AnimationFunctionROMSpec TradingCardSmall18AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"18",
@@ -443,8 +405,6 @@ AnimationFunctionROMSpec TradingCardSmall19AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"19",
@@ -464,8 +424,6 @@ AnimationFunctionROMSpec TradingCardSmall20AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"20",
@@ -485,8 +443,6 @@ AnimationFunctionROMSpec TradingCardSmall21AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"21",
@@ -506,8 +462,6 @@ AnimationFunctionROMSpec TradingCardSmall22AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"22",
@@ -527,8 +481,6 @@ AnimationFunctionROMSpec TradingCardSmall23AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"23",
@@ -548,8 +500,6 @@ AnimationFunctionROMSpec TradingCardSmall24AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"24",
@@ -569,8 +519,6 @@ AnimationFunctionROMSpec TradingCardSmall25AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"25",
@@ -590,8 +538,6 @@ AnimationFunctionROMSpec TradingCardSmall26AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"26",
@@ -611,8 +557,6 @@ AnimationFunctionROMSpec TradingCardSmall27AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"27",
@@ -632,8 +576,6 @@ AnimationFunctionROMSpec TradingCardSmall28AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"28",
@@ -653,8 +595,6 @@ AnimationFunctionROMSpec TradingCardSmall29AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"29",
@@ -674,8 +614,6 @@ AnimationFunctionROMSpec TradingCardSmall30AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"30",
@@ -695,8 +633,6 @@ AnimationFunctionROMSpec TradingCardSmall31AnimationSpec =
 	// Whether to play it in loop or not
 	false,
 
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"31",
@@ -796,11 +732,14 @@ BgmapSpriteROMSpec TradingCardSmallBaseSpriteSpec =
 		// Component
 		{
 			// Allocator
-			__TYPE(BgmapAnimatedSprite),
+			__TYPE(BgmapSprite),
 
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		true,
 
 		// Spec for the texture to display
 		(TextureSpec*)&TradingCardSmallBaseTextureSpec,
@@ -879,11 +818,14 @@ BgmapSpriteROMSpec TradingCardSmallOverlaySpriteSpec =
 		// Component
 		{
 			// Allocator
-			__TYPE(BgmapAnimatedSprite),
+			__TYPE(BgmapSprite),
 
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		true,
 
 		// Spec for the texture to display
 		(TextureSpec*)&TradingCardSmallOverlayTextureSpec,

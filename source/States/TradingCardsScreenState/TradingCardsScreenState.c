@@ -9,6 +9,7 @@
 // INCLUDES
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
+#include <Singleton.h>
 #include <VUEngine.h>
 #include <Utilities.h>
 #include <Actor.h>
@@ -19,7 +20,7 @@
 #include <Languages.h>
 #include <BodyManager.h>
 #include <TradingCardsScreenState.h>
-#include <Printing.h>
+#include <Printer.h>
 #include <ParticleSystem.h>
 #include <KeypadManager.h>
 #include <AutomaticPauseManager.h>
@@ -226,7 +227,7 @@ void TradingCardsScreenState::applyMode()
 			Actor::show(Actor::safeCast(this->actorCard8));
 			Actor::show(this->actorCursor);
 			TradingCardsScreenState::applyPage(this);
-			Printing::clear();
+			Printer::clear();
 			break;
 		}
 		case kTradingCardsScreenModeHighlightCard:
@@ -246,9 +247,9 @@ void TradingCardsScreenState::applyMode()
 			Actor::playAnimation(this->actorLargeCard, Utilities::itoa(cardNumber, 10, 1));
 
 			const char* translation = I18n::getText(I18n::getInstance(), kStringTradingCard01Title + cardNumber);
-			FontSize translationTextSize = Printing::getTextSize(translation, "Silent");
-			Printing::text(translation, ((__HALF_SCREEN_WIDTH_IN_CHARS) - (translationTextSize.x >> 1)), 23, "Silent");
-			Printing::int32(cardNumber + 1, cardNumber < 9 ? 24 : 23, 25, "Silent");
+			FontSize translationTextSize = Printer::getTextSize(translation, "Silent");
+			Printer::text(translation, ((__HALF_SCREEN_WIDTH_IN_CHARS) - (translationTextSize.x >> 1)), 23, "Silent");
+			Printer::int32(cardNumber + 1, cardNumber < 9 ? 24 : 23, 25, "Silent");
 			Actor::show(Actor::safeCast(this->actorLargeCard));
 			break;
 		}

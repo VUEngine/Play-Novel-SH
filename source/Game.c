@@ -31,10 +31,10 @@
 // GAME'S MAIN LOOP
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
-int32 game(void)
+GameState game(void)
 {
 	// Initialize plugins
-	//AutomaticPauseManager::setAutomaticPauseState(AutomaticPauseManager::getInstance(), GameState::safeCast(AutomaticPauseScreenState::getInstance()));
+	//AutomaticPauseManager::setAutomaticPauseState(AutomaticPauseManager::getInstance(), GameState::safeCast(AutomaticPauseScreenState::getInstance());
 	//AutomaticPauseManager::setActive(AutomaticPauseManager::getInstance(), true);
 	I18n::setActiveLanguage(I18n::getInstance(), GameSaveDataManager::getLanguage(GameSaveDataManager::getInstance()));
 	
@@ -52,16 +52,16 @@ int32 game(void)
 	);
 
 	// Start the game
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(VisualNovelState::getInstance()));
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(ScenarioSelectScreenState::getInstance()));
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(LoadGameScreenState::getInstance()));
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(MobileScreenState::getInstance()));
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(TradingCardsScreenState::getInstance()));
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(TitleScreenState::getInstance()));
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(IntroScreenState::getInstance()));
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(MobileSystemScreenState::getInstance()));
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(KCETScreenState::getInstance()));
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(KonamiScreenState::getInstance()));
-	//return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(AdjustmentScreenState::getInstance()));
-	return VUEngine::start(VUEngine::getInstance(), GameState::safeCast(PrecautionScreenState::getInstance()));
+	//return GameState::safeCast(VisualNovelState::getInstance());
+	//return GameState::safeCast(ScenarioSelectScreenState::getInstance());
+	//return GameState::safeCast(LoadGameScreenState::getInstance());
+	//return GameState::safeCast(MobileScreenState::getInstance());
+	//return GameState::safeCast(TradingCardsScreenState::getInstance());
+	//return GameState::safeCast(TitleScreenState::getInstance());
+	//return GameState::safeCast(IntroScreenState::getInstance());
+	//return GameState::safeCast(MobileSystemScreenState::getInstance());
+	//return GameState::safeCast(KCETScreenState::getInstance());
+	//return GameState::safeCast(KonamiScreenState::getInstance());
+	//return GameState::safeCast(AdjustmentScreenState::getInstance());
+	return GameState::safeCast(PrecautionScreenState::getInstance());
 }

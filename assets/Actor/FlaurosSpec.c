@@ -12,7 +12,7 @@
 #include <LibVUEngine.h>
 #include <Actor.h>
 #include <VIPManager.h>
-#include <BgmapAnimatedSprite.h>
+#include <BgmapSprite.h>
 
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DECLARATIONS
@@ -44,9 +44,6 @@ AnimationFunctionROMSpec FlaurosDefaultAnimationSpec =
 
 	// Whether to play it in loop or not
 	true,
-
-	// Callback on animation completion
-	NULL,
 
 	// Animation's name
 	"Default",
@@ -115,11 +112,14 @@ BgmapSpriteROMSpec FlaurosBlackSpriteSpec =
 		// Component
 		{
 			// Allocator
-			__TYPE(BgmapAnimatedSprite),
+			__TYPE(BgmapSprite),
 
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		true,
 
 		// Spec for the texture to display
 		(TextureSpec*)&FlaurosBlackTextureSpec,
@@ -198,11 +198,14 @@ BgmapSpriteROMSpec FlaurosBaseSpriteSpec =
 		// Component
 		{
 			// Allocator
-			__TYPE(BgmapAnimatedSprite),
+			__TYPE(BgmapSprite),
 
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		true,
 
 		// Spec for the texture to display
 		(TextureSpec*)&FlaurosBaseTextureSpec,
@@ -281,11 +284,14 @@ BgmapSpriteROMSpec FlaurosOverlaySpriteSpec =
 		// Component
 		{
 			// Allocator
-			__TYPE(BgmapAnimatedSprite),
+			__TYPE(BgmapSprite),
 
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		true,
 
 		// Spec for the texture to display
 		(TextureSpec*)&FlaurosOverlayTextureSpec,

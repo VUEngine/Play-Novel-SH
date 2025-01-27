@@ -9,6 +9,7 @@
 // INCLUDES
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 
+#include <Singleton.h>
 #include <stdlib.h>
 #include <VUEngine.h>
 #include <Utilities.h>
@@ -27,7 +28,7 @@
 #include <AutomaticPauseManager.h>
 #include <ScenarioSelectScreenState.h>
 #include <VisualNovelState.h>
-#include <Printing.h>
+#include <Printer.h>
 
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
 // DECLARATIONS
@@ -61,7 +62,7 @@ void LoadGameScreenState::enter(void* owner)
 
 	GameState::startClocks(GameState::safeCast(this));
 
-	Printing::setWorldCoordinates(0, 2, -4, -1);
+	Printer::setWorldCoordinates(0, 2, -4, -1);
 
 	this->actorCursor = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "CURSOR", true));
 	this->actorSubChapterBackground = Actor::safeCast(UIContainer::getChildByName(this->uiContainer, "SUBCHPTR", true));
@@ -288,18 +289,18 @@ void LoadGameScreenState::printSlotsInfo()
 
 void LoadGameScreenState::printSlotInfo(uint8 slot, int8 yPos, bool withSubChapter)
 {
-	Printing::setPalette(1);
+	Printer::setPalette(1);
 	uint16 language = I18n::getActiveLanguage(I18n::getInstance());
 
 	char* actTitle = PlayNovelScenarios.scenarios[this->progress[slot].scenario]->acts[this->progress[slot].act]->title[language];
-	FontSize actTitleTextSize = Printing::getTextSize(actTitle, "Silent");
-	Printing::text(actTitle, 43 - actTitleTextSize.x, yPos, "Silent");
+	FontSize actTitleTextSize = Printer::getTextSize(actTitle, "Silent");
+	Printer::text(actTitle, 43 - actTitleTextSize.x, yPos, "Silent");
 
 	char* chapterTitle = PlayNovelScenarios.scenarios[this->progress[slot].scenario]->acts[this->progress[slot].act]->chapters[this->progress[slot].chapter]->title[language];
-	FontSize chapterTitleTextSize = Printing::getTextSize(chapterTitle, "Silent");
-	Printing::text("\"", 41 - chapterTitleTextSize.x, yPos + 2, "Silent");
-	Printing::text("\"", 42, yPos + 2, "Silent");
-	Printing::text(chapterTitle, 42 - chapterTitleTextSize.x, yPos + 2, "Silent");
+	FontSize chapterTitleTextSize = Printer::getTextSize(chapterTitle, "Silent");
+	Printer::text("\"", 41 - chapterTitleTextSize.x, yPos + 2, "Silent");
+	Printer::text("\"", 42, yPos + 2, "Silent");
+	Printer::text(chapterTitle, 42 - chapterTitleTextSize.x, yPos + 2, "Silent");
 
 	if(withSubChapter)
 	{
@@ -308,10 +309,10 @@ void LoadGameScreenState::printSlotInfo(uint8 slot, int8 yPos, bool withSubChapt
 			->chapters[this->progress[slot].chapter]
 			->subChapters[this->progress[slot].subChapter]
 			->title[language];
-		FontSize subChapterTitleTextSize = Printing::getTextSize(subChapterTitle, "Silent");
-		Printing::text("\"", 41 - subChapterTitleTextSize.x, yPos + 6, "Silent");
-		Printing::text("\"", 42, yPos + 6, "Silent");
-		Printing::text(subChapterTitle, 42 - subChapterTitleTextSize.x, yPos + 6, "Silent");
+		FontSize subChapterTitleTextSize = Printer::getTextSize(subChapterTitle, "Silent");
+		Printer::text("\"", 41 - subChapterTitleTextSize.x, yPos + 6, "Silent");
+		Printer::text("\"", 42, yPos + 6, "Silent");
+		Printer::text(subChapterTitle, 42 - subChapterTitleTextSize.x, yPos + 6, "Silent");
 	}
 }
 
@@ -322,7 +323,7 @@ void LoadGameScreenState::selectSlot()
 	if(this->progress[this->slot].started) 
 	{
 		Actor::hide(this->actorCursor);
-		Printing::clear();
+		Printer::clear();
 		for(uint8 slot = 0; slot < NUMBER_OF_SAVE_SLOTS; slot++) 
 		{
 			if(this->slot != slot)
@@ -351,7 +352,7 @@ void LoadGameScreenState::clearMenu()
 {
 	for(uint8 i = 14; i < 28; i++)
 	{
-		Printing::text("                                                ", 0, i, "Silent");
+		Printer::text("                                                ", 0, i, "Silent");
 	}
 }
 
@@ -373,7 +374,7 @@ void LoadGameScreenState::showDeleteSlot()
 
 void LoadGameScreenState::printSlotMenu() 
 {
-	Printing::setPalette(0);
+	Printer::setPalette(0);
 	LoadGameScreenState::clearMenu(this);
 	VirtualList options = new VirtualList();
 
@@ -400,12 +401,12 @@ void LoadGameScreenState::printSlotMenu()
 
 void LoadGameScreenState::printDeleteMenu() 
 {
-	Printing::setPalette(0);
+	Printer::setPalette(0);
 	LoadGameScreenState::clearMenu(this);
 
 	const char* deleteDataText = I18n::getText(I18n::getInstance(), kStringDeleteData);
-	FontSize deleteDataTextFontSize = Printing::getTextSize(deleteDataText, "Silent");
-	Printing::text(deleteDataText, (__HALF_SCREEN_WIDTH_IN_CHARS) - (deleteDataTextFontSize.x >> 1), 17, "Silent");
+	FontSize deleteDataTextFontSize = Printer::getTextSize(deleteDataText, "Silent");
+	Printer::text(deleteDataText, (__HALF_SCREEN_WIDTH_IN_CHARS) - (deleteDataTextFontSize.x >> 1), 17, "Silent");
 
 	VirtualList options = new VirtualList();
 

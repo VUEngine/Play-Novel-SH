@@ -88,6 +88,9 @@ BgmapSpriteROMSpec KCETLogoASpriteSpec =
 			kSpriteComponent
 		},
 
+		// Is animated?
+		false,
+
 		// Spec for the texture to display
 		(TextureSpec*)&KCETLogoATextureSpec,
 
@@ -152,6 +155,9 @@ BgmapSpriteROMSpec KCETLogoBSpriteSpec =
 			// Component type
 			kSpriteComponent
 		},
+
+		// Is animated?
+		false,
 
 		// Spec for the texture to display
 		(TextureSpec*)&KCETLogoBTextureSpec,
