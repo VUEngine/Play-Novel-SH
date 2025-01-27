@@ -149,6 +149,8 @@ singleton class VisualNovelState : GameState
 	static VisualNovelState getInstance();
 	
 	void setSaveSlot(uint8 saveSlot);
+
+	override bool onEvent(ListenerObject eventFirer, uint16 eventCode);
 	override void enter(void* owner);
 	override void execute(void* owner);
 	override void processUserInput(UserInput userInput);

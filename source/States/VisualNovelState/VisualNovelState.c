@@ -49,8 +49,29 @@ void VisualNovelState::constructor()
 }
 
 void VisualNovelState::destructor()
-{	// Always explicitly call the base's destructor 
+{
+	// Always explicitly call the base's destructor 
 	Base::destructor();
+}
+
+bool VisualNovelState::onEvent(ListenerObject eventFirer __attribute__((unused)), uint16 eventCode)
+{
+	switch(eventCode)
+	{
+		case kEventEffectFadeInComplete:
+		{
+			VisualNovelState::nextPage(this);
+			return false;
+		}
+
+		case kEventEffectFadeOutComplete:
+		{
+			VisualNovelState::startPage(this);
+			return false;
+		}
+	}
+
+	return Base::onEvent(this, eventFirer, eventCode);
 }
 
 void VisualNovelState::enter(void* owner)
@@ -284,7 +305,6 @@ void VisualNovelState::showPage()
 				200, // initial delay (in ms)
 				NULL, // target brightness
 				__FADE_DELAY, // delay between fading steps (in ms)
-				(void (*)(ListenerObject, ListenerObject))VisualNovelState::onSceneFadeInComplete, // callback function
 				ListenerObject::safeCast(this) // callback scope
 			);
 			break;
@@ -298,7 +318,6 @@ void VisualNovelState::showPage()
 				200, // initial delay (in ms)
 				NULL, // target brightness
 				50, // delay between fading steps (in ms)
-				(void (*)(ListenerObject, ListenerObject))VisualNovelState::onSceneFadeInComplete, // callback function
 				ListenerObject::safeCast(this) // callback scope
 			);
 			break;
@@ -344,7 +363,6 @@ void VisualNovelState::hidePage()
 				0, // initial delay (in ms)
 				&brightness, // target brightness
 				__FADE_DELAY, // delay between fading steps (in ms)
-				(void (*)(ListenerObject, ListenerObject))VisualNovelState::onSceneFadeOutComplete, // callback function
 				ListenerObject::safeCast(this) // callback scope
 			);
 			break;
@@ -361,7 +379,6 @@ void VisualNovelState::hidePage()
 				0, // initial delay (in ms)
 				&brightness, // target brightness
 				50, // delay between fading steps (in ms)
-				(void (*)(ListenerObject, ListenerObject))VisualNovelState::onSceneFadeOutComplete, // callback function
 				ListenerObject::safeCast(this) // callback scope
 			);
 			break;
@@ -421,16 +438,6 @@ void VisualNovelState::startPage()
 	KeypadManager::enable();
 
 	ListenerObject::sendMessageToSelf(ListenerObject::safeCast(this), kVisualNovelMessagePrintChar, CHARACTER_DELAY, 0);
-}
-
-void VisualNovelState::onSceneFadeOutComplete(ListenerObject eventFirer __attribute__ ((unused)))
-{
-	VisualNovelState::nextPage(this);
-}
-
-void VisualNovelState::onSceneFadeInComplete(ListenerObject eventFirer __attribute__ ((unused)))
-{
-	VisualNovelState::startPage(this);
 }
 
 void VisualNovelState::loadProgress()
