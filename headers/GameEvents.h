@@ -17,7 +17,7 @@
 
 enum GameEvents
 {
-	kEventIntroAnimationCompleted = kEventEngineLast + 1,
+	kEventIntroAnimationCompleted = kEventGameFirst + 1,
 };
 
 #endif

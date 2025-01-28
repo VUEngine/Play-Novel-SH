@@ -21,5 +21,4 @@ extern FontSpec ProfilerFontSpec;
 extern FontSpec DebugFontSpec;
 extern FontSpec SilentFontSpec;
 
-
 #endif
