@@ -61,5 +61,4 @@ enum LanguageStrings
     kStringYes,
 };
 
-
 #endif
