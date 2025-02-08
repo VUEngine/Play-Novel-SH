@@ -1,0 +1,285 @@
+{
+    "_id": "I80zCKVjFmhcaoCA",
+    "_version": "0.6.0",
+    "animations": {
+        "default": 0,
+        "multiframe": false,
+        "totalFrames": 7
+    },
+    "body": {
+        "bounciness": 0,
+        "enabled": false,
+        "friction": 0,
+        "gravityAxes": [],
+        "mass": 0,
+        "maximumSpeed": 0,
+        "maximumVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotationAxes": []
+    },
+    "components": {
+        "animations": [
+            {
+                "callback": "",
+                "cycles": 4,
+                "frames": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6
+                ],
+                "loop": true,
+                "name": "Spin"
+            }
+        ],
+        "children": [],
+        "colliders": [],
+        "mutators": [],
+        "sprites": [
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 7
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAEyXNuRGAMAwAwV4UE+j4CTHGTXjovw0GLtpwe2RmxvCBjDLJLIussskuh5xS5JIqt7Qf/PDDDz/88MMPP/zww48SzwsGelYwxQAAAA==",
+                                    "height": "14",
+                                    "width": "2",
+                                    "name": "FlaurosBlack"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 28,
+                                "data": "H4sIAAAAAAAAE83UXQrDIBAE4Lv43IcZ2DlN6f2vUdZ/rWkVWmggZAKb9VM094B8hVuQZJKUIvw1RvPoBV0tJTHVoouU/PbPDJBSX48WowFQ6uCNrETKq2tkiqCXt4E5GrIXO141pD/U6CgzdoFNXl146zRHrz556xCJbo2+8OYlmbxce3Xi1a7XRu+0NdZe/dTLyWujofRthtHLs/XVymsvXu57cebtz9sf7IfO+34/xLVj9fb/hy94L8/b4wnW8nBx0QQAAA==",
+                                "name": "FlaurosBlack"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "Black",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "FlaurosBlack.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 1,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            },
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 7
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAEyXNuRGAMAwAwV4UE+j4CTHGTXjovw0GLtpwe2RmxvCBjDLJLIussskuh5xS5JIqt7Qf/PDDDz/88MMPP/zww48SzwsGelYwxQAAAA==",
+                                    "height": "14",
+                                    "width": "2",
+                                    "name": "FlaurosBase"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 28,
+                                "data": "H4sIAAAAAAAAE5XUQY7DIAwF0Ltk3cX/kT+Klz7HaO5/jRGGEJqknbZSVIsa8zCkPwv6Z3ksa4T10MOh8AwL4MVqOOXmrz1kIRTKBBXQy/JYBEAtoX65ZVjrW582FQMzvY1OIetzzh2hio0wACmRslbuOZcUB90EqdElMFfjIZvoeOVlXeRbr1q1DJWMlN15QQwvSbS9gRQMtsvY9lZDe+/N8QP5mZeTlzDJWvuwc84tObx27KJ7e1e7l++9OHntJXI+Y02tlql5Kctjvkwb3oneV+7F9hv1mfdc4V9vtCuZL5mKefPKBb/zluPc1uPcaom1X67ujZq4feX9KAy69v56mCu2OuobivtlWonatQzXqE9LcIDRveHD69v4f/A7A687vkP+/gGhAOCg0QQAAA==",
+                                "name": "FlaurosBase"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "Base",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "FlaurosBase.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            },
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 7
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAEyXNuRGAMAwAwV4UE+j4CTHGTXjovw0GLtpwe2RmxvCBjDLJLIussskuh5xS5JIqt7Qf/PDDDz/88MMPP/zww48SzwsGelYwxQAAAA==",
+                                    "height": "14",
+                                    "width": "2",
+                                    "name": "FlaurosOverlay"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 28,
+                                "data": "H4sIAAAAAAAAE42UyxHCMAxEe8mZg1ZZ0wADTTD03wbj+CNZsSHJZaPR50lW/N6kPttto0nZs3ge0lmdVG9l/gwOFNHUrXrOECW0SF05RFkQWCSlMSDbZjg9A7JP6g6pNQ/GMKwYOKJf4q1R3Yo69fJGXrYSIAlBahkAVDLYueHPzHJcMnmNl443M/Rq6ZwBMvCi8R7AgZfDCc3QD2/aqGEOWPLmKcKvRued7IM43jz/Ug1Hl3HPjHc1ari86c8S+H1INF4VXfdWK7hq92h15zY0v+St1fBzqF5qtFqYnsL2XYTV4SUiD/u7H5Or4sLMOL0fBvTPF3z+5nDRBAAA",
+                                "name": "FlaurosOverlay"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "Overlay",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "FlaurosOverlay.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "Odd"
+            }
+        ],
+        "wireframes": []
+    },
+    "extraProperties": {
+        "enabled": false,
+        "extraInfo": "",
+        "pixelSize": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        }
+    },
+    "inGameType": "None",
+    "logic": {
+        "configuration": {},
+        "customAllocator": "",
+        "enabled": false
+    },
+    "sprites": {
+        "type": "Bgmap"
+    }
+}

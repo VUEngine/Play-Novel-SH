@@ -1,0 +1,123 @@
+{
+    "_id": "QoMZf8Vze2Mwqumq",
+    "_version": "0.6.0",
+    "animations": {
+        "default": 0,
+        "multiframe": false,
+        "totalFrames": 1
+    },
+    "body": {
+        "bounciness": 0,
+        "enabled": false,
+        "friction": 0,
+        "gravityAxes": [],
+        "mass": 0,
+        "maximumSpeed": 0,
+        "maximumVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotationAxes": []
+    },
+    "components": {
+        "animations": [],
+        "children": [],
+        "colliders": [],
+        "mutators": [],
+        "sprites": [
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 1
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE4WQQQ6CQBAE/8KZw3YPKB4F1k8Y//8NA4WGUSOnCtnObhX3ppRSmnaBgEGADvRgW57AGQzgAq5pOYIpYQY1LW8rxJdwES6K/VIoCSXhIlw0pDt5T5gJM41pssAvJU1fZ5/QtqzHS4r8Z2IyTabJdPdrSa2pNbWm1vSZPtNnUoyu6/6HGLPg6kAikAgk4i3xeAIlb03/IwIAAA==",
+                                    "height": "13",
+                                    "width": "6",
+                                    "name": "Scene002Highlight"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 53,
+                                "data": "H4sIAAAAAAAAE5WVS64jIQxF95LxG1zBhKmNuJto9f630TI2uD5Juh5RSaeQA9ff+vNCrNfPr7AlCoDhyESRNIj1+nkNJ07UMRxtK2xtR0QZOBwnOSJtRURFVOPcITJMg9hP5SpdTNzcLaL2OIo9IZ3p2/jmPDnUpE3kICmO3V4d5woUDt5372gOaYSEpI5toDdblz7cTQuJOCoB92167JEE0EN6226SAHtgB9nwRORvUA96IbqVldRrWCJZEhkiB0ySHwZ73UhkqNv1Yk0UPclZydqh1oOysgIFoALQSIC4QbHiW7Yf+qKs4vpf44T0nnL6k0jWLIJCstwwbiiW7pa3dcBSvrC/UVZTGYve6uyDQxaztWspvCqTfRgMo3mVRFyRcqRtLA0o7Y1I69iLm++VlSgTw6GsPGhYhbjSfc4FdkX1VWd2po64YnaWn1AvBXMJlLChaAS1ZWf1rOrRoqrPQdU9o7iumA7pNReW4hYj8zx/d3fPwXRrkU8oD1s6ah27eaPsD909kedh0wfAcQ+JfJ87mA2Cp3Onp8i6U7jleHCKZt5qpOXpV8+Of2rrVXLwWK7OW0gCkW36sf3xLheM6otZznMRBNVfDhuXXnM4Fq4u3LjmJPLb8ih8+7bdZPbv+2DqJ4cWdpfGL+emF/XdEKsXN08G9Wj79x/ZqTX8HQkAAA==",
+                                "name": "Scene002Highlight"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 26,
+                    "y": -15,
+                    "z": -2
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "Scene002Highlight",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "Scene002Highlight.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            }
+        ],
+        "wireframes": []
+    },
+    "extraProperties": {
+        "enabled": false,
+        "extraInfo": "",
+        "pixelSize": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        }
+    },
+    "inGameType": "None",
+    "logic": {
+        "configuration": {},
+        "customAllocator": "",
+        "enabled": false
+    },
+    "sprites": {
+        "type": "Bgmap"
+    }
+}

@@ -1,0 +1,707 @@
+{
+    "_id": "FvGeA1KaAgwaT2ne",
+    "_version": "0.6.0",
+    "animations": {
+        "default": 0,
+        "multiframe": false,
+        "totalFrames": 1
+    },
+    "body": {
+        "bounciness": 0,
+        "enabled": false,
+        "friction": 0,
+        "gravityAxes": [],
+        "mass": 0,
+        "maximumSpeed": 0,
+        "maximumVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotationAxes": []
+    },
+    "components": {
+        "animations": [],
+        "children": [],
+        "colliders": [],
+        "mutators": [],
+        "sprites": [
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 1
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE+2XTW6DMBBG79J1F3jGY3uW+b1E1ftfo2qeSe2K5qcBBVVdPREwzPs8NuTtZRiG4eX1H/9YLUKH+qMAneUJEdhz/FKHDMost3awearftsNuzltXoz04rKFbZ0X1O54QVlHSH0dgmwnSHq2isl8baQf2ukBnhbSCAh/1yx3YOAM7X9isoMD7jbYtVlHSH0LYTYFXSOAVEthwhQHCJiBsCcI6EtaRsI6EdST0oJQWSxpZhyk/+VwIej5iPQidJfXH/c9PGKXJRchFhxbfiriES8VPXakkrzLhp8yDMg/KOGUelHlQJkD9apBKLkouumuxpB/J66E9p4QcuSQSQSSCiHREOjIgXt/EI4FEAoneYkG/SKxx+3UunP1INxJBJILIOWO44W64G+4WJ2oxHmskYblFX5kRgeFuD34ZX4jAkDY0DU1D09BM3CV9asoolrBNU/9sUr3EOqQOSCc0ky/gV2shuoRmQjOhmdBMxzuflytCB+lALpkk8qX+fAyZPDN5ZvLM5Jk3p0013/z1lEkpk1Ledzh0ILPCuBIW8tOxwQqxlno0tbgmUSipEEEhpUJKxVv8en+ZE4VuLdc+qeScC1NVmKPC5JTjaQc7vRTD+G5chd/tDe0cOZ3lODjSzvS7tXhu1bfDqx+t6LSi04PO9DvT77sR7x8SwZwHARUAAA==",
+                                    "height": "24",
+                                    "width": "32",
+                                    "name": "Scene009Background"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 157,
+                                "data": "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",
+                                "name": "Scene009Background"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 1,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 4,
+                    "x": 0,
+                    "y": -32,
+                    "z": 8
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "Background",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "Scene009Background.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            },
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 1
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE+2WwQrCMBBE/6VnD9mpte2xre1PiP//G4Kjko2LrWAIlT29w27CDBOYXKoQglSHggBRE0ci/BIZxTcfZieizeBIoyN6YvjWw0hMxFnNZmIxzklGR+uQhwi+HqktgdZbEpWYMCNpreNdSX+J6t4SOFibo1qZ1CzKVgrnl6iet/pLVpZ4hmgFrzv37O+J91vcn/tzf3dA1oEd+yv8P9sMsITB2kWjAmDRgkULViusVnM4HA6H4/9xvQFOUg12gREAAA==",
+                                    "height": "20",
+                                    "width": "32",
+                                    "name": "Scene009CarInterior"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 42,
+                                "data": "H4sIAAAAAAAAE61UQQ7DMAj7y847GAleM+3/35gSkgIpSdptOVlVahtDeD3QzuO5h9LO95AMAiSg8QIgQh3WQyc7gnDhB7+FTICFSRFTk+63uIL+9hcPt+6K8NVeYE1GIYfSj1GN1lFrIMpbKFi/KluBDID7b9QlNHQHDzsNNuusEkfFrLejmmfwEhnkGt/t2WGvdqvHVgXXSZoPVwpdfDmskTQ7ZOOZQ+MdOpQ1y5W5CdVBLbONp4PWN4Pb4r3flCFISM83Z6AI6egQS4B8gp135iGDTiKqzafkVNAQHycjt5k+50xvL7eGPb3dCqKdcFhXwe+1u229ziXmrzBbYvlDz+K7tBTq4n9/AA1/L+U5BwAA",
+                                "name": "Scene009CarInterior"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 2,
+                    "x": 0,
+                    "y": 0,
+                    "z": 4
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "Interior",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "Scene009CarInterior.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 1,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            },
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 1
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE+3RMRUAIQwFQS/UFEEP7/zbOBufZKrpd++qqrM2AAAAAAAAAAAAAAAAAACvUO2IyOqff/4NICK5f/7514SIrP75598AIpL7559/TYjI6p9//g0gIrl//vnXhIis/vnn3wAikvvn39B/AAAAAAAAAAAAAAAAAIB3+X6Y9LScAXAAAA==",
+                                    "height": "64",
+                                    "width": "64",
+                                    "name": "Scene009Frame"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 2,
+                                "data": "H4sIAAAAAAAAE4tWMoACJR3CTFMoIMyMBQAPudYpWQAAAA==",
+                                "name": "Scene009Frame"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "Frame",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "Scene009Frame.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 1,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            },
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 1
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE73UTU4CQRCG4buwdjH19zUsEZhLGO9/DRPfMdGknAZiXH2Lpqqf6prwdliWZTm8zMIIJ4JIoublbYgYxJE4EWfidaf8QlyJG7F+hvETQ22oDbWhtk5tkGz8CGSGzJAZMgNhIOzW9Vybns6ZA3SADtABOkDX70/gWzOADtABOkAH6AAdoK/fu8QWWAJLYAksgSWwBNcG18apkQWIABEgAkSAiLWpyy2sO0OWyBJZIsudV/oqH/d+mHl88oN+MrJ7wf+7nVUlq0pWldd5HWvMbo21BWssFlcx7VkstXb+UYpNF9ssVlW8YJ27Agary05Ppi0mKiYSZ2IGMYOYQTi14xRO4RRO4RROIRMyzZ9cAAVw/Mn6B/MN5hvzHT3QOh+ve/8AOAOwM5EGAAA=",
+                                    "height": "20",
+                                    "width": "12",
+                                    "name": "Scene009Harry"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 117,
+                                "data": "H4sIAAAAAAAAE61YQY4cMQj8y573ACPKGh8dKa+I8v9vRMZgcLe7p1dKpJWQ48amCgo8f77I/n19/weTL1ZZYpU3G5hJSJ6dhu6AYasijy8ZB/NcZdqZaUPeO83LMFNAPaIbD2qK7z1HwYtfzn6JZHPaCUnGzu9KQILE/RZgOuvW8ACAAJFp4hQQQCJ2MxABYy9EgCPdCfV59bHXPNA2NiDt7ZdYkYRGLM6FZA8yA3LU1ZmY6QcPDzJRD4ZuueA4mBmG+vhMZOaDJTj8M9I7TFDZ8dUL3abyy81XAxFX/UzIPoPCP4ASIhiFRISAD5gM/cwURT1WFUnbQJpyEqjLgYCeGkJyjSQpZo6kA0VbAtIqYlWYgoCcRrLUpqHOEzPNqbQqa06WBnCrPcxWgf739f31QkFDURxKA6N1UzTLJm+yo3ApnFO17AlIwY/b3u4lz3VKmEFT7uyX6E5Il2qZAe1lMH/WkZRZmxNUnjkJompklYr+182A+lVRuOp9qaG9qrS4ujorEDdHHtqqa9SKTvlk3lcAh+4sG3qUglACr2MRuau3nqkQ8yshTOYsZd/eA+V84KQlXqbL1ck7w/jvARSHQIPBrtUAvVAHm80UxnjlI93HrideelNTxcx9DxhbLWGmmdrMWqaeRm2EeUanSJAlvtrLVwMajco2qCrbJeMOegaOFEb+EntWU7SZBGoSRwpxpNQWidgJ+CQVx+yzmueh9xO+ga+l1DzNu8gU0jE1eN/0noUgK61ydH9OtBCfyeJY/dWAZgx187eZjNZitRpvnZZiJd0ZakGWmkV3t5UWiirM+LL2UFwPcPuk/SRip89uW/NhtHw203IMsrkYktLGaqvMBl8TRnsrsY2Y26BQiPk96Fb4SptItjDL0RwjQ8pUH7E9YczkZ/imHlCqUWi+5AMk/AwzXCHphTO4uiVrM4E8OHh+9jlhOFfhZgM+eljMebD2Y4a1UNcoidxZn0auUV2Lo6G4OMZqal88tGR2J5v7Rr9wDxRdz6G2yXtcMobeicMh4tv3G4bqkj5L2NWeqRCEh55V7hOERsFpLkkzYmjfwOeEgzZv6zhJ7cWvTjHmT7N/Fo3KIVmZX5PL8fWO/jEnKb8vlqyWyB0z08DJBUSljkwVnbRGtby6SKt69k5PZRArVpB5eFo6rz8q1s7Qp3h4QKYPusqHKYh49tgcW2aI+HZAvkDnZ4UzizfJlXW16+xLzwfM4Pccpwd0ShjVVLZ+TNr1L+eo0/tNnG6blVu86rJWx/MhTzZcmriYbyFJ41cU+nHvw99WePujzsl8+PtOvLsXJLd75fklWyVqEma9MZnRSGwY0ReGzyUiaS4p7QBf/AZCNlOtZPXz23ucJvM6lYhq1PHb8mHbpfNAxK3JbKyIxoq1YZ+EqQhxjYGer/D9+w+5208fHRQAAA==",
+                                "name": "Scene009Harry"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 1,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 20,
+                    "y": -8,
+                    "z": 1
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "Harry",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "Scene009Harry.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            },
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 1
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE7XRMQqAMBAEwL9YW9xGTUxpon5C/P83BJcUB8EQo9XAwe4Ve3QiIl1fAsSQgYxkKsc1ljgy5/BkUblAIlnJ9tCSZb+B1ObKAD90mi/LOBzGl3EuDauOTm1U14kUh37kGzpFsOSOoakz/yimzvMCAcXL5UkDAAA=",
+                                    "height": "10",
+                                    "width": "12",
+                                    "name": "Scene009HarryBlack"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 29,
+                                "data": "H4sIAAAAAAAAE52Tyw3DMAxDd8m5BxEQpymy/xqFFX+kxHLd+vQQ0Iw+9PuQeo7Xv6gDqSIc2L6SSmpFOzP8KjAUkiLIBV4b6kXH7mBmmGgnWC613qjm0XujK113KssRm9qsN6sRhijIexelcMlHrVFb1rgsZ2l2x02t3xBs7vl00r31kSAE5umAiNhE+WVZ7pr4yPU2r4PnsnbNSOna8grVzGx4OvJ7hdZi755TRURsviXr7W3KyLrGrGu8dv1rgawW+3moCDczF3CHiIhkvucHMtv6XP0EAAA=",
+                                "name": "Scene009HarryBlack"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 20,
+                    "y": -8,
+                    "z": 2
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "HarryBlack",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "Scene009HarryBlack.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 1,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            },
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 1
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE4tWMjAwMFDSAVGGEMoIQhlDKBMIZQqhzCCUOYSygFBQ7ZYo2omnHMnUB6WcKNPuTJl2F8q0k0/FAgCG37reugEAAA==",
+                                    "height": "7",
+                                    "width": "9",
+                                    "name": "Scene009Seat"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 14,
+                                "data": "H4sIAAAAAAAAE5WRQQrAIAwE/+K5hylkX1P6/2+UWEFbTauBhTksZuMeiTJp+0c1aOByFLgyCskK5plFYMU7taKNvuiFfcrrsT9XBD8ZXYzrRnOF7xpgtRb1+GpoUFaDVnsbo56oHi2Mbum8AH3QArlpAgAA",
+                                "name": "Scene009Seat"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 1,
+                    "x": -68,
+                    "y": -16,
+                    "z": 3
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "Seat",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "Scene009Seat.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 1,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            },
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 1
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE4tWMjAwMFDSQaIMIZQRhDJGkTOBUKYQygxCmUMoCwhlCaEcIZQThHJGMcUFQrkqxQIAlA6ZzH8AAAA=",
+                                    "height": "3",
+                                    "width": "6",
+                                    "name": "Scene009SteeringWheel"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 15,
+                                "data": "H4sIAAAAAAAAE62RQQ7DIAwE/5JzDxuUQebod1T9/zcqB4e0KFJzKKfBWuz18lyUZ3n8Af2n1gcCNPxW39JAkt/R2mU1ntsxuIo6PADW0an2USWwRXnHQt0dT4ITLVx2zLk+1py1UP3ATQJLv2VYX8Py3myN5XvfyKH1Z5JqLhQdLBcK5Yzt0u81Sg0VetSFuA4764QxnzP1zHf7xi2/EFAfEXbKiXM6rzc6CEvJlQIAAA==",
+                                "name": "Scene009SteeringWheel"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": -1,
+                    "x": 88,
+                    "y": 3,
+                    "z": -2
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "SteeringWheel",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "Scene009SteeringWheel.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 1,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            },
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 1
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE+3bPU4DMRRF4b2kppgfCFACYRWI/W8jEg0VCAs/z/XJqb5qIp9opEw8fh+nZVmW092BrAWfuR1adFDf/ufL7xO+l2bofXPykLAI+0SkA+eCz3xMCLuRPglgK7jP1qD7jN4nUkbFL1AS9D5J5ClhEbfV95ywiB/Z//08Qe+TVNaee7hr3p1M7xMRaeYlYRFz9r0m9BUS2lexFZgEvW80e82JkBjofd14S1iEfTIBl6YL1sjdwgn7NvgDOb1vCO8Ji7BPROTrH1joXklmH/0tIr2vmA3+eo3eJ9k4/9epjz4fR++bE/p8HL1PRL6hz8fR+yQA+nwcvU+kDPpxMnqfJDLZiRdCX/a2ufN/Miv0+Th6n4hIM/TjuM7/0fro83H0vtHQ5+Pofd2gz8fR+2QcofNx9D76fBy9bwj0+Th6n4iAcP6vDfpbRHpfMfT5OHqf/MLnFesIGoIBcAAA",
+                                    "height": "64",
+                                    "width": "64",
+                                    "name": "Scene009Snow1"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 15,
+                                "data": "H4sIAAAAAAAAE4tWMoACJR0qMJ0JKTAm3wpnXAqMiTPBmTyLSdTmTLoVxoQUOJMdZiD3EKnW2YDiGEJlEhktEFcii8YCAF/ihkqVAgAA",
+                                "name": "Scene009Snow1"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 3,
+                    "x": 64,
+                    "y": 0,
+                    "z": 6
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "Snow1",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "Scene009Snow1.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": true,
+                        "y": true
+                    }
+                },
+                "transparency": "None"
+            },
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 1
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE+3bMW7CQBCG0btQp7AxIaEM5BZR7n8NCjdBKBRWdpn8+6rX2fNJtiytPF+7aZqm3QvQgLnCEPrQn32FIfRtZmlwzUOFsEH6gM4sbd6qMgzQF/1VS+8Dhue1whD6gEYcKwyhbzNvFYYo07eEn6Km9wGoznuXG81POwJO7wMAAACqcFr5qDCLPuDPOK9cKsyiD7hl3+vkSx868dnuWbqsnPUBQGPS/3xI78Nm0v+0T+9L349L7wM6M8B+XHpf9FctvQ8YnvT9uPQ+4DHp+3Hpffb/fpK+H5feB6A66ftx6X0AAABAFdL349L7gF9I349L70M26ftx6X24J30/Lr0P/4jvK0ZpVrwBcAAA",
+                                    "height": "64",
+                                    "width": "64",
+                                    "name": "Scene009Snow2"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 14,
+                                "data": "H4sIAAAAAAAAE4tWMoACJR3ymc4oTGM3orQZuxmAlcNEnWlqm4ExKtPNmXRvQlyMEHWmqTchHsWnwBiV6UZJFFJqmzEq0w3Nm7EAHBrMa2kCAAA=",
+                                "name": "Scene009Snow2"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 2,
+                    "x": 64,
+                    "y": 0,
+                    "z": 5
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "Snow2",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "Scene009Snow2.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": true,
+                        "y": true
+                    }
+                },
+                "transparency": "None"
+            }
+        ],
+        "wireframes": []
+    },
+    "extraProperties": {
+        "enabled": false,
+        "extraInfo": "",
+        "pixelSize": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        }
+    },
+    "inGameType": "None",
+    "logic": {
+        "configuration": {},
+        "customAllocator": "",
+        "enabled": false
+    },
+    "sprites": {
+        "type": "Bgmap"
+    }
+}

@@ -1,0 +1,196 @@
+{
+    "_id": "6hlXb6PFZPIqsMQZ",
+    "_version": "0.6.0",
+    "animations": {
+        "default": 0,
+        "multiframe": false,
+        "totalFrames": 1
+    },
+    "body": {
+        "bounciness": 0,
+        "enabled": false,
+        "friction": 0,
+        "gravityAxes": [],
+        "mass": 0,
+        "maximumSpeed": 0,
+        "maximumVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotationAxes": []
+    },
+    "components": {
+        "animations": [],
+        "children": [],
+        "colliders": [],
+        "mutators": [],
+        "sprites": [
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 1
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE+2YS24bQQwF7+J1FkOyP+SSEzuXCHL/awRytQIpmEhxgFhacPUwv+4qsiVMz/eXbdu2ly8VFRUVFRUVFRUVfxFydaSEEY3oz8B5GOPo5CScCCKJnfj6DPCH8Uq8Ed/eQ7gmtErokdAjaQ/hlKs1IfRBqLycKq+/jmiA0AChAUIDBFvBVrBVxlRsVT/LgfWilFUpq3KL4qcY6boTMUVMEVPEFDFFTBEzJjLETC9LZ0xr7fLkIed1GNdsjTIvl43BaXAanAanwWlwGpzGc42hG5xNr+68EQ2HhkODrJ3I5GzUAGz+wVY1HBoODYeGQ1uzv90gQ6wzWEesI9ah7lD3fvlch7pD3aHusHRY+o7funb/j6WvocHtkA2uDXkfbKkMAAeAA8AB4IBsQDaYfUA2IBv7QSUGgGMdrYmAmEBMuetQUVFRUVFRUVFRcSfmjX3cPL3h2vkd+ilwfwM82mRP3sQnb+KTN/GJw4wnoP5zyHGtJxuHycZhslWYrw/H/UisDfFkZzPZ2TjXnJ2NsxR9bfzy4dRy/kiyTjrLzVFxFpizwJzGOQ848L7zAwri+b7XOWvJWUtOc5zmBLcEzQmaEzQnqERgFIef+z4njJ3+tgV9CPoQ9CHoQ6xbsA1sA9vANhkzsc3/93XrViTVTaqbVDepbuKX+CV+iV/il/glfolf4rczw/7vHxF+/AQ2LR/y0SAAAA==",
+                                    "height": "40",
+                                    "width": "30",
+                                    "name": "Scene015a"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 178,
+                                "data": "H4sIAAAAAAAAE6VZSY5kKQy9S6xrwUvZKFmi7jpFq+9/jZYHwAx/yK6QQnpJGGw84/znk/zz+fUMmVNiUgiB7JCSfH3V4fVhjwQHxtSh8QIrQYB28gNBPBfzKpzHJWNeb8wksFJCoUaQGSZkVxQrLRr0E8JhQanCyVejvJQYaPJyQpILseJGi3DCfgs6KupW6/RGZ4voOJv7zALbKh6cAE+rm4VW93SUTH1ZzKEQv5lS1cPwFyX83VTtigJYvg0mVj8DNcgpEyWWc0v6+uaUvz+/PpnS70r4/fn1+aKUs7GY70bHG+NWD/+X9km/Ey2fJXttliuISRzmayEfnYv1A3RoZpElVmMxM/lqIMilcHHaBKKEb4NICaSQe7SAu7kTQOYETGDZZyEtMhgLIvlTIQBSCA36KM4i73whIN7NCS5olXp1AtPaCPRXdnuMrIUx0SqkrdK1OOe7+WGLheSgcOPdhGmBRI0Fc+N2oTNK62EzPDjMBssdQWmwcuH8cFgesDZ5xeWwQdVfPwFtW6gi4n3tmkIeVL1pnWZHxLV+TSFrkE1Q5AosPAJs374NVr6SG64T7G5vDjx71M+STS8z5nsPtBeF6uU2zOmVfpa2z+W2tRLYi+WRsUPMMkw6AwLEJoNbE6s1JycY4iw2TiMjDp8MDnOTlX8CJVRyWVfLxbbKpdTSVvN2WK5cq8Fas3wvGcuvpWQp4yyYa71MCoWlzpTBOL+8Jt0TWLSN7DmFqQdkp/XaoU0ktXKAJRjowifvGwy8D5znFuXqhGP5Ooa0l6QQLbEx1LpAi3ZUexT1O/zXvbr7b5DBY2GvZKNQYa5Z9NLyw5oXBL22iPe70154aljNOUdHvGKR55JUa+FSc/HIqhZvRZx6MM4Nyhobi1o4W4gU+TmEyF0E5GX1bbQM0ekd7dHcw5rmDxjhJP7Wa9axDmk8cXgarXBpvO9eau8i4Arij8L0EGRh1fPHWuqOjwpVXg8RcOtsJC6Ih/pCB4JjZdjqEOam4U+qiGTkR9pyS1A6rLmHSK2Z5buUpFxah1f9M0N5lFQvHTXnftiJVsJZosxXsxNwqaXYYRJ6pdQ5skqpWWJaaWuppZ1bqgX6dM1c+jbhZmVRKHMP6dL1UHILf4WuqDLSyr2qa87CLr8pgCtsXfG8jfayqA+Unmlb4he/Hk2vv/ITz70RWX9G2jSt8Rb6qLWlwl3ovS+LNLIGzwmkQ504bTAcxsfVBmM+oxl6zLONtD42ecI+pRriIEC6TEEPabBph1400wGeL/8AlxvTgLzKQKZJP6EMbt/y59Gw58pgBFl5qFK/vpG+yPRbOaGYJkXT+c0tiGi6xZ6VA5RYaM91tdH1A8RE8NHq4DappN0NPKkPNG68mRs/Miy/tiY/Eciruk0wiIhxqptdUdO7m8eAokXA0LrSbpMRWDdIVkJ1hmTd6yGfmaodkmab1mAAreol6h3p/i4EhqrBGCOZJ9/pXr2qz04QYWgzoeVfbC9ASbtwRRGDzTUsL18mc5KcSzfZHlFRiXwkvtNm029rO5CQiO6bht522GAEXjp8jijdIMWCsjb00iKK2s1TW6YlnWoYY0Qbo3dXEE+E0eow0uKCMJINe5uUtFRRu5DJQLK9Eci2Lno6cSPn5nUqyHsdAXqznsx15t3fkFYWub8s9cLWTIvbC0PPiNwnvfASqmK55RNRv6bsTxYtagCbyCL53XQ1uBxFE/oEQ0I63Zm7e5RybrMKJhrnolt+H4/xkysnHQT3bXsCCV2xCEDcoxuwVDG22YCZ3bDAYDze/vqfCLWFnNXe/s01Jmu+t7w7deo23ob1mtDYk03qnTkRWt6h+d8IRkAyQF8tFGqLeK/nHf99nfGTmKq/L2izxTQLEncJJjQo/XXVmY0+A7ZpUoAy6PEHaSlVHrePb+nQQQ9azxrlRFv4alZ88J1cO6T3ozR1jOBntKa2aItecaDFx7UOKW88u2fIMNZgUwj0kHdumzL0vtpp//0P4FiC+5keAAA=",
+                                "name": "Scene015a"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 1,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "floyd-steinberg",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "Scene015a",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "Scene015a.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            },
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 1
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE+2YTU4CQRBG78LaBfXbsgTBSxjvfw0jb0jsZDJRTKRiavUyzECq+n0N1bzt9vv9fvfUaDQajX8MAQrszk9xECAf2tEAz+AAjtMjJ/AyvXgGF/B6hXBPpIKqpRZUCaqElRdWXlh5YQmEJRCWQFgCORXoYbM/rAg65DLdw4pypVhRFkTvze5fQVGl8bVcxZhiTDGmGNNjgao3OyJLijHFmGJMUWU8aagyLVD1Fgwr9qlKbo4MY4YqQ5Whyg4Fqt7siBDZtO0NY4Yxw5hhzCtUvQUnSz5lyVHl7DHHmD/2h+j7HY2Ne+TMq+es0Wg0Go1GYx3+myON3gZyL3SGdUZpZ5T26bjqTNQxvSEYX4PxNegovEArqwhG6WCUDibVYCgNhtJAamAlXq5np+LHCLlFMRAXk7hAXHKVGMvqh9cFSaRyilSiMdGYaEw0ZvWzRaIqp22fbLzEX+IvETcqVL2FsfaH4iBgw67fdUs+BxpHFKj6520St0HcBnEb1eO22dFihSgOMjjOBSprNBpreP8AXaLaN9EgAAA=",
+                                    "height": "40",
+                                    "width": "30",
+                                    "name": "Scene015b"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 126,
+                                "data": "H4sIAAAAAAAAE5VYS44sOQi8S63fAkoEr7x0Sd2XGM39rzECjE3+qnJaaom2nDYEEIT7nweNn8ef76Z83csXG+xLNhPkfz3+PCBEwL2LicB3nYTc38DaoR3y6VwmwslhLLcxY4zb/Oa4bSzvPGNmgm8wZCSuAJiQphBw4g4SX7EPAYcaIA7zNIW9EfU89yIXC3XuRKRhmm+7c1FMhD9maiO0SDdJbvgB0MAW5l8wOtzJJu4OAh1z3QPidydGN/i4g549fFAl7suHfZhoFv0KCPKlaJlx3CB8s+QaiDXytq1qfPqMeOaNoWByH6Ag9GaHWXb6K5IlQh0DXzXMfEMHmkbwwjoyJEBncsyADlZVNw0U3QMlMp1k2I/sQIU2QZfMPEPXCSfF1aKi2Iudw1/IKNphxmFoRPqTq5EAVUCbX6y9weI7rUleZtnAwwd8THfpADTqTe2zX2uGqFQzf8P88dX4DFD7zeojDRM/RPgb8GWlXlSJhMPe6KtFWvOjI5ukGpmPGjDPfl7EXTw2x6NH2Wvv6L35xfq230jWb5pOH8P1YJukoEDnsufPTZ6YTUgMr1GTamZg1nw1EsDa050wHR02Lhmme6HZODKBwiKmwZNOnrJ8wOCSSWJlFasQDShGf6epvQfxd9LfHt3SCL4KmpBgNS+C7EeBi5wVIrYmJk9GS2NCYvwMIHo+MuDuWGPFBoESe3EJiVF/FrhEO30cwnzwbFbfQtJuGreFiVHg0weOie19zCQio6Wnv8t1o4zhpLN6kDk7mxVGlHRdaI+vLHxRKdPha8uMzkKCSmSExzqiyDGDeZubw/UNK1cpwSubaUosZ7fEudyEWItwmQyTVWJINuw667yqWU4vtkXZV5SVcaP5GU5kBxcTA5IjOe4+46VAbOPQGkyzyajoKJFZUWPH3pQ0ueTY0hKHicFXq2+le6LjmY3VhnBdiF+SRbA6y+emyGS5ECPM1iFeiKQyVBs8Kc9RiA3ih7F4BvWAzknjVMxu8OTcy+HxQFLOSm7uxdxb0yIblTlMoViPdIukafoqByuN4IOu2EEVL2bxKKKTH1OZR8c6gMOc4nRrUp0Xs8mEvo1bOZiyWf0ipj0ra5XvJeB/JIueJkK/RXFXDW7bVL48FCafAfN1cLr3BhPszt3n+IO/UwKePEta9KaZJjE7sk1JTy7WnlzNjadIVxDpim2fQsZSK3V1Sneh7xEXc1I8kMHH4PC+aOuwVrUGlsR2JXyY6KTzEeTT8hm8U6d0cWf2/D425AkphaPrLwMS2hBIbhDMQWXNLVgzwGWoCPJi+GVhNn9zefBO0J6Lqn9B9B6SSqa6iojTdR2qzcphThxb5Wv9WxO7aNDUV6bFaiRmrNc6DmWvHdxaVGrrhFFc/CZGiF50oud7d3H5rwTWcF9Ma1kfcrEVEWkXv1aLZF/wkvk8a32hPkzsKEi+sFyBupioCVhtij7FtJmhXq3X0qT59sd24pyU0Q3TDpGtiTFDH/G+yKfykDaJOss6oRb4h/+4FG2EGGBpFmL6zASykSjJ6yECPfPiIzAL8eYjqAhvVCS5xLY191RcXl9Eu2l6mFlFE2wn77GMmCckvAaryBlQVWIX4r8K/rOIvAaqiulvV6yabNuZ9Vo+XIuyjYmcLVgyiaMbXoGOYYXHUYGUBFzpksHVny/eefZR91VSkI02qntt9d//AK4wOPCpFQAA",
+                                "name": "Scene015b"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 1,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": -1
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "floyd-steinberg",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "Scene015b",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "Scene015b.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            }
+        ],
+        "wireframes": []
+    },
+    "extraProperties": {
+        "enabled": false,
+        "extraInfo": "",
+        "pixelSize": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        }
+    },
+    "inGameType": "None",
+    "logic": {
+        "configuration": {},
+        "customAllocator": "",
+        "enabled": false
+    },
+    "sprites": {
+        "type": "Bgmap"
+    }
+}

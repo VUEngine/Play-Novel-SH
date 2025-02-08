@@ -52,7 +52,7 @@ GameState game(void)
 	);
 
 	// Start the game
-	return GameState::safeCast(VisualNovelState::getInstance());
+	//return GameState::safeCast(VisualNovelState::getInstance());
 	//return GameState::safeCast(ScenarioSelectScreenState::getInstance());
 	//return GameState::safeCast(LoadGameScreenState::getInstance());
 	//return GameState::safeCast(MobileScreenState::getInstance());

@@ -1,0 +1,166 @@
+{
+    "_id": "mHjthPOFZbUpK6S4",
+    "_version": "0.6.0",
+    "animations": {
+        "default": 0,
+        "multiframe": false,
+        "totalFrames": 4
+    },
+    "body": {
+        "bounciness": 0,
+        "enabled": false,
+        "friction": 0,
+        "gravityAxes": [],
+        "mass": 0,
+        "maximumSpeed": 0,
+        "maximumVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotationAxes": []
+    },
+    "components": {
+        "animations": [
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    0
+                ],
+                "loop": false,
+                "name": "0"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    1
+                ],
+                "loop": false,
+                "name": "1"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    2
+                ],
+                "loop": false,
+                "name": "2"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    3
+                ],
+                "loop": false,
+                "name": "3"
+            }
+        ],
+        "children": [],
+        "colliders": [],
+        "mutators": [],
+        "sprites": [
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 4,
+                                "largestFrame": 51
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE+2aQU7EMAxF7zJrFnVMGVgyDFwCcf9rIPFNxY+i2FPCEI28epuvtEkd+SXq+2FZluVwNwACFD+pwL2fXIEHP3kEHodMZSiegGc/eQJe/OQZePWTb1+QnS8v+KiCjyo6w3rOAEHtCupTAvWZSCQSiUkhMAjxDULQ0cXv6IKOLn5HF3R0CXT0a68LDKL4yQJZKL4BFohE8Q2woMOWCTvsXt9d/WRgtpYcqr1sqqedo1ixn/2kFXtAUZE0Gw2MuVdYG16nG1YgcGy5MSiKQVEauhXK/79ZIpFIJC4HemNEey0Z0F5LBrTXkhNqrxlEQHuRjGivJQPaa8kJtZd9t2dWlgz4riVtmsdWxApzjJsy2FT31mD4hjV+mfqdJButIlgz3r5yqZjZZv65YXUDnC9wzL01KIpBURoaupFPJBKJxHQgg+gaJyd7BkjJrgFyMnzx+fdgg+gZZ5U0tE4MVdIm3TKIKgkBKVM02qboNr8YJwM/K/B1bdPWeMyZfJdEl2W2nbQz3hiL5THJW3+7EbAuM55FE4lEIpEIgwyiZ7HsrT03rZIdV6ySHVe8Osggem7KNlrgBaXlBVUST9DmWlNSsUoa+Hmgj49PSwnQfMErAAA=",
+                                    "height": "10",
+                                    "name": "TradingCardsBackgroundNumbers1L",
+                                    "width": "40"
+                                }
+                            ],
+                            "tiles": {
+                                "compressionRatio": 0,
+                                "count": 174,
+                                "data": "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",
+                                "frameOffsets": "H4sIAAAAAAAAE4s21DE0NdcxNjTWMbE0jgUAytczlg8AAAA=",
+                                "name": "TradingCardsBackgroundNumbers1L"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "TradingCardsBackgroundNumbers1",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "TradingCardsBackgroundNumbers1.png",
+                        "TradingCardsBackgroundNumbers2.png",
+                        "TradingCardsBackgroundNumbers3.png",
+                        "TradingCardsBackgroundNumbers4.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            }
+        ],
+        "wireframes": []
+    },
+    "extraProperties": {
+        "enabled": false,
+        "extraInfo": "",
+        "pixelSize": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        }
+    },
+    "inGameType": "None",
+    "logic": {
+        "configuration": {},
+        "customAllocator": "",
+        "enabled": false
+    },
+    "sprites": {
+        "type": "Bgmap"
+    }
+}

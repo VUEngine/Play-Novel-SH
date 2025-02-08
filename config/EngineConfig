@@ -1,5 +1,5 @@
 {
-    "_version": "1.0.0",
+    "_version": "0.6.0",
     "affine": {
         "maxRowsPerCall": 16,
         "maxScale": 4
@@ -18,19 +18,9 @@
     "chars": {
         "totalChars": 2048
     },
-    "communications": {
-        "enable": true
-    },
     "debug": {
-        "alertVipOvertime": false,
-        "dimmForProfiling": false,
+        "diagnostics": "NONE",
         "enableProfiler": false,
-        "printFramerate": false,
-        "profileStreaming": false,
-        "showDetailedMemoryPoolStatus": false,
-        "showMemoryPoolStatus": false,
-        "showStackOverflowAlert": false,
-        "showStreamingProfiling": false,
         "stackHeadroom": 1000
     },
     "exceptions": {
@@ -41,21 +31,21 @@
     },
     "frameRate": {
         "frameCycle": 0,
-        "runDelayedMessagesAtHalfFrameRate": false,
         "timerResolution": 10
     },
-    "game": [
+    "macros": [
         {
-            "key": "Max Text Per Scene",
-            "type": "int",
-            "value": "8"
+            "_id": "UOucok24NKvsh7ep",
+            "enabled": true,
+            "name": "Max Text Per Scene",
+            "type": "number",
+            "value": 8
         }
     ],
     "math": {
         "fixedPointPrecision": 6
     },
     "memoryPools": {
-        "cleanUp": false,
         "pools": [
             {
                 "objects": 450,
@@ -130,6 +120,7 @@
     },
     "physics": {
         "angleToPreventColliderDisplacement": 10,
+        "collidersMaximumSize": 256,
         "frictionForceFactorPower": 4,
         "gravity": 17.6,
         "highPrecision": false,

@@ -1,0 +1,196 @@
+{
+    "_id": "70xvzQMuv3Tw2XSD",
+    "_version": "0.6.0",
+    "animations": {
+        "default": 0,
+        "multiframe": false,
+        "totalFrames": 1
+    },
+    "body": {
+        "bounciness": 0,
+        "enabled": false,
+        "friction": 0,
+        "gravityAxes": [],
+        "mass": 0,
+        "maximumSpeed": 0,
+        "maximumVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotationAxes": []
+    },
+    "components": {
+        "animations": [],
+        "children": [],
+        "colliders": [],
+        "mutators": [],
+        "sprites": [
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 1
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE4WTS26DQBBE78I6C/pvlmCbS0S5/zUi84ZkRsLyqtTQ069qPt/TPM/z9NWJIIoY4kgMnW9F6VTWKVOUmfpHuFyeSCE3ZEFWZBsW3JEH8kT2XoROASsEk2Yp+2FCTCGm8E/wIngRvAheZBuq+1BhSZ7DRywpu3QQFJ6edMWn4lM5APXep0Y/U3OoauBdid4OnnI4J2GhavTWST4lmJJIX4kM+Z+595XNQ8VM0+EjWGsm7siGtBZiGvmMYMY52NJviA35DNeGa3v0l8FwbVTOcpcDexD05Ln2BMeucw6OM2+dOHOcOc58PYb5OnxsgkEntHMLzpnYdXz6/vHFRRM2OfTjgvZEW2fwEOJyNGkDZ0HaIG2QNkgUxAyCBTsfRAmiBFGS0YndxESyuwkv4SW8hJcvnpxXP8Em2ASbYBNsgk2wBbbAFtgCW2CL0QW2wBYxC16t088vIP9TajMFAAA=",
+                                    "height": "10",
+                                    "width": "19",
+                                    "name": "MobileSystemLogoBlack"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 123,
+                                "data": "H4sIAAAAAAAAE61YWY5cMQi8S3/nAyQ4TZT7XyOywVB47YnSo5GY1zyzFVCe3x/yz+fXfxDlpaBKJCay9o/MCko6XlNtSvkazwqkZApEDNaYiHUohPgvUTTDKsMzacaHDzqeRhSswx0lbi+6Z+2vEYVGFOMweK2J7E+7qj/tDrGlRNoXm5yhZy7KEEG3JTSSap8q1nPFY6vipm5wLmkGBOJy7tlE1d04ufe3W6NQ2IXZsmfWWoKthC2/gcmGKKuQqQ4gtr88TMrDhr8Hw1GA/q0u4Oq1TJwNRMkwDK4zRAyAaS8FuFglWyROgFSPEyTh2Y1Zi5QTJLLTdaGdSKPJHJMhFtepimuYj8IeapzWpIjq86FnhzNR7BEXUWg1odmxWpp30e1J8KFAtYT+VLjb8Eng+RUUm2pm3VNC8Zo5yRFF+EDXxgERw7S6Tu6ACM377OMKru3cSVEgJducpejf6+gWmtPXkzpyZi2wdHeKvTWfoM1J6/g1c+ZvNIOnchJL1jdDFzqgVH5X2P4OzwU4zuqXYexCjj4+bL1dH3cDnnWzN3yQxR1MCQyQzGT2/N6ae8OfafDHeD0NEJhRUOMYV5KwB3AhquvmjfnA2TgB2uaV3EhD2QxYrIhCYCIKtAjHZuABe1woFPklwI7C4O/SgnUY2xbH8JdxM+wRtYBrt4emUVG2nixA3E0NLon6Svzp6sARD/4CKfMZX2cU+eMpZ7RflhEbmTHZcs87DdUvyalqYcXA8NYTDFwzh1FAKpIcDuwYzKIDMrYHme4n5FOeWBDBYcfYYOVvt38he6Bw0+V67rMWq0JLFLR/Xgmy3ED+ywl6O7dPjTAxxusxvxKiYTVB8AxogCBX3Q9emwq7u9WBieu5Hb1OcpRVNFMiJDt/Bynj9hsKFxihtRzb+mqyQjD0XosWQVxIO8M+69qasj1ke/WB6uUmcfChZY8NBCme/c0plwtl6wPwEiDTh2oKEHrR5b6JebBN5bp9e1z81WR4/EKUjgJ8qZs1vupK5Z5ymX0ee+JBLrqF9PIXmMzY7j4gXeRXd0/897w3BUVhsbpBmGZYpgIYKxmpJjFoSG5/Z5bBipP/xmtc+S/rRBq2HXAQTyx+xxR60oNz4XXSnzLSLyFkeHk9E7wP5awezDwBQ4FfvxjW/HaUBLhYFCi2wA0lGmel7kTxFKy9RdYk3rVxcpg/6FewTLEfD0h29wAQ75i0Vhi0rieijhUp7HWgD7jnwpVX2uz/R/zzF4alw4MlFQAA",
+                                "name": "MobileSystemLogoBlack"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "MobileSystemLogoBlack",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "MobileSystemLogoBlack.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 1,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            },
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 1
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE42TSU4DUQwF75I1i/ZslukMl0Dc/xpIXR/UlgJi9eQ/VdmdfFy2bdsub6cQQgkjnIhx8tfQn5NJFNHsyR/X34krsRM34k48xoXnEUIlPC06gh6EHgQzwUzq/Jg0gYQgIUgIEnIfF3ARJJRFRUKhq50vKBKKhOYxkIOn33RFSVeFi17HK/uobqMagoqgImgsGoKmB3YRzKigG56GpzEsW3uY2bqHmQ0lQ8lwMSTseT7iK+TAGpNYPGd0zugcF197uPj4cN6jwswx8/38Y3DMHDPHzDELrgfjCT2/GbgELoFL4BK4BBIBPaDHPhZXIBFIBBKBRMJLJHJIvIzELDHLf/9F18lk8mmvnqaxpLFEPmksaSxpJWklaSVppXilaKVopQAVuoVEMciCV/AKXsEreAWv4BW8gtfwGl7Da3gNr+E1vIbX8Bpew2t4Da/h9ePy+QVIgeK2MwUAAA==",
+                                    "height": "10",
+                                    "width": "19",
+                                    "name": "MobileSystemLogo"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 143,
+                                "data": "H4sIAAAAAAAAE61YWW4tOQjdS77fByBcwp9eR6v3v40Wg4Eabt209KJIQQ6FmQ6D//mB+Pn58xdI/sp7AIiTxIAMKFcJh/L4ZxNoANZnSo5xwEq5ExYbA1C7DQFoOLkA6PiVFXMM5f/586P3My47lWRQasj9M70NZijJMCRUFwB6uXgqRWYxCvGbJ/WCvFjFOnnYb2imKuupusGFEajUCds7xDsA5J6cJuzIK9hdjUAUpybKJZBsfQGE1cV328YYTiKcGOiBF8cYobqUxfwUIR4jnGr/Zyfp7lQ9IpcLXBIkXXKWK6mvcbdE5Efbxu/SSIk1wiC8MUz3qd6G7pzt3/ADEsiOhR6h7IRhV5I0aDPkMmwM2cURbqC8WHYsUGl6UB2T5B0sclnXRJSzQV0YN14MCdJ4+fYZgRpa4JUWi8hq5A2RvEJ9Q5FR+jccFThNYYiJlruZxkFpMZcVkmCArSR89BkV9NCVFL4xQDF8zx3yD7dcigCwJcRVdUfZR2FWzXpgWz5wwTQsdu6dkxUsbJpFCRJ1ukGE3EpXUoOBW3XOCGEYhCpCLH+lcjKqNsTp/kzS+KaO5oJ0i3eFkQJvqw+bVOeJm0kR2SBD30ZiuS8C/9bqqEjcqisp2w9JXquRwMNthaytOpYOaI4s75T7aANnFPwTx6ZYJfic8tmgERlT/p2/StqP5GMxl3MFx1sxT8RK5g6EVzfJjgA2+NPOM9qneZvjRi5k1wFLs/KZKSMbIpnVkgYRtGq0EUs9WBnNSNqLbW4ElqPois0Czkf/0r3CtFotnwLwf8iMEEtNIJpQfPUDpB/C1bytyBnGCsSF95sO55kAHzTzn9ugZb1XdjHHmqOwMfTbOFsHufvIumUAMgpeZF9eHDlZZdvmCHdJLyAtJ/ssJ6fe8jSiPJB4Pk3vYFrBLX8rq9mjEYUJg1cyhOhfSbkvVd99yD47qkZJXkx1W1UYao11R6gVaDhJaK0jbZMbnKBXZTmbGbe1PaBpdhpGvuHieB5vX0lpp9KUxNbJkGBXo0yCcR4wMKcgygpeQw6lmQw4w5OVURxjfIQbW1Yn3vZ01UY14OZfbOpcxnx59cNrs2ykCsUGhrriuOe6QhAzxrI7Ohxh8egDskmznsX6oe2Fvso5w7JcfpjtkyQ+neJKMtNorZcWeiHXWuszA59PX3nh5Ki11ueLaVxPv8mFS58fckLL4tQ3YkyM6VRb0mMFXxqKqJ684e/JR75vYlpBMxhip+DsLa7DWbNzalwSERfu6ZUZSHi+TdtYK4EVEBu0DjUDvzrKyclRz46lm9743fMC0HhlUB3ydM1XuUSkq5GaKUjE1FvSDabWvJ1BkTdK2O9Sua1yX6diDd8CMk+SfLlCQKS9KdDT3r0D641oeYzxvYIbsgxO4lvxi9cRYNGSIPF1LhF7Tlo/pyn+Ay+mDkCLv8w7DGsFsnzH/uwHVrwF/AmP10bFAst1sGUFX8M9VQfTd1iferNN9fUYaxdCftMBMx9U77chh0Fkrb6Yv9VqaK+A9CUnKeNm08Gbf7Xzein2QvHe9S6PUHyfVqByp/es5gfc41c2H0Yhn15lMjLHRKoYMJeI1cNc4hksHw7AAQcGuYccTb0jdlOxOwIXg2sUjjWVEe3DHQD0/Vif3wotAZFn8sDBG0MNIhfS29fQB9c49dro4V68JxCsmZbGCAzZq6XUHJUPmAJi6+8cB5ymzN2HZC8gTirD8CYcT0gS7wQ29xx2iiAo/gY91I3A8S430yB99/GM0momHO1r7tPTA0Un4zlv2GOenxKOPW0bbiIsAhGsOXBwx+Ye0nM1Wt6RLc+mwO7H+ZT28d0oddC8J6nPajsICcN0jAAQiZ/WQznWeHt+U6jpigpZ1ABpr9Q///4Hk8L5r5UYAAA=",
+                                "name": "MobileSystemLogo"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "MobileSystemLogo",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "MobileSystemLogo.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            }
+        ],
+        "wireframes": []
+    },
+    "extraProperties": {
+        "enabled": false,
+        "extraInfo": "",
+        "pixelSize": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        }
+    },
+    "inGameType": "None",
+    "logic": {
+        "configuration": {},
+        "customAllocator": "",
+        "enabled": false
+    },
+    "sprites": {
+        "type": "Bgmap"
+    }
+}

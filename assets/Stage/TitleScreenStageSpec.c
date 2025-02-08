@@ -19,9 +19,9 @@
 
 extern ActorSpec LogoActorSpec;
 extern ActorSpec CopyrightActorSpec;
-extern ActorSpec OptionsMainMenuStartActorSpec;
-extern ActorSpec OptionsMainMenuTradingCardsActorSpec;
-extern ActorSpec OptionsMainMenuMobileActorSpec;
+extern ActorSpec MainMenuStartActorSpec;
+extern ActorSpec MainMenuTradingCardsActorSpec;
+extern ActorSpec MainMenuMobileActorSpec;
 extern ActorSpec LowPowerIndicatorActorSpec;
 
 //——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————
@@ -36,9 +36,9 @@ PositionedActorROMSpec TitleScreenStageSpecActors[] =
 PositionedActorROMSpec TitleScreenStageSpecUiActors[] =
 {
 	{&LogoActorSpec,							{  0,  -48,   0}, {0, 0, 0}, {1, 1, 1},   	0, NULL, NULL, NULL, false},
-	{&OptionsMainMenuStartActorSpec,			{  0,   16,   0}, {0, 0, 0}, {1, 1, 1},   	0, "Start", NULL, NULL, false},
-	{&OptionsMainMenuTradingCardsActorSpec,	{  0,   32,   0}, {0, 0, 0}, {1, 1, 1},   	0, "Cards", NULL, NULL, false},
-	{&OptionsMainMenuMobileActorSpec,			{  0,   48,   0}, {0, 0, 0}, {1, 1, 1},   	0, "Mobile", NULL, NULL, false},
+	{&MainMenuStartActorSpec,					{  0,   16,   0}, {0, 0, 0}, {1, 1, 1},   	0, "Start", NULL, NULL, false},
+	{&MainMenuTradingCardsActorSpec,			{  0,   32,   0}, {0, 0, 0}, {1, 1, 1},   	0, "Cards", NULL, NULL, false},
+	{&MainMenuMobileActorSpec,					{  0,   48,   0}, {0, 0, 0}, {1, 1, 1},   	0, "Mobile", NULL, NULL, false},
 	{&CopyrightActorSpec,						{  0,   88,   0}, {0, 0, 0}, {1, 1, 1},   	0, NULL, NULL, NULL, false},
 	{&LowPowerIndicatorActorSpec, 				{176, -100,  -1}, {0, 0, 0}, {1, 1, 1},		0, NULL, NULL, NULL, false},
 

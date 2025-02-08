@@ -1,0 +1,629 @@
+{
+    "_id": "Jlk14ATZWeoa2MkD",
+    "_version": "0.6.0",
+    "animations": {
+        "default": 0,
+        "multiframe": false,
+        "totalFrames": 32
+    },
+    "body": {
+        "bounciness": 0,
+        "enabled": false,
+        "friction": 0,
+        "gravityAxes": [],
+        "mass": 0,
+        "maximumSpeed": 0,
+        "maximumVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotationAxes": []
+    },
+    "components": {
+        "animations": [
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    0
+                ],
+                "loop": false,
+                "name": "0"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    1
+                ],
+                "loop": false,
+                "name": "1"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    2
+                ],
+                "loop": false,
+                "name": "2"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    3
+                ],
+                "loop": false,
+                "name": "3"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    4
+                ],
+                "loop": false,
+                "name": "4"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    5
+                ],
+                "loop": false,
+                "name": "5"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    6
+                ],
+                "loop": false,
+                "name": "6"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    7
+                ],
+                "loop": false,
+                "name": "7"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    8
+                ],
+                "loop": false,
+                "name": "8"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    9
+                ],
+                "loop": false,
+                "name": "9"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    10
+                ],
+                "loop": false,
+                "name": "10"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    11
+                ],
+                "loop": false,
+                "name": "11"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    12
+                ],
+                "loop": false,
+                "name": "12"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    13
+                ],
+                "loop": false,
+                "name": "13"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    14
+                ],
+                "loop": false,
+                "name": "14"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    15
+                ],
+                "loop": false,
+                "name": "15"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    16
+                ],
+                "loop": false,
+                "name": "16"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    17
+                ],
+                "loop": false,
+                "name": "17"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    18
+                ],
+                "loop": false,
+                "name": "18"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    19
+                ],
+                "loop": false,
+                "name": "19"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    20
+                ],
+                "loop": false,
+                "name": "20"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    21
+                ],
+                "loop": false,
+                "name": "21"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    22
+                ],
+                "loop": false,
+                "name": "22"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    23
+                ],
+                "loop": false,
+                "name": "23"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    24
+                ],
+                "loop": false,
+                "name": "24"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    25
+                ],
+                "loop": false,
+                "name": "25"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    26
+                ],
+                "loop": false,
+                "name": "26"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    27
+                ],
+                "loop": false,
+                "name": "27"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    28
+                ],
+                "loop": false,
+                "name": "28"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    29
+                ],
+                "loop": false,
+                "name": "29"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    30
+                ],
+                "loop": false,
+                "name": "30"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    31
+                ],
+                "loop": false,
+                "name": "31"
+            }
+        ],
+        "children": [],
+        "colliders": [],
+        "mutators": [],
+        "sprites": [
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 1,
+                                "largestFrame": 1
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE4tWMjAwMFDSGexULADrylg/qQAAAA==",
+                                    "height": "6",
+                                    "name": "TradingCardSmallBlackL",
+                                    "width": "4"
+                                }
+                            ],
+                            "tiles": {
+                                "compressionRatio": 0,
+                                "count": 1,
+                                "data": "H4sIAAAAAAAAE4tWMoUCJR1CzFgA6PMc4y0AAAA=",
+                                "frameOffsets": "H4sIAAAAAAAAE4s2jAUAuDIvTAMAAAA=",
+                                "name": "TradingCardSmallBlackL"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": false,
+                "manipulationFunction": "",
+                "name": "Black",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "Black/TradingCardSmallBlack.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 1,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            },
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 32,
+                                "largestFrame": 24
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE+3QMQ6CQBhE4btsTfEPAmKJgJcw3P8aBh6NFYXZ6OJUr5wv80wREalaI1KTC2lISzpyJT25kYHcyUgmMpPHFrEn9sSe2BN7Yk/sad+z00477bTTTjvttNNOO8t15gfGX/1ZivNDYLwlH7eYP+38RWd27gn//Cr3hH/aeeBcXinCPmYBFQAA",
+                                    "height": "6",
+                                    "name": "TradingCardSmall01IncubusBaseL",
+                                    "width": "4"
+                                }
+                            ],
+                            "tiles": {
+                                "compressionRatio": 0,
+                                "count": 765,
+                                "data": "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",
+                                "frameOffsets": "H4sIAAAAAAAAExXNSREDQBADMUL9WHtuLKnwp5GKCOgjbtAF3iO2yBU1Q08wfWwX10KvBqkCOQ9FFsoUqhjUEWh8aF3oLPw0WArsVziecNzg/H+1hXuFZ/59H76u7w/5PAOkkwAAAA==",
+                                "name": "TradingCardSmall01IncubusBaseL"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "Base",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "Base/TradingCardSmall01IncubusBase.png",
+                        "Base/TradingCardSmall02CybilBase.png",
+                        "Base/TradingCardSmall03CherylBase.png",
+                        "Base/TradingCardSmall04AlessaBase.png",
+                        "Base/TradingCardSmall05DahliaBase.png",
+                        "Base/TradingCardSmall06KaufmannBase.png",
+                        "Base/TradingCardSmall07LisaBase.png",
+                        "Base/TradingCardSmall08MumblerBase.png",
+                        "Base/TradingCardSmall09AirScreamerBase.png",
+                        "Base/TradingCardSmall10SplitHeadBase.png",
+                        "Base/TradingCardSmall11PuppetNurseBase.png",
+                        "Base/TradingCardSmall12TwinfeelerBase.png",
+                        "Base/TradingCardSmall13FloatstingerBase.png",
+                        "Base/TradingCardSmall14GroanerBase.png",
+                        "Base/TradingCardSmall15HarryBase.png",
+                        "Base/TradingCardSmall16SwitchboardBase.png",
+                        "Base/TradingCardSmall17ChemicalsBase.png",
+                        "Base/TradingCardSmall18SpecimensBase.png",
+                        "Base/TradingCardSmall19TelephoneBase.png",
+                        "Base/TradingCardSmall20KeyBase.png",
+                        "Base/TradingCardSmall21CafeBase.png",
+                        "Base/TradingCardSmall22MusicRoomBase.png",
+                        "Base/TradingCardSmall23HospitalBase.png",
+                        "Base/TradingCardSmall24StudyBase.png",
+                        "Base/TradingCardSmall25AqueductBase.png",
+                        "Base/TradingCardSmall26ElevatorBase.png",
+                        "Base/TradingCardSmall27CemeteryBase.png",
+                        "Base/TradingCardSmall28HisFateBase.png",
+                        "Base/TradingCardSmall29HerFateBase.png",
+                        "Base/TradingCardSmall30FirstSightBase.png",
+                        "Base/TradingCardSmall31EscapeBase.png",
+                        "Base/TradingCardSmall32LoveBase.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            },
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 32,
+                                "largestFrame": 24
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE+3WPQ6CABAF4btQW+wTES3xh0sY7n8NgmNjaQIFcaop35et9tVUVTWHJSFH0pIT6ciZ9ORCrmQgN3InD/Ik4zthL+yFvbAX9sJe2MtnT+d/OlcFlvfUqVOnTp06derUqXNH/3x9ZTvubu6pU6dOnTp/dk4z++lACAEVAAA=",
+                                    "height": "6",
+                                    "name": "TradingCardSmall01IncubusOverlayL",
+                                    "width": "4"
+                                }
+                            ],
+                            "tiles": {
+                                "compressionRatio": 0,
+                                "count": 767,
+                                "data": "H4sIAAAAAAAAE+Vdy3YmKY5+F697IQTkyEuSdrzEnHn/15iD7hDx287slaurF0VHYUIB0qcr+v/3bcKcAABv/3oDQNBhBQB/ClCrPZ1pwpSns9Z5VZhv/3q7eDJca3jV6itcUOvkCbVe15z8Z2sm1MnDy972AfI+Ha5Jb/96Qx7y00QOQAkieThlOG1ITiTsH/T5sLyeQGDrytMJT8P0Zy2v0NYCoB/UEBeR45GGAoDoT0ux4YRGN3L4v6M+RVsMAbD8srlGGY21V50nIEwCtJNHpQwXjWtIvNrgYSu8xWvCKBCUUfAOIvwi2T4k5HUX2aVn5iJZF+Mz13kO/6Bm607gFSb6ny0Sp25fWWTC0K+IfYDYh7QYf/Tr4+bDaI2f1vX/6LZCiT/DBh1tXRp6mg2HDW13hB9aDInsbTIBkXiNOM01nDMJJJ9ctX1Agk/mIvyGajSADPUr0efSwakfgE/8O+f8AOeHfc+EXgIYQTrZt2XuGwlAAJ4pW8Mxhp9bxfXfq3PJuJ/bWLxmNPj2EYxgAvQjLFBif8snTNBLKY2HvRcWKJPYDRSYq0t/BxAZApkSx4Inw3SA0njuekEpRSb8QlCWO8h5pleHpUGLp1RChvxp2xC8yJD05OsGbU1FGi5oLtKz4ZTF1uT5b3sxwvuNCbrTK/hADHgFWutpLn9xW0hQEiKW8+NbosyGpI8dje7CS4DwXhSVIQs6i17pHUoTOV40qEgjMRiH6ljDvo69+QqtqPgTNoAmWB2Ax0zSfF0VaeG5XZvqAZ1bshDT+IFirpOzhpjkzYbo+4AsTeiShSJONJRT19OBKi0hm7zCcAhCh0z0ucbr/O8hT9e/Bz/90Mk/Eh8SkSdH0eMwVF3SLYC3Cfa09XhawkSp7wXu/FtKeZhb+OTbS8pKfnGBR3rTML3YTAksa28E+MlpQIDygeex6ALlTuTDMMjRT3s9BPxdlspRyn6pTUBOZAN6LxUT/iqAlJDu3kWG+hq33s5N5dMQrG4NTKQZlouRo3BVOvT2CT40+Tumoa0hKq8vOe4i/oYPvQU5DRaVzfDBEIa5Xc64N11BULn3Q1r+Eh/W08tPU806fIEPhIBOGbqJQhCg8Bf4kBiRSKxEQy5MVlCWLBkOCmDCqqCwXnDDB/4KBf66/ARdly3reaw7EFCBiYZjH2Fs9UKQBBV3JbwPCcdJ+kZZSU/xAa5i+D/5z9an2v4qwzQfYnrKLzgpW6pWF1OddughCn6ozH0u3dgMd/BOZC9tgQVbQZ3Z9iBnG3azKrCUJ90dwxLSjazR6ZyLwZMEJYbr6BX76nbcGKyMMpdVkmGfrcDeipOD4TOYNuVjIwOFgb6uuXIYWmTJv8xVHbA2ithBEcOQP4LlIh1AKa3H7gxlZSZc3yYS65qB0IQXxX9bcmlSOMisoPVd5vngYRsZIw6Ai50rGjgIXYv4pjpq8LLsxCNCjcXGoHRYw/U8spAtwhJXJ9foU354JU4/2dZYizwaGHfsg2yG+laTka4hA/bqCAqMsYQXm68wFz8VE4YwWeer/a0TYm6i7JPhexxLAfYVFKNS9MBfEdo/yfzyGZrC1VJ/Be+7Q497piK9ZDezET7tZJG51BomGxxVfTXAJiq/yaYnt0TJoZ1TXUuDuXIMIf6Zbj+U0h7sB+h3L3RgERsGd//CPQl3gtbnFn+a5rbNoyqKRv+pfyHmQ/gXbj/QC//iI9kPGP7Ff5n9gKYsOyhzia/Y4gBCzRiYszQ0FukGU+xUyna1KKI1FGvRtro11SKUP2h5eEZOMZZb+lj5rCCUI/5QUjw1sGTsGtJtDQQs2QnixT4cQArHPRg9O1sgehZ1qjEykAqSBqz6IrLJPhi9a0tQ9oG1tCFMyfTetUji1KaB2jWBo1toEWSYvA+FF3Z3ncTsUM3xsS+2rMJfvn3D7YcMQWRbwjYZGhLoukNs6cN+AF3CwJEyBBXeKOd1UMvQPAmdK6FBXXfz8s2gT+IfxpMYpMLr6FK4qMVQ+enFd/uB0FTosh/ULsmcmuwHBLpgGohFRJYe7YdF/fxD++HH4MOTf/FkxS+YJfMDCgxU1BA/1JzX4gJJanMxN9y8Dtw+KOPDDbkwPz0oy1rkeFoKgxFYwsBsmGbx1Ab8v6S+UBcjCK+D1H4Ya6dpJ0eQy6Twc3rbub+OGiUmNIXi1jw22NpS0nDkL+S4xXRnS8LCmqY3F9oYXJ302j6ga+lljRTHMwO8CBO6pZv9CyZY5rLRZcAUYDPMv1iGWAmAdhMFqXdbFx0fWkQt19uK72/p5e/9i/VHFZQnFz6EaXnzL5ZXQyjZPoE2k81BKUXyn/gXPwgf7qLXfYVeIAeTP4s/nMPP4w9f4kMzJSxaujtlPdEL/rTE03Im0jrBA6zQJ5Qhnq9I9DJlZacMM73JtU9GTiDBwi0hsi0U65E6NNTwtzVwlGNb3D21dWxVxLSo19FaKwYVXd5h+ULf6oaW0mlN5U3Dk22PjBRGqEd8UPuBExjQVDPot+GInQz7Yf1XTciwMenrDggmMHwovi7Qbj9YDMTtB/qT+ENWSWw/uKDf7AcanK+2L/7Cflh+xPj9h/gwMG3UMHwgysZTDJfBw8Naa0QaaNRH/l3ALMNpXMLL4okPxJs23HeydbN3Oyy84H5AX0NnIzMPZCc16t7Mh5Toup48mPsgpznwTXOhJrEJmNxxlH0iTfab6lBVJ2q8eEKxHfaDRRr2vOmD526Z7cnMWeXcVqnIxfSumIE4TBU61wvw9jWq6G+rpYjFX7qGNTl7L048Nij2NEgvIVnliN4mIpU1mBz9oAmlXLapAGkYcZguJ5+NfzRhSIUiShmY56P0impuO5AmT40fdj/5fos0cLrW4WqBCfsX4zgLDdSIbRknL4GPMaD0tu8Dyme2XWcJvT7XIgJJnMayWAPPorwha2k1cmhXdSIiEDEFRPAYKSR/CCKrwTF1sWHcysQ9KoFStzLhKf7wY/CBUinEgylR9hcn68o5qrmq275tjFvWM1ijOO4oPhx2CbY9lfE5ZU9Dya6RyKaXjJUVjrZ1i++DZOic9PbLBLIUEkQE6vHFJm9tN91FRFgg9SmrdqGXNiLLw1N4HJYWT3+lCe1eFdGeVtCdbAe9bZkS4B/fbpTlTUXf9Rf8G2x/2g+fftvIhiwFZdDOD8JdCZvEslFM38KHJc4VvSQv2Q90w4elM9PHBz7QAz7ww0HKcv8sfFg1LLJnFJy6hsbVKwBEVuuzdoSlpbEBLebBSmgrZZxRd3Vg+FCO1CG9/SsX+PwZPkDU962Vb5nB4LOW0J7ExmaNkyqLWsRecTc7ft3yDDHhGR+OfGwih2LXk/2rXxHeLaea3tXWOMqfxPiXYcRLTjOpZ+8gMGoDMR/yGYb2h9CxGYLOQrIteNjX4y4I06woanhWWdYKItUD1M8QfFiFFUeCWQKVxWqpNnwoh/3AiOCBDxoh0nd8SIWmX9oPY9AWwk8R71wfJX+GY+T9/UfhA6d0nu2H+9D9i/QKAk9fonKBR5slC96XmhY7dVUQqN9y2g+xbjLVgqNe2Q8PRZP5KbrnU5TIInWQzuApz2DJG/4gdACRFVqK1j3KWx4SIZjZ4fHJnohsUXMKryMjKgyrBrwrZSamXZ6/SR2ThfNSFnzlWFp5IlKCh3l/d+by4VOJ5p5cACKvtbRSE/nvR5Ui0ztStUVKk58Qj5QCglLzcQQodvuhftd+SPUEFFnlR/thr3Xf7Qc3O3b7Af6R9kPyL9rGqV0mHFm5B/8i0tmisSLvT6d/Ufav2GBF7AfywKhwNZkWecCHnE1NQRKP4RUtDOIoYA8jvdbkHytUlF5WwP/wxrd7M5yQtYyjWQqhhBHrRIldqcIuB71f+W/P4dISuluAIKtmPQvsmylxVA7cQezIt+zFmF50FtCmDw984JhC4whnixJN5e/jg1YsU0NTclSW5UpevgkkysmqF2qlECk+KZ9+sxwHc/JrfBAtXw0f4FN8wJFv/+z+xQ0f4G/shwxBK+jp+WN/mqCCUn2fPyWuaDpLl4f82dgPa6DXPGGigdP+sWeO1QiGqbksJUPmnVNx5LRHXC2rlrW/Ym625SCdBZMZSWM1sTOXPLxYBnyf7IIPI3IC0oRpebJ5+4p6zatOroGDOidcl6FnIQ7y8Zl4hh+1SmZFwVKy35K7Kx2WwdGvt9lwynU6ORaKfbDhWAtYEkvcDucHK2SgUYTlkGuTNVIW+mL9lSUUEeDdqxTtNpjEKu2MVQrXuWlWLkJp+gqf61YbPR3ASDxJhjvCDv1tc0sQ/eM5FFoSZSUoEzDPiTQK3ylTlkXExcn/bJz8y6/gJENczaEnrrY6kDFGesqHIYYAQuW7XBr0Za+Dtrm2ZyPW5f0l3YehEyb4ceNis9sdR5IKgLrLxcrHakVjmlvBPR99r+NDveNDnJsSrGaH0ZCL1jkBREIvglyQU3MmaMh66PYU88ljqkXBO0f5sLXAqLpUnfNDj2rCkG6EYhkxmGIKr2uRMxim9PJ715CcXRd6ezwVfxVMF5b7lR++jVC6GyNs//bS0ecu/RVehykJv6SXZJPrpOypxzVa7yvyX+2OguaHCt8q4GEr1FuToE7nXOebmuPiM/D1LfXyVzpBBJKzzuIPdS5sU43OVeBNnhbNmyLJpQqhdxk86YubDy1hsEI1aX/5iuhA2viB95ddnO62hmeushYZupMrhdUb0yAjpiGb2Il3tmPxVOe60qnyNhBntqNOymg4V0+AmUoWqikU0QeKD2EgTzV6MWnTuPNKlOOpU1f4CHImQlBGrrNq1EHHZ/44/yK/AgEuqS59h82ff/IvcprR66Oe8hd7kbJJ4Yv45CpQ8RsyC2HH+YoWyJVcZY8j6v43KUeOMjAPly6Dc1hse8UtG7+itYHJawa3d/TSsYS2xCmWSh2IkhtTlkiB60JvvlHJm+qR9HG7JJKMdN2R26VC9zpUIEdMiJ2Mc6O7q/ELc/whKqGSK+esEfmLZN5K7f1p3o6TdFFqa6/vvLPlL+zkuXRJnrY9HpUkQI+F4trcV/7F2qip5RirNvSz/AVLWOj5L/IXwLfB/zw+GU4FZXy4tzXgGy1yFnUGEyx7Zt5qnijjA2z4cJ+7HJvhvogXsJIXhJLlL+DZtJyLXrF3ODajxVYsbqnWPY6bBZ0Q7doR0iZk6YsdCSDd9lhIepRKIddtRnx9huEiEy5oziXUOH/5tllXHMsjy7esG9lsRLZGGkjgOjTUeGpEAdv6fNud6ab7wEyZLga/ncGXbnH7F+D9CeLJ5yZ5W+vWc25L+c2WJIBukb0WcxuETcv3OrQ0fN3bUKMBmuNDvCJunEgNpx2sDxdDqWvUcgBzKf2mmcGudVf8cbeCusbGj9c/hHdg69LTx2/xVCJlRDb4RXBo7MVLKbVlZYFR0yCupVGW8SFb/NUkdo9Pxq4Pg0yEUaUcgzBdxUjihLc4wQ/Dh6sCTWk2s8ydDzDb3sreWVnoB9Xrguu6JIa3RPNiC7pWKF60g1bLul7NYYDf683TjJymgq72QwS09SvI95fqWNWuSo5+W61A1/R9uOaHnzyJOcPkVG+vI/SSTK6mAH1/G8x3jU9WmGYQ2bdxydQ0h3Q5p/dSa6d3+YjTD2uadUUwLb8ZHoqAo2BJfLE89tPUKIqCqpV2UfUJH75nBjYUnvCi7HqhhIPtPd263UhLJbAY+HDyL7PWVBt849RUA6d4tlnQI+ljxwfIucWIzkDenWd8wM/wQSM51bmE7Qd6xgc5LBR6KzzaD4EPyziagQ/3/TV8oC398xSfTE+f45NzM+BgPsUnycQp4pNMjRB5nFu+wnjGJ3ej4SHIBxRx5ZFCPdxK6nImYAno4YVC9E1Sag7+bctP7lE6d3vbhp6ywwptsS7p1RzgKIHlA8iKa9hBbtaChrzDTIsV2hSO+h1vq+QAPYGq7VmjOa3+t0UHidU3wos8ITexaVW0NNmWlEYeJwCKHIpNSN1d2CfRdZMLLqmZ9mYurdVXmxS2nhv0mEbXojR5+ssrPgp4BkQ+SGKDzS7ptdZJC1toPHG15Iz5i1uTAoiTo7aLVhrJ6Xrt5XbG5EXV+Upg2tTgyagYPeKTZPQSpVuzpEVybkdViKqTFJ8kASkDc7va4B6rxCcdd4jcx8mIaDeuF2AFRime/WR8aAQSP+NLAdIlZNmbPfobKZFLtvXPVkuSViQmtrKEIfOaD8hFOyv+1rvGBlcs7uASkvTkg1zo5b9WCjmfNWp2odqvnva+5E3qKhCj0cvooU177EPIhcfP9MKJUebxVGFVHnZnWr5EqqLHQbrILeqWNPIIZyO/vFrsXlJjeq3zUkf3u3tcUeoeT+VitKa9m7pvqidAC6SnxcOaKzHaUu62GQTljm/NCpqjnVXi3xTM8KfMJbGuy3xkbDywL7FQRy7d3y3McsTl7r3okrRs+JD1xWf4sPktUbb2Ah+QGxDI3EnS0GLswcPAB4Rv4kOW45/gX0DUR/VP8vMpPsl1pL2kC1FLNXu1W4uLd9Y2ovXSYl1NeEGUMW7+RfF+QWUFElu6YJSK9+FpeNYTXDBNsi6AUkUfX3zuU1h5eNHDJc0SZXhFWukiHU7fakyNJ0hyVzHkp78hUxaWjRei73XQtiXwEcLQVtlJkyxBSYVZJmRX87rBtWrV3nmMugYVVtxIfOVP6B3xZ9ElTypfzNawRnFl69tRwPmXInjYDFaWPditfrI7p3qXkHwpCwJWxmiSWSEKOW4ZHzKXeJPBLf6g9dVf+xewzEGJMbGKHVZ3RXjzL8aKeFn8AeOyF22BxhR/0FjbP9m/oL2YzQ4rGRjhM3TvWFiadwkpPWOJ1RMsjgVrWtIdKnposrCKW9ZvzbJyfD2rBzmkQmbDRYOp5h6me3Gvg1bfmWwFqVUs7S4DVorY1aiGQBOzBNSCtvYkJZVSRt1VSVp6tbzoVgdd7vwAywqSJGFrlrVv2VIoZsMUts7ENlr70Vnml3UATVvChRyXJdx6L5SXc31RzBJrvr8rGGpX9D2s2VNQ0ul9wdWJJ3OVARePsrQsVm3n3JRkUYU+Qr899Ril23DzQhPTfu5fsBineoKwHyhJoen5Ec62BOlE9HK+hXKE3kKg37Yf/mT402wNaZEQyiffpom00otc6ONw/MFdcANHLgZQ6e5+XySufR6U3YeQhy3fJpcVuDxS2lNLLWbzdXtAULpWoHLclpx+1t5XqsstHDJu8T7YL6T6cPVEY33M5Gh7B7lDKuLffKjtZd+0qv2BBjf+k02A2aD3kvOVk9B2FDkblezqvO6yCZIMke9OtlayTeBcHTbB+KZNwBGFajWRlpN4YRMAUpXWYkvNb7XY6SuyTYDfsQl+nBwPz0mMR7SXbttJNslaKC31bHmyYqYw9XTvwI6bRUD1ZjO/e7Uxban2QOU49UTlxkrpjg1b/HN6dvKaUYKVspOuvnJt6IwPuua0nhmpR/mSbjEMmxJhggPwW2yCpbvrcfJ19crXuRd5ZjA1rX6smS77U7uyNq3AclfCDxa03PDgGowVylQ13nNucRke+C41yN3wjHs0eswGIdp/g9kaL7xFtUso5Swf8YzvbOtcLo9E0tbban615PksqNewJoWXz42xteap21XvPSfxNz7D+rNqNQ1f+QxLzvWqFtEOCrmnQ8IH+A4+fNIn0oKSyaqI/ZUqD9BwaZ03Bs8HELwz0X5w4lWfyGjfSbRlBkdOIBHn9SbVMLRWCnP/CqkB5cWua2UBpYr5uqYOIX4gQ4w23pI0d6U601zQYTIBr+uyp1f1odTCV2PPzZA9o8KJXv3nO7YGSRXMl3Obge7WHBLeTkP2kQm+NzwMgXKYB+1GjozS8BDp++588vSRdLzVLj5tlAOI6TfM9JYI2UqZp9YNph/eiEYvsW5KTyTJyqlZP+5MGWUi0SZQrlc2NkodbhM/8GnOuvMZDspnnFO+iTKzCYYVvs1Y96fhQyJSGhXFyZdOXg/eDn7Queo1l53Iow+nZLPOr0BNkZ70prklYm2YfxxIQWxyKxQfzsxRXk4/qzUnM+BfJkN4i74lHJOxGoFp6UD5xwM1btuvqvPqQ0hDUYDxQVRs+2T7O+mdeIKWPB/1Qq2qfaX6tQ8R3TbVZMhN4UGUoe3W8KZg3JdGa9AuaZ7UU1K/LbqBSaoz4cMhhcxQVihNfF2Gn3q2GtlGNO4bKuiDFbP1tyd4NkaM3r0j2Sb+f4oPueb/K3xIaE+ru6SW5xw3uf+r8EFxnczK1EJ/7tPQb/qCaSgP9yy336ZBY7mSd7Kfix1DidadvRdumypQ4pQZI0L6zM9ve9yH92tzT0OCDfAcNVrW6JrrCMlSIm2YDIHWHvWxDyOxKms86e7zz8rxNBURfDYs0cGndGcCFqxy2jvSnO88TUqRhoHY4lJL84KO6P5PubYjhVm0wZR0oLlHZ0JM/wAfMIKS8KX9IClLOOwHuU927376bXzYNiqIjHtJmFbIf+bFYRXgo87UU/KJU4eG8ybrrOvtcMFj7vCQgfSUjOa8QYNeNqA9B0gazY8hSJXRWQIr53JrpMN3OZICVN4hP5atnaD3lAz1JT0aUUJ/hAFidrGmewaEw/491K1YujhcXzATeItLSkhArgujYUj6tmRPusOE0Mi7T6chpOHWU7JFx24dgsiIkk6txVn4DzhYfD0ok9ZDShk3U4xfjnCPCjamxSfKfALmcKkPKXpbOGUY7esj+0ASZPI9Y5uASwTuJU0vvC9mglQE4+ogdQhtxXs6pK+wjAJZw0eUnfJERPSU1N/iI7a0pt2pgOi0k3vOqhpfQcnqEpuuFaSy7Oy8Wn9lMO2EetM17mTSj7QfCmT99urXpL7pxJ9PX+tjPCNwN/M2cUlpOVJmE3rYD+Xo+OYGvYJCxqg9bkQJCRT7svs7vGR3bSQpG3E317hSFSVCJcURMz5oWt+HwPhALpv+dMeox18JlGwJya9CGsspZdw1XE1hgGy6Pxjp4L+KUULlB1RIDLolTr1p6Ud+WJQ54Jn9kOQ4M0Hc76ZsP2ztdQy5EKKZ8N/5F4RUI71mJ/9oP2D2L8BlHjeU+wv7YTcl3CGd0fJ0ehtp/XleAwV1iusKy11S2bl+2LPWIycx+dd3+X7ANddcq7e/rJVqvA1h2u0fTG1X5U6QOdv1Tq8M04unapHrKyPddh2Fni9gRb3Q/WaeJ65tONPTjbIZzvZc1xjkhKaf0J4QD/aMn0XFeNsMX6T6sO5bcr+cNiI3Tv5bUPzTKvoKmnp1ZA1+61ALpKRXxIw7K+S/vpJj5gh0F0h0CZAOEVULWzA67ZiOpcuPkNyk4puPcZHCfuR20NxPKDjKlY8LOmYZiqzGwUYWq9D0BNfkDP2R2/ggZEPXUAOdyPXLMWIr7z+eO9IlXmtVsCHi7a4chVtSAfIPS+Xba7ZnKzxJxvabtZ1+wShdBKL6UqNPOQv6p+HDMVzrPuFDqs7Limo+XDd/r3ZuFfMRbpv6ELV83NRt+Dh3XdH9nURaQ3+/qXPXghXopPfbzVJy1JDUroPjy7d9CoNfEXkMi52QVXnNGahcuaxvDRvaL0fM1eKq+Y20f3sdE0w606JpeLAyzk/oTRwFu+kee3YgeJoQGSaPnE5fN26kTfCfz3Ny0pAnzugNEC7Bd/FhnaoC9Nf4wIN61ke9wgeAuBj2sH3/EHygqV5H2yYwq8lXGKcyvZcdVs+oEVBR7YNqnXIf8uKbnHxL8oWIrPoV/aCV33yam+0HTfa3SHAsftqAqd5Krffo4r1Bz05Zuz+dqZ/5bPE0/ZlXok6/vr0uTiYi7W2U7ZL003VbsNN+4Hv9iOXZiHpsbondJpfvFftsnmGs9LNxqOvqny0HnWKutaRfvbfu+CAOPRi8bkGH02OlvSIh71lq3eZy7I0yvPJF/yoaGp+y+Q37QZj9D/Dh9+1p9gD/GB/+7/8Bvvxy99WDAAA=",
+                                "frameOffsets": "H4sIAAAAAAAAExXNQREDMAwDQUL3iOQ4srF0yp9Gp0tgP2KDtvAsNc0d0QkvRd4yr9kndDpIXch3Ud1G9wp1Bb0qFC8aN1oLHwVLhX0a1xGuDb7/r2fxm8YZ4Unwpr4/7lOvMpMAAAA=",
+                                "name": "TradingCardSmall01IncubusOverlayL"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": -1
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "Overlay",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "Overlay/TradingCardSmall01IncubusOverlay.png",
+                        "Overlay/TradingCardSmall02CybilOverlay.png",
+                        "Overlay/TradingCardSmall03CherylOverlay.png",
+                        "Overlay/TradingCardSmall04AlessaOverlay.png",
+                        "Overlay/TradingCardSmall05DahliaOverlay.png",
+                        "Overlay/TradingCardSmall06KaufmannOverlay.png",
+                        "Overlay/TradingCardSmall07LisaOverlay.png",
+                        "Overlay/TradingCardSmall08MumblerOverlay.png",
+                        "Overlay/TradingCardSmall09AirScreamerOverlay.png",
+                        "Overlay/TradingCardSmall10SplitHeadOverlay.png",
+                        "Overlay/TradingCardSmall11PuppetNurseOverlay.png",
+                        "Overlay/TradingCardSmall12TwinfeelerOverlay.png",
+                        "Overlay/TradingCardSmall13FloatstingerOverlay.png",
+                        "Overlay/TradingCardSmall14GroanerOverlay.png",
+                        "Overlay/TradingCardSmall15HarryOverlay.png",
+                        "Overlay/TradingCardSmall16SwitchboardOverlay.png",
+                        "Overlay/TradingCardSmall17ChemicalsOverlay.png",
+                        "Overlay/TradingCardSmall18SpecimensOverlay.png",
+                        "Overlay/TradingCardSmall19TelephoneOverlay.png",
+                        "Overlay/TradingCardSmall20KeyOverlay.png",
+                        "Overlay/TradingCardSmall21CafeOverlay.png",
+                        "Overlay/TradingCardSmall22MusicRoomOverlay.png",
+                        "Overlay/TradingCardSmall23HospitalOverlay.png",
+                        "Overlay/TradingCardSmall24StudyOverlay.png",
+                        "Overlay/TradingCardSmall25AqueductOverlay.png",
+                        "Overlay/TradingCardSmall26ElevatorOverlay.png",
+                        "Overlay/TradingCardSmall27CemeteryOverlay.png",
+                        "Overlay/TradingCardSmall28HisFateOverlay.png",
+                        "Overlay/TradingCardSmall29HerFateOverlay.png",
+                        "Overlay/TradingCardSmall30FirstSightOverlay.png",
+                        "Overlay/TradingCardSmall31EscapeOverlay.png",
+                        "Overlay/TradingCardSmall32LoveOverlay.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "Odd"
+            }
+        ],
+        "wireframes": []
+    },
+    "extraProperties": {
+        "enabled": false,
+        "extraInfo": "",
+        "pixelSize": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        }
+    },
+    "inGameType": "None",
+    "logic": {
+        "configuration": {},
+        "customAllocator": "",
+        "enabled": false
+    },
+    "sprites": {
+        "type": "Bgmap"
+    }
+}

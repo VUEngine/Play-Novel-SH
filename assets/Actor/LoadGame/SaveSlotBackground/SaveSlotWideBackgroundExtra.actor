@@ -1,0 +1,123 @@
+{
+    "_id": "7W46M8Zoqm6CxJUG",
+    "_version": "0.6.0",
+    "animations": {
+        "default": 0,
+        "multiframe": false,
+        "totalFrames": 1
+    },
+    "body": {
+        "bounciness": 0,
+        "enabled": false,
+        "friction": 0,
+        "gravityAxes": [],
+        "mass": 0,
+        "maximumSpeed": 0,
+        "maximumVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotationAxes": []
+    },
+    "components": {
+        "animations": [],
+        "children": [],
+        "colliders": [],
+        "mutators": [],
+        "sprites": [
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 1
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE1XNq1FDURQAwF6iEe98CZIQaIKh/zYYWHXVyv2+Xdd13V7+CCQKjcHiFXe84R0PfBw88Ymvf+I6sIc97GEPe9jDHvawhz3soY3ngT3sqU1talOb2tSmNrWpTW1qU5va9KUvfXUdaEtb2uoDe9nLXvayl73sZS972cve2o4De9tb29rWtra1rW1ta1vb2ta2drTjG9/4pg+0ox3t3A/sYx/72Mc+9rGvfe1rX/tqdw7sa1/tale7j9vPL/8IZXA0AwAA",
+                                    "height": "3",
+                                    "width": "39",
+                                    "name": "SaveSlotWideBackgroundExtra"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 108,
+                                "data": "H4sIAAAAAAAAE3VXS3IlKQy8y1v3onCQ6tYyiYBLTMz9rzGhH1B2jzfGOEtKJEhJ/3zWWmPOOT+/PmOtNedcsazdtUbtruHLa3fG7ssCGbtugbY71sFyTCbWLSTgWOBg7RrAjUHGArlitwCkDIa3QRGq+K6QpHbzZrY0AGOQk+pY/8qWBIQKBnYkdY7FtEuRoQxv5kG7JIfiy/jxz/wPsyv+GfkdayZ8VyAjHYuQQFggaXhfzkkO34V95Ltghwra59dnchpHs2tRNN+2VHNLI0lborGwEnYT/Pn1UYAiHjNwTsTSYmBZcqzbcizjD8eqCiLUnLSUOwcUB8qskIgCXyI4WLercdAgqSNdwM5LBAcdHCv42jKjoyOoU7tYNP3ExjewnDOxqh6y4XYtDpAK1EqsmreRUWdQh5EQVgIKq7YdAMsU3RhUFUg6xtc/i0BlfFUz6tDeCM9b/H9EzFQrZgrNA3V4fGXfB2YCdswiFUldM5uJHXX45KuqdsGSeqabjigXWtgOiASH1oHWsLF+o2KRxhRpt8N+Ise6jamHPT7rHSIes/4E+nAIvtS0qx1gHF7RkTGL8PvZYEGN2+emhGH3Kb4e9YtDHAgdXeIiPs/TChsc8sJgY59OQWIftNY2Nu1aYt2xU4jl03pvzV141CsBUCm7DYJWfFtx8ENkhg5JPGibQ/sLh50s+BJSFiIX3/gmSbvKEpmPU+yl7DjYzWCmJU+h3BZuXV9jserFuOrFSNm+dD1287OrMrCWJg48laHsuhTvz1hCOgZD10WGKW1ote96JH/TuXtIaEIbu9o61KIj5FDW0hW2lEChXnE4UApOaOyOQZnTP2u4ZBtiSYjiY1VCY2kuUuKBcGy80jFM+BM7Lg5oWb6Ir2EiHfUC2pFYs6D5GECNdwy2tIAGCY2y2Immgs+6D/ZMre6FBPk56vCUekOQXZIYL9Yfd1wCi7jk46VdP3+m8GecjnWLzTwV0jXh8avcqdqyivgbyUvLup4WfXFp69QvBAChQLK9HZLxmaVEZJTdfN2TrrRIALIWOvOQwUu5zjFhMa8Tmz4wXzdzl4cO+efJSGp3H1JqhK96Q2XBJH6/WLb01h+INKljZo0NAWGJTb7uDmVoiatnejOScUx6+Y/l1F2aT7fyANqSg4ItvMH6C7aQV1IiQ1D0JuV4c4D2DJ+qK5cltnerI34f/HfLyqBd8pbojm8AnEODSbgDrEaYQh9vIZlNESd+mn32hdT1FnRw6tDTW28tsEc98Tz9FIkuKa9mIQD96U9rxaHn0p5oK7vbWCp4LqtIPOg9qTs2l/FVLM1Fww/A3r342ikyDq7r3wGvZb+WFT78ibroGepmoe1aGDfVd7Fri1x1k7tI7HpBkVNQ/m9394jMeuHlICSeW8GjCeeeJLy3Xxx7fDgFJTvowK4aCawOZWXwsYQ3dm6sL2XcYl6q7JNEedvYAfu/ptrb29G/8o1BYVccK4B5Np8kJvm2a9Up65DPOEWd77MF9ncMMRmzHECS7zesPQ+N4uMkdZ8tOWQ1ndlXp6bOo8ozRg3vSJf30tGczur4Lbg5lsy5ajewuyPNSxDYAMy5smszYyOb9Lkl06LIn9g1yxujc/eRa+4BhG5sf1Z2dZevGf381RVf2PGWwTAWZzPs2nxzqMimN2cnZm//xtplzeZfWUo7yXFzuOIw3o1hpCKL5bztHr4q4ziuirODetk1DpkLT+vYM85PDj5RVY9Im52u6IzjIsYovnqCs0wLt92oplmHdqh1e3PsngB3p/DOW92zuZndVY9nZji1m2dM9cZo1+5qJZR6YWtUzsqR7TgzLTG/1fjLo4jV8WcHXd12ZfO8LORs9AbwTB3XMd9qr6eLR83zN18tBY8Br2qsyo/wWUXPGouwW02DnB5mR1JrANHTP+hrWiy73+ch7pBUZbg4nB7mikN0Qbvncjr//gfc6zNIkRIAAA==",
+                                "name": "SaveSlotWideBackgroundExtra"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "SaveSlotWideBackgroundExtra",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "SaveSlotWideBackgroundExtra.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            }
+        ],
+        "wireframes": []
+    },
+    "extraProperties": {
+        "enabled": false,
+        "extraInfo": "",
+        "pixelSize": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        }
+    },
+    "inGameType": "None",
+    "logic": {
+        "configuration": {},
+        "customAllocator": "",
+        "enabled": false
+    },
+    "sprites": {
+        "type": "Bgmap"
+    }
+}

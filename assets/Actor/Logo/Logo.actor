@@ -1,0 +1,196 @@
+{
+    "_id": "AjshD19pbWXNmZj1",
+    "_version": "0.6.0",
+    "animations": {
+        "default": 0,
+        "multiframe": false,
+        "totalFrames": 1
+    },
+    "body": {
+        "bounciness": 0,
+        "enabled": false,
+        "friction": 0,
+        "gravityAxes": [],
+        "mass": 0,
+        "maximumSpeed": 0,
+        "maximumVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotationAxes": []
+    },
+    "components": {
+        "animations": [],
+        "children": [],
+        "colliders": [],
+        "mutators": [],
+        "sprites": [
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 1
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE6XTSYoUYRCA0bv02kXF9Ee6dOpLiPe/huAToei0QVwFmRB8L2r4/vJ4PB4vH96OuHuZdy/r6amfnuZu4Tw9rXEZH+8Wbscn47PxxfhqfDNef42wEC4KNwR14AZnkAVSIAVS6IVe6IVe6IVevqNOiIRIiIRIiIRIiIRIiIRIiIRIiIRIiNIrvdIrvdIrvdKr/bu6IAqiIAqiIAqiIAqirTdEQzREQzREQzRE67Ve67Ve67Ve67Xe6I3e6I3e6I3e6I3e6I3e6I3e6I3e6M3rzad0fg/1o37Uj/pRP+pH/aiftz/9+vPvuPtWDufhPJyH83AezrWwZEu2ZEu2ZEu272T/c6xr17XrhnXDumHdsG5YN1zWLzdcbrjccPW/W378BH+94c/7BAAA",
+                                    "height": "7",
+                                    "width": "26",
+                                    "name": "Logo"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 133,
+                                "data": "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",
+                                "name": "Logo"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "Logo",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "Logo.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            },
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 1
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE1XOMQ7CMBBE0bu4ptiZISGUhJBLIO5/DQS/8VZfa9nr9x5VpXH5xSTkSoosZCU3spE7eZCdPMlBXuT8R+yU5h/E70o7bAiBEAiB0NauYBEWYREWYREWnfM7V5uQGZIbyZC8tMO1TciMzJAMyZAMyZAMyZDCloCI59VplmAJljREQAREQARE9vH5ApWlCKv5AQAA",
+                                    "height": "3",
+                                    "width": "24",
+                                    "name": "LogoB"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 60,
+                                "data": "H4sIAAAAAAAAE5WWSZLsIAxE7+J1LQRGHpZSmbzEj77/NToEZvBQrv4VoehnAmOBMlH/G2j/Da/viNhGHQLrlif4N9H4ruh3RJlrg4TVcCKi+fKJcWsYyeIO09cmra/NILIYXoOCSHEeXdonDJcnnFbhsk1EtRheA08oSD7CYngNXlbZ5zoAFobMvGO3t/AfOTiWsq4CmPNi2H+Gb1VsashdWex0K7qGI4h8SseVdXNZHCr6E0bHdV2JBIUhMxMiTnWTlacyV2uS3JAU0SK9NrcccrlyZlyxrrs1NMXFJyRSvVv3DlXWujdsZHFEbUgkLV/A4jNKqPpFIIvP6NvcMZDFZ3T23mx2wko0YS0FCM+OTdZzxVkuF8DG9GqyrTjr3m+dneZbk3Wj96oOt0heQT6rOppcUoWcB+wxTUCZ0O9NAQtD5lDwaLL3H/0GAhDShxfKMtgLGy41RmZNOKbUDM3wWVzwiPaYVf1ssh47ixxQGm72+BczdMiMIvvuArERiTj5AoirFjO0yyYdCPRoke9m6PCrGTrsZO+PZnCXCeSsxCFZZF72jgOsFGaEk2CQzyStsFYH0ARy4HMfuvWFXyu2uZ0DbL+C2iGBpxYKRGbmLHuxx6t+m1L9kn1sf5ZymXf5VotYoTTXTUS0eOg2BwcxoVphnah6qD7l0OPdvfNBBFqxXeaKBYrNEKCYewuimS/eXmJX41gn89dLwYyznTw0aWs+XxoK9w2ly+G+oXC49qxskXhqKCJLM87XM5vkembJIppkL80tIvmW+ljjSWr7Mpwv/5fQuDSTGS553UATlqfe0mSkol7i4Xx/fgHiSixLUQoAAA==",
+                                "name": "LogoB"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": -1,
+                    "x": -6,
+                    "y": -4,
+                    "z": -1
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "LogoB",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "LogoB.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            }
+        ],
+        "wireframes": []
+    },
+    "extraProperties": {
+        "enabled": false,
+        "extraInfo": "",
+        "pixelSize": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        }
+    },
+    "inGameType": "None",
+    "logic": {
+        "configuration": {},
+        "customAllocator": "",
+        "enabled": false
+    },
+    "sprites": {
+        "type": "Bgmap"
+    }
+}

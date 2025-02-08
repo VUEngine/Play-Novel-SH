@@ -1,0 +1,123 @@
+{
+    "_id": "p2bCEiNjqDT0j4lP",
+    "_version": "0.6.0",
+    "animations": {
+        "default": 0,
+        "multiframe": false,
+        "totalFrames": 1
+    },
+    "body": {
+        "bounciness": 0,
+        "enabled": false,
+        "friction": 0,
+        "gravityAxes": [],
+        "mass": 0,
+        "maximumSpeed": 0,
+        "maximumVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotationAxes": []
+    },
+    "components": {
+        "animations": [],
+        "children": [],
+        "colliders": [],
+        "mutators": [],
+        "sprites": [
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 1
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE1XNuVFFMRAAsF5+TPDW19qhzdEEQ/9tMKDIkUJ9v57neV5vfwQKKho6BhITCxsH7/jAJ77+CV/EhTa0oQ1taEMb2tCGNrShDW18XtiLvWiLtmiLtmiLtmiLtmiLtmiLtmiLr/iqr/qqr/qqr/rquNBWbdVWbdVWbdVWbdU2bdM2basX9mZv2qZt2qZt2qZt2qZt2qbt2q7t2u7rvu7rvu7rvu7rvn4utF3btV07tEM7tEM7tEM7tEM75oV92Id2aId2aIc2talNbWpTm9rUpjZ96Utf+tKXvvSlbz4X2qmd2qmd2qmd2qmd2qmd2qmdHxf2aV/apV3apV3apV3apV3apV3apV3a5Vu+5dvPhXZrt3a3C/u2b/u2b/u2b/u2b/u2b/vRnriwH/vRHu3Rnnz9/AIDsLhSVgUAAA==",
+                                    "height": "5",
+                                    "width": "39",
+                                    "name": "SaveSlotWideBackground"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 184,
+                                "data": "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",
+                                "name": "SaveSlotWideBackground"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "SaveSlotWideBackground",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "SaveSlotWideBackground.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            }
+        ],
+        "wireframes": []
+    },
+    "extraProperties": {
+        "enabled": false,
+        "extraInfo": "",
+        "pixelSize": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        }
+    },
+    "inGameType": "None",
+    "logic": {
+        "configuration": {},
+        "customAllocator": "",
+        "enabled": false
+    },
+    "sprites": {
+        "type": "Bgmap"
+    }
+}

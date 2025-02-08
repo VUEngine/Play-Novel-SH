@@ -1,0 +1,171 @@
+{
+    "_id": "Xy9Jk0trgDXwgVHV",
+    "_version": "0.6.0",
+    "animations": {
+        "default": 0,
+        "multiframe": false,
+        "totalFrames": 13
+    },
+    "body": {
+        "bounciness": 0,
+        "enabled": false,
+        "friction": 0,
+        "gravityAxes": [],
+        "mass": 0,
+        "maximumSpeed": 0,
+        "maximumVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotationAxes": []
+    },
+    "components": {
+        "animations": [
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    0
+                ],
+                "loop": true,
+                "name": "0"
+            },
+            {
+                "callback": "",
+                "cycles": 2,
+                "frames": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    12,
+                    11,
+                    10,
+                    9,
+                    8,
+                    7,
+                    6,
+                    5,
+                    4,
+                    3,
+                    2,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "loop": true,
+                "name": "10"
+            }
+        ],
+        "children": [],
+        "colliders": [],
+        "mutators": [],
+        "sprites": [
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 13
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAEyXNu1FEMRAAsF4uJnj+rL0ObcM1wdB/GwwoUqjv1/M8z+vjj4KKho7AwERiYePg4hNfeP9TfMVXfMVXfMVXfMVXfMVXfMVXfMVXfMVXfdVXfdVXfdVXfdVXfdVXfdVXfdVXfdXXfM3XfM3XfM3XfM3XfM3XfM3XfM3XfM3Xfd3Xfd3Xfd3Xfd3Xfd3Xfd3Xfd3Xfd0XvvCFL3zhC1/4whe+8IUvfOELX/jCN3zDN3zDN3zDN3zDN3zDN3zDN3zDN3zDN33TN33TN33TN33TN33TN33TN33TN33Tl770pS996Utf+tKXvvSlL33pS1/60rd8y7d8y7d8y7d8y7d8y7d8y7d8y7d8y7d927d927d927d927d927d927d927d923d8x3d8x3d8x3d8x3d8x3d8x3d8x3d8x3d913d913d913d913d913d913d913d99/36+QX7ZDQnsQUAAA==",
+                                    "height": "26",
+                                    "width": "8",
+                                    "name": "MainMenuMobile"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 208,
+                                "data": "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",
+                                "name": "MainMenuMobile"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "MainMenuMobile",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "MainMenuMobile.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            }
+        ],
+        "wireframes": []
+    },
+    "extraProperties": {
+        "enabled": false,
+        "extraInfo": "",
+        "pixelSize": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        }
+    },
+    "inGameType": "None",
+    "logic": {
+        "configuration": {},
+        "customAllocator": "",
+        "enabled": false
+    },
+    "sprites": {
+        "type": "Bgmap"
+    }
+}

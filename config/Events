@@ -1,6 +1,6 @@
 {
-    "_version": "1.0.0",
-    "events": [
-        "Intro Animation Completed"
-    ]
+    "_version": "0.6.0",
+    "events": {
+        "8sXGrTAK9rxJcAee": "Intro Animation Completed"
+    }
 }

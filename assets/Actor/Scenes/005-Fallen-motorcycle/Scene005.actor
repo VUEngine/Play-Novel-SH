@@ -1,0 +1,123 @@
+{
+    "_id": "RqofVgw4QWqwtRKc",
+    "_version": "0.6.0",
+    "animations": {
+        "default": 0,
+        "multiframe": false,
+        "totalFrames": 1
+    },
+    "body": {
+        "bounciness": 0,
+        "enabled": false,
+        "friction": 0,
+        "gravityAxes": [],
+        "mass": 0,
+        "maximumSpeed": 0,
+        "maximumVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotationAxes": []
+    },
+    "components": {
+        "animations": [],
+        "children": [],
+        "colliders": [],
+        "mutators": [],
+        "sprites": [
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 1
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE82ZS3LjOBBE79LrWSgB4rcEQPASE3P/a0yMXzEC6FHIdlu0taogKSoz8VNm6e9ft9tNv/76SnEUv5SNEiiRkiiZUiiV0iidslMG5aDcPlz+UIp4XXblloIwIUwIE8KEMCFMCBPChDD1n1G0LxpA1zErciA4XnB80tmzbVbkEO3iT86RS7Mix5A7I8iQuzbPkWPkHXQddB10/ULJa1bk3feuOu9nYZ6R92jwDLlHu8+zhrtcTinv37xCkWc6fF0UMSue6fBMhx8PNHx6SV2gaLstG4iyad5Am920KyZuY+I2Jm5LF0j5U0Wsno052pijjcnZmJyNydmYnI15COAFviUgOvgXUBQY8sCQB4Y8MOQBtQG1AbUBtQG1AbUBteFnVp0dAtEKNyODHBnkiMyIzIjMiMyIzIjMiMyIzIjMuD9RUWSwIoOVuJlgnWCdYJ1gnWCdYJ1gnWCdYJ1gnWCdYJ1gncBL4GXw8qfPswclwzrDOsM6wzrDOsM6wzrDOsM6wzrDOsM6wzrDugBUYF3AK+AV8Ep4l6ftuA9svALrAusC6wLrAusC6wLrAusC6wLrypdVWFdYV9ArrCusK3gVvJpnLtXM3vhSqbCusK6wrrCu9hFYN2AbrBusG6wbrBusG6wbrBusW5lZN2AbsA3YBmwDtgHbge1arkDvoHfQO+gd9A56X8asg95B76B30DvoHfQO+s57O+g7sLuf0XfQ97AUSOzpXoHSDpcdLjtcdrjscNkfGMGdm4OrAcEBwQGzAbMBpQGlAYkBiQGJAYkBiQGJAYkxlnLMzw7QD9AP0A/QD9CPMM/fEe8ossVwwOyA2QGzw57B7IDZYehQOuYv01lEcdOVWXDdrGyUQImURMmUQqmURunL1U4ZlDcu4qdHpB5hcYS3kcUdewFHrbfU482fifAjwo+ICiL8iPAjwo8II5J9Ga8TP2TxgxUpUogshZzr0/y8fYQBOa8YEJdmdMKBCAdydhNKpAKRCkQqEI5apAJhl0UOEPZc+HLhy4Uvl/nyM/iBh0uXt6u6PGvLVZ+F4YyFM5YNsl3hRoX/FMZTm18+AkH8p/Cfwn8K6yesn7B+wvoJ6yesnzb7MtCxfsL6CesnfoGE+VII/5dyFjtKzkMcdGyazKZ1Q8jzJy+xy08s5+YKpsg6GX0qwmrKrOYrsH6oCC8svLDwwjJTarvKvKmdik91lVcoivNRIrPSttVw1DJH/fnA/0OK2Dk4f5nzt612W9obr0D3Q4rYQBZbznXWZkWnFWM7xRffTmJbyGKSnfPnGjSvyMK07PT5/tl/xVkOUHpmFLqrKLmlGCwbiHAnC3f2g2kZ715QEcFPFvx+e8b0Wwy8UhEnNAlTJEyRMJWXF5ZDTkvsFLlR5EaRG0VuFLlR5EaRG5XviH6WomPeMmcf86MHtYiyIsqKKCuirIiyIsqKKCuirIiyKlf0gr42IMRqEatFIBaBWARiEYhFIBaBWARilR/5cRMBXARwEcBFABcBXARwEcBFABcBXARwEcBldovoLKKz6jednyKci3AuwrkI5yKci3AuwrkI5yKci3AuwrkI5yKciyCmdvU58Zsi4r+I/yL+y+L/3bPOrG2/c0Krv4DlEK0B0ZgQjQnRmBCNCdGYUC/Le0xA/94JeCyFyaE7oj6WZyw+miSiSSKaJHprkvhr/nH4miIaNrJcbEn4fMbk0KIRLRpZi+aL6NeNhGgeab/gCDLWbyeDP3+nXz2h2P8roo0m2miiY6bxCgQfzSa9PNHLE7080cvTeL+b/ezyz78xQKMp0SAAAA==",
+                                    "height": "40",
+                                    "width": "30",
+                                    "name": "Scene005"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 486,
+                                "data": "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",
+                                "name": "Scene005"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 1,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "Scene005",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "Scene005.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            }
+        ],
+        "wireframes": []
+    },
+    "extraProperties": {
+        "enabled": false,
+        "extraInfo": "",
+        "pixelSize": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        }
+    },
+    "inGameType": "None",
+    "logic": {
+        "configuration": {},
+        "customAllocator": "",
+        "enabled": false
+    },
+    "sprites": {
+        "type": "Bgmap"
+    }
+}

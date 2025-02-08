@@ -1,0 +1,171 @@
+{
+    "_id": "K1VAWdQ1ueNTc3Ku",
+    "_version": "0.6.0",
+    "animations": {
+        "default": 0,
+        "multiframe": false,
+        "totalFrames": 13
+    },
+    "body": {
+        "bounciness": 0,
+        "enabled": false,
+        "friction": 0,
+        "gravityAxes": [],
+        "mass": 0,
+        "maximumSpeed": 0,
+        "maximumVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotationAxes": []
+    },
+    "components": {
+        "animations": [
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    0
+                ],
+                "loop": true,
+                "name": "0"
+            },
+            {
+                "callback": "",
+                "cycles": 2,
+                "frames": [
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    6,
+                    7,
+                    8,
+                    9,
+                    10,
+                    11,
+                    12,
+                    12,
+                    11,
+                    10,
+                    9,
+                    8,
+                    7,
+                    6,
+                    5,
+                    4,
+                    3,
+                    2,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                "loop": true,
+                "name": "10"
+            }
+        ],
+        "children": [],
+        "colliders": [],
+        "mutators": [],
+        "sprites": [
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 13
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAEyXNsXEcMQwAwF4+dvAgCRAMeZbchEf9t6GRNtpw/7/e7/f79eeHwMDEQqKw0Ti4ePAXH/jEv1/CF77whS984Qtf+MIXvvCFL3zhC1/4hm/4hm/4hm/4hm/4hm/4hm/4hm/4hm/4pm/6pm/6pm/6pm/6pm/6pm/6pm/6pm/6lm/5lm/5lm/5lm/5lm/5lm/5lm/5lm/50pe+9KUvfelLX/rSl770pS996Utf+spXvvKVr3zlK1/5yle+8pWvfOUrX/m2b/u2b/u2b/u2b/u2b/u2b/u2b/u2b/va1772ta997Wtf+9rXvva1r33ta1/7ju/4ju/4ju/4ju/4ju/4ju/4ju/4ju/4ru/6ru/6ru/6ru/6ru/6ru/6ru/6ru/6Ht/je3yP7/E9+fr6BsNp90f7BAAA",
+                                    "height": "26",
+                                    "width": "7",
+                                    "name": "MainMenuStart"
+                                }
+                            ],
+                            "tiles": {
+                                "count": 182,
+                                "data": "H4sIAAAAAAAAE+2WQY7cOAxF79LrLMiAXw0tacS+xGDuf40BKcmSJVmuQtCZAEknDbDcvyTy84nWPx+Ufz6+fQBnqBpFFZJCQoj2tNUSoWgRdN+hH98+IvwnXrVEwLlFOBD08BCb/Q7ac4twRGCzxbDpgc9j73IAar5bPI495jCGLfZaLjnsEcdx/FBPHYcCe5/DqSVCYGhKkoN9TGXScboj2R3LRqM/vWwcNKYygbADIWfGgHvWaL3cpFVAf1SBbXLV6nEcONxJjQifuxatArhqd91MHn0LjRFbzSF0WrWEUw4RsNQ/swBDDuTd4lDDZjEM2l/L2WbyRIk+cLY3nG343Facadz2zJk+crYfW+Fs16HdI2c6cra/x5nm8IkzbTiLS862Y8PuThpnYcWZquq+/2Gc6euc6cmZOme65ExbznTJmW4/zZl+HWf6Eme6G2daONMHzlT3ypn+LpyFAAHcMwQQsOAsmnfRa0P+WXDmcMUUBvu958yl7gNCCJiwg5pv8CSSFhGKW86shRpcG4E4y7fjLAvsaSmTYizumFHFvoCRMy+zcafhLAzamJ8ixaH2uC8oqCLG7CSCnsCEoaCIGDVqyiGgwsVj8XlU6NihMYef58wYK5zBOMM9Z27J65yFyhkeOIuVM/sX7jnzlTJnadl7zgyuzBle4Aw3nJ3utJxhxhmunN33uLGkc3LKmZ2n08lYtdN1Y+EMa87GHB45w5uciXScSeFMIL2WSIpWrArfAiLCzMMWUrQsCJI4YxYIeOBMzi0QwRwsBwkI/L3njJnbfFvOuOeMs9g5o8oZx5l9p5ZIwNxwxuyZMcXijogh7LXR5ECKYZgssbC6w6NRWRuSk+Vr9keRXmucceGMmRvORBacSeuOpcCd1soVCanMEvq61K9rK1SizJ3mkMktZ5fMrM4S2gILrWUG302YmITvt7DCKPVN2DIfmayu+7xK8yH1ajWK2/kL4X6stFpvZ5owZN1cHD0i4TzEGlOFxOZccYerOxDuKybzMnFmxVd3eOibWZK7aVk1cCEB3rGTJ62n0M4+mc9Ud8fQoeIO2//+RWXmcemQzY0z3z4H8qlQngpd7Bu1c87oZc6ocpYerlA+OUsnYNVjtp1Pzuh1zuSBM3+9Ib/9sczBe9FyxrnMuTv2aaxYyhbcnfmes7RAyUyqQIa+Id9nJpzN3CmcGWOVM5pxlu4HNZ1m4zk7LxE1D0UqZ/LAGRPL65zRG5xJwxkvOWORkzORtziT5xE/40ym7siMM7ly1gi6jZvG5vtvEdxxlt/HzlkRTDgTWIsSZ/LImR+tX8eZXVJySLzQstmLdrflPLPx272HbrR+G0/HH9R8bZYvpfeT58vG2aI2gyRr03vxiTPurPZ5NnWHZyvIiTLLtbFjh0pjOYUnv5MbCOzFK4UzIbnPQdIoOO/VC84k3U653sG/krN8w05JyuPX+HqOHzi7CFZJyukDO2f36zowIqeT3NvXacFV+547JV8pBzJ9WFZ8UsKdYJxnTWPbzMZ5Js6ZnBet2oAp6z4KKmdLd4hfgOv/CWfvi5vwSzijDPvtMb06WTgbb6+vV/x1pr7YWOOsOvnUgMzZoztjDr8TZ3/Dv+Eq/Pc/mlvbekkfAAA=",
+                                "name": "MainMenuStart"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "MainMenuStart",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "MainMenuStart.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            }
+        ],
+        "wireframes": []
+    },
+    "extraProperties": {
+        "enabled": false,
+        "extraInfo": "",
+        "pixelSize": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        }
+    },
+    "inGameType": "None",
+    "logic": {
+        "configuration": {},
+        "customAllocator": "",
+        "enabled": false
+    },
+    "sprites": {
+        "type": "Bgmap"
+    }
+}

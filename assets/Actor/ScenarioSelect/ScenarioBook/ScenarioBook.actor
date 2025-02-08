@@ -1,0 +1,299 @@
+{
+    "_id": "g21LpXWtfdHgYDZS",
+    "_version": "0.6.0",
+    "animations": {
+        "default": 0,
+        "multiframe": false,
+        "totalFrames": 2
+    },
+    "body": {
+        "bounciness": 0,
+        "enabled": false,
+        "friction": 0,
+        "gravityAxes": [],
+        "mass": 0,
+        "maximumSpeed": 0,
+        "maximumVelocity": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotationAxes": []
+    },
+    "components": {
+        "animations": [
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    1
+                ],
+                "loop": false,
+                "name": "0"
+            },
+            {
+                "callback": "",
+                "cycles": 8,
+                "frames": [
+                    0
+                ],
+                "loop": false,
+                "name": "1"
+            }
+        ],
+        "children": [],
+        "colliders": [],
+        "mutators": [],
+        "sprites": [
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 1,
+                                "largestFrame": 4
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE4tWMjAwMFDSAVGGNKCMIJQxDahRo0eNHjV61OjBaLQhpFA1hpSDVKRiAfBrZAqxBQAA",
+                                    "height": "16",
+                                    "name": "ScenarioBookBlackL",
+                                    "width": "13"
+                                }
+                            ],
+                            "tiles": {
+                                "compressionRatio": 0,
+                                "count": 4,
+                                "data": "H4sIAAAAAAAAE4tWMoACJR0lU1NTExDGyURVCwb4mPgNQ2USNAzCjAUApoTKVbEAAAA=",
+                                "frameOffsets": "H4sIAAAAAAAAE4s2jAUAuDIvTAMAAAA=",
+                                "name": "ScenarioBookBlackL"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 1
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": false,
+                "manipulationFunction": "",
+                "name": "ScenarioBookBlack",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "ScenarioBookBlack.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 1,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            },
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 2,
+                                "largestFrame": 204
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE83VS27VMAAF0L0wZvD8t4d2SjeB2P82EBwXGhTRSFURo6soT/dYkZ7v10+Px+Px6fOPCCKKJLIoooomuhhiiiUO8SS+iOefEXiBF3iBF3iBF3iBF3iBF3iBF3iBF3iBF3mRF3mRF3mRF3mRF3mRF3mRF3mRF3mRl3iJl3iJl3iJl3iJl3iJl3iJl3iJl3iJl3mZl3mZl3mZl3m5XQU90zM90zM90zM90wu9hNdlxSGKQxSHKA5RHKLsX2ILtmALtmALtmALtmIrtvIqr/Iqr/Iqr/Iqr/Iqr/Iqr/Iqr/Ear/Ear/Ear/Ear/Ear/Ear/Ear/Ear/M6r/M6r/M6r/M6r/M6r/M6r/M6r/M6b/AGb/AGb/AGb9TX1QM7sAM79jvswA7swA7sxE7sxE7sxE7sxE7e5E3e5E3e5E3e5E3e4i3e4i3e4i3e4i3e4i3e4i3e4i3e4i3ewTt4B+/gHbyDd/AO3sE7eAfv2Hfrf39f73c3r+30q+XJUxIbOt3l+57/d1f6rv6Am31X37jgX8bt7dhTsKuvF+FqGK7LzmvRT9XnmThXX43GX099+taXu3JjUC6r98rs6j025+Pen54/qp9fV5/3aFffn6VzdT1963du1bl6L1e8GrB96vs7dvnJ3zlu57I9dS9Pby/e/f/KB27j71H89h0O13D1YQsAAA==",
+                                    "height": "16",
+                                    "name": "ScenarioBookCybilBaseL",
+                                    "width": "13"
+                                }
+                            ],
+                            "tiles": {
+                                "compressionRatio": 0,
+                                "count": 357,
+                                "data": "H4sIAAAAAAAAE6VbW44kuQ28S3/vh1QQOc1PFpx1CcP3v4bBN5WZVd2DHXthWquSlGIoGKQ0//0a/ufrn6+1xoBmrrPZ+o611gSAr3++wP9IX5C2CXtfGcFN7bjGFJPyZ31cWGvOKR3W2KbAa99lI+sUC8acp+VsfcfqSx/TlrPe9Z3Txx2xHO98+baVe7bGBOu77tcg32YfpOaH9a62SJki+t6tF3QfdGIx3QE2Kp7HHbkPOtayn8GS7cXTekfuA6hbdeJZZoMGnABzgVH7TP0K9H1ordI4bVwIzw/UdjYH5MQNcmulWyBN3V/fh9Zh2cj1bdMXOYdicuhWj1neHNk60y3WQUYIaMi4EwwlOVtbmex6toKekljOnJDj2srWgJmtA+Zog8VsjjNZWVtDuaWvoQYTaLRFzuzbsJNTQNvqNfHsQmgdFlyYoCF1tsNg337GzrjDzjC3nLBj62LaUbIcG/vEAOcPyj3rgzUH+AflGRp1nFYhykaoXXe/QXOLHN4xy8dznwJgjFiO/UnIjbFivSt4Z0z/ilGzCfriZ1AwgvcoyZM1zryzYSenQOggwI7f689qMGamPN2nw1CnJTe1Qoe0zfQbNl84djbemQaYuVOQt44yBeD+xXqOw5TFQPOmTUx6+HRiXM6eKI1I4hZc8h/ry0ARnQ4gPIDcBDPxoGg9OJEKx1rMtlEHAT/TxJdvH7FzFNOCF4Nw35OIn8yorcRPsr5IFFjng5GPp5h4HIBp4vPFuhw+cqtlZm0FkMYnhIkv0PUei8KbBxysra/jgNczOoD8Y/vA00IHHMTA8LTZGJiftiXRyvaH7DMPZj7K5N1cCxnmVBNlx7QVmXl638NGc5QkEDtolx+cxjuNVpq53rTqGdIDOZJhloWDPKZO0LAWIhX/XljDFunhFpiJ7IgkXfUjMnT1Pi7b9o0azLkvGaYID5nYByO4aoJdHuCTL7z+1uSTqnjfl5B/GqxMhj9vOwgIE4gM/Hw6SigBkyAQYPXW5/N56RAmcccOOn6HLMbNCThntGaHTRt1eduwk5EMAjtQ8bgz4q4UyptBTKs4yvRFEemcp9h9ik4hRtbduYDO4GOHBlzM++D+b00qQd98fDQXyul+qvk6xJlsREr8uvO89ja60t5hGggWkHAUm57k5u6J1lrmOyboASV1Se3k6CG01Ouw4H2Jet1DV4my+634YQvYu5nYCcG5YmLPZq7eTJO2Vrz6rTI1IgLkNPlvDrrtOvXBhNUvJtgxNDzcuvvgK0r4eIm7X2qK51+vbHVT/z1rCoM8LakYYqIzAVerAIYDD7AuivSEh8iP9f+EPnPTvDlmnax1p40gJWBX5hc5vmt7aIKzgBhrMME5T5hsMpRAouwqPKRJ4YvEw8lvZWIQtJ5dhwYhY5iMjNWa3kSTBxtKyFFiJlp00klwp4rtZ3QTkowHEjtuCsM8L/HipXh5BqKeL2UNHyGiyNNoBZQqMFkjclNOwIhasW87scab/LiSeAAYGdFbvnlV8SelUAnpGCcQ9AxwpP7VMoBjR/903hm7qqChaYeO+z3WYw3TfbSYXM6ACmDZM8EO2mD8Deg6VTxvpihWR4mc+FCDBOCaVkO7bSoRBHaAlRZ45wfjDKVt7WB9ERjQ1AqZi6/J670Zg3Et0qYl8EV6WtLoyhnoecKZxZ4T+sCErMKIEyXg0iY6NOyMSzazVakyVR4rKN5Q4jFAE8tgI6jM0nXJpf7gMUtqST03HV+nfLNlrIIcNef8XgN9tseYg6SV1pSBnfCA5rrEoRUpuIv4R/HkcN4hg4bAaWIgClxtk6QXFHEIk0A0gyFDVDEXEpvoldZAH1JIVqMrJPM8MaENpkM0v4WIRCMQaNFJFkBnnmTSwXiPmwfvHMV3po/boGHms7U23uG3vDPe5MdauoPiHcOD1L48x6lU2YqHyUbjXAPZCwlVP1sj45CAK0aI0upcC2EOMhNcny0CnJbNPBREFkJ3zbUp6FxD5gziC4tDawljaYdJIUbWeiwYD+2AHNFJTEYKZ3krdlIgQucoUCBZdBIoZiuBM9fBYEygSXGQwsH4PMhgBKFeT4IoBLLMZqbFzav+/WwKNFzkmNItM/ROhq9Tfjw+pcrQAaMJcgKmV8q67AidGqq4mMsq0zNV0AzsrPkuFjp24GH1EpIzbwwjbQSTFLQk2RxEVdjX8F1IncpW06ExbQRmLUItL4SxHREpzz0s6kkrmj47VFMw7X6TYhKmpl1sfblUEKo0UkQp4lwbIRM8iR2/7DpKcIZGbcZspo0mwppBQc5GwjWQKAlEud6B9HxlPpkPxdFTDRpH5C/rJVENBchS5dwJJADTqu5pjpXjni5DSu/0ivcs/RuzSe1VI8NcKXKWXRBBjaB953dIbJIRKLhk0nCkwoIgxzHcWTIq2N0MG5LVAWMtHCO+DT34lF6fQMsjw1zCPHpaSOWFhSRxN5L6mGgh43LsEIbSbQK50jPlGgrTVJCMWlW1YK4GAtpaAzsnArm29nCwWkW2CmxVp+3QGMUaY6vxp4aRongCZkyEnM0Ep86W91lXlHhwchjJdeA6YXJDqsSh/Fne+ewMU7GltUZVbURW129hrEI/dlSLu9F/Blv5PAlvRFGHLYRazXHAZD+FshNjXBSTiG2K+GY/u6+tKFocJa0OU2zUMzW9cuuQKxOrYoi4o4Qqo7LsLVR8r2BcUbJa69rvFq/3x+M2d4Jtiqpo6X+9/huiYZTeGXqXNzP4hKZd24XMHDe802+NGhtd8FAdwKNaDGZUATBO9yIND6WVAzv1mXfXjNtt6n3dKNFHf1PZK5SACu+s+iRKfhih3d22Wjy9+9nN3eKyQEV1A32iwdlGaAyzUcUat7FluxnM1wv+TuFc6YWEhrxkCCDCeVzQimsom+h7z1z6xavXdGMNDpitr9YOV7BnoLqF0H1cuN5Ly8+u43aUlFmFpdu+28/qru5+3MLkfV+/sYkIOT/27df6Y/+2m324eb0wbr9tc+GM3InUnCfz/jOFDtGKDpZjmsS+9J2RM3h2e0DE2B+3mqWwAb/t+2EN56OngpPxd321M/2qL2Rs+e16f9dXAw69/zbRW38yd4KP+yscJ1fXqu0p8qw348oSrThg0t2yxe85eLkwTJPKbIhCyTAthGr5gr3yJNpdNxUZ+I+1gmo1r4Gwlg9sU9FlvqaNYWrspQ++2Ey86sn35i/ZXv/XqjO/6/vThWIz+bfrpd9HJwlu7s0mkPnAqGL/BzmrllobQLvDhvA8SFT0UqXXH7/iUZTjYQyudwqJh3q94Iv48nITPo/0JriPyUugVovnVGL4F275dyZlcevnTfUbg7cd8M3PoArEPy1H1kIQZTewGrS0hufRUHDa6h9N23U6m9xOVpjI7TMxCs9WlzZTnz8Ea4SYRgHXy0Y4mPCw3F9aDyS/qYjzdoCUjUDryvJmxOHJnG9GpEoQ7Emvax2RxITQ6w4Y1MuOIy5L0d9raGnqdUTBKs7mQcj+XEBeqzTz5RUtcmFIfJC/GZFHIv5mpL0k0fpnvBmR7UF7KCLlsXoz8tRWtnoKuMkQ7r4xfwSMTttIAS+ml+AuHfYkqEHjjrnwE37JrrPiOLWEqa+sVZARWt/zlZlEBh9MpbkVtKVYXX359hy3QkJUseFHLuG4ZLG2D09CVNlUokDw+UhjBrVtZffe5Lbe2w792fA27rnvvB/hB+biSorJonAyV0IDogCksgK9qEMeL+RAYgRs9RuXu+MCdAt16Hqn7W+WmCuMY7+PZQ4a/AVtV2GpPt5HS2hQtUZwJ9wce6HM5Emq09Jf9WxXJCGF/6a2bVfJ+Ku+pgjAfSHqy9VVmdR01M/guu0woV55vYER1mnJ/d2zcbxu6s1gVMRkRb5mUplR5Ov1vvuNutb7dHcy948OqPr4vOvv9yxMzpd8+8e/O3rFv9dnKdg+3m/oTgLO0wOP3fnykFt1vEPDYeQzuJnBp29UL62S77qE8T9+CbBtCTMebHfj4OibwtqkHvKdzMPr+7vfjXMeXn24svMk2tV33o1H38K6XZ5D3o3bK0VNIkOy1q5j7noTT5i+YNhP7PXwQjvHRzzP0YSJj/dnU2/UbGV67w+Pdp2Ceyy0pK/kzM1gmwO2RyVNTDuqMcz1zfJ8QSdG0mq91646UmN/F9S4DFeso/HclydtnT2bwKCEfdtf6gElTgB1GZpQvj3HtJuUDlBNgPvFdW8ll4uVO+1XkpjvgqCdNxeG5Ntu4yLGwwtNoyjFkx8yUekQJUW4FXAPOM/WKoa9tl3wtK22sptd/2olnWGuhznr7IBrqONG0Lvijw6tDh5m2+q35mf+ha2SHjwp//LPTSR7xHuCtl69W8TUGhAvB7TyH6IBHhDMhY3PrBShG0kcnBpSQtRkxnmiu0CVic3+hPDhb8rsuYbdb8oiv4PElt2xatSMvzXQYsBkeaJ2dtYeL3qlgeA3zpolUVqEJO5vfWbAnpN3WoREfXbSAuAlFj70NPiLfWByajOxYStjrFhYdBV/04KJI8vHutIx0sDMea31Ic+obb0PEnAEmRMMC4Akl2e261Rumeat3L7V3gJ+COO3f+kC9xIHRS59ckCrUoF/W7xm0QPLdk1+ljM3yiZZTj3o96bWZX+e804N3mUHfhZOgLnfh+YWexCS445rzlDKfE3Ax6aY1nkKLdv/TlL9ZG73b6MK2mm20hSV6RUvT1bELQZ7isIz2EUQF7Xh6Thpz5bonnVUl0l6MK67boi49cUpRdxCUiqQ811osn2+G9RXFfa3UxDIa3gmyihqeLjO9wGtsvexSG2hY9z85VWiJiVqZfUV27h4W2mYYfa+tNd08fyzbQ3Uiw6Vet6OqwIkB7tcJW/r1dw1M+Eoa96uwfguO9D5vO3j7vv7YdzTMW3bd/XFj2eo9cWq/6JKH87PPF2G/O//gVUrpl09AAA=",
+                                "frameOffsets": "H4sIAAAAAAAAE4s21LEwNI8FAKqmQuIHAAAA",
+                                "name": "ScenarioBookCybilBaseL"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "Base",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "ScenarioBookCybilBase.png",
+                        "ScenarioBookHarryBase.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "None"
+            },
+            {
+                "_imageData": {
+                    "images": [
+                        {
+                            "animation": {
+                                "frames": 2,
+                                "largestFrame": 208
+                            },
+                            "maps": [
+                                {
+                                    "data": "H4sIAAAAAAAAE+XVPW4bMRgE0Lu4diH+kyXJxJcwfP9rBMmjDGxr2Q6CVANsMU/YFeZ7fbrdbren598RRBRJZFFEFU10McQUS2zxQ/wUL38i8AIv8AIv8AIv8AIv8AIv8AIv8AIv8AIv8iIv8iIv8iIv8iIv8iIv8iIv8iIv8iIv8RIv8RIv8RIv8RIv8RIv8RIv8RIv8RIv8zIv8zIv8zIv8zIv8zIv8zIv8zIv8zKv8Aqv8Aqv8Aqv8Aqv8Aqv8Aqv8Aqv8Aqv8iqv8iqv8iqv8iqv8iqv8iqv8iqv8iqv8Rqv8Rqv8Rqv8Rqv8Rqv8Rqv8Rqv8Rqv8zqv8zqv8zqv8zqv8zqv8zqv8zqv8zpv8AZv8AZv8AZv8AZv8AZv8AZv8AZv8AZv8iZv8iZv8iZv8iZv8iZv8iZv8iZv8iZv8RZv8RZv8RZv8RZv8RZv8RZv8RZv8RZv8zZv8zZv8zZv8zZv8zZv8zZv8zZv8zbvLw31/Uych58+2+m97D9Z71P9wRG/fo7rpJ/qjy77Kfs3B/76Xr5i7k/1Wf1T/eD4X391v/z5HrwI987LYbhXP3YfTvX5jF9xLY5wjkb6lNtx7/yOE/L2C9x0CrVhCwAA",
+                                    "height": "16",
+                                    "name": "ScenarioBookCybilOverlayL",
+                                    "width": "13"
+                                }
+                            ],
+                            "tiles": {
+                                "compressionRatio": 0,
+                                "count": 395,
+                                "data": "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",
+                                "frameOffsets": "H4sIAAAAAAAAE4s21LEwNo4FAMC3qoUHAAAA",
+                                "name": "ScenarioBookCybilOverlayL"
+                            }
+                        }
+                    ]
+                },
+                "bgmapMode": "Bgmap",
+                "colorMode": 0,
+                "compression": "none",
+                "displacement": {
+                    "parallax": 0,
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "displayMode": "Mono",
+                "displays": "ON",
+                "imageProcessingSettings": {
+                    "colorDistanceFormula": "euclidean",
+                    "imageQuantizationAlgorithm": "nearest",
+                    "minimumColorDistanceToDither": 0,
+                    "serpentine": false
+                },
+                "isAnimated": true,
+                "manipulationFunction": "",
+                "name": "Overlay",
+                "optimizeTiles": true,
+                "section": "rom",
+                "sourceType": "image",
+                "texture": {
+                    "files": [
+                        "ScenarioBookCybilOverlay.png",
+                        "ScenarioBookHarryOverlay.png"
+                    ],
+                    "files2": [],
+                    "flip": {
+                        "x": false,
+                        "y": false
+                    },
+                    "padding": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "palette": 0,
+                    "recycleable": false,
+                    "repeat": {
+                        "mode": "1x1",
+                        "size": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "x": false,
+                        "y": false
+                    }
+                },
+                "transparency": "Odd"
+            }
+        ],
+        "wireframes": []
+    },
+    "extraProperties": {
+        "enabled": false,
+        "extraInfo": "",
+        "pixelSize": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        }
+    },
+    "inGameType": "None",
+    "logic": {
+        "configuration": {},
+        "customAllocator": "",
+        "enabled": false
+    },
+    "sprites": {
+        "type": "Bgmap"
+    }
+}
